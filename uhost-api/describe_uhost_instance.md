@@ -35,9 +35,11 @@ https://api.ucloud.cn/?Action=DescribeUHostInstance
 &UHostIds.0=uhost-xxx
 &IsolationGroup=lvbanUiO
 &VPCId=SNCWNQEL
-&SubnetId=nWauQBws```
+&SubnetId=nWauQBws
+```
 
 # Response Example
 ```
-{"Action": "DescribeUHostInstanceResponse", "TotalCount": 1, "RetCode": 0, "UHostSet": [{"Zone": "cn-bj2-04", "OsName": "CentOS 6.5 64\u4f4d", "HostType": "N2", "State": "Running", "Memory": 8192, "NetCapability": "Normal", "BootDiskState": "Normal", "CPU": 4, "BasicImageName": "1", "IPSet": [{"SubnetId": "subnet-xxxx", "IP": "10.19.xxx.xxx", "Mac": "xxx", "VPCId": "uvnet-xxx", "Type": "Private"}], "NetCapFeature": true, "ImageId": "xxx", "AutoRenew": "Yes", "TotalDiskSpace": 20, "OsType": "Linux", "DiskSet": [{"Encrypted": "No", "Type": "Boot", "Drive": "vda", "DiskId": "xxx", "Size": 20}, {"Encrypted": "No", "Type": "Data", "Drive": "vdb", "DiskId": "xxx", "Size": 20}], "SubnetType": "Default", "Remark": "", "Name": "UHost", "UHostId": "uhost-xxx", "GPU": 0, "LifeCycle": "Normal", "StorageType": "LocalDisk", "HotplugFeature": false, "UHostType": "Normal", "BasicImageId": "uimage-xxx", "ExpireTime": 1532483542, "Tag": "Default", "NetworkState": "Connected", "ChargeType": "Month", "CreateTime": 1529891542, "TimemachineFeature": "no"}]}```
+{"Action": "DescribeUHostInstanceResponse", "TotalCount": 1, "RetCode": 0, "UHostSet": [{"Zone": "cn-bj2-04", "OsName": "CentOS 6.5 64\u4f4d", "HostType": "N2", "State": "Running", "Memory": 8192, "NetCapability": "Normal", "BootDiskState": "Normal", "CPU": 4, "BasicImageName": "1", "IPSet": [{"SubnetId": "subnet-xxxx", "IP": "10.19.xxx.xxx", "Mac": "xxx", "VPCId": "uvnet-xxx", "Type": "Private"}], "NetCapFeature": true, "ImageId": "xxx", "AutoRenew": "Yes", "TotalDiskSpace": 20, "OsType": "Linux", "DiskSet": [{"Encrypted": "No", "Type": "Boot", "Drive": "vda", "DiskId": "xxx", "Size": 20}, {"Encrypted": "No", "Type": "Data", "Drive": "vdb", "DiskId": "xxx", "Size": 20}], "SubnetType": "Default", "Remark": "", "Name": "UHost", "UHostId": "uhost-xxx", "GPU": 0, "LifeCycle": "Normal", "StorageType": "LocalDisk", "HotplugFeature": false, "UHostType": "Normal", "BasicImageId": "uimage-xxx", "ExpireTime": 1532483542, "Tag": "Default", "NetworkState": "Connected", "ChargeType": "Month", "CreateTime": 1529891542, "TimemachineFeature": "no"}]}
+```
 
