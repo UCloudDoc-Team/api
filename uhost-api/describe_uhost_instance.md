@@ -24,6 +24,63 @@
 |TotalCount|int|UHostInstance总数|No|
 |UHostSet|array|云主机实例列表，每项参数可见下面 UHostInstanceSet|No|
 
+## UHostInstanceSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
+|UHostId|string|UHost实例ID|No|
+|UHostType|string|【建议不再使用】云主机机型（旧）。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
+|MachineType|string|云主机机型（新）。参考[[api:uhost-api:uhost_type#主机概念20版本|云主机机型说明]]。|No|
+|StorageType|string|【建议不再使用】主机磁盘类型。 枚举值为：\\ > LocalDisk，本地磁盘; \\ > UDisk 云盘。\\只要有一块磁盘为本地盘，即返回LocalDisk。|No|
+|ImageId|string|【建议不再使用】主机的系统盘ID。|No|
+|BasicImageId|string|基础镜像ID（指当前自定义镜像的来源镜像）|No|
+|BasicImageName|string|基础镜像名称（指当前自定义镜像的来源镜像）|No|
+|Tag|string|业务组名称|No|
+|Remark|string|备注|No|
+|Name|string|UHost实例名称|No|
+|State|string|实例状态，枚举值：\\ >初始化: Initializing; \\ >启动中: Starting; \\> 运行中: Running; \\> 关机中: Stopping; \\ >关机: Stopped \\ >安装失败: Install Fail; \\ >重启中: Rebooting|No|
+|CreateTime|int|创建时间，格式为Unix时间戳|No|
+|ChargeType|string|计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）； |No|
+|ExpireTime|int|到期时间，格式为Unix时间戳|No|
+|CPU|int|虚拟CPU核数，单位: 个|No|
+|Memory|int|内存大小，单位: MB|No|
+|AutoRenew|string|是否自动续费，自动续费：“Yes”，不自动续费：“No”|No|
+|DiskSet|array|磁盘信息见 UHostDiskSet|No|
+|IPSet|array|详细信息见 UHostIPSet|No|
+|NetCapability|string|网络增强。Normal: 无；Super： 网络增强1.0； Ultra: 网络增强2.0|No|
+|NetworkState|string|【建议不再使用】网络状态。 连接：Connected， 断开：NotConnected|No|
+|TimemachineFeature|string|【建议不再使用】数据方舟模式。枚举值：\\ > Yes: 开启方舟； \\ > no，未开启方舟|No|
+|HotplugFeature|bool|true: 开启热升级； false，未开启热升级|No|
+|SubnetType|string|【建议不再使用】仅北京A的云主机会返回此字段。基础网络模式：Default；子网模式：Private|No|
+|OsName|string|创建主机的最初来源镜像的操作系统名称（若直接通过基础镜像创建，此处返回和BasicImageName一致）|No|
+|OsType|string|操作系统类别。返回"Linux"或者"Windows"|No|
+|HostType|string|【建议不再使用】主机系列：N2，表示系列2；N1，表示系列1|No|
+|LifeCycle|string|主机的生命周期类型。目前仅支持Normal：普通；|No|
+|GPU|int|GPU个数|No|
+|BootDiskState|string|系统盘状态 Normal表示初始化完成；Initializing表示在初始化。仍在初始化的系统盘无法制作镜像。|No|
+|TotalDiskSpace|int|总的数据盘存储空间。|No|
+|IsolationGroup|string|隔离组id，不在隔离组则返回""|No|
+
+## UHostDiskSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Type|string|磁盘类型。系统盘: Boot，数据盘: Data,网络盘：Udisk|No|
+|DiskId|string|磁盘ID|No|
+|Name|int|UDisk名字（仅当磁盘是UDisk时返回）|No|
+|Drive|int|磁盘盘符|No|
+|Size|int|磁盘大小，单位: GB|No|
+
+## UHostIPSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Type|string|国际: Internation，BGP: Bgp，内网: Private|No|
+|IPId|string|IP资源ID (内网IP无对应的资源ID)|No|
+|IP|string|IP地址|No|
+|Bandwidth|int|IP对应的带宽, 单位: Mb (内网IP不显示带宽信息)|No|
+|Default|string|是否默认的弹性网卡的信息。true: 是默认弹性网卡；其他值：不是。|No|
+|VPCId|string|IP地址对应的VPC ID（北京一当前字段为空）|No|
+|SubnetId|string|IP地址对应的子网 ID（北京一当前字段为空）|No|
+
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeUHostInstance
