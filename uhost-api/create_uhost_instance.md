@@ -64,6 +64,8 @@
 # Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|RetCode|int|返回码|**Yes**|
+|Action|string|操作名称|**Yes**|
 |UHostIds|array|UHost实例Id集合|No|
 |IPs|array|【批量创建不会返回】IP信息|No|
 
