@@ -1,24 +1,24 @@
-{{indexmenu_n>1}}
-
-====== API 文档综览 ======
+# API 文档综览
 
 本文档是UCloud云计算产品API参考手册。在本文档中，您能够获取到对于每一个指令的描述，语法以及使用示例。您可以通过用 HTTP/HTTPS GET的方式对我们的 API进行调用，或选择适合您所使用编程语言的 SDK 来访问我们的 API。在调用API时，除了需要给出相应的API调用地址，公共参数，API指令，以及指令参数之外，您还需要在调用请求中给出 API 密钥进行身份认证，请您务必妥善保管好您的 API 密钥。
-===== API完整示例 =====
 
-部分API调用示例，参见 [[https://github.com/ucloud|UCloud SDK项目]] 。
+## API完整示例
 
-===== API请求结构 =====
+部分API调用示例，参见 [UCloud SDK项目](https://github.com/ucloud)。
 
-^ Name     ^ Description                           ^ Notes                               ^
+## API请求结构
+
+| Name      |Description                           |Notes                               |
+|---|---|---|
 | API调用地址  | 调用API的webservice入口                    | http(s):%%//%%api.ucloud.cn         |
 | 公共参数     | 调用API时需要给出的公共参数                       | 参见 [[[[api:summary:public|公共参数列表]]  |
 | API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [[api: |API指令列表]]                |
 | 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [[api: |API指令列表]]                |
 
-===== API请求示例 =====
+## API请求示例
 
 ### JSON方式
-<code>
+```
 curl -X POST \
   https://api.ucloud.cn \
   -H 'Content-Type: application/json' \
@@ -29,12 +29,13 @@ curl -X POST \
     "Signature":"ed5ccd667678292a08dae1828710b4ef4bb57085",
     "ProjectId":"org-e15e0x"
 }'
-</code>
+```
 
 ### 参数拼接方式
+
 下面是一个API请求示例，所调用的是DescribeUHostInstance指令。
 
-<code>
+```
 http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 &Region=cn-bj2
 &Zone=cn-bj2-04
@@ -46,19 +47,21 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 </code>
 **note:**
 请使用您的PublicKey与Signature参数值替换这里的参数值。
+```
 
-===== API返回结构 =====
+## API返回结构
 
 | Name    | Description                                                       | Notes                                   |
+|---|---|---|
 | 指令名称    | 返回所调用的指令名称。 例如 DescribeUHostInstanceResponse                      | API 返回的指令名称为 "API 指令名称"+"Response"来表示。  |
 | API返回码  | 用来表示API请求的返回值 ，当ret_code = 0时表示API请求正常， ret_code != 0时表示API请求错误。  |                                         |
 | 返回参数    | 每个API的返回参数                                                        | 参见 [[api: |API指令列表]]                    |
 
-===== API返回示例 =====
+## API返回示例
 
 该API的返回值为如下所示的JSON格式内容。
 
-<code>
+```
 {
      "Action" : "DescribeUHostInstanceResponse",
      "TotalCount" : 1,
@@ -117,4 +120,4 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
          }
      ]
  }
-</code>
+```
