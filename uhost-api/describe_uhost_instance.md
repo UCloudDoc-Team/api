@@ -1,5 +1,6 @@
 # 获取主机信息-DescribeUHostInstance
-# 获取主机或主机列表信息，并可根据数据中心，主机ID等参数进行过滤。
+
+获取主机或主机列表信息，并可根据数据中心，主机ID等参数进行过滤。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -21,6 +22,8 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
+|RetCode|int|返回码|**Yes**|
+|Action|string|操作名称|**Yes**|
 |TotalCount|int|UHostInstance总数|No|
 |UHostSet|array|云主机实例列表，每项参数可见下面 UHostInstanceSet|No|
 
@@ -28,6 +31,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
+|IPv6Feature|bool|true:有ipv6特性；false，没有ipv6特性|**Yes**|
 |UHostId|string|UHost实例ID|No|
 |UHostType|string|【建议不再使用】云主机机型（旧）。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
 |MachineType|string|云主机机型（新）。参考[[api:uhost-api:uhost_type#主机概念20版本|云主机机型说明]]。|No|

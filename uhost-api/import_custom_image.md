@@ -1,9 +1,10 @@
-#导入镜像-ImportCustomImage
+# 导入镜像-ImportCustomImage
 
-把UFile的镜像文件导入到UHost，生成自定义镜像。
+把UFile的镜像文件导入到UHost，生成自定义镜像
 
-#Request Parameters
+# Request Parameters
 |Parameter name|Type|Description|Required|
+|---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |ImageName|string|镜像名称|**Yes**|
@@ -14,14 +15,14 @@
 |Auth|bool|是否授权。必须填true|**Yes**|
 |ImageDescription|string|镜像描述|No|
 
-
-#Response Elements
+# Response Elements
 |Parameter name|Type|Description|Required|
-|RetCode|int|操作返回码|**Yes**|
+|---|---|---|---|
+|RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
 |ImageId|string|镜像Id|No|
 
-#Request Example
+# Request Example
 ```
 https://api.ucloud.cn/?Action=ImportCustomImage
 &Region=cn-bj2
@@ -33,13 +34,13 @@ https://api.ucloud.cn/?Action=ImportCustomImage
 &Format=VMDK
 &Auth=1
 ```
-#Response Example
+
+# Response Example
 ```
 {
-    "Action": "ImportCustomImageResponse",
-    "RetCode": 0,
+    "Action": "ImportCustomImageResponse", 
+    "RetCode": 0, 
     "ImageId": "uimage-xxxxx"
 }
 ```
 
-{{indexmenu_n>1000}}

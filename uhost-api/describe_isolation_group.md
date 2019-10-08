@@ -1,37 +1,38 @@
-#描述硬件隔离组-DescribeIsolationGroup
+# 描述硬件隔离组-DescribeIsolationGroup
 
 描述硬件隔离组
 
-#Request Parameters
+# Request Parameters
 |Parameter name|Type|Description|Required|
+|---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目id|No|
 |GroupId|string|要查询的硬件隔离组id|No|
 |Offset|int|列表起始位置偏移量，默认为0|No|
 |Limit|int|返回数据长度，默认为20，最大100|No|
 
-
-#Response Elements
+# Response Elements
 |Parameter name|Type|Description|Required|
-|RetCode|int|操作返回码|**Yes**|
+|---|---|---|---|
+|RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|IsolationGroupSet|array|硬件隔离组集合，参考IsolationGroup|No|
+|IsolationGroupSet|array|硬件隔离组集合|No|
 
-
-##IsolationGroup
+## IsolationGroup
 |Parameter name|Type|Description|Required|
+|---|---|---|---|
 |GroupName|string|硬件隔离组名称|No|
 |GroupId|string|硬件隔离组id|No|
-|SpreadInfoSet|array|每个可用区中的机器数量，参考SpreadInfo|No|
+|SpreadInfoSet|array|每个可用区中的机器数量。参见数据结构SpreadInfo。|No|
 |Remark|string|备注|No|
 
-
-##SpreadInfo
+## SpreadInfo
 |Parameter name|Type|Description|Required|
+|---|---|---|---|
 |Zone|string|可用区信息|No|
 |UHostCount|int|可用区中硬件隔离组中云主机的数量，不超过7。|No|
 
-#Request Example
+# Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeIsolationGroup
 &Region=cn-zj
@@ -40,366 +41,366 @@ https://api.ucloud.cn/?Action=DescribeIsolationGroup
 &Offset=4
 &Limit=3
 ```
-#Response Example
+
+# Response Example
 ```
 {
-    "RetCode": 0,
-    "Action": "DescribeIsolationGroupResponse",
+    "Action": "DescribeIsolationGroupResponse", 
     "IsolationGroupSet": [
         {
-            "GroupName": "FfjAvODP",
-            "GroupId": "sYCGPSVa",
+            "GroupName": "FfjAvODP", 
+            "GroupId": "sYCGPSVa", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "ckzKEzju",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "ckzKEzju"
+                }, 
                 {
-                    "Zone": "JxJjJLEh",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "JxJjJLEh"
+                }, 
                 {
-                    "Zone": "vfeWwork",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "vfeWwork"
+                }, 
                 {
-                    "Zone": "mdDSKRtP",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "mdDSKRtP"
+                }, 
                 {
-                    "Zone": "ckmKtCkf",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "ckmKtCkf"
+                }, 
                 {
-                    "Zone": "fdyQiLJX",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "fdyQiLJX"
+                }, 
                 {
-                    "Zone": "bnpHtcVh",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "bnpHtcVh"
+                }, 
                 {
-                    "Zone": "tlgxSexx",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "tlgxSexx"
+                }, 
                 {
-                    "Zone": "DknEPTTQ",
-                    "UHostCount": 7
+                    "UHostCount": 7, 
+                    "Zone": "DknEPTTQ"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "waQcuepq",
-            "GroupId": "dUtmePjp",
+            "GroupName": "waQcuepq", 
+            "GroupId": "dUtmePjp", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "RIkhPcmF",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "RIkhPcmF"
+                }, 
                 {
-                    "Zone": "ZZiDAcUQ",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "ZZiDAcUQ"
+                }, 
                 {
-                    "Zone": "LxwjPKkC",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "LxwjPKkC"
+                }, 
                 {
-                    "Zone": "EICjITTU",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "EICjITTU"
+                }, 
                 {
-                    "Zone": "LvRzXMqO",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "LvRzXMqO"
+                }, 
                 {
-                    "Zone": "hsNbrfIO",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "hsNbrfIO"
+                }, 
                 {
-                    "Zone": "vLxZmVpQ",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "vLxZmVpQ"
+                }, 
                 {
-                    "Zone": "YaqMHcyT",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "YaqMHcyT"
+                }, 
                 {
-                    "Zone": "VkTcAsom",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "VkTcAsom"
+                }, 
                 {
-                    "Zone": "osJUBzQs",
-                    "UHostCount": 7
+                    "UHostCount": 7, 
+                    "Zone": "osJUBzQs"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "BuRDNSMV",
-            "GroupId": "PNbUMSnT",
+            "GroupName": "BuRDNSMV", 
+            "GroupId": "PNbUMSnT", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "FqzxOwWF",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "FqzxOwWF"
+                }, 
                 {
-                    "Zone": "TYJXNABc",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "TYJXNABc"
+                }, 
                 {
-                    "Zone": "TmifjmqF",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "TmifjmqF"
+                }, 
                 {
-                    "Zone": "ynTmVgAX",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "ynTmVgAX"
+                }, 
                 {
-                    "Zone": "VpulfwsB",
-                    "UHostCount": 3
-                },
+                    "UHostCount": 3, 
+                    "Zone": "VpulfwsB"
+                }, 
                 {
-                    "Zone": "GmkCwqKR",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "GmkCwqKR"
+                }, 
                 {
-                    "Zone": "dDKSifpU",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "dDKSifpU"
+                }, 
                 {
-                    "Zone": "UrGHZufJ",
-                    "UHostCount": 5
-                },
+                    "UHostCount": 5, 
+                    "Zone": "UrGHZufJ"
+                }, 
                 {
-                    "Zone": "gUdvtgFE",
-                    "UHostCount": 5
+                    "UHostCount": 5, 
+                    "Zone": "gUdvtgFE"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "GLKfEBHo",
-            "GroupId": "YRMkPcpS",
+            "GroupName": "GLKfEBHo", 
+            "GroupId": "YRMkPcpS", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "XHgsxqdg",
-                    "UHostCount": 5
-                },
+                    "UHostCount": 5, 
+                    "Zone": "XHgsxqdg"
+                }, 
                 {
-                    "Zone": "iRQKLaRj",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "iRQKLaRj"
+                }, 
                 {
-                    "Zone": "vFgPUUjt",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "vFgPUUjt"
+                }, 
                 {
-                    "Zone": "BNWmMVpg",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "BNWmMVpg"
+                }, 
                 {
-                    "Zone": "DeXHKBzt",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "DeXHKBzt"
+                }, 
                 {
-                    "Zone": "avAFYxlI",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "avAFYxlI"
+                }, 
                 {
-                    "Zone": "sPwawXVS",
-                    "UHostCount": 3
-                },
+                    "UHostCount": 3, 
+                    "Zone": "sPwawXVS"
+                }, 
                 {
-                    "Zone": "XPOommle",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "XPOommle"
+                }, 
                 {
-                    "Zone": "sDVWXwoD",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "sDVWXwoD"
+                }, 
                 {
-                    "Zone": "NHWKWBmr",
-                    "UHostCount": 7
+                    "UHostCount": 8, 
+                    "Zone": "NHWKWBmr"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "YQRxjUUP",
-            "GroupId": "KbqAWrnZ",
+            "GroupName": "YQRxjUUP", 
+            "GroupId": "KbqAWrnZ", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "ybcvUHGg",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "ybcvUHGg"
+                }, 
                 {
-                    "Zone": "bNCfdMfU",
-                    "UHostCount": 2
+                    "UHostCount": 2, 
+                    "Zone": "bNCfdMfU"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "PoNhklah",
-            "GroupId": "VvKIjAoJ",
+            "GroupName": "PoNhklah", 
+            "GroupId": "VvKIjAoJ", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "jtsvJBwo",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "jtsvJBwo"
+                }, 
                 {
-                    "Zone": "amlZMtpF",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "amlZMtpF"
+                }, 
                 {
-                    "Zone": "RqGIAweJ",
-                    "UHostCount": 5
-                },
+                    "UHostCount": 5, 
+                    "Zone": "RqGIAweJ"
+                }, 
                 {
-                    "Zone": "ZUmCMgmh",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "ZUmCMgmh"
+                }, 
                 {
-                    "Zone": "DHLgKKsN",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "DHLgKKsN"
+                }, 
                 {
-                    "Zone": "khBlCYDN",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "khBlCYDN"
+                }, 
                 {
-                    "Zone": "aKZoaKxv",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "aKZoaKxv"
+                }, 
                 {
-                    "Zone": "XKwieRxS",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 7, 
+                    "Zone": "XKwieRxS"
+                }, 
                 {
-                    "Zone": "ZztdlMSY",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "ZztdlMSY"
+                }, 
                 {
-                    "Zone": "beGvpfXk",
-                    "UHostCount": 3
+                    "UHostCount": 3, 
+                    "Zone": "beGvpfXk"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "SPFppiav",
-            "GroupId": "wYyaBPCv",
+            "GroupName": "SPFppiav", 
+            "GroupId": "wYyaBPCv", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "sHRTtqXY",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "sHRTtqXY"
+                }, 
                 {
-                    "Zone": "IOyDEHtK",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "IOyDEHtK"
+                }, 
                 {
-                    "Zone": "qCWALWUq",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "qCWALWUq"
+                }, 
                 {
-                    "Zone": "xWfLsowE",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "xWfLsowE"
+                }, 
                 {
-                    "Zone": "hpvNNHce",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "hpvNNHce"
+                }, 
                 {
-                    "Zone": "cJUybjFR",
-                    "UHostCount": 5
-                },
+                    "UHostCount": 5, 
+                    "Zone": "cJUybjFR"
+                }, 
                 {
-                    "Zone": "mVDidZHk",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "mVDidZHk"
+                }, 
                 {
-                    "Zone": "zbyPAXxR",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "zbyPAXxR"
+                }, 
                 {
-                    "Zone": "PxaozvKP",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "PxaozvKP"
+                }, 
                 {
-                    "Zone": "BPfzdZlb",
-                    "UHostCount": 5
+                    "UHostCount": 5, 
+                    "Zone": "BPfzdZlb"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "GhNYJpke",
-            "GroupId": "cILearzD",
+            "GroupName": "GhNYJpke", 
+            "GroupId": "cILearzD", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "NlJbuwsv",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "NlJbuwsv"
+                }, 
                 {
-                    "Zone": "JiDJVDmu",
-                    "UHostCount": 6
-                },
+                    "UHostCount": 6, 
+                    "Zone": "JiDJVDmu"
+                }, 
                 {
-                    "Zone": "reyxDucL",
-                    "UHostCount": 3
-                },
+                    "UHostCount": 3, 
+                    "Zone": "reyxDucL"
+                }, 
                 {
-                    "Zone": "BCanlmvA",
-                    "UHostCount": 5
-                },
+                    "UHostCount": 5, 
+                    "Zone": "BCanlmvA"
+                }, 
                 {
-                    "Zone": "ahWxmqUD",
-                    "UHostCount": 4
-                },
+                    "UHostCount": 4, 
+                    "Zone": "ahWxmqUD"
+                }, 
                 {
-                    "Zone": "JxDibZhh",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "JxDibZhh"
+                }, 
                 {
-                    "Zone": "TjYOutYX",
-                    "UHostCount": 1
+                    "UHostCount": 1, 
+                    "Zone": "TjYOutYX"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "chrixSUu",
-            "GroupId": "ppLfBQrd",
+            "GroupName": "chrixSUu", 
+            "GroupId": "ppLfBQrd", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "HPCwJiXb",
-                    "UHostCount": 2
-                },
+                    "UHostCount": 2, 
+                    "Zone": "HPCwJiXb"
+                }, 
                 {
-                    "Zone": "QUqJKHmy",
-                    "UHostCount": 4
+                    "UHostCount": 4, 
+                    "Zone": "QUqJKHmy"
                 }
             ]
-        },
+        }, 
         {
-            "GroupName": "UPZRkjRv",
-            "GroupId": "ZRjkgaqr",
+            "GroupName": "UPZRkjRv", 
+            "GroupId": "ZRjkgaqr", 
             "SpreadInfoSet": [
                 {
-                    "Zone": "CXNrjCEU",
-                    "UHostCount": 1
-                },
+                    "UHostCount": 1, 
+                    "Zone": "CXNrjCEU"
+                }, 
                 {
-                    "Zone": "aYcMlSSf",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 8, 
+                    "Zone": "aYcMlSSf"
+                }, 
                 {
-                    "Zone": "gorleIqQ",
-                    "UHostCount": 7
-                },
+                    "UHostCount": 9, 
+                    "Zone": "gorleIqQ"
+                }, 
                 {
-                    "Zone": "WSpdvKHZ",
-                    "UHostCount": 2
+                    "UHostCount": 2, 
+                    "Zone": "WSpdvKHZ"
                 }
             ]
         }
-    ]
+    ], 
+    "RetCode": 0
 }
 ```
 
-{{indexmenu_n>1000}}

@@ -1,0 +1,37 @@
+# 删除Cluster实例-TerminateClusterInstance
+
+删除Cluster实例
+
+# Request Parameters
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ClusterId|string|Cluster实例ID|**Yes**|
+
+# Response Elements
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|RetCode|int|返回码|**Yes**|
+|Action|string|操作名称|**Yes**|
+|ClusterId|string|Cluster实例ID|No|
+
+# Request Example
+```
+https://api.ucloud.cn/?Action=TerminateClusterInstance
+&Region=cn-bj2
+&Zone=cn-bj2-02
+&ProjectId=org-xxx
+&ClusterId=cluster-xxx
+```
+
+# Response Example
+```
+{
+    "Action": "TerminateClusterInstanceResponse", 
+    "ClusterId": "cluster-xxx", 
+    "RetCode": 0
+}
+```
+

@@ -1,5 +1,6 @@
 # 创建云主机-CreateUHostInstance
-# 创建UHost实例。
+
+创建UHost实例。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -42,8 +43,7 @@
 |ResourceType|int|【内部参数】资源类型|No|
 |Disks.N.BackupType|string|磁盘备份方案。枚举值：\\ > NONE，无备份 \\ > DATAARK，数据方舟 \\ 当前磁盘支持的备份模式参考 [[api:uhost-api:disk_type|磁盘类型]]|No|
 |IsolationGroup|string|硬件隔离组id。可通过DescribeIsolationGroup获取。|No|
-|Disks.N.Encrypted|bool|【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false
-加密必须传入对应的的KmsKeyId|No|
+|Disks.N.Encrypted|bool|【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false加密必须传入对应的的KmsKeyId|No|
 |Disks.N.KmsKeyId|string|【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。|No|
 |Disks.N.CouponId|string|云盘代金券id。不适用于系统盘/本地盘。请通过DescribeCoupon接口查询，或登录用户中心查看|No|
 |AlarmTemplateId|int|告警模板id，如果传了告警模板id，且告警模板id正确，则绑定告警模板。绑定告警模板失败只会在后台有日志，不会影响创建主机流程，也不会在前端报错。|No|
