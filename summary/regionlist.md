@@ -1,14 +1,13 @@
-{{indexmenu_n>4}}
-
-====== 获取地域和可用区列表 ======
+# 获取地域和可用区列表
 
 UCloud目前拥有25大地域（Region），分别是北京一、北京二、金融云、上海二、广州、福建、杭州、香港、洛杉矶、华盛顿、莫斯科、法兰克福、东京、曼谷、首尔、新加坡、高雄、台北、迪拜、雅加达、孟买、圣保罗、伦敦、拉各斯和胡志明。每个地域下开设有多个可用区（Zone），每个地域所提供的网络带宽有所不同，在操作与公网相关的API时，需要主机选定地域所支持的网络线路。
 
 具体地域和可用区名称如下：
 
-===== 各地域(Region) API名称列表 =====
+## 各地域(Region) API名称列表
 
-^ 地域名称   ^ 地域短ID         ^ 下属可用区                            ^
+| 地域名称   | 地域短ID         | 下属可用区                            |
+|---|---|---|
 | 北京一    | cn-bj1        | 北京一可用区A                          |
 | 北京二    | cn-bj2        | 北京二可用区B、北京二可用区C、北京二可用区D、北京二可用区E  |
 | 上海金融云  | cn-sh         | 上海金融云可用区A、上海金融云可用区C                       |
@@ -36,10 +35,10 @@ UCloud目前拥有25大地域（Region），分别是北京一、北京二、金
 |胡志明市|vn-sng|胡志明市可用区A|
 
 
+## 各可用区(Zone) API名称列表
 
-===== 各可用区(Zone) API名称列表 =====
-
-^ 可用区名称     ^ API名称            ^
+|可用区名称     |API名称            |
+|---|---|
 | 北京一可用区A   | cn-bj1-01        |
 | 北京二可用区B   | cn-bj2-02        |
 | 北京二可用区C   | cn-bj2-03        |
@@ -72,24 +71,25 @@ UCloud目前拥有25大地域（Region），分别是北京一、北京二、金
 | 伦敦可用区A    | uk-london-01     |
 | 拉各斯可用区A | afr-nigeria-01|
 |胡志明市可用区A|vn-sng-01|
-===== 获取用户在各地域的可用区及权限信息 =====
-===== GetRegion =====
+
+## 获取用户在各地域的可用区及权限信息
+
+## GetRegion
 
 获取用户在各地域的权限等信息
 
-==== Response Elements ====
+### Response Elements
 
+|Name        |Type   |Description                       |
+|---|---|---|
+|Action      |String |响应动作: GetRegionResponse      |
+|RetCode     |Integer|执行成功与否，0表示成功，其他值则为错误代码            |
+|Regions    |Array  |JSON格式的各地域信息，每项参数参见下面的 Regions|
 
+### Regions 
 
-^Name        ^Type   ^Description                       ^^
-|Action      |String |响应动作: GetRegionResponse      ||
-|RetCode     |Integer|执行成功与否，0表示成功，其他值则为错误代码            ||
-|Regions    |Array  |JSON格式的各地域信息，每项参数参见下面的 Regions||
-                           ||
-
-==== Regions ==== 
-
-^ Name        ^ Type     ^ Description                                                         ^
+| Name        | Type     | Description                                                         |
+|---|---|---|
 | RegionId    | Integer  | 地域ID                                                                |
 | RegionName  | String   | 地域名称，若API调用，请参考Region字段                                             |
 | IsDefault   | Bool     | 是否用户当前默认地域                                                          |
@@ -97,15 +97,15 @@ UCloud目前拥有25大地域（Region），分别是北京一、北京二、金
 | Region      | String   | 地域                                                                  |
 | Zone        | String   | 可用区名字，如cn-bj-01                                                     |
 
-==== Request Example ====
+### Request Example
 
-<code>
+```
 https://api.ucloud.cn/?Action=GetRegion
-</code>
-==== Response Example ====
- 
+```
 
-<code>
+### Response Example
+
+```
 {
     "Action" : "GetRegionResposne",
     "RetCode" : 0,
@@ -118,4 +118,4 @@ https://api.ucloud.cn/?Action=GetRegion
         "Zone" : "cn-bj1-01"
     }]
 }
-</code>
+```
