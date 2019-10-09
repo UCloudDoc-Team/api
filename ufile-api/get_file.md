@@ -49,10 +49,7 @@ Response Elements
 > 注意: 成功下载时只返回HTTP 200回应和数据体。
 
 
-<WRAP center round important 60%>
-注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
-</WRAP>
-
+> 注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
 
 Example
 
