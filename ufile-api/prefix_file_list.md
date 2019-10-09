@@ -1,5 +1,4 @@
-====== 前缀列表查询 - PrefixFileList ======
-{{indexmenu_n>27}}
+# 前缀列表查询 - PrefixFileList 
 
 获取Bucket中指定文件前缀的文件列表
 
@@ -7,16 +6,17 @@ Requests
 
 Syntax:
 
-<code>
+```
 GET /?list&prefix=<prefix>&marker=<marker>&limit=<limit>
 Host: <bucket_name>.ufile.ucloud.cn
 Authorization: <token> 
-</code>
+```
 Request Parameters
 
 Request Headers
 
-^Name             ^Type  ^Description                       ^Required^
+|Name             |Type  |Description                       |Required|
+|---|---|---|---|
 |prefix           |String|前缀，utf-8编码，默认为空字符串                         |No      |
 |marker|String|标志字符串，utf-8编码，默认为空字符串)                         |No      |
 |limit|Integer|文件列表数目，默认为20                         |No      |
@@ -30,7 +30,8 @@ Responses
 
 Response Elements
 
-^Name          ^Type   ^Description     ^
+|Name          |Type   |Description     |
+|---|---|---|
 |BucketName  |String |Bucket的名称       |
 |BucketId   |String |Bucket的ID       |
 |NextMarker  |String |下一个标志字符串，utf-8编码      |
@@ -38,7 +39,8 @@ Response Elements
 
 DataSet Item
 
-^Name   ^Type   ^Description^
+|Name   |Type   |Description|
+|---|---|---|
 |BucketName  |String |文件所属Bucket名称      |
 |FileName   |String |文件名称,utf-8编码      |
 |Hash      |String |文件hash值     |
@@ -52,14 +54,14 @@ Example
 
 Example Request:
 
-<code>
+```
 GET /?list&prefix=aaa
 Host: blue.ufile.ucloud.cn
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
-</code>
+```
 Example Response:
 
-<code>
+```
 {
     "BucketName": "blue",
     "BucketId": "ufile-qs20fr",
@@ -76,4 +78,4 @@ Example Response:
        }
     ]
 }
-</code>
+```
