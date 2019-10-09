@@ -48,9 +48,9 @@ Response Elements
 
 > 注意: 成功下载时只返回HTTP 200回应和数据体。
 
-
-> 注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
-
+<table><tr><td bgcolor=orange>
+ 注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
+  </td></tr></table>
 Example
 
 Example Request:
