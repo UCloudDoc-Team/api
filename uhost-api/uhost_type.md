@@ -9,12 +9,12 @@
 * MachineType枚举
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
-|---|---|---|---|---|
-| MachineType = N                  | 通用型          | Intel/Auto, \\ Intel/IvyBridge，\\ Intel/Haswell，\\ Intel/Broadwell，\\ Intel/Skylake  | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘/SSD云盘 \\ SSD本地盘 + SSD本地盘  |
-| MachineType = C                  | 高主频型         | Intel/Auto, \\ Intel/Skylake                                                         | 1C1G-32C128G                                                                                | SSD本地盘 + SSD本地盘 \\ SSD云盘 + 普通云盘/SSD云盘                   |
-| MachineType = G, GpuType = V100  | GPU型 - V100  | Intel/Auto,\\ Intel/Broadwell                                                        | 4C 8G,16G + 1颗GPU\\ 8C 16G,32G + 1颗/2颗GPU\\ 16C 32G,64G + 2颗/4颗GPU \\ 32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘\\ SSD云盘 + 普通云盘/SSD云盘                    |
-| MachineType = G, GpuType = P40   | GPU型 - P40   | Intel/Auto, \\ Intel/Broadwell                                                       | 4C 8G,16G + 1颗GPU\\ 8C 16G,32G + 1颗/2颗GPU\\ 16C 32G,64G + 2颗/4颗GPU \\ 32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘\\ SSD云盘 + 普通云盘/SSD云盘                    |
-| Machinetype = G, GpuType = K80   | GPU型 - K80   | Intel/Auto, \\ Intel/Haswell                                                         | 4C 8G,16G \\ 8C 16G,32G \\ 16C 32G,64G \\  *各配置均可配备1-2颗GPU                                  | SSD本地盘 + SSD本地盘                                         |
+|-------|-------|-------|-------|-------|
+| MachineType = N                  | 通用型          | Intel/Auto,<br>  Intel/IvyBridge,<br>  Intel/Haswell,<br> Intel/Broadwell，<br>Intel/Skylake, | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘  SSD云盘 + 普通云盘<br>SSD云盘  SSD本地盘 + SSD本地盘  |
+| MachineType = C                  | 高主频型         | Intel/Auto,  Intel/Skylake                                                         | 1C1G-32C128G                                                                                | SSD本地盘 + SSD本地盘<br> SSD云盘 + 普通云盘/SSD云盘                   |
+| MachineType = G, GpuType = V100  | GPU型 - V100  | Intel/Auto, Intel/Broadwell                                                        | 4C 8G,16G + 1颗GPU\\ 8C 16G,32G + 1颗/2颗GPU\\ 16C 32G,64G + 2颗/4颗GPU \\ 32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘<br>SSD云盘 + 普通云盘/SSD云盘                    | 
+| MachineType = G, GpuType = P40   | GPU型 - P40   | Intel/Auto,  Intel/Broadwell                                                       | 4C 8G,16G + 1颗GPU\\ 8C 16G,32G + 1颗/2颗GPU\\ 16C 32G,64G + 2颗/4颗GPU  32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘 <br>SSD云盘 + 普通云盘/SSD云盘                    | 
+| Machinetype = G, GpuType = K80   | GPU型 - K80   | Intel/Auto, \\ Intel/Haswell                                                         | 4C 8G,16G \\ 8C 16G,32G \\ 16C 32G,64G \\  *各配置均可配备1-2颗GPU                                  | SSD本地盘 + SSD本地盘                                         | 
 
 具体机型信息请参考 [[compute:uhost:introduction:uhost:type_new|机型与CPU平台]]。不同机房的主机类型支持情况不同。详情请参考控制台。
 
