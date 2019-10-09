@@ -6,7 +6,7 @@
 
 主机概念2.0采用 MachineType + MinimalCpuPlatform的模式进行调用以创建主机，若不传递MinimalCpuPlatform，默认采用Intel/Auto（自动分配）。
 
-* MachineType枚举*
+* MachineType枚举
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
 | MachineType = N                  | 通用型          | Intel/Auto, \\ Intel/IvyBridge，\\ Intel/Haswell，\\ Intel/Broadwell，\\ Intel/Skylake  | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘/SSD云盘 \\ SSD本地盘 + SSD本地盘  |
