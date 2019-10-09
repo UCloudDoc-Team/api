@@ -35,14 +35,14 @@
 |UHostId|string|UHost实例ID|No|
 |UHostType|string|【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 |MachineType|string|云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。|No|
-|StorageType|string|【建议不再使用】主机磁盘类型。 枚举值为：\\ > LocalDisk，本地磁盘; \\ > UDisk 云盘。\\只要有一块磁盘为本地盘，即返回LocalDisk。|No|
+|StorageType|string|【建议不再使用】主机磁盘类型。 枚举值为：<br> > LocalDisk，本地磁盘; <br> > UDisk 云盘。<br>只要有一块磁盘为本地盘，即返回LocalDisk。|No|
 |ImageId|string|【建议不再使用】主机的系统盘ID。|No|
 |BasicImageId|string|基础镜像ID（指当前自定义镜像的来源镜像）|No|
 |BasicImageName|string|基础镜像名称（指当前自定义镜像的来源镜像）|No|
 |Tag|string|业务组名称|No|
 |Remark|string|备注|No|
 |Name|string|UHost实例名称|No|
-|State|string|实例状态，枚举值：\\ >初始化: Initializing; \\ >启动中: Starting; \\> 运行中: Running; \\> 关机中: Stopping; \\ >关机: Stopped \\ >安装失败: Install Fail; \\ >重启中: Rebooting|No|
+|State|string|实例状态，枚举值：<br> >初始化: Initializing; <br> >启动中: Starting; <br>> 运行中: Running; <br>> 关机中: Stopping; <br> >关机: Stopped <br> >安装失败: Install Fail; <br> >重启中: Rebooting|No|
 |CreateTime|int|创建时间，格式为Unix时间戳|No|
 |ChargeType|string|计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）； |No|
 |ExpireTime|int|到期时间，格式为Unix时间戳|No|
@@ -53,7 +53,7 @@
 |IPSet|array|详细信息见 UHostIPSet|No|
 |NetCapability|string|网络增强。Normal: 无；Super： 网络增强1.0； Ultra: 网络增强2.0|No|
 |NetworkState|string|【建议不再使用】网络状态。 连接：Connected， 断开：NotConnected|No|
-|TimemachineFeature|string|【建议不再使用】数据方舟模式。枚举值：\\ > Yes: 开启方舟； \\ > no，未开启方舟|No|
+|TimemachineFeature|string|【建议不再使用】数据方舟模式。枚举值：<br> > Yes: 开启方舟； <br> > no，未开启方舟|No|
 |HotplugFeature|bool|true: 开启热升级； false，未开启热升级|No|
 |SubnetType|string|【建议不再使用】仅北京A的云主机会返回此字段。基础网络模式：Default；子网模式：Private|No|
 |OsName|string|创建主机的最初来源镜像的操作系统名称（若直接通过基础镜像创建，此处返回和BasicImageName一致）|No|
