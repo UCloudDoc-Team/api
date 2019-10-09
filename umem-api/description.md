@@ -6,11 +6,11 @@
 
 获取umemcache组价格-[DescribeUMemcachePrice](describe_umemcache_price.md)
 
-[重启单机Memcache](api/umem-api/reboot_umemcache_group|RestartUMemca[api/umem-api/describe_umemcache_price|DescribeUMemcachePricecheGroup)
+重启单机Memcache-[RestartUMemcaGroup](reboot_umemcache_group.md)
 
 获取umemcache升级价格-[DescribeUMemcacheUpgradePrice](describe_umemcache_upgrade_price)
 
-删除单机Memcache-[[api:umem-api:delete_umemcache_group|DeleteUMemcacheGroup]]
+删除单机Memcache-[DeleteUMemcacheGroup](delete_umemcache_group.md)
 
 显示Memcache-[[api:umem-api:describe_umemcache_group|DescribeUMemcacheGroup]]
 
