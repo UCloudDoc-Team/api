@@ -1,5 +1,4 @@
-====== 查询文件基本信息 - HEADFile ======
-{{indexmenu_n>50}}
+# 查询文件基本信息 - HEADFile 
 
 查询文件基本信息
 
@@ -7,16 +6,17 @@ Requests
 
 Syntax:
 
-<code>
+```
 HEAD /<file_name> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token> 
-</code>
+```
 Request Parameters
 
 Request Headers
 
-^Name         ^Type  ^Description^Required^
+|Name         |Type  |Description|Required|
+|---|---|---|---|
 |Authorization|String|下载请求的授权签名  |No      |
 
 Request Elements
@@ -27,7 +27,8 @@ Responses
 
 Response Headers
 
-^Name          ^Type   ^Description     ^
+|Name          |Type   |Description     |
+|---|---|---|
 |Content-Type  |String |请求下载文件的类型       |
 |Content-Length|Integer|请求下载文件的长度       |
 |Content-Range |String |请求下载文件的范围       |
@@ -36,7 +37,7 @@ Response Headers
 
 Response Elements
 
-^Name   ^Type   ^Description^
+|Name   |Type   |Description|
 |RetCode|Integer|执行失败时的错误代码 |
 |ErrMsg |String |执行失败时的错误提示 |
 
@@ -46,16 +47,16 @@ Example
 
 Example Request:
 
-<code>
+```
 HEAD /demofile HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
-</code>
+```
 Example Response:
 
-<code>
+```
 HTTP/1.1 200 OK
 ETag: c5371fe3624d438cd8a59420a3221978
 Content-Type: image/jpg
 Content-Length: 1234
-</code>
+```
