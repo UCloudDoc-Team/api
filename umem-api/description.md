@@ -49,12 +49,11 @@
 
 删除空间-[DeleteUMemSpace](delete_space.md)
 
-调整容量-[[api:umem-api:resize_space|ResizeUMemSpace]]
+调整容量-[ResizeUMemSpace](resize_space.md)
 
-查询空间-[[api:umem-api:describe_space|DescribeUMemSpace]]
+查询空间-[DescribeUMemSpace](describe_space.md)
 
-获取升级价格-[[api:umem-api:describe_upgrade_price|DescribeUMemUpgradePrice]]
+获取升级价格-[DescribeUMemUpgradePrice](describe_upgrade_price.md)
 
-创建内存空间-[[api:umem-api:create_space|CreateUMemSpace]]
+创建内存空间-[CreateUMemSpace](create_space.md)
 
-{{indexmenu_n>5}}
