@@ -16,7 +16,7 @@
 | MachineType = G, GpuType = P40   | GPU型 - P40   | Intel/Auto,  Intel/Broadwell                                                       | 4C 8G,16G + 1颗GPU<br> 8C 16G,32G + 1颗/2颗GPU<br> 16C 32G,64G + 2颗/4颗GPU <br> 32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘 <br>SSD云盘 + 普通云盘/SSD云盘                    | 
 | Machinetype = G, GpuType = K80   | GPU型 - K80   | Intel/Auto,  Intel/Haswell                                                         | 4C 8G,16G <br> 8C 16G,32G<br> 16C 32G,64G<br>  *各配置均可配备1-2颗GPU                                  | SSD本地盘 + SSD本地盘                                         | 
 
-具体机型信息请参考 [机型与CPU平台](compute:uhost:introduction:uhost:type_new.md)不同机房的主机类型支持情况不同。详情请参考控制台。
+具体机型信息请参考 [机型与CPU平台](compute/uhost/introduction/uhost/type_new.md)不同机房的主机类型支持情况不同。详情请参考控制台。
 
 * 主机概念1.0版本
 
