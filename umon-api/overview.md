@@ -2,7 +2,7 @@
 * [发送短信-SendSms](api/umon-api/send_sms)
 * [解绑告警模板-UnbindAlarmTemplate](api/umon-api/unbind_alarm_template)
 * [获取监控数据-GetMetric](api/umon-api/get_metric)
-* [获取监控概况数据-GetMetricOverview](api/umon-api/get_metric_overview.md)
+* [获取监控概况数据-GetMetricOverview](api/umon-api/get_metric_overview)
 * [获取告警模板列表-GetAlarmTemplateList](api/umon-api/get_alarm_template_list)
 * [绑定告警模板-BindAlarmTemplate](api/umon-api/bind_alarm_template)
 * [获取资源支持监控指标信息-DescribeResourceMetric](api/umon-api/describe_resource_metric)
