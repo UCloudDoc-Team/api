@@ -1,5 +1,4 @@
-====== 上传分片 - UploadPart ======
-{{indexmenu_n>65}}
+# 上传分片 - UploadPart 
 
 上传文件分片
 
@@ -9,18 +8,19 @@ Requests
 
 Syntax:
 
-<code>
+```
 PUT /<key_name>?uploadId=<upload_id>&partNumber=<part_number> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Type: <mimetype>
 Content-Length: <length>
-</code>
+```
 Request Parameters
 
 Request Headers
 
-^Name          ^Type   ^Description      ^Required^
+|Name          |Type   |Description      |Required|
+|---|---|---|---|
 |Authorization |String |上传请求的授权签名        |Yes     |
 |Content-Length|Integer|请求body部分即待上传分片的长度|Yes     |
 |Content-Type  |String |上传请求body部分的类型    |Yes     |
@@ -35,7 +35,8 @@ Responses
 
 Response Headers
 
-^Name          ^Type   ^Description     ^
+|Name          |Type   |Description     |
+|---|---|---|
 |Content-Type  |String |响应body部分的类型     |
 |Content-Length|Integer|响应body部分的长度     |
 |ETag          |String |已上传分片的哈希值       |
@@ -43,14 +44,14 @@ Response Headers
 
 Response Elements
 
-^Name      ^Type   ^Description^
+|Name      |Type   |Description|
 |PartNumber|Integer|本次分片上传的分片号码|
 
 Example
 
 Example Request:
 
-<code>
+```
 PUT /demokey?uploadId=0f188eb2-5e19-49c3-94c9-36fb5a0ff72a&partNumber=0 HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
@@ -58,10 +59,10 @@ Content-Type: application/octet-stream
 Content-Length: 4194304
 
 [4194304 bytes of data, as part of a file]
-</code>
+```
 Example Response:
 
-<code>
+```
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 21
@@ -72,4 +73,4 @@ Content-Length: 21
 {
    "PartNumber": 0
 }
-</code>
+```
