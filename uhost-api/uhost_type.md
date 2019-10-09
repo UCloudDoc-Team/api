@@ -1,12 +1,12 @@
-{{indexmenu_n>10}}
 
-====== 【参考】云主机机型 ======
 
-===== 主机概念2.0版本 =====
+*【参考】云主机机型 
+
+* 主机概念2.0版本
 
 主机概念2.0采用 MachineType + MinimalCpuPlatform的模式进行调用以创建主机，若不传递MinimalCpuPlatform，默认采用Intel/Auto（自动分配）。
 
-==== MachineType枚举 ====
+* MachineType枚举*
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
 | MachineType = N                  | 通用型          | Intel/Auto, \\ Intel/IvyBridge，\\ Intel/Haswell，\\ Intel/Broadwell，\\ Intel/Skylake  | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘/SSD云盘 \\ SSD本地盘 + SSD本地盘  |
@@ -17,11 +17,11 @@
 
 具体机型信息请参考 [[compute:uhost:introduction:uhost:type_new|机型与CPU平台]]。不同机房的主机类型支持情况不同。详情请参考控制台。
 
-===== 主机概念1.0版本 =====
+* 主机概念1.0版本
 
 机型概念1.0通过传入UHostType，即可创建指定机型。
 
-==== UHostType枚举 ====
+* UHostType枚举 
 
 | 传递值  | 机型          | 所属系列           | 配置范围 | 可选磁盘（系统盘+数据盘）    |
 | N3   | 标准型 N3      | 系列3 - Skylake  | 1C1G-32C128G  | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘 \\ SSD云盘 + SSD云盘 |
@@ -36,6 +36,6 @@
 
 具体机型信息请参考 [[compute:uhost:introduction:uhost:type|机型与规格]]。不同机房的主机类型支持情况不同。详情请参考控制台。
 
-==== UHostType默认值 ====
+* UHostType默认值 
 
 北京A、北京C、上海二A、香港A可用区默认N1，其他机房默认N2。
