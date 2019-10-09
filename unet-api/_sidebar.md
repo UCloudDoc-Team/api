@@ -1,5 +1,5 @@
 * UNet
-    * [概览](api/unet-api/overview.md)
+    * [概览](api/unet-api/overview)
     * [获取弹性IP信息-DescribeEIP](api/unet-api/describe_eip.md)
     * [关闭共享带宽-ReleaseShareBandwidth](api/unet-api/release_share_bandwidth.md)
     * [绑定弹性IP-BindEIP](api/unet-api/bind_eip.md)
@@ -20,7 +20,7 @@
     * [更新防火墙规则-UpdateFirewall](api/unet-api/update_firewall.md)
     * [应用防火墙-GrantFirewall](api/unet-api/grant_firewall.md)
     * [申请弹性IP-AllocateEIP](api/unet-api/allocate_eip.md)
-    * [更新VIP信息-UpdateVIPAttribute](api/unet-api/update_vip_attribute.md)
+    * [更新VIP信息-UpdateVIPAttribute](api/unet-api/update_vip_attribute)
     * [将EIP加入共享带宽-AssociateEIPWithShareBandwidth](api/unet-api/associate_eip_with_share_bandwidth.md)
     * [修改弹性IP出口权重-ModifyEIPWeight](api/unet-api/modify_eip_weight.md)
     * [更新防火墙属性-UpdateFirewallAttribute](api/unet-api/update_firewall_attribute.md)
