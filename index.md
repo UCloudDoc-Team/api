@@ -1,6 +1,6 @@
-====== API 文档 ======
+* API 文档 
 
-[[api:summary:index|API 文档概述]]
+[API 文档概述](api/summary/index)
 
 ===== 计算 =====
 
