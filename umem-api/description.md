@@ -35,7 +35,7 @@
 
 获取uredis升级价格信息-[DescribeURedisUpgradePrice](describe_u_redis_upgrade_price.md)
 
-查询主备Redis-[[api:umem-api:describe_group|DescribeURedisGroup]]
+查询主备Redis-[DescribeURedisGroup](describe_group.md)
 
 
 #分布式Redis，请使用以下API组
