@@ -8,7 +8,7 @@
 
 重启单机Memcache-[RestartUMemcaGroup](reboot_umemcache_group.md)
 
-获取umemcache升级价格-[DescribeUMemcacheUpgradePrice](describe_umemcache_upgrade_price)
+获取umemcache升级价格-[DescribeUMemcacheUpgradePrice](describe_umemcache_upgrade_price.md)
 
 删除单机Memcache-[DeleteUMemcacheGroup](delete_umemcache_group.md)
 
