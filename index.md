@@ -2,41 +2,41 @@
 
 [API 文档概述](api/summary/index)
 
-===== 计算 =====
+* 计算 
 
-[[api:uhost-api:index|云主机 UHost]]
+[云主机 UHost](api/uhost-api/index)
 
-[[api:uphost-api:index|物理云主机 UPhost]]
+[物理云主机 UPhost](api/uphost-api/index)
 
-[[api:ugc-api:index|通用计算 UGC]]
+[通用计算 UGC](api/ugc-api/index)
 
-===== 网络 =====
+* 网络
 
-[[api:unet-api:index|网络 UNet]]
+[网络 UNet](api/unet-api/index)
 
-[[api:ulb-api:index|负载均衡 ULB]]
+[负载均衡 ULB](api/ulb-api/index)
 
-[[api:udpn-api:index|高速通道 UDPN]]
-===== 存储和分发 =====
+[高速通道 UDPN](api/udpn-api/index)
 
-[[api:udisk-api:index|云硬盘 UDisk]]
+* 存储和分发 
 
-[[api:ufile-api:index|对象存储 UFile]]
+[云硬盘 UDisk](api/udisk-api/index)
 
-[[api:ucdn-api:index|云分发 UCDN]]
+[对象存储 UFile](api/ufile-api/index)
 
-===== 数据库 =====
+[云分发 UCDN](api/ucdn-api/index)
 
-[[api:umem-api:index|云内存存储 UMem]]
+* 数据库 
 
-[[api:udb-api:index|云数据库 UDB]]
+[云内存存储 UMem](api/umem-api/index)
 
+[云数据库 UDB](api/udb-api/index)
 
-===== 视频服务 =====
+* 视频服务 
 
-[[api:uvideo-api:index|云点播 UVideo]]
+[云点播 UVideo](api/uvideo-api/index)
 
-===== 监控管理 =====
+* 监控管理 
 
-[[api:umon-api:index|云监控 UMon]]
+[云监控 UMon](api/umon-api/index)
 
