@@ -38,6 +38,7 @@ Response Headers
 Response Elements
 
 |Name   |Type   |Description|
+|---|---|---|
 |RetCode|Integer|执行失败时的错误代码 |
 |ErrMsg |String |执行失败时的错误提示 |
 
