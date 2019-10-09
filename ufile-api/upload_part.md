@@ -45,6 +45,7 @@ Response Headers
 Response Elements
 
 |Name      |Type   |Description|
+|---|---|---|
 |PartNumber|Integer|本次分片上传的分片号码|
 
 Example
