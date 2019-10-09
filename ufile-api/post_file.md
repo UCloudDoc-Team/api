@@ -1,5 +1,4 @@
-====== 表单上传 - PostFile ======
-{{indexmenu_n>35}}
+# 表单上传 - PostFile 
 
 表单上传文件
 
@@ -9,17 +8,18 @@ Requests
 
 Syntax:
 
-<code>
+```
 POST / HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Content-Type: multipart/form-data; boundary=----UCloudPOSTFormTestBoundary
 Content-Length: <length>
 
 <file_content>
-</code>
+```
 Request Headers
 
-^ Name            ^ Type     ^ Description                                   ^ Required  ^
+| Name            | Type     | Description                                 |Required  |
+|---|---|---|---|
 | Content-Type    | String   | 待上传文件的类型,必须为multipart/form-data               | Yes       |
 | Content-Length  | Integer  | 请求body的长度                                     | Yes       |
 | Content-MD5     | String   | 文件内容的MD5摘要，为了保证数据的完整性，建议要配置Content-MD5并检查一致性  | No        |
@@ -27,7 +27,8 @@ Request Headers
 
 Request Parameters
 
-^Name         ^Type  ^Description    ^Required^
+|Name         |Type  |Description    |Required|
+|---|---|---|---|
 |FileName     |String|Bucket中文件的名称   |Yes     |
 |Authorization|String|上传请求的授权签名      |Yes     |
 |Content-Type |String|上传文件本身的MimeType|No      |
@@ -40,7 +41,8 @@ Responses
 
 Response Headers
 
-^Name          ^Type   ^Description     ^
+|Name          |Type   |Description     |
+|---|---|---|
 |Content-Type  |String |响应body部分的类型     |
 |Content-Length|Integer|响应body部分的大小     |
 |ETag          |String |完成上传的文件的哈希值     |
@@ -48,7 +50,8 @@ Response Headers
 
 Response Elements
 
-^Name   ^Type   ^Description^
+|Name   |Type   |Description|
+|---|---|---|
 |RetCode|Integer|执行失败时的错误代码 |
 |ErrMsg |String |执行失败时的错误消息 |
 
@@ -58,7 +61,7 @@ Example
 
 Example Request:
 
-<code>
+```
 POST / HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Content-MD5: c5371fe3624d438cd8a59420a3221978
@@ -78,13 +81,13 @@ Content-Type: image/jpeg
 
 <file_content>
 ------UCloudPOSTFormBoundary--
-</code>
+```
 Example Response:
 
-<code>
+```
 HTTP/1.1 200 OK
 Content-Length: 0
 ETag: AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH
-</code>
+```
 
 
