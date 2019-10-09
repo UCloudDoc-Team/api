@@ -1,8 +1,9 @@
-{{indexmenu_n>10}}
 
-====== 省份和运营商列表 ======
 
-^ 省份名称     ^ API名称            ^
+# 省份和运营商列表 
+
+| 省份名称     |API名称            |
+|---|---|
 | 福建省     |fujian        |
 |广东省      |guangdong|
 |北京市       |beijing |
@@ -38,7 +39,8 @@
 |江西省        |jiangxi |
 |湖南省        |hunan |
 
-^ 运营商名称     ^ API名称            ^
+| 运营商名称     | API名称            |
+|---|---|
 |移动   |yidong|
 |电信   |dianxin|
 |联通   |liantong|
