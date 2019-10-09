@@ -23,17 +23,17 @@
 
 取uredis价格信息-[DescribeURedisPrice](describe_u_redis_price.md)
 
-修改名称-[[api:umem-api:modify_group_name|ModifyURedisGroupName]]
+修改名称-[ModifyURedisGroupName](modify_group_name.md)
 
-调整容量-[[api:umem-api:resize_group|ResizeURedisGroup]]
+调整容量-[ResizeURedisGroup](resize_group.md)
 
-删除主备redis-[[api:umem-api:delete_group|DeleteURedisGroup]]
+删除主备redis-[DeleteURedisGroup](delete_group.md)
 
-查询主备redis备份-[[api:umem-api:describe_backup|DescribeURedisBackup]]
+查询主备redis备份-[DescribeURedisBackup](describe_backup.md)
 
 获取主备Redis备份下载链接-[[api:umem-api:describe_backup_url|DescribeURedisBackupURL]]
 
-获取uredis升级价格信息-[[api:umem-api:describe_u_redis_upgrade_price|DescribeURedisUpgradePrice]]
+获取uredis升级价格信息-[DescribeURedisUpgradePrice](describe_u_redis_upgrade_price.md)
 
 查询主备Redis-[[api:umem-api:describe_group|DescribeURedisGroup]]
 
