@@ -9,6 +9,7 @@
 * MachineType枚举
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
+|---|---|---|---|---|
 | MachineType = N                  | 通用型          | Intel/Auto, \\ Intel/IvyBridge，\\ Intel/Haswell，\\ Intel/Broadwell，\\ Intel/Skylake  | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘/SSD云盘 \\ SSD本地盘 + SSD本地盘  |
 | MachineType = C                  | 高主频型         | Intel/Auto, \\ Intel/Skylake                                                         | 1C1G-32C128G                                                                                | SSD本地盘 + SSD本地盘 \\ SSD云盘 + 普通云盘/SSD云盘                   |
 | MachineType = G, GpuType = V100  | GPU型 - V100  | Intel/Auto,\\ Intel/Broadwell                                                        | 4C 8G,16G + 1颗GPU\\ 8C 16G,32G + 1颗/2颗GPU\\ 16C 32G,64G + 2颗/4颗GPU \\ 32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘\\ SSD云盘 + 普通云盘/SSD云盘                    |
@@ -23,7 +24,8 @@
 
 * UHostType枚举 
 
-| 传递值  | 机型          | 所属系列           | 配置范围 | 可选磁盘（系统盘+数据盘）    |
+| 传递值  | 机型          | 所属系列           | 配置范围 | 可选磁盘（系统盘+数据盘）    | 
+|---|---|---|---|---|
 | N3   | 标准型 N3      | 系列3 - Skylake  | 1C1G-32C128G  | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘 \\ SSD云盘 + SSD云盘 |
 | C1   | 高主频型 C1      | 系列3 - Skylake  | 1C1G-32C128G  | SSD本地盘 + SSD本地盘 \\ SSD云盘 + SSD云盘 |
 | N2   | 标准型 N2      | 系列2 - Broadwell  | 1C1G-32C128G  | 普通本地盘 + 普通本地盘 \\ SSD云盘 + 普通云盘 \\ SSD云盘 + SSD云盘 |
