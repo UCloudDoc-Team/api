@@ -33,8 +33,8 @@
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
 |IPv6Feature|bool|true:有ipv6特性；false，没有ipv6特性|**Yes**|
 |UHostId|string|UHost实例ID|No|
-|UHostType|string|【建议不再使用】云主机机型（旧）。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
-|MachineType|string|云主机机型（新）。参考[[api:uhost-api:uhost_type#主机概念20版本|云主机机型说明]]。|No|
+|UHostType|string|【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
+|MachineType|string|云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。|No|
 |StorageType|string|【建议不再使用】主机磁盘类型。 枚举值为：\\ > LocalDisk，本地磁盘; \\ > UDisk 云盘。\\只要有一块磁盘为本地盘，即返回LocalDisk。|No|
 |ImageId|string|【建议不再使用】主机的系统盘ID。|No|
 |BasicImageId|string|基础镜像ID（指当前自定义镜像的来源镜像）|No|
