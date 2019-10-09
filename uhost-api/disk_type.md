@@ -26,7 +26,7 @@
 | G   | GPU型 G  | SSD本地盘 + SSD本地盘  <br> SSD云盘 + SSD云盘   |
 | O   | 快杰型 O   | SSD云盘 + RSSD本地盘  |
 
-===== 机型与磁盘关系（V1.0概念-UHostType） =====
+### 机型与磁盘关系（V1.0概念-UHostType） 
 
 | MachineType枚举值  | 机型           | 可选磁盘（系统盘+数据盘）                      |
 |---|---|--|
