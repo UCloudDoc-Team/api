@@ -31,7 +31,7 @@
 
 查询主备redis备份-[DescribeURedisBackup](describe_backup.md)
 
-获取主备Redis备份下载链接-[[api:umem-api:describe_backup_url|DescribeURedisBackupURL]]
+获取主备Redis备份下载链接-[DescribeURedisBackupURL](describe_backup_url.md)
 
 获取uredis升级价格信息-[DescribeURedisUpgradePrice](describe_u_redis_upgrade_price.md)
 
@@ -41,13 +41,13 @@
 #分布式Redis，请使用以下API组
 说明：分布式memcache已下线
 	
-获取空间状态-[[api:umem-api:get_space_state|GetUMemSpaceState]]
+获取空间状态-[GetUMemSpaceState](get_space_state.md)
 
-获取价格-[[api:umem-api:describe_price|DescribeUMemPrice]]
+获取价格-[DescribeUMemPrice](describe_price.md)
 	
-修改名称-[[api:umem-api:modify_space_name|ModifyUMemSpaceName]]
+修改名称-[ModifyUMemSpaceName](modify_space_name.md)
 
-删除空间-[[api:umem-api:delete_space|DeleteUMemSpace]]
+删除空间-[DeleteUMemSpace](delete_space.md)
 
 调整容量-[[api:umem-api:resize_space|ResizeUMemSpace]]
 
