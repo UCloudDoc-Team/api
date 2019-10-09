@@ -34,7 +34,7 @@ Request Parameters
 |Content-Type |String|上传文件本身的MimeType|No      |
 
 <HTML><blockquote>
-  * **注意:**     - 以上参数是在form表单中的参数。
+   **注意:**     - 以上参数是在form表单中的参数。
     - POST 表单上传时签名使用的是 form 表单参数的 Content-Type(即上传文件本身的 mimetype), 而非本次 HTTP 请求的 Content-Type。
 </blockquote></HTML>
 Responses
