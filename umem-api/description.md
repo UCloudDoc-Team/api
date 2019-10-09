@@ -19,9 +19,9 @@
 
 #主备版Redis产品，请使用以下API组
 
-创建主备redis-[[api:umem-api:create_group|CreateURedisGroup]]
+创建主备redis-[CreateURedisGroup](create_group)
 
-取uredis价格信息-[[api:umem-api:describe_u_redis_price|DescribeURedisPrice]]
+取uredis价格信息-[DescribeURedisPrice](describe_u_redis_price)
 
 修改名称-[[api:umem-api:modify_group_name|ModifyURedisGroupName]]
 
