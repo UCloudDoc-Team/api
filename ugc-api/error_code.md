@@ -1,6 +1,7 @@
-{{indexmenu_n>200}}
-======错误码=======
+
+# 错误码
 | Http状态码  | Message                     | 错误说明                               |
+|---|---|---|
 | 43000    | ConnectDBError              | 内部错误                               |
 | 43001    | GetDBConfigError            | 内部错误                               |
 | 43002    | DBFindError                 | 内部错误                               |
