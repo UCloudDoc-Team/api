@@ -12,9 +12,9 @@
 
 删除单机Memcache-[DeleteUMemcacheGroup](delete_umemcache_group.md)
 
-显示Memcache-[[api:umem-api:describe_umemcache_group|DescribeUMemcacheGroup]]
+显示Memcache-[DescribeUMemcacheGroup](describe_umemcache_group.md)
 
-创建单机Memcache-[[api:umem-api:create_umemcache_group|CreateUMemcacheGroup]]
+创建单机Memcache-[CreateUMemcacheGroup](create_umemcache_group)
 
 
 #主备版Redis产品，请使用以下API组
