@@ -13,7 +13,12 @@ note
 |Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |FWId|string|防火墙资源ID|**Yes**|
-|Rule.n|string|防火墙规则，例如：TCP|22|192.168.1.1/22|DROP|LOW|禁用22端口，第一个参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DROP（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该条规则的自定义备注|**Yes**|
+|Rule.n|string|防火墙规则，请见下方说明。|**Yes**|
+
+Rule.n字段说明：防火墙规则，例如：TCP|22|192.168.1.1/22|DROP|LOW|禁用22端口，第一个
+参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DRO
+P（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该
+条规则的自定义备注
 
 # Response Elements
 |Parameter name|Type|Description|Required|
