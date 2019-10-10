@@ -14,7 +14,7 @@
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |UHostId|string|UHost实例ID。 参见 [DescribeUHostInstance](describe_uhost_instance.html)。|**Yes**|
-|DiskSpace|int|磁盘大小，单位GB，步长为10。取值范围需大于当前磁盘大小，最大值请参考[[api:uhost-api:disk_type|磁盘类型]]。|**Yes**|
+|DiskSpace|int|磁盘大小，单位GB，步长为10。取值范围需大于当前磁盘大小，最大值请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
 |DiskId|string|磁盘ID。参见 [DescribeUHostInstance](describe_uhost_instance.html)返回值中的DiskSet。|**Yes**|
 
 # Response Elements

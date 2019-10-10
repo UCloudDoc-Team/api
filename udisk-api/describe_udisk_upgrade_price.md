@@ -12,7 +12,7 @@
 |SourceId|string|升级目标UDisk ID|**Yes**|
 |UDataArkMode|string|是否打开数据方舟, 打开"Yes",关闭"No", 默认关闭|No|
 |DiskType|string|磁盘类型，SSDDataDisk:ssd数据盘,DataDisk:普通数据盘,SystemDisk:普通系统盘,SSDSystemDisk:ssd系统盘。默认为DataDisk|No|
-|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
+|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

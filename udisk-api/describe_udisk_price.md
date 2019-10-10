@@ -14,7 +14,7 @@
 |UDataArkMode|string|是否打开数据方舟, 打开"Yes",关闭"No", 默认关闭|No|
 |DiskType|string|UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），RSSDDataDisk（RSSD数据盘），默认值（DataDisk）|No|
 |IsTotalPrice|string|是否将数据方舟，云硬盘放入一张订单, 是："Yes",否："No"，默认是"No"|No|
-|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
+|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

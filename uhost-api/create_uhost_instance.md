@@ -9,16 +9,16 @@
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |ImageId|string|镜像ID。 请通过 [DescribeImage](describe_image.html)获取|**Yes**|
-|Password|string|UHost密码。请遵照[[api:uhost-api:specification|字段规范]]设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 | base64UGFzc3dvcmQx。|**Yes**|
-|Disks.N.IsBoot|string|是否是系统盘。枚举值：\\ > True，是系统盘 \\ > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
-|Disks.N.Type|string|磁盘类型。请参考[[api:uhost-api:disk_type|磁盘类型]]。|**Yes**|
-|Disks.N.Size|int|磁盘大小，单位GB。请参考[[api:uhost-api:disk_type|磁盘类型]]。|**Yes**|
+|Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 | base64UGFzc3dvcmQx。|**Yes**|
+|Disks.N.IsBoot|string|是否是系统盘。枚举值：<br> > True，是系统盘 <br> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
+|Disks.N.Type|string|磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
+|Disks.N.Size|int|磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
 |LoginMode|string|主机登陆模式。密码（默认选项）: Password。|**Yes**|
-|Name|string|UHost实例名称。默认：UHost。请遵照[[api:uhost-api:specification|字段规范]]设定实例名称。|No|
-|Tag|string|业务组。默认：Default（Default即为未分组）。请遵照[[api:uhost-api:specification|字段规范]]设定业务组。|No|
-|ChargeType|string|计费模式。枚举值为： \\ > Year，按年付费； \\ > Month，按月付费；\\ > Dynamic，按小时付费 \\ 默认为月付|No|
+|Name|string|UHost实例名称。默认：UHost。请遵照[字段规范](api/uhost-api/specification)设定实例名称。|No|
+|Tag|string|业务组。默认：Default（Default即为未分组）。请遵照[字段规范](api/uhost-api/specification)设定业务组。|No|
+|ChargeType|string|计费模式。枚举值为： <br> > Year，按年付费； <br> > Month，按月付费；<br> > Dynamic，按小时付费 <br> 默认为月付|No|
 |Quantity|int|购买时长。默认:值 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表购买至月末。|No|
-|UHostType|string|【建议后续不再使用】云主机机型V1.0。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
+|UHostType|string|【建议后续不再使用】云主机机型V1.0。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 |CPU|int|虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。|No|
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192|No|
 |GpuType|string|GPU类型，枚举值["K80", "P40", "V100"]|No|
@@ -41,14 +41,14 @@
 |HostType|string|【已废弃】宿主机类型，N2，N1|No|
 |InstallAgent|string|【暂不支持】是否安装UGA。'yes': 安装；其他或者不填：不安装。|No|
 |ResourceType|int|【内部参数】资源类型|No|
-|Disks.N.BackupType|string|磁盘备份方案。枚举值：\\ > NONE，无备份 \\ > DATAARK，数据方舟 \\ 当前磁盘支持的备份模式参考 [[api:uhost-api:disk_type|磁盘类型]]|No|
+|Disks.N.BackupType|string|磁盘备份方案。枚举值：<br> > NONE，无备份 <br> > DATAARK，数据方舟 <br> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type)|No|
 |IsolationGroup|string|硬件隔离组id。可通过DescribeIsolationGroup获取。|No|
 |Disks.N.Encrypted|bool|【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false加密必须传入对应的的KmsKeyId|No|
 |Disks.N.KmsKeyId|string|【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。|No|
 |Disks.N.CouponId|string|云盘代金券id。不适用于系统盘/本地盘。请通过DescribeCoupon接口查询，或登录用户中心查看|No|
 |AlarmTemplateId|int|告警模板id，如果传了告警模板id，且告警模板id正确，则绑定告警模板。绑定告警模板失败只会在后台有日志，不会影响创建主机流程，也不会在前端报错。|No|
 |MinimalCpuPlatform|string|最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake"。|No|
-|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O"]。参考[[api:uhost-api:uhost_type|云主机机型说明]]。|No|
+|MachineType|string|云主机机型（V2.0），枚举值["N", "C", "G", "O"]。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 |MaxCount|int|【批量创建主机时必填】最大创建主机数量，取值范围是[1,100];|No|
 |NetworkInterface.N.EIP.Bandwidth|int|【如果绑定EIP这个参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800]|No|
 |NetworkInterface.N.EIP.PayMode|string|弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式.默认为 "Bandwidth".|No|

@@ -26,7 +26,7 @@
 |Zone|string|可用区，参见 [可用区列表](../summary/regionlist.html)|No|
 |PHostId|string|PHost资源ID|No|
 |SN|string|物理机序列号|No|
-|PMStatus|string|物理云主机状态。枚举值：\\ > 初始化:Initializing; \\ > 启动中：Starting； \\ > 运行中：Running；\\ > 关机中：Stopping； \\ > 安装失败：InstallFailed； \\ > 重启中：Rebooting；\\ > 关机：Stopped；|No|
+|PMStatus|string|物理云主机状态。枚举值：<br> > 初始化:Initializing; <br> > 启动中：Starting； <br> > 运行中：Running；<br> > 关机中：Stopping； <br> > 安装失败：InstallFailed； <br> > 重启中：Rebooting；<br> > 关机：Stopped；|No|
 |Name|string|物理机名称|No|
 |Remark|string|物理机备注|No|
 |Tag|string|业务组|No|
