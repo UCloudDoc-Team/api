@@ -9,7 +9,7 @@
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |ImageId|string|镜像ID。 请通过 [DescribeImage](describe_image.html)获取|**Yes**|
-|Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 | base64UGFzc3dvcmQx。|**Yes**|
+|Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码|**Yes**|
 |Disks.N.IsBoot|string|是否是系统盘。枚举值：<br> > True，是系统盘 <br> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
 |Disks.N.Type|string|磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
 |Disks.N.Size|int|磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
