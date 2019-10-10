@@ -1,12 +1,12 @@
 
 
-*【参考】云主机机型 
+# 【参考】云主机机型 
 
-* 主机概念2.0版本
+## 主机概念2.0版本
 
 主机概念2.0采用 MachineType + MinimalCpuPlatform的模式进行调用以创建主机，若不传递MinimalCpuPlatform，默认采用Intel/Auto（自动分配）。
 
-* MachineType枚举
+## MachineType枚举
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
 |---|---|---|---|---|
@@ -18,11 +18,11 @@
 
 具体机型信息请参考 [机型与CPU平台](compute/uhost/introduction/uhost/type_new.md)不同机房的主机类型支持情况不同。详情请参考控制台。
 
-* 主机概念1.0版本
+## 主机概念1.0版本
 
 机型概念1.0通过传入UHostType，即可创建指定机型。
 
-* UHostType枚举 
+## UHostType枚举 
 
 | 传递值  | 机型          | 所属系列           | 配置范围 | 可选磁盘（系统盘+数据盘）    | 
 |---|---|---|---|---|
@@ -38,6 +38,6 @@
 
 具体机型信息请参考 [机型与规格](compute/uhost/introduction/uhost/type)。不同机房的主机类型支持情况不同。详情请参考控制台。
 
-* UHostType默认值 
+## UHostType默认值 
 
 北京A、北京C、上海二A、香港A可用区默认N1，其他机房默认N2。
