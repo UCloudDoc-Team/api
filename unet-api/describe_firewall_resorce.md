@@ -27,7 +27,7 @@
 |PrivateIP|string|内网IP|No|
 |Remark|string|备注|No|
 |ResourceID|string|绑定该防火墙的资源id|No|
-|ResourceType|string|绑定资源的资源类型，如"uhost","upm","umem","uhive","uvip","uredis","uhadoop","ufortress","dbaudit","udw","udocker", "umemcache"|No|
+|ResourceType|string|绑定防火墙组的资源类型。"unatgw"，NAT网关； "uhost"，云主机； "upm"，物理云主机； "hadoophost"，hadoop节点； "fortresshost"，堡垒机； "udhost"，私有专区主机；"udockhost"，容器；"dbaudit"，数据库审计.|No|
 |Status|int|状态|No|
 |Tag|string|业务组|No|
 
