@@ -13,8 +13,8 @@
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参照好控制台）。默认值：8192|**Yes**|
 |Count|int|购买台数，范围[1,5]|**Yes**|
 |Disks.N.IsBoot|string|是否是系统盘。枚举值：<br> > True，是系统盘 <br> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
-|Disks.N.Size|int|磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
-|Disks.N.Type|string|磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
+|Disks.N.Size|int|磁盘大小，单位GB。请参考[磁盘类型](api/summary/regionlist.html)。|**Yes**|
+|Disks.N.Type|string|磁盘类型。请参考[磁盘类型](api/summary/regionlist.html)。|**Yes**|
 |GPU|int|GPU卡核心数。仅GPU机型支持此字段。|No|
 |ChargeType|string|计费模式。枚举值为： <br> > Year，按年付费； <br> > Month，按月付费；<br> > Dynamic，按小时付费 <br> 默认为月付。|No|
 |StorageType|string|【待废弃】磁盘类型，同时设定系统盘和数据盘， 枚举值为：LocalDisk，本地磁盘; UDisk，云硬盘; 默认为LocalDisk 仅部分可用区支持云硬盘方式的主机存储方式，具体请查询控制台。|No|
