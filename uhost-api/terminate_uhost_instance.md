@@ -9,10 +9,10 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
-|UHostId|string|UHost资源Id 参见 [DescribeUHostInstance](describe_uhost_instance.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
+|UHostId|string|UHost资源Id 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance)|**Yes**|
 |Destroy|int|是否直接删除，0表示按照原来的逻辑（有回收站权限，则进入回收站），1表示直接删除|No|
 |ReleaseEIP|bool|是否释放绑定的EIP。true: 解绑EIP后，并释放；其他值或不填：解绑EIP。|No|
 |ReleaseUDisk|bool|是否删除挂载的数据盘。true删除，其他不删除。|No|

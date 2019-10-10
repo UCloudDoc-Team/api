@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |UGAId|string|全球加速实例ID|**Yes**|
 
 # Response Elements

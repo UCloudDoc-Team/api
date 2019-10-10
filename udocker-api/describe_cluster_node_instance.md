@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |ClusterId|string|集群实例Id |**Yes**|
 |NodeIds.n|string|节点实例ID, 如果为空, 则返回当前Cluster所有符合条件的节点；n=0,1,2...|No|
 |Offset|int|数据偏移量, 默认为0|No|

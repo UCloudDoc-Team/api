@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |DBId|string|主节点的Id|**Yes**|
 |BackupTime|int|备份的整点时间，范围[0,23]|No|
 |BackupDate|string|备份时期标记位。共7位，每一位为一周中一天的备份情况，0表示关闭当天备份，1表示打开当天备份。最右边的一位为星期天的备份开关，其余从右到左依次为星期一到星期六的备份配置开关，每周必须至少设置两天备份。例如：1100000表示打开星期六和星期五的备份功能|No|

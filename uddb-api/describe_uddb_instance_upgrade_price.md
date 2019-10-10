@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |UDDBId|string|UDDB实例ID|**Yes**|
 |RouterVersion|string|UDDB路由节点的版本。分为三种： Trival(免费版)： 2中间件节点； QPS：1.5WFeelFree(标准版)： 固定为4中间件节点，后续将根据业务请求量自动扩展，最多扩展到12个节点，QPS为3w - 10w；EnjoyAlone(物理机版)：专享物理机，节点数让客户可选|**Yes**|
 |RouterNodeNum|int|其他版本：该参数可不填；专享版：物理机节点的个数。一台物理机有2个节点|**Yes**|

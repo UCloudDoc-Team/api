@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |MemoryLimit|int|内存限制(MB)，单位为MB.目前支持：1000-96000|**Yes**|
 |DiskSpace|int|磁盘空间(GB),暂时支持20(GB) - 3000(GB), 输入不带单位|**Yes**|
 |DBTypeId|string|UDB实例的DB版本字符串|**Yes**|

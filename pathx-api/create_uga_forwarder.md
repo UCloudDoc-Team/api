@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。 请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |UGAId|string|UGA 加速实例ID|**Yes**|
 |HTTPHTTP.n|int|HTTP接入HTTP回源转发，接入端口|No|
 |HTTPHTTPRS.n|int|HTTP接入HTTP回源转发，源站监听端口， 默认为接入端口|No|

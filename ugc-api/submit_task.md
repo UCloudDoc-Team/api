@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ImageName|string|任务使用的镜像名|**Yes**|
 |AccessToken|string|授权Token	|**Yes**|
 |Cmd|string|docker镜像运行参数	|No|

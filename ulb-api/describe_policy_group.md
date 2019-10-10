@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |GroupId|string|内容转发策略组ID|No|
 |Offset|int|数据偏移量，默认值为0|No|
 |Limit|int|数据分页值，默认为20|No|

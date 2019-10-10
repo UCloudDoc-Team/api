@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |BucketName|string|Docker镜像仓库名称，不填返回所有的镜像仓库|No|
 |BucketType|string|All：用户所有可见的仓库， User：用户个人创建的仓库 ， Share：第三方公开镜像， 默认值：All|No|
 |OrderBy|string|Default: 默认排序|No|

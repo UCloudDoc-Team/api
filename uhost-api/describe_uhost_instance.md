@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |UHostIds.N|string|【数组】UHost主机的资源ID，例如UHostIds.0代表希望获取信息 的主机1，UHostIds.1代表主机2。 如果不传入，则返回当前Region 所有符合条件的UHost实例。|No|
 |Tag|string|要查询的业务组名称|No|
 |LifeCycle|int|1：普通云主机；2：抢占型云主机；如不传此参数，默认全部获取|No|
@@ -30,7 +30,7 @@
 ## UHostInstanceSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
 |IPv6Feature|bool|true:有ipv6特性；false，没有ipv6特性|**Yes**|
 |UHostId|string|UHost实例ID|No|
 |UHostType|string|【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|

@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Name|string|实例名称，至少6位|**Yes**|
 |AdminPassword|string|管理员密码|**Yes**|
 |DBTypeId|string|DB类型id，mysql/mongodb/postgesql按版本细分 1：mysql-5.1，2：mysql-5.5，3：percona-5.5，4：mysql-5.6，5：percona-5.6，6：mysql-5.7，7：percona-5.7，8：mariadb-10.0，9：mongodb-2.4，10：mongodb-2.6，11：mongodb-3.0，12：mongodb-3.2,13：postgresql-9.4，14：postgresql-9.6，14：postgresql-10.4|**Yes**|
@@ -28,7 +28,7 @@
 |UDBCId|string|专区ID信息（如果这个参数存在这说明是在专区中创建DB）|No|
 |CPU|int|cpu核数|No|
 |InstanceType|string|UDB数据库机型|No|
-|BackupZone|string|跨可用区高可用备库所在可用区，参见 [可用区列表](../summary/regionlist.html)|No|
+|BackupZone|string|跨可用区高可用备库所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |SubnetId|string|子网ID|No|
 |VPCId|string|VPC的ID|No|
 |DisableSemisync|bool|是否开启异步高可用，默认不填，可置为true|No|

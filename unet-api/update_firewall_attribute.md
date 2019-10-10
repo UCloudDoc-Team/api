@@ -9,8 +9,8 @@ note在更新防火墙属性时，新的属性会覆盖掉原有属性。
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |FWId|string|防火墙资源ID|**Yes**|
 |Name|string|防火墙名称，默认为空，为空则不做修改。Name,Tag,Remark必须填写1个及以上|No|
 |Tag|string|防火墙业务组，默认为空，为空则不做修改。Name,Tag,Remark必须填写1个及以上|No|

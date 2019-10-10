@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目id|No|
 |GroupName|string|硬件隔离组名称。请遵照[字段规范](api/uhost-api/specification)设定隔离组名称。|**Yes**|
 |Remark|string|备注。请遵照[字段规范](api/uhost-api/specification)设定隔离组备注。|No|

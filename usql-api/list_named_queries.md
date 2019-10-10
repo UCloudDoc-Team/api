@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目ID，不填则为默认项目|No|
 |Limit|int|返回的SQL查询记录上限，默认值为20|No|
 |Offset|int|SQL查询记录开始位置，默认值为0|No|

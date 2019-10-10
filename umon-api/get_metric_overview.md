@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目ID，不填为默认项目。子账户必须填写项目ID|No|
 |ResourceType|string|资源类型|**Yes**|
 |MetricName.n|string|监控指标名称，若省略则返回所有监控指标数据|No|

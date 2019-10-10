@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Type|int|带宽查询粒度，0：5分钟；1：1小时；2：1天；	 3：1分钟|**Yes**|
 |DomainId.n|string|域名ID，创建域名时生成的ID，不传则获取所有|No|
 |Domain.n|string|域名,没有则获取域名id下的所有域名带宽和|No|

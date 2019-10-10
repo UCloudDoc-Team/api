@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |HostIds.n|string|资源池的短ID, 如果为空, 则返回当前Region所有符合条件的UHost实例，否则返回指定资源池上的所有UHost实例|No|
 |UHostIds.n|string|专区主机的短ID, 如果为空, 则返回指定资源池的UHost实例，否则返回指定主机的实例信息|No|
 |Tag|string|要查询的业务组名称|No|

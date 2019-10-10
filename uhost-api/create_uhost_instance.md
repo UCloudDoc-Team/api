@@ -5,11 +5,19 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+<<<<<<< HEAD
 |Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
 |Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
 |ImageId|string|镜像ID。 请通过 [DescribeImage](describe_image.html)获取|**Yes**|
 |Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码|**Yes**|
+=======
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
+|ImageId|string|镜像ID。 请通过 [DescribeImage](api/uhost-api/describe_image)获取|**Yes**|
+|Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 | base64UGFzc3dvcmQx。|**Yes**|
+>>>>>>> fix
 |Disks.N.IsBoot|string|是否是系统盘。枚举值：<br> > True，是系统盘 <br> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
 |Disks.N.Type|string|磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
 |Disks.N.Size|int|磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
@@ -36,7 +44,7 @@
 |SubnetId|string|子网 ID。默认为当前地域的默认子网。|No|
 |PrivateIp.N|string|【数组】创建云主机时指定内网IP。若不传值，则随机分配当前子网下的IP。调用方式举例：PrivateIp.0=x.x.x.x。当前只支持一个内网IP。|No|
 |PrivateMac|string|【批量创建该参数无效】【内部字段】创建云主机时指定Mac。调用方式举例：PrivateMac="xx:xx:xx:xx:xx:xx"。|No|
-|SecurityGroupId|string|防火墙Id，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeSecurityGroup](../unet-api/describe_security_group.html)。|No|
+|SecurityGroupId|string|防火墙Id，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeSecurityGroup](api/unet-api/describe_security_group)。|No|
 |UserDataScript|string|【暂不支持】cloudinit方式下，用户初始化脚本|No|
 |HostType|string|【已废弃】宿主机类型，N2，N1|No|
 |InstallAgent|string|【暂不支持】是否安装UGA。'yes': 安装；其他或者不填：不安装。|No|

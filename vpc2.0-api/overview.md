@@ -1,6 +1,6 @@
 # 概览
 * [更新子网信息-UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)
-* [更新VPC网段-UpdateVPCNetwork](api/vpc2.0-api/update_vpc_network)
+* [修改VPC地址空间-UpdateVPCNetwork](api/vpc2.0-api/update_vpc_network)
 * [添加NAT网关白名单-AddWhiteListResource](api/vpc2.0-api/add_white_list_resource)
 * [删除子网-DeleteSubnet](api/vpc2.0-api/delete_subnet)
 * [获取子网信息-DescribeSubnet](api/vpc2.0-api/describe_subnet)

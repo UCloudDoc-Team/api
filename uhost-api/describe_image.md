@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |ImageType|string|镜像类型。标准镜像：Base，镜像市场：Business， 自定义镜像：Custom，默认返回所有类型|No|
 |OsType|string|操作系统类型：Linux， Windows 默认返回所有类型|No|
 |ImageId|string|镜像Id|No|
@@ -26,7 +26,7 @@
 ## UHostImageSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|可用区，参见 [可用区列表](../summary/regionlist.html) ||No|
+|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist) ||No|
 |ImageId|string|镜像ID|No|
 |ImageName|string|镜像名称|No|
 |OsType|string|操作系统类型：Liunx，Windows|No|

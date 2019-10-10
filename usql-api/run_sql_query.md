@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目ID，不填则为默认项目|No|
 |DatabaseName|string|数据库名称|**Yes**|
 |QueryString|string|SQL查询语句|**Yes**|

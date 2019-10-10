@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |UDPNId|string|UDPN Id|**Yes**|
 |Bandwidth|int|调整后专线带宽, 单位为Mbps，取值范围为大于等于2且小于等于1000([2-1000])的整数|**Yes**|
 |CouponId|string|代金劵 ID|No|

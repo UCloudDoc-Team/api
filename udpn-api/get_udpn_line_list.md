@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|No|
 
 ```
 两个端点peer1和peer2之间的线路不一定支持，调用GetUDPNLineList查询支持线路

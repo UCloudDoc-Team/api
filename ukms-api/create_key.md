@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Description|string|主密钥的描述信息, 长度不能超过 8192 个字符|No|
 |Alias|string|别名，可为空，不能以ucloud/(不区分大小写)开头的保留别名，限制长度36字符，相同项目下别名不能重复|No|
 

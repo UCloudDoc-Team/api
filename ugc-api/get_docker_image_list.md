@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |BucketName|string|Docker镜像仓库名称|**Yes**|
 |OrderBy|string|Default: 默认排序|No|
 |Limit|int|返回数据长度，默认为20|No|

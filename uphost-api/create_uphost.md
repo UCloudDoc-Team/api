@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |ImageId|string|镜像资源id,参见describephostimage|**Yes**|
 |Password|string|密码|**Yes**|
 |Type|string|物理机类型，默认为：db-2(数据库型32核)|No|
@@ -17,7 +17,7 @@
 |ChargeType|string|计费模式，枚举值为：year, 按年付费； month,按月付费；dynamic，按需付费，（需开启权限） trial, 试用（需开启权限）。默认为按月付费|No|
 |Quantity|string|购买时长，默认为1，范围[1-10]|No|
 |Count|int|购买数量，默认为1,范围[1-5]|No|
-|SecurityGroupId|string|防火墙Id，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeSecurityGroup](../unet-api/describe_security_group.html)|No|
+|SecurityGroupId|string|防火墙Id，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeSecurityGroup](api/unet-api/describe_security_group)|No|
 |Raid|string|Raid配置，默认Raid10|No|
 |VPCId|string|VPC ID，不填为默认，VPC2.0下需要填写此字段。|No|
 |SubnetId|string|子网ID，不填为默认，VPC2.0下需要填写此字段。|No|

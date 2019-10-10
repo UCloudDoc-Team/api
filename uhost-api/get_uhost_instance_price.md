@@ -5,10 +5,10 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
-|ImageId|string|镜像Id，可通过 [DescribeImage](describe_image.html) 获取镜像ID|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
+|ImageId|string|镜像Id，可通过 [DescribeImage](api/uhost-api/describe_image) 获取镜像ID|**Yes**|
 |CPU|int|CPU核数。可选参数：1-64。可选范围参照控制台。默认值: 4|**Yes**|
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参照好控制台）。默认值：8192|**Yes**|
 |Count|int|购买台数，范围[1,5]|**Yes**|

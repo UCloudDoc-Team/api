@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID，请参考[GetProjectList接口](../summary/get_project_list.html)的描述。|**Yes**|
+|ProjectId|string|项目ID，请参考[GetProjectList接口](api/summary/get_project_list)的描述。|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

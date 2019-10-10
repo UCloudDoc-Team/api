@@ -14,8 +14,8 @@ Shutoff: 已关闭
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
 |UDDBId|string|UDDB实例ID|**Yes**|
 |DataNodeMemory|int|新的数据节点的内存配置, 单位：MB 具体数值参考UDB的内存取值|**Yes**|
 |DataNodeDiskSpace|int|新的数据节点的磁盘大小配置. 单位: GB 具体数值参考UDB的磁盘大小取值.|**Yes**|

@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |Bandwidth|int|带宽大小(单位Mbps), 取值范围[2,800] (最大值受地域限制)|**Yes**|
 |EIPId|string|所绑定弹性IP的资源ID|**Yes**|
 |TimeRange|int|带宽包有效时长, 取值范围为大于0的整数, 即该带宽包在EnableTime到 EnableTime+TimeRange时间段内生效|**Yes**|

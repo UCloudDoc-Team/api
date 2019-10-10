@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目id|**Yes**|
 |BeginTime|string|开始时间戳|**Yes**|
 |EndTime|string|结束时间戳|**Yes**|

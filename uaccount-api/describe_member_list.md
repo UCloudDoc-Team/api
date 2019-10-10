@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID，请参考[GetProjectList接口](../summary/get_project_list.html)。不填写为查询所有项目。|No|
+|ProjectId|string|项目ID，请参考[GetProjectList接口](api/summary/get_project_list)。不填写为查询所有项目。|No|
 |Offset|string|成员列表的偏移量，默认为0|No|
 |Limit|string|成员列表的最大数量，默认为200|No|
 

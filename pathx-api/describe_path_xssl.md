@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |SSLId|string|SSL证书的Id，不传分页获取证书列表|No|
 |SearchValue|string|不为空则按证书名称、证书域名模糊搜索 分页返回结果|No|
 |Limit|int|最大返回条数，默认100，最大400|No|

@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |KeyId|string|调用CreateMasterKey生成的CMK全局唯一标识符|**Yes**|
 |Plaintext|string|被加密的明文数据，该字符串必须使用base64编码|**Yes**|
 |EncryptionContext|string|加密时传入的加密上下文, 长度不超过 1024 个字符|No|

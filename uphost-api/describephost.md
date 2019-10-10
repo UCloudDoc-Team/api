@@ -5,9 +5,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |PHostId.n|string|PHost资源ID，若为空，则返回当前Region所有PHost。|No|
 |Offset|int|数据偏移量，默认为0|No|
 |Limit|int|返回数据长度，默认为20|No|
@@ -23,7 +23,7 @@
 ## PHostSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|可用区，参见 [可用区列表](../summary/regionlist.html)|No|
+|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |PHostId|string|PHost资源ID|No|
 |SN|string|物理机序列号|No|
 |PMStatus|string|物理云主机状态。枚举值：<br> > 初始化:Initializing; <br> > 启动中：Starting； <br> > 运行中：Running；<br> > 关机中：Stopping； <br> > 安装失败：InstallFailed； <br> > 重启中：Rebooting；<br> > 关机：Stopped；|No|

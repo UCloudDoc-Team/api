@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Offset|int|数据偏毅力昂，默认0，非负整数|No|
 |Limit|int|返回数据长度，如果制定了Offset，则默认20，否则默认全部，非负整数|No|
 |DomainId.n|string|域名id，创建域名时生成的id，默认获取账号下的所有域名信息，n为自然数|No|

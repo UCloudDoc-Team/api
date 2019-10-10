@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |UGAId|string|全球加速实例ID，如果传了实例ID 最多返回一条记录|No|
 |Limit|int|返回的最大条数，默认为100，最大值400|No|
 |Offset|int|偏移量，默认为0|No|

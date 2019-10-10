@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。 请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |UGAId|string|UGA实例ID。|**Yes**|
 |SSLId|string|SSL证书ID。|**Yes**|
 |Port.n|int|解绑SSL证书的HTTPS端口。Port.0 Port.1格式 端口错误则解绑失败。|**Yes**|

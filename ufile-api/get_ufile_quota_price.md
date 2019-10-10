@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |StorageVolume|int|存储容量，单位: GB*天，范围: [0, 30 000 000]，步长：100GB*天|No|
 |DownloadTraffic|int|下载流量，单位: GB，范围: [0, 60 000]，步长：1GB|No|
 |RequestCount|int|请求次数，单位：万次，范围：[0, 1 000 000]，步长：1万次|No|

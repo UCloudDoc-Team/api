@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID，请参考[GetProjectList接口](../summary/get_project_list.html)的描述。不填写为默认项目，子帐号必须填写。 |**Yes**|
+|ProjectId|string|项目ID，请参考[GetProjectList接口](api/summary/get_project_list)的描述。不填写为默认项目，子帐号必须填写。 |**Yes**|
 |MemberEmail|string|需要被移除成员Email|**Yes**|
 
 # Response Elements

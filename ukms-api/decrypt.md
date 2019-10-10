@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |CiphertextBlob|string|由 GenerateDataKey 或 Encrypt 生成的加密后的数据密钥|**Yes**|
 |EncryptionContext|string|解密时传入的加密上下文，内容必须与请求 GenerateDataKey 或者 Encrypt 时填入的上下文一致，长度不超过 1024 个字符|No|
 

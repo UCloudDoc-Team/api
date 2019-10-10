@@ -1,10 +1,10 @@
 * USMS
     * [概览](api/usms-api/overview)
     * [修改短信签名-UpdateUSMSSignature](api/usms-api/update_usms_signature)
-    * [发送短信-SendUSMSMessage](api/usms-api/send_usms_message)
+    * [发送短信息-SendUSMSMessage](api/usms-api/send_usms_message)
     * [修改短信模板-UpdateUSMSTemplate](api/usms-api/update_usms_template)
     * [删除短信模板-DeleteUSMSTemplate](api/usms-api/delete_usms_template)
-    * [获取短信发送状态-GetUSMSSendReceipt](api/usms-api/get_usms_send_receipt)
+    * [获取短信发送回执信息-GetUSMSSendReceipt](api/usms-api/get_usms_send_receipt)
     * [查询短信模板申请状态-QueryUSMSTemplate](api/usms-api/query_usms_template)
     * [删除短信签名-DeleteUSMSSignature](api/usms-api/delete_usms_signature)
     * [申请短信模板-CreateUSMSTemplate](api/usms-api/create_usms_template)

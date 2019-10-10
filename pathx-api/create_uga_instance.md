@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |Name|string|加速实例名称|**Yes**|
 |IPList|string|加速源IP，多个IP用逗号隔开(,)隔开;IPList和Domain二选一必填|No|
 |Domain|string|加速源域名;IPList和Domain二选一必填|No|

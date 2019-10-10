@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |UHostIds.n|string|UHost主机的资源ID，例如UHostIds.0代表希望升级的主机1，UHostIds.1代表主机2。|**Yes**|
 |CouponId|string|代金券ID 请参考DescribeCoupon接口|No|
 

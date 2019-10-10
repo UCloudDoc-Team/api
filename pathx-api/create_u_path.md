@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](../summary/get_project_list.html)|**Yes**|
+|ProjectId|string|项目ID,如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |Name|string|UPath名字|**Yes**|
 |LineId|string|线路Id|**Yes**|
 |Bandwidth|int|UPath带宽|**Yes**|

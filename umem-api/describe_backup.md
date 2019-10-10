@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Offset|int|分页显示的起始偏移, 默认值为0|No|
 |Limit|int|分页显示的条目数, 默认值为10|No|
 |GroupId|string|组的ID|No|
@@ -23,7 +23,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |BackupId|string|备份ID|No|
-|Zone|string|可用区，参见[可用区列表](../summary/regionlist.html)|No|
+|Zone|string|可用区，参见[可用区列表](api/summary/regionlist)|No|
 |GroupId|string|对应的实例ID|No|
 |GroupName|string|组名称|No|
 |BackupName|string|备份的名称|No|

@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |Size|int|容量大小,单位:GB 取值范围[1-32]|**Yes**|
 |ChargeType|string|计费模式，Year， Month， Dynamic，默认: Dynamic 默认: 获取所有计费模式的价格|No|
 |Quantity|int|购买umemcache的时长，默认值为1|No|

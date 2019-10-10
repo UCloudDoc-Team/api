@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Url.n|string|原始视频地址，只支持http协议，不支持https以及其他协议。单次提交url数量最多为10条。|**Yes**|
 |DestBucket|string|存放转码后视频文件的bucket，需使用bucket全名，如：video.cn-bj.ufileos.com|**Yes**|
 |CodecPattenId.n|string|转码模版Id，单次提交支持最多3个转码模版。下标相同的转码模版、水印模版、片头片尾模版进行组合。|**Yes**|

@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |PattenId|string|模版Id|**Yes**|
 |PattenName|string|模版名称,长度不查过256个字节|**Yes**|
 |WaterMarkType|string|image表示图片水印，text表示文字水印|**Yes**|
