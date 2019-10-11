@@ -21,14 +21,15 @@
 ## ClusterSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|UDWInstanceName|string|数据仓库名称|**Yes**|
-|MasterNodeDomain|string|主节点域名|No|
-|UDWInstanceId|string|数据仓库ID|**Yes**|
-|NodeCount|int|节点个数|**Yes**|
-|ExpireTime|int|计费过期时间|**Yes**|
-|State|string|数据仓库状态|**Yes**|
-|VPCId|string|虚拟私有云(VPC) ID|No|
-|SubnetId|string|VPC中的子网ID|No|
+|ClusterId|string|集群实例ID|**Yes**|
+|UsedMem|int|已使用内存|No|
+|UsedCPU|int|已使用cpu|No|
+|Memory|int|总内存|No|
+|CPU|string|总cpu|No|
+|ClusterName|string|集群名称|No|
+|NodeCount|int|集群中所包含的主机数|No|
+|CreateTime|int|创建时间, 格式为unix时间戳|No|
+|VPCId|string|VPCId|No|
 
 # Request Example
 ```

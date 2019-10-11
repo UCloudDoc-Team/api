@@ -28,9 +28,9 @@
 ## PriceInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ChargeType|string|付费类型|No|
-|Price|float|价格|No|
-|PriceName|string|产品名称|No|
+|PriceName|string|名称|**Yes**|
+|ChargeType|string|付费方式（Year/Month/Dynamic）|**Yes**|
+|Price|int|价格|**Yes**|
 
 # Request Example
 ```

@@ -11,7 +11,6 @@
 |SubnetId|string|子网id，适用于一次查询一个子网信息|No|
 |VPCId|string|VPC资源id|No|
 |Tag|string|业务组名称，默认为Default|No|
-|BusinessId|string|业务组|No|
 |Offset|int|偏移量，默认为0|No|
 |Limit|int|列表长度，默认为20|No|
 

@@ -11,11 +11,7 @@
 |UHostId|string|UHost实例ID。 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance)。|**Yes**|
 |CPU|int|虚拟CPU核数。可选参数：1-64（可选范围参考控制台）。默认值为当前实例的CPU核数。|No|
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值为当前实例的内存大小。|No|
-|DiskSpace|int|【待废弃】数据盘大小，单位: GB，范围[0,1000]，步长: 10， 默认值是该主机当前数据盘大小。|No|
-|BootDiskSpace|int|【待废弃】系统大小，单位: GB，范围[20,100]，步长: 10。|No|
-|TimemachineFeature|string|方舟机型。No，Yes。默认是No。|No|
 |NetCapValue|int|网卡升降级（1，表示升级，2表示降级，0表示不变）|No|
-|HostType|string|【待废弃】主机系列，目前支持N1,N2|No|
 
 ```
 若需查询调整磁盘大小的价格，请调用ResizeAttachedDisk。

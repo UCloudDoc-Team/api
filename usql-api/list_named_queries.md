@@ -9,7 +9,6 @@
 |ProjectId|string|项目ID，不填则为默认项目|No|
 |Limit|int|返回的SQL查询记录上限，默认值为20|No|
 |Offset|int|SQL查询记录开始位置，默认值为0|No|
-|Type|string|【非公开】SQL查询类型， 默认为空时，则用户私有的SQL查询， example时，则为示例SQL|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

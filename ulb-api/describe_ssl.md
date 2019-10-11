@@ -29,6 +29,14 @@
 |CreateTime|int|SSL证书的创建时间|No|
 |SSLBindedTargetSet|array|SSL证书绑定到的对象|No|
 
+## SSLBindedTargetSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|VServerId|string|SSL证书绑定到的VServer的资源ID|No|
+|VServerName|string|对应的VServer的名字|No|
+|ULBId|string|VServer 所属的ULB实例的资源ID|No|
+|ULBName|string|ULB实例的名称|No|
+
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeSSL

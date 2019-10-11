@@ -23,24 +23,11 @@
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192|No|
 |GpuType|string|GPU类型，枚举值["K80", "P40", "V100"]|No|
 |GPU|int|GPU卡核心数。仅GPU机型支持此字段（可选范围与UHostType相关）|No|
-|KeyPair|string|【暂不支持】Keypair公钥，LoginMode为KeyPair时此项必须|No|
-|StorageType|string|【待废弃，不建议调用】磁盘类型，同时设定系统盘和数据盘的磁盘类型。枚举值为：LocalDisk，本地磁盘; UDisk，云硬盘；默认为LocalDisk。仅部分可用区支持云硬盘方式的主机存储方式，具体请查询控制台。|No|
-|BootDiskSpace|int|【待废弃，不建议调用】系统盘大小。 单位：GB， 范围[20,100]， 步长：10|No|
-|DiskSpace|int|【待废弃，不建议调用】数据盘大小。 单位：GB， 范围[0,8000]， 步长：10， 默认值：20，云盘支持0-8000；本地普通盘支持0-2000；本地SSD盘（包括所有GPU机型）支持100-1000|No|
 |NetCapability|string|网络增强。枚举值：Normal（默认），不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0（仅支持部分可用区，请参考控制台）|No|
-|TimemachineFeature|string|【待废弃，不建议调用】是否开启方舟特性。Yes为开启方舟，No为关闭方舟。目前仅选择普通本地盘+普通本地盘 或 SSD云盘+普通云盘的组合支持开启方舟。|No|
-|HotplugFeature|bool|是否开启热升级特性。True为开启，False为未开启，默认False。|No|
-|DiskPassword|string|【待废弃，不建议调用】加密盘的密码。若输入此字段，自动选择加密盘。加密盘需要权限位。|No|
-|NetworkId|string|【已废弃】网络ID（VPC2.0情况下无需填写）。VPC1.0情况下，若不填写，代表优先选择基础网络； 若填写，代表选择子网。参见DescribeSubnet。|No|
 |VPCId|string|VPC ID。默认为当前地域的默认VPC。|No|
 |SubnetId|string|子网 ID。默认为当前地域的默认子网。|No|
 |PrivateIp.N|string|【数组】创建云主机时指定内网IP。若不传值，则随机分配当前子网下的IP。调用方式举例：PrivateIp.0=x.x.x.x。当前只支持一个内网IP。|No|
-|PrivateMac|string|【批量创建该参数无效】【内部字段】创建云主机时指定Mac。调用方式举例：PrivateMac="xx:xx:xx:xx:xx:xx"。|No|
 |SecurityGroupId|string|防火墙Id，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeSecurityGroup](api/unet-api/describe_security_group)。|No|
-|UserDataScript|string|【暂不支持】cloudinit方式下，用户初始化脚本|No|
-|HostType|string|【已废弃】宿主机类型，N2，N1|No|
-|InstallAgent|string|【暂不支持】是否安装UGA。'yes': 安装；其他或者不填：不安装。|No|
-|ResourceType|int|【内部参数】资源类型|No|
 |Disks.N.BackupType|string|磁盘备份方案。枚举值：<br> > NONE，无备份 <br> > DATAARK，数据方舟 <br> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type)|No|
 |IsolationGroup|string|硬件隔离组id。可通过DescribeIsolationGroup获取。|No|
 |Disks.N.Encrypted|bool|【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false加密必须传入对应的的KmsKeyId|No|
@@ -58,7 +45,6 @@
 |NetworkInterface.N.EIP.GlobalSSH.Port|int|SSH端口，1-65535且不能使用80，443端口|No|
 |NetworkInterface.N.EIP.CouponId|string|当前EIP代金券id。请通过DescribeCoupon接口查询，或登录用户中心查看|No|
 |NetworkInterface.N.EIP.GlobalSSH.AreaCode|string|GlobalSSH的。AreaCode, 区域航空港国际通用代码。Area和AreaCode两者必填一个|No|
-|SetId|int||No|
 |CouponId|string|主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看|No|
 
 # Response Elements

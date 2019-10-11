@@ -29,50 +29,48 @@
 ## DomainInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Dn|string|域名|No|
-|StartTime|int|开始时间|No|
-|EndTime|int|结束时间|No|
-|Period|int|年|No|
-|Protect|string|隐私保护标志|No|
-|TemplateId|string|模板id|No|
-|IdType|string|证件类型|No|
-|RegistrantType|string|注册人类型|No|
-|AuditStatus|string|实名状态|No|
-|DomainStatus|string|命名审核状态|No|
-|Status|string|域名服务状态|No|
-|Dns1|string|域名使用的dns|No|
-|Dns2|string|域名使用的dns|No|
-|Uname1|string|注册人所有人（中文）|No|
-|Uname2|string|注册人所有人（英文）|No|
-|Rname1|string| 注册人联系人（中文）|No|
-|Rname2|string|注册人联系人（英文）|No|
-|Uaddr1|string|注册人联系地址（中文）|No|
-|Uaddr2|string|注册人联系地址（英文）|No|
-|Ust|string|注册人国家（英文）|No|
-|Uprov|string| 注册人省份（英文）|No|
-|Ucity1|string|注册人城市（中文）|No|
-|Ucity2|string|  注册人城市（英文）|No|
-|Uzip|string|注册人邮编|No|
-|Utelc|string|电话国家码|No|
-|Utela|string|电话区号|No|
-|Uteln|string|电话号码|No|
-|Utele|string|电话分机|No|
-|Ufaxc|string|传真国家码|No|
-|Ufaxa|string|传真区号|No|
-|Ufaxn|string|传真号码|No|
-|Ufaxe|string|传真分机|No|
-|Uemail|string|email|No|
-|Aname1|string|联系所有人（中文）|No|
-|Aname2|string|联系人所有人（英文）|No|
-|Atelc|string|电话国家码|No|
-|Atela|string|电话区号|No|
-|Ateln|string|电话号码|No|
-|Atele|string|电话分机|No|
-|Afaxc|string|传真国家码|No|
-|Afaxa|string|传真区号|No|
-|Afaxn|string|传真号码|No|
-|Afaxe|string|传真分机|No|
-|Aemail|string|email|No|
+|OriginIp|array|源站ip即cdn服务器回源访问的ip地址。支持多个源站ip，多个源站ip，可表述为如：[1.1.1.1,2.2.2.2]|**Yes**|
+|TestUrl|string|测试url，用于域名创建加速时的测试|**Yes**|
+|CdnType|string|加速域名的业务类型，web代表网站，stream代表视频，download代表下载。|**Yes**|
+|CacheConf|array|缓存配置规则列表|**Yes**|
+|AreaCode|string|查询带宽区域 cn代表国内 abroad代表海外 不填默认为全部区域|No|
+|OriginHost|string|回源Http请求头部Host，默认是加速域名|No|
+|OriginPort|int|回源端口|No|
+|CdnProtocol|string|加速类型http,http|https|No|
+|OriginProtocol|string|源站协议http，http|https   默认http|No|
+|CertName|string|证书名称|No|
+|Tag|string|业务组，默认为Default|No|
+|CacheHost|string|缓存Host，不同的域名可以配置为同一个CacheHost来实现缓存共享，默认为加速域名|No|
+|ReferType|int|0白名单，1黑名单|No|
+|NullRefer|bool|ReferType为白名单时，NullRefer为false代表不允许NULL refer访问，为true代表允许Null refer访问|No|
+|ReferList|array|Refer列表，支持正则表达式|No|
+|Domain|string|域名，用户创建加速的域名|No|
+|DomainId|string|域名id，创建域名时生成的id|No|
+|Status|string|创建的加速域名的当前的状态。check代表审核中，checkSuccess代表审核通过，checkFail代表审核失败，enable代表加速中，disable代表停止加速，delete代表删除加速 enableing代表正在开启加速，disableing代表正在停止加速中，deleteing代表删除中|No|
+|Cname|string|cdn域名。创建加速域名生成的cdn域名，用于设置CNAME记录|No|
+|CreateTime|int|域名创建的时间。格式：时间戳|No|
+|ValidTime|int|开始分配Cname时间。格式：时间戳|No|
+|AccessConf|object|访问控制|No|
+|ReferStatus|bool|refer配置开关，true打开，false关闭|No|
+|HttpsStatusCn|string|国内https状态 enableing-开启中 fail-开启失败 enable-启用 disable-未启用|No|
+|HttpsStatusAbroad|string|国外https状态 enableing-开启中  fail-开启失败 enable-启用 disable-未启用|No|
+
+## CacheConf
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|HttpCodePattern|string|状态码默认情况只缓存200类状态码，支持正则|No|
+|PathPattern|string|路径模式，支持正则|No|
+|Description|string|缓存规则描述|No|
+|CacheTTL|int|缓存时间|No|
+|CacheUnit|string|缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）|No|
+|CacheBehavior|bool|是否缓存，true为缓存，false为不缓存。为false的情况下，CacheTTL和CacheUnit强制不生效|No|
+|IgnoreQueryString|bool|是否忽略参数缓存（false为不忽略，true为忽略，默认为false）|No|
+|FollowOriginRule|bool|是否优先遵循源站头部缓存策略，false为不优先遵循源站，true为优先遵循源站缓存头部。默认为false|No|
+
+## AccessConf
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|IpBlacklist|string|多个ip用逗号隔开|No|
 
 # Request Example
 ```

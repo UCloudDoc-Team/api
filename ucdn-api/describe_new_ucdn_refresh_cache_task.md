@@ -24,6 +24,20 @@
 ## TaskInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|TaskId|string|提交任务时返回的任务ID|No|
+|UrlLists|array|任务url的信息列表，参考UrlProgressInfo|No|
+|Type|string|file/dir  刷新任务会返回Type，预取任务没有|No|
+|CreateTime|int|刷新任务创建的时间。格式为Unix Timestamp|No|
+|Status|string|刷新任务的当前状态，枚举值：success：成功；wait：排队中；process：处理中；failure：失败； unknow：未知|No|
+
+## UrlProgressInfo
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Url|string|刷新的单条url|No|
+|CreateTime|int|刷新任务创建的时间。格式为Unix Timestamp|No|
+|FinishTime|int|任务完成时间。格式为Unix Timestamp|No|
+|Status|string|刷新任务的当前状态，枚举值：success：成功；wait：排队中；process：处理中；failure：失败； unknow：未知|No|
+|Progress|int|刷新进度，单位%|No|
 
 # Request Example
 ```

@@ -23,18 +23,16 @@
 ## MetricPeriod
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|DiskUsage|array|磁盘利用率|No|
-|CPUUtilization|array|CPU使用率|No|
-|MemUsage|array|内存使用率|No|
-|ConnectionCount|array|TCP连接数|No|
-|QPS|array|QPS 次/秒|No|
-|SandboxMemory|array|DB系统内存使用量|No|
+|NetworkOut|array|出向带宽|No|
+|NetworkIn|array|入向带宽|No|
+|NetworkOutUsage|array|出向带宽使用率|No|
+|NetworkInUsage|array|入向带宽使用率|No|
 
-## MetricPoint
+## MatricPoint
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Value|int||**Yes**|
-|Timestamp|int||**Yes**|
+|Timestamp|int|时间戳 |No|
+|Value|int|监控点数值|No|
 
 # Request Example
 ```

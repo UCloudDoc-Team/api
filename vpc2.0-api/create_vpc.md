@@ -11,7 +11,6 @@
 |Network.n|string|VPC网段|**Yes**|
 |Tag|string|业务组名称|No|
 |Remark|string|备注|No|
-|Type|int|VPC类型|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

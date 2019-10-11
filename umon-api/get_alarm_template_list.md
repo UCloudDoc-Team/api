@@ -9,7 +9,6 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](可以根据用户邮箱去账号查找)|No|
 |Limit|int|返回数据长度，默认为20|No|
 |Offset|int|列表起始位置偏移量，默认为0|No|
-|IsGlobal|int|可以不填，全局机房为填1，非全局机房填0|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

@@ -21,6 +21,8 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
+|RetCode|int|返回码|**Yes**|
+|Action|string|操作名称|**Yes**|
 |TotalCount|int|UHostInstance总数|No|
 |UHostSet|array|云主机实例列表，每项参数可见下面 UHostInstanceSet|No|
 
@@ -28,6 +30,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|IPv6Feature|bool|true:有ipv6特性；false，没有ipv6特性|**Yes**|
 |UHostId|string|UHost实例ID|No|
 |UHostType|string|【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。|No|
 |MachineType|string|云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。|No|
@@ -65,27 +68,28 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |DiskType|string|磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。|**Yes**|
-|IsBoot|string|是否是系统盘。枚举值：<br>> True，是系统盘<br>> False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
-|Encrypted|bool	|true: 加密盘 false：非加密盘|No|
-|Type|string|磁盘类型。系统盘: Boot，数据盘: Data,网络盘：Udisk|No|
+|IsBoot|string|是否是系统盘。枚举值：<br> > True，是系统盘 <br> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。|**Yes**|
+|Encrypted|string|"true": 加密盘 "false"：非加密盘|No|
+|Type|string|【建议不再使用】磁盘类型。系统盘: Boot，数据盘: Data,网络盘：Udisk|No|
 |DiskId|string|磁盘ID|No|
-|Name|int|UDisk名字（仅当磁盘是UDisk时返回）|No|
-|Drive|int|磁盘盘符|No|
+|Name|string|UDisk名字（仅当磁盘是UDisk时返回）|No|
+|Drive|string|磁盘盘符|No|
 |Size|int|磁盘大小，单位: GB|No|
 |BackupType|string|备份方案。若开通了数据方舟，则为DataArk|No|
 
 ## UHostIPSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Default|string|是否默认的弹性网卡的信息。true: 是默认弹性网卡；其他值：不是。|**Yes**|
+|Default|string|【暂未支持】是否为默认网卡。true: 是默认网卡；其他值：不是。|**Yes**|
 |Mac|string|当前网卡的Mac。|**Yes**|
 |Weight|int|当前EIP的权重。权重最大的为当前的出口IP。|**Yes**|
+|IPMode|string|IPv4/IPv6；|**Yes**|
 |Type|string|国际: Internation，BGP: Bgp，内网: Private|No|
-|IPId|string|IP资源ID (内网IP无对应的资源ID)|No|
+|IPId|string|外网IP资源ID 。(内网IP无对应的资源ID)|No|
 |IP|string|IP地址|No|
-|Bandwidth|int|IP对应的带宽, 单位: Mb (内网IP不显示带宽信息)|No|
-|VPCId|string|IP地址对应的VPC ID（北京一当前字段为空）|No|
-|SubnetId|string|IP地址对应的子网 ID（北京一当前字段为空）|No|
+|Bandwidth|int|IP对应的带宽, 单位: Mb  (内网IP不显示带宽信息)|No|
+|VPCId|string|IP地址对应的VPC ID。（北京一不支持，字段返回为空）|No|
+|SubnetId|string|IP地址对应的子网 ID。（北京一不支持，字段返回为空）|No|
 
 # Request Example
 ```

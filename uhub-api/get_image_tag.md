@@ -22,10 +22,8 @@
 ## TagSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TagId|int|标签ID|**Yes**|
-|Name|string|标签名称|**Yes**|
-|Description|string|标签描述|**Yes**|
-|UpdateTime|int|更新时间|**Yes**|
+|UpdateTime|string|镜像更新时间|**Yes**|
+|TagName|string|Tag名称|**Yes**|
 
 # Request Example
 ```

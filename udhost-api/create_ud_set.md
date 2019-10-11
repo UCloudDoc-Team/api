@@ -15,7 +15,6 @@
 |Remark|string|资源池备注, 默认:””|No|
 |Tag|string|资源池业务组, 默认:Default|No|
 |ChargeType|string|Year, Month默认:Year|No|
-|UDSetType|string|资源池类型，[SATA_SSD, Normal]，默认Normal|No|
 |Quantity|string|购买时长，默认:1|No|
 |Count|string|购买台数，范围[1] 默认:1|No|
 |CouponId|string|代金券|No|

@@ -57,17 +57,9 @@
 ## SlaveInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|NodeType|object|集群中slave的机型信息|No|
-|SlaveCount|int|集群中slave的数量|No|
-
-## NodeType
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|NodeTypeName|string|机型名称|No|
-|CPU|int|CPU核数|No|
-|Memory|int|内存数量|No|
-|CU|int|计算单元数量|No|
-|Disk|int|磁盘大小|No|
+|Id|string|只读实例ID|No|
+|DataNodeId|string|对应数据节点的ID|No|
+|State|string|只读实例状态, 状态列表如下: Init: 初始化中 Fail: 安装失败 Starting: 启动中 Running: 系统正常运行中 Shutdown: 关闭中 Shutoff: 已关闭 Deleted: 已删除 Upgrading: 系统升级中|No|
 
 # Request Example
 ```

@@ -110,6 +110,14 @@
 |TotalCount|int|默认内容转发类型下返回当前rs总数|No|
 |BackendSet|array|内容转发下rs的详细信息，参考PolicyBackendSet|No|
 
+## SSLBindedTargetSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|VServerId|string|SSL证书绑定到的VServer的资源ID|No|
+|VServerName|string|对应的VServer的名字|No|
+|ULBId|string|VServer 所属的ULB实例的资源ID|No|
+|ULBName|string|ULB实例的名称|No|
+
 ## PolicyBackendSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|

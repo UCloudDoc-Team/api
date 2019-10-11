@@ -15,7 +15,6 @@
 |UHostId|string|UHost资源Id 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance)|**Yes**|
 |Destroy|int|是否直接删除，0表示按照原来的逻辑（有回收站权限，则进入回收站），1表示直接删除|No|
 
-
 # Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|

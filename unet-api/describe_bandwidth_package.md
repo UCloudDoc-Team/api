@@ -32,8 +32,8 @@
 ## EIPAddrSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OperatorName|string|运营商信息, 枚举值为: Telecom 电信; Unicom: 联通; Duplet: 双线; Bgp: BGP; International: 国际.|**Yes**|
-|IP|string|弹性IP地址|**Yes**|
+|OperatorName|string|运营商信息, 枚举值为:  BGP: BGP; International: 国际.|No|
+|IP|string|弹性IP地址|No|
 
 # Request Example
 ```

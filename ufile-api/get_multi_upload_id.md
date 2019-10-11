@@ -31,22 +31,9 @@ Request Headers
 ## DataSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|CPUUtilization|array|cpu使用率|No|
-|MemUtilization|array|内存使用率|No|
-|NICOut|array|网卡出带宽|No|
-|NICIn|array|网卡入带宽|No|
-|NetPacketOut|array|网卡出包量|No|
-|NetPacketIn|array|网卡入包量|No|
-|IORead|array|磁盘读取量|No|
-|IOWrite|array|磁盘写入量|No|
-|DiskReadOps|array|磁盘读取次数|No|
-|DiskWriteOps|array|磁盘写入次数|No|
-
-## MonitorInfo
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|TimeStamp|int|时间戳|**Yes**|
-|Value|int|值|**Yes**|
+|UploadId|string|主机ID|No|
+|FileName|string|文件名称|No|
+|StartTime|int|上传开始时间，UNIX时间戳|No|
 
 # Request Example
 ```

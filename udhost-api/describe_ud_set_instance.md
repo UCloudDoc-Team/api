@@ -65,8 +65,6 @@
 |IP|string|IP地址|No|
 |Bandwidth|int|IP对应的带宽, 单位: Mb (内网IP不显示带宽信息)|No|
 |Default|string|是否默认的弹性网卡的信息。true: 是默认弹性网卡；其他值：不是。|No|
-|VPCId|string|IP地址对应的VPC ID（北京一当前字段为空）|No|
-|SubnetId|string|IP地址对应的子网 ID（北京一当前字段为空）|No|
 
 # Request Example
 ```

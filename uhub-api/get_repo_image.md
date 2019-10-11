@@ -23,9 +23,10 @@
 |---|---|---|---|
 |ImageName|string|镜像名称|**Yes**|
 |PullCount|int|镜像被下载次数|**Yes**|
-|CreateTime|int|创建时间|**Yes**|
-|UpdateTime|int|修改时间|**Yes**|
+|CreateTime|string|创建时间|**Yes**|
+|UpdateTime|string|修改时间|**Yes**|
 |LatestTag|string|最新push的Tag|**Yes**|
+|RepoName|string|镜像仓库名称|**Yes**|
 
 # Request Example
 ```

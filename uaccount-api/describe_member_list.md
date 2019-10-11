@@ -42,9 +42,9 @@
 ## ProjectInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectName|string||**Yes**|
-|ProjectId|string||**Yes**|
-|CharacterId|string||**Yes**|
+|ProjectId|string|项目ID，请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|ProjectName|string|项目名|**Yes**|
+|CharacterId|string|角色ID|**Yes**|
 
 # Request Example
 ```

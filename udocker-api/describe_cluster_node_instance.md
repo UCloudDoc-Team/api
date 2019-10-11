@@ -45,11 +45,12 @@
 ## IPSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Type|string|国际: Internation，BGP: Bgp，内网: Private|No|
-|IPId|string|IP资源ID (内网IP无对应的资源ID)|No|
+|Type|string|IP类型  国际:International, BGP:Bgp, 内网:Private|No|
+|IPId|string|IP资源ID  （只在当前IP为外网IP时返回）|No|
 |IP|string|IP地址|No|
-|Bandwidth|int|IP对应的带宽, 单位: Mb (内网IP不显示带宽信息)|No|
-|Default|string|是否默认的弹性网卡的信息。true: 是默认弹性网卡；其他值：不是。|No|
+|Bandwidth|int|IP对应的带宽, 单位:Mb （只在当前IP为外网IP时返回）|No|
+|VPCId|string|VPCId|No|
+|SubnetId|string|子网ID|No|
 
 # Request Example
 ```

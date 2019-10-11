@@ -17,7 +17,6 @@ OuterMode 与 InnerMode 同时传 Yes 时，以 OuterMode 为准
 |Remark|string|备注|No|
 |OuterMode|string|创建的ULB是否为外网模式，默认即为外网模式|No|
 |InnerMode|string|创建的ULB是否为内网模式|No|
-|PrivateIp|string|创建内网ULB时指定内网IP。若不传值，则随机分配当前子网下的IP（暂时不对外开放，创建外网ULB该字段会忽略）|No|
 |ChargeType|string|付费方式|No|
 |VPCId|string|ULB所在的VPC的ID, 如果不传则使用默认的VPC|No|
 |SubnetId|string|内网ULB 所属的子网ID，如果不传则使用默认的子网|No|

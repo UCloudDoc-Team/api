@@ -11,7 +11,6 @@
 |ChargeType|string|付费方式:Year 按年,Month 按月,Dynamic 按时;|**Yes**|
 |ShareBandwidth|int|共享带宽值|**Yes**|
 |Quantity|int|购买时长|No|
-|ShareBandwidthGuarantee|int|共享带宽保底值(后付费)|No|
 |IPVersion|string|共享带宽类型，IPv4或者IPv6，不传默认IPv4|No|
 
 # Response Elements

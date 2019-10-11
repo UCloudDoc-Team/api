@@ -17,10 +17,10 @@
 ## TrafficSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Areacode|string|购买流量的区域 ，cn代表国内 ，abroad代表海外。|No|
-|TrafficTotal|float|areacode区域内总共购买的流量，单位GB|No|
-|TrafficLeft|float|areacode区域内总共剩余流量，单位GB|No|
-|TrafficUsed|float|areacode区域内总共使用流量，单位GB|No|
+|Areacode|string|购买流量的区域, cn: 国内; abroad: 国外|No|
+|TrafficTotal|string|Areacode区域内总购买流量, 单位GB|No|
+|TrafficLeft|string|Areacode区域内总剩余流量, 单位GB|No|
+|TrafficUsed|string|Areacode区域内总使用流量, 单位GB|No|
 
 # Request Example
 ```

@@ -24,31 +24,11 @@
 ## LineDetail
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|LineId|string||No|
-|ResourceId|string||No|
-|Bandwidth|int||No|
-|State|string||No|
-|ChargeType|string||No|
-|CreateTime|int||No|
-|ExpireTime|int||No|
-|Expire|bool||No|
-|PayMode|string||No|
-|Endpoints|array||No|
-
-## VpcDetail
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|Region|string|地域|No|
-|EndpointId|string|Endpoint ID|No|
-|ResourceId|string|接入资源ID|No|
-|Vendor|string|云商|No|
-|VPCId|string|接入点VPC ID|No|
-|VPCName|string|接入点VPC名称|No|
-|Networks|array|VPC网段|No|
-|ChargeType|string|付费方式|No|
-|CreateTime|int|创建时间|No|
-|ExpireTime|int|过期时间|No|
-|Mode|string|接入方式|No|
+|LineFrom|string|线路源|**Yes**|
+|LineTo|string|线路目的|**Yes**|
+|LineId|string|线路计费Id|No|
+|LineFromName|string|线路源中文名称|**Yes**|
+|LineToName|string|线路目的中文名称|**Yes**|
 
 # Request Example
 ```

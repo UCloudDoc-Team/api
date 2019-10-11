@@ -24,8 +24,8 @@
 ## BandwidthSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Time|int|时间点。格式：UNIX时间戳|**Yes**|
-|Value|float|推流帧率，单位:f/s（帧/秒）|**Yes**|
+|Time|int|带宽获取的时间点。格式：时间戳|No|
+|Value|float|带宽数值|No|
 
 # Request Example
 ```
