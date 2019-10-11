@@ -10,7 +10,6 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |UHostIds.N|string|【数组】UHost主机的资源ID，例如UHostIds.0代表希望获取信息 的主机1，UHostIds.1代表主机2。 如果不传入，则返回当前Region 所有符合条件的UHost实例。|No|
 |Tag|string|要查询的业务组名称|No|
-|LifeCycle|int|1：普通云主机；2：抢占型云主机；如不传此参数，默认全部获取|No|
 |Offset|int|列表起始位置偏移量，默认为0|No|
 |Limit|int|返回数据长度，默认为20，最大100|No|
 |IsolationGroup|string|硬件隔离组id。通过硬件隔离组筛选主机。|No|
