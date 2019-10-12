@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |SSLId|string|SSL证书的ID|**Yes**|
 
 # Response Elements
@@ -17,9 +17,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeletePathXSSL
-&Region=EkYDYoig
-&ProjectId=juLDtQnE
-&SSLId=DEifpZku
+&ProjectId=org-xxx
+&SSLId=gssl-xxx
 ```
 
 # Response Example

@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|UGAId|string|全球加速实例ID，如果传了实例ID 最多返回一条记录|No|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|UGAId|string|加速配置实例ID，如果传了实例ID 则返回匹配实例ID的记录；如果没传则返回 ProjectId 下全部实例且符合分页要求|No|
 |Limit|int|返回的最大条数，默认为100，最大值400|No|
 |Offset|int|偏移量，默认为0|No|
 
@@ -76,577 +76,82 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeUGAInstance
-&UGAAId=XmkZtPSH
-&Limit=6
-&Offset=9
-&Limit=6
-&Offset=8
-&Limit=1
-&Offset=6
+&ProjectId=org-xxxx
+&UGAId=uga-5ygl0d
+&Limit=10
+&Offset=0
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeUGAInstanceResponse", 
-    "TotalCount": 9, 
+    "TotalCount": 1, 
+    "Message": "", 
     "RetCode": 0, 
-    "UGAAList": [
+    "UGAList": [
         {
             "UPathSet": [
                 {
-                    "UPathId": "hfLvoPvb", 
-                    "LineFromName": "gLRkKlEB", 
-                    "LineToName": "ZgUeWUzT", 
-                    "UPathName": "wNnRNrku", 
-                    "Bandwidth": "rPTqsVYH", 
-                    "LineId": "QSlKwEGP"
-                }, 
-                {
-                    "UPathId": "IoYxMzab", 
-                    "LineFromName": "dQXZZbvx", 
-                    "LineToName": "RYngGVgG", 
-                    "UPathName": "BBflCktv", 
-                    "Bandwidth": "NiOZQHYU", 
-                    "LineId": "dwvzUUkl"
-                }, 
-                {
-                    "UPathId": "xVXNNuvx", 
-                    "LineFromName": "TedEEDqU", 
-                    "LineToName": "eTttEeyj", 
-                    "UPathName": "pqXJKJyy", 
-                    "Bandwidth": "hqCNztzE", 
-                    "LineId": "xZbnEFqD"
-                }, 
-                {
-                    "UPathId": "ZBWbnfuf", 
-                    "LineFromName": "pLVRTzDI", 
-                    "LineToName": "QaWNIFiO", 
-                    "UPathName": "mbDbLnPy", 
-                    "Bandwidth": "wthyrTEz", 
-                    "LineId": "jBnhzwlp"
-                }, 
-                {
-                    "UPathId": "xyGQXEhR", 
-                    "LineFromName": "IbBkgukA", 
-                    "LineToName": "fEUmYEBY", 
-                    "UPathName": "XuKLeAsG", 
-                    "Bandwidth": "dhmApITO", 
-                    "LineId": "EohDrHhz"
-                }, 
-                {
-                    "UPathId": "GJqtFPVn", 
-                    "LineFromName": "hqxnNOOf", 
-                    "LineToName": "PxBEiWmD", 
-                    "UPathName": "FoJHBqDb", 
-                    "Bandwidth": "IhGUeLSz", 
-                    "LineId": "xrprvzwg"
-                }, 
-                {
-                    "UPathId": "SjSwgoUu", 
-                    "LineFromName": "DxXSHcoN", 
-                    "LineToName": "HZVPkoQW", 
-                    "UPathName": "YpaEVQrc", 
-                    "Bandwidth": "ydCreYRE", 
-                    "LineId": "bSdPzRzx"
+                    "UPathId": "upath-xcacoz", 
+                    "LineFromName": "\u4e2d\u56fd(\u591a\u5730)", 
+                    "LineFrom": "cn-gd", 
+                    "LineToName": "\u6d1b\u6749\u77f6", 
+                    "UPathName": "\u4e2d\u7f8e\u52a0\u901f", 
+                    "Bandwidth": 1, 
+                    "LineTo": "us-ca", 
+                    "LineId": "line_cn-us-ca"
                 }
             ], 
-            "Domain": "QiYPcsKi", 
-            "ChargeType": "oxhYcPKK", 
-            "UGAAName": "jbEJpJYC", 
-            "ExpireTime": "rCNjUpbg", 
-            "CName": "khtvqXXg", 
+            "Domain": "github.com", 
+            "OutPublicIpList": [
+                {
+                    "IP": "107.150.101.244", 
+                    "Area": "us-ca"
+                }, 
+                {
+                    "IP": "107.150.102.54", 
+                    "Area": "us-ca"
+                }, 
+                {
+                    "IP": "107.150.102.58", 
+                    "Area": "us-ca"
+                }, 
+                {
+                    "IP": "107.150.102.63", 
+                    "Area": "us-ca"
+                }, 
+                {
+                    "IP": "107.150.102.68", 
+                    "Area": "us-ca"
+                }, 
+                {
+                    "IP": "107.150.102.88", 
+                    "Area": "us-ca"
+                }
+            ], 
+            "UGAName": "github\u52a0\u901f", 
+            "L7ForwarderSet": [], 
+            "CName": "xbc287.pathx.ucloudgda.com", 
+            "Location": "\u5317\u7f8e", 
             "TaskSet": [
                 {
                     "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 8
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 8
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
+                    "Port": 443, 
+                    "RSPort": 0
                 }
             ], 
-            "UGAAId": "KgqOlvzl", 
+            "UGAId": "uga-5ygl0d", 
             "IPList": [
-                "ZfyJZQTt", 
-                "mbPrUxEX", 
-                "ZPbosoSa", 
-                "RffKkiNu", 
-                "RcMxwzba", 
-                "SoWMwEWn", 
-                "CRxvTbEs", 
-                "eXLoYOYp"
+                ""
             ], 
-            "CreateTime": "djGlCqZu"
-        }, 
-        {
-            "UPathSet": [
+            "L4ForwarderSet": [
                 {
-                    "UPathId": "dBAiqjMn", 
-                    "LineFromName": "bUNJpCAa", 
-                    "LineToName": "UvBJJuCL", 
-                    "UPathName": "OYgGCQRJ", 
-                    "Bandwidth": "GfHBRsBA", 
-                    "LineId": "RQDVqliw"
-                }, 
-                {
-                    "UPathId": "dNOvWqFz", 
-                    "LineFromName": "vjZmoyml", 
-                    "LineToName": "FlrHvDoT", 
-                    "UPathName": "JlFjMulI", 
-                    "Bandwidth": "ZJRmsada", 
-                    "LineId": "vxfmGsIU"
-                }, 
-                {
-                    "UPathId": "XsbKsHwO", 
-                    "LineFromName": "WaydAShZ", 
-                    "LineToName": "xQYwvwpS", 
-                    "UPathName": "lyOBDPIG", 
-                    "Bandwidth": "saMNQpAE", 
-                    "LineId": "bBJRelLq"
-                }, 
-                {
-                    "UPathId": "yROWZUuM", 
-                    "LineFromName": "HyOgAgIE", 
-                    "LineToName": "gZzUvBug", 
-                    "UPathName": "DKbVdrsU", 
-                    "Bandwidth": "mscOEwBc", 
-                    "LineId": "uKvUoErv"
-                }, 
-                {
-                    "UPathId": "krVCPiIw", 
-                    "LineFromName": "WXWECgkK", 
-                    "LineToName": "MkWXBAdp", 
-                    "UPathName": "YjKagUfk", 
-                    "Bandwidth": "iHenXYwx", 
-                    "LineId": "YYgbAPYB"
-                }, 
-                {
-                    "UPathId": "OjRCSMuA", 
-                    "LineFromName": "BUACrGEv", 
-                    "LineToName": "JdNohqJr", 
-                    "UPathName": "LEcVRIxs", 
-                    "Bandwidth": "BzeCfqus", 
-                    "LineId": "TyDNDeVd"
-                }, 
-                {
-                    "UPathId": "vEWBKSUk", 
-                    "LineFromName": "msfNUceC", 
-                    "LineToName": "bmEdMVQn", 
-                    "UPathName": "pEzFLXMN", 
-                    "Bandwidth": "TydyzEkx", 
-                    "LineId": "JuClYkWr"
+                    "Protocol": "TCP", 
+                    "Port": 443, 
+                    "RSPort": 443
                 }
-            ], 
-            "Domain": "BEZENhtW", 
-            "ChargeType": "pfoAcyjR", 
-            "UGAAName": "YzGepngJ", 
-            "ExpireTime": "gHtSroIX", 
-            "CName": "OMNcUHBi", 
-            "TaskSet": [
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 3
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 6
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 5
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 4
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 9
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 4
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 9
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 4
-                }
-            ], 
-            "UGAAId": "dZzFXvcI", 
-            "IPList": [
-                "LTDhCEfR", 
-                "dqrGCTTr", 
-                "WeSTnhId", 
-                "JYTIXUCM", 
-                "tVKrmssT", 
-                "jPzPgjnH", 
-                "pRTgTntL", 
-                "kbZRgozs", 
-                "TMxzvytX", 
-                "wQhLYIBb"
-            ], 
-            "CreateTime": "DWsLbYfy"
-        }, 
-        {
-            "UPathSet": [
-                {
-                    "UPathId": "zGMUDkMM", 
-                    "LineFromName": "qzKqgVgq", 
-                    "LineToName": "SlpGBgqy", 
-                    "UPathName": "TDAgLEZo", 
-                    "Bandwidth": "XEnfZdxM", 
-                    "LineId": "pceFSQiU"
-                }, 
-                {
-                    "UPathId": "TXhRcMUP", 
-                    "LineFromName": "yUzrkanP", 
-                    "LineToName": "hoKoShbw", 
-                    "UPathName": "mHeoakyv", 
-                    "Bandwidth": "yZuiYPQt", 
-                    "LineId": "OMqhQwuK"
-                }, 
-                {
-                    "UPathId": "BgocExzM", 
-                    "LineFromName": "wIEyAuiG", 
-                    "LineToName": "xVfYmWxM", 
-                    "UPathName": "UTspWTAS", 
-                    "Bandwidth": "WPsNPoXb", 
-                    "LineId": "BNUFwDVo"
-                }, 
-                {
-                    "UPathId": "BpQnMLZL", 
-                    "LineFromName": "lEjFKHPV", 
-                    "LineToName": "QQVRhUAe", 
-                    "UPathName": "KqPAVsYk", 
-                    "Bandwidth": "dXWlGjmW", 
-                    "LineId": "AWhMykpd"
-                }, 
-                {
-                    "UPathId": "oiIUggVi", 
-                    "LineFromName": "xYXswWYr", 
-                    "LineToName": "htMwtmwQ", 
-                    "UPathName": "GWPveZvp", 
-                    "Bandwidth": "DcuTGwDa", 
-                    "LineId": "OnmFtBap"
-                }, 
-                {
-                    "UPathId": "hByapuRq", 
-                    "LineFromName": "tprAkJBv", 
-                    "LineToName": "IjPLavNX", 
-                    "UPathName": "rrSHlXHs", 
-                    "Bandwidth": "rFruJUUO", 
-                    "LineId": "QstlJCYh"
-                }, 
-                {
-                    "UPathId": "ahAXURKu", 
-                    "LineFromName": "pOsBHqgF", 
-                    "LineToName": "BtfYuOhe", 
-                    "UPathName": "KTCGFmnp", 
-                    "Bandwidth": "KQyJzgPM", 
-                    "LineId": "bjVFIAHY"
-                }, 
-                {
-                    "UPathId": "czXJmTuA", 
-                    "LineFromName": "OGQauhEr", 
-                    "LineToName": "XNRUWIit", 
-                    "UPathName": "OAFHzzWA", 
-                    "Bandwidth": "wmwygrrh", 
-                    "LineId": "dIrESFgM"
-                }, 
-                {
-                    "UPathId": "NeLoqZQq", 
-                    "LineFromName": "FeJLmfTw", 
-                    "LineToName": "mEzAAsev", 
-                    "UPathName": "MiQxzkCG", 
-                    "Bandwidth": "LObEPRsa", 
-                    "LineId": "YKBxqJkI"
-                }, 
-                {
-                    "UPathId": "ceaOfGfI", 
-                    "LineFromName": "boBoicbs", 
-                    "LineToName": "fQaaHxwc", 
-                    "UPathName": "DsxQwQQk", 
-                    "Bandwidth": "LzgpDsnA", 
-                    "LineId": "tEHNWXCx"
-                }
-            ], 
-            "Domain": "PZdPCwad", 
-            "ChargeType": "lvHTxBmZ", 
-            "UGAAName": "VvwtPonn", 
-            "ExpireTime": "lFKbUBnL", 
-            "CName": "Vksahvhx", 
-            "TaskSet": [
-                {
-                    "Protocol": "TCP", 
-                    "Port": 8
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 3
-                }
-            ], 
-            "UGAAId": "LLoOmAtO", 
-            "IPList": [
-                "usgdMqmZ", 
-                "FpzmBAtm", 
-                "pjDCOMfv", 
-                "mAKBhwBZ", 
-                "dhDfBqBw", 
-                "deMoPxhl"
-            ], 
-            "CreateTime": "OMnDBIkG"
-        }, 
-        {
-            "UPathSet": [
-                {
-                    "UPathId": "lEBUrZWg", 
-                    "LineFromName": "kzXvZdbQ", 
-                    "LineToName": "JZKDKgWI", 
-                    "UPathName": "cjEJUdHD", 
-                    "Bandwidth": "smaERNcU", 
-                    "LineId": "ttDNpiti"
-                }, 
-                {
-                    "UPathId": "nMywdyNo", 
-                    "LineFromName": "RvLSjQac", 
-                    "LineToName": "UbBboTHM", 
-                    "UPathName": "rzyvvDrV", 
-                    "Bandwidth": "gPDSUrwA", 
-                    "LineId": "aqrVzYcd"
-                }, 
-                {
-                    "UPathId": "wsOvKZQS", 
-                    "LineFromName": "jLkABpxK", 
-                    "LineToName": "lrbyVvfn", 
-                    "UPathName": "psVrQzTN", 
-                    "Bandwidth": "wkzcgTNq", 
-                    "LineId": "wrDWXRaH"
-                }, 
-                {
-                    "UPathId": "azemAZFG", 
-                    "LineFromName": "kYClWVbq", 
-                    "LineToName": "rrhHaDkS", 
-                    "UPathName": "CFPLSMZL", 
-                    "Bandwidth": "JFsMGEmz", 
-                    "LineId": "YHnzpFbD"
-                }, 
-                {
-                    "UPathId": "YKUzoMqz", 
-                    "LineFromName": "vUXyHdld", 
-                    "LineToName": "LyhPwsWq", 
-                    "UPathName": "QBHIFKaG", 
-                    "Bandwidth": "eVimjIzd", 
-                    "LineId": "syyauPKT"
-                }
-            ], 
-            "Domain": "xuUCwyJg", 
-            "ChargeType": "eIWpDXCZ", 
-            "UGAAName": "AaXSrlQi", 
-            "ExpireTime": "eVAXTdCt", 
-            "CName": "opwlHQrf", 
-            "TaskSet": [
-                {
-                    "Protocol": "TCP", 
-                    "Port": 1
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 1
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 2
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 5
-                }
-            ], 
-            "UGAAId": "jydDQYxV", 
-            "IPList": [
-                "xbONuqte", 
-                "JnXniujc", 
-                "GnmmkYqf", 
-                "iCGmWibT", 
-                "dlwljDet", 
-                "FLMusemw", 
-                "PBkUUBYz", 
-                "TYZQBbvD", 
-                "jHhtGzdQ"
-            ], 
-            "CreateTime": "QGBzseWr"
-        }, 
-        {
-            "UPathSet": [
-                {
-                    "UPathId": "ASPRTMEK", 
-                    "LineFromName": "qajaTXYr", 
-                    "LineToName": "sAUIFgZt", 
-                    "UPathName": "tdWmhHQM", 
-                    "Bandwidth": "WZELAuvc", 
-                    "LineId": "IeTEjynG"
-                }, 
-                {
-                    "UPathId": "WWGjLZsQ", 
-                    "LineFromName": "HLwDonKQ", 
-                    "LineToName": "PwtrQCdS", 
-                    "UPathName": "FwivmLXU", 
-                    "Bandwidth": "fZUelWcN", 
-                    "LineId": "nmLpdqav"
-                }, 
-                {
-                    "UPathId": "ukWqWUeS", 
-                    "LineFromName": "tigKWbpc", 
-                    "LineToName": "uwPeLsZO", 
-                    "UPathName": "SfwRssMx", 
-                    "Bandwidth": "EOjPPiHM", 
-                    "LineId": "QjhZKGxj"
-                }, 
-                {
-                    "UPathId": "pXCHiLjI", 
-                    "LineFromName": "ySVNnuMe", 
-                    "LineToName": "TNUpOkTE", 
-                    "UPathName": "jqKPGEdF", 
-                    "Bandwidth": "mtnGaFbZ", 
-                    "LineId": "ZhkSpTrx"
-                }, 
-                {
-                    "UPathId": "QviljdGI", 
-                    "LineFromName": "PGaINUcl", 
-                    "LineToName": "ciJUAwuk", 
-                    "UPathName": "MZTtuYXG", 
-                    "Bandwidth": "omOKyIxq", 
-                    "LineId": "kaDkOBZc"
-                }, 
-                {
-                    "UPathId": "ExVDhmfs", 
-                    "LineFromName": "jNwoGvvD", 
-                    "LineToName": "PkUwVRIA", 
-                    "UPathName": "zLGIXtbT", 
-                    "Bandwidth": "lNxxLixA", 
-                    "LineId": "WsrKQCQA"
-                }, 
-                {
-                    "UPathId": "COLmcqLm", 
-                    "LineFromName": "BdOOWUPU", 
-                    "LineToName": "gITAaCQh", 
-                    "UPathName": "hIRnmgCT", 
-                    "Bandwidth": "bLBvrrQA", 
-                    "LineId": "rfuVUhXY"
-                }, 
-                {
-                    "UPathId": "ApohXTWG", 
-                    "LineFromName": "PwLLBmEW", 
-                    "LineToName": "SFivwGGl", 
-                    "UPathName": "gjXLuLlg", 
-                    "Bandwidth": "XwKVIwHW", 
-                    "LineId": "LGuSGNSA"
-                }, 
-                {
-                    "UPathId": "XjceNvyo", 
-                    "LineFromName": "axufsgAU", 
-                    "LineToName": "tQaNqFYf", 
-                    "UPathName": "DyikThEE", 
-                    "Bandwidth": "XQQNXIlJ", 
-                    "LineId": "RqnaGAfv"
-                }, 
-                {
-                    "UPathId": "BHPTiNAk", 
-                    "LineFromName": "gBMOCBuL", 
-                    "LineToName": "AOnjZPCV", 
-                    "UPathName": "SEymPyeu", 
-                    "Bandwidth": "YBZJjmZm", 
-                    "LineId": "RiEaTrHC"
-                }
-            ], 
-            "Domain": "IsrxwtDO", 
-            "ChargeType": "rdnFkXlj", 
-            "UGAAName": "aMQpgtmJ", 
-            "ExpireTime": "LZWLTLCw", 
-            "CName": "NQLJjKcf", 
-            "TaskSet": [
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 1
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 7
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 8
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 4
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 6
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 3
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 4
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 2
-                }, 
-                {
-                    "Protocol": "TCP", 
-                    "Port": 3
-                }
-            ], 
-            "UGAAId": "hihrFOpe", 
-            "IPList": [
-                "LfgIEdgP", 
-                "GXcNLcaM", 
-                "mMtpHVET", 
-                "vFsSpqIe"
-            ], 
-            "CreateTime": "zjaeWTTn"
+            ]
         }
     ]
 }

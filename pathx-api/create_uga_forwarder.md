@@ -1,24 +1,26 @@
 # 创建加速实例转发器-CreateUGAForwarder
 
-创建加速实例转发器，  支持HTTPS接入HTTPS回源、HTTPS接入HTTP回源、HTTP接入HTTP回源
+创建加速实例转发器，  支持HTTPS接入HTTPS回源、HTTPS接入HTTP回源、HTTP接入HTTP回源、TCP接入TCP回源、UDP接入UDP回源
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目ID。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|UGAId|string|UGA 加速实例ID|**Yes**|
-|HTTPHTTP.n|int|HTTP接入HTTP回源转发，接入端口|No|
-|HTTPHTTPRS.n|int|HTTP接入HTTP回源转发，源站监听端口， 默认为接入端口|No|
-|HTTPSHTTP.n|int|HTTPS接入HTTP回源转发，接入端口|No|
-|HTTPSHTTPRS.n|int|HTTPS接入HTTP回源转发，回源端口， 默认为接入端口|No|
-|HTTPSHTTPS.n|int|HTTPS接入HTTPS回源转发，接入端口|No|
-|HTTPSHTTPSRS.n|int|HTTPS接入HTTPS回源转发，源站监听端口， 默认为接入端口|No|
+|UGAId|string|加速配置实例ID|**Yes**|
+|HTTPHTTP.n|int|HTTP接入HTTP回源转发，接入端口。禁用65123端口|No|
+|HTTPHTTPRS.n|int|HTTP接入HTTP回源转发，源站监听端口|No|
+|HTTPSHTTP.n|int|HTTPS接入HTTP回源转发，接入端口。禁用65123端口|No|
+|HTTPSHTTPRS.n|int|HTTPS接入HTTP回源转发，回源端口|No|
+|HTTPSHTTPS.n|int|HTTPS接入HTTPS回源转发，接入端口。禁用65123端口|No|
+|HTTPSHTTPSRS.n|int|HTTPS接入HTTPS回源转发，源站监听端口|No|
 |TCP.n|int|TCP接入端口|No|
-|TCPRS.n|int|TCP回源端口，默认同TCP接入端口|No|
+|TCPRS.n|int|TCP回源端口|No|
 |UDP.n|int|UDP接入端口|No|
-|UDPRS.n|int|UDP回源端口， 默认同UDP接入端口|No|
+|UDPRS.n|int|UDP回源端口|No|
+
+```
+目前UGA同时支持4层和7层接入端口 使用相同的加速域名接入。因此TCP协议 接入端口与HTTP(s)类协议接入端口不能相同；如果需要从TCP加速转为HTTP加速，请先使用DeleteUGAForwarder接口删除已经存在的TCP端口加速 再使用CreateUGAForwarder增加HTTP加速端口；修改回源端口也需要删除现有的端口加速再添加新的
+```
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -30,27 +32,21 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=CreateUGAForwarder
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=wDUTSPJx
-&UGAId=cqUKsWtf
-&HTTPHTTP.n=7
-&HTTPHTTPRS.n=2
-&HTTPSHTTP.n=8
-&HTTPSHTTPRS.n=1
-&HTTPSHTTPS.n=1
-&HTTPSHTTPSRS.n=1
-&TCP.n=7
-&TCPRS.n=8
-&UDP.n=6
-&UDPRS.n=4
+&ProjectId=org-xxxx
+&UGAId=uga-xxxx
+&HTTPHTTP.n=80
+&HTTPHTTPRS.n=80
+&HTTPSHTTP.n=443
+&HTTPSHTTPRS.n=80
+&TCP.n=22
+&TCPRS.n=22
 ```
 
 # Response Example
 ```
 {
     "Action": "CreateUGAForwarderResponse", 
-    "Message": "EELLFnVb", 
+    "Message": "", 
     "RetCode": 0
 }
 ```

@@ -2,12 +2,16 @@
 
 UGA绑定UPath
 
+```
+绑定线路成功后，加速配置通常会在1min内生效。请先使用nc或telnet命令探测加速域名 加速端口是否联通。正常联通后将业务域名CName到加速域名上来。
+```
+
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|UGAId|string|UGA ID|**Yes**|
-|UPathId|string|加速线路id|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|UGAId|string|加速配置实例ID，格式uga-xxxx|**Yes**|
+|UPathId|string|加速线路实例ID，格式upath-xxx|**Yes**|
 |CouponId|string|代金券|No|
 
 # Response Elements
@@ -19,9 +23,10 @@ UGA绑定UPath
 # Request Example
 ```
 https://api.ucloud.cn/?Action=UGABindUPath
-&UGAAId=RaAqOwvF
-&UPathId=GAJcDPlh
-&CouponId=DVCibwXW
+&ProjectId=org-xxxx
+&UGAId=uga-xxxx
+&UPathId=upath-xxx
+&CouponId=
 ```
 
 # Response Example

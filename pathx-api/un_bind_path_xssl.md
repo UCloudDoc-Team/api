@@ -19,10 +19,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=UnBindPathXSSL
-&ProjectId=GAULtRoE
-&UGAId=IYVJijDo
-&SSLId=lgsPtIQD
-&Port.n=NnzdSpln
+&ProjectId=org-xxxx
+&UGAId=uga-xxxx
+&SSLId=gssl-ssss
+&Port.n=443
 ```
 
 # Response Example

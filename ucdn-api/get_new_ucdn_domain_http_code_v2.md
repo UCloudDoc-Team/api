@@ -6,7 +6,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
-|Type|int|时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度）|**Yes**|
+|Type|int|时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天粒度，3表示按照一分钟粒度）|**Yes**|
 |BeginTime|int|查询的起始时间，格式为Unix Timestamp。|**Yes**|
 |EndTime|int|查询的结束时间，格式为Unix Timestamp。|**Yes**|
 |DomainId.n|string|域名id，创建域名时生成的id。默认全部域名|No|

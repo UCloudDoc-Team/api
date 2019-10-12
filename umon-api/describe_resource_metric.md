@@ -21,11 +21,11 @@
 |ConversionFactor|int|保留字段|**Yes**|
 |Type|int|指标类型（暂时没有意义）|**Yes**|
 |MetricGroup|string|监控指标组|**Yes**|
-|SupportAlarm|string|是否支持告警：Yes|No|**Yes**|
+|SupportAlarm|string|是否支持告警：Yes\|No|**Yes**|
 |AlarmRange|string|告警阈值设置的有效范围|**Yes**|
 |Frequency|int|告警频率|**Yes**|
 |MetricId|int|监控项id|**Yes**|
-|CompareOption|array|比较方法：GE大于等于|LE小于等于|**Yes**|
+|CompareOption|array|比较方法：GE大于等于\|LE小于等于|**Yes**|
 |MetricName|string|指标名字|No|
 
 # Request Example

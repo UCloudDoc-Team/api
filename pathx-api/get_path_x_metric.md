@@ -5,20 +5,20 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |ResourceId|string|ResourceId，如upath ID  和 uga ID |**Yes**|
-|BeginTime|int|查询起始时间|**Yes**|
-|EndTime|int|查询结束时间|**Yes**|
-|MetricName.n|string|查询的监控项，以逗号分隔，拼接成一个字符串。目前仅允许一下内容：NetworkOut:出口带宽，NetworkIn:入口带宽，NetworkOutUsage:出口使用率，NetworkInUsage:入口使用率，TCPDelay:tcp延迟,InputRetransmitRate：输入重传率，OutputRetransmitRate：输出重传率；TCPConNum：tcp连接数|**Yes**|
+|BeginTime|int|查询起始时间，10位长度时间戳|**Yes**|
+|EndTime|int|查询结束时间，10位长度时间戳|**Yes**|
+|MetricName.n|string|查询监控的指标项。目前仅允许以下四项：NetworkOut:出向带宽，NetworkIn:入向带宽，NetworkOutUsage:出向带宽使用率，NetworkInUsage:入向带宽使用率|**Yes**|
 |ResourceType|string|upath:加速线路,uga:加速实例|**Yes**|
-|LineId|string|具体线路id|**Yes**|
+|LineId|string|具体线路id，调用DescribePathXLineConfig接口获取线路列表|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|DataSet|array||No|
+|DataSet|array|监控数据结果集|No|
 
 ## MetricPeriod
 |Parameter name|Type|Description|Required|
@@ -37,523 +37,498 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=GetPathXMetric
-&ResourceId=dGHmatXP
-&BeginTime=8
-&EndTime=7
-&MetricName=geZTmWNK
+&ProjectId=org-ejcxxx
 &ResourceType=upath
-&LineId=mRaKrOqb
+&ResourceId=upath-1boe2u
+&BeginTime=1568797253
+&EndTime=1568800853
+&LineId=line_cn_afr-nigeria
+&MetricName.0=NetworkOutUsage
+&MetricName.1=NetworkInUsage
 ```
 
 # Response Example
 ```
 {
     "Action": "GetPathXMetricResponse", 
+    "Message": "", 
     "RetCode": 0, 
-    "DataSet": [
-        {
-            "ConnectionCount": [
-                {
-                    "Timestamp": 9, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 4
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 3
-                }
-            ], 
-            "MemUsage": [
-                {
-                    "Timestamp": 9, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 4
-                }
-            ], 
-            "SandboxMemory": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 4
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 4
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 2
-                }
-            ], 
-            "QPS": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 7
-                }
-            ], 
-            "DiskUsage": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 7
-                }
-            ], 
-            "CPUUtilization": [
-                {
-                    "Timestamp": 3, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 7
-                }
-            ]
-        }, 
-        {
-            "ConnectionCount": [
-                {
-                    "Timestamp": 2, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 2
-                }
-            ], 
-            "MemUsage": [
-                {
-                    "Timestamp": 9, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 4
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 6
-                }
-            ], 
-            "SandboxMemory": [
-                {
-                    "Timestamp": 6, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 5
-                }
-            ], 
-            "QPS": [
-                {
-                    "Timestamp": 4, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 1
-                }
-            ], 
-            "DiskUsage": [
-                {
-                    "Timestamp": 2, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 6
-                }
-            ], 
-            "CPUUtilization": [
-                {
-                    "Timestamp": 7, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 4
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 6, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 2
-                }
-            ]
-        }, 
-        {
-            "ConnectionCount": [
-                {
-                    "Timestamp": 5, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 7
-                }
-            ], 
-            "MemUsage": [
-                {
-                    "Timestamp": 3, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 2
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 3
-                }
-            ], 
-            "SandboxMemory": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 4
-                }
-            ], 
-            "QPS": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 9
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 2
-                }
-            ], 
-            "DiskUsage": [
-                {
-                    "Timestamp": 2, 
-                    "Value": 5
-                }, 
-                {
-                    "Timestamp": 5, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 9
-                }
-            ], 
-            "CPUUtilization": [
-                {
-                    "Timestamp": 1, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 3, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 8
-                }, 
-                {
-                    "Timestamp": 1, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 2, 
-                    "Value": 1
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 7
-                }, 
-                {
-                    "Timestamp": 8, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 7, 
-                    "Value": 6
-                }, 
-                {
-                    "Timestamp": 9, 
-                    "Value": 3
-                }, 
-                {
-                    "Timestamp": 4, 
-                    "Value": 7
-                }
-            ]
-        }
-    ]
+    "DataSet": {
+        "InputRetransmitRate": null, 
+        "NetworkOutUsage": [
+            {
+                "Timestamp": 1568797260, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568797320, 
+                "Value": 23
+            }, 
+            {
+                "Timestamp": 1568797380, 
+                "Value": 21
+            }, 
+            {
+                "Timestamp": 1568797440, 
+                "Value": 20
+            }, 
+            {
+                "Timestamp": 1568797560, 
+                "Value": 21
+            }, 
+            {
+                "Timestamp": 1568797620, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568797680, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568797740, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568797800, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568797860, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568797920, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568797980, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798040, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798100, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568798160, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568798220, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568798280, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568798340, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798400, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568798460, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568798520, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568798580, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568798640, 
+                "Value": 16
+            }, 
+            {
+                "Timestamp": 1568798700, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798760, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798820, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798880, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798940, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799000, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799060, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799120, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799180, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799240, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799300, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799360, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568799420, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568799480, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568799540, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799600, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799660, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568799720, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799780, 
+                "Value": 15
+            }, 
+            {
+                "Timestamp": 1568799840, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799900, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568799960, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568800020, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568800140, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568800200, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800260, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568800320, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800380, 
+                "Value": 7
+            }, 
+            {
+                "Timestamp": 1568800440, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800500, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568800560, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800620, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800680, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800740, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568800800, 
+                "Value": 11
+            }
+        ], 
+        "NetworkIn": null, 
+        "TCPConNum": null, 
+        "NetworkOut": null, 
+        "OutputRetransmitRate": null, 
+        "TCPDelay": null, 
+        "NetworkInUsage": [
+            {
+                "Timestamp": 1568797260, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568797320, 
+                "Value": 18
+            }, 
+            {
+                "Timestamp": 1568797380, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568797440, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568797560, 
+                "Value": 17
+            }, 
+            {
+                "Timestamp": 1568797620, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568797680, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568797740, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568797800, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568797860, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568797920, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568797980, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798040, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798100, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798160, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798220, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798280, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798340, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798400, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568798460, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798520, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798580, 
+                "Value": 14
+            }, 
+            {
+                "Timestamp": 1568798640, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798700, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568798760, 
+                "Value": 13
+            }, 
+            {
+                "Timestamp": 1568798820, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568798880, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568798940, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799000, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799060, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568799120, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568799180, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799240, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799300, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799360, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799420, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799480, 
+                "Value": 12
+            }, 
+            {
+                "Timestamp": 1568799540, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799600, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799660, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799720, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568799780, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799840, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799900, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568799960, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568800020, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800140, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800200, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800260, 
+                "Value": 10
+            }, 
+            {
+                "Timestamp": 1568800320, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800380, 
+                "Value": 8
+            }, 
+            {
+                "Timestamp": 1568800440, 
+                "Value": 8
+            }, 
+            {
+                "Timestamp": 1568800500, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800560, 
+                "Value": 8
+            }, 
+            {
+                "Timestamp": 1568800620, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800680, 
+                "Value": 9
+            }, 
+            {
+                "Timestamp": 1568800740, 
+                "Value": 11
+            }, 
+            {
+                "Timestamp": 1568800800, 
+                "Value": 9
+            }
+        ]
+    }
 }
 ```
 

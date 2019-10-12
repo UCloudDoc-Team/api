@@ -5,8 +5,8 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|UPathId|string|加速线路id|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|UPathId|string|加速线路实例ID|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -17,7 +17,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteUPath
-&UPathId=jWeXMMrv
+&ProjectId=org-xxx
+&UPathId=upath-xxxx
 ```
 
 # Response Example

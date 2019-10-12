@@ -26,7 +26,7 @@
 ## UHostImageSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist) ||No|
+|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist) |No|
 |ImageId|string|镜像ID|No|
 |ImageName|string|镜像名称|No|
 |OsType|string|操作系统类型：Liunx，Windows|No|

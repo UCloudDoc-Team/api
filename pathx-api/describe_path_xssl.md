@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |SSLId|string|SSL证书的Id，不传分页获取证书列表|No|
 |SearchValue|string|不为空则按证书名称、证书域名模糊搜索 分页返回结果|No|
 |Limit|int|最大返回条数，默认100，最大400|No|
@@ -41,14 +41,11 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribePathXSSL
-&Region=cn-zj
-&ProjectId=BhxrYOhJ
-&SSLId=qfAwKRCy
-&Limit=CwxhOhHj
-&Offset=xFymEXUY
-&SearchValue=CwubhZXD
-&Limit=4
-&Offset=2
+&ProjectId=org-xxx
+&SSLId=gssl-xxxx
+&SearchValue=
+&Limit=10
+&Offset=0
 ```
 
 # Response Example
@@ -59,19 +56,19 @@ https://api.ucloud.cn/?Action=DescribePathXSSL
     "RetCode": 0, 
     "DataSet": [
         {
-            "SSLName": "bTXXQWOI", 
+            "SSLName": "test", 
             "SSLBindedTargetSet": [
                 {
-                    "VServerId": "HJsHxIXH", 
-                    "VServerName": "hXJjEamx", 
-                    "ULBId": "iFrUItFj", 
-                    "ULBName": "nfuWqqyI"
+                    "ResourceId": "uga-xxx", 
+                    "ResourceName": "testl7"
                 }
             ], 
-            "SSLType": "PxRwdLNI", 
-            "SSLContent": "mwWAXoAn", 
-            "SSLId": "tddMiqYh", 
-            "CreateTime": 6
+            "SSLMD5": "132321312323==", 
+            "ExpireTime": 1590000001, 
+            "SubjectName": "www.uclouds.com", 
+            "SSLContent": "----BEGIN-----", 
+            "SSLId": "gssl-xxxx", 
+            "CreateTime": 1580000001
         }
     ]
 }

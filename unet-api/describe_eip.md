@@ -82,8 +82,9 @@ https://api.ucloud.cn/?Action=DescribeEIP
     "EIPSet": [
         {
             "Status": "used", 
-            "PayMode": "ShareBandwidth", 
+            "ExpireTime": 1530374400, 
             "Remark": "", 
+            "PayMode": "ShareBandwidth", 
             "Resource": {
                 "ResourceType": "uhost", 
                 "ResourceID": "uhost-XXXXXX", 
@@ -92,23 +93,22 @@ https://api.ucloud.cn/?Action=DescribeEIP
             }, 
             "Name": "EIP", 
             "Weight": 50, 
+            "Tag": "Default", 
             "ShareBandwidthSet": {
                 "ShareBandwidthName": "test", 
                 "ShareBandwidth": 20, 
                 "ShareBandwidthId": "bwshare-XXXX"
             }, 
             "EIPId": "eip-XXXXX", 
-            "ChargeType": "Month", 
-            "ExpireTime": 1530374400, 
-            "Expire": false, 
-            "Bandwidth": 20, 
-            "Tag": "Default", 
             "EIPAddr": [
                 {
                     "IP": "106.75.XX.XX", 
                     "OperatorName": "BGP"
                 }
             ], 
+            "Bandwidth": 20, 
+            "Expire": false, 
+            "ChargeType": "Month", 
             "CreateTime": 1528785841, 
             "BandwidthType": 1
         }

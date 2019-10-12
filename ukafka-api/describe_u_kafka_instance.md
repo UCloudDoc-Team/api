@@ -35,7 +35,7 @@
 |NetworkId|string|网络 id|No|
 |Remark|string|集群备注|No|
 |RunningTime|string|集群运行时间|No|
-|State|string|集群当前状态,集群状态："Running"| "Abnormal"| "Creating"| "Deleting"| "CreateFailed"| "DeleteFailed"| "Unavailable"| "Deleted"| "Updating"| "Deploying"| "Migrating"| "ExpandFailed"|No|
+|State|string|集群当前状态,集群状态："Running"\| "Abnormal"\| "Creating"\| "Deleting"\| "CreateFailed"\| "DeleteFailed"\| "Unavailable"\| "Deleted"\| "Updating"\| "Deploying"\| "Migrating"\| "ExpandFailed"|No|
 |SubnetId|string|所属子网 id|No|
 |Tag|string|集群标记|No|
 |UHostCount|string|集群节点个数|No|

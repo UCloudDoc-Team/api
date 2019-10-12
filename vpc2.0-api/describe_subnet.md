@@ -27,7 +27,6 @@
 |---|---|---|---|
 |Zone|string|可用区名称|No|
 |IPv6Network|string|子网关联的IPv6网段|No|
-|OperatorName|string|子网关联的IPv6网段所属运营商|No|
 |VPCId|string|VPCId|No|
 |VPCName|string|VPC名称|No|
 |SubnetId|string|子网Id|No|

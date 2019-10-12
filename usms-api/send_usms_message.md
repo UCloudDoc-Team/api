@@ -1,17 +1,24 @@
-# 发送短信息-SendUSMSMessage
+# 发送短信-SendUSMSMessage
 
-发送短信息。短信字数超过70个后，按照每66个进行切割(因为要加上1/3), 2/3)等字样，占用4个字长)。短信最大长度不能超过600个字。每个汉字、数字、字母、字符都按一个字计
+调用接口SendUSMSMessage发送短信
+
+```
+在一次请求中，最多可以向1000个手机号码发送相同内容的短信；
+```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|No|
-|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |PhoneNumbers.N|string|电话号码数组，电话号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如1851623xxxx，则默认为国内手机号|**Yes**|
-|TemplateParams.N|string|模板参数数组，以TempalteParams.0，TempalteParams.1.。。格式。若模板ID指定的模板无可变参数，则不传入该参数。模板参数个数与模板不匹配，则不允许发送|**Yes**|
-|TemplateId|string|模板ID。若指定的模板ID审核未通过(status不等于2)则不允许发送|**Yes**|
-|SigContent|string|使用的签名，如果不输入则使用默认签名，若没有申请默认签名不允许发送；若输入的签名没有申请，则无法发送|No|
+|SigContent|string|短信签名名称，请到[USMS控制台](https://console.ucloud.cn/usms)的签名管理页面查看；使用的短信签名必须是已申请并且通过审核；|**Yes**|
+|TemplateId|string|模板ID（也即短信模板申请时的工单ID），请到[USMS控制台](https://console.ucloud.cn/usms)的模板管理页面查看；使用的短信模板必须是已申请并通过审核；|**Yes**|
+|TemplateParams.N|string|模板参数数组，以TempalteParams.0，TempalteParams.1.。。格式。若模板ID指定的模板无可变参数，则不传入该参数。模板参数个数与模板不匹配，则限制发送|**Yes**|
+|ExtendCode|string|短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持|No|
+
+```
+支持在一次请求中向多个不同的手机号码发送相同内容的短信；超过70个字数将按照“每70个字数作为1条短信计费”（超过70个字提交至运营商时会在内容前置打上“1/2)”、“1/2)”，会占用4个字符），单次发送的短信字数上限为600个；字母、汉字、中英文标点符号，均按照1个字数计算；
+```
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -24,21 +31,20 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=SendUSMSMessage
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=cCArXerm
-&PhoneNumbers=gmtlHwlQ
-&MessageContent=lRntklUs
-&Signature=zWYCdRsB
-&TemplateId=DnsuwvfS
+&ProjectId=org-XXXXqi
+&PhoneNumbers.0=185XXXX9057
+&TemplateParams.0=123456
+&SigContent=UCloud
+&TemplateId=UTA19XXXX2D5BEC
+&PublicKey=vsRhB0Qzo9elXXXXXkw8o/vmss8Tb0vxi74A=
 ```
 
 # Response Example
 ```
 {
     "Action": "SendUSMSMessageResponse", 
-    "SessionNo": "qDLBzhgf", 
-    "Message": "BrzxdsFR", 
+    "SessionNo": "5a3XXXXXXb-7XXXX2-4XXX", 
+    "Message": "\u63d0\u4ea4\u53d1\u9001\u6210\u529f", 
     "RetCode": 0
 }
 ```

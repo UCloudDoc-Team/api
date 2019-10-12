@@ -36,8 +36,8 @@
 |AreaCode|string|查询带宽区域 cn代表国内 abroad代表海外 不填默认为全部区域|No|
 |OriginHost|string|回源Http请求头部Host，默认是加速域名|No|
 |OriginPort|int|回源端口|No|
-|CdnProtocol|string|加速类型http,http|https|No|
-|OriginProtocol|string|源站协议http，http|https   默认http|No|
+|CdnProtocol|string|加速类型http,http\|https|No|
+|OriginProtocol|string|源站协议http，http\|https   默认http|No|
 |CertName|string|证书名称|No|
 |Tag|string|业务组，默认为Default|No|
 |CacheHost|string|缓存Host，不同的域名可以配置为同一个CacheHost来实现缓存共享，默认为加速域名|No|

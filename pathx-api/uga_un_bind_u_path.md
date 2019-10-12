@@ -2,12 +2,16 @@
 
 UGA与UPath解绑
 
+```
+将加速配置于加速线路解绑后  加速效果会很快消失，请确认您的操作 是否会影响业务
+```
+
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|UGAId|string|UGA ID|**Yes**|
-|UPathId|string|加速线路id|**Yes**|
+|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|UGAId|string|加速配置实例ID 格式uga-xxx|**Yes**|
+|UPathId|string|加速线路实例ID 格式upath-xxx|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -18,8 +22,9 @@ UGA与UPath解绑
 # Request Example
 ```
 https://api.ucloud.cn/?Action=UGAUnBindUPath
-&UGAAId=hFwsmiPZ
-&UPathId=TWYeswGh
+&ProjectId=org-xxx
+&UGAId =uga-xxx
+&UPathId=upath-xxxx
 ```
 
 # Response Example
