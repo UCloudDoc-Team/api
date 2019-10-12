@@ -10,4 +10,4 @@
 * [获取可用的镜像列表-GetDockerImageList](api/ugc-api/get_docker_image_list)
 * [提交任务-SubmitTask](api/ugc-api/submit_task)
 * [查看任务详情-GetTaskDetail](api/ugc-api/get_task_detail)
-* [停止异步任务-StopTask](api/ugc-api/stop_task)
+
