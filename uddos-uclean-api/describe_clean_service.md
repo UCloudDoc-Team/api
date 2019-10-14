@@ -53,7 +53,7 @@ https://api.ucloud.cn/?Action=DescribeCleanService
     "TotalCount": 2, 
     "CleanServiceList": [
         {
-            "CleanRegion": "\u4e0a\u6d77", 
+            "CleanRegion": "上海", 
             "MaxCleanCapacity": 15, 
             "DefenseIP": "192.168.254.10", 
             "DefenseFlow": 80.344, 
@@ -66,7 +66,7 @@ https://api.ucloud.cn/?Action=DescribeCleanService
             "CreateTime": 1526438569
         }, 
         {
-            "CleanRegion": "\u5317\u4eac", 
+            "CleanRegion": "北京", 
             "MaxCleanCapacity": 5, 
             "DefenseIP": "192.168.254.10", 
             "DefenseFlow": 80.344, 

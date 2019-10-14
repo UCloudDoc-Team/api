@@ -82,9 +82,9 @@ https://api.ucloud.cn/?Action=DescribeUDBParamGroup
                     "AllowedVal": "1-100000"
                 }
             ], 
-            "GroupName": "mongodb2.4\u9ed8\u8ba4\u914d\u7f6e", 
+            "GroupName": "mongodb2.4默认配置", 
             "GroupId": 20, 
-            "Description": "mongodb2.4\u9ed8\u8ba4\u914d\u7f6e"
+            "Description": "mongodb2.4默认配置"
         }
     ]
 }

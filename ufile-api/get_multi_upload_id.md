@@ -39,9 +39,7 @@ Request Headers
 ```
 GET /?muploadid&prefix=lar&marker=a&limit=20 HTTP/1.1
 Host: example.cn-bj.ufileos.ucloud.cn
-Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:
-VdDRXKoBjX6FnxjOz+HbLtswW50=
-
+Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:VdDRXKoBjX6FnxjOz+HbLtswW50=
 ```
 
 # Response Example

@@ -43,8 +43,8 @@ https://api.ucloud.cn/?Action=QueryUSMSTemplate
     "Message": "", 
     "Data": {
         "Status": 2, 
-        "TemplateName": "\u9a8c\u8bc1\u7801\u6a21\u677f01", 
-        "Template": "\u60a8\u7684\u9a8c\u8bc1\u7801\u4e3a{1}\uff0c\u8bf7\u5728{2}\u5206\u949f\u5185\u4f7f\u7528\uff0c\u52ff\u900f\u9732\u7ed9\u4ed6\u4eba\u3002", 
+        "TemplateName": "验证码模板01", 
+        "Template": "您的验证码为{1}，请在{2}分钟内使用，勿透露给他人。", 
         "TemplateId": "UTA190715D9108C", 
         "ErrDesc": "", 
         "CreateTime": 1566783067

@@ -54,8 +54,7 @@ https://api.ucloud.cn/?Action=DescribeSSL
             "HashValue": "1d5da9cf215d7c0e7b41b85af8adac2b", 
             "SSLType": "Pem", 
             "VServerId": "", 
-            "SSLContent": "-----BEGIN RSA PRIVATE KEY-----\nXXXXXXXXXXXXX\n-----
-            END CERTIFICATE-----", 
+            "SSLContent": "-----BEGIN RSA PRIVATE KEY-----\nXXXXXXXXXXXXX\n-----END CERTIFICATE-----", 
             "SSLId": "ssl-XXXXX", 
             "CreateTime": 1418099063
         }
@@ -63,6 +62,5 @@ https://api.ucloud.cn/?Action=DescribeSSL
     "RetCode": 0, 
     "TotalCount": 1
 }
-
 ```
 

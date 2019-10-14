@@ -64,7 +64,7 @@ https://api.ucloud.cn/?Action=GetCodecTaskDetail&TaskId=1265
     "RetCode": 0, 
     "WatermarkDetail": {}, 
     "CodecPattenDetail": {
-        "CodecPattenName": "\u9ad8\u6e05-864x480-mpegts", 
+        "CodecPattenName": "高清-864x480-mpegts", 
         "DestVideoBitrate": 500, 
         "DestVideoResolution": "864x480", 
         "CodecPattenId": "11", 

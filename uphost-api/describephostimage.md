@@ -44,8 +44,8 @@ https://api.ucloud.cn/?Action=DescribePHostImage
     "Images": [
         {
             "OsType": "Ubuntu", 
-            "ImageName": " Ubuntu 12.04 64\u4f4d", 
-            "OsName": "Ubuntu 12.04 64\u4f4d", 
+            "ImageName": " Ubuntu 12.04 64位", 
+            "OsName": "Ubuntu 12.04 64位", 
             "ImageId": "pimg-yg-f2634b"
         }
     ], 

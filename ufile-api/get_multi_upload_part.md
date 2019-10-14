@@ -38,9 +38,7 @@ Request Headers
 ```
 GET /?muploadpart&uploadId=e5af977e-329c-4a25-b907-d8bc39ff95e3 HTTP/1.1
 Host: example.cn-bj.ufileos.ucloud.cn
-Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:
-VdDRXKoBjX6FnxjOz+HbLtswW50=
-
+Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:VdDRXKoBjX6FnxjOz+HbLtswW50=
 ```
 
 # Response Example

@@ -43,9 +43,9 @@ https://api.ucloud.cn/?Action=GetResourceAlarmTemplate
     "RetCode": 0, 
     "DataSet": [
         {
-            "Remark": "\u9ed8\u8ba4\u63a8\u8350\u6a21\u677f", 
+            "Remark": "默认推荐模板", 
             "uuid": "9943290f-da50-4edf-a80f-xxxxx", 
-            "AlarmTemplateName": "\u9ed8\u8ba4\u4e91\u4e3b\u673a\u544a\u8b66\u6a21\u677f", 
+            "AlarmTemplateName": "默认云主机告警模板", 
             "AlarmTemplateId": 4, 
             "ResourceId": "uhost-mwzal2", 
             "HasAlarmTemplate": "Yes", 

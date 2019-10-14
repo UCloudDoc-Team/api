@@ -45,7 +45,7 @@ https://api.ucloud.cn/?Action=GetWaterMarkPattenList
             "WaterMarkType": "text", 
             "FontColor": "#c42222", 
             "ImageUrl": "", 
-            "TextContent": "\u545c\u545c\u545c\u545c-_ssa21212", 
+            "TextContent": "呜呜呜呜-_ssa21212", 
             "FontType": "arial", 
             "PaddingY": 0, 
             "PaddingX": 0, 

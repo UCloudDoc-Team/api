@@ -188,7 +188,7 @@ https://api.ucloud.cn/?Action=DescribeCharacterList
             }, 
             "Modifiable": false, 
             "CharacterId": "Admin", 
-            "CharacterDescription": "\u7ba1\u7406\u5458"
+            "CharacterDescription": "管理员"
         }, 
         {
             "CharacterName": "test", 

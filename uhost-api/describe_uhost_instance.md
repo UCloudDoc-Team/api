@@ -114,7 +114,7 @@ https://api.ucloud.cn/?Action=DescribeUHostInstance
     "UHostSet": [
         {
             "Zone": "cn-bj2-04", 
-            "OsName": "CentOS 6.5 64\u4f4d", 
+            "OsName": "CentOS 6.5 64位", 
             "HostType": "N2", 
             "State": "Running", 
             "Memory": 8192, 

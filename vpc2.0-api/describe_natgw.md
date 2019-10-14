@@ -143,7 +143,7 @@ https://api.ucloud.cn/?Action=DescribeNATGW
         }, 
         {
             "Remark": "", 
-            "NATGWName": "natgw\u5bb9\u707e\u6d4b\u8bd5", 
+            "NATGWName": "natgw容灾测试", 
             "IPSet": [
                 {
                     "EIPUUID": "eip-1ir5ot", 
@@ -159,14 +159,14 @@ https://api.ucloud.cn/?Action=DescribeNATGW
                     ]
                 }
             ], 
-            "VPCName": "\u5bb9\u707e\u6d4b\u8bd511", 
+            "VPCName": "容灾测试11", 
             "VPCId": "uvnet-2b15h0", 
             "Tag": "Default", 
             "FirewallId": "firewall-itqvoh", 
             "PolicyId": [], 
             "SubnetSet": [
                 {
-                    "SubnetName": "\u5bb9\u707e\u6d4b\u8bd511", 
+                    "SubnetName": "容灾测试11", 
                     "Subnet": "192.168.128.0/17", 
                     "SubnetworkId": "subnet-jrqoqo", 
                     "SubnetworkUUID": "subnet-jrqoqo"

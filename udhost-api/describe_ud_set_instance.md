@@ -87,13 +87,13 @@ https://api.ucloud.cn?Action=DescribeUDSetInstance
     "UHostSet": [
         {
             "Zone": "cn-bj2-02", 
-            "OsName": "CentOS 6.5 64\u4f4d", 
+            "OsName": "CentOS 6.5 64位", 
             "UHostType": "Normal", 
             "Memory": 4096, 
             "NetCapability": "Normal", 
             "BootDiskState": "Initializing", 
             "CPU": 2, 
-            "BasicImageName": "CentOS 6.5 64\u4f4d", 
+            "BasicImageName": "CentOS 6.5 64位", 
             "IPSet": [
                 {
                     "SubnetId": "subnet-xxx", 

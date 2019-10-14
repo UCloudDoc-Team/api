@@ -49,7 +49,7 @@ https://api.ucloud.cn/?Action=GetFileList
         {
             "MimeType": "image/jpeg", 
             "Hash": "fbfc1aba39fdac0e0f298461970529d3", 
-            "FileName": "\u58c1\u7eb8.jpg", 
+            "FileName": "壁纸.jpg", 
             "BucketName": "blue", 
             "ModifyTime": 1408298579, 
             "CreateTime": 1408298579, 

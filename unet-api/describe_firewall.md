@@ -57,9 +57,9 @@ https://api.ucloud.cn/?Action=DescribeFirewall
     "RetCode": 0, 
     "DataSet": [
         {
-            "Remark": "\u5f00\u653e22\uff0c3389\u7aef\u53e3\u548cICMP", 
+            "Remark": "开放22，3389端口和ICMP", 
             "ResourceCount": 0, 
-            "Name": "\u975eWeb\u670d\u52a1\u5668\u63a8\u8350(22\uff0c3389)", 
+            "Name": "非Web服务器推荐(22，3389)", 
             "Rule": [
                 {
                     "Priority": "HIGH", 

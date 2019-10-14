@@ -44,7 +44,7 @@ https://api.ucloud.cn/?Action=SendUSMSMessage
 {
     "Action": "SendUSMSMessageResponse", 
     "SessionNo": "5a3XXXXXXb-7XXXX2-4XXX", 
-    "Message": "\u63d0\u4ea4\u53d1\u9001\u6210\u529f", 
+    "Message": "提交发送成功", 
     "RetCode": 0
 }
 ```

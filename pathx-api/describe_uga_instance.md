@@ -94,10 +94,10 @@ https://api.ucloud.cn/?Action=DescribeUGAInstance
             "UPathSet": [
                 {
                     "UPathId": "upath-xcacoz", 
-                    "LineFromName": "\u4e2d\u56fd(\u591a\u5730)", 
+                    "LineFromName": "中国(多地)", 
                     "LineFrom": "cn-gd", 
-                    "LineToName": "\u6d1b\u6749\u77f6", 
-                    "UPathName": "\u4e2d\u7f8e\u52a0\u901f", 
+                    "LineToName": "洛杉矶", 
+                    "UPathName": "中美加速", 
                     "Bandwidth": 1, 
                     "LineTo": "us-ca", 
                     "LineId": "line_cn-us-ca"
@@ -130,10 +130,10 @@ https://api.ucloud.cn/?Action=DescribeUGAInstance
                     "Area": "us-ca"
                 }
             ], 
-            "UGAName": "github\u52a0\u901f", 
+            "UGAName": "github加速", 
             "L7ForwarderSet": [], 
             "CName": "xbc287.pathx.ucloudgda.com", 
-            "Location": "\u5317\u7f8e", 
+            "Location": "北美", 
             "TaskSet": [
                 {
                     "Protocol": "TCP", 

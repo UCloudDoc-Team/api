@@ -57,9 +57,9 @@ https://api.ucloud.cn/?Action=DescribeUPath
     "UPathSet": [
         {
             "UPathId": "upath-2noe2u", 
-            "LineFromName": "\u4e2d\u56fd(\u591a\u5730)", 
-            "Name": "\u4e2d\u56fd\u591a\u5730\u5230\u62c9\u5404\u65af_0", 
-            "LineToName": "\u62c9\u5404\u65af", 
+            "LineFromName": "中国(多地)", 
+            "Name": "中国多地到拉各斯_0", 
+            "LineToName": "拉各斯", 
             "ExpireTime": 1569859200, 
             "Bandwidth": 1, 
             "OutPublicIpList": [

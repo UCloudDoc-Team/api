@@ -46,7 +46,7 @@ https://api.ucloud.cn/?Action=GetCodecPattenList
             "DestAudioSample ": 44100, 
             "DestVideoResolution ": "864x480", 
             "DestAudioBitrate ": 48, 
-            "PattenName": "\u9ed8\u8ba4480p-mp4", 
+            "PattenName": "默认480p-mp4", 
             "DestAudioChannel ": 2, 
             "DestVideoBitrate ": 500, 
             "PattenId": "1", 

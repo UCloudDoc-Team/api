@@ -35,7 +35,7 @@ https://api.ucloud.cn/?Action=DeleteImage
 ```
 {
     "Action": "DeleteImageResponse", 
-    "Message": "\u6210\u529f", 
+    "Message": "成功", 
     "RetCode": 0
 }
 ```

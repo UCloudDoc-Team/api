@@ -62,10 +62,10 @@ https://api.ucloud.cn/?Action=DescribeImage
         {
             "Zone": "cn-bj2-04", 
             "ImageDescription": "Windows Server 2008 R2 Datacenter 32-bit", 
-            "OsName": "Windows 2008 32 \u4f4d", 
+            "OsName": "Windows 2008 32 位", 
             "ImageId": "0b560b1d-f3b1-43de-a492-08875d79211b", 
             "State": "Available", 
-            "ImageName": " Windows 2008 32 \u4f4d", 
+            "ImageName": " Windows 2008 32 位", 
             "OsType": "Windows", 
             "CreateTime": 1234567890, 
             "ImageType": "Base"
