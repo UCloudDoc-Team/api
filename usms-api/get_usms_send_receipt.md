@@ -10,9 +10,7 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |SessionNoSet.N|string|发送短信时返回的SessionNo集合，SessionNoSet.0,SessionNoSet.1....格式|**Yes**|
 
-```
-短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；若发送后未立即拿到回执状态，建议在发送后5至10分钟内在尝试代用获取，若超过12小时仍未拿到发送状态，可联系UCloud技术支持协助
-```
+?> 短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；若发送后未立即拿到回执状态，建议在发送后5至10分钟内在尝试代用获取，若超过12小时仍未拿到发送状态，可联系UCloud技术支持协助
 
 # Response Elements
 |Parameter name|Type|Description|Required|

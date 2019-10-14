@@ -16,9 +16,7 @@
 |UDBCId|string|IsInUDBC为True,UDBCId为空，说明查看整个可用区的专区的db，如果UDBId不为空则只查看此专区下面的db|No|
 |IncludeSlaves|bool|当只获取这个特定DBId的信息时，如果有该选项，那么把这个DBId实例的所有从库信息一起拉取并返回|No|
 
-```
-指定DBId时无需填写ClassType、Offset、Limit，如不指定DBId时则必须填写
-```
+?> 指定DBId时无需填写ClassType、Offset、Limit，如不指定DBId时则必须填写
 
 # Response Elements
 |Parameter name|Type|Description|Required|

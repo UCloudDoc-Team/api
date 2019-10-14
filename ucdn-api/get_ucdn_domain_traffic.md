@@ -2,10 +2,8 @@
 
 获取加速域名流量使用信息
 
-```
-note
+!> note
 流量使用数据最长保留3个月的时间。
-```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

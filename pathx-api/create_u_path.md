@@ -13,9 +13,7 @@
 |Quantity|int|购买周期，ChargeType为Month时，Quantity默认为0代表购买到月底，按时和按年付费该参数必须大于0|No|
 |CouponId|string|代金券Id|No|
 
-```
-LineId参数范围 从DescribePathXLineConfig接口获取。资源创建后，会开启自动续费，账户剩余额度不足则会产生欠费订单直到资源被回收
-```
+?> LineId参数范围 从DescribePathXLineConfig接口获取。资源创建后，会开启自动续费，账户剩余额度不足则会产生欠费订单直到资源被回收
 
 # Response Elements
 |Parameter name|Type|Description|Required|

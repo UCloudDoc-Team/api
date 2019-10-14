@@ -2,10 +2,8 @@
 
 更新防火墙规则
 
-```
-note
+!> note
 在更新防火墙规则时，新的规则会覆盖掉原有规则。所以若需要更改或加入新的规则，需要将原所有规则与新规则一起提交。
-```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

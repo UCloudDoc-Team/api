@@ -8,9 +8,7 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |KeyId|string|需要查看的主密钥对应的 KeyId|**Yes**|
 
-```
-UCloud管理密钥 不能删除。
-```
+?> UCloud管理密钥 不能删除。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

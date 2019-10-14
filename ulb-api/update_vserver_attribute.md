@@ -2,12 +2,10 @@
 
 更新VServer实例属性
 
-```
-VServerId 对应 CreateVServer 返回的 VServerId
+!> VServerId 对应 CreateVServer 返回的 VServerId
 或者 DescribeVServer / DescribeULB 返回的 ULBVServerSet 中的 VServerId
 
 没有传的参数都不会做修改
-```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

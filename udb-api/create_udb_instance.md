@@ -37,11 +37,9 @@
 |Tag|string|实例所在的业务组名称|No|
 |CouponId|string|使用的代金券id|No|
 
-```
-创建跨可用区的高可用注意项:
+?> 创建跨可用区的高可用注意项:
 1. 需要参数 BackupZone：值为高可用容灾的ZoneId
 2. 参数ParamGroupId: 值为跨可用区的配置文件，可以通过DescribeUDBParamGroup获得
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

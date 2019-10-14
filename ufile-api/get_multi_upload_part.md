@@ -7,15 +7,13 @@
 |---|---|---|---|
 |UploadId|string|上传ID|**Yes**|
 
-```
-Syntax:
+?> Syntax:
 	GET /?muploadpart&uploadId=<uploadid>
 	Host: <bucket_name>.ufile.ucloud.cn
 	Authorization: <token> 
 
 Request Headers
 	Authorization 下载请求的授权签名
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

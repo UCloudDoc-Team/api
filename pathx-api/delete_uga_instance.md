@@ -2,9 +2,7 @@
 
 删除全球加速服务加速配置
 
-```
-删除加速配置实例时，建议先调用UGAUnbindUPath接口解绑线路 解绑成功后再删除
-```
+!> 删除加速配置实例时，建议先调用UGAUnbindUPath接口解绑线路 解绑成功后再删除
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

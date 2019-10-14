@@ -18,9 +18,7 @@
 |UDP.n|int|UDP接入端口|No|
 |UDPRS.n|int|UDP回源端口|No|
 
-```
-目前UGA同时支持4层和7层接入端口 使用相同的加速域名接入。因此TCP协议 接入端口与HTTP(s)类协议接入端口不能相同；如果需要从TCP加速转为HTTP加速，请先使用DeleteUGAForwarder接口删除已经存在的TCP端口加速 再使用CreateUGAForwarder增加HTTP加速端口；修改回源端口也需要删除现有的端口加速再添加新的
-```
+?> 目前UGA同时支持4层和7层接入端口 使用相同的加速域名接入。因此TCP协议 接入端口与HTTP(s)类协议接入端口不能相同；如果需要从TCP加速转为HTTP加速，请先使用DeleteUGAForwarder接口删除已经存在的TCP端口加速 再使用CreateUGAForwarder增加HTTP加速端口；修改回源端口也需要删除现有的端口加速再添加新的
 
 # Response Elements
 |Parameter name|Type|Description|Required|

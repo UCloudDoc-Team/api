@@ -2,9 +2,7 @@
 
 获取加速域名原始日志
 
-```
-注解：日志数据最长保留一周时间。
-```
+!> 注解：日志数据最长保留一周时间。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

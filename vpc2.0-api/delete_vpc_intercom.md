@@ -12,9 +12,7 @@
 |DstRegion|string|目的VPC所在地域，默认为源VPC所在地域|No|
 |DstProjectId|string|目的VPC所在项目ID，默认为源VPC所在项目ID|No|
 
-```
-删除VPC打通关系
-```
+?> 删除VPC打通关系
 
 # Response Elements
 |Parameter name|Type|Description|Required|

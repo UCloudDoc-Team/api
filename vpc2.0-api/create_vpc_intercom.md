@@ -12,9 +12,7 @@
 |DstRegion|string|目的所在地域（如果目的VPC和源VPC不在同一个地域，两个地域需要建立跨域通道，且该字段必选）|No|
 |DstProjectId|string|目的项目ID|No|
 
-```
-新建VPC互通关系
-```
+?> 新建VPC互通关系
 
 # Response Elements
 |Parameter name|Type|Description|Required|

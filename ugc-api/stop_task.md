@@ -9,9 +9,7 @@
 |TaskId|string|异步任务ID|**Yes**|
 |AccessToken|string|UGC提交任务Token，通过GetAccessToken获得|**Yes**|
 
-```
-必须在内网调用，不通过api.ucloud.cn
-```
+?> 必须在内网调用，不通过api.ucloud.cn
 
 # Response Elements
 |Parameter name|Type|Description|Required|

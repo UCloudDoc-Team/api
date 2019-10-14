@@ -10,9 +10,7 @@
 |DownloadTraffic|int|下载流量，单位: GB，范围: [0, 60 000]，步长：1GB|No|
 |RequestCount|int|请求次数，单位：万次，范围：[0, 1 000 000]，步长：1万次|No|
 
-```
-说明：如果StorageVolume > 0，必须保证StorageVolume是100的倍数。
-```
+?> 说明：如果StorageVolume > 0，必须保证StorageVolume是100的倍数。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

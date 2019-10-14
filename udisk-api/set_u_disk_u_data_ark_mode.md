@@ -11,10 +11,8 @@
 |UDiskId|string|需要设置数据方舟的UDisk的Id|**Yes**|
 |UDataArkMode|string|是否开启数据方舟，开启:"Yes", 不支持:"No"|**Yes**|
 
-```
-"17090": "开启或关闭方舟失败，请稍后再试。"
+?> "17090": "开启或关闭方舟失败，请稍后再试。"
 "17091": "该磁盘距离关闭数据方舟不足三天，无法再次开启"
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

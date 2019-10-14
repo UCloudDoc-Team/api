@@ -2,9 +2,7 @@
 
 创建全球加速配置项
 
-```
-加速配置创建完毕后 需要调用UGABindUPath接口才能使用
-```
+!> 加速配置创建完毕后 需要调用UGABindUPath接口才能使用
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -16,9 +14,7 @@
 |TCP.n|string|TCP端口号，已废弃。请使用 CreateUGAForwarder API 创建端口|No|
 |UDP.n|string|UDP端口号，已废弃。请使用 CreateUGAForwarder API 创建端口|No|
 
-```
-UGA作为加速配置实例，计费周期跟随绑定的UPath资源，资源到期自动续费，账户余额不足会产生欠费订单 直到资源被回收。如果没有绑定线路，加速配置不收取任何费用。
-```
+?> UGA作为加速配置实例，计费周期跟随绑定的UPath资源，资源到期自动续费，账户余额不足会产生欠费订单 直到资源被回收。如果没有绑定线路，加速配置不收取任何费用。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

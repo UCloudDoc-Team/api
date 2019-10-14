@@ -11,9 +11,7 @@
 |Offset|int|获取所有Bucket列表的偏移数目，默认为0|No|
 |Limit|int|获取所有Bucket列表的限制数目，默认为20|No|
 
-```
-注意：如果提供了参数BucketName，则参数Offset和Limit失效。
-```
+?> 注意：如果提供了参数BucketName，则参数Offset和Limit失效。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

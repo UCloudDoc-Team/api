@@ -19,9 +19,7 @@
 |CmkId|string|加密需要的cmk id，UKmsMode为Yes时，必填|No|
 |CouponId|string|使用的代金券id|No|
 
-```
-"17092": "该磁盘版本过低，无法开启数据方舟"
-```
+?> "17092": "该磁盘版本过低，无法开启数据方舟"
 
 # Response Elements
 |Parameter name|Type|Description|Required|

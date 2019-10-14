@@ -11,9 +11,7 @@
 |ExportIp|string|NAT网关绑定的EIP。ExportIp和ExportEipId必填一个|No|
 |ExportEipId|string|NAT网关绑定的EIP Id。ExportIp和ExportEipId必填一个|No|
 
-```
-ExportIp和ExportEipId必填一个
-```
+?> ExportIp和ExportEipId必填一个
 
 # Response Elements
 |Parameter name|Type|Description|Required|

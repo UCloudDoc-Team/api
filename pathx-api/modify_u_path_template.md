@@ -15,9 +15,7 @@
 |AlarmStrategy.n|string|收敛策略，可选范围 ['Exponential','Continuous','Once']，分别对应指数递增、连续告警、单次告警|No|
 |TriggerCount.n|int|告警触发周期（次数）|No|
 
-```
-不同告警指标的 参数单位不一样;参数值后的n可以替换为不同的整数，整数值相同的参数组成一条告警指标
-```
+?> 不同告警指标的 参数单位不一样;参数值后的n可以替换为不同的整数，整数值相同的参数组成一条告警指标
 
 # Response Elements
 |Parameter name|Type|Description|Required|

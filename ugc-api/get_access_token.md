@@ -2,9 +2,7 @@
 
 提交任务接口使用AccessToken做身份验证，此接口用于获取AccessToken。
 
-```
-关于AccessToken的说明： AccessToken的有效期为ExpireIn来传达，默认为7200秒，为了保证调用安全，建议不要设置过长的有效期。 用户需要根据有效时间提前去刷新AccessToken。刷新后及旧Token过期前新老AccessToken都可用，保证业务的平滑过渡。
-```
+!> 关于AccessToken的说明： AccessToken的有效期为ExpireIn来传达，默认为7200秒，为了保证调用安全，建议不要设置过长的有效期。 用户需要根据有效时间提前去刷新AccessToken。刷新后及旧Token过期前新老AccessToken都可用，保证业务的平滑过渡。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

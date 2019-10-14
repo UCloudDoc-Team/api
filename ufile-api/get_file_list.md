@@ -2,9 +2,7 @@
 
 获取Bucket的文件列表
 
-```
-注：该API已废弃，请以[[./prefix_file_list]]代替
-```
+!> 注：该API已废弃，请以[[./prefix_file_list]]代替
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

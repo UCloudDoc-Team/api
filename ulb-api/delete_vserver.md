@@ -2,10 +2,8 @@
 
 删除VServer实例
 
-```
-VServerId 对应 CreateVServer 返回的 VServerId
+!> VServerId 对应 CreateVServer 返回的 VServerId
 或者 DescribeVServer / DescribeULB 返回的 ULBVServerSet 中的 VServerId
-```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

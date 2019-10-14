@@ -12,9 +12,7 @@
 |DomainId.n|string|域名id，创建域名时生成的id。默认全部域名|No|
 |Areacode|string|查询带宽区域 cn代表国内 abroad代表海外，只支持国内|No|
 
-```
-详细状态码监控仅返回有数量的详细状态码，若无数量则不返回。
-```
+?> 详细状态码监控仅返回有数量的详细状态码，若无数量则不返回。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

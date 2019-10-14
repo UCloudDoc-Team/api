@@ -2,9 +2,7 @@
 
 更新防火墙规则
 
-```
-note在更新防火墙属性时，新的属性会覆盖掉原有属性。
-```
+!> note在更新防火墙属性时，新的属性会覆盖掉原有属性。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

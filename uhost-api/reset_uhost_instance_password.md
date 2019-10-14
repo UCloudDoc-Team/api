@@ -2,9 +2,7 @@
 
 重置UHost实例的管理员密码。
 
-```
-该操作需要UHost实例处于关闭状态。
-```
+!> 该操作需要UHost实例处于关闭状态。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

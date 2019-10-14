@@ -9,15 +9,13 @@
 |Marker|string|标志字符串，utf-8编码，默认为空字符串|No|
 |Limit|int|id列表数目，默认为20|No|
 
-```
-Syntax:
+?> Syntax:
 	GET /?muploadid&prefix=<prefix>&marker=<marker>&limit=<limit>
 	Host: <bucket_name>.ufile.ucloud.cn
 	Authorization: <token> 
 
 Request Headers
 	Authorization 下载请求的授权签名
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

@@ -13,9 +13,7 @@
 |Memory|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值为当前实例的内存大小。|No|
 |NetCapValue|int|网卡升降级（1，表示升级，2表示降级，0表示不变）|No|
 
-```
-若需查询调整磁盘大小的价格，请调用ResizeAttachedDisk。
-```
+?> 若需查询调整磁盘大小的价格，请调用ResizeAttachedDisk。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

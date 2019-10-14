@@ -2,12 +2,10 @@
 
 从VServer释放后端资源实例
 
-```
-VServer 为7层时，必须先把后端实例从转发规则中移除之后才能释放
+!> VServer 为7层时，必须先把后端实例从转发规则中移除之后才能释放
 
 BackendId 对应是 AllocateBackend 返回的 BackendId 
 或者 DescribeULB/DescribeVServer 返回的 ULBBackendSet 里的 BackendId
-```
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

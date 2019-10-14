@@ -10,10 +10,8 @@
 |Offset|int|获取所有Vault列表的偏移数目，默认为0|No|
 |Limit|int|获取所有Vault列表的限制数目，默认为20|No|
 
-```
-特别说明:
+?> 特别说明:
 VaultName参数必须符合Vault名称规范,规范如下: (1) 长度在3~63字节之间； (2) 可以由多个标签组成，各个标签用 . 间隔，每个标签只能包含小字母、数字、连接符（短横线），并且标签的开头和结尾的字符只能是小写字母或数字； (3) 不可以是IP地址。
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

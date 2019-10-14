@@ -2,9 +2,7 @@
 
 调用接口DeleteUSMSTemplate删除短信模板
 
-```
-1.不支持删除正在审核中的短信模板；2.短信模板删除后不可恢复，请谨慎操作。
-```
+!> 1.不支持删除正在审核中的短信模板；2.短信模板删除后不可恢复，请谨慎操作。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

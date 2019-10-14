@@ -13,13 +13,11 @@
 |Limit|int|数据分页值，默认为20|No|
 |Offset|int|数据偏移量，默认为0|No|
 
-```
-
+?> 
 note
 资源类型及监控指标，参见 GetMetric文档
 
 
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

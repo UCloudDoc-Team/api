@@ -14,8 +14,7 @@
 |VideoBeginTime|int|视频的开始时间,时间单位为秒|No|
 |VideoEndTime|int|视频的结束时间,时间单位为秒|No|
 
-```
-视频转码、截图、鉴黄等处理完成后， UMedia 可以回调用户的接口， 通知处理的结果。
+?> 视频转码、截图、鉴黄等处理完成后， UMedia 可以回调用户的接口， 通知处理的结果。
 客户需提供一个接收处理结果的 api 接口，处理结果被封装成 json 字符串，通过 POST 请求，
 传递给用户的接口。具体回调参数字段如下：
 
@@ -29,7 +28,6 @@
 "duration":587, //切片后视频的时长，单位秒
 "message":"succ" //处理结果描述
 }
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

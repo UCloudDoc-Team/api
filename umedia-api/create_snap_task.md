@@ -15,8 +15,7 @@
 |CallbackUrl|string|任务结束后，回调客户的url地址。|No|
 |GifFrameRate|float|Gif图片的播放速度，单位为帧/秒|No|
 
-```
-视频转码、截图、鉴黄等处理完成后， UMedia 可以回调用户的接口， 通知处理的结果。
+?> 视频转码、截图、鉴黄等处理完成后， UMedia 可以回调用户的接口， 通知处理的结果。
 客户需提供一个接收处理结果的 api 接口，处理结果被封装成 json 字符串，通过 POST 请求，
 传递给用户的接口。具体回调参数字段如下：
 
@@ -33,7 +32,6 @@
 ],
 "message":"succ" //处理结果描述
 }
-```
 
 # Response Elements
 |Parameter name|Type|Description|Required|

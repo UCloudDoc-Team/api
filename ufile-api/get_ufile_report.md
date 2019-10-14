@@ -10,9 +10,7 @@
 |StartTime|int|查询开始时间|**Yes**|
 |EndTime|int|查询结束时间|**Yes**|
 
-```
-说明：1. 参数EntTime和StartTime都是unix时间戳，必须保证 EndTime < StartTime，并且时间差小于一年。
-```
+?> 说明：1. 参数EntTime和StartTime都是unix时间戳，必须保证 EndTime < StartTime，并且时间差小于一年。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

@@ -2,9 +2,7 @@
 
 调用接口DeleteUSMSSignature删除短信签名
 
-```
-1.不支持删除正在审核中的短信签名；2.短信签名删除后不可恢复，请谨慎操作。
-```
+!> 1.不支持删除正在审核中的短信签名；2.短信签名删除后不可恢复，请谨慎操作。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

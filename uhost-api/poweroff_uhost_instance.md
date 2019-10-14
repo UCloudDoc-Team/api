@@ -2,9 +2,7 @@
 
 直接关闭UHost实例电源，无需等待实例正常关闭。
 
-```
-该操作可能会影响数据完整性或导致文件系统损坏
-```
+!> 该操作可能会影响数据完整性或导致文件系统损坏
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

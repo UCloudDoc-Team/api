@@ -2,9 +2,7 @@
 
 删除指定数据中心的UHost实例。
 
-```
-非试用的过期资源不可删除； 关机状态下才能执行删除操作
-```
+!> 非试用的过期资源不可删除； 关机状态下才能执行删除操作
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

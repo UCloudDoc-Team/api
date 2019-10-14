@@ -2,9 +2,7 @@
 
 UGA与UPath解绑
 
-```
-将加速配置于加速线路解绑后  加速效果会很快消失，请确认您的操作 是否会影响业务
-```
+!> 将加速配置于加速线路解绑后  加速效果会很快消失，请确认您的操作 是否会影响业务
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

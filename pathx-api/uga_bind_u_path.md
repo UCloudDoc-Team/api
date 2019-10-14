@@ -2,9 +2,7 @@
 
 UGA绑定UPath
 
-```
-绑定线路成功后，加速配置通常会在1min内生效。请先使用nc或telnet命令探测加速域名 加速端口是否联通。正常联通后将业务域名CName到加速域名上来。
-```
+!> 绑定线路成功后，加速配置通常会在1min内生效。请先使用nc或telnet命令探测加速域名 加速端口是否联通。正常联通后将业务域名CName到加速域名上来。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

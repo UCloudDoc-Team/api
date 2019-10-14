@@ -10,9 +10,7 @@
 |UHostIds.n|string|UHost主机的资源ID，例如UHostIds.0代表希望升级的主机1，UHostIds.1代表主机2。|**Yes**|
 |CouponId|string|代金券ID 请参考DescribeCoupon接口|No|
 
-```
-升级注意事项：仅支持普通型+本地盘的组合，需要关机进行，且整个升级过程较慢，每100G约需要等待30分钟。
-```
+?> 升级注意事项：仅支持普通型+本地盘的组合，需要关机进行，且整个升级过程较慢，每100G约需要等待30分钟。
 
 # Response Elements
 |Parameter name|Type|Description|Required|

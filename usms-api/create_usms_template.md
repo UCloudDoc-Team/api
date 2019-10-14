@@ -11,9 +11,7 @@
 |Template|string|短信模板内容，说明如下：字数不超过500，每个中文、符号、英文、数组等都计为一个字；模板中的变量填写格式：{N}，其中N为大于1的整数，有多个参数时，建议N从1开始顺次，例如：{1}、{2}等；短信模板禁止仅包括变量的情况；|**Yes**|
 |Remark|string|短信模板申请原因说明，字数不超过128，每个中文、符号、英文、数字等都计为1个字。|No|
 
-```
-您可以通过调用接口CreateUSMSTemplate或者到控制台申请短信模板，短信模板需遵守 [UCloud服务协议](https://docs.ucloud.cn/management_monitor/usms/introduction/service_level)，短信模板申请流程可参见官网 [短信模板审核规范](https://docs.ucloud.cn/management_monitor/usms/introduction/2005/2103) 说明；
-```
+?> 您可以通过调用接口CreateUSMSTemplate或者到控制台申请短信模板，短信模板需遵守 [UCloud服务协议](https://docs.ucloud.cn/management_monitor/usms/introduction/service_level)，短信模板申请流程可参见官网 [短信模板审核规范](https://docs.ucloud.cn/management_monitor/usms/introduction/2005/2103) 说明；
 
 # Response Elements
 |Parameter name|Type|Description|Required|

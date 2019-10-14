@@ -14,9 +14,7 @@
 |Quantity|int|计费时长，默认 1|No|
 |CouponId|string|代金劵|No|
 
-```
-两个端点peer1和peer2之间的线路不一定支持，调用GetUDPNLineList查询支持线路
-```
+?> 两个端点peer1和peer2之间的线路不一定支持，调用GetUDPNLineList查询支持线路
 
 # Response Elements
 |Parameter name|Type|Description|Required|
