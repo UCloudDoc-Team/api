@@ -1,4 +1,4 @@
-* UDB
+* 云数据库 UDB
     * [概览](api/udb-api/overview)
     * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
     * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
@@ -51,3 +51,4 @@
     * [获取备份列表-DescribeUDBBackup](api/udb-api/describe_udb_backup)
     * [更新配置-UpdateUDBParamGroup](api/udb-api/update_udb_param_group)
     * [获取UDB实例升降级价格信息-DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
+    * UDB 错误码列表
