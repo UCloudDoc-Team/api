@@ -22,3 +22,4 @@
 * [解绑SSL证书-UnbindSSL](api/ulb-api/unbind_ssl)
 * [创建负载均衡-CreateULB](api/ulb-api/create_ulb)
 * [更新VServer属性-UpdateVServerAttribute](api/ulb-api/update_vserver_attribute)
+* [ULB 错误码](api/ulb-api/error_code)
