@@ -47,8 +47,7 @@
 ```
 https://api.ucloud.cn/?Action=DescribeBucket
 &BucketName=blue
-&Region=cxqbTMaU
-&Region=cn-zj
+&Region=cn-bj2
 ```
 
 # Response Example
