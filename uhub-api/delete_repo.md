@@ -19,7 +19,6 @@
 https://api.ucloud.cn/?Action=DeleteRepo
 &ProjectId=bkMJlJgA
 &RepoName=knXPUThp
-&ProjectId=gxLJpsoY
 ```
 
 # Response Example

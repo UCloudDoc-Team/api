@@ -20,9 +20,9 @@
 
 # Request Example
 ```
-https://api.spark.ucloud.cn/?Action=ModifyUDBInstancePassword
+https://api.ucloud.cn/?Action=ModifyUDBInstancePassword
 &Region=cn-bj2
-&DBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&DBId=udb-xxxxxx
 &ProjectId=7
 &Password=adjk
 ```

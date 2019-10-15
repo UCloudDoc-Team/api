@@ -6,7 +6,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](可以根据用户邮箱去账号查找)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list)|No|
 |Limit|int|返回数据长度，默认为20|No|
 |Offset|int|列表起始位置偏移量，默认为0|No|
 
