@@ -1,5 +1,6 @@
-* UCDN
+* 云分发 UCDN
     * [概览](api/ucdn-api/overview)
+    * [省份和运营商列表](api/ucdn-api/province)
     * [获取域名详细状态码监控-GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)
     * [获取回源带宽数据（按时间分类）-GetUcdnPassBandwidth](api/ucdn-api/get_ucdn_pass_bandwidth)
     * [获取域名预取开启状态-GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)
@@ -16,3 +17,4 @@
     * [获取域名状态码监控-GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)
     * [获取加速域名原始日志-GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)
     * [获取域名刷新任务状态-DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
+    * [获取域名请求数-GetNewUcdnDomainRequestNum（已下线）](api/ucdn-api/get_new_ucdn_domain_request_num)
