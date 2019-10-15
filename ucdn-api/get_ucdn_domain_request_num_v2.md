@@ -24,7 +24,7 @@
 |---|---|---|---|
 |Time|int|带宽获取的时间点。格式：时间戳|No|
 |CdnRequest|double|返回值返回指定时间区间内的cdn收到的请求次数之和|No|
-|OriginRequest|double|返回值返回指定时间区间内的cdn回源的请求次数之和）|No|
+|OriginRequest|double|返回值返回指定时间区间内的cdn回源的请求次数之和|No|
 
 # Request Example
 ```
