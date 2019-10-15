@@ -28,7 +28,7 @@
 |---|---|---|---|
 |ImageId|string|镜像ID|No|
 |ImageName|string|镜像名称|No|
-|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist) \||No|
+|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |OsType|string|操作系统类型：Liunx，Windows|No|
 |OsName|string|操作系统名称|No|
 |ImageType|string|镜像类型 标准镜像：Base， 行业镜像：Business，自定义镜像：Custom|No|
