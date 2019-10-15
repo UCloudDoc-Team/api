@@ -49,20 +49,20 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Port|int|接入端口|**Yes**|
-|Protocol|string|转发协议，枚举值["TCP"，"UDP"，"HTTPHTTP"，"HTTPSHTTP"，"HTTPSHTTPS"]。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
+|Protocol|string|转发协议，包括TCP\|UDP\|HTTPHTTP\|HTTPSHTTP\|HTTPSHTTPS。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
 
 ## UGAL4Forwarder
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Port|int|接入端口|**Yes**|
-|Protocol|string|转发协议，枚举值["TCP"，"UDP"，"HTTPHTTP"，"HTTPSHTTP"，"HTTPSHTTPS"]。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
+|Protocol|string|转发协议，包括TCP\|UDP\|HTTPHTTP\|HTTPSHTTP\|HTTPSHTTPS。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
 |RSPort|int|RSPort，源站监听端口|**Yes**|
 
 ## UGAL7Forwarder
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Port|int|接入端口|**Yes**|
-|Protocol|string|转发协议，枚举值["TCP"，"UDP"，"HTTPHTTP"，"HTTPSHTTP"，"HTTPSHTTPS"]。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
+|Protocol|string|转发协议，包括TCP\|UDP\|HTTPHTTP\|HTTPSHTTP\|HTTPSHTTPS。TCP和UDP代表四层转发，其余为七层转发|**Yes**|
 |RSPort|int|RSPort，源站监听端口|**Yes**|
 |SSLId|string|证书ID|No|
 |SSLName|string|证书名称|No|

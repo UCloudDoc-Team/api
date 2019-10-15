@@ -22,11 +22,9 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |RepoName|string|镜像仓库名称|**Yes**|
-|CreateTime|string|仓库创建时间|**Yes**|
-|UpdateTime|string|仓库更新时间|**Yes**|
+|CreateTime|int|仓库创建时间|**Yes**|
+|UpdateTime|int|仓库更新时间|**Yes**|
 |Description|string|镜像仓库描述|**Yes**|
-|IsShared|string|镜像仓库类型,false为私有；true为公有|**Yes**|
-|IsOutSide|string|镜像仓库是否外网可以访问，可以为ture,不可以为false|**Yes**|
 
 # Request Example
 ```

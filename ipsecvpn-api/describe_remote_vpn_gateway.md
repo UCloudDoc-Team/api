@@ -29,7 +29,7 @@
 |Tag|string|用户组|No|
 |Remark|string|备注|No|
 |CreateTime|int|创建时间|No|
-|ActiveTunnels|array|活跃的隧道id|No|
+|ActiveTunnels|string|活跃的隧道id|No|
 |TunnelCount|int|活跃的隧道数量|No|
 
 # Request Example

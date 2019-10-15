@@ -22,17 +22,8 @@
 ## URedisGroupSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
-|VPCId|string||**Yes**|
-|RewriteTime|int|返回运维时间 0 //0点 1 //1点 以此类推|**Yes**|
-|Role|string|实例类型|**Yes**|
 |GroupId|string|组ID|No|
 |Name|string|组名称|No|
-|Type|string||No|
-|SubnetId|string||No|
-|Protocol|string|协议|No|
-|MemorySize|int|容量单位GB|No|
-|GroupName|string|组名称|No|
 |ConfigId|string|节点的配置ID|No|
 |VirtualIP|string|节点的虚拟IP地址|No|
 |Port|int|节点分配的服务端口|No|
@@ -48,6 +39,7 @@
 |CreateTime|int|创建时间 (UNIX时间戳)|No|
 |ModifyTime|int|修改时间 (UNIX时间戳)|No|
 |Tag|string|业务组名称|No|
+|Zone|string|实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |SlaveZone|string|跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
 
 # Request Example

@@ -23,10 +23,7 @@
 |ResourceId|string|资源类型Id|**Yes**|
 |ResourceName|string|资源名称|**Yes**|
 |PrivateIP|string|资源的内网Ip|**Yes**|
-|ResourceType|string|资源类型。"uhost"：云主机； "upm"，物理云主机； "hadoophost"：hadoop节点； "fortresshost"：堡垒机： "udockhost"，容器|**Yes**|
-|SubResouceId|string|资源绑定的虚拟网卡的实例ID|**Yes**|
-|SubResourceName|string|资源绑定的虚拟网卡的实例名称|**Yes**|
-|SubResouceType|string|资源绑定的虚拟网卡的实例类型|**Yes**|
+|ResourceType|string|资源类型|**Yes**|
 |VPCId|string|资源所属VPCId|**Yes**|
 |SubnetworkId|string|资源所属子网Id|**Yes**|
 

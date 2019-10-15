@@ -32,7 +32,7 @@
 ## EIPAddrSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OperatorName|string|运营商信息, 枚举值为:  BGP: BGP; International: 国际.|No|
+|OperatorName|string|运营商信息, 枚举值为:  Bgp: BGP; International: 国际.|No|
 |IP|string|弹性IP地址|No|
 
 # Request Example

@@ -33,11 +33,10 @@
 |State|string|状态|**Yes**|
 |IsAdmin|int|是否主账号（0：子账号，1：主账号）|**Yes**|
 |IsFinance|int|是否有财务权限（0：无财务权限，1：有财务权限）|**Yes**|
-|ProjectSet|array|项目列表，参考如下ProjectInfo返回|**Yes**|
+|ProjectSet|array|项目列表|**Yes**|
 |ActivateFlag|int|激活状态（0：未激活，1：已激活）|**Yes**|
 |PasswordPolicyDate|int|密码安全策略开启时间，格式：unix timestamp|**Yes**|
 |TOTPStatus|int|TOTP状态（0：未开启，1：已开启）|**Yes**|
-|MandatoryTOTP|int|是否强制开启TOTP （0：否，1：是）|**Yes**|
 
 ## ProjectInfo
 |Parameter name|Type|Description|Required|

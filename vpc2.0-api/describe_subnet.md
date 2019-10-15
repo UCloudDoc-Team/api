@@ -26,7 +26,6 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Zone|string|可用区名称|No|
-|IPv6Network|string|子网关联的IPv6网段|No|
 |VPCId|string|VPCId|No|
 |VPCName|string|VPC名称|No|
 |SubnetId|string|子网Id|No|
@@ -35,7 +34,7 @@
 |Tag|string|业务组|No|
 |SubnetType|int|子网类型|No|
 |Subnet|string|子网网段|No|
-|Netmask|string|子网掩码|No|
+|Netmask|int|子网掩码|No|
 |Gateway|string|子网网关|No|
 |CreateTime|int|创建时间|No|
 |HasNATGW|bool|是否有natgw|No|

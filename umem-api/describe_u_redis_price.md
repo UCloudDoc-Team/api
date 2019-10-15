@@ -24,9 +24,8 @@
 ## URedisPriceSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OriginalPrice|int|原价|**Yes**|
 |ChargeType|string|Year， Month， Dynamic，Trial|No|
-|Price|int|总价格|No|
+|Price|float|价格，单位: 元，保留小数点后两位有效数字|No|
 
 # Request Example
 ```

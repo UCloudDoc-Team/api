@@ -26,7 +26,6 @@
 |NumOfOccupyBroker|int|占用 broker 数量|No|
 |NumOfReplica|int|副本数量|No|
 |UnderReplicasPer|float|落后副本占比|No|
-|Status|string|topic 状态|No|
 
 # Request Example
 ```

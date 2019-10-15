@@ -45,9 +45,9 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |EIPId|string|外网IP的 EIPId|**Yes**|
-|Weight|int|权重为100的为出口|**Yes**|
+|Weight|string|权重为100的为出口|**Yes**|
 |BandwidthType|string|EIP带宽类型|**Yes**|
-|Bandwidth|int|带宽|**Yes**|
+|Bandwidth|string|带宽|**Yes**|
 |IPResInfo|array|外网IP信息|**Yes**|
 
 ## NatGWIPResInfo

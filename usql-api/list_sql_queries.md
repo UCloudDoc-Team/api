@@ -20,7 +20,7 @@
 ## QuerySummary
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|NamedQueryId|string|查询ID|No|
+|QueryId|string|查询ID|No|
 |QueryType|string|查询类型|No|
 |QueryString|string|查询语句|No|
 |State|string|查询状态|No|

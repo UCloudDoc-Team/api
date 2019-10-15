@@ -23,14 +23,10 @@
 ## SubnetResource
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Name|string|资源名称|No|
+|Name|string|名称|No|
 |ResourceId|string|资源Id|No|
-|ResourceType|string|资源类型。对应的资源类型：UHOST，云主机；PHOST，物理云主机；ULB，负载均衡；UHADOOP_HOST，hadoop节点；UFORTRESS_HOST，堡垒机；UNATGW，NAT网关；UKAFKA，Kafka消息队列；UMEM，内存存储；DOCKER，容器集群；UDB，数据库；UDW，数据仓库；VIP，内网VIP.|No|
-|SubResourceName|string|资源绑定的虚拟网卡的实例名称|No|
-|SubResourceId|string|资源绑定的虚拟网卡的实例ID|No|
-|SubResourceType|string|资源绑定的虚拟网卡的类型|No|
+|ResourceType|string|资源类型。对应的资源类型：UHOST，云主机；PHOST，物理云主机；ULB，负载均衡；UHADOOP_HOST，hadoop节点；UFORTRESS_HOST，堡垒机；UNATGW，NAT网关；UKAFKA，分布式消息系统；UMEM，内存存储；DOCKER，容器集群；UDB，数据库；UDW，数据仓库；VIP，内网VIP.|No|
 |IP|string|资源ip|No|
-|IPv6Address|string|资源的IPv6地址|No|
 
 # Request Example
 ```

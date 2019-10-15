@@ -20,7 +20,6 @@
 ## UnetShareBandwidthSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|IPVersion|string|共享带宽类型|**Yes**|
 |ShareBandwidth|int|共享带宽值(预付费)/共享带宽峰值(后付费), 单位Mbps|No|
 |ShareBandwidthId|string|共享带宽的资源ID|No|
 |ChargeType|string|付费方式, 预付费:Year 按年,Month 按月,Dynamic 按需;后付费:PostPay(按月)|No|

@@ -21,9 +21,9 @@
 |---|---|---|---|
 |Region|string|可用地域|No|
 |Owe|int|是否欠费：1表示欠费；0表示未欠费|No|
-|Storage|object|剩余存储容量|No|
-|DownloadFlow|object|剩余下载流量|No|
-|RequestCnt|object|剩余请求次数|No|
+|Storage|float|剩余存储容量|No|
+|DownloadFlow|float|剩余下载流量|No|
+|RequestCnt|float|剩余请求次数|No|
 
 ## UFileQuotaLeft
 |Parameter name|Type|Description|Required|

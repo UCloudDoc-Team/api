@@ -31,9 +31,6 @@
 |ResourceId|string|白名单资源Id信息|**Yes**|
 |ResourceName|string|白名单资源名称|**Yes**|
 |ResourceType|string|白名单资源类型|**Yes**|
-|SubResourceId|string|资源绑定的虚拟网卡的实例ID|**Yes**|
-|SubResourceName|string|资源绑定的虚拟网卡的实例名称|**Yes**|
-|SubResourceType|string|资源绑定的虚拟网卡的类型|**Yes**|
 |VPCId|string|白名单资源所属VPCId|No|
 
 # Request Example

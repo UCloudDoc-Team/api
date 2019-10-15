@@ -24,7 +24,8 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Time|int|带宽获取的时间点。格式：时间戳|No|
-|CdnBandwidth|string|返回值返回指定时间区间内CDN的带宽峰值，单位Mbps（如果请求参数Type为0，则Value是五分钟粒度的带宽值，如果Type为1，则Value是1小时的带宽峰值，如果Type为2，则Value是一天内的带宽峰值）|No|
+|CdnBandwidth|float|返回值返回指定时间区间内CDN的带宽峰值，单位Mbps（如果请求参数Type为0，则Value是五分钟粒度的带宽峰值，如果Type为1，则Value是1小时的带宽峰值，如果Type为2，则Value是一天内的带宽峰值）|No|
+|OriginBandwidth|float|返回值返回指定时间区间内回源的带宽峰值，单位Mbps（如果请求参数Type为0，则Value是五分钟粒度的带宽峰值，如果Type为1，则Value是1小时的带宽峰值，如果Type为2，则Value是一天内的带宽峰值）|No|
 
 # Request Example
 ```

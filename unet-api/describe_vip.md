@@ -32,9 +32,6 @@
 |VIP|string|虚拟ip|No|
 |SubnetId|string|子网id|No|
 |VPCId|string|VPC id|No|
-|Name|string|VIP名称|No|
-|Remark|string|VIP备注|No|
-|Tag|string|VIP所属业务组|No|
 
 # Request Example
 ```

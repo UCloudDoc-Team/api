@@ -26,7 +26,7 @@
 |Peer1|string|可用区域 1|**Yes**|
 |Peer2|string|可用区域 2|**Yes**|
 |ChargeType|string|计费类型|**Yes**|
-|Bandwidth|int|带宽|**Yes**|
+|Bandwidth|string|带宽|**Yes**|
 |CreateTime|int|unix 时间戳 创建时间|**Yes**|
 |ExpireTime|int|unix 时间戳 到期时间|**Yes**|
 

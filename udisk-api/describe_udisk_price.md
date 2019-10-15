@@ -30,7 +30,6 @@
 |Price|int|实际价格 (单位: 分)|No|
 |ChargeName|string|"UDataArk","UDisk","Total"|No|
 |OriginalPrice|int|用户折后价(对应计费CustomPrice)|No|
-|ListPrice|int|原价(对应计费OriginalPrice)|No|
 
 # Request Example
 ```

@@ -36,7 +36,6 @@
 |---|---|---|---|
 |ChargeType|string|计费类型。Year，Month，Dynamic|**Yes**|
 |Price|float|价格，单位: 元，保留小数点后两位有效数字|**Yes**|
-|OriginalPrice|float|原价|**Yes**|
 
 # Request Example
 ```

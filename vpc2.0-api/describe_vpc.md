@@ -20,16 +20,11 @@
 ## VPCInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|NetworkInfo|array||**Yes**|
-|SubnetCount|int||**Yes**|
-|CreateTime|int||**Yes**|
-|UpdateTime|int||**Yes**|
-|Tag|string||**Yes**|
-|Name|string||**Yes**|
+|Network|array|VPC网段|**Yes**|
+|SubnetCount|string|子网数量|**Yes**|
+|CreateTime|int|创建时间|**Yes**|
+|UpdateTime|int|修改时间|**Yes**|
 |VPCId|string|VPCId|No|
-|Network|array||No|
-|IPv6Network|string|VPC关联的IPv6网段|No|
-|OperatorName|string|VPC关联的IPv6网段所属运营商|No|
 
 ## VPCNetworkInfo
 |Parameter name|Type|Description|Required|

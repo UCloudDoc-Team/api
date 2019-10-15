@@ -23,7 +23,7 @@
 |---|---|---|---|
 |ResourceId|string|资源的Id|**Yes**|
 |PrivateIP|string|资源对应的内网Ip|**Yes**|
-|ResourceType|string|资源类型。"uhost"：云主机； "upm"，物理云主机； "hadoophost"：hadoop节点； "fortresshost"：堡垒机： "udockhost"，容器|**Yes**|
+|ResourceType|string|资源类型|**Yes**|
 
 # Request Example
 ```

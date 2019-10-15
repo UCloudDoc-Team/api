@@ -26,16 +26,15 @@
 ## UDBBackupSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Zone|string|备份所在可用区|No|
 |BackupId|int|备份id|No|
 |BackupName|string|备份名称|No|
 |BackupTime|int|备份时间(Unix时间戳)|No|
 |BackupSize|int|备份文件大小(字节)|No|
 |BackupType|int|备份类型,取值为0或1,0表示自动，1表示手动|No|
 |State|string|备份状态 Backuping // 备份中 Success // 备份成功 Failed // 备份失败 Expired // 备份过期|No|
-|ErrorInfo|string|备份错误信息|No|
 |DBId|string|dbid|No|
 |DBName|string|对应的db名称|No|
+|Zone|string|备份所在可用区|No|
 |BackupZone|string|跨机房高可用备库所在可用区|No|
 |BackupEndTime|int|备份完成时间(Unix时间戳)|No|
 

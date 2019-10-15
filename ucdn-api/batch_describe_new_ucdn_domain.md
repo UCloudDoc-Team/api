@@ -29,7 +29,7 @@
 ## DomainInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OriginIp|array|源站ip即cdn服务器回源访问的ip地址。支持多个源站ip，多个源站ip，可表述为如：[1.1.1.1,2.2.2.2]|**Yes**|
+|OriginIp.n|string|源站ip即cdn服务器回源访问的ip地址。支持多个源站ip，多个源站ip，可表述为如：SourceIp.0=1.1.1.1，SourceIp.1=2.2.2.2。|**Yes**|
 |TestUrl|string|测试url，用于域名创建加速时的测试|**Yes**|
 |CdnType|string|加速域名的业务类型，web代表网站，stream代表视频，download代表下载。|**Yes**|
 |CacheConf|array|缓存配置规则列表|**Yes**|
