@@ -23,7 +23,7 @@
 |SubnetId|string|子网 ID。默认为当前地域的默认子网。 |No|
 |PrivateIp.N|string|【数组】创建云主机时指定内网IP。若不传值，则随机分配当前子网下的IP。调用方式举例：PrivateIp.0=x.x.x.x。当前只支持一个内网IP。|No|
 |SecurityGroupId|string|防火墙Id，默认为Web推荐防火墙。如何查询SecurityGroupId请参见[DescribeSecurityGroup](../unet-api/describe_security_group.html)|No|
-|ImageId|string|镜像ID。请通过 [DescribeImage](describe_image.html)获取。|**Yes**|
+|ImageId|string|镜像ID。请通过 [DescribeImage](api/uhost-api/describe_image.html)获取。|**Yes**|
 |Password|string|UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码。|**Yes**|
 |Name|string|UHost实例名称。默认：UHost。请遵照[字段规范](api/uhost-api/specification)设定实例名称。|No|
 |Tag|string|业务组。默认：Default（Default即为未分组）。请遵照[字段规范](api/uhost-api/specification)设定业务组。|No|
