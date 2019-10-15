@@ -1,6 +1,6 @@
 # 获取主机规格调整差价-GetUHostUpgradePrice
 
-获取UHost实例升级配置的价格。可选配置范围请参考[[api:uhost-api:uhost_type|云主机机型说明]]。
+获取UHost实例升级配置的价格。可选配置范围请参考[云主机机型说明](api/uhost-api/get_uhost_upgrade_price)。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
