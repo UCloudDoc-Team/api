@@ -16,7 +16,6 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|RetCode|int|返回码|**Yes**|
 |Message|string|描述信息|**Yes**|
 |TaskId|string|所操作的TaskId|No|
 

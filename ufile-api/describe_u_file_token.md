@@ -15,8 +15,6 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
 |DataSet|array|令牌描述信息|**Yes**|
 
 ## UFileTokenSet

@@ -21,8 +21,6 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
 |TotalCount|int|UHostInstance总数|No|
 |UHostSet|array|云主机实例列表，每项参数可见下面 UHostInstanceSet|No|
 
