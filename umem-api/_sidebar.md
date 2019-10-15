@@ -1,5 +1,6 @@
 * UMem
     * [概览](api/umem-api/overview)
+    * [重要说明](api/umem-api/description)
     * [重启单机Memcache-RestartUMemcacheGroup](api/umem-api/reboot_umemcache_group)
     * [调整容量-ResizeURedisGroup](api/umem-api/resize_group)
     * [取uredis价格信息-DescribeURedisPrice](api/umem-api/describe_u_redis_price)
@@ -25,3 +26,4 @@
     * [修改名称-ModifyURedisGroupName](api/umem-api/modify_group_name)
     * [删除主备redis-DeleteURedisGroup](api/umem-api/delete_group)
     * [创建内存空间-CreateUMemSpace](api/umem-api/create_space)
+    * [UMem 错误码](api/umem-api/error_code)
