@@ -21,7 +21,7 @@
 https://api.ucloud.cn/?Action=DeleteUDisk
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&UDiskId=2AFCD36A-2A47-4D26-8514-CAA3FC2DC6BF
+&UDiskId=bs-xxx
 ```
 
 # Response Example
