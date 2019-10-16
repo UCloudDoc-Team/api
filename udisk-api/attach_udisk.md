@@ -27,8 +27,7 @@ http://api.ucloud.cn/?Action=AttachUDisk
 &Zone=cn-bj2-04
 &UHostId=uhost-xxx
 &UDiskId=bs-xxx
-&MultiAttach=AeBQMsll
-&MultiAttach=RSlJAXxj
+&MultiAttach=Yes
 ```
 
 # Response Example
