@@ -1,4 +1,4 @@
-* PathX
+* 全球动态加速 PathX
     * [概览](api/pathx-api/overview)
     * [创建全球加速配置项-CreateUGAInstance](api/pathx-api/create_uga_instance)
     * [删除全球加速服务加速配置-DeleteUGAInstance](api/pathx-api/delete_uga_instance)
