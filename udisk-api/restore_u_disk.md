@@ -23,7 +23,7 @@
 https://api.ucloud.cn/?Action=RestoreUDisk
 &Region=cn-sh2-01
 &Zone=cn-sh2
-&UDiskId=F207B59C-BA54-4455-9CF1-996DB5A7CD22
+&UDiskId=bs-xxx
 &SnapshotTime=1473646985
 ```
 
