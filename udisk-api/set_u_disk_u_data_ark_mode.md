@@ -25,7 +25,7 @@
 https://api.ucloud.cn/?Action=SetUDiskUDataArkMode
 &Region=cn-sh2
 &Zone=cn-sh2-01
-&UDiskId=2AFCD36A-2A47-4D26-8514-CAA3FC2DC6BF
+&UDiskId=bs-xxx
 &UDiskUDataArkMode=Yes
 ```
 
