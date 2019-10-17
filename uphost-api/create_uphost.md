@@ -23,10 +23,12 @@
 |Cluster|string|网络环境，可选千兆：1G ，万兆：10G， 默认1G|No|
 |CouponId|string|代金券|No|
 
-?> 密码需要通过base64进行编码
+```
+密码需要通过base64进行编码
 
-\# echo -n password1 | base
+# echo -n password1 | base
 cGFzc3dvcmQx
+```
 
 # Response Elements
 |Parameter name|Type|Description|Required|
