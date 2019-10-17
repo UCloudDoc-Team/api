@@ -17,10 +17,12 @@
 |ReserveDisk|string|是否保留数据盘，保留：Yes，不报留：No， 默认：Yes|No|
 |Raid|string|不保留数据盘重装，可选Raid|No|
 
-?> 密码需要通过base64进行编码
+```
+密码需要通过base64进行编码
 
-\# echo password1 | base
+# echo password1 | base
 ugfzc3dvcmqxcg==
+```
 
 # Response Elements
 |Parameter name|Type|Description|Required|
