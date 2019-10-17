@@ -1,4 +1,4 @@
-* UHost
+*云主机 UHost
     * [概览](api/uhost-api/overview)
     * [重装系统-ReinstallUHostInstance](api/uhost-api/reinstall_uhost_instance)
     * [获取主机价格-GetUHostInstancePrice](api/uhost-api/get_uhost_instance_price)
