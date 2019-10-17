@@ -6,12 +6,10 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
-|Offset|int|数据偏毅力昂，默认0，非负整数|No|
+|Offset|int|数据偏移量，默认0，非负整数|No|
 |Limit|int|返回数据长度，如果制定了Offset，则默认20，否则默认全部，非负整数|No|
-|DomainId.n|string|域名id，创建域名时生成的id，默认获取账号下的所有域名信息，n为自然数|No|
-|ChannelType|string|渠道ufile、uvideo|No|
-|ChargeStatus|int|1-待测试，2-测试中，3-测试失败，4-测试过期，5-计费中|No|
-|MonthChargeType|int|30-95带宽,31-日均峰值,32-第四峰值|No|
+|DomainId.n|string|域名id，创建域名时生成的资源id，默认获取账号下的所有域名信息，n为自然数|No|
+|ChannelType|string|渠道ucdn、ufile、uvideo|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -20,16 +18,16 @@
 |Action|string|操作名称|**Yes**|
 |TotalCount|int|满足条件的域名个数|No|
 |MaxDomainNum|int|最大域名数量，默认20|No|
-|ChargeType|string|当前计费方式，traffic代表按流量包计费，bandwidth按带宽付费，trafficused代表按流量后付费|No|
-|LastChargeType|string|表示最后一次切换的计费方式，traffic代表按流量包计费，bandwidth按带宽付费，trafficused代表按流量后付费|No|
-|Arrearage|bool|是否欠费，True-欠费，false-不欠费|No|
-|Vip|string|vip标示，True-欠费，false-不欠费|No|
-|DomainList|array||No|
+|ChargeType|int|当前计费方式，10=流量付费 20=带宽日峰值  30=按月后付费|No|
+|LastChargeType|int|表示最后一次切换的计费方式，10=流量付费 20=带宽日峰值  30=按月后付费  40=未选择计费方式|No|
+|Arrearage|array|标识欠费的数组，数组含有下列元素值， 1=国内流量有欠费 2=国外流量有欠费  3=国内带宽有欠费 4=国外带宽有欠费|No|
+|Vip|string|vip标示，yes-是  no-否|No|
+|DomainList|array|域名信息列表，参见DomainInfo|No|
 
 ## DomainInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OriginIp.n|string|源站ip即cdn服务器回源访问的ip地址。支持多个源站ip，多个源站ip，可表述为如：SourceIp.0=1.1.1.1，SourceIp.1=2.2.2.2。|**Yes**|
+|OriginIp|array|源站ip即cdn服务器回源访问的ip地址。支持多个源站ip，多个源站ip，可表述为如：[1.1.1.1,2.2.2.2]|**Yes**|
 |TestUrl|string|测试url，用于域名创建加速时的测试|**Yes**|
 |CdnType|string|加速域名的业务类型，web代表网站，stream代表视频，download代表下载。|**Yes**|
 |CacheConf|array|缓存配置规则列表|**Yes**|
@@ -75,6 +73,11 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=BatchDescribeNewUcdnDomain
+&ProjectId=ZQiDGIbu
+&Offset=0
+&Limit=20
+&DomainId.0=ucdn-xxxx
+&ChannelType=ucdn
 ```
 
 # Response Example

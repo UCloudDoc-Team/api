@@ -20,11 +20,11 @@
 
 # Request Example
 ```
-https://api.spark.ucloud.cn/?Action=UpdateUDBInstanceSlaveBackupSwitch 
+https://api.ucloud.cn/?Action=UpdateUDBInstanceSlaveBackupSwitch 
 &Region=cn-bj2
 &ProjectId=7                          
-&MasterDBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
-&SlaveDBId=00cdd68c-c7f5-1252-453c-dfg456d8f0e1
+&MasterDBId=udb-xxx
+&SlaveDBId=udb-xxx
 &BackupSwitch=1
 ```
 

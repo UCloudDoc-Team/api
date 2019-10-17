@@ -14,7 +14,7 @@
 |ParamGroupId|int|DB实例使用的配置参数组id|**Yes**|
 |MemoryLimit|int|内存限制(MB)，目前支持以下几档 600M/1500M/3000M /6000M/15000M/30000M|**Yes**|
 |DiskSpace|int|磁盘空间(GB), 暂时支持20G - 500G|**Yes**|
-|ConfigsvrId.n|string|配置服务器的dbid，允许一个或者三个|**Yes**|
+|ConfigsvrId.n|string|配置服务器的dbid，允许一个或者三个。|**Yes**|
 |ChargeType|string|Year， Month， Dynamic，Trial，默认: Month|No|
 |Quantity|int|购买时长，默认值1|No|
 |UseSSD|bool|是否使用SSD，默认为false|No|
@@ -29,7 +29,7 @@
 
 # Request Example
 ```
-https://api.spark.ucloud.cn/?Action=CreateUDBRouteInstance
+https://api.ucloud.cn/?Action=CreateUDBRouteInstance
 &Region=cn-bj2
 &DBTypeId=mongodb-2.6
 &ChargeType=Month   
@@ -41,6 +41,7 @@ https://api.spark.ucloud.cn/?Action=CreateUDBRouteInstance
 &ConfigsvrId.0=udb-xxxxx
 &ConfigsvrId.1=udb-xxxxx
 &ConfigsvrId.2=udb-xxxxx
+&ShardedClusterId=EmlJjnIa
 ```
 
 # Response Example

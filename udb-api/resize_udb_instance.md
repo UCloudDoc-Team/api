@@ -27,7 +27,7 @@
 
 # Request Example
 ```
-https://api.spark.ucloud.cn/?Action=ResizeUDBInstance
+https://api.ucloud.cn/?Action=ResizeUDBInstance
 &Region=cn-bj2
 &DBId=udb-xxx
 &MemoryLimit=15000

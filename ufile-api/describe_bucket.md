@@ -5,7 +5,7 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|如果提供此参数，则获取相应地域下所有空间的空间名称|No|
+|Region|string|如果提供此参数，则获取相应地域下所有空间的空间名称(只返回空间名称信息)|No|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |BucketName|string|待获取Bucket的名称，若不提供，则获取所有Bucket|No|
 |Offset|int|获取所有Bucket列表的偏移数目，默认为0|No|
@@ -47,7 +47,7 @@
 ```
 https://api.ucloud.cn/?Action=DescribeBucket
 &BucketName=blue
-&Region=cn-bj2
+&Region=cxqbTMaU
 ```
 
 # Response Example
@@ -70,15 +70,15 @@ https://api.ucloud.cn/?Action=DescribeBucket
             "HasUserDomain": 1, 
             "BucketId": "ufile-xxx", 
             "Region": "cn-bj2", 
-            "CreateTime": 1409736300, 
+            "CdnDomainId": [
+                "ucdn-xxx"
+            ], 
             "Tag": "dddd", 
             "Biz": "general", 
             "BucketName": "blue", 
             "ModifyTime": 1409736300, 
             "Type": "public", 
-            "CdnDomainId": [
-                "ucdn-xxx"
-            ]
+            "CreateTime": 1409736300
         }
     ]
 }

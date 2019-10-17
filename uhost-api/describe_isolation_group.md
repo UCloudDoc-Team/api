@@ -1,13 +1,13 @@
-# 描述硬件隔离组-DescribeIsolationGroup
+# 查询硬件隔离组-DescribeIsolationGroup
 
-描述硬件隔离组
+查询硬件隔离组列表。
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目id|No|
-|GroupId|string|要查询的硬件隔离组id|No|
+|GroupId|string|待查的硬件隔离组id|No|
 |Offset|int|列表起始位置偏移量，默认为0|No|
 |Limit|int|返回数据长度，默认为20，最大100|No|
 
@@ -16,7 +16,7 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|IsolationGroupSet|array|硬件隔离组集合|No|
+|IsolationGroupSet|array|硬件隔离组集合。参见数据结构IsolationGroup。|No|
 
 ## IsolationGroup
 |Parameter name|Type|Description|Required|

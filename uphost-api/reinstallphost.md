@@ -19,7 +19,7 @@
 
 ?> 密码需要通过base64进行编码
 
-# echo password1 | base
+\# echo password1 | base
 ugfzc3dvcmqxcg==
 
 # Response Elements
