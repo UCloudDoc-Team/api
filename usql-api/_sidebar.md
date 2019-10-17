@@ -1,4 +1,4 @@
-* USQL
+* 数据湖分析 USQL
     * [概览](api/usql-api/overview)
     * [获取数据表的DDL-GetCatalogTableDDL](api/usql-api/get_catalog_table_ddl)
     * [获取数据表的参数列表-ListCatalogTableProperties](api/usql-api/list_catalog_table_properties)
