@@ -21,6 +21,7 @@
 https://api.ucloud.cn/?Action=DeleteUDisk
 &Region=cn-bj2
 &Zone=cn-bj2-04
+&ProjectId=org-xxx
 &UDiskId=bs-xxx
 ```
 

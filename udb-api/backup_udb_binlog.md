@@ -22,8 +22,8 @@
 ```
 https://api.ucloud.cn/?Action=BackupUDBInstanceBinlog
 &Region=cn-bj2
-&DBId=2bbf9968-2ded-48c5-89c0-4f4d683bdd6c
-&DataSet=&#39;mysql-bin.000001 mysql-bin.000002 mysql-bin.000003&#39;
+&DBId=udbha-xxxxxx
+&BackupFile: mysql-bin.000001 mysql-bin.000002;
 ```
 
 # Response Example

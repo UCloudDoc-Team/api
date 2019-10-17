@@ -9,6 +9,7 @@
 |Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |BackupId|int|备份id，可通过DescribeUDBBackup获得|**Yes**|
+|BackupZone|string|跨可用区高可用备库所在可用区，参见［可用区列表］|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

@@ -10,7 +10,7 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Name|string|实例名称|**Yes**|
 |SourceId|string|克隆父Snapshot的Id|**Yes**|
-|Size|int|购买UDisk大小,单位:GB,范围[1~2000], 权限位控制可达8T,若需要请申请开通相关权限。(UDisk大小设定对本地盘快照有效，对云盘快照无效)|No|
+|Size|int|购买UDisk大小,单位:GB,范围[1\~8000]。(UDisk大小设定对本地盘快照有效，对云盘快照无效)|No|
 |Comment|string|Disk注释|No|
 |ChargeType|string|Year , Month, Dynamic，Postpay 默认: Dynamic|No|
 |Quantity|int|购买时长 默认: 1|No|

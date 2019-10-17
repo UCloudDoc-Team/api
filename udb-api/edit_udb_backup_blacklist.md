@@ -19,9 +19,9 @@
 
 # Request Example
 ```
-https://api.ucloud.cn/?Action=GetBackupBlacklist
+https://api.ucloud.cn/?Action=EditUDBBackupBlacklist
 &Region=cn-bj2
-&DBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&DBId=udb-xxxxxx
 &Blacklist=mysql.%;test.%;city.address;
 ```
 

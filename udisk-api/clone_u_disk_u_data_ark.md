@@ -15,7 +15,7 @@
 |ChargeType|string|Year , Month, Dynamic，Postpay 默认: Dynamic|No|
 |Quantity|int|购买时长 默认: 1|No|
 |UDataArkMode|string|是否开启数据方舟  Yes:开启数据方舟 No:关闭数据方舟 默认:No|No|
-|Size|int|购买UDisk大小,单位:GB,范围[1~2000], 权限位控制可达8T,若需要请申请开通相关权限。(UDisk大小设定对本地盘备份有效，对云盘备份无效)|No|
+|Size|int|购买UDisk大小,单位:GB,范围[1\~8000]。(UDisk大小设定对本地盘备份有效，对云盘备份无效)|No|
 |Tag|string|业务组 默认：Default|No|
 |CouponId|string|使用的代金券id|No|
 

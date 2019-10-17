@@ -13,7 +13,7 @@
 |UDataArkMode|string|方舟是否开启，"Yes":开启，"No":关闭；默认为"No"|No|
 |Quantity|int|购买时长 默认: 1|No|
 |Comment|string|Disk注释|No|
-|ChargeType|string|Year , Month, Dynamic，Postpay，Trial 默认: Dynamic|No|
+|ChargeType|string|Year , Month, Dynamic，Postpay，Trial 默认: Month|No|
 |Tag|string|业务组 默认：Default|No|
 |CouponId|string|使用的代金券id|No|
 

@@ -38,7 +38,7 @@
 |---|---|---|---|
 |UPathName|string|UPath名字|No|
 |UPathId|string|UPath 实例ID|No|
-|Bandwidth|int|带宽 Mbps, 1~800Mbps|No|
+|Bandwidth|int|带宽 Mbps, 1\~800Mbps|No|
 |LineId|string|线路ID|No|
 |LineFromName|string|线路起点中文名字，加速区域|No|
 |LineToName|string|线路对端中文名字，源站区域|No|
