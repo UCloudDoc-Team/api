@@ -1,4 +1,4 @@
-* VPC2.0
+* 私有网络 VPC
     * [概览](api/vpc2.0-api/overview)
     * [更新子网信息-UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)
     * [修改VPC地址空间-UpdateVPCNetwork](api/vpc2.0-api/update_vpc_network)
