@@ -9,7 +9,7 @@
 * [获取挂载磁盘的升级价格-GetAttachedDiskUpgradePrice](api/uhost-api/get_attached_disk_upgrade_price)
 * [修改主机业务组-ModifyUHostInstanceTag](api/uhost-api/modify_uhost_instance_tag)
 * [描述硬件隔离组-DescribeIsolationGroup](api/uhost-api/describe_isolation_group)
-* [创建云主机-CreateUHostInstance](api/uhost-api/create_uhost_instance)
+* [创建云主机(旧)-CreateUHostInstance](api/uhost-api/create_uhost_instance_old)
 * [启动主机-StartUHostInstance](api/uhost-api/start_uhost_instance)
 * [创建硬件隔离组-CreateIsolationGroup](api/uhost-api/create_isolation_group)
 * [修改挂载的磁盘大小-ResizeAttachedDisk](api/uhost-api/resize_attached_disk)
