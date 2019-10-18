@@ -1,4 +1,4 @@
-# 概览
+# 分布式数据库 UDDB
 * [升级UDDB时，获取升级后的价格-DescribeUDDBInstanceUpgradePrice](api/uddb-api/describe_uddb_instance_upgrade_price)
 * [获取分布式数据库UDDB价格-DescribeUDDBInstancePrice](api/uddb-api/describe_uddb_instance_price)
 * [修改分布式数据库中间件名称-ChangeUDDBInstanceName](api/uddb-api/change_uddb_instance_name)
