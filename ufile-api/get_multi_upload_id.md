@@ -9,13 +9,15 @@
 |Marker|string|标志字符串，utf-8编码，默认为空字符串|No|
 |Limit|int|id列表数目，默认为20|No|
 
-?> Syntax:
-	GET /?muploadid&prefix=<prefix>&marker=<marker>&limit=<limit>
+``` 
+Syntax:
+	GET /?muploadpart&uploadId=<uploadid>
 	Host: <bucket_name>.ufile.ucloud.cn
 	Authorization: <token> 
 
 Request Headers
 	Authorization 下载请求的授权签名
+```
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -29,7 +31,7 @@ Request Headers
 ## DataSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|UploadId|string|主机ID|No|
+|UploadId|string|上传ID|No|
 |FileName|string|文件名称|No|
 |StartTime|int|上传开始时间，UNIX时间戳|No|
 
