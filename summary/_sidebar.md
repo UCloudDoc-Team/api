@@ -1,5 +1,4 @@
 * API 文档概述
-    * [概览](api/summary/overview)
     * [API 文档综览](api/summary/overview)
     * [签名算法](api/summary/signature)
     * [公共参数](api/summary/public)
