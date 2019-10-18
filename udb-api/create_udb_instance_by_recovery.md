@@ -10,9 +10,13 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Name|string|实例名称，至少6位|**Yes**|
 |SrcDBId|string|源实例的Id|**Yes**|
-|RecoeryTime|int|恢复到某个时间点的时间戳(UTC时间格式，默认单位秒)|**Yes**|
+|RecoveryTime|int|恢复到某个时间点的时间戳(UTC时间格式，默认单位秒)|**Yes**|
 |ChargeType|string|Year， Month， Dynamic，Trial，默认: Dynamic|No|
 |Quantity|int|购买时长，默认值1|No|
+|UseSSD|bool|指定是否是否使用SSD，默认使用主库的配置|No|
+|UDBCId|string|专区的Id|No|
+|SubnetId|string|子网ID|No|
+|VPCId|string|VPC的ID|No|
 |CouponId|string|使用的代金券id|No|
 
 # Response Elements
@@ -28,15 +32,18 @@ https://api.ucloud.cn/?Action=CreateUDBInstanceByRecovery
 &Region=cn-bj2
 &ChargeType=Month   
 &Name=udb-xxxxxxx
-&SrcDBId=udb-srcdb
-&Time=1432806384
+&SrcDBId=udb-xxxxx
+&RecoveryTime=1432806384
+&UseSSD=true
+&SubnetId=SfBAwgaR
+&VPCId=axmBjGuC
 ```
 
 # Response Example
 ```
 {
     "Action": "CreateUDBInstanceByRecoveryResponse", 
-    "DBId": "00f9868c-c7f5-4852-9eac-d200b678f0e1", 
+    "DBId": "udb-xxxxx", 
     "RetCode": 0
 }
 ```

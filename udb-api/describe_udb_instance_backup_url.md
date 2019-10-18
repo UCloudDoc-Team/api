@@ -17,12 +17,13 @@
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
 |BackupPath|string|DB实例备份文件公网的地址|No|
+|InnerBackupPath|string|DB实例备份文件内网的地址|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeUDBInstanceBackupURL
 &Region=cn-bj2
-&DBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&DBId=udb-xxx
 &BackupId=1234
 ```
 
@@ -30,6 +31,7 @@ https://api.ucloud.cn/?Action=DescribeUDBInstanceBackupURL
 ```
 {
     "Action": "DescribeUDBInstanceBackupURLResponse", 
+    "InnerBackupPath": "ZDblezgJ", 
     "RetCode": 0, 
     "BackupPath": "http://udbbackup.ufile.ucloud.cn/bbasd?UCloudPublicKey=ucloududb@ucloud.cn1426152414000604875621"
 }
