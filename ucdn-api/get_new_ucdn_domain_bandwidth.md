@@ -17,7 +17,7 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|BandwidthList|array||No|
+|BandwidthList|array|带宽信息列表，参见BandwidthInfo|No|
 |Traffic|float|从起始时间到结束时间内的所使用的CDN总流量，单位GB|No|
 
 ## BandwidthInfo
