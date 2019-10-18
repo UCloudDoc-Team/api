@@ -11,8 +11,8 @@
 
 ``` 
 Syntax:
-	GET /?muploadpart&uploadId=<uploadid>
-	Host: <bucket_name>.ufile.ucloud.cn
+	GET /?muploadid&prefix=<prefix>&marker=<marker>&limit=<limit>
+	Host: <bucket_name>.cn-bj.ufileos.com
 	Authorization: <token> 
 
 Request Headers
