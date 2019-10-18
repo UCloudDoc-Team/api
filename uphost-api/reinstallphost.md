@@ -36,18 +36,19 @@ ugfzc3dvcmqxcg==
 https://api.ucloud.cn/?Action=ReinstallPHost
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&Password=123
-&Hostname=123
-&ImageId=pimg-yg-f2634b
-&SaveDataDisk=Yes
-&PHostId=upm-oaix4s&ProjectId=org1
+&ProjectId=org-xxx
+&PHostId=upm-xxx
+&Password=xxx
+&ImageId=pimg-xxx
+&Name=123
+&ReserveDisk=Yes
 ```
 
 # Response Example
 ```
 {
     "Action": "ReinstallPHostResponse", 
-    "PHostId": "upm-oaix4s", 
+    "PHostId": "upm-xxx", 
     "RetCode": 0
 }
 ```
