@@ -16,7 +16,7 @@
 |Tag|string|业务组，默认为default|No|
 |ChargeType|string|计费模式，枚举值为：year, 按年付费； month,按月付费；dynamic，按需付费，（需开启权限） trial, 试用（需开启权限）。默认为按月付费|No|
 |Quantity|string|购买时长，默认为1，范围[1-10]|No|
-|SecurityGroupId|string|防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](../unet-api/describe_firewall.html)。|No|
+|SecurityGroupId|string|防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](../api/unet-api/describe_firewall)。|No|
 |Raid|string|Raid配置，默认Raid10  支持:Raid0、Raid1、Raid5、Raid10，NoRaid|No|
 |VPCId|string|VPC ID，不填为默认，VPC2.0下需要填写此字段。|No|
 |SubnetId|string|子网ID，不填为默认，VPC2.0下需要填写此字段。|No|
