@@ -9,10 +9,10 @@
 |Marker|string|标志字符串，utf-8编码，默认为空字符串|No|
 |Limit|int|id列表数目，默认为20|No|
 
-``` 
+```
 Syntax:
 	GET /?muploadid&prefix=<prefix>&marker=<marker>&limit=<limit>
-	Host: <bucket_name>.cn-bj.ufileos.com
+	Host: <bucket_name>.ufile.ucloud.cn
 	Authorization: <token> 
 
 Request Headers
@@ -31,7 +31,7 @@ Request Headers
 ## DataSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|UploadId|string|上传ID|No|
+|UploadId|string|文件上传ID|No|
 |FileName|string|文件名称|No|
 |StartTime|int|上传开始时间，UNIX时间戳|No|
 
