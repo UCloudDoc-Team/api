@@ -22,7 +22,7 @@
 |LastChargeType|int|表示最后一次切换的计费方式，10=流量付费 20=带宽日峰值  30=按月后付费  40=未选择计费方式|No|
 |Arrearage|array|标识欠费的数组，数组含有下列元素值， 1=国内流量有欠费 2=国外流量有欠费  3=国内带宽有欠费 4=国外带宽有欠费|No|
 |Vip|string|vip标示，yes-是  no-否|No|
-|DomainList|array|域名信息列表，参见DomainInfo|No|
+|DomainSet|array|域名信息列表，参见DomainInfo|No|
 
 ## DomainInfo
 |Parameter name|Type|Description|Required|
