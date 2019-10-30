@@ -1,4 +1,4 @@
-* UGC
+* 通用计算 UGC
     * [概览](api/ugc-api/overview)
     * [获取授权Token-GetAccessToken](api/ugc-api/get_access_token)
     * [获取异步任务结果-GetTaskResult](api/ugc-api/get_task_result)
