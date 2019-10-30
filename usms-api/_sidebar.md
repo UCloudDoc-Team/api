@@ -1,4 +1,4 @@
-* USMS
+* 短信服务 USMS
     * [概览](api/usms-api/overview)
     * [修改短信签名-UpdateUSMSSignature](api/usms-api/update_usms_signature)
     * [发送短信息-SendUSMSMessage](api/usms-api/send_usms_message)
