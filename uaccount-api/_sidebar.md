@@ -1,4 +1,4 @@
-* UAccount
+* 权限管理 UAM
     * [概览](api/uaccount-api/overview)
     * [获取帐号下的项目列表-GetProjectList](api/uaccount-api/get_project_list)
     * [冻结成员-FreezeMember](api/uaccount-api/freeze_member)
