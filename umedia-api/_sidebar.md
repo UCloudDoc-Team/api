@@ -1,4 +1,4 @@
-* UMedia
+* 媒体工厂 UMedia
     * [概览](api/umedia-api/overview)
     * [获取封装任务详情-GetFormatTaskDetail](api/umedia-api/get_format_task_detail)
     * [获取截图任务详情-GetSnapTaskDetail](api/umedia-api/get_snap_task_detail)
