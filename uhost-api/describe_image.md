@@ -26,13 +26,13 @@
 ## UHostImageSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist) |No|
 |ImageId|string|镜像ID|No|
 |ImageName|string|镜像名称|No|
-|Zone|string|可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |OsType|string|操作系统类型：Liunx，Windows|No|
 |OsName|string|操作系统名称|No|
 |ImageType|string|镜像类型 标准镜像：Base， 行业镜像：Business，自定义镜像：Custom|No|
-|Features|array|特殊状态标识， 目前只有[NetEnhnced]（高包量机型）|No|
+|Features|array|特殊状态标识， 目前包含NetEnhnced（网络增强1.0）, NetEnhanced_Ultra]（网络增强2.0）,HotPlug(热升级),CloudInit|No|
 |FuncType|string|行业镜像类型（仅行业镜像将返回这个值）|No|
 |IntegratedSoftware|string|集成软件名称（仅行业镜像将返回这个值）|No|
 |Vendor|string|供应商（仅行业镜像将返回这个值）|No|
@@ -41,6 +41,7 @@
 |ImageDescription|string|镜像描述|No|
 |CreateTime|int|创建时间，格式为Unix时间戳|No|
 |ImageSize|int|镜像大小|No|
+|MinimalCPU|string|默认值为空'''。当CentOS 7.3/7.4/7.5等镜像会标记为“Broadwell”|No|
 
 # Request Example
 ```
@@ -49,27 +50,36 @@ https://api.ucloud.cn/?Action=DescribeImage
 &Zone=cn-bj2-04
 &ImageType=Base
 &OsType=Windows
+&Test=skwrlRby
+&Test=JZcyYKMV
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeImageResponse", 
-    "TotalCount": 1, 
-    "RetCode": 0, 
     "ImageSet": [
         {
+            "PriceSet": [], 
+            "Tag": "Default", 
+            "Features": [
+                "GPU", 
+                "HotPlug"
+            ], 
             "Zone": "cn-bj2-04", 
-            "ImageDescription": "Windows Server 2008 R2 Datacenter 32-bit", 
-            "OsName": "Windows 2008 32 位", 
-            "ImageId": "0b560b1d-f3b1-43de-a492-08875d79211b", 
+            "ImageDescription": "Windows Server 2012 R2 Datacenter 64-bit ", 
+            "OsName": "Windows 2012 64位", 
+            "ImageId": "uimage-xxxx", 
             "State": "Available", 
-            "ImageName": " Windows 2008 32 位", 
+            "ImageName": "Windows 2012 64位", 
             "OsType": "Windows", 
-            "CreateTime": 1234567890, 
-            "ImageType": "Base"
+            "CreateTime": 1503554550, 
+            "ImageType": "Base", 
+            "ImageSize": 40
         }
-    ]
+    ], 
+    "RetCode": 0, 
+    "TotalCount": 1
 }
 ```
 

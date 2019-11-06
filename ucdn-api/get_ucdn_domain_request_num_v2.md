@@ -7,10 +7,10 @@
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Type|int|时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度, 3=按1分钟）|**Yes**|
+|BeginTime|int|查询的起始时间，格式为Unix Timestamp|**Yes**|
+|EndTime|int|查询的结束时间，格式为Unix Timestamp|**Yes**|
 |DomainId.n|string|域名id，创建域名时生成的id。默认全部域名|No|
 |Areacode|string|查询区域 cn代表国内 abroad代表海外，只支持国内|No|
-|BeginTime|int|查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。|No|
-|EndTime|int|查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|

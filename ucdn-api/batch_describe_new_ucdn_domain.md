@@ -61,9 +61,9 @@
 |Description|string|缓存规则描述|No|
 |CacheTTL|int|缓存时间|No|
 |CacheUnit|string|缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）|No|
-|CacheBehavior|bool|是否缓存，true为缓存，false为不缓存。为false的情况下，CacheTTL和CacheUnit强制不生效|No|
-|IgnoreQueryString|bool|是否忽略参数缓存（false为不忽略，true为忽略，默认为false）|No|
-|FollowOriginRule|bool|是否优先遵循源站头部缓存策略，false为不优先遵循源站，true为优先遵循源站缓存头部。默认为false|No|
+|CacheBehavior|int|是否缓存，1为缓存，0为不缓存。为0的情况下，CacheTTL和CacheUnit强制不生效|No|
+|IgnoreQueryString|int|是否忽略参数缓存（0为不忽略，1为忽略，默认为0）|No|
+|FollowOriginRule|int|是否优先遵循源站头部缓存策略，0为不优先遵循源站，1为优先遵循源站缓存头部。默认为0|No|
 
 ## AccessConf
 |Parameter name|Type|Description|Required|

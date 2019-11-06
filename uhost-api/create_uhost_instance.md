@@ -28,7 +28,7 @@
 |VPCId|string|VPC ID。默认为当前地域的默认VPC。|No|
 |SubnetId|string|子网 ID。默认为当前地域的默认子网。|No|
 |PrivateIp.N|string|【数组】创建云主机时指定内网IP。若不传值，则随机分配当前子网下的IP。调用方式举例：PrivateIp.0=x.x.x.x。当前只支持一个内网IP。|No|
-|SecurityGroupId|string|防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](../api/unet-api/describe_firewall)。|No|
+|SecurityGroupId|string|防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](../unet-api/describe_firewall.html)。|No|
 |Disks.N.BackupType|string|磁盘备份方案。枚举值：<br> > NONE，无备份 <br> > DATAARK，数据方舟 <br> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type)|No|
 |IsolationGroup|string|硬件隔离组id。可通过DescribeIsolationGroup获取。|No|
 |Disks.N.Encrypted|bool|【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false加密必须传入对应的的KmsKeyId|No|

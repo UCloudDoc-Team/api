@@ -8,6 +8,7 @@
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|No|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |TokenId|string|令牌ID，只返回指定ID信息，否则拉取所有令牌|No|
+|TokenName|string|令牌名称，只返回指定令牌名称信息，否则拉取所有令牌|No|
 |Display|int|0表示显示部分token信息；不传递和其他情况表示显示全部token信息|No|
 
 # Response Elements
@@ -39,6 +40,7 @@ https://api.ucloud.cn/?Action=DescribeUFileToken
 &TokenId=679c7e5e-74b8-4048-b622-33dd4e8634de
 &Region=cn-bj
 &Display=2
+&TokenName=BFCOSzvM
 ```
 
 # Response Example
@@ -48,12 +50,12 @@ https://api.ucloud.cn/?Action=DescribeUFileToken
     "RetCode": 0, 
     "DataSet": [
         {
-            "TokenId": "679c7e5e-74b8-4048-b622-33dd4e8634de", 
-            "TolenName": "testname", 
             "AllowedPrefixes": [
                 "test/test", 
                 "test1/test1"
             ], 
+            "TolenName": "testname", 
+            "TokenId": "679c7e5e-74b8-4048-b622-33dd4e8634de", 
             "PrivateKey": "7b01a354-adb2-49a1-9f68-af814e884c29", 
             "ExpireTime": 4102416000.0, 
             "PublicKey": "TOKEN_679c7e5e-74b8-4048-b622-33dd4e8634de", 
@@ -67,13 +69,13 @@ https://api.ucloud.cn/?Action=DescribeUFileToken
             ]
         }, 
         {
-            "TokenId": "679c7e5e-74b8-4048-b622-33dd4e8634dc", 
-            "TokenName": "test1name", 
-            "PrivateKey": "7b01a354-adb2-49a1-9f68-af814e884c27", 
             "AllowedPrefixes": [
                 "test/test", 
                 "test1/test1"
             ], 
+            "TokenName": "test1name", 
+            "PrivateKey": "7b01a354-adb2-49a1-9f68-af814e884c27", 
+            "TokenId": "679c7e5e-74b8-4048-b622-33dd4e8634dc", 
             "ExpireTime": 4102416000.0, 
             "PublicKey": "TOKEN_679c7e5e-74b8-4048-b622-33dd4e8634dc", 
             "AllowedBuckets": [
