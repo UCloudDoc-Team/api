@@ -29,3 +29,7 @@
     * [删除VPC-DeleteVPC](api/vpc2.0-api/delete_vpc)
     * [展示NAT网关白名单资源列表-DescribeWhiteListResource](api/vpc2.0-api/describe_white_list_resource)
     * [新建VPC互通-CreateVPCIntercom](api/vpc2.0-api/create_vpc_intercom)
+    * [获取内网虚拟IP信息-DescribeVIP](api/unet-api/describe_vip)
+    * [申请内网虚拟IP-AllocateVIP](api/unet-api/allocate_vip)
+    * [更新VIP信息-UpdateVIPAttribute](api/unet-api/update_vip_attribute)
+    * [释放内网虚拟IP-ReleaseVIP](api/unet-api/release_vip)
