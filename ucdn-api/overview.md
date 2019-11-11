@@ -17,3 +17,5 @@
 * [获取加速域名原始日志-GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)
 * [获取域名刷新任务状态-DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
 * [获取域名请求数-GetNewUcdnDomainRequestNum（已下线）](api/ucdn-api/get_new_ucdn_domain_request_num)
+* [获取域名源站状态码监控-GetUcdnDomainOriginHttpCode](api/ucdn-api/get_ucdn_domain_origin_http_code)
+* [获取域名源站详细状态码监控-GetUcdnDomainOriginHttpCodeDetail](api/ucdn-api/get_ucdn_domain_origin_http_code_detail)
