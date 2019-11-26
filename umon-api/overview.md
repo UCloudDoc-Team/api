@@ -1,5 +1,5 @@
 # 概览
-* [解绑告警模板-UnbindAlarmTemplate](api/umon-api/unbind_alarm_template).
+* [解绑告警模板-UnbindAlarmTemplate](api/umon-api/unbind_alarm_template)
 * [获取监控数据-GetMetric](api/umon-api/get_metric)
 * [获取监控概况数据-GetMetricOverview](api/umon-api/get_metric_overview)
 * [获取告警模板列表-GetAlarmTemplateList](api/umon-api/get_alarm_template_list)
