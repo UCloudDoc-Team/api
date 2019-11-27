@@ -25,4 +25,5 @@
 * [修改名称-ModifyURedisGroupName](api/umem-api/modify_group_name)
 * [删除主备redis-DeleteURedisGroup](api/umem-api/delete_group)
 * [创建内存空间-CreateUMemSpace](api/umem-api/create_space)
+* [修改主备密码-ModifyURedisGroupPassword](api/umem-api/modify_u_redis_group_password)
 * [UMem 错误码](api/umem-api/error_code)
