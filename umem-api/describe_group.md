@@ -6,6 +6,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
+|Zone|string||No|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |GroupId|string|组的ID,如果指定则获取描述，否则为列表操 作,需指定Offset/Limit|No|
 |Offset|int|分页显示的起始偏移, 默认值为0|No|
@@ -22,8 +23,17 @@
 ## URedisGroupSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|Zone|string|实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
+|VPCId|string||**Yes**|
+|RewriteTime|int|返回运维时间 0 //0点 1 //1点 以此类推|**Yes**|
+|Role|string|实例类型|**Yes**|
 |GroupId|string|组ID|No|
 |Name|string|组名称|No|
+|Type|string||No|
+|SubnetId|string||No|
+|Protocol|string|协议|No|
+|MemorySize|int|容量单位GB|No|
+|GroupName|string|组名称|No|
 |ConfigId|string|节点的配置ID|No|
 |VirtualIP|string|节点的虚拟IP地址|No|
 |Port|int|节点分配的服务端口|No|
@@ -39,61 +49,48 @@
 |CreateTime|int|创建时间 (UNIX时间戳)|No|
 |ModifyTime|int|修改时间 (UNIX时间戳)|No|
 |Tag|string|业务组名称|No|
-|Zone|string|实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |SlaveZone|string|跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist)|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeURedisGroup
-&Region=cn-east-01
-&Offset=0
-&Limit=20
+&Region=cn-bj2
+&Zone=SZQDzLQZ
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeURedisGroupResponse", 
-    "TotalCount": 2, 
+    "TotalCount": 1, 
     "RetCode": 0, 
     "DataSet": [
         {
-            "DisasterRecover": "enable", 
-            "Version": 3, 
-            "Name": "test1", 
-            "BackupTime": 14, 
-            "Port": 3306, 
-            "UsedSize": 104, 
-            "VirtualIP": "10.4.4.11", 
-            "ExpireTime": 1403549482, 
+            "Zone": "cn-bj2-04", 
+            "SlaveZone": "", 
             "State": "Running", 
+            "Version": "3.0", 
+            "Port": 6379, 
+            "Type": "double", 
+            "VPCId": "uvnet-oXXXX4j", 
+            "BackupTime": 3, 
+            "UsedSize": 61, 
+            "HighAvailability": "enable", 
+            "SubnetId": "subnet-iXXXXhz", 
+            "ConfigId": "03fXXXXca9-b64d-4XXd-abc7-c6b9XXXXX801", 
+            "Name": "zbreXXia_XXXXX_modify", 
+            "MemorySize": 4, 
+            "GroupName": "zbredia_XXXXX_modify", 
+            "ModifyTime": 1529912337, 
+            "Protocol": "redis", 
+            "VirtualIP": "XX.X9.XX.1XX", 
+            "ExpireTime": 1530374400, 
             "Tag": "Default", 
-            "AutoBackup": "enable", 
-            "ChargeType": "Year", 
-            "ModifyTime": 1403249482, 
-            "ConfigId": "24149c99-4df6-4b5a-99b4-8ab1ca2d7bbb", 
-            "GroupId": "uredis-0vcq2a", 
-            "CreateTime": 1403249482, 
-            "Size": 1024
-        }, 
-        {
-            "DisasterRecover": "enable", 
-            "Version": 3, 
-            "Name": "testr", 
-            "BackupTime": 14, 
-            "Port": 3302, 
-            "UsedSize": 10, 
-            "VirtualIP": "10.4.4.12", 
-            "ExpireTime": 1403549482, 
-            "State": "Running", 
-            "Tag": "Default", 
-            "AutoBackup": "enable", 
-            "ChargeType": "Year", 
-            "ModifyTime": 1403249482, 
-            "ConfigId": "24149c99-4df6-4b5a-99b4-8ab1ca2d7bbr", 
-            "GroupId": "uredis-0vcq2r", 
-            "CreateTime": 1403249482, 
-            "Size": 1024
+            "AutoBackup": "disable", 
+            "ChargeType": "Month", 
+            "CreateTime": 1529912330, 
+            "GroupId": "uredis-gXXXXXbz", 
+            "Size": 4
         }
     ]
 }
