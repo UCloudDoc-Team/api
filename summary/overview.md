@@ -11,9 +11,9 @@
 | Name      |Description                           |Notes                               |
 |---|---|---|
 | API调用地址  | 调用API的webservice入口                    | http(s)://api.ucloud.cn         |
-| 公共参数     | 调用API时需要给出的公共参数                       | 参见 [公共参数列表](api/public.md)  |
-| API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [API指令列表](api/index.md)                |
-| 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [API指令列表](api/index.md)                |
+| 公共参数     | 调用API时需要给出的公共参数                       | 参见 [公共参数列表](api/summary/public)  |
+| API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [API指令列表](api/index)                |
+| 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [API指令列表](api/index)                |
 
 ## API请求示例
 
@@ -54,7 +54,7 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 |---|---|---|
 | 指令名称    | 返回所调用的指令名称。 例如 DescribeUHostInstanceResponse                      | API 返回的指令名称为 "API 指令名称"+"Response"来表示。  |
 | API返回码  | 用来表示API请求的返回值 ，当ret_code = 0时表示API请求正常， ret_code != 0时表示API请求错误。  |                                         |
-| 返回参数    | 每个API的返回参数                                                        | 参见 [API指令列表](api/index.md)                   |
+| 返回参数    | 每个API的返回参数                                                        | 参见 [API指令列表](api/index)                   |
 
 ## API返回示例
 
