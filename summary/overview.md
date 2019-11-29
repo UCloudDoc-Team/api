@@ -11,7 +11,7 @@
 | Name      |Description                           |Notes                               |
 |---|---|---|
 | API调用地址  | 调用API的webservice入口                    | http(s)://api.ucloud.cn         |
-| 公共参数     | 调用API时需要给出的公共参数                       | 参见 [公共参数列表](public.md)  |
+| 公共参数     | 调用API时需要给出的公共参数                       | 参见 [公共参数列表](api/public.md)  |
 | API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [API指令列表](api/index.md)                |
 | 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [API指令列表](api/index.md)                |
 
