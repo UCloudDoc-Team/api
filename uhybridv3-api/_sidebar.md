@@ -1,4 +1,4 @@
-<div class="sidebar_title"> 混合云 UHYBRID</div>
+<div class="sidebar_title icon__Uhybrid01"> 混合云 UHYBRID</div>
 
 * [概览](api/uhybridv3-api/overview)
 * [获取所有监控数据-GetAllBWMonitor](api/uhybridv3-api/get_all_bw_monitor)
