@@ -42,13 +42,6 @@ UCloud目前拥有25大地域（Region），分别是北京一、北京二、金
 |	迪拜	|	uae-dubai	|	迪拜可用区A	|
 |	圣保罗	|	bra-saopaulo	|	圣保罗可用区A	|
 |	拉各斯	|	afr-nigeria	|	拉各斯可用区A	|
-|	杭州	|	cn-hz	|	杭州可用区A	|
-|	浙江	|	cn-cmccit2	|	浙江可用区A	|
-|	哈尔滨	|	cn-cmccit1	|	哈尔滨可用区A	|
-|	兴业数金	|	cn-cibfintech	|	兴业数金可用区A	|
-|	浪潮北京一	|	cn-inspur	|	浪潮北京一可用区A	|
-|	浪潮北京二	|	cn-inspur2	|	浪潮北京二可用区A	|
-|	新疆	|	cn-xj	|	新疆可用区A	|
 
 
 ## 各可用区(Zone) API名称列表
@@ -89,13 +82,6 @@ UCloud目前拥有25大地域（Region），分别是北京一、北京二、金
 |	迪拜可用区A	|	uae-dubai-01	|
 |	圣保罗可用区A	|	bra-saopaulo-01	|
 |	拉各斯可用区A	|	afr-nigeria-01	|
-|	杭州可用区A	|	cn-hz-01	|
-|	浙江可用区A	|	cn-cmccit2-01	|
-|	哈尔滨可用区A	|	cn-cmccit1-01	|
-|	兴业数金可用区A	|	cn-cibfintech-01	|
-|	浪潮北京一可用区A	|	cn-inspur-01	|
-|	浪潮北京二可用区A	|	cn-inspur2-01	|
-|	新疆可用区A	|	cn-xj-01	|
 
 ## 获取用户在各地域的可用区及权限信息
 
