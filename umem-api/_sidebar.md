@@ -28,4 +28,8 @@
 * [删除主备redis-DeleteURedisGroup](api/umem-api/delete_group)
 * [创建内存空间-CreateUMemSpace](api/umem-api/create_space)
 * [修改主备密码-ModifyURedisGroupPassword](api/umem-api/modify_u_redis_group_password)
+* [创建分布式redis备份-CreateUMemBackup](api/umem-api/create_u_mem_backup)
+* [查询分布式redis备份-DescribeUMemBackup](api/umem-api/describe_u_mem_backup)
+* [获取分布式redis备份下载链接-DescribeUMemBackupURL](api/umem-api/describe_u_mem_backup_url)
+* [删除UMem备份-DeleteUMemBackup](api/umem-api/delete_u_mem_backup)
 * [UMem 错误码](api/umem-api/error_code)
