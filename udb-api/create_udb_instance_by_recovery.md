@@ -17,6 +17,7 @@
 |UDBCId|string|专区的Id|No|
 |SubnetId|string|子网ID|No|
 |VPCId|string|VPC的ID|No|
+|EnableIpV6|bool|是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true|No|
 |CouponId|string|使用的代金券id|No|
 
 # Response Elements
@@ -37,6 +38,7 @@ https://api.ucloud.cn/?Action=CreateUDBInstanceByRecovery
 &UseSSD=true
 &SubnetId=SfBAwgaR
 &VPCId=axmBjGuC
+&EnableIpV6=true
 ```
 
 # Response Example
