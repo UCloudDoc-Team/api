@@ -22,7 +22,7 @@
 |BackupTime|int|备份策略，备份开始时间，单位小时计，默认1点|No|
 |BackupDuration|int|备份策略，备份时间间隔，单位小时计，默认24小时|No|
 |BackupId|int|备份id，如果指定，则表明从备份恢复实例|No|
-|UseSSD|bool|是否使用SSD，默认为false。目前主要可用区、海外机房、新机房只提供SSD资源，非SSD资源不再提供。|No|
+|UseSSD|bool|是否使用SSD，默认为true。目前主要可用区、海外机房、新机房只提供SSD资源，非SSD资源不再提供。|No|
 |SSDType|string|SSD类型，可选值为"SATA"、"PCI-E"，如果UseSSD为true ，则必选|No|
 |InstanceMode|string|UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal"|No|
 |UDBCId|string|专区ID信息（如果这个参数存在这说明是在专区中创建DB）|No|
@@ -35,6 +35,7 @@
 |ClusterRole|string|当DB类型(DBTypeId)为mongodb时，需要指定mongo的角色，可选值为configsrv (配置节点)，shardsrv (数据节点)|No|
 |HAArch|string|高可用架构:1） haproxy（默认）: 当前仅支持mysql。2） sentinel: 基于vip和哨兵节点的架构，当前支持mysql和pg。|No|
 |Tag|string|实例所在的业务组名称|No|
+|EnableIpV6|bool|是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true|No|
 |CouponId|string|使用的代金券id|No|
 
 ?> 创建跨可用区的高可用注意项:
@@ -66,6 +67,7 @@ https://api.ucloud.cn/?Action=CreateUDBInstance
 &ClusterRole=IcPiHioG
 &HAArch=haproxy
 &Tag=awpGFPaP
+&EnableIpV6=true
 ```
 
 # Response Example
