@@ -12,7 +12,7 @@
 |Name|string|实例名称，至少6位|**Yes**|
 |Port|int|端口号，默认27017，取值范围3306至65535。|No|
 |IsArbiter|bool|是否是仲裁节点，默认false，仲裁节点按最小机型创建|No|
-|UseSSD|bool|是否使用SSD，默认不使用|No|
+|UseSSD|bool|是否使用SSD，默认 为 true|No|
 |CouponId|string|使用的代金券id|No|
 
 # Response Elements
