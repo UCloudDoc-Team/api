@@ -17,7 +17,7 @@
 |ConfigsvrId.n|string|配置服务器的dbid，允许一个或者三个。|**Yes**|
 |ChargeType|string|Year， Month， Dynamic，Trial，默认: Month|No|
 |Quantity|int|购买时长，默认值1|No|
-|UseSSD|bool|是否使用SSD，默认为false|No|
+|UseSSD|bool|是否使用SSD，默认为ture|No|
 |CouponId|string|使用的代金券id|No|
 
 # Response Elements
