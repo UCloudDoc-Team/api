@@ -24,7 +24,7 @@
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
 |Message|string|如果执行失败, 失败的错误消息|No|
-|PriceInfo|array|价格明细, 参考PriceInfo对象定义|No|
+|PriceInfo|object|价格明细, 参考PriceInfo对象定义|No|
 
 ## PriceInfo
 |Parameter name|Type|Description|Required|
