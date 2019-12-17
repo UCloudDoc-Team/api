@@ -51,3 +51,4 @@
 * [更新配置-UpdateUDBParamGroup](api/udb-api/update_udb_param_group)
 * [获取UDB实例升降级价格信息-DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
 * [创建DB副本集-CreateMongoDBReplicaSet](api/udb-api/create_mongo_db_replica_set)
+* [UDB 错误码列表](api/udb-api/error_code)
