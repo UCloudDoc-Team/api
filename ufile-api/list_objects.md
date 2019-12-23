@@ -14,8 +14,6 @@
 # Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
 |Name|string|Bucket名称|No|
 |Prefix|string|查询结果的前缀|No|
 |MaxKeys|int|查询结果的最大数量|No|
