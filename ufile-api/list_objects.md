@@ -22,7 +22,7 @@ Authorization: <token>
 |Prefix|string|返回以Prefix作为前缀的目录文件列表|No|
 |Marker|string|返回以字母排序后，大于Marker的目录文件列表|No|
 |MaxKeys|int|指定返回目录文件列表的最大数量，默认值为100，不超过1000|No|
-|Delimiter|string|目录分隔符，默认为'/'，当前只支持是'/'|No|
+|Delimiter|string|目录分隔符，当前只支持"/"和" "，当Delimiter设置为"/"时，返回目录形式的文件列表，当Delimiter设置为" "时，返回非目录层级文件列表|No|
 
 # Response
 ## Response Header
