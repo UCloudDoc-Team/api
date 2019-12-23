@@ -28,3 +28,4 @@
 * [购买配额-BuyUFileQuota（已下线）](api/ufile-api/buy_ufile_quota)
 * [UFile 错误码列表](api/ufile-api/error_code)
 * [操作文件的Meta信息-OpMeta](api/ufile-api/op_meta)
+* [获取目录文件列表-ListObjects](api/ufile-api/list_objects)
