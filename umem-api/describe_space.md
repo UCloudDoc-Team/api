@@ -11,6 +11,7 @@
 |Offset|int|数据偏移量, 默认为0|No|
 |Limit|int|返回数据长度, 默认为20|No|
 |SpaceId|string|内存空间ID (无ID，则获取所有)|No|
+|Protocol|string|协议类型: memcache, redis|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -51,6 +52,7 @@
 https://api.ucloud.cn/?Action=DescribeUMemSpace
 &Region=cn-bj2
 
+&Protocol=dSWWMtLZ
 ```
 
 # Response Example
