@@ -39,3 +39,6 @@
 * [克隆路由表-CloneRouteTable](api/vpc2.0-api/clone_route_table)
 * [绑定子网的路由表-AssociateRouteTable](api/vpc2.0-api/associate_route_table)
 * [删除自定义路由表-DeleteRouteTable](api/vpc2.0-api/delete_route_table)
+* [分配ip-AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)
+* [查询SecondaryIp-DescribeSecondaryIp](api/vpc2.0-api/describe_secondary_ip)
+* [删除Ip-DeleteSecondaryIp](api/vpc2.0-api/delete_secondary_ip)
