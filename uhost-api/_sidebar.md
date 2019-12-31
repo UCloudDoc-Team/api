@@ -31,6 +31,7 @@
 * [获取VNC登录信息-GetUHostInstanceVncInfo](api/uhost-api/get_uhost_instance_vnc_info)
 * [获取主机业务组列表-DescribeUHostTags](api/uhost-api/describe_uhost_tags)
 * [修改主机备注-ModifyUHostInstanceRemark](api/uhost-api/modify_uhost_instance_remark)
+* [修改云主机内部IP地址-ModifyUHostIP](api/uhost-api/modify_u_host_ip)
 * [[参考]云主机机型](api/uhost-api/uhost_type)
 * [[参考]磁盘类型](api/uhost-api/disk_type)
 * [字段规范](api/uhost-api/specification)
