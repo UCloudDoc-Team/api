@@ -20,10 +20,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyUEdnImageName
-&ProjectId=vNPKPpJa
-&ImageId=olSztLZw
-&ImageName=cNRyrZHq
-&ImageDesc=UKejMZkn
+&ProjectId=org-xxx
+&ImageId=uedn-image-xxx
+&ImageName=xxx
+&ImageDesc=xxx
 ```
 
 # Response Example
@@ -31,7 +31,7 @@ https://api.ucloud.cn/?Action=ModifyUEdnImageName
 {
     "Action": "ModifyUEdnImageNameResponse", 
     "RetCode": 0, 
-    "ImageId": "REsCiJdd"
+    "ImageId": "uedn-image-xxx"
 }
 ```
 
