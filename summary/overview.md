@@ -1,12 +1,14 @@
 # API 文档综览
 
-本文档是UCloud云计算产品API参考手册。在本文档中，您能够获取到对于每一个指令的描述，语法以及使用示例。您可以通过用 HTTP/HTTPS GET的方式对我们的 API进行调用，或选择适合您所使用编程语言的 SDK 来访问我们的 API。在调用API时，除了需要给出相应的API调用地址，公共参数，API指令，以及指令参数之外，您还需要在调用请求中给出 API 密钥进行身份认证，请您务必妥善保管好您的 API 密钥。
+本文档是 UCloud 云计算产品 API 参考手册。在本文档中，您能够获取到对于每一个指令的描述，语法以及使用示例。
+您可以通过用 HTTP/HTTPS GET 的方式对我们的 API 进行调用，或选择适合您所使用编程语言的 SDK 来访问我们的 API。
+在调用 API 时，除了需要给出相应的 API 调用地址，公共参数，API 指令，以及指令参数之外，您还需要在调用请求中给出 API 密钥进行身份认证，请您务必妥善保管好您的 API 密钥。
 
-## API完整示例
+## API 完整示例
 
-部分API调用示例，参见 [UCloud SDK项目](https://github.com/ucloud)。
+部分 API 调用示例，参见 [UCloud SDK 项目](https://github.com/ucloud)。
 
-## API请求结构
+## API 请求结构
 
 | Name      |Description                           |Notes                               |
 |---|---|---|
@@ -15,10 +17,11 @@
 | API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [API指令列表](api/index)                |
 | 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [API指令列表](api/index)                |
 
-## API请求示例
+## API 请求示例
 
-### JSON方式
-```
+### JSON 方式
+
+```bash
 curl -X POST \
   https://api.ucloud.cn \
   -H 'Content-Type: application/json' \
@@ -45,22 +48,22 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 &PublicKey=ucloudsomeone@example.com1296235120854146120
 &Signature=2697152c34abbc148a38a33c0dc0d3d7b99ce82f
 ```
-**note:**
-请使用您的PublicKey与Signature参数值替换这里的参数值。
 
-## API返回结构
+?> 请使用您的 PublicKey 与 Signature 参数值替换这里的参数值。
+
+## API 返回结构
 
 | Name    | Description                                                       | Notes                                   |
 |---|---|---|
-| 指令名称    | 返回所调用的指令名称。 例如 DescribeUHostInstanceResponse                      | API 返回的指令名称为 "API 指令名称"+"Response"来表示。  |
-| API返回码  | 用来表示API请求的返回值 ，当ret_code = 0时表示API请求正常， ret_code != 0时表示API请求错误。  |                                         |
-| 返回参数    | 每个API的返回参数                                                        | 参见 [API指令列表](api/index)                   |
+| 指令名称    | 返回所调用的指令名称。 例如 DescribeUHostInstanceResponse                      | API 返回的指令名称为 "API 指令名称"+"Response" 来表示。  |
+| API返回码  | 用来表示 API 请求的返回值 ，当 ret_code = 0 时表示 API 请求正常， ret_code != 0 时表示 API 请求错误。  |                                         |
+| 返回参数    | 每个 API 的返回参数                                                        | 参见 [API指令列表](api/index)                   |
 
-## API返回示例
+## API 返回示例
 
-该API的返回值为如下所示的JSON格式内容。
+该 API 的返回值为如下所示的 JSON 格式内容。
 
-```
+```json
 {
      "Action" : "DescribeUHostInstanceResponse",
      "TotalCount" : 1,
@@ -81,7 +84,7 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
              "CPU":2,
              "Memory":2048,
              "AutoRenew":"Yes",
-             "NetworkState"："Connected",
+             "NetworkState": "Connected",
              "NetCapability":"Yes",
              "AutoRenew": "Yes",
              "DiskSet":[
@@ -103,8 +106,8 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
                      "Drive": "/dev/sdc",
                      "Size": 100
                  }
-             ]
-             " IpSet ":[
+             ],
+             "IpSet": [
                  {
                      "Type": " Private ",
                      "IP":"10.6.6.1"
@@ -112,8 +115,8 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
                  {
                      "Type":" Bgp ",
                      "IPId":"cc9732a6-d43a-45ca-b867-fb90052ffe88",
-                     "IP":”118.192.72.21”,
-                     " Bandwidth": 2
+                     "IP": "118.192.72.21",
+                     "Bandwidth": 2
                  }
              ]
          }
