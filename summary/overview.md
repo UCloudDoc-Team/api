@@ -19,7 +19,9 @@
 
 ## API 请求示例
 
-### JSON 方式
+<!-- tabs:start -->
+
+#### ** CURL **
 
 ```bash
 curl -X POST \
@@ -49,7 +51,9 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 &Signature=2697152c34abbc148a38a33c0dc0d3d7b99ce82f
 ```
 
-?> 请使用您的 PublicKey 与 Signature 参数值替换这里的参数值。
+<!-- tabs:end -->
+
+!> 请使用您的 PublicKey 与 Signature 参数值替换这里的参数值。
 
 ## API 返回结构
 
@@ -63,7 +67,7 @@ http(s)://api.ucloud.cn/?Action=DescribeUHostInstance
 
 该 API 的返回值为如下所示的 JSON 格式内容。
 
-```json
+```javascript
 {
      "Action" : "DescribeUHostInstanceResponse",
      "TotalCount" : 1,

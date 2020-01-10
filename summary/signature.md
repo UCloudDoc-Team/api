@@ -31,7 +31,52 @@ PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'
 
 !> 上例中的 `Password` 值为 `UCloud.cn`，但是调用时需要用 base64 进行编码。编码方法：echo -n "UCloud.cn" |base64；输出结果为"VUNsb3VkLmNu"。
 
-## 构造HTTP请求详细流程
+签名计算建议使用 UCloud SDK，只需配置 PublicKey/PrivateKey 即可为每一个请求自动计算签名，如需手动传递签名可以参考以下代码：
+
+<!-- tabs:start -->
+
+#### ** Python **
+
+```python
+from ucloud.core import auth
+
+cred = auth.Credential(
+    "ucloudsomeone@example.com1296235120854146120",
+    "46f09bb9fab4f12dfc160dae12273d5332b5debe",
+)
+d = {'Action': 'CreateUHostInstance', 'Region': 'cn-bj2', 'Zone': 'cn-bj2-04', 'ImageId': 'f43736e1-65a5-4bea-ad2e-8a46e18883c2', 'CPU': 2, 'Memory': 2048, 'DiskSpace': 10, 'LoginMode': 'Password', 'Password': 'VUNsb3VkLmNu', 'Name': 'Host01', 'ChargeType': 'Month', 'Quantity': 1, 'PublicKey': 'ucloudsomeone@example.com1296235120854146120'}
+print(cred.verify_ac(d))
+```
+
+> 详情可参考开源 [示例代码](https://github.com/ucloud/ucloud-sdk-python3/blob/master/tests/test_unit/test_core/test_auth.py#L4)。
+
+#### ** Go **
+
+```go
+package main
+
+import (
+  "fmt"
+  "github.com/ucloud/ucloud-sdk-go/ucloud/auth"
+)
+
+func main() {
+  cred := &auth.Credential{
+    PublicKey:  "ucloudsomeone@example.com1296235120854146120",
+    PrivateKey: "46f09bb9fab4f12dfc160dae12273d5332b5debe",
+  }
+  d := "Action=CreateUHostInstance&CPU=2&ChargeType=Month&DiskSpace=10&ImageId=f43736e1-65a5-4bea-ad2e-8a46e18883c2&LoginMode=Password&Memory=2048&Name=Host01&Password=VUNsb3VkLmNu&PublicKey=ucloudsomeone%40example.com1296235120854146120&Quantity=1&Region=cn-bj2&Zone=cn-bj2-04"
+  fmt.Println(cred.CreateSign(d))
+}
+```
+
+<!-- tabs:end -->
+
+生成被签名串的 SHA1 签名，即是请求参数 `Signature` 的值。
+
+按照上述算法，本例中，计算出的 Signature 为  **4f9ef5df2abab2c6fccd1e9515cb7e2df8c6bb65** 。
+
+## 构造 HTTP 请求详细流程
 
 ### 1. 将请求参数按照名进行升序排列
 
@@ -63,52 +108,48 @@ ActionCreateUHostInstanceCPU2ChargeTypeMonthDiskSpace10ImageIdf43736e1-65a5-4bea
 
 ### 3. 计算签名
 
-签名计算建议使用 UCloud SDK，只需配置 PublicKey/PrivateKey 即可为每一个请求自动计算签名。
+对于 OpenSDK 尚未支持的编程语言，可以参考以下签名算法的实现自行签名。
 
-各语言签名计算模块请参考以下 Github 源码。
+<!-- tabs:start -->
 
-| 语言   | 完整源码地址                                                 | 简短示例                       |
-| ------ | ------------------------------------------------------------ | ------------------------------ |
-| Python | [Github](https://github.com/ucloud/ucloud-sdk-python3/blob/master/ucloud/core/auth/_cfg.py#L41) | [详见此文档](#Python 简短示例) |
-| Go     | [Github](https://github.com/ucloud/ucloud-sdk-go/blob/master/ucloud/auth/credential.go#L16) | [详见此文档](#Go 简短示例)     |
-| Java   | [Github](https://github.com/ucloud/ucloud-sdk-java/blob/master/ucloud-sdk-java-common/src/main/java/cn/ucloud/common/util/Signature.java) | -                              |
-| PHP    | -                                                            | [详见此文档](#PHP 简短示例)    |
+#### ** Python **
 
-生成被签名串的 SHA1 签名，即是请求参数 `Signature` 的值。
-
-按照上述算法，本例中，计算出的 Signature 为 **4f9ef5df2abab2c6fccd1e9515cb7e2df8c6bb65** 。
-
-#### Python 简短示例
-
-完整示例请参考 [Python SDK Auth]() 模块，且建议使用 SDK 自动对请求签名，以下是简化过的示例：
+?> 完整示例请参考 [Python SDK Auth](https://github.com/ucloud/ucloud-sdk-python3/blob/master/ucloud/core/auth/_cfg.py#L41) 模块，且建议直接使用 SDK 自动对请求签名，**对于 SDK 暂不支持的接口，SDK 也提供了[泛化调用方式
+](https://docs.ucloud.cn/developer/opensdk-python/generic) 支持自动计算签名**，以下是简化过的示例：
 
 ```python
-import hashlib
-import urlparse
-import urllib
+from collections import OrderedDict
 
-def verify_ac(private_key, params):
-​   items=params.items()
-​   items.sort()
+def verify_ac(private_key: str, params: dict) -> str:
+    params = OrderedDict(sorted(params.items(), key=lambda item: item[0]))
 
-    params_data = "";
-    for key, value in items:
-        params_data = params_data + str(key) + str(value)
-    params_data = params_data + private_key
+    simplified = ""
+    for key, value in params.items():
+        simplified += str(key) + encode_value(value)
+    simplified += private_key
 
-    sign = hashlib.sha1()
-    sign.update(params_data)
-    signature = sign.hexdigest()
-    return signature
+    hash_new = hashlib.sha1()
+    hash_new.update(simplified.encode("utf-8"))
+    hash_value = hash_new.hexdigest()
+    return hash_value
+
+def encode_value(v):
+    # bool only accept lower case
+    if isinstance(v, bool):
+        return "true" if v else "false"
+
+    # api gateway will try to decode float as int in lua syntax
+    if isinstance(v, float):
+        return str(int(v)) if v % 1 == 0 else str(v)
+    return str(v)
 ```
 
-#### Go 简短示例
+#### ** PHP **
 
-#### PHP 简短示例
+!> PHP 中签名计算不支持 Boolean 类型，该类型元素请传递字符串 "true" 或 "false"
 
 ```php
 <?php
-
 function verify_ac($private_key, $params) {
   ksort($params);
 
@@ -145,15 +186,16 @@ $params = [
 ];
 
 print(verify_ac($cred["PrivateKey"], $params));
-
 ?>
 ```
+
+<!-- tabs:end -->
 
 ### 4.使用签名组合HTTP请求
 
 #### 4.1 Json方式
 
-```
+```bash
 curl -X POST \
   https://api.ucloud.cn \
   -H 'Content-Type: application/json' \
@@ -177,8 +219,9 @@ curl -X POST \
 
 #### 4.2 拼接参数方式
 
-对排序后的请求参数进行URL编码，URL 编码的规则如下：
-* 字符 A-Z、a-z、0-9不编码；
+对排序后的请求参数进行URL编码，URL 编码的规则遵循 [RFC3986](https://tools.ietf.org/html/rfc3986)，概括如下：
+
+* 字符 A-Z、a-z、0-9 不编码；
 * 字符“-”、“_”、“.”、“~”不编码；
 * 其它字符编码成 %XY 的格式，其中 XY 是字符对应 ASCII 码的 16 进制表示。比如：英文的双引号（”）对应的编码为 %22；
 * 对于扩展的 UTF-8 字符，编码成 %XY%ZA… 的格式；
@@ -186,6 +229,7 @@ curl -X POST \
 * "PublicKey" 无需编码
 
 构造HTTP请求，参数名和参数值之间用 "=" 连接，参数和参数之间用"&"号连接，构造的URL请求为:
+
 ```
 http(s)://api.ucloud.cn/?Action=CreateUHostInstance
 &CPU=2
