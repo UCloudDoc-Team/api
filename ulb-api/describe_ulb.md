@@ -6,7 +6,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Offset|int|数据偏移量，默认为0|No|
 |Limit|int|数据分页值，默认为20|No|
 |ULBId|string|负载均衡实例的Id。 若指定则返回指定的负载均衡实例的信息； 若不指定则返回当前数据中心中所有的负载均衡实例的信息|No|
@@ -26,10 +26,9 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ULBId|string|负载均衡的资源ID|No|
-|ULBName|string|负载均衡的资源名称(内部记载，废弃)|No|
-|Name|string|负载均衡的资源名称（资源系统中），缺省值“ULB”|No|
-|Tag|string|负载均衡的业务组名称，缺省值“Default”|No|
-|Remark|string|负载均衡的备注，缺省值“”|No|
+|Name|string|负载均衡的资源名称|No|
+|Tag|string|负载均衡的业务组名称|No|
+|Remark|string|负载均衡的备注|No|
 |BandwidthType|int|带宽类型，枚举值为： 0，非共享带宽； 1，共享带宽|No|
 |Bandwidth|int|带宽|No|
 |CreateTime|int|ULB的创建时间，格式为Unix Timestamp|No|
@@ -152,17 +151,18 @@ https://api.ucloud.cn/?Action=DescribeULB
                 {
                     "Status": 0, 
                     "PersistenceType": "None", 
-                    "ListenType": "RequestProxy", 
+                    "ClientTimeout": 60, 
                     "Protocol": "HTTP", 
+                    "Path": "", 
                     "PersistenceInfo": "", 
                     "PolicySet": [
                         {
                             "BackendSet": [
                                 {
                                     "ResourceName": "test", 
-                                    "BackendId": "backend-XXXXX", 
                                     "Port": 80, 
                                     "ObjectId": "b47f082b-684f-4d5c-8dc4-XXXXX", 
+                                    "BackendId": "backend-XXXXX", 
                                     "PrivateIP": "10.25.XXX.17"
                                 }
                             ], 
@@ -178,13 +178,7 @@ https://api.ucloud.cn/?Action=DescribeULB
                     "VServerId": "vserver-XXXX", 
                     "SSLSet": [], 
                     "Domain": "", 
-                    "CreateTime": 1529909432, 
-                    "MetricIdSet": [
-                        {
-                            "MetricId": "69538bf3-00bc-4385-85cc-XXXX", 
-                            "Type": "OuterMode"
-                        }
-                    ], 
+                    "Method": "Roundrobin", 
                     "VServerName": "VServer", 
                     "BackendSet": [
                         {
@@ -199,10 +193,15 @@ https://api.ucloud.cn/?Action=DescribeULB
                             "Port": 80
                         }
                     ], 
-                    "Path": "", 
-                    "ClientTimeout": 60, 
-                    "Method": "Roundrobin", 
                     "FrontendPort": 80, 
+                    "ListenType": "RequestProxy", 
+                    "CreateTime": 1529909432, 
+                    "MetricIdSet": [
+                        {
+                            "MetricId": "69538bf3-00bc-4385-85cc-XXXX", 
+                            "Type": "OuterMode"
+                        }
+                    ], 
                     "MonitorType": "Port"
                 }
             ], 
