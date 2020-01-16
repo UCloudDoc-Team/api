@@ -9,10 +9,9 @@
 |UrlList.n|string|预热URL列表，n从自然数0开始。|**Yes**|
 
 ```
-UrlList.n字段必须以”http://域名/”开始。
-目录要以”/”结尾， 如刷新目录a下所有文件，格式为：http://abc.ucloud.cn/a/；
-如刷新文件目录a下面img.png文件， 格式为http://abc.ucloud.cn/a/img.png。
-请正确提交需要刷新的域名
+UrlList.n字段必须以”http://域名/”开始。如预取目录a下面img.png文件， 格式为http://abc.ucloud.cn/a/img.png。
+不能做目录预取，请正确提交需要刷新的文件URL。
+
 ```
 
 # Response Elements
