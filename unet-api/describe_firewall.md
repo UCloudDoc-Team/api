@@ -24,7 +24,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |FWId|string|防火墙ID|**Yes**|
-|GroupId|int|安全组ID（即将废弃）|**Yes**|
+|GroupId|string|安全组ID（即将废弃）|**Yes**|
 |Name|string|防火墙名称|No|
 |Tag|string|防火墙业务组|No|
 |Remark|string|防火墙备注|No|
