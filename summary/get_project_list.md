@@ -1,16 +1,82 @@
-# 获取项目ID
+# 获取项目 ID
 
-## GetProjectList
+## 快速查询
+
+<!-- tabs:start -->
+
+#### ** CURL **
+
+?> 通过 CURL 发起请求需要手动计算签名，签名计算方法请参考 [签名算法](https://docs.ucloud.cn/api/summary/signature)。
+
+```bash
+curl -X POST \
+  https://api.ucloud.cn \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "Action":"GetProjectList",
+    "IsFinance":"Yes",
+    "PublicKey":"...",
+    "Signature":"..."
+  }'
+```
+
+!> 建议使用 CLI/SDK/UAPI 等工具发起查询，无需关心签名参数等问题。
+
+#### ** CLI **
+
+**安装**
+
+```bash
+brew install ucloud
+ucloud init
+```
+
+?> 按照提示输入密钥信息，密钥信息可以从 [此页面](https://console.ucloud.cn/uapi/apikey) 获取。
+
+**查询**
+
+```bash
+ucloud project list
+```
+
+#### ** SDK **
+
+**安装**
+
+```bash
+pip install ucloud-sdk-python3
+```
+
+**查询**
+
+```python
+from ucloud.client import Client
+
+client = Client({"public_key": "...", "private_key": "..."})
+client.uaccount().get_project_list()
+```
+
+?> 请将代码片段中的 key 替换为自己的公私钥，密钥信息可以从 [此页面](https://console.ucloud.cn/uapi/apikey) 获取。
+
+#### ** UAPI **
+
+访问 [UAPI](https://console.ucloud.cn/uapi/detail?id=GetProjectList) 查询
+
+<!-- tabs:end -->
+
+## 附录
+
+### GetProjectList
 
 获取项目列表
 
-## Request Parameters
+#### Request Parameters
 
 |Parameter name|Type |Description |Required|
 |---|---|---|---|
 |IsFinance   |string|是否有财务权限，YES：有，NO：没有|No      |
 
-## Response Elements
+#### Response Elements
 
 |Name        |Type   |Description                       |
 |---|---|---|
@@ -19,7 +85,7 @@
 |ProjectSet  |Array  |JSON格式的项目列表实例，每项参数参见下面的 ProjectSet|
 |ProjectCount|Integer|项目总数                              |
 
-### ProjectSet
+**模型定义**：`ProjectSet`
 
 |Name         |Type   |Description  |
 |---|---|---|
@@ -33,14 +99,14 @@
 |MemberCount  |Integer|项目下成员数量      |
 
 
-## Request Example
+#### Request Example
 
 ```
 https://api.ucloud.cn/?Action=GetProjectList
 &IsFinance=Yes
 ```
 
-## Response Example
+#### Response Example
 
 ```
 {
