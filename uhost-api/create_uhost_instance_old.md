@@ -7,9 +7,9 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](../summary/regionlist.html)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](../summary/regionlist.html)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](../summary/get_project_list.html)|No|
+|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist.html)|**Yes**|
+|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist.html)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list.html)|No|
 |HostType|string|云主机系列。枚举值：<br> > N1，系列1<br> > N2，系列2<br> 建议您不要调用此字段，而通过参考[云主机机型说明](api/uhost-api/uhost_type)调用UHostType直接选择具体机型。|No|
 |UHostType|string| 云主机机型。参考[云主机机型说明](api/uhost-api/uhost_type)。<br> 此外，还有这些枚举值支持传递（但不建议您使用）： <br> > Normal：普通型，根据HostType判断是N1还是N2 <br> > SATA\_SSD：高IO型，根据HostType判断是I1还是I2 <br> > BigData：大数据型，仅支持系列1 <br> > GPU：GPU机型，根据HostType判断是G1还是G2 |No|
 |CPU|int|虚拟CPU核数。可选参数：1-32（可选范围与UHostType相关）。默认值: 4|No|
