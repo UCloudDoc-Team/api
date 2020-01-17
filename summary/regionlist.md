@@ -1,10 +1,69 @@
 # 获取地域和可用区列表
 
-UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、金融云、上海二、广州、福建、杭州、香港、洛杉矶、华盛顿、莫斯科、法兰克福、东京、曼谷、首尔、新加坡、高雄、台北、迪拜、雅加达、孟买、圣保罗、伦敦、拉各斯和胡志明。每个地域下开设有多个可用区（Zone），每个地域所提供的网络带宽有所不同，在操作与公网相关的API时，需要主机选定地域所支持的网络线路。
+UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、金融云、上海二、广州、福建、杭州、香港、洛杉矶、华盛顿、莫斯科、法兰克福、东京、曼谷、首尔、新加坡、高雄、台北、迪拜、雅加达、孟买、圣保罗、伦敦、拉各斯和胡志明。每个地域下开设有多个可用区（Zone），用户在使用公有云相关的 API 发送操作指令时，需要指定指令所指向的地域。
 
-具体地域和可用区名称如下：
+<!-- tabs:start -->
 
-## 各地域(Region) API名称列表
+#### ** CURL **
+
+?> 通过 CURL 发起请求需要手动计算签名，签名计算方法请参考 [签名算法](https://docs.ucloud.cn/api/summary/signature)。
+
+```bash
+curl -X POST \
+  https://api.ucloud.cn \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "Action":"GetRegion",
+    "PublicKey":"...",
+    "Signature":"..."
+  }'
+```
+
+!> 建议使用 CLI/SDK/UAPI 等工具发起查询，无需关心签名参数等问题。
+
+#### ** CLI **
+
+**安装**
+
+```bash
+brew install ucloud
+ucloud init
+```
+
+?> 按照提示输入密钥信息，密钥信息可以从 [此页面](https://console.ucloud.cn/uapi/apikey) 获取。
+
+**查询**
+
+```bash
+ucloud region list
+```
+
+#### ** SDK **
+
+**安装**
+
+```bash
+pip install ucloud-sdk-python3
+```
+
+**查询**
+
+```python
+from ucloud.client import Client
+
+client = Client({"public_key": "...", "private_key": "..."})
+client.uaccount().get_region()
+```
+
+?> 请将代码片段中的 key 替换为自己的公私钥，密钥信息可以从 [此页面](https://console.ucloud.cn/uapi/apikey) 获取。
+
+<!-- tabs:end -->
+
+## 附录
+
+### 速查表
+
+#### 各地域 (Region) 名称列表
 
 | 地域名称   | 地域短ID         | 可用区                            |
 |---|---|---|
@@ -44,7 +103,7 @@ UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、
 |	拉各斯	|	afr-nigeria	|	拉各斯可用区A	|
 
 
-## 各可用区(Zone) API名称列表
+#### 各可用区 (Zone) 名称列表
 
 |可用区名称     |API名称            |
 |---|---|
@@ -83,13 +142,11 @@ UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、
 |	圣保罗可用区A	|	bra-saopaulo-01	|
 |	拉各斯可用区A	|	afr-nigeria-01	|
 
-## 获取用户在各地域的可用区及权限信息
-
-## GetRegion
+### GetRegion
 
 获取用户在各地域的权限等信息
 
-### Response Elements
+#### Response Elements
 
 |Name        |Type   |Description                       |
 |---|---|---|
@@ -97,7 +154,7 @@ UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、
 |RetCode     |Integer|执行成功与否，0表示成功，其他值则为错误代码            |
 |Regions    |Array  |JSON格式的各地域信息，每项参数参见下面的 Regions|
 
-### Regions 
+#### Regions 
 
 | Name        | Type     | Description                                                         |
 |---|---|---|
@@ -108,13 +165,13 @@ UCloud 目前拥有 25 大地域（Region），分别是北京一、北京二、
 | Region      | String   | 地域                                                                  |
 | Zone        | String   | 可用区名字，如cn-bj-01                                                     |
 
-### Request Example
+#### Request Example
 
 ```
 https://api.ucloud.cn/?Action=GetRegion
 ```
 
-### Response Example
+#### Response Example
 
 ```
 {

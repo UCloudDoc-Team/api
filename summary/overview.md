@@ -4,10 +4,6 @@
 您可以通过用 HTTP/HTTPS GET 的方式对我们的 API 进行调用，或选择适合您所使用编程语言的 SDK 来访问我们的 API。
 在调用 API 时，除了需要给出相应的 API 调用地址，公共参数，API 指令，以及指令参数之外，您还需要在调用请求中给出 API 密钥进行身份认证，请您务必妥善保管好您的 API 密钥。
 
-## API 完整示例
-
-部分 API 调用示例，参见 [UCloud SDK 项目](https://github.com/ucloud)。
-
 ## API 请求结构
 
 | Name      |Description                           |Notes                               |
