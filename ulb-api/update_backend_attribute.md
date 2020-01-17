@@ -2,10 +2,7 @@
 
 更新ULB后端资源实例(服务节点)属性
 
-!> 报文转发的服务节点暂不支持修改 Port；Port/Enabled 必传一个
-
-BackendId 对应是 AllocateBackend 返回的 BackendId 
-或者 DescribeULB/DescribeVServer 返回的 ULBBackendSet 里的 BackendId
+!> 报文转发的服务节点暂不支持修改 Port；BackendId 对应的是 AllocateBackend 返回的 BackendId 或者 DescribeULB/DescribeVServer 返回的 ULBBackendSet 结构体中的 BackendId
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
