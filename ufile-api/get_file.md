@@ -46,7 +46,7 @@ Response Elements
 |RetCode|Integer|执行失败时的错误代码 |
 |ErrMsg |String |执行失败时的错误提示 |
 
-> 注意: 成功下载时只返回HTTP 200回应和数据体。
+> 注意: 成功下载时返回HTTP 200或206和数据体。
 
 <table><tr><td bgcolor=orange>
  注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
