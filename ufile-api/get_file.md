@@ -25,7 +25,9 @@ Request Headers
 
 Request Elements
 
-说明: 未使用。
+|Name             |Type  |Description                       |Required|
+|---|---|---|---|
+|ufileattname    |String|指定ufile返回请求的Content-Disposition头                   |No      |
 
 Responses
 
