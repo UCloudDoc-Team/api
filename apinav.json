@@ -1,0 +1,205 @@
+{"api":[
+    {
+      "listname":"计算test",
+      "listvalue":[
+        {
+          "name":"云主机 UHost",
+          "links":"/api/uhost-api/overview"
+        },
+        {
+          "name":"物理云主机 UPHost",
+          "links":"/api/uphost-api/overview"
+        },
+        {
+          "name":"私有专区 UDHost",
+          "links":"/api/udhost-api/overview"
+        },
+        {
+          "name":"混合云 UHYBRID",
+          "links":"/api/uhybridv3-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"网络",
+      "listvalue":[
+        {
+          "name":"网络 UNet",
+          "links":"/api/unet-api/overview"
+        },
+        {
+          "name":"私有网络 VPC",
+          "links":"/api/vpc2.0-api/overview"
+        },
+        {
+          "name":"负载均衡 ULB",
+          "links":"/api/ulb-api/overview"
+        },
+        {
+          "name":"高速通道 UDPN",
+          "links":"/api/udpn-api/overview"
+        },
+        {
+          "name":"VPN网关 IPSec VPN",
+          "links":"/api/ipsecvpn-api/overview"
+        },
+        {
+          "name":"全球动态加速 PathX",
+          "links":"/api/pathx-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"存储",
+      "listvalue":[
+        {
+          "name":"文件存储 UFS",
+          "links":"/api/ufs-api/overview"
+        },
+        {
+          "name":"对象存储 UFile",
+          "links":"/api/ufile-api/overview"
+        },
+        {
+          "name":"归档存储 UArchive",
+          "links":"/api/uarchive-api/overview"
+        },
+        {
+          "name":"云硬盘 UDisk",
+          "links":"/api/udisk-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"云分发",
+      "listvalue":[
+        {
+          "name":"云分发 UCDN",
+          "links":"/api/ucdn-api/overview"
+        },
+        {
+          "name":"边缘分发节点 UEDN",
+          "links":"/api/uedn-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"数据库",
+      "listvalue":[
+        {
+          "name":"云数据库 UDB",
+          "links":"/api/udb-api/overview"
+        },
+        {
+          "name":"云内存存储 UMem",
+          "links":"/api/umem-api/overview"
+        },
+        {
+          "name":"分布式数据库 UDDB",
+          "links":"/api/uddb-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"数据分析",
+      "listvalue":[
+        {
+          "name":"数据湖分析 USQL",
+          "links":"/api/usql-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"容器服务",
+      "listvalue":[
+        {
+          "name":"容器集群 UDocker",
+          "links":"/api/udocker-api/overview"
+        },
+        {
+          "name":"通用计算 UGC",
+          "links":"/api/ugc-api/overview"
+        },
+        {
+          "name":"容器镜像库 UHub",
+          "links":"/api/uhub-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"中间件",
+      "listvalue":[
+        {
+          "name":"工作流服务 StepFlow",
+          "links":"/api/stepflow-api/overview"
+        },
+        {
+          "name":"Kafka消息队列 UKafka",
+          "links":"/api/ukafka-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"视频服务",
+      "listvalue":[
+        {
+          "name":"媒体工厂 UMedia",
+          "links":"/api/umedia-api/overview"
+        },
+        {
+          "name":"云直播 ULive",
+          "links":"/api/ulive-api/overview"
+        },
+        {
+          "name":"实时音视频 URTC",
+          "links":"/api/urtc-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"监控应用",
+      "listvalue":[
+        {
+          "name":"云监控 UMon",
+          "links":"/api/umon-api/overview"
+        },
+        {
+          "name":"短信服务 USMS",
+          "links":"/api/usms-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"账号与安全访问",
+      "listvalue":[
+        {
+          "name":"权限管理 UAM",
+          "links":"/api/uaccount-api/overview"
+        },
+        {
+          "name":"密钥管理服务 UKMS",
+          "links":"/api/ukms-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"安全防护",
+      "listvalue":[
+        {
+          "name":"DDos攻击防护-清洗服务 UDDos-UClean",
+          "links":"/api/uddos-uclean-api/overview"
+        }
+      ]
+    },
+    {
+      "listname":"计费相关",
+      "listvalue":[
+        {
+          "name":"账单管理 UBill",
+          "links":"/api/ubill-api/overview"
+        }
+      ]
+    }
+
+  ]}
+
