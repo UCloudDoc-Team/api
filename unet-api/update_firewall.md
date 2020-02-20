@@ -26,8 +26,8 @@ https://api.ucloud.cn/?Action=UpdateFirewall
 &ProjectId=org-xxx
 &Region=xxxx
 &FWId=fw-xxxx
-&Rule.1=UDP|53|0.0.0.0/0|ACCEPT|50|备注
-&Rule.0=TCP|3306|0.0.0.0/0|DROP|50|备注
+&Rule.1=UDP|53|0.0.0.0/0|ACCEPT|HIGH|备注
+&Rule.0=TCP|3306|0.0.0.0/0|DROP|HIGH|备注
 ```
 
 # Response Example
