@@ -26,9 +26,9 @@ https://api.ucloud.cn/?Action=CreateFirewall
 &Region=cn-north
 &Name=NewFirewall
 &Tag=Default
-&Rule.0=UDP|53|0.0.0.0/0|ACCEPT|HIGH
-&Rule.1=TCP|0-56636|0.0.0.0/0|ACCEPT|HIGH
-&Rule.2=TCP|3306|0.0.0.0/0|DROP|HIGH
+&Rule.0=UDP|53|0.0.0.0/0|ACCEPT|HIGH|备注
+&Rule.1=TCP|0-56636|0.0.0.0/0|ACCEPT|HIGH|备注
+&Rule.2=TCP|3306|0.0.0.0/0|DROP|HIGH|备注
 ```
 
 # Response Example
