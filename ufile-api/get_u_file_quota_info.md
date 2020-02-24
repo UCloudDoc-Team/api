@@ -21,9 +21,9 @@
 |---|---|---|---|
 |Region|string|可用地域|No|
 |Owe|int|是否欠费：1表示欠费；0表示未欠费|No|
-|Storage|float|剩余存储容量|No|
-|DownloadFlow|float|剩余下载流量|No|
-|RequestCnt|float|剩余请求次数|No|
+|Storage|object|剩余存储容量|No|
+|DownloadFlow|object|剩余下载流量|No|
+|RequestCnt|object|剩余请求次数|No|
 
 ## UFileQuotaLeft
 |Parameter name|Type|Description|Required|
@@ -37,7 +37,7 @@ https://api.ucloud.cn/?Action=GetUFileQuotaInfo
 &QuotaType.0=storage-volume
 &QuotaType.1=download-traffic
 &QuotaType.2=request-count
-&ProjectId=org-5150
+&ProjectId=org-xxx
 ```
 
 # Response Example
@@ -48,12 +48,12 @@ https://api.ucloud.cn/?Action=GetUFileQuotaInfo
     "DataSet": [
         {
             "Owe": 1, 
-            "DownloadFlow": {
-                "Left": -5.180299999999999
-            }, 
-            "Region": "cn-bj", 
             "Storage": {
                 "Left": -13507.2
+            }, 
+            "Region": "cn-bj", 
+            "DownloadFlow": {
+                "Left": -5.1803
             }, 
             "RequestCnt": {
                 "Left": 202
