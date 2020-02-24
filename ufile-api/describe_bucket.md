@@ -23,15 +23,15 @@
 ## UFileBucketSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|Region|string|Bucket所属地域|No|
 |BucketName|string|Bucket名称|No|
 |BucketId|string|Bucket的ID|No|
-|Domain|array|Bucket的域名集合 参数见 UFileDomainSet|No|
+|Domain|object|Bucket的域名集合 参数见 UFileDomainSet|No|
 |CdnDomainId|array|与Bucket关联的CND加速域名的ID列表|No|
 |Type|string|Bucket访问类型|No|
 |CreateTime|int|Bucket的创建时间|No|
 |ModifyTime|int|Bucket的修改时间|No|
 |Biz|string|Bucket所属业务, general或vod或udb general: 普通业务； vod: 视频云业务; udb: 云数据库业务|No|
-|Region|string|Bucket所属地域|No|
 |Tag|string|所属业务组|No|
 |HasUserDomain|int|是否存在自定义域名。0不存在，1存在，2错误|No|
 
