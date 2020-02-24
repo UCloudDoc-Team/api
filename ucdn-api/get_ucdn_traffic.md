@@ -18,9 +18,9 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Areacode|string|购买流量的区域, cn: 国内; abroad: 国外|No|
-|TrafficTotal|string|Areacode区域内总购买流量, 单位GB|No|
-|TrafficLeft|string|Areacode区域内总剩余流量, 单位GB|No|
-|TrafficUsed|string|Areacode区域内总使用流量, 单位GB|No|
+|TrafficTotal|float|Areacode区域内总购买流量, 单位GB|No|
+|TrafficLeft|float|Areacode区域内总剩余流量, 单位GB|No|
+|TrafficUsed|float|Areacode区域内总使用流量, 单位GB|No|
 
 # Request Example
 ```
@@ -36,15 +36,15 @@ http://api.ucloud.cn/?Action=GetUcdnTraffic
     "TrafficSet": [
         {
             "Areacode": "cn", 
+            "TrafficUsed": 19.9, 
             "TrafficTotal": 120, 
-            "TrafficLeft": 100.1, 
-            "TrafficUsed": 19.9
+            "TrafficLeft": 100.1
         }, 
         {
             "Areacode": "abroad", 
+            "TrafficUsed": 19.9, 
             "TrafficTotal": 120, 
-            "TrafficLeft": 100.1, 
-            "TrafficUsed": 19.9
+            "TrafficLeft": 100.1
         }
     ]
 }
