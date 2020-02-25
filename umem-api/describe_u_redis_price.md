@@ -25,7 +25,10 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ChargeType|string|Year， Month， Dynamic，Trial|No|
-|Price|float|价格，单位: 元，保留小数点后两位有效数字|No|
+|Price|int|现价，单位: 厘|No|
+|ListPrice|int|产品列表价，单位: 厘|No|
+|OriginalPrice|int|原价，单位: 厘|No|
+
 
 # Request Example
 ```
@@ -44,8 +47,10 @@ https://api.ucloud.cn/?Action=DescribeURedisPrice
     "RetCode": 0, 
     "DataSet": [
         {
-            "Price": 8000, 
-            "ChargeType": "Month"
+           ChargeType: "Month"
+           ListPrice: 16000
+           OriginalPrice: 16000
+           Price: 16000
         }
     ]
 }
