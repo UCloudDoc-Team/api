@@ -9,10 +9,12 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |SubnetIds.n|string|子网id数组，适用于一次查询多个子网信息|No|
 |SubnetId|string|子网id，适用于一次查询一个子网信息|No|
+|RouteTableId|string|路由表Id|No|
 |VPCId|string|VPC资源id|No|
 |Tag|string|业务组名称，默认为Default|No|
 |Offset|int|偏移量，默认为0|No|
 |Limit|int|列表长度，默认为20|No|
+|ShowAvailableIPs|bool|是否返回子网的可用IP数，true为是，false为否，默认不返回|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -26,6 +28,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Zone|string|可用区名称|No|
+|IPv6Network|string|子网关联的IPv6网段|No|
 |VPCId|string|VPCId|No|
 |VPCName|string|VPC名称|No|
 |SubnetId|string|子网Id|No|
@@ -34,11 +37,12 @@
 |Tag|string|业务组|No|
 |SubnetType|int|子网类型|No|
 |Subnet|string|子网网段|No|
-|Netmask|int|子网掩码|No|
+|Netmask|string|子网掩码|No|
 |Gateway|string|子网网关|No|
 |CreateTime|int|创建时间|No|
 |HasNATGW|bool|是否有natgw|No|
 |RouteTableId|string|路由表Id|No|
+|AvailableIPs|int|可用IP数量|No|
 
 # Request Example
 ```
@@ -50,6 +54,8 @@ https://api.ucloud.cn/?Action=DescribeSubnet
 &Tag=tag
 &Offset=0
 &Limit=20
+&RouteTableId=KbKrefnV
+&ShowAvailableIPs=false
 ```
 
 # Response Example
