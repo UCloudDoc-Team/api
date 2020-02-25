@@ -24,17 +24,18 @@
 ## URedisPriceSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|OriginalPrice|int|原价|**Yes**|
 |ChargeType|string|Year， Month， Dynamic，Trial|No|
-|Price|float|价格，单位: 元，保留小数点后两位有效数字|No|
+|ListPrice|int|产品列表价|No|
+|Price|int|总价格|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeURedisPrice
 &Region=cn-bj2
-&Zone=cn-bj2-02
-&Size=1
-&ChargeType=Month
-&Quantity=1
+&Zone=cn-bj2-04
+&Size=8
+&Type=pYeMRrBb
 ```
 
 # Response Example
@@ -44,8 +45,22 @@ https://api.ucloud.cn/?Action=DescribeURedisPrice
     "RetCode": 0, 
     "DataSet": [
         {
-            "Price": 8000, 
-            "ChargeType": "Month"
+            "Price": 640000, 
+            "ListPrice": 640000, 
+            "ChargeType": "Year", 
+            "OriginalPrice": 640000
+        }, 
+        {
+            "Price": 64000, 
+            "ListPrice": 64000, 
+            "ChargeType": "Month", 
+            "OriginalPrice": 64000
+        }, 
+        {
+            "Price": 136, 
+            "ListPrice": 136, 
+            "ChargeType": "Dynamic", 
+            "OriginalPrice": 136
         }
     ]
 }
