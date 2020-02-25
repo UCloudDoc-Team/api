@@ -7,10 +7,10 @@
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |Size|int|购买umem大小,单位:GB,范围[1\~1024]|**Yes**|
 |Type|string|空间类型:single(无热备),double(热备)(默认: double)|**Yes**|
-|ChargeType|string|Year， Month， Dynamic，Trial 如果不指定，则一次性获取三种计费|No|
+|ChargeType|string|Year， Month， Dynamic 如果不指定，则一次性获取三种计费|No|
 |Quantity|int|购买UMem的时长，默认值为1|No|
 
 # Response Elements
@@ -24,17 +24,18 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ChargeType|string|Year， Month， Dynamic，Trial|No|
-|Price|float|价格，单位: 元，保留小数点后两位有效数字|No|
+|Price|int|现价|No|
+|ListPrice|int|产品列表价|No|
+|OriginalPrice|int|原价|No|
 
 # Request Example
 ```
-https://api.ucloud.cn/udisk/?Action=DescribeUMemPrice
-&Region=cn-north-02
+https://api.ucloud.cn/?Action=DescribeUMemPrice
+&Region=cn-bj2
 &Zone=cn-bj2-04
-&Size=1   
-&Type=double
-&ChargeType=Month
-&Quantity=12
+&Size=3
+&Type=single
+&RegionFlag=false
 ```
 
 # Response Example
@@ -44,8 +45,22 @@ https://api.ucloud.cn/udisk/?Action=DescribeUMemPrice
     "RetCode": 0, 
     "DataSet": [
         {
-            "Price": 1360, 
-            "ChargeType": "Month"
+            "Price": 120000, 
+            "ListPrice": 120000, 
+            "ChargeType": "Year", 
+            "OriginalPrice": 120000
+        }, 
+        {
+            "Price": 12000, 
+            "ListPrice": 12000, 
+            "ChargeType": "Month", 
+            "OriginalPrice": 12000
+        }, 
+        {
+            "Price": 24, 
+            "ListPrice": 24, 
+            "ChargeType": "Dynamic", 
+            "OriginalPrice": 24
         }
     ]
 }
