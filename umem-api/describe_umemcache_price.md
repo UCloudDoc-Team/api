@@ -7,9 +7,11 @@
 |---|---|---|---|
 |Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
 |Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
+|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |Size|int|容量大小,单位:GB 取值范围[1-32]|**Yes**|
 |ChargeType|string|计费模式，Year， Month， Dynamic，默认: Dynamic 默认: 获取所有计费模式的价格|No|
 |Quantity|int|购买umemcache的时长，默认值为1|No|
+|Type|string|空间类型:single(无热备),double(热备)(默认: double)|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -22,16 +24,18 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ChargeType|string|计费模式，Year, Month, Dynamic|No|
-|Price|float|价格，单位: 元，保留小数点后两位有效数字|No|
+|Price|int|总价格|No|
+|ListPrice|int|产品列表价|No|
+|OriginalPrice|int|原价|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeUMemcachePrice
-&Region=cn-north-02
-&Size=1   
-&ChargeType=Month
-&Quantity=1
-&ProjectId=org-quk5zs
+&Region=cn-bj2
+&Zone=cn-bj2-04
+&Size=1
+&ProjectId=NKVlvLHl
+&Type=uPFaYIFP
 ```
 
 # Response Example
@@ -41,8 +45,22 @@ https://api.ucloud.cn/?Action=DescribeUMemcachePrice
     "RetCode": 0, 
     "DataSet": [
         {
-            "Price": 60, 
-            "ChargeType": "Month"
+            "Price": 54000, 
+            "ListPrice": 54000, 
+            "ChargeType": "Year", 
+            "OriginalPrice": 54000
+        }, 
+        {
+            "Price": 5400, 
+            "ListPrice": 5400, 
+            "ChargeType": "Month", 
+            "OriginalPrice": 5400
+        }, 
+        {
+            "Price": 11, 
+            "ListPrice": 11, 
+            "ChargeType": "Dynamic", 
+            "OriginalPrice": 11
         }
     ]
 }
