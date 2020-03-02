@@ -10,6 +10,7 @@
 |EIPIds.n|string|弹性IP的资源ID如果为空, 则返回当前 Region中符合条件的的所有EIP|No|
 |Offset|int|数据偏移量, 默认为0|No|
 |Limit|int|数据分页值, 默认为20|No|
+|IPs.n|string|IP地址，支持通过ip查询，如果ip与EIP都传，会取并集查询|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -17,6 +18,7 @@
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
 |TotalCount|int|满足条件的弹性IP总数|No|
+|UnbindCount|int|未绑定的弹性IP总数|No|
 |TotalBandwidth|int|满足条件的弹性IP带宽总和, 单位Mbps|No|
 |EIPSet|array|弹性IP列表, 每项参数详见 UnetEIPSet|No|
 
@@ -69,6 +71,7 @@
 https://api.ucloud.cn/?Action=DescribeEIP
 &Region=cn-bj2
 &EIPIds.0=eip-XXXXX
+&IPs.n=XXHDIxmf
 ```
 
 # Response Example
@@ -79,6 +82,7 @@ https://api.ucloud.cn/?Action=DescribeEIP
     "Request_uuid": "f33cf273-89ed-4215-a9c6-XXXXXXX", 
     "TotalCount": 10, 
     "Action": "DescribeEIPResponse", 
+    "UnbindCount": 5, 
     "EIPSet": [
         {
             "Status": "used", 
