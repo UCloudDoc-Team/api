@@ -38,7 +38,6 @@
 * [UDB高可用实例升级为Sentinel版本（不带HAProxy）-SwitchUDBHAToSentinel](api/udb-api/switch_udbha_to_sentinel)
 * [导入配置-UploadUDBParamGroup](api/udb-api/upload_udb_param_group)
 * [备份UDB指定时间段的slowlog分析结果-BackupUDBInstanceSlowLog](api/udb-api/backup_udb_slowlog)
-* [删除备份-DeleteUDBBackup](api/udb-api/delete_udb_backup)
 * [备份UDB指定时间段的binlog列表-BackupUDBInstanceBinlog](api/udb-api/backup_udb_binlog)
 * [将新建的db恢复到指定db某个指定时间点-CreateUDBInstanceByRecovery](api/udb-api/create_udb_instance_by_recovery)
 * [开启或者关闭UDB从库备份-UpdateUDBInstanceSlaveBackupSwitch](api/udb-api/update_udb_slave_backup_switch)
