@@ -6,8 +6,8 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |AppId|int|待查询的应用id|**Yes**|
-|RoomId|string|	带查询的房间名|**Yes**|
-|QueryUser|string|带查询的用户名|**Yes**|
+|RoomId|string|	待查询的房间名|**Yes**|
+|QueryUser|string|待查询的用户名|**Yes**|
 |StartTime|int|查询开始时间（秒级）|**Yes**|
 |EndTime|int|查询结束时间（秒级）|**Yes**|
 
