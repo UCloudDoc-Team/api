@@ -11,7 +11,7 @@
 |StartTime|int|秒时间戳|**Yes**|
 |EndTime|int|秒时间戳|**Yes**|
 |IndexType|int|0:common 1:发送方 2.接收方|**Yes**|
-|IndexName|int| IndexType为1 1.上行音频码率 2.上行视频码率  3.上行丢包率 4采集音量 5发送延迟 6>帧率IndexType为2 1.下行音频码率 2.下行视频码率  3.下行丢包率 4播放音量 5接收延迟 6>帧率IndexType为0 (1.app的cpu占用率 2.app的内存数  3.设备的cpu占有率)|**Yes**|
+|IndexName|int| IndexType为1：1.上行音频码率 2.上行视频码率  3.上行丢包率 4.采集音量 5.发送延迟 6.帧率IndexType为2 1.下行音频码率 2.下行视频码率  3.下行丢包率 4播放音量 5接收延迟 6.帧率IndexType为0 ：1.app的cpu占用率 2.app的内存数  3.设备的cpu占有率|**Yes**|
 |SendUser|string|当QueryUser为接收方时对应的流发送用户的IDQueryUser为发送方时填成一样|**Yes**|
 
 # Response Elements
