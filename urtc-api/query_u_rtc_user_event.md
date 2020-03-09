@@ -5,11 +5,11 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|AppId|string|待查询的应用id|**Yes**|
-|RoomId|string|带查询的房间名|**Yes**|
-|QueryUser|string|带查询的用户名|**Yes**|
-|StartTime|int|待查询开始时间|**Yes**|
-|EndTime|int|待查询结束时间|**Yes**|
+|AppId|string|应用id|**Yes**|
+|RoomId|string|房间ID|**Yes**|
+|QueryUser|string|用户名|**Yes**|
+|StartTime|int|开始时间|**Yes**|
+|EndTime|int|结束时间|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -24,7 +24,7 @@
 |---|---|---|---|
 |UserId|string|用户ID|**Yes**|
 |Time|int|时间戳|**Yes**|
-|EventType|int|事件类型(1.加入房间，2.离开房间，3.开始推流, 4.结束推流， 5.开始拉流 6.结束拉流 7.打开摄像头 8.关闭摄像头 9.打开麦克风，10.关闭麦克风)|**Yes**|
+|EventType|int|事件类型（1.加入房间，2.离开房间，3.开始推流，4.结束推流，5.开始拉流，6.结束拉流，7.打开摄像头，8.关闭摄像头，9.打开麦克风，10关闭麦克风）|**Yes**|
 
 # Request Example
 ```
