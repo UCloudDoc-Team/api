@@ -27,6 +27,8 @@
 * [获取目录文件列表-ListObjects](api/ufile-api/list_objects)
 * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
 * [删除文件-DeleteFile](api/ufile-api/delete_file)
+* [文件存储类型转换-ClassSwitch](api/ufile-api/class_switch)
+* [解冻文件-Restore](api/ufile-api/restore)
 * [操作文件的Meta信息-OpMeta](api/ufile-api/op_meta)
 * [购买配额-BuyUFileQuota（已下线）](api/ufile-api/buy_ufile_quota)
 * [UFile 错误码列表](api/ufile-api/error_code)
