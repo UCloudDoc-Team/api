@@ -23,12 +23,14 @@
 |---|---|---|---|
 |Region|string|区域|**Yes**|
 |UserId|string|用户ID|**Yes**|
-|LastEnterTime|int|最近一次进入房间时间|**Yes**|
-|LastLeaveTime|int|最后一次进入房间时间|**Yes**|
+|LastEnterTime|int|最后一次进入房间时间|**Yes**|
+|LastLeaveTime|int|最后一次离开房间时间，未离开返回0|**Yes**|
 |Sdkv|string|sdk版本|**Yes**|
 |Device|string|设备名称|**Yes**|
 |System|string|系统类型|**Yes**|
 |Network|string|网络类型|**Yes**|
+|FirstEnterTime|int|最早一次进入房间时间|**Yes**|
+|Available|bool|设备可用性|**Yes**|
 
 # Request Example
 ```
