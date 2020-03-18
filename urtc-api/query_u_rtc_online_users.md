@@ -5,9 +5,10 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|AppId|string|查询的AppId (不能为空)|**Yes**|
+|AppId|string|AppId|**Yes**|
 |StartTime|int|开始时间(秒时间戳）|**Yes**|
 |EndTime|int|结束时间(秒时间戳）|**Yes**|
+|RoomId|string|房间ID|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -25,6 +26,9 @@
 |CurrentAmount|int|当前用户数量|**Yes**|
 |PeekAmount|int|峰值用户数量|**Yes**|
 |AccumulationAmount|int|累计用户数量|**Yes**|
+|StartTime|int|房间开始时间|**Yes**|
+|EndTime|int|房间结束时间|**Yes**|
+|RoomStatus|bool|房间状态,进行中:true,已结束:false|**Yes**|
 
 # Request Example
 ```
@@ -32,6 +36,7 @@ https://api.ucloud.cn/?Action=QueryURtcOnlineUsers
 &AppId=URtc-h4r1txxy
 &StartTime=1563150096
 &EndTime=1563158718
+&RoomId=oMMAvLDR
 ```
 
 # Response Example
