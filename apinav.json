@@ -201,5 +201,38 @@
       ]
     }
 
-  ]}
+  ],
+ "hotprods":[
+    {
+        "url":"/api/summary/README",
+        "title":"API 文档综览",
+        "des":"",
+        "imglinks":""
+    },
+    {
+        "url":"/api/summary/signature",
+        "title":"签名算法",
+        "des":"",
+        "imglinks":""
+    },
+    {
+        "url":"/api/summary/public",
+        "title":"公共参数",
+        "des":"",
+        "imglinks":""
+    },
+    {
+        "url":"/api/summary/regionlist",
+        "title":"获取地域和可用区列表",
+        "des":"",
+        "imglinks":""
+    },
+    {
+        "url":"/api/summary/get_project_list",
+        "title":"获取项目ID",
+        "des":"",
+        "imglinks":""
+    }
+]
+}
 
