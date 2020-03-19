@@ -14,7 +14,7 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|TotalCount|int|已有主机的业务组总个数|No|
+|TotalCount|int|已有主机的业务组总数|No|
 |TagSet|array|业务组集合见 UHostTagSet|No|
 
 ## UHostTagSet
@@ -29,26 +29,20 @@
 https://api.ucloud.cn/?Action=DescribeUHostTags
 &Region=cn-bj2
 &Zone=cn-bj2-04
+&ProjectId=org-xxx
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeUHostTagsResponse", 
-    "TotalCount": 3, 
+    "TotalCount": 1, 
     "RetCode": 0, 
     "TagSet": [
         {
-            "TotalCount": 1, 
-            "Tag": "Tags1"
-        }, 
-        {
             "TotalCount": 2, 
-            "Tag": "Default"
-        }, 
-        {
-            "TotalCount": 1, 
-            "Tag": "Tags0"
+            "Tag": "Default", 
+            "Zone": "xxx"
         }
     ]
 }
