@@ -12,3 +12,4 @@
 * [查询总的QOS质量指标(上行总码率，下行总码率，卡顿)-QueryURtcTotalQosIndex](api/urtc-api/query_u_rtc_total_qos_index)
 * [查询特定指标-QueryURtcTargetQosIndex](api/urtc-api/query_u_rtc_target_qos_index)
 * [获取每日消费时长信息-GetURtcDaliyConsumption](api/urtc-api/get_u_rtc_daliy_consumption)
+* [查询房间通话详单-QueryURtcOrderDetail](api/urtc-api/query_u_rtc_order_detail)
