@@ -28,5 +28,4 @@
 * [文件存储类型转换-ClassSwitch](api/ufile-api/class_switch)
 * [解冻文件-Restore](api/ufile-api/restore)
 * [操作文件的Meta信息-OpMeta](api/ufile-api/op_meta)
-* [购买配额-BuyUFileQuota（已下线）](api/ufile-api/buy_ufile_quota)
 * [UFile 错误码列表](api/ufile-api/error_code)
