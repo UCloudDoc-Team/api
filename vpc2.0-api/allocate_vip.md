@@ -12,7 +12,7 @@
 |SubnetId|string|子网id|**Yes**|
 |Ip|string|指定ip|No|
 |Count|int|申请数量，默认: 1|No|
-|Name|string|vip名，默认为VIP|No|
+|Name|string|vip名，默认：VIP|No|
 |Tag|string|业务组名称，默认为Default|No|
 |Remark|string|备注|No|
 |BusinessId|string|业务组|No|
