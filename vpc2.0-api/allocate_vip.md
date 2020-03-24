@@ -5,13 +5,14 @@
 # Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
+|Region|string|地域|**Yes**|
+|Zone|string|可用区|No|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |VPCId|string|指定vip所属的VPC|**Yes**|
 |SubnetId|string|子网id|**Yes**|
+|Ip|string|指定ip|No|
 |Count|int|申请数量，默认: 1|No|
-|Name|string|vip名，默认为VIP|No|
+|Name|string|vip名，默认：VIP|No|
 |Tag|string|业务组名称，默认为Default|No|
 |Remark|string|备注|No|
 |BusinessId|string|业务组|No|
@@ -35,27 +36,27 @@
 ```
 https://api.ucloud.cn/?Action=AllocateVIP
 &Region=cn-bj2
-&ProjectId=xxxx
+&ProjectId=org-XXXX
 &Zone=cn-bj2-04
-&VPCId=xxx
-&SubnetId=xxx
+&VPCId=vnet-XXXXXX
+&SubnetId=subnet-XXX
+&Ip=ccjyLEtQ
 ```
 
 # Response Example
 ```
 {
     "Action": "AllocateVIPResponse", 
-    "TotalCount": 1, 
-    "DataSet": [
-        "10.64.204.72"
-    ], 
-    "RetCode": 0, 
     "VIPSet": [
         {
-            "VIP": "10.64.204.72", 
-            "VPCId": "vnet-xxx", 
-            "VIPId": "vip-xxx"
+            "VIP": "10.25.XX.111", 
+            "VPCId": "uvnet-XXXXX", 
+            "VIPId": "vip-XXXXXX"
         }
+    ], 
+    "RetCode": 0, 
+    "DataSet": [
+        "10.25.XX.111"
     ]
 }
 ```
