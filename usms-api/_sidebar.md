@@ -1,6 +1,6 @@
 <div class="sidebar_title"> 短信服务 USMS</div>
 
-* [概览](api/usms-api/overview)
+* [概览](api/usms-api/README)
 * [修改短信签名-UpdateUSMSSignature](api/usms-api/update_usms_signature)
 * [发送短信息-SendUSMSMessage](api/usms-api/send_usms_message)
 * [修改短信模板-UpdateUSMSTemplate](api/usms-api/update_usms_template)

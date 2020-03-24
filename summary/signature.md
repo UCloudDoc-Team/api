@@ -115,7 +115,7 @@ ActionCreateUHostInstanceCPU2ChargeTypeMonthDiskSpace10ImageIdf43736e1-65a5-4bea
 #### ** Python **
 
 ?> 完整示例请参考 [Python SDK Auth](https://github.com/ucloud/ucloud-sdk-python3/blob/master/ucloud/core/auth/_cfg.py#L41) 模块，且建议直接使用 SDK 自动对请求签名，**对于 SDK 暂不支持的接口，SDK 也提供了[泛化调用方式
-](https://docs.ucloud.cn/developer/opensdk-python/generic) 支持自动计算签名**，以下是简化过的示例：
+](https://docs.ucloud.cn/opensdk-python/generic) 支持自动计算签名**，以下是简化过的示例：
 
 ```python
 from collections import OrderedDict

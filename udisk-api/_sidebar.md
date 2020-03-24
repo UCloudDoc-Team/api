@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__udisk"> 云硬盘 UDisk</div>
 
-* [概览](api/udisk-api/overview)
+* [概览](api/udisk-api/README)
 * [从备份恢复数据至UDisk-RestoreUDisk](api/udisk-api/restore_u_disk)
 * [获取快照列表-DescribeUDiskSnapshot](api/udisk-api/describe_udisk_snapshot)
 * [克隆快照-CloneUDiskSnapshot](api/udisk-api/clone_udisk_snapshot)

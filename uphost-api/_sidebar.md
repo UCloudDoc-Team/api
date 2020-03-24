@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__uphost"> 物理云主机UPHost</div>
 
-* [概览](api/uphost-api/overview)
+* [概览](api/uphost-api/README)
 * [更改物理机信息-ModifyPHostInfo](api/uphost-api/modifyphostinfo)
 * [断电物理机-PoweroffPHost](api/uphost-api/poweroffphost)
 * [重启物理机-RebootPHost](api/uphost-api/rebootphost)

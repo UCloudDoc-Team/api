@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__ucdn"> 云分发 UCDN</div>
 
-* [概览](api/ucdn-api/overview)
+* [概览](api/ucdn-api/README)
 * [省份和运营商列表](api/ucdn-api/province)
 * [获取域名详细状态码监控-GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)
 * [获取回源带宽数据（按时间分类）-GetUcdnPassBandwidth](api/ucdn-api/get_ucdn_pass_bandwidth)

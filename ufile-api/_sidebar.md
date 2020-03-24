@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__ufile"> 对象存储 UFile</div>
 
-* [概览](api/ufile-api/overview)
+* [概览](api/ufile-api/README)
 * [获取Bucket信息-DescribeBucket](api/ufile-api/describe_bucket)
 * [创建Bucket-CreateBucket](api/ufile-api/create_bucket)
 * [更改Bucket属性-UpdateBucket](api/ufile-api/update_bucket)

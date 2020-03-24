@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__ugaa"> 全球动态加速 PathX</div>
 
-* [概览](api/pathx-api/overview)
+* [概览](api/pathx-api/README)
 * [创建全球加速配置项-CreateUGAInstance](api/pathx-api/create_uga_instance)
 * [删除全球加速服务加速配置-DeleteUGAInstance](api/pathx-api/delete_uga_instance)
 * [绑定PathX SSL证书-BindPathXSSL](api/pathx-api/bind_path_xssl)

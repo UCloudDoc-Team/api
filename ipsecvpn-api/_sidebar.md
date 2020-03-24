@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__ipsecvpn"> VPN网关 IPSec VPN</div>
 
-* [概览](api/ipsecvpn-api/overview)
+* [概览](api/ipsecvpn-api/README)
 * [获取客户VPN网关信息-DescribeRemoteVPNGateway](api/ipsecvpn-api/describe_remote_vpn_gateway)
 * [获取VPN网关规格改动价格-GetVPNGatewayUpgradePrice](api/ipsecvpn-api/get_vpn_gateway_upgrade_price)
 * [创建VPN网关-CreateVPNGateway](api/ipsecvpn-api/create_vpn_gateway)

@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__udpn"> 高速通道 UDPN</div>
 
-* [概览](api/udpn-api/overview)
+* [概览](api/udpn-api/README)
 * [描述 UDPN-DescribeUDPN](api/udpn-api/describe_udpn)
 * [获取专线线路列表-GetUDPNLineList](api/udpn-api/get_udpn_line_list)
 * [分配 UDPN 专线-AllocateUDPN](api/udpn-api/allocate_udpn)

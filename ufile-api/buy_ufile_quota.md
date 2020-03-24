@@ -1,6 +1,6 @@
 # 购买配额-BuyUFileQuota（已下线）
 
-购买配额 ——新计费规则已废弃该购买方式，新规则可参考文档：https://docs.ucloud.cn/storage_cdn/ufile/bill
+购买配额 ——新计费规则已废弃该购买方式，新规则可参考文档：https://docs.ucloud.cn/ufile/bill
 
 # Request Parameters
 |Parameter name|Type|Description|Required|

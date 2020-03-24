@@ -14,7 +14,7 @@
 |File|string|短信签名的资质证明文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB|**Yes**|
 |ProxyFile|string|短信签名授权委托文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB；当您是代理并使用第三方的签名时（也即SigPurpose为1-他用），该项为必填项；|No|
 
-?> 您可以通过调用接口CreateUSMSSignature或者到控制台申请短信签名，短信签名需符合[UCloud服务协议](https://docs.ucloud.cn/management_monitor/usms/introduction/service_level)，短信签名申请流程可参见官网[短信签名审核规范](https://docs.ucloud.cn/management_monitor/usms/introduction/2005/2103)说明；
+?> 您可以通过调用接口CreateUSMSSignature或者到控制台申请短信签名，短信签名需符合[UCloud服务协议](https://docs.ucloud.cn/usms/introduction/service_level)，短信签名申请流程可参见官网[短信签名审核规范](https://docs.ucloud.cn/usms/introduction/2005/2103)说明；
 
 # Response Elements
 |Parameter name|Type|Description|Required|

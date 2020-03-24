@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__ugc"> 通用计算 UGC</div>
 
-* [概览](api/ugc-api/overview)
+* [概览](api/ugc-api/README)
 * [获取授权Token-GetAccessToken](api/ugc-api/get_access_token)
 * [获取异步任务结果-GetTaskResult](api/ugc-api/get_task_result)
 * [删除镜像-DeleteImage](api/ugc-api/delete_image)

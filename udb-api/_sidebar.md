@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__udb"> 云数据库 UDB</div>
 
-* [概览](api/udb-api/overview)
+* [概览](api/udb-api/README)
 * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
 * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
 * [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)

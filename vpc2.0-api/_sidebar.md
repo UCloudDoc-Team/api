@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__uvpc"> 私有网络 VPC</div>
 
-* [概览](api/vpc2.0-api/overview)
+* [概览](api/vpc2.0-api/README)
 * [更新子网信息-UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)
 * [修改VPC地址空间-UpdateVPCNetwork](api/vpc2.0-api/update_vpc_network)
 * [添加NAT网关白名单-AddWhiteListResource](api/vpc2.0-api/add_white_list_resource)

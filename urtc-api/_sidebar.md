@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__urtc"> 实时音视频 URTC</div>
 
-* [概览](api/urtc-api/overview)
+* [概览](api/urtc-api/README)
 * [创建APP-CreateUrtcApp](api/urtc-api/create_urtc_app)
 * [启用或者关停APP-EnableURtcApp](api/urtc-api/enable_u_rtc_app)
 * [修改项目名称-ModifyURtcProjectName](api/urtc-api/modify_u_rtc_project_name)

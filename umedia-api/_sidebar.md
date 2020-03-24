@@ -1,6 +1,6 @@
 <div class="sidebar_title icon__umedia"> 媒体工厂 UMedia</div>
 
-* [概览](api/umedia-api/overview)
+* [概览](api/umedia-api/README)
 * [获取封装任务详情-GetFormatTaskDetail](api/umedia-api/get_format_task_detail)
 * [获取截图任务详情-GetSnapTaskDetail](api/umedia-api/get_snap_task_detail)
 * [更新水印模版-UpdateWatermarkPatten](api/umedia-api/update_watermark_patten)

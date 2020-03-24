@@ -1,6 +1,6 @@
 <div class="sidebar_title"> 权限管理 UAM</div>
 
-* [概览](api/uaccount-api/overview)
+* [概览](api/uaccount-api/README)
 * [获取帐号下的项目列表-GetProjectList](api/uaccount-api/get_project_list)
 * [冻结成员-FreezeMember](api/uaccount-api/freeze_member)
 * [修改角色-ModifyCharacter](api/uaccount-api/modify_character)
