@@ -1,5 +1,5 @@
 # 概览
-* [获取客户VPN网关信息-DescribeRemoteVPNGateway](api/ipsecvpn-api/describe_remote_vpn_gateway)
+* [获取客户VPN网关信息-DescribeRemoteVPNGateway.](api/ipsecvpn-api/describe_remote_vpn_gateway)
 * [获取VPN网关规格改动价格-GetVPNGatewayUpgradePrice](api/ipsecvpn-api/get_vpn_gateway_upgrade_price)
 * [创建VPN网关-CreateVPNGateway](api/ipsecvpn-api/create_vpn_gateway)
 * [删除VPN网关-DeleteVPNGateway](api/ipsecvpn-api/delete_vpn_gateway)
