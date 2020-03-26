@@ -6,5 +6,5 @@
 * [获取umemcache升级价格-DescribeUMemcacheUpgradePrice](api/umem-api/describe_umemcache_upgrade_price)
 * [获取umemcache组价格-DescribeUMemcachePrice](api/umem-api/describe_umemcache_price)
 * [创建单机Memcache-CreateUMemcacheGroup](api/umem-api/create_umemcache_group)
-* [获取空间状态-GetUMemSpaceState](api/umem-api/get_space_state)
 * [删除单机Memcache-DeleteUMemcacheGroup](api/umem-api/delete_umemcache_group)
+
