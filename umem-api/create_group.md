@@ -13,7 +13,7 @@
 |Size|int|每个节点的内存大小,单位GB,默认1GB,目前仅支持1/2/4/8/16/32,六种|No|
 |AutoBackup|string|是否自动备份,enable或disable，默认disable|No|
 |BackupTime|int|自动备份开始时间,范围[0-23],默认3点|No|
-|ConfigId|string|配置ID,目前仅支持默认配置id 默认配置id:"03f58ca9-b64d-4bdd-abc7-c6b9a46fd801"|No|
+|ConfigId|string|配置ID,目前支持 3.0版本配置ID:"03f58ca9-b64d-4bdd-abc7-c6b9a46fd801",3.2版本配置ID:"3e45ac48-f8a2-a9q2-261d-l342dab130gf", 4.0版本配置ID:"6c9298a3-9d7f-428c-b1d0-e87ab3b8a1ea",默认版本3.0,从备份创建为必传项|No|
 |Version|string|Redis版本信息(详见DescribeURedisVersion返回结果),默认版本3.0|No|
 |ChargeType|string|计费模式，Year , Month, Dynamic 默认: Month|No|
 |Quantity|int|购买时长，默认为1|No|
@@ -22,6 +22,9 @@
 |BackupId|string|有此项代表从备份中创建，无代表正常创建|No|
 |SlaveZone|string|跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同）|No|
 |MasterGroupId|string|Master Redis Group的ID，创建只读Slave时，必须填写|No|
+|EnableIpV6|bool|是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true|No|
+|SubnetId|string|子网ID|No|
+|VPCId|string|VPC的ID|No|
 |CouponId|string|代金券ID|No|
 
 # Response Elements
@@ -38,6 +41,10 @@ https://api.ucloud.cn/?Action=CreateURedisGroup
 &Zone=cn-bj2-04
 &Name=zb_redisXXXX
 &Protocol=GSlQEcQU
+&EnableIpV6=true
+&IPv6Address=drIbwOFr
+&SubnetId=BvhMJWKe
+&VPCId=OECssiom
 ```
 
 # Response Example
