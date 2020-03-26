@@ -26,7 +26,7 @@
 |ResourceType|int|资源类型|**Yes**|
 |SubResourceName|string|资源绑定的虚拟网卡的名称|**Yes**|
 |SubResourceId|string|资源绑定的虚拟网卡的ID|**Yes**|
-|SubResourceType|string|资源绑定虚拟网卡的类型。uni，“虚拟网卡”。|**Yes**|
+|SubResourceType|int|资源绑定虚拟网卡的类型|**Yes**|
 |PrivateIP|string|资源内网IP|**Yes**|
 
 # Request Example
