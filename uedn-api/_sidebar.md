@@ -20,6 +20,5 @@
 * [启动edn节点-StartUvodnNode](api/uedn-api/start_uvodn_node)
 * [重启节点v2.0-RestartUvodnNode](api/uedn-api/restart_uvodn_node)
 * [节点重装系统-ReinstallUvodnNode](api/uedn-api/reinstall_uvodn_node)
-* [修改镜像名称-ModifyUEdnImageName](api/uedn-api/modify_u_edn_image_name)
 * [节点断电-PoweroffUvodnNode](api/uedn-api/poweroff_uvodn_node)
 * [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
