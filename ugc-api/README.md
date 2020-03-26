@@ -3,7 +3,6 @@
 * [获取异步任务结果-GetTaskResult](api/ugc-api/get_task_result)
 * [删除镜像-DeleteImage](api/ugc-api/delete_image)
 * [获取所有的镜像名称-GetAllImages](api/ugc-api/get_all_images)
-* [停止异步任务-StopTask](api/ugc-api/stop_task)
 * [查询任务列表-GetTaskList](api/ugc-api/get_task_list)
 * [创建镜像仓库-CreateDockerImageBucket](api/ugc-api/create_docker_image_bucket)
 * [获取可用的镜像仓库列表-GetImageBucketList](api/ugc-api/get_image_bucket_list)
