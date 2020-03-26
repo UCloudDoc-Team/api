@@ -14,6 +14,7 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
+|RouteTableId|string|复制后新的路由表资源ID|No|
 
 # Request Example
 ```
@@ -27,6 +28,7 @@ https://api.ucloud.cn/?Action=CloneRouteTable
 ```
 {
     "Action": "CloneRouteTableResponse", 
+    "RouteTableId": "KxnVuSDD", 
     "RetCode": 0
 }
 ```
