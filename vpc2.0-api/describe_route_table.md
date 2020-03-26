@@ -37,7 +37,7 @@
 ## RouteRuleInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|AccountId|string|项目ID信息|No|
+|AccountId|int|项目ID信息|No|
 |DstAddr|string|目的地址|No|
 |DstPort|int|保留字段，暂未使用|No|
 |NexthopId|string|路由下一跳资源ID|No|
