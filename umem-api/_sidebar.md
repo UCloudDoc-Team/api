@@ -2,7 +2,7 @@
 
 * [概览](api/umem-api/README)
 
-* [Memcache相关](api/umem-api/memecache_readme)
+* [Memcache相关](api/umem-api/memcache_readme)
 
   * [重要说明](api/umem-api/description)
   * [重启单机Memcache-RestartUMemcacheGroup](api/umem-api/reboot_umemcache_group)
