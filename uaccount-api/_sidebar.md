@@ -1,4 +1,4 @@
-<div class="sidebar_title"> 权限管理 UAM</div>
+<div class="sidebar_title"> 账号与权限管理 UAM</div>
 
 * [概览](api/uaccount-api/README)
 * [获取帐号下的项目列表-GetProjectList](api/uaccount-api/get_project_list)
