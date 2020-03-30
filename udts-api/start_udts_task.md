@@ -18,16 +18,15 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StartUDTSTask
-&Region=cn-zj
-&ProjectId=PuLwfUrj
-&TaskId=EoVGkrQx
+&ProjectId=org-asgd12
+&TaskId=udts-avew24
 ```
 
 # Response Example
 ```
 {
     "Action": "StartUDTSTaskResponse", 
-    "Message": "nCocZliF", 
+    "Message": "", 
     "RetCode": 0
 }
 ```
