@@ -11,7 +11,7 @@
 |Bandwidth|int|弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-200]，带宽计费[1-10000]|**Yes**|
 |Tag|string|业务组名称, 默认为 "Default"|No|
 |ChargeType|string|付费方式, 枚举值为: Year, 按年付费; Month, 按月付费; Dynamic, 按需付费(需开启权限); Trial, 试用(需开启权限) 默认为按月付费|No|
-|Quantity|int|购买时长, 默认: 1|No|
+|Quantity|int|购买的时长, 默认: 1|No|
 |PayMode|string|弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. 默认为 "Bandwidth".“PostAccurateBandwidth”：带宽后付费模式|No|
 |ShareBandwidthId|string|绑定的共享带宽Id,仅当PayMode为ShareBandwidth时有效|No|
 |Name|string|弹性IP的名称, 默认为 "EIP"|No|
