@@ -46,17 +46,31 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=GetUDTSTaskStatus
-&Region=cn-zj
-&ProjectId=xinhDEvZ
-&TaskId=fYUhfLyd
+&ProjectId=org-hiny12
+&TaskId=udts-ixdp441
 ```
 
 # Response Example
 ```
 {
     "Action": "GetUDTSTaskStatusResponse", 
-    "Message": "boICwYOf", 
-    "Data": {}, 
+    "Message": "", 
+    "Data": {
+        "CurRetryCount": 0, 
+        "Status": "Done", 
+        "MaxRetryCount": 0, 
+        "Sync": {
+            "BinlogName": "mysql-bin.000006", 
+            "BinlogPos": 154
+        }, 
+        "Progress": {
+            "CurDuration": 0, 
+            "TotalCount": 0, 
+            "Percentage": 0, 
+            "CurCount": 0, 
+            "TotalDuration": 0
+        }
+    }, 
     "RetCode": 0
 }
 ```
