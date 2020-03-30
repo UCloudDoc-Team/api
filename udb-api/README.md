@@ -28,7 +28,7 @@
 * [创建DB副本集-CreateMongoDBReplicaSet](api/udb-api/create_mongo_db_replica_set)
 * [创建副本-CreateUDBReplicationInstance](api/udb-api/create_udb_replication_instance)
 
-## 共用api
+## 共用API
 * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
 * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
 * [UDB 错误码列表](api/udb-api/error_code)
