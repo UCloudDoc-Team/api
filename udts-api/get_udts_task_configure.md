@@ -127,16 +127,74 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=GetUDTSTaskConfigure
-&Region=cn-zj
-&ProjectId=GSTpLyNI
-&TaskId=FdqyVADw
+&ProjectId=org-hin123
+&TaskId=udts-xavwe
 ```
 
 # Response Example
 ```
 {
     "Action": "GetUDTSTaskConfigureResponse", 
-    "Data": "JQVuKecS", 
+    "Message": "", 
+    "Data": {
+        "Source": {
+            "DataType": "csv", 
+            "CSVNode": {
+                "URL": "http://xxxxxx.cn-bj.ufileos.com/test.csv", 
+                "DupAction": "update", 
+                "SetPolicy": [
+                    {
+                        "Column": "name", 
+                        "Data": "now()", 
+                        "Type": "Function"
+                    }, 
+                    {
+                        "Column": "value", 
+                        "Data": "1", 
+                        "Type": "CSVData"
+                    }, 
+                    {
+                        "Column": "id", 
+                        "Data": "0", 
+                        "Type": "CSVData"
+                    }
+                ], 
+                "KeepExistData": true, 
+                "UpdatePolicy": [
+                    {
+                        "Column": "name", 
+                        "Data": "aaa", 
+                        "Type": "Fixed"
+                    }, 
+                    {
+                        "Column": "value", 
+                        "Data": "1", 
+                        "Type": "CSVData"
+                    }, 
+                    {
+                        "Column": "id", 
+                        "Data": "0", 
+                        "Type": "CSVData"
+                    }
+                ]
+            }
+        }, 
+        "Type": "full", 
+        "Name": "xxxxx", 
+        "TaskId": "udts-xavwe", 
+        "Target": {
+            "DataType": "mysql", 
+            "MySQLNode": {
+                "VPCId": "uvnet-iqi21o", 
+                "Database": "test", 
+                "Host": "10.19.64.15", 
+                "User": "root", 
+                "Table": "t_csv", 
+                "Port": 3306, 
+                "DataRegion": "cn-bj2"
+            }
+        }
+    }, 
     "RetCode": 0
 }
 ```
