@@ -18,17 +18,15 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StopUDTSTask
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=glcXFbjq
-&TaskId=oUfNLhbg
+&ProjectId=org-dave12
+&TaskId=udts-vasg2a
 ```
 
 # Response Example
 ```
 {
     "Action": "StopUDTSTaskResponse", 
-    "Message": "FnHTUqMZ", 
+    "Message": "", 
     "RetCode": 0
 }
 ```
