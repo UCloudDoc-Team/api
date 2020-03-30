@@ -1,9 +1,7 @@
-# MongoDB相关
-* [创建mongos实例-CreateUDBRouteInstance](api/udb-api/create_udb_route_instance)
-* [创建DB副本集-CreateMongoDBReplicaSet](api/udb-api/create_mongo_db_replica_set)
-* [创建副本-CreateUDBReplicationInstance](api/udb-api/create_udb_replication_instance)
-
 # 共用API
+* [列表UDB实例日志备份信息-DescribeUDBLogPackage](api/udb-api/describe_udb_log_package)
+* [获取云数据库支持类型-DescribeUDBType](api/udb-api/describe_udb_type)
+* [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)
 * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
 * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
 * [UDB 错误码列表](api/udb-api/error_code)
@@ -34,4 +32,9 @@
 * [获取备份列表-DescribeUDBBackup](api/udb-api/describe_udb_backup)
 * [更新配置-UpdateUDBParamGroup](api/udb-api/update_udb_param_group)
 * [获取UDB实例升降级价格信息-DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
+
+# [MongoDB相关](api/udb-api/mongodb_readme)
+* [创建mongos实例-CreateUDBRouteInstance](api/udb-api/create_udb_route_instance)
+* [创建DB副本集-CreateMongoDBReplicaSet](api/udb-api/create_mongo_db_replica_set)
+* [创建副本-CreateUDBReplicationInstance](api/udb-api/create_udb_replication_instance)
 
