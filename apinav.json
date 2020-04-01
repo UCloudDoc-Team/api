@@ -161,6 +161,10 @@
         {
           "name":"DDoS攻击防护 UDDos",
           "links":"/api/uddos-uclean-api/README"
+        },
+        {
+          "name":"企业应用防火墙 UEWAF",
+          "links":"/api/uewaf-api/README"
         }
       ]
     },
