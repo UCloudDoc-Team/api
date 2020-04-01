@@ -163,7 +163,7 @@
           "links":"/api/uddos-uclean-api/README"
         },
         {
-          "name":"企业应用防火墙 UEWAF",
+          "name":"WEB应用防火墙 UWAF",
           "links":"/api/uewaf-api/README"
         }
       ]
