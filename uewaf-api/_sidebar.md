@@ -1,4 +1,4 @@
-<div class="sidebar_title"> WEB应用防火墙-UWAF</div>
+<div class="sidebar_title"> WEB应用防火墙 UWAF</div>
 
 * [概览](api/uewaf-api/README)
 * [增加域名状态码防护规则-AddHTTPStatusDisguiseConf](api/uewaf-api/add_http_status_disguise_conf)
