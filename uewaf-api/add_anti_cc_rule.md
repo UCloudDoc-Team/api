@@ -24,23 +24,22 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddAntiCCRule
-&Domain=eZaFQvVy
-&Reqs=8
-&URL=yChTaoNC
+&ProjectId=org-xxx
+&Domain=www.test.com
+&Reqs=55000
+&URL=/index.html
 &Mode=equal
-&Duration=3
+&Duration=2800
 &ActionType=forbidden
-&Validity=6
-&ProjectId=tPssjBfi
-&RecordId=7
+&Validity=5720
 ```
 
 # Response Example
 ```
 {
     "Action": "AddAntiCCRuleResponse", 
-    "RetCode": 0, 
-    "Id": 7
+    "Id": 6, 
+    "RetCode": 0
 }
 ```
 
