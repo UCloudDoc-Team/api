@@ -29,8 +29,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafSystemRules
-&ProjectId=LCnpfpWv
-&FullDomain=ExtJVSbp
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 ```
 
 # Response Example
@@ -38,7 +38,15 @@ https://api.ucloud.cn/?Action=DescribeWafSystemRules
 {
     "Action": "DescribeWafSystemRulesResponse", 
     "Rules": [
-        "qADiCIeE"
+        {
+            "Description": "默认放行-未做归类", 
+            "RulesetType": "system", 
+            "RiskRank": "high", 
+            "Priority": 1, 
+            "AttackType": "default", 
+            "Action": "ACCEPT", 
+            "SysRuleset": 10000
+        }
     ], 
     "RetCode": 0
 }
