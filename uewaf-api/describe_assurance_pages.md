@@ -6,7 +6,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
-|Domain|int|要获取的域名|**Yes**|
+|Domain|string|要获取的域名|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -34,15 +34,27 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeAssurancePages
-&Domain=RNWcpsOe
-&ProjectId=VwGGUBMq
+&ProjectId=org-xxx
+&Domain=www.test.com
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeAssurancePagesResponse", 
-    "Res": {}, 
+    "Res": {
+        "TotalCount": 1, 
+        "State": "off", 
+        "Limit": 19, 
+        "Items": [
+            {
+                "Url": "http://www.test.com/inedx.html", 
+                "Remark": "q", 
+                "Id": 368, 
+                "State": "on"
+            }
+        ]
+    }, 
     "RetCode": 0
 }
 ```
