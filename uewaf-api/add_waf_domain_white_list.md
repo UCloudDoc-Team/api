@@ -22,13 +22,13 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafDomainWhiteList
-&FullDomain=sjTugGcg
-&Source=rtweGOQm
-&CIDRS=GkyLCvmW
-&ProjectId=DDpedJoB
-&Type=beHhhknh
-&Name=PClbwsuS
-&Remark=KuFeYuFo
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Source=custom
+&Type=custom
+&CIDRS.0=2.2.2.2/28
+&Name=test
+&Remark=test
 ```
 
 # Response Example
