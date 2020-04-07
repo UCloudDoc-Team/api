@@ -26,25 +26,44 @@
 |AttackCount|int|攻击数量|**Yes**|
 |IntervalTime|int|攻击统计区间，单位:秒|**Yes**|
 |ExpiredTime|int|攻击过期区间，单位:秒|**Yes**|
-|Enable|int|启用状态;Enable启用,否则禁用|**Yes**|
+|Enable|int|启用状态;1表示启用,0表示禁用|**Yes**|
 |CreateTime|string|创建时间|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeAutoWafDomainBlackList
-&FullDomain=IYJAvYuo
-&Offset=1
-&Limit=7
-&ProjectId=xtSqRxhE
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeAutoWafDomainBlackListResponse", 
-    "TotalCount": 8, 
+    "TotalCount": 2, 
     "Rows": [
-        "ZzwxHvJP"
+        {
+            "FullDomain": "www.test.com", 
+            "Enable": 1, 
+            "AttackCount": 10, 
+            "IntervalTime": 60, 
+            "CreateTime": 1585192039, 
+            "ExpireTime": 60, 
+            "ActionType": "forbidden", 
+            "AttackType": "all", 
+            "Id": 591
+        }, 
+        {
+            "FullDomain": "www.test.com", 
+            "Enable": 1, 
+            "AttackCount": 10, 
+            "IntervalTime": 60, 
+            "CreateTime": 1585878780, 
+            "ExpireTime": 60, 
+            "ActionType": "forbidden", 
+            "AttackType": "protocol", 
+            "Id": 603
+        }
     ], 
     "RetCode": 0
 }
