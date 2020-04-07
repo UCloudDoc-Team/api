@@ -26,18 +26,14 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafDomainCertificateInfo
-&Domain=nOumgSAT
-&CertificateName=wtmMxURO
-&SslPublicKey=bNZmhqpT
-&SslPrivateKey=xntPfTuG
-&SslMD=EXQUEjXR
-&SslKeyLess=yYTsLntV
-&SslKeyServer=CkxKgfmG
-&SslKeyessCaFile=dTBQkTZf
-&SslKeylessClientCert=FjIMQQND
-&SslKeylessClientKey=qfuKNrVv
-&SslKeylessClientMD=ccLFRVmU
-&ProjectId=ZoCfveZm
+&ProjectId=org-xxx
+&Domain=www.test.com
+&CertificateName=test
+&SslPublicKey=LS0tLS1CRUdJTiBDFURS0tLS0tCk1JSUZyRENDQkpTZ0F3SUJBZ0lRQW
+&SslPrivateKey=LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS
+&SslMD=617d723ec99fa0a4132a9a54052d4cd6
+&SslKeyLess=off
+
 ```
 
 # Response Example
