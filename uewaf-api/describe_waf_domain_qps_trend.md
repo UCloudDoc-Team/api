@@ -1,6 +1,6 @@
-# 查询waf域名QPS趋势-DescribeWafDomainQPSTrend
+# 查询WAF域名QPS趋势-DescribeWafDomainQPSTrend
 
-查询waf域名QPS趋势
+查询WAF域名QPS趋势
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -20,34 +20,32 @@
 ## QPSTrendDetail
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TimeStamp|string|时间戳|**Yes**|
+|TimeStamp|int|时间戳|**Yes**|
 |SrcQPS|string|到源站qps|**Yes**|
 |WafQPS|string|到WAF的qps|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafDomainQPSTrend
-&BeginTime=6
-&EndTime=9
-&Domain=YqXdyWQk
-&ProjectId=7
-&RecordId=4
+&ProjectId=org-xxx
+&BeginTime=1516204800
+&EndTime=1516377600
 ```
 
 # Response Example
 ```
 {
-    "Info": [
-        "vZHzdylT", 
-        "qXrQmnKn", 
-        "IIPzHwNB", 
-        "CAIGIGaL", 
-        "QBftqmWu", 
-        "qIClYsyE", 
-        "KNgliVgp", 
-        "VBceKBYe"
-    ], 
     "Action": "DescribeWafDomainQPSTrendResponse", 
+    "Info": {
+        "Count": 1, 
+        "Detail": [
+            {
+                "Timestamp": 1586227440, 
+                "WafQps": 1, 
+                "SrcQps": 1
+            }
+        ]
+    }, 
     "RetCode": 0
 }
 ```
