@@ -18,9 +18,9 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteAntiCCRule
-&ID=6
-&Domain=xxxx
-&ProjectId=dcITyCJD
+&ProjectId=org-xxx
+&ID=43804
+&Domain=www.test.com
 ```
 
 # Response Example
