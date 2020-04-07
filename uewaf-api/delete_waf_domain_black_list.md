@@ -18,9 +18,9 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteWafDomainBlackList
-&ProjectId=12
-&FullDomain=oWZNiaNq
-&ID=7
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&ID=252731
 ```
 
 # Response Example
