@@ -9,7 +9,7 @@
 |FullDomain|string|域名|**Yes**|
 |Name|string|规则名称|**Yes**|
 |BlockRegion|string|封堵地域编码，格式：国家代码:区域列表大陆区支持省级和市级细分，其他只支持国家，e.g.:CN:110000\|440300\|320000代表对北京市 深圳市 江苏省 的ip进行封堵; US表示对美国ip进行封堵|**Yes**|
-|ActionType|string|匹配Action，Accept or Deny（默认），Accept暂不支持|No|
+|ActionType|string|匹配Action，Accept or Deny（默认），Accept暂不支持|**Yes**|
 |Description|string|备注信息|No|
 
 # Response Elements
@@ -22,12 +22,12 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafRegionBlockRule
-&ProjectId=wBSiilYd
-&FullDomain=YNfStfgN
-&Name=UkkTFxNK
-&BlockRegion=RYAvtwVc
-&ActionType=YTpIlFNW
-&Description=ZTiWvWAy
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Name=test
+&BlockRegion=CN
+&ActionType=Deny
+&Description=aaa
 ```
 
 # Response Example
