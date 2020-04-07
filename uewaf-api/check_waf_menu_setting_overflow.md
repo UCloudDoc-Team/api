@@ -13,32 +13,62 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|UsageInfo|object|用量描述|No|
+|UsageInfo|object|用量描述，参考UsageInfo|No|
 
 ## UsageInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|IPUsage|int|独享ip用量|No|
-|DomainUsage|int|已添加域名数量|No|
-|BoardWidthUsageInner|int|内部带宽占用|No|
-|BoardWidthUsageOuter|int|外部带宽占用|No|
-|DomainLimit|int|域名数量限额|No|
-|ExclusiveIPLimit|int|独享ip限额|No|
-|BandwidthInner|int|内部带宽限额|No|
-|BandwidthOuter|int|外部带宽限额|No|
+|IPUsage|object|独享ip用量，参考UsageInfoDetail|No|
+|DomainUsage|object|已添加域名数量，参考UsageInfoDetail|No|
+|BoardWidthUsageInner|object|内部带宽占用，参考UsageInfoDetail|No|
+|BoardWidthUsageOuter|object|外部带宽占用，参考UsageInfoDetail|No|
+|DomainLimit|object|域名数量限额，参考UsageInfoDetail|No|
+|ExclusiveIPLimit|object|独享ip限额，参考UsageInfoDetail|No|
+|BandwidthInner|object|内部带宽限额，参考UsageInfoDetail|No|
+|BandwidthOuter|object|外部带宽限额，参考UsageInfoDetail|No|
+
+## UsageInfoDetail
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Quota|int|配额数量|No|
+|Used|int|已使用数量|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=CheckWafMenuSettingOverflow
-&EditionType=Enterprise
-&ProjectId=qIHzvtJw
+&ProjectId=org-xxx
 ```
 
 # Response Example
 ```
 {
     "Action": "CheckWafMenuSettingOverflowResponse", 
-    "UsageInfo": "LasEMLGk", 
+    "UsageInfo": {
+        "customize_rule_set": {
+            "Used": 0, 
+            "Quota": 30
+        }, 
+        "BandwidthInner": {
+            "Used": 0, 
+            "Quota": 120
+        }, 
+        "user_domain_cc_rules": {
+            "Used": 0, 
+            "Quota": 10
+        }, 
+        "BandwidthOuter": {
+            "Used": 0, 
+            "Quota": 40
+        }, 
+        "ExclusiveIPLimit": {
+            "Used": 0, 
+            "Quota": 8
+        }, 
+        "DomainLimit": {
+            "Used": 3, 
+            "Quota": 20
+        }
+    }, 
     "RetCode": 0
 }
 ```
