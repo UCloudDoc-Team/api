@@ -18,8 +18,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteWafDomainWhiteList
-&ProjectId=YCAmqevE
-&FullDomain=xxxx
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 &ID=7
 ```
 
