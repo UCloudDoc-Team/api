@@ -38,7 +38,7 @@
 |CreateTime|string|加入时间|No|
 |ExpireTime|int|过期时间|No|
 |State|int|状态|No|
-|Src|string|加入方式(白)|No|
+|SRC|string|加入方式(白)|No|
 |Geo|array|位置信息|No|
 |Name|string|规则名称|No|
 |Remark|string|备注信息|No|
@@ -46,17 +46,37 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafDomainWhiteList
-&ProjectId=aECDuZYI
-&Sort=tboluBRT
-&Name=nmtzenuI
-&RecordId=7
-&Remark=TPxMuyri
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Offset=0
+&Limit=10
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeWafDomainWhiteListResponse", 
+    "Res": {
+        "Count": 1, 
+        "Info": [
+            {
+                "SRC": "custom", 
+                "Remark": "", 
+                "Name": "", 
+                "CIDRS": [
+                    "1.1.1.1"
+                ], 
+                "ID": 15022, 
+                "ExpireTime": 0, 
+                "Source": "", 
+                "State": 0, 
+                "ActionType": "accept", 
+                "Type": "", 
+                "CreateTime": "2020-02-27 09:50:10"
+            }
+        ], 
+        "Total": 1
+    }, 
     "RetCode": 0
 }
 ```
