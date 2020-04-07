@@ -9,6 +9,8 @@
 |RoomId|string|查询的房间id(不能为空)|**Yes**|
 |StartTime|int|待查询开始时间|**Yes**|
 |EndTime|int|待查询结束时间|**Yes**|
+|Offset|int|列表起始位置偏移量，默认为0|No|
+|Limit|int|返回数据长度，默认为20，最大100|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -17,6 +19,7 @@
 |Action|string|操作名称|**Yes**|
 |Msg|string|RetCode为0时返回succed,不为0返回具体的错误消息提示内容|**Yes**|
 |Data|array|用户信息列表（数组元素查看RoomUsersInfo）|**Yes**|
+|TotalCount|int|房间总人数|No|
 
 ## RoomUsersInfo
 |Parameter name|Type|Description|Required|
@@ -39,6 +42,8 @@ https://api.ucloud.cn/?Action=QueryURtcRoomUsers
 &RoomId=2800
 &StartTime=6
 &EndTime=3
+&Offset=4
+&Limit=1
 ```
 
 # Response Example
@@ -58,7 +63,8 @@ https://api.ucloud.cn/?Action=QueryURtcRoomUsers
             "Device": "HUAWEI_DUK-AL20_HUAWEIDUK-AL20"
         }
     ], 
-    "RetCode": 0
+    "RetCode": 0, 
+    "TotalCount": 4
 }
 ```
 
