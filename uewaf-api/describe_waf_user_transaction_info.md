@@ -17,20 +17,23 @@
 ## TransactionInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|ResourceId|string|资源ID|**Yes**|
-|Editon|string|版本类型|**Yes**|
-|ExpireTime|string|服务到期时间|**Yes**|
-|ChargeType|string|付费类型|**Yes**|
-|Price|float|购买价格，单位：元，精确到分|**Yes**|
-|TransactionId|int|资源的唯一索引|**Yes**|
-|TransactionNo|string|资源订单号|**Yes**|
-|HasWaf|bool|是否购买了WAF|**Yes**|
+|ResourceId|string|资源ID|No|
+|Editon|string|版本类型|No|
+|ExpireTime|string|服务到期时间|No|
+|ChargeType|string|付费类型|No|
+|Price|float|购买价格，单位：元，精确到分|No|
+|TransactionId|int|资源的唯一索引|No|
+|TransactionNo|string|资源订单号|No|
+|HasWaf|bool|是否购买了WAF|No|
 |Expired|string|是否已过期，有此字段即为已过期|No|
+|WorkRegions|string|部署区域|No|
+|Serving|string|服务是否生效中|No|
+|LogStorage|int|是否开启日志扩展包|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafUserTransactionInfo
-&ProjectId=XuimDpSE
+&ProjectId=org-xxx
 ```
 
 # Response Example
@@ -38,13 +41,19 @@ https://api.ucloud.cn/?Action=DescribeWafUserTransactionInfo
 {
     "Action": "DescribeWafUserTransactionInfoResponse", 
     "TransactionInfo": {
-        "ResourceId": "usecure_uewaf-y2g35t", 
-        "Price": 66666, 
-        "ExpireTime": "2016-12-29 20:18:59", 
+        "TransactionNo": "20170410050160160645159", 
+        "Serving": "Y", 
+        "ResourceId": "usecure_uewaf-lbjszn", 
+        "LogStorage": 0, 
+        "WorkRegions": "cn-gd,cn-sh,hk,cn-bj,tw-tp,us-ca,kr-seoul,jpn-tky", 
+        "WorkZone": "mainland", 
+        "ExpireTime": "2020-06-03 00:00:00", 
+        "HasWaf": true, 
         "ChargeType": "Month", 
-        "Editon": "Enterprise", 
-        "TransactionId": 32, 
-        "Quantity": 2
+        "Editon": "Professional", 
+        "TransactionId": 31, 
+        "Expired": "", 
+        "CreateTime": "2017-04-10 13:30:05"
     }, 
     "RetCode": 0
 }
