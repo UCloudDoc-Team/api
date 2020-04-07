@@ -20,17 +20,20 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DownloadWAFAccessLog
-&FullDomain=dGMfjoCo
-&Date=2
-&ProjectId=enHqAeJK
-&LogType=XHcQctYV
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&LogType=attackLog
+&Date=2020-04-03
 ```
 
 # Response Example
 ```
 {
-    "URL": "pboNfIYf", 
-    "Action": "DownloadWAFAccessLogResponse", 
+    "Action": "DownloadWafAccessLogResponse", 
+    "URL": [
+        "http://uewaf.cn-bj.ufileos.com/*_8cname_com_20200403.accessLog.00.zip?Expires=1585985041&Signature=CpiAddyTtFixYZynJ4KToFG3N3A%3D&UCloudPublicKey=9uqRcyaNLuIhf1I4icUMsaiyB2HoWhs2zMaaGgYnV7dLb7m%2FsCP1JQ%3D%3D", 
+        "http://uewaf.cn-bj.ufileos.com/*_8cname_com_20200403.accessLog.14.zip?Expires=1585985041&Signature=je3y7A%2Bjcs9eWKFvIE6k755pxcg%3D&UCloudPublicKey=9uqRcyaNLuIhf1I4icUMsaiyB2HoWhs2zMaaGgYnV7dLb7m%2FsCP1JQ%3D%3D"
+    ], 
     "RetCode": 0
 }
 ```
