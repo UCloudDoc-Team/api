@@ -7,8 +7,8 @@
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |FullDomain|string|查询域名 |**Yes**|
-|Offset|int|分页查询偏移设置|No|
-|Limit|int|单页数量限制|No|
+|Offset|int|分页查询偏移设置|**Yes**|
+|Limit|int|单页数量限制|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -21,28 +21,42 @@
 ## RegionBlackInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
+|ID|int|规则ID|No|
 |Name|string|规则名称|No|
 |FullDomain|string|所属域名|No|
 |Action|string|执行动作|No|
 |Regions|string|生效区域|No|
 |Description|string|规则描述|No|
+|TopOrganizationId|int|用户ID|No|
+|OrganizationId|int|项目ID|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=GetWafRegionBlockRule
-&ProjectId=VwbtdkcY
-&FullDomain=tMivwGKu
-&Offset=8
-&Limit=7
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Offset=0
+&Limit=10
 ```
 
 # Response Example
 ```
 {
     "Action": "GetWafRegionBlockRuleResponse", 
-    "Count": 6, 
+    "Count": 1, 
     "RetCode": 0, 
-    "RuleList": {}
+    "RuleList": [
+        {
+            "FullDomain": "*.8cname.com", 
+            "Description": "全部", 
+            "OrganizationId": 50148127, 
+            "TopOrganizationId": 50146955, 
+            "Regions": "!CN", 
+            "Action": "Deny", 
+            "ID": 1115, 
+            "Name": "1"
+        }
+    ]
 }
 ```
 
