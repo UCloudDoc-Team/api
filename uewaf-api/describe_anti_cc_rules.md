@@ -37,15 +37,39 @@ CC防御规则列表
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeAntiCCRules
-&Domain=DDuMEncI
-&ProjectId=yhpmjJUx
+&ProjectId=org-xxx
+&Domain=www.test.com
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeAntiCCRulesResponse", 
-    "Res": {}, 
+    "Res": {
+        "Rules": [
+            {
+                "Uri": "/index.html", 
+                "Validity": 60, 
+                "Reqs": 2, 
+                "Action": "forbidden", 
+                "Mode": "equal", 
+                "Duration": 10, 
+                "Id": 43804
+            }, 
+            {
+                "Uri": "/index.html", 
+                "Validity": 60, 
+                "Reqs": 20, 
+                "Action": "forbidden", 
+                "Mode": "equal", 
+                "Duration": 10, 
+                "Id": 44451
+            }
+        ], 
+        "Max": 30, 
+        "State": "on", 
+        "Mode": "normal"
+    }, 
     "RetCode": 0
 }
 ```
