@@ -1,6 +1,6 @@
-# 添加waf防护规则-AddWafProtectionRuleInfo
+# 添加WAF防护规则-AddWafProtectionRuleInfo
 
-添加waf防护规则
+添加WAF防护规则
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -24,15 +24,14 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafProtectionRuleInfo
-&RecordId=9
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 &RuleNum=1
-&RuleName=MPxZbVdj
+&RuleName=test
 &RuleAction=Deny
 &RiskRank=Low
-&Rule.n=oIXASoNp
-&FullDomain=wjshscRk
-&RiskType=cJFdSWYJ
-&ProjectId=qheqbXHc
+&RiskType=scan
+&Rule.0=Field:SrcIp,Operator:Contain,Content:2.2.2.2
 ```
 
 # Response Example
