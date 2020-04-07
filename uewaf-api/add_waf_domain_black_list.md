@@ -25,17 +25,14 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafDomainBlackList
-&FullDomain=PuXyMvPJ
-&Source=hQJQTeij
-&Type=kCxFvPfY
-&CIDRS=zklAkuGl
-&ExpireTime=1
-&Region=lxNuHiPG
-&ProjectId=RlvPctDF
-&FullDomain=YVUndpBZ
-&Remark=qdCLJnCy
-&RecordId=9
-&RecordId=7
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Source=custom
+&Type=custom
+&ActionType=forbidden
+&CIDRS.0=2.2.2.2
+&ExpireTime=10
+&Remark=test
 ```
 
 # Response Example
