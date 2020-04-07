@@ -21,20 +21,19 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddAssurancePage
-&Domain=OckEACbV
-&Remark=SXXGyQyX
-&URL=PfNcdtam
+&ProjectId=org-xxx
+&Domain=www.test.com
+&URL=https://www.test.com/index.html
 &State=on
-&ProjectId=gLfboGti
-&RecordId=3
+&Remark=test
 ```
 
 # Response Example
 ```
 {
     "Action": "AddAssurancePageResponse", 
-    "RetCode": 0, 
-    "Id": 1
+    "Id": 2, 
+    "RetCode": 0
 }
 ```
 
