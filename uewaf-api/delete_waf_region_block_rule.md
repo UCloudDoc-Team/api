@@ -17,8 +17,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteWafRegionBlockRule
-&ProjectId=xPRdXbMU
-&ID=yJlHIMju
+&ProjectId=org-xxx
+&ID=1122
 ```
 
 # Response Example
