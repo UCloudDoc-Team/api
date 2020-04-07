@@ -17,8 +17,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteAssurancePage
-&ID=3
-&ProjectId=snxAmRuu
+&ProjectId=org-xxx
+&ID=368
 ```
 
 # Response Example
