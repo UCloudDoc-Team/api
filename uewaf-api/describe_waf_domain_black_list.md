@@ -38,7 +38,7 @@
 |CreateTime|string|加入时间|No|
 |ExpireTime|int|过期时间|No|
 |State|int|状态|No|
-|Src|string|加入方式(白)|No|
+|SRC|string|加入方式(白)|No|
 |Geo|array|位置信息|No|
 |Name|string|规则名称|No|
 |Remark|string|备注信息|No|
@@ -46,19 +46,68 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafDomainBlackList
-&ProjectId=fytynYJj
-&FullDomain=LXkbpmiGdZtyKcJPqMNOBAjfzUuAIWkDtpbtIfSoikzRfwhAZiqiYNboIPgUgxvMwHgECIgclFZNMWHMOuAeQkTLWMtlBnsoNAqthWMAYIrjCzFdkgFxDypwrAJqDaFM
-&Limit=4
-&Offset=1
-&Name=OuSTTnTw
-&Remark=azDfqZUE
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Offset=0
+&Limit=10
+&Remark=test
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeWafDomainBlackListResponse", 
-    "Res": {}, 
+    "Res": {
+        "Count": 3, 
+        "Info": [
+            {
+                "SRC": "", 
+                "Remark": "", 
+                "Name": "", 
+                "CIDRS": [
+                    "1.2.3.4"
+                ], 
+                "ID": 251276, 
+                "ExpireTime": 1585193463, 
+                "Source": "custom", 
+                "State": 0, 
+                "ActionType": "forbidden", 
+                "Type": "custom", 
+                "CreateTime": "2020-03-26 11:21:03"
+            }, 
+            {
+                "SRC": "", 
+                "Remark": "", 
+                "Name": "", 
+                "CIDRS": [
+                    "2.2.2.2-2.2.2.10"
+                ], 
+                "ID": 252062, 
+                "ExpireTime": 1585332545, 
+                "Source": "custom", 
+                "State": 0, 
+                "ActionType": "forbidden", 
+                "Type": "custom", 
+                "CreateTime": "2020-03-28 01:59:05"
+            }, 
+            {
+                "SRC": "", 
+                "Remark": "", 
+                "Name": "", 
+                "CIDRS": [
+                    "2.2.2.2"
+                ], 
+                "ID": 252731, 
+                "ExpireTime": 1585880019, 
+                "Source": "custom", 
+                "State": 0, 
+                "ActionType": "forbidden", 
+                "Type": "custom", 
+                "CreateTime": "2020-04-03 10:03:39"
+            }
+        ], 
+        "Total": 3
+    }, 
     "RetCode": 0
 }
 ```
