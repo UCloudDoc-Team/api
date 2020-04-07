@@ -18,26 +18,58 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|Res|string|JSON数组|**Yes**|
+|Res|object|JSON数组|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafAccessLog
-&FullDomain=ZgsZKTNr
-&Begin=8
-&End=YGiDZWdL
-&RawQuery.n=lDFllcty
-&Offset=2
-&Limit=3
-&ProjectId=vHboPWUZ
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Begin=1585797198
+&End=1585883598
+&Offset=0
+&Limit=1
+
 ```
 
 # Response Example
 ```
 {
-    "Action": "DescribeWafAccessLogResponse", 
-    "Res": "rGVVDsNm", 
-    "RetCode": 0
+    "Action": "qeuryAccessLogResponse", 
+    "Count": 2284, 
+    "RetCode": 0, 
+    "Res": [
+        {
+            "status": "302", 
+            "cookies": "", 
+            "upstream_status": "302", 
+            "@timestamp": "2020-04-02T11:13:25+08:00", 
+            "uri": "/", 
+            "request_time": 0.03, 
+            "remote_addr": "106.75.151.54", 
+            "hostname": "gd-waf-2", 
+            "request_method": "HEAD", 
+            "server_port": 80, 
+            "forward": "", 
+            "scheme": "http", 
+            "request_head": "HEAD / HTTP/1.1", 
+            "request_length": 78, 
+            "upstream_response_length": "0", 
+            "host": "www.test.com", 
+            "referer": "", 
+            "content_type": "", 
+            "request_uri": "/", 
+            "remote_port": 35594, 
+            "bytes_sent": 469, 
+            "top_id": 50146955, 
+            "@source": "106.75.185.203", 
+            "user_agent": "UWAF Domain State Monitor", 
+            "upstream_response_time": 0.03, 
+            "time_local": "2020-04-02T11:13:25+08:00", 
+            "upstream_addr": "152.32.170.130:80", 
+            "_id": "5e8558889b75691004f4dc57"
+        }
+    ]
 }
 ```
 
