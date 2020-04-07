@@ -27,16 +27,24 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafDomainCertificateInfo
-&NewProperty=THUhieLN
-&Domain=Offset
+&ProjectId=org-xxx
+&Domain=www.test.com
 ```
 
 # Response Example
 ```
 {
     "Action": "DescribeWafDomainCertificateInfoResponse", 
+    "TotalCount": 1, 
     "RetCode": 0, 
-    "CertificateInfo": {}
+    "CertificateInfo": [
+        {
+            "Domain": "test.com", 
+            "CertificateID": 834, 
+            "CertificateName": "test", 
+            "UploadTime": "2020-02-06T18:46:17+08:00"
+        }
+    ]
 }
 ```
 
