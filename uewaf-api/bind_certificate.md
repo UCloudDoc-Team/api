@@ -19,10 +19,9 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=BindCertificate
-&ProjectId=sINeBpPg
-&CertificateID=1
-&FullDomain=UPIsvIKD
-&CertificateName=MjKuzGHY
+&ProjectId=org-xxx
+&CertificateID=901
+&FullDomain=www.test.com
 ```
 
 # Response Example
