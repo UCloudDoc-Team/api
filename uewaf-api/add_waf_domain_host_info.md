@@ -25,17 +25,13 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=AddWafDomainHostInfo
-&FullDomain=QLlQQKaC
-&SrcIPNum=7
-&Http=YES
-&Https=YES
-&SrcIP.n=vSmWPhJn
-&CertificateID=KwsvOdlM
-&CertificateID=9
-&ExclusiveIP=URsAvOxw
-&HTTPRedirection=NZTPNDdo
-&WorkRegions=BoPHvCAD
-&ProjectId=XOUYQpyF
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&WorkRegions=cn-gd
+&SrcIPNum=1
+&SrcIP.0=http://106.75.66.11:80
+&CertificateID=0
+&ExclusiveIP=No
 ```
 
 # Response Example
