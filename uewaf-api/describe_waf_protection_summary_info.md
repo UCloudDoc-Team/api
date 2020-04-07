@@ -37,21 +37,48 @@
 |Field|string|匹配字段|No|
 |Operator|string|行为动作|No|
 |Content|string|匹配内容|No|
-|RuleId|string|规则ID|No|
+|RuleId|int|规则ID|No|
 |Description|string|规则描述|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafProtectionSummaryInfo
-&ProjectId=7
-&FullDomain=IlWAFGDq
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 ```
 
 # Response Example
 ```
 {
-    "Action": "DescribeWafProtectionSummaryInfoResponse", 
-    "RetCode": 0
+    "Action": "DescribeWafProtectionSummaryInfoReponse", 
+    "TotalCount": 1, 
+    "RetCode": 0, 
+    "WorkMode": "Alarm", 
+    "RuleSetList": [
+        {
+            "RiskType": "scan", 
+            "RuleList": [
+                {
+                    "UserRuleId": 45001, 
+                    "Description": "", 
+                    "RuleId": 45000, 
+                    "Content": "2.2.2.2", 
+                    "Field": "SrcIp", 
+                    "Operator": "Contain"
+                }
+            ], 
+            "RuleSetID": 45000, 
+            "RuleSetType": "", 
+            "RiskRank": "High", 
+            "RuleDescription": "", 
+            "Priority": 0, 
+            "Location": "root", 
+            "RuleAction": "Deny", 
+            "RuleName": "test", 
+            "Phase": "access", 
+            "SysRuleset": 90045000
+        }
+    ]
 }
 ```
 
