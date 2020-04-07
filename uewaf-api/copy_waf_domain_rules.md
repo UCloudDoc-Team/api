@@ -20,10 +20,11 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=CopyWafDomainRules
-&ProjectId=ytxpNUYj
-&FullDomain=JrVjmkbm
-&DestDomain.n=iHfnTEcP
-&RuleType=kAiLRYfq
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&DestDomain.0=www.test1.com
+&DestDomain.1=www.test2.com
+&RuleType=CCRule
 &Append=false
 ```
 
