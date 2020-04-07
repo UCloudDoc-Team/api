@@ -31,21 +31,75 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafAttackSummaryInfo
-&RecordId=PHnNFvWI
+&RecordId=org-xxx
+&FullDomain=www.test.com
 &TimeType=Hour
-&BeginTime=7
-&EndTime=3
-&FullDomain=ADbhhBow
-&SearchType=VKvaNpnd
-&AttackType=vDHXzBEG
+&AttackType=xss
 ```
 
 # Response Example
 ```
 {
-    "Action": "DescribeWafAttackSummaryInfoResponse", 
-    "Data": {}, 
-    "RetCode": 0
+    "JSON": {
+        "Action": "DescribeWafAttackSummaryInfoResponse", 
+        "Data": {
+            "RiskRankDistribution": [
+                {
+                    "Priority": 0, 
+                    "AttackCount": 0, 
+                    "RiskRankType": "High"
+                }, 
+                {
+                    "Priority": 1, 
+                    "AttackCount": 0, 
+                    "RiskRankType": "Middle"
+                }, 
+                {
+                    "Priority": 2, 
+                    "AttackCount": 0, 
+                    "RiskRankType": "Low"
+                }, 
+                {
+                    "Priority": 3, 
+                    "AttackCount": 0, 
+                    "RiskRankType": "Unknown"
+                }
+            ], 
+            "TimeAxisDistribution": [
+                {
+                    "DenyCount": 0, 
+                    "AcceptCount": 0, 
+                    "Time": 1585883280
+                }, 
+                {
+                    "DenyCount": 0, 
+                    "AcceptCount": 0, 
+                    "Time": 1585883520
+                }
+            ], 
+            "AttackTypeDistribution": [
+                {
+                    "AttackCount": 0, 
+                    "AttackType": "xss", 
+                    "AttackName": "XSS攻击"
+                }
+            ], 
+            "TopAttackIP": [
+                {
+                    "SrcIp": "120.132.23.61", 
+                    "IPDB": {}, 
+                    "AttackCount": 3
+                }
+            ], 
+            "TopAttackUri": [
+                {
+                    "AttackCount": 7, 
+                    "AttackUrl": "/test2"
+                }
+            ]
+        }, 
+        "RetCode": 0
+    }
 }
 ```
 
