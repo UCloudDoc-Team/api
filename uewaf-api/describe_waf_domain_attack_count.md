@@ -21,18 +21,18 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DescribeWafDomainAttackCount
-&FullDomain=yTBBOfcy
-&BeginTime=4
-&EndTime=2
-&BeginTime=8
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&BeginTime=1585885620
+&EndTime=1585889920
 ```
 
 # Response Example
 ```
 {
-    "Action": "DescribeWafDomainAttackCountResponse", 
-    "AttackCount": 1, 
-    "RequestCount": 2, 
+    "Action": "DescribeWafDomainAttackCountRespose", 
+    "AttackCount": 2, 
+    "RequestCount": 15398, 
     "RetCode": 0
 }
 ```
