@@ -19,8 +19,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=DeleteWafDomainCertificateInfo
+&ProjectId=org-xxx
 &CertificateID=6
-&ProjectId=sLfetaSg
 ```
 
 # Response Example
