@@ -14,8 +14,8 @@
 |ActionType|string|匹配动作，拦截、放行、告警|No|
 |BeginTime|int|自定义开始时间戳|No|
 |EndTime|int|自定义结束时间戳|No|
-|FullDomain|string|要查询的域名，为空RecordId 为0时，查询全部|No|
-|SortArray.n|string|排序方式|No|
+|FullDomain|string|要查询的域名，为空时查询所有|No|
+|SortArray|string|排序方式|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
