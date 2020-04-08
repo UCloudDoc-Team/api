@@ -19,10 +19,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafAttackFalseAlarmStatus
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Key=1111
 &SetStatus=SetFalseAlarm
-&Key=oDagQhXL
-&FullDomain=CNFhYjIz
-&ProjectId=ESBlsTko
 ```
 
 # Response Example
