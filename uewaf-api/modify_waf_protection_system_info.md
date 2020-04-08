@@ -19,10 +19,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafProtectionSystemInfo
-&ProjectId=FswqJags
-&FullDomain=dnsJDDMZ
-&Deny.n=4
-&Accept.n=6
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&Deny.n=20000
+&Accept.n=31000
 ```
 
 # Response Example
