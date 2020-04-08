@@ -1,6 +1,6 @@
-# 更改waf工作模式-ModifyWafProtectionModeInfo
+# 更改WAF工作模式-ModifyWafProtectionModeInfo
 
-更改waf工作模式
+更改WAF工作模式
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -18,9 +18,9 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafProtectionModeInfo
-&ProjectId=MGgTQgQh
+&ProjectId=org-xxx
+&FullDomain=www.test.com
 &WorkMode=Defence
-&FullDomain=LsFJkxQS
 ```
 
 # Response Example
