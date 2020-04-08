@@ -1,6 +1,6 @@
-# 攻击发生次数概览-StatWafAttacksTrend
+# WAF攻击发生次数概览-StatWafAttacksTrend
 
-UEWAF攻击发生次数概览
+WAF攻击发生次数概览
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -8,7 +8,7 @@ UEWAF攻击发生次数概览
 |ProjectId|string|项目ID，不填表示默认项目|No|
 |BeginTime|int|开始时间，时间戳表示,单位：秒|**Yes**|
 |EndTime|int|结束时间，时间戳表示，单位：秒|**Yes**|
-|Domain|string|要统计的域名|**Yes**|
+|Domain|string|要统计的域名|No|
 |Extent|string|统计区间，单位：秒，取值范围0-7200|No|
 
 # Response Elements
@@ -28,15 +28,14 @@ UEWAF攻击发生次数概览
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Timestamp|int|时间戳|**Yes**|
-|Count|string|攻击次数|**Yes**|
+|Count|int|攻击次数|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StatWafAttacksTrend
-&BeginTime=9
-&EndTime=3
-&Domain=YZxvwIed
-&Extent=RQbnLjry
+&Extent=org-xxx
+&BeginTime=1586237414
+&EndTime=1586241014
 ```
 
 # Response Example
@@ -44,12 +43,24 @@ https://api.ucloud.cn/?Action=StatWafAttacksTrend
 {
     "Action": "StatWafAttacksTrendResponse", 
     "RetCode": 0, 
-    "Detail": [
-        {
-            "Count": "sTZCxiBq", 
-            "Timestamp": 4
-        }
-    ]
+    "Result": {
+        "Count": 3, 
+        "Type": "AttackTotal", 
+        "Detail": [
+            {
+                "Count": 106, 
+                "Timestamp": 1586240820
+            }, 
+            {
+                "Count": 1478, 
+                "Timestamp": 1586240880
+            }, 
+            {
+                "Count": 315, 
+                "Timestamp": 1586240940
+            }
+        ]
+    }
 }
 ```
 
