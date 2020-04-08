@@ -8,8 +8,7 @@
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |SrcIP.n|string|源站IP信息|**Yes**|
 |WorkRegions|string|工作区域，用户已购买区域的子集，以逗号分隔，如：cn-bj,cn-sh|**Yes**|
-|FullDomain|string|被编辑的域名,域名与记录ID必须选填一项|No|
-|RecordId|string|被编辑的域名记录ID，域名与记录ID必须选填一项|No|
+|FullDomain|string|被编辑的域名,域名与记录ID必须选填一项|**Yes**|
 |HTTPRedirection|string|使用HTTP跳转，YES是，NO否，只允许HTTPS:YES,HTTP:NO的情况下使用|No|
 |CertificateID|int|HTTPS证书编号|No|
 |RealIPHeader|string|获取真实客户端地址字段，如对接CDN等其他代理时使用|No|
@@ -24,12 +23,12 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafDomainHostInfo
-&FullDomain=UXsrGhDX
-&SrcIP.n=osaYxWFF
-&HTTPRedirection=mYCbrHFD
-&WorkRegions=fOGGqJCj
-&CertificateID=5
-&ProjectId=VROXtRzF
+&ProjectId=org-xxx
+&FullDomain=https://www.test.com
+&SrcIP.0=1.2.3.4
+&HTTPRedirection=NO
+&WorkRegions=cn-gd
+&CertificateID=901
 ```
 
 # Response Example
