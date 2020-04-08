@@ -22,13 +22,12 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafRegionBlockRule
-&ProjectId=NMZFCXEt
-&FullDomain=AtZMottl
-&ID=7
-&Name=GxKlkegm
-&ActionType=YKTHMgXQ
-&BlockRegion=zqdzmbKn
-&Description=HgBqiNJo
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&ID=603
+&ActionType=Deny
+&BlockRegion=US
+&Description=美国
 ```
 
 # Response Example
