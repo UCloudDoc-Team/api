@@ -17,8 +17,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=UpdateAssurePageCache
-&ID=3
-&ProjectId=ncrFEvrU
+&ProjectId=org-xxx
+&ID=374
 ```
 
 # Response Example
