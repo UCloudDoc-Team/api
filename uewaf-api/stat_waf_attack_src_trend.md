@@ -1,6 +1,6 @@
-# UEWAF攻击源IP数概览-StatWafAttackSrcTrend
+# WAF攻击源IP数概览-StatWafAttackSrcTrend
 
-UEWAF攻击源IP数概览
+WAF攻击源IP数概览
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -28,16 +28,14 @@ UEWAF攻击源IP数概览
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Timestamp|int|时间戳|**Yes**|
-|Count|string|攻击次数|**Yes**|
+|Count|int|攻击次数|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StatWafAttackSrcTrend
-&ProjectId=JQKhlExt
-&Domain=cNWtjyJa
-&BeginTime=6
-&EndTime=8
-&Extent=7
+&ProjectId=org-xxx
+&BeginTime=1586237414
+&EndTime=1586241014
 ```
 
 # Response Example
@@ -45,12 +43,24 @@ https://api.ucloud.cn/?Action=StatWafAttackSrcTrend
 {
     "Action": "StatWafAttackSrcTrendResponse", 
     "RetCode": 0, 
-    "Detail": [
-        {
-            "Count": "TekTOFjF", 
-            "Timestamp": 8
-        }
-    ]
+    "Result": {
+        "Count": 3, 
+        "Type": "AttackSrcIP", 
+        "Detail": [
+            {
+                "Count": 1, 
+                "Timestamp": 1586240820
+            }, 
+            {
+                "Count": 1, 
+                "Timestamp": 1586240880
+            }, 
+            {
+                "Count": 1, 
+                "Timestamp": 1586240940
+            }
+        ]
+    }
 }
 ```
 
