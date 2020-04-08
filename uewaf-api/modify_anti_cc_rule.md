@@ -24,15 +24,15 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyAntiCCRule
-&ProjectId=PCSaxEVD
-&ID=8
-&Domain=eZaFQvVy
-&Reqs=8
-&URL=yChTaoNC
+&ProjectId=org-xxx
+&ID=44451
+&Domain=www.test.com
+&Reqs=100
+&URL=/index.html
 &Mode=equal
-&Duration=3
+&Duration=60
 &ActionType=forbidden
-&Validity=6
+&Validity=60
 ```
 
 # Response Example
