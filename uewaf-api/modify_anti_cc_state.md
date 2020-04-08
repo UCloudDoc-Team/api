@@ -19,10 +19,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyAntiCCState
-&ProjectId=DsrDCjOH
-&Domain=xxx
-&State=xxx
-&Mode=xxx
+&ProjectId=org-xxx
+&Domain=www.test.com
+&State=off
+&Mode=normal
 ```
 
 # Response Example
