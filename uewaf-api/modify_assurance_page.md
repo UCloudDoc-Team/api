@@ -22,12 +22,12 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyAssurancePage
-&ProjectId=unsCNjfr
+&ProjectId=org-xxx
+&Domain=www.test.com
 &ID=5
-&URL=WwyyhsRA
-&Remark=iPMjzitH
+&URL=http://www.test.com/inedx.html
 &State=on
-&Domain=xxx
+&Remark=test
 ```
 
 # Response Example
