@@ -1,6 +1,6 @@
-# UEWAF请求数趋势-StatWafReqsTrend
+# 获取WAF请求数趋势-StatWafReqsTrend
 
-UEWAF请求数趋势
+获取WAF请求数趋势
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -16,13 +16,13 @@ UEWAF请求数趋势
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|Result|object|请求数趋势统计结果|No|
+|Result|object|请求数趋势统计结果，参考StatReqsResult|No|
 
 ## StatReqsResult
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Count|int|返回节点个数|**Yes**|
-|Detail|array|请求数统计详细信息数组|**Yes**|
+|Detail|array|请求数统计详细信息列表，参考StatReqsDetail|**Yes**|
 
 ## StatReqsDetail
 |Parameter name|Type|Description|Required|
@@ -35,17 +35,29 @@ UEWAF请求数趋势
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StatWafReqsTrend
-&BeginTime=9
-&EndTime=2
-&Domain=EoUkpJEH
-&Extent=4
+&Extent=org-xxx
+&BeginTime=1586231349
+&EndTime=1586231408
+&Domain=www.test.com
 ```
 
 # Response Example
 ```
 {
     "Action": "StatWafReqsTrendResponse", 
-    "RetCode": 0
+    "RetCode": 0, 
+    "Result": {
+        "Count": 61, 
+        "Type": "Reqs", 
+        "Detail": [
+            {
+                "Timestamp": 1586231350, 
+                "ServerErr": 0, 
+                "ClientErr": 0, 
+                "Reqs": 11
+            }
+        ]
+    }
 }
 ```
 
