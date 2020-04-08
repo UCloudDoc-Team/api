@@ -1,6 +1,6 @@
-# UEWAFQPS趋势-StatWafQPSTrend
+# 获取WAF QPS趋势-StatWafQPSTrend
 
-UEWAF QPS趋势
+获取WAF QPS趋势
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -23,32 +23,41 @@ UEWAF QPS趋势
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Count|int|采样点个数|**Yes**|
-|Detail|array|QPS统计结果集合|**Yes**|
+|Detail|array|QPS统计结果集合，参考QPSTrendDetail|**Yes**|
 
 ## QPSTrendDetail
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TimeStamp|string|时间戳|**Yes**|
+|TimeStamp|int|时间戳|**Yes**|
 |SrcQPS|string|到源站qps|**Yes**|
 |WafQPS|string|到WAF的qps|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StatWafQPSTrend
-&BeginTime=5
-&EndTime=3
+&ProjectId=org-xxx
+&BeginTime=1586231349
+&EndTime=1586231460
+&Domain=www.test.com
 &Method=min
-&Domain=NDDBqcvc
-&Extent=2
 ```
 
 # Response Example
 ```
 {
     "Action": "StatWafQPSTrendResponse", 
-    "Count": 5, 
-    "Type": "MElGoXZr", 
-    "RetCode": 0
+    "RetCode": 0, 
+    "Result": {
+        "Count": 1, 
+        "Type": "QPS", 
+        "Detail": [
+            {
+                "Timestamp": 1586227440, 
+                "WafQps": 1, 
+                "SrcQps": 1
+            }
+        ]
+    }
 }
 ```
 
