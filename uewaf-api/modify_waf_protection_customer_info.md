@@ -24,15 +24,15 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafProtectionCustomerInfo
-&ProjectId=dZTaaQCt
-&RuleSetID=1
-&RuleName=IvBFRtXf
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&RuleSetID=45000
+&RuleName=test
 &RiskRank=Low
 &RuleAction=Deny
-&RuleNum=7
-&Rule.n=SdmFaonG
-&FullDomain=qAfVNlnZ
-&RiskType=PakiNZBM
+&RuleNum=1
+&Rule.0=Field:SrcIp,Operator:Contain,Content:2.2.2.3
+&RiskType=scan
 ```
 
 # Response Example
