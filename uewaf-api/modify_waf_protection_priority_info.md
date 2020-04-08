@@ -19,10 +19,10 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyWafProtectionPriorityInfo
-&ProjectId=bpjYsStG
-&RuleSetID=siODHJTy
+&ProjectId=org-xxx
+&FullDomain=www.test.com
+&RuleSetID=45000
 &UpDown=UP
-&FullDomain=inVUTKhl
 ```
 
 # Response Example
