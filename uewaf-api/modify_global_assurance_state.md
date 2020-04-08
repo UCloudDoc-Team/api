@@ -7,7 +7,7 @@
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
 |State|string|网页防篡改全局开关状态，on:开,off:关|**Yes**|
-|Domain|string|添加域名|No|
+|Domain|string|要操作的域名|**Yes**|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -18,7 +18,8 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ModifyGlobalAssuranceState
-&Domain=DLzVSBvT
+&ProjectId=org-xxx
+&Domain=www.test.com
 &State=off
 ```
 
