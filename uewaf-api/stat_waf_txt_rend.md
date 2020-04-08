@@ -1,6 +1,6 @@
-# WAF下行流量趋势-StatWafTXTRend
+# 获取WAF下行流量趋势-StatWafTXTRend
 
-WAF下行流量趋势
+获取WAF下行流量趋势
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
@@ -17,39 +17,49 @@ WAF下行流量趋势
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|Result|array|下行流量统计信息|No|
+|Result|array|下行流量统计信息，参考StatTXResult|No|
 
 ## StatTXResult
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Count|int|返回节点个数|**Yes**|
 |Unit|string|流量计量单位|**Yes**|
-|Detail|array|下行流量详情数组|**Yes**|
+|Detail|array|下行流量详情列表，参考StatTXDetail|**Yes**|
 
 ## StatTXDetail
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TimeStamp|string|时间戳|**Yes**|
-|WafTX|int|waf下行流量|**Yes**|
-|SrcTX|int|源站下行流量|**Yes**|
+|TimeStamp|int|时间戳|**Yes**|
+|Waf|int|waf下行流量|**Yes**|
+|Src|int|源站下行流量|**Yes**|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=StatWafTXTRend
-&ProjectId=dyGatQKk
-&BeginTime=xasvfvf
-&EndTime=cdncnvc
-&Domain=cvvdvkj
+&ProjectId=org-xxx
+&BeginTime=1586231349
+&EndTime=1586231408
 &Method=avg
-&RecordId=5
-&Extent=3
+&Domain=www.test.com
 ```
 
 # Response Example
 ```
 {
-    "Action": "StatWafTXTRendResponse", 
-    "RetCode": 0
+    "Action": "StatWafTXTrendResponse", 
+    "RetCode": 0, 
+    "Result": {
+        "Count": 61, 
+        "Type": "TX", 
+        "Detail": [
+            {
+                "Timestamp": 1586227440, 
+                "Waf": 583, 
+                "Src": 583
+            }
+        ], 
+        "Unit": "bps"
+    }
 }
 ```
 
