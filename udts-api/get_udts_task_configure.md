@@ -37,7 +37,7 @@
 |UDWNode|object|当 DataType 为 udw 的时候使用。|No|
 |RedisNode|object|当 DataType 为 redis 的时候使用|No|
 |UFileNode|object|当 DataType 为 ufile 的时候使用。|No|
-|IsDedicatedLine|string|是否为专线迁移|No|
+|IsDedicatedLine|bool|是否为专线迁移|No|
 
 ## CSVNode
 |Parameter name|Type|Description|Required|
