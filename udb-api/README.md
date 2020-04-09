@@ -54,6 +54,7 @@
   * [普通db升级为高可用-PromoteUDBInstanceToHA](api/udb-api/promote_udb_instance_to_ha)
   * [创建从库-CreateUDBSlave](api/udb-api/create_udb_slave)
   * [启用读写分离功能-EnableUDBRWSplitting](api/udb-api/enable_udbrw_splitting)
+  * [关闭读写分离功能-DisableUDBRWSplitting](api/disable_udbrw_splitting)
 
 ## [MongoDB相关](api/udb-api/mongodb_readme)
   * [创建mongos实例-CreateUDBRouteInstance](api/udb-api/create_udb_route_instance)
