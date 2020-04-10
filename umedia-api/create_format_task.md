@@ -37,6 +37,11 @@
 |TotalTaskCount|int|生成的总的任务条数|No|
 |TaskIdList|array|生成的任务Id列表|No|
 
+## TaskIdList
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|TaskId|string|任务ID|No|
+
 # Request Example
 ```
 https://api.ucloud.cn/?Action=CreateFormatTask
