@@ -1,6 +1,6 @@
-# UDB高可用实例升级为Sentinel版本（不带HAProxy）-SwitchUDBHAToSentinel
+# UDB高可用实例升级为Sentinel版本（不带HAProxy）升级耗时30-70秒-SwitchUDBHAToSentinel
 
-UDB高可用实例从HAProxy版本升级为Sentinel版本（不带HAProxy）
+UDB高可用实例从HAProxy版本升级为Sentinel版本（不带HAProxy）升级耗时30-70秒
 
 # Request Parameters
 |Parameter name|Type|Description|Required|
