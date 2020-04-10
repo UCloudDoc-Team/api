@@ -17,21 +17,22 @@
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
-|UhostId|string|UHost实例ID|No|
+|UhostId|string|UHost的实例ID|No|
 
 # Request Example
 ```
 https://api.ucloud.cn/?Action=PoweroffUHostInstance
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&UHostId=uhost-qs20fr
+&ProjectId=org-xxx
+&UHostId=uhost-xxx
 ```
 
 # Response Example
 ```
 {
     "Action": "PoweroffUHostInstanceResponse", 
-    "UHostId": "uhost-qs20fr", 
+    "UHostId": "uhost-xxx", 
     "RetCode": 0
 }
 ```
