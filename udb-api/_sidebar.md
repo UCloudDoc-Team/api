@@ -25,6 +25,7 @@
   * [启用读写分离功能-EnableUDBRWSplitting](api/udb-api/enable_udbrw_splitting)
   * [关闭读写分离功能-DisableUDBRWSplitting](api/udb-api/disable_udbrw_splitting)
   * [读写分离中间件重启-RestartRWSplitting](api/udb-api/restart_rw_splitting)
+  * [ 设置读写分离-SetUDBRWSplitting](api/udb-api/set_udbrw_splitting)
 
 * [MongoDB相关](api/udb-api/mongodb_readme)
   * [创建mongos实例-CreateUDBRouteInstance](api/udb-api/create_udb_route_instance)
