@@ -60,3 +60,7 @@
 * [获取WAF上行流量趋势-StatWafRXTrend](api/uewaf-api/stat_waf_rx_trend)
 * [获取WAF下行流量趋势-StatWafTXTRend](api/uewaf-api/stat_waf_txt_rend)
 * [网页防篡改更新指定url的缓存-UpdateAssurePageCache](api/uewaf-api/update_assure_page_cache)
+* [添加信息安全过滤规则-AddWafResponseFilter](api/uewaf-api/add_waf_response_filter)
+* [查询信息安全过滤规则-DescribeWafResponseFilter](api/uewaf-api/describe_waf_response_filter)
+* [修改信息安全过滤规则-ModifyWafResponseFilter](api/uewaf-api/modify_waf_response_filter)
+* [删除信息安全过滤规则-DeleteWafResponseFilter](api/uewaf-api/delete_waf_response_filter)
