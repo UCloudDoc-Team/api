@@ -12,9 +12,9 @@
 |MemoryLimit|int|内存限制(MB)，目前支持以下几档 1000M/2000M/4000M/ 6000M/8000M/ 12000M/16000M/ 24000M/32000M/ 48000M/64000M/96000M。|**Yes**|
 |DiskSpace|int|磁盘空间(GB), 暂时支持20G-3000G|**Yes**|
 |UseSSD|bool|是否使用SSD，默认为true|No|
-|SSDType|string|SSD类型，可选值为"SATA"、"PCI-E"，如果UseSSD为true ，则必选|No|
+|SSDType|string|SSD类型，可选值为"SATA"、"PCI-E"、“NVMe”，如果UseSSD为true ，则必选|No|
 |UDBCId|string|专区的ID，如果有值表示专区中的DB配置升降级|No|
-|InstanceType|string|UDB数据库机型: "Normal": "标准机型" ,  "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" ,  "Normal_Volume": "标准大容量机型",  "SATA_SSD_Volume": "SSD大容量机型" ,  "PCIE_SSD_Volume": "SSD高性能大容量机型" |No|
+|InstanceType|string|UDB数据库机型: "Normal": "标准机型" ,  "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" ,  "Normal_Volume": "标准大容量机型",  "SATA_SSD_Volume": "SSD大容量机型" ,  "PCIE_SSD_Volume": "SSD高性能大容量机型"，“NVMe_SSD”：“快杰机型”|No|
 |InstanceMode|string|UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal"|No|
 |StartAfterUpgrade|bool|DB关闭状态下升降级，升降级后是否启动DB，默认为false|No|
 |CouponId|string|使用的代金券id|No|
