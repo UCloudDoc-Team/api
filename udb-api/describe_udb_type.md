@@ -10,7 +10,7 @@
 |BackupZone|string|跨可用区高可用DB的备库所在区域，仅当该可用区支持跨可用区高可用时填入。参见 [可用区列表](api/summary/regionlist)|No|
 |DBClusterType|string|DB实例类型，如mysql，sqlserver，mongo，postgresql|No|
 |InstanceMode|string|返回支持某种实例类型的DB类型。如果没传，则表示任何实例类型均可。normal:单点,ha:高可用,sharded_cluster:分片集群|No|
-|DiskType|string|返回支持某种磁盘类型的DB类型。如果没传，则表示任何磁盘类型均可。|No|
+|DiskType|string|返回支持某种磁盘类型的DB类型，如Normal、SSD、NVMe_SSD。如果没传，则表示任何磁盘类型均可。|No|
 |CompatibleWithDBType|string|返回从备份创建实例时，该版本号所支持的备份创建版本。如果没传，则表示不是从备份创建。|No|
 
 # Response Elements
@@ -35,6 +35,7 @@ https://api.ucloud.cn/?Action=DescribeUDBType
 &DBClusterType=mysql
 &BackupZone=cn-bj2-03
 &CompatibleWithDBTyp=tFbuDJNk
+&DiskType=YQQrlDqy
 ```
 
 # Response Example
