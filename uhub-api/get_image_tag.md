@@ -10,6 +10,7 @@
 |ImageName|string|镜像名称|**Yes**|
 |Offset|int|偏移量，默认0|No|
 |Limit|int|每次获取数量，默认为20|No|
+|TagName|string|默认不写，如果填写，代表查询该tag，否则查全部tag|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -34,6 +35,7 @@ https://api.ucloud.cn/?Action=GetImageTag
 &Offset=4
 &Limit=6
 &ProjectId=EiCgAvZy
+&TagName=mBJNxhdo
 ```
 
 # Response Example
