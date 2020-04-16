@@ -30,7 +30,7 @@
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Zone|string|DB实例所在可用区|No|
-|CluserRole|string|当DB类型为mongodb时，返回该实例所在集群中的角色，包括：mongos、configsrv_sccc、configsrv_csrs、shardsrv_datanode、shardsrv_arbiter，其中congfigsrv分为sccc和csrs两种模式，shardsrv分为datanode和arbiter两种模式|No|
+|ClusterRole|string|当DB类型为mongodb时，返回该实例所在集群中的角色，包括：mongos、configsrv_sccc、configsrv_csrs、shardsrv_datanode、shardsrv_arbiter，其中congfigsrv分为sccc和csrs两种模式，shardsrv分为datanode和arbiter两种模式|No|
 |DBId|string|DB实例id|No|
 |Name|string|实例名称，至少6位|No|
 |DBTypeId|string|DB类型id，mysql/mongodb按版本细分各有一个id 目前id的取值范围为[1,7],数值对应的版本如下： 1：mysql-5.5，2：mysql-5.1，3：percona-5.5 4：mongodb-2.4，5：mongodb-2.6，6：mysql-5.6， 7：percona-5.6|No|
@@ -57,7 +57,7 @@
 |MemoryLimit|int|内存限制(MB)，默认根据配置机型|No|
 |DiskSpace|int|磁盘空间(GB), 默认根据配置机型|No|
 |UseSSD|bool|是否使用SSD|No|
-|SSDType|string|SSD类型，SATA/PCI-E|No|
+|SSDType|string|SSD类型，SATA/PCI-E/NVMe|No|
 |Role|string|DB实例角色，mysql区分master/slave，mongodb多种角色|No|
 |DiskUsedSize|float|DB实例磁盘已使用空间，单位GB|No|
 |DataFileSize|float|DB实例数据文件大小，单位GB|No|
@@ -67,6 +67,7 @@
 |InstanceMode|string|UDB实例模式类型, 可选值如下: “Normal”： 普通版UDB实例 “HA”: 高可用版UDB实例|No|
 |DataSet|array|如果在需要返回从库的场景下，返回该DB实例的所有从库DB实例信息列表。列表中每一个元素的内容同UDBSlaveInstanceSet 。如果这个DB实例没有从库的情况下，此时返回一个空的列表|No|
 |BackupZone|string|跨可用区高可用备库所在可用区|No|
+|IPv6Address|string|该实例的ipv6地址|No|
 
 ## UDBSlaveInstanceSet
 |Parameter name|Type|Description|Required|
@@ -107,6 +108,7 @@
 |InstanceType|string|UDB数据库机型|No|
 |InstanceTypeId|int|UDB数据库机型ID|No|
 |Tag|string|获取资源其他信息|No|
+|IPv6Address|string|获取该实例的IPv6地址|No|
 
 # Request Example
 ```
