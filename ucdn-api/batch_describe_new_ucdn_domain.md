@@ -18,7 +18,7 @@
 |Action|string|操作名称|**Yes**|
 |TotalCount|int|满足条件的域名个数|No|
 |MaxDomainNum|int|最大域名数量，默认20|No|
-|ChargeType|int|当前计费方式，10=流量付费 20=带宽日峰值  30=按月后付费|No|
+|ChargeType|int|当前计费方式，10-流量付费 20-带宽日峰值 30-月95计费，31-月日均峰值， 32-月第四峰值 33-日均峰值之和 34- 日95再取平均 40-未选择计费方式|No|
 |LastChargeType|int|表示最后一次切换的计费方式，10=流量付费 20=带宽日峰值  30=按月后付费  40=未选择计费方式|No|
 |Arrearage|array|标识欠费的数组，数组含有下列元素值， 1=国内流量有欠费 2=国外流量有欠费  3=国内带宽有欠费 4=国外带宽有欠费|No|
 |Vip|string|vip标示，yes-是  no-否|No|
@@ -56,13 +56,12 @@
 ## CacheConf
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|HttpCodePattern|string|状态码默认情况只缓存200类状态码，支持正则|No|
+|HttpCodePattern|string|状态码模式，非200，206状态码，多个状态码用竖线(\|)分隔，该属性仅仅在状态码缓存配置列表中返回|No|
 |PathPattern|string|路径模式，支持正则|No|
 |Description|string|缓存规则描述|No|
 |CacheTTL|int|缓存时间|No|
-|CacheUnit|string|缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）|No|
-|CacheBehavior|int|是否缓存，1为缓存，0为不缓存。为0的情况下，CacheTTL和CacheUnit强制不生效|No|
-|IgnoreQueryString|int|是否忽略参数缓存（0为不忽略，1为忽略，默认为0）|No|
+|CacheUnit|string|缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）。上限1年。|No|
+|CacheBehavior|bool|是否缓存，true为缓存，flase为不缓存。为flase的情况下，CacheTTL和CacheUnit强制不生效|No|
 |FollowOriginRule|int|是否优先遵循源站头部缓存策略，0为不优先遵循源站，1为优先遵循源站缓存头部。默认为0|No|
 
 ## AccessConf
