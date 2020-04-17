@@ -7,6 +7,7 @@
 |---|---|---|---|
 |ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
 |ID|int|黑名单记录ID|**Yes**|
+|Source|string|黑名单来源， 用户自定义(custom)/机器行为检测(bot)/ bot-rule/ auto（自动拦截规则）|**Yes**|
 |Type|string|类型：境内(internal)、境外(oversea)，自定义(custom)|**Yes**|
 |ActionType|string|动作: captcha/forbidden|**Yes**|
 |ExpireTime|int|过期时间,即有效时长，单位为秒,永不过期传0|**Yes**|
@@ -32,6 +33,7 @@ ActionType=forbidden
 &CIDRS.0=2.2.2.2
 &ExpireTime=0
 &Remark=test
+&Source=gstrulLO
 ```
 
 # Response Example
