@@ -10,7 +10,7 @@
 * [获取流量信息-GetUcdnTraffic](api/ucdn-api/get_ucdn_traffic)
 * [获取域名命中率-GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)
 * [提交预取任务-PrefetchNewUcdnDomainCache](api/ucdn-api/prefetch_new_ucdn_domain_cache)
-* [批量获取加速域名配置-BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)
+* [批量获取加速域名配置 - BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)
 * [获取域名请求数-GetUcdnDomainRequestNumV2](api/ucdn-api/get_ucdn_domain_request_num_v2)
 * [获取加速域名流量使用信息-GetUcdnDomainTraffic](api/ucdn-api/get_ucdn_domain_traffic)
 * [获取域名状态码监控-GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)
