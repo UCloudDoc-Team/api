@@ -26,7 +26,7 @@
 |DestFormat|string|输出视频封装格式|**Yes**|
 |Duration|int|视频时长，单位：秒。只有当任务状态为处理完成时，该参数有意义，其他状态该参数为0。|**Yes**|
 |CodecLevel|string|转码清晰度：superdefinition、highdefinition、mediumdefinition、lowdefinition，分别对应计费的4种规格。只有当任务状态为处理完成时，该参数有意义，其他状态该参数为空字符串。|**Yes**|
-|CreateTime|string|任务创建时间，单位：Unix时间戳|**Yes**|
+|CreateTime|int|任务创建时间，单位：Unix时间戳|**Yes**|
 |Status|string|任务状态：waiting、processing、finished、failed，分别表示排队中，处理中，处理完成，处理失败。|**Yes**|
 
 # Request Example
