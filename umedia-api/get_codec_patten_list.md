@@ -20,7 +20,7 @@
 |---|---|---|---|
 |PattenId|string|模版的ID|**Yes**|
 |PattenName|string|模版名称,长度不查过256个字节|**Yes**|
-|DestVideoBitrate|string|视频码率，单位kbps。|**Yes**|
+|DestVideoBitrate|int|视频码率，单位kbps。|**Yes**|
 |DestVideoResolution|string|视频分辨率，格式为像素宽度x像素高度，例如1280x720。该字段为空表示保持原始视频大小。|**Yes**|
 |DestVideoCodec|string|视频的编码类型|**Yes**|
 |DestAudioBitrate|int|音频码率，单位kbps。|**Yes**|
