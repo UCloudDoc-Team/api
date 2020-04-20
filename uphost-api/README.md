@@ -10,3 +10,4 @@
 * [重装物理机-ReinstallPHost](api/uphost-api/reinstallphost)
 * [启动物理机-StartPHost](api/uphost-api/startphost)
 * [获取物理机镜像-DescribePHostImage](api/uphost-api/describephostimage)
+* [获取物理云机型信息-DescribePHostMachineType](api/uphost-api/describephostmachinetype)
