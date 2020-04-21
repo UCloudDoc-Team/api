@@ -11,7 +11,8 @@
 |Count|int|购买数量，范围[1-5]|**Yes**|
 |ChargeType|string|计费模式，枚举值为： Year/Month/Trial/Dynamic|**Yes**|
 |Quantity|int|购买时长，1-10个月或1-10年|**Yes**|
-|Type|string|默认为：DB(数据库型)|No|
+|Type|string|默认为：DB(数据库型)，可以通过接口 [DescribePHostMachineType](describe_p_host_machine_type)获取|No|
+|Cluster|string|网络环境，可选千兆：1G ，万兆：10G|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -29,13 +30,15 @@
 # Request Example
 ```
 https://api.ucloud.cn/?Action=GetPHostPrice
-&ProjectId=562
 &Region=cn-bj2
 &Zone=cn-bj2-04
+&ProjectId=org-xxx
 &Count=1
-&Type=DB
 &ChargeType=Month
 &Quantity=1
+&Type=DB
+&Cluster=FRkegmUL
+&Cluster=DYEIfcVe
 ```
 
 # Response Example
@@ -44,7 +47,7 @@ https://api.ucloud.cn/?Action=GetPHostPrice
     "Action": "GetPHostPriceResponse", 
     "PriceSet": [
         {
-            "Price": 4000, 
+            "Price": 3600, 
             "ChargeType": "Month"
         }
     ], 
