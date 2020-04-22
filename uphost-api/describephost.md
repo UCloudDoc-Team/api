@@ -26,7 +26,7 @@
 |Zone|string|可用区，参见 [可用区列表](api/summary/regionlist)|No|
 |PHostId|string|PHost资源ID|No|
 |SN|string|物理机序列号|No|
-|PMStatus|string|物理云主机状态，初始化:Initializing; 启动中：Starting； 运行中：Running；关机中：Stopping； 安装失败：InstallFailed； 重启中：Rebooting；关机：Stopped； 已删除：Terminated；冻结： Locked;|No|
+|PMStatus|string|物理云主机状态。枚举值：<br> > 初始化:Initializing; <br> > 启动中：Starting； <br> > 运行中：Running；<br> > 关机中：Stopping； <br> > 安装失败：InstallFailed； <br> > 重启中：Rebooting；<br> > 关机：Stopped；|No|
 |Name|string|物理机名称|No|
 |Remark|string|物理机备注|No|
 |Tag|string|业务组|No|
@@ -36,16 +36,17 @@
 |ExpireTime|int|到期时间|No|
 |ChargeType|string|计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）； Trial，试用（需开启权限）默认为月付|No|
 |PowerState|string|电源状态，on 或 off|No|
-|PHostType|string|物理机类型,DB或SSD|No|
+|PHostType|string|物理机类型，参见DescribePHostMachineType返回值|No|
 |Memory|int|内存大小，单位：MB|No|
-|CPUSet|array|CPU信息，见 PHostCPUSet|No|
+|CPUSet|object|CPU信息，见 PHostCPUSet|No|
 |DiskSet|array|磁盘信息，见 PHostDiskSet|No|
 |IPSet|array|IP信息，见 PHostIPSet|No|
-|Cluster|string|网络环境，千兆：1G ，万兆：10G|No|
+|Cluster|string|网络环境。枚举值：千兆：1G ，万兆：10G|No|
 |AutoRenew|string|自动续费|No|
 |IsSupportKVM|string|是否支持紧急登录|No|
 |OSType|string|操作系统类型|No|
 |Components|string|组件信息（暂不支持）|No|
+|RaidSupported|string|是否支持Raid。枚举值：Yes：支持；No：不支持。|No|
 
 ## PHostCPUSet
 |Parameter name|Type|Description|Required|
@@ -58,7 +59,7 @@
 ## PHostDiskSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Space|int|单盘大小 单位GB|No|
+|Space|int|单盘大小，单位GB|No|
 |Count|int|磁盘数量|No|
 |Type|string|磁盘属性|No|
 |Name|string|磁盘名称，sys/data|No|
@@ -67,7 +68,7 @@
 ## PHostIPSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|OperatorName|string| 国际: Internation， BGP: Bgp， 内网: Private |No|
+|OperatorName|string| 国际: Internation， BGP: BGP， 内网: Private |No|
 |IPId|string|IP资源ID(内网IP无资源ID)（待废弃）|No|
 |IPAddr|string|IP地址，|No|
 |MACAddr|string|MAC地址|No|
@@ -120,7 +121,7 @@ https://api.ucloud.cn/?Action=DescribePHost
                     "IPId": "eip-xxx", 
                     "Bandwidth": 2, 
                     "IPAddr": "106.75.xxx.xxx", 
-                    "OperatorName": "Bgp"
+                    "OperatorName": "BGP"
                 }, 
                 {
                     "SubnetId": "subnet-xxx", 
