@@ -41,6 +41,8 @@
 |SubnetId|string|ULB 为 InnerMode 时，ULB 所属的子网ID，默认为空|No|
 |BusinessId|string|ULB 所属的业务组ID|No|
 |PrivateIP|string|ULB的内网IP，当ULBType为OuterMode时，该值为空|No|
+|EnableLog|int|ULB是否开启日志功能。0，关闭；1，开启|No|
+|LogSet|object|日志功能相关信息，仅当EnableLog为true时会返回|No|
 
 ## ULBIPSet
 |Parameter name|Type|Description|Required|
@@ -54,7 +56,7 @@
 ## ULBVServerSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|MonitorType|string|健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；|**Yes**|
+|MonitorType|string|健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， 请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping和Port|**Yes**|
 |Domain|string|根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名|**Yes**|
 |Path|string|根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径|**Yes**|
 |VServerId|string|VServer实例的Id|No|
@@ -70,6 +72,13 @@
 |BackendSet|array|后端资源信息列表，具体结构见下方 ULBBackendSet|No|
 |ListenType|string|监听器类型，枚举值为: RequestProxy -> 请求代理；PacketsTransmit -> 报文转发|No|
 |PolicySet|array|内容转发信息列表，具体结构见下方 ULBPolicySet|No|
+
+## LoggerSet
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|BucketName|string|ulb日志上传的bucket|No|
+|TokenID|string|上传到bucket使用的token的tokenid|No|
+|TokenName|string|bucket的token名称|No|
 
 ## ULBSSLSet
 |Parameter name|Type|Description|Required|
