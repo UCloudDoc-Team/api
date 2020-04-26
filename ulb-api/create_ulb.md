@@ -20,6 +20,7 @@
 |SubnetId|string|内网ULB 所属的子网ID，如果不传则使用默认的子网|No|
 |BusinessId|string|ULB 所属的业务组ID，如果不传则使用默认的业务组|No|
 |FirewallId|string|防火墙ID，如果不传，则默认不绑定防火墙|No|
+|ListenType|string|ULB 监听器类型，枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发。默认为RequestProxy|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
