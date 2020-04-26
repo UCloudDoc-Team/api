@@ -26,7 +26,7 @@
 ## ULBVServerSet
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|MonitorType|string|健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；|**Yes**|
+|MonitorType|string|健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， 请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping和Port|**Yes**|
 |Domain|string|根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名|**Yes**|
 |Path|string|根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径|**Yes**|
 |VServerId|string|VServer实例的Id|No|
