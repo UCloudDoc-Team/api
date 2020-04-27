@@ -17,9 +17,11 @@
 |AccountName|string|账户名，默认root|No|
 |PassWord|string|密码|No|
 |NodeCount|int|创建节点数量，默认1|No|
-|ChargeType|int|付费方式，2按月，3按年，默认2|No|
+|ChargeType|int|付费方式，1按时，2按月，3按年，默认2|No|
 |ChargeQuantity|int|月数或者年数，0计费到月底， 默认0|No|
 |SubnetId|string|子网ID|No|
+|ProductType|string|产品类型：normal（标准型），hf（高频型）|No|
+|FirewallId|string|外网防护墙规则租，默认|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -44,6 +46,8 @@ https://api.ucloud.cn/?Action=CreateUvodnNode
 &NodeCount=1
 &ChargeType=2
 &ChargeQuantity=1
+&ProductType=TUYiObQi
+&FirewallId=YavTnexR
 ```
 
 # Response Example
