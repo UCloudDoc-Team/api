@@ -22,30 +22,30 @@
 |RetCode|int|返回码|**Yes**|
 |Action|string|操作名称|**Yes**|
 |NodePrice|float|节点价格|No|
-|IpPrice|string|Ip和带宽价格|No|
+|IpPrice|float|Ip和带宽价格|No|
 
 # Request Example
 ```
-http://api.spark.ucloud.cn/?Action= GetUvodnNodePrice
-& CpuCore=1& MemSize=2& DiskSize=2& IpCount=1& ChargeType=1& ChargeQuantity=1& Count=1
-&NodeCount=8
-&CpuCore=3
-&MemSize=8
-&SysDiskSize=3
-&DiskSize=3
+https://api.ucloud.cn/?Action=GetUvodnNodePrice
+&IdcId=tFQturQZ
+&NodeCount=6
+&CpuCore=6
+&MemSize=5
+&SysDiskSize=1
+&DiskSize=8
 &NetLimit=7
-&ChargeType=3
-&ChargeQuantity=2
-&ProductType=etrzrMbV
+&ChargeType=8
+&ChargeQuantity=4
+&ProductType=XZcuCeON
 ```
 
 # Response Example
 ```
 {
     "Action": "GetUvodnNodePriceResponse", 
-    "Price": 82989, 
-    "RetCode": 0, 
-    "IpPrice": "ijOBFcwN"
+    "NodePrice": 3.13253, 
+    "IpPrice": 5.92495, 
+    "RetCode": 0
 }
 ```
 
