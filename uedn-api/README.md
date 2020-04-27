@@ -21,4 +21,4 @@
 * [修改镜像名称-ModifyUEdnImageName](api/uedn-api/modify_u_edn_image_name)
 * [节点断电-PoweroffUvodnNode](api/uedn-api/poweroff_uvodn_node)
 * [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
-* [绑定防火墙-BindUEdnFirewall](api/uedn-api/Bind_u_edn_Firewall)
+* [绑定防火墙-BindUEdnFirewall](api/uedn-api/Bind_u_edn_Fire_wall)
