@@ -23,3 +23,10 @@
 * [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
 * [绑定防火墙-BindUEdnFirewall](api/uedn-api/bind_u_edn_firewallmd)
 * [创建外网防火墙-CreateUEdnFirewall](api/uedn-api/create_u_edn_firewallmd)
+* [删除防火墙-DeleteUEdnFirewall](api/uedn-api/delete_u_edn_firewallmd)
+* [获取防火墙信息-DescribeUEdnFirewall](api/uedn-api/describe_u_edn_firewallmd)
+* [防火墙绑定的资源列表-DescribeUEdnFirewallResource](api/uedn-api/describe_u_edn_firewall_resourcemd)
+* [解绑防火墙-UnBindUEdnFirewall](api/uedn-api/un_bind_u_edn_firewallmd)
+* [更新防火墙信息-UpdateUEdnFirewall](api/uedn-api/update_u_edn_firewallmd)
+* [更新防火墙属性-UpdateUEdnFirewallAttribute](api/uedn-api/update_u_edn_firewall_attributemd)
+
