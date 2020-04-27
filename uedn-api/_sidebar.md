@@ -23,3 +23,4 @@
 * [节点断电-PoweroffUvodnNode](api/uedn-api/poweroff_uvodn_node)
 * [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
 * [绑定防火墙-BindUEdnFirewall](api/uedn-api/bind_u_edn_firewallmd)
+* [创建外网防火墙-CreateUEdnFirewall](api/uedn-api/create_u_edn_firewallmd)
