@@ -10,8 +10,8 @@
 |FWId|string|防火墙ID，默认为返回所有防火墙|No|
 |ResourceType|string|绑定防火墙组的资源类型，默认为全部资源类型。枚举值为："unatgw"，NAT网关； "uhost"，云主机； "upm"，物理云主机； "hadoophost"，hadoop节点； "fortresshost"，堡垒机； "udhost"，私有专区主机；"udockhost"，容器；"dbaudit"，数据库审计.|No|
 |ResourceId|string|绑定防火墙组的资源ID|No|
-|Limit|string|返回数据长度，默认为20，最大10000000|No|
-|Offset|string|列表起始位置偏移量，默认为0|No|
+|Limit|int|返回数据长度，默认为20，最大10000000|No|
+|Offset|int|列表起始位置偏移量，默认为0|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
