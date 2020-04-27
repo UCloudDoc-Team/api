@@ -26,7 +26,7 @@
 * [删除防火墙-DeleteUEdnFirewall](api/uedn-api/delete_u_edn_firewall)
 * [获取防火墙信息-DescribeUEdnFirewall](api/uedn-api/describe_u_edn_firewall)
 * [防火墙绑定的资源列表-DescribeUEdnFirewallResource](api/uedn-api/describe_u_edn_firewall_resource)
-* [解绑防火墙-UnBindUEdnFirewall](api/uedn-api/un_bind_u_edn_firewallmd)
-* [更新防火墙信息-UpdateUEdnFirewall](api/uedn-api/update_u_edn_firewallmd)
+* [解绑防火墙-UnBindUEdnFirewall](api/uedn-api/un_bind_u_edn_firewall)
+* [更新防火墙信息-UpdateUEdnFirewall](api/uedn-api/update_u_edn_firewall)
 * [更新防火墙属性-UpdateUEdnFirewallAttribute](api/uedn-api/update_u_edn_firewall_attribute)
 
