@@ -22,4 +22,4 @@
 * [节点重装系统-ReinstallUvodnNode](api/uedn-api/reinstall_uvodn_node)
 * [节点断电-PoweroffUvodnNode](api/uedn-api/poweroff_uvodn_node)
 * [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
-* [绑定防火墙-BindUEdnFirewall](api/uedn-api/bind_u_edn_Fire_wall)
+* [绑定防火墙-BindUEdnFirewall](api/uedn-api/bind_u_edn_fire_wall)
