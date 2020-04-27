@@ -10,6 +10,7 @@ UEDN
 |Memory|int|节点内存大小， 单位GB|**Yes**|
 |IdcId.n|string|Idc机房id。默认全部机房|No|
 |Type|int|0-其它, 1-一线城市单线,2-二线城市单线, 3-全国教育网, 4-全国三通|No|
+|ProductType|string|产品类型：normal（通用型），hf（高主频型）|No|
 
 # Response Elements
 |Parameter name|Type|Description|Required|
@@ -38,6 +39,7 @@ https://api.ucloud.cn/?Action=DescribeUvodnIDC
 &Cpu=2
 &Memory=4
 &Type=1
+&ProductType=chHMcgdE
 ```
 
 # Response Example
