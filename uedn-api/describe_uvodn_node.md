@@ -40,6 +40,7 @@
 |ExpiredTime|int|过期时间|No|
 |ImageName|string|镜像名称|No|
 |NodeIpList|array|外网ip集合|No|
+|FirewallId|string|防火墙Id|No|
 
 # Request Example
 ```
