@@ -1,9 +1,7 @@
 <div class="sidebar_title icon__umem"> 云内存存储 UMem</div>
 
 * [概览](api/umem-api/README)
-
 * [Memcache相关](api/umem-api/memcache_readme)
-
   * [重要说明](api/umem-api/description)
   * [重启单机Memcache-RestartUMemcacheGroup](api/umem-api/reboot_umemcache_group)
   * [显示Memcache-DescribeUMemcacheGroup](api/umem-api/describe_umemcache_group)
@@ -12,9 +10,7 @@
   * [创建单机Memcache-CreateUMemcacheGroup](api/umem-api/create_umemcache_group)
   * [获取空间状态-GetUMemSpaceState](api/umem-api/get_space_state)
   * [删除单机Memcache-DeleteUMemcacheGroup](api/umem-api/delete_umemcache_group)
-
 * [Redis相关](api/umem-api/redis_readme)
-
   * [重要说明](api/umem-api/description)
   * [创建主备redis-CreateURedisGroup](api/umem-api/create_group)
   * [查询URedis慢日志-DescribeURedisSlowlog](api/umem-api/describe_u_redis_slowlog)
