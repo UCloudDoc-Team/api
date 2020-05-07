@@ -8,4 +8,4 @@
 * [删除短信签名-DeleteUSMSSignature](api/usms-api/delete_usms_signature)
 * [申请短信模板-CreateUSMSTemplate](api/usms-api/create_usms_template)
 * [查询短信签名申请状态-QueryUSMSSignature](api/usms-api/query_usms_signature)
-* [申请短信签名-CreateUSMSSignature](api/usms-api/create_usms_signature)
+* [申请短信签名 - CreateUSMSSignature](api/usms-api/create_usms_signature)
