@@ -24,4 +24,5 @@
 * [创建分布式redis备份-CreateUMemBackup](api/umem-api/create_u_mem_backup)
 * [查询分布式redis备份-DescribeUMemBackup](api/umem-api/describe_u_mem_backup)
 * [获取分布式redis备份下载链接-DescribeUMemBackupURL](api/umem-api/describe_u_mem_backup_url)
+* [拉取分布式redis分片信息-DescribeUMemBlockInfo](api/umem-api/describe_u_mem_block_info)
 * [UMem 错误码](api/umem-api/error_code)
