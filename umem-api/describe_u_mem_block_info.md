@@ -12,6 +12,8 @@
 |Offset|int|分页显示的起始偏移, 默认值为0|**Yes**|
 |Limit|int|分页显示的条目数, 默认值为10|**Yes**|
 
+?> 返回参数中，BlockSlotBegin/BlockSlotEnd 现部分机房支持，后续会全部机房支持
+
 # Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
