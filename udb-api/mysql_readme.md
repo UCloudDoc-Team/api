@@ -1,6 +1,5 @@
 # 共用API
 * [列表UDB实例日志备份信息-DescribeUDBLogPackage](api/udb-api/describe_udb_log_package)
-* [获取云数据库支持类型-DescribeUDBType](api/udb-api/describe_udb_type)
 * [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)
 * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
 * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
