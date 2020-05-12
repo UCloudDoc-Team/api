@@ -9,7 +9,6 @@
   * [获取UDB的Binlog备份地址-DescribeUDBBinlogBackupURL](api/udb-api/describe_udb_binlog_backup_url)
   * [获取UDBbinlog列表-DescribeUDBInstanceBinlog](api/udb-api/describe_udb_binlog)
   * [获取备份黑名单-DescribeUDBBackupBlacklist](api/udb-api/describe_udb_backup_blacklist)
-  * [列表UDB实例日志备份信息-DescribeUDBLogPackage](api/udb-api/describe_udb_log_package)
   * [获取最早可回档时间-FetchUDBInstanceEarliestRecoverTime](api/udb-api/fetch_udb_instance_earliest_recover_time)
   * [核查db是否可以使用回档功能-CheckRecoverUDBInstance](api/udb-api/check_recover_udb_instance)
   * [编辑备份黑名单-EditUDBBackupBlacklist](api/udb-api/edit_udb_backup_blacklist)
@@ -31,6 +30,7 @@
   * [创建副本-CreateUDBReplicationInstance](api/udb-api/create_udb_replication_instance)
 
 * 共用API
+  * [列表UDB实例日志备份信息-DescribeUDBLogPackage](api/udb-api/describe_udb_log_package)
   * [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)
   * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
   * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
