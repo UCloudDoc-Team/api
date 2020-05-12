@@ -2,7 +2,6 @@
 
 * [概览](api/udb-api/README)
 * [MySQL相关](api/udb-api/mysql_readme)
-  * [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)
   * [获取UDB的slowlog备份地址-DescribeUDBLogBackupURL](api/udb-api/describe_log_backup_url)
   * [普通UDB切换为高可用-SwitchUDBInstanceToHA](api/udb-api/switch_udb_instance_to_ha)
   * [核查db是否可以升级为高可用-CheckUDBInstanceToHAAllowance](api/udb-api/check_udb_instance_to_ha_allowance)
@@ -32,6 +31,7 @@
   * [创建副本-CreateUDBReplicationInstance](api/udb-api/create_udb_replication_instance)
 
 * 共用API
+  * [获取实例备份状态-DescribeUDBInstanceBackupState](api/udb-api/describe_udb_backup_state)
   * [获取云数据库信息-DescribeUDBInstance](api/udb-api/describe_udb_instance)
   * [获取云数据库价格-DescribeUDBInstancePrice](api/udb-api/describe_udb_instance_price)
   * [UDB 错误码列表](api/udb-api/error_code)
