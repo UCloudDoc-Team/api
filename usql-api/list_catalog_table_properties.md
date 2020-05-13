@@ -20,6 +20,12 @@
 |TableName|string|数据表名称|No|
 |TableProperties|array|数据表属性列表|No|
 
+## TableProperty
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|Value|string|属性值|No|
+|Name|string|属性名|No|
+
 # Request Example
 ```
 https://api.ucloud.cn/?Action=ListCatalogTableProperties
