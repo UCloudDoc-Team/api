@@ -1,11 +1,22 @@
-# 概览
-* [修改短信签名-UpdateUSMSSignature](api/usms-api/update_usms_signature)
-* [发送短信-SendUSMSMessage](api/usms-api/send_usms_message)
-* [修改短信模板-UpdateUSMSTemplate](api/usms-api/update_usms_template)
-* [删除短信模板-DeleteUSMSTemplate](api/usms-api/delete_usms_template)
-* [获取短信发送状态-GetUSMSSendReceipt](api/usms-api/get_usms_send_receipt)
-* [查询短信模板申请状态-QueryUSMSTemplate](api/usms-api/query_usms_template)
-* [删除短信签名-DeleteUSMSSignature](api/usms-api/delete_usms_signature)
-* [申请短信模板-CreateUSMSTemplate](api/usms-api/create_usms_template)
-* [查询短信签名申请状态-QueryUSMSSignature](api/usms-api/query_usms_signature)
-* [申请短信签名-CreateUSMSSignature](api/usms-api/create_usms_signature)
+
+
+
+
+# 短信服务 API 简介
+
+欢迎您选择 短信服务（USMS），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [USMS API 索引](api/usms-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- USMS SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

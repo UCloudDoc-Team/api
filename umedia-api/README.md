@@ -1,21 +1,22 @@
-# 概览
-* [获取封装任务详情-GetFormatTaskDetail](api/umedia-api/get_format_task_detail)
-* [获取截图任务详情-GetSnapTaskDetail](api/umedia-api/get_snap_task_detail)
-* [更新水印模版-UpdateWatermarkPatten](api/umedia-api/update_watermark_patten)
-* [创建截图任务-CreateSnapTask](api/umedia-api/create_snap_task)
-* [获取水印模版列表-GetWaterMarkPattenList](api/umedia-api/get_water_mark_patten_list)
-* [获取截图使用量统计-GetSnapTotalStat](api/umedia-api/get_snap_total_stat)
-* [更新转码模版-UpdateCodecPatten](api/umedia-api/update_codec_patten)
-* [创建水印模版-CreateWatermarkPatten](api/umedia-api/create_watermark_patten)
-* [创建封装任务-CreateFormatTask](api/umedia-api/create_format_task)
-* [获取转码使用量统计-GetCodecTotalStat](api/umedia-api/get_codec_total_stat)
-* [删除水印模版-DeleteWatermarkPatten](api/umedia-api/delete_watermark_patten)
-* [获取封装任务列表-GetFormatTaskList](api/umedia-api/get_format_task_list)
-* [创建转码模版-CreateCodecPatten](api/umedia-api/create_codec_patten)
-* [删除转码模版-DeleteCodecPatten](api/umedia-api/delete_codec_patten)
-* [获取转码任务列表-GetCodecTaskList](api/umedia-api/get_codec_task_list)
-* [获取截图任务列表-GetSnapTaskList](api/umedia-api/get_snap_task_list)
-* [获取转码任务详情-GetCodecTaskDetail](api/umedia-api/get_codec_task_detail)
-* [获取转码模版列表-GetCodecPattenList](api/umedia-api/get_codec_patten_list)
-* [获取转封装使用量统计-GetFormatTotalStat](api/umedia-api/get_format_total_stat)
-* [使用模版创建转码任务-CreateCodecTaskByPatten](api/umedia-api/create_codec_task_by_patten)
+
+
+
+
+# 媒体工厂 API 简介
+
+欢迎您选择 媒体工厂（UMedia），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UMedia API 索引](api/umedia-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UMedia SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

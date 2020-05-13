@@ -1,23 +1,55 @@
-# 获取配置文件内容-ExtractUDBParamGroup
+# 获取配置文件内容 - ExtractUDBParamGroup
+
+## 简介
 
 获取配置文件内容
 
-# Request Parameters
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|**Yes**|
-|GroupId|int|配置id|**Yes**|
-|RegionFlag|bool|是否跨可用区，RegionFlag为true时表示跨可用区配置文件|No|
 
-# Response Elements
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
-|Content|string|配置文件内容|**Yes**|
 
-# Request Example
+
+
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=ExtractUDBParamGroup)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
+## 定义
+
+### 公共参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `ExtractUDBParamGroup`                        | **Yes** |
+| **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
+| **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
+
+### 请求参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
+| **GroupId** | int | 配置id |**Yes**|
+| **RegionFlag** | boolean | 是否跨可用区，RegionFlag为true时表示跨可用区配置文件 |No|
+
+### 响应字段
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
+| **Action** | string | 操作指令名称 |**Yes**|
+| **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **Content** | string | 配置文件内容 |**Yes**|
+
+
+
+
+## 示例
+
+### 请求示例
+    
 ```
 https://api.ucloud.cn/?Action=ExtractUDBParamGroup
 &Region=cn-zj
@@ -26,12 +58,17 @@ https://api.ucloud.cn/?Action=ExtractUDBParamGroup
 &RegionFlag=false
 ```
 
-# Response Example
-```
+### 响应示例
+    
+```json
 {
-    "Content": "MEuQwaaA", 
-    "Action": "ExtractUDBParamGroupResponse", 
-    "RetCode": 0
+  "Action": "ExtractUDBParamGroupResponse",
+  "Content": "MEuQwaaA",
+  "RetCode": 0
 }
 ```
+
+
+
+
 

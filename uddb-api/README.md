@@ -1,13 +1,22 @@
-# 分布式数据库 UDDB
-* [升级UDDB时，获取升级后的价格-DescribeUDDBInstanceUpgradePrice](api/uddb-api/describe_uddb_instance_upgrade_price)
-* [获取分布式数据库UDDB价格-DescribeUDDBInstancePrice](api/uddb-api/describe_uddb_instance_price)
-* [修改分布式数据库中间件名称-ChangeUDDBInstanceName](api/uddb-api/change_uddb_instance_name)
-* [重启UDDB实例-RestartUDDBInstance](api/uddb-api/restart_uddb_instance)
-* [升降级分布式数据库中间件的配置-UpgradeUDDBInstance](api/uddb-api/upgrade_uddb_instance)
-* [删除UDDB实例 -DeleteUDDBInstance](api/uddb-api/delete_uddb_instance)
-* [获取分布式数据库UDDB的详细信息-DescribeUDDBInstance](api/uddb-api/describe_uddb_instance)
-* [创建分布式数据库UDDB-CreateUDDBInstance](api/uddb-api/create_uddb_instance)
-* [启动UDDB实例 -StartUDDBInstance](api/uddb-api/start_uddb_instance)
-* [关闭UDDB实例-StopUDDBInstance](api/uddb-api/stop_uddb_instance)
-* [升降级分布式数据库数据节点的配置-UpgradeUDDBDataNode](api/uddb-api/upgrade_uddb_data_node)
-* [改变分布式数据库数据节点的只读实例个数-ChangeUDDBSlaveCount](api/uddb-api/change_uddb_slave_count)
+
+
+
+
+# 分布式数据库 API 简介
+
+欢迎您选择 分布式数据库（UDDB），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UDDB API 索引](api/uddb-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UDDB SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

@@ -1,37 +1,56 @@
-# 获取Cluster实例-DescribeClusterInstance
+# 获取Cluster实例 - DescribeClusterInstance
+
+## 简介
 
 获取Cluster实例
 
-# Request Parameters
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|Region|string|地域。 参见 [地域和可用区列表](api/summary/regionlist)|**Yes**|
-|Zone|string|可用区。参见 [可用区列表](api/summary/regionlist)|No|
-|ProjectId|string|项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list)|No|
-|ClusterIds.n|string|Cluster实例ID,如果为空获取全部。n=0,1,2...|No|
 
-# Response Elements
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
-|TotalCount|int|Container count|**Yes**|
-|ClusterSet|string|Cluster实例set|No|
 
-## ClusterSet
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|ClusterId|string|集群实例ID|**Yes**|
-|UsedMem|int|已使用内存|No|
-|UsedCPU|int|已使用cpu|No|
-|Memory|int|总内存|No|
-|CPU|string|总cpu|No|
-|ClusterName|string|集群名称|No|
-|NodeCount|int|集群中所包含的主机数|No|
-|CreateTime|int|创建时间, 格式为unix时间戳|No|
-|VPCId|string|VPCId|No|
 
-# Request Example
+
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeClusterInstance)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
+## 定义
+
+### 公共参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeClusterInstance`                        | **Yes** |
+| **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
+| **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
+
+### 请求参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ClusterIds.N** | string | Cluster实例ID,如果为空获取全部。n=0,1,2... |No|
+
+### 响应字段
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
+| **Action** | string | 操作指令名称 |**Yes**|
+| **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **TotalCount** | int | Container count |**Yes**|
+| **ClusterSet** | string | Cluster实例set |No|
+
+
+
+
+## 示例
+
+### 请求示例
+    
 ```
 https://api.ucloud.cn/?Action=DescribeClusterInstance
 &Region=cn-bj2
@@ -40,25 +59,30 @@ https://api.ucloud.cn/?Action=DescribeClusterInstance
 &ClusterIds.0=cluster-xxx
 ```
 
-# Response Example
-```
+### 响应示例
+    
+```json
 {
-    "Action": "DescribeClusterInstanceResponse", 
-    "TotalCount": 1, 
-    "ClusterSet": [
-        {
-            "VPCId": "uvnet-xxx", 
-            "UsedCPU": "0.0", 
-            "ClusterName": "cluster2", 
-            "ClusterId": "cluster-xxx", 
-            "UsedMem": 695, 
-            "CPU": 8, 
-            "Memory": 16384, 
-            "NodeCount": 2, 
-            "CreateTime": 1529984017
-        }
-    ], 
-    "RetCode": 0
+  "Action": "DescribeClusterInstanceResponse",
+  "ClusterSet": [
+    {
+      "CPU": 8,
+      "ClusterId": "cluster-xxx",
+      "ClusterName": "cluster2",
+      "CreateTime": 1529984017,
+      "Memory": 16384,
+      "NodeCount": 2,
+      "UsedCPU": "0.0",
+      "UsedMem": 695,
+      "VPCId": "uvnet-xxx"
+    }
+  ],
+  "RetCode": 0,
+  "TotalCount": 1
 }
 ```
+
+
+
+
 

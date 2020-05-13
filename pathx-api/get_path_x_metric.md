@@ -1,40 +1,74 @@
-# 获取全球加速监控信息-GetPathXMetric
+# 获取全球加速监控信息 - GetPathXMetric
+
+## 简介
 
 获取全球加速监控信息
 
-# Request Parameters
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|ProjectId|string|项目ID。请参考[GetProjectList接口](api/summary/get_project_list)|**Yes**|
-|ResourceId|string|ResourceId，如upath ID  和 uga ID |**Yes**|
-|BeginTime|int|查询起始时间，10位长度时间戳|**Yes**|
-|EndTime|int|查询结束时间，10位长度时间戳|**Yes**|
-|MetricName.n|string|查询监控的指标项。目前仅允许以下四项：NetworkOut:出向带宽，NetworkIn:入向带宽，NetworkOutUsage:出向带宽使用率，NetworkInUsage:入向带宽使用率|**Yes**|
-|ResourceType|string|upath:加速线路,uga:加速实例|**Yes**|
-|LineId|string|具体线路id，调用DescribePathXLineConfig接口获取线路列表|**Yes**|
 
-# Response Elements
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|RetCode|int|返回码|**Yes**|
-|Action|string|操作名称|**Yes**|
-|DataSet|array|监控数据结果集|No|
 
-## MetricPeriod
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|NetworkOut|array|出向带宽|No|
-|NetworkIn|array|入向带宽|No|
-|NetworkOutUsage|array|出向带宽使用率|No|
-|NetworkInUsage|array|入向带宽使用率|No|
 
-## MatricPoint
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|Timestamp|int|时间戳 |No|
-|Value|int|监控点数值|No|
 
-# Request Example
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetPathXMetric)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
+## 定义
+
+### 公共参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetPathXMetric`                        | **Yes** |
+| **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
+| **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
+
+### 请求参数
+
+| 参数名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ProjectId** | string | 项目ID。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ResourceId** | string | ResourceId，如upath ID  和 uga ID  |**Yes**|
+| **BeginTime** | int | 查询起始时间，10位长度时间戳 |**Yes**|
+| **EndTime** | int | 查询结束时间，10位长度时间戳 |**Yes**|
+| **MetricName.N** | string | 查询监控的指标项。目前仅允许以下四项：NetworkOut:出向带宽，NetworkIn:入向带宽，NetworkOutUsage:出向带宽使用率，NetworkInUsage:入向带宽使用率 |**Yes**|
+| **ResourceType** | string | upath:加速线路,uga:加速实例 |**Yes**|
+| **LineId** | string | 具体线路id，调用DescribePathXLineConfig接口获取线路列表 |**Yes**|
+
+### 响应字段
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
+| **Action** | string | 操作指令名称 |**Yes**|
+| **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **DataSet** | array[[*MetricPeriod*](#MetricPeriod)] | 监控数据结果集 |No|
+
+#### 数据模型
+
+
+#### MetricPeriod
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **NetworkOut** | array[[*MatricPoint*](#MatricPoint)] | 出向带宽 |No|
+| **NetworkIn** | array[[*MatricPoint*](#MatricPoint)] | 入向带宽 |No|
+| **NetworkOutUsage** | array[[*MatricPoint*](#MatricPoint)] | 出向带宽使用率 |No|
+| **NetworkInUsage** | array[[*MatricPoint*](#MatricPoint)] | 入向带宽使用率 |No|
+
+#### MatricPoint
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Timestamp** | int | 时间戳  |No|
+| **Value** | int | 监控点数值 |No|
+
+## 示例
+
+### 请求示例
+    
 ```
 https://api.ucloud.cn/?Action=GetPathXMetric
 &ProjectId=org-ejcxxx
@@ -47,488 +81,57 @@ https://api.ucloud.cn/?Action=GetPathXMetric
 &MetricName.1=NetworkInUsage
 ```
 
-# Response Example
-```
+### 响应示例
+    
+```json
 {
-    "Action": "GetPathXMetricResponse", 
-    "Message": "", 
-    "RetCode": 0, 
-    "DataSet": {
-        "InputRetransmitRate": null, 
-        "NetworkOutUsage": [
-            {
-                "Timestamp": 1568797260, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568797320, 
-                "Value": 23
-            }, 
-            {
-                "Timestamp": 1568797380, 
-                "Value": 21
-            }, 
-            {
-                "Timestamp": 1568797440, 
-                "Value": 20
-            }, 
-            {
-                "Timestamp": 1568797560, 
-                "Value": 21
-            }, 
-            {
-                "Timestamp": 1568797620, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568797680, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568797740, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568797800, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568797860, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568797920, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568797980, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798040, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798100, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568798160, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568798220, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568798280, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568798340, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798400, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568798460, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568798520, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568798580, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568798640, 
-                "Value": 16
-            }, 
-            {
-                "Timestamp": 1568798700, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798760, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798820, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798880, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798940, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799000, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799060, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799120, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799180, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799240, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799300, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799360, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568799420, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568799480, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568799540, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799600, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799660, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568799720, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799780, 
-                "Value": 15
-            }, 
-            {
-                "Timestamp": 1568799840, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799900, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568799960, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568800020, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568800140, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568800200, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800260, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568800320, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800380, 
-                "Value": 7
-            }, 
-            {
-                "Timestamp": 1568800440, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800500, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568800560, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800620, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800680, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800740, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568800800, 
-                "Value": 11
-            }
-        ], 
-        "NetworkIn": null, 
-        "TCPConNum": null, 
-        "NetworkOut": null, 
-        "OutputRetransmitRate": null, 
-        "TCPDelay": null, 
-        "NetworkInUsage": [
-            {
-                "Timestamp": 1568797260, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568797320, 
-                "Value": 18
-            }, 
-            {
-                "Timestamp": 1568797380, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568797440, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568797560, 
-                "Value": 17
-            }, 
-            {
-                "Timestamp": 1568797620, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568797680, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568797740, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568797800, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568797860, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568797920, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568797980, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798040, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798100, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798160, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798220, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798280, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798340, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798400, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568798460, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798520, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798580, 
-                "Value": 14
-            }, 
-            {
-                "Timestamp": 1568798640, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798700, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568798760, 
-                "Value": 13
-            }, 
-            {
-                "Timestamp": 1568798820, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568798880, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568798940, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799000, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799060, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568799120, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568799180, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799240, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799300, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799360, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799420, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799480, 
-                "Value": 12
-            }, 
-            {
-                "Timestamp": 1568799540, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799600, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799660, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799720, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568799780, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799840, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799900, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568799960, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568800020, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800140, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800200, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800260, 
-                "Value": 10
-            }, 
-            {
-                "Timestamp": 1568800320, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800380, 
-                "Value": 8
-            }, 
-            {
-                "Timestamp": 1568800440, 
-                "Value": 8
-            }, 
-            {
-                "Timestamp": 1568800500, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800560, 
-                "Value": 8
-            }, 
-            {
-                "Timestamp": 1568800620, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800680, 
-                "Value": 9
-            }, 
-            {
-                "Timestamp": 1568800740, 
-                "Value": 11
-            }, 
-            {
-                "Timestamp": 1568800800, 
-                "Value": 9
-            }
-        ]
-    }
+  "Action": "GetPathXMetricResponse",
+  "DataSet": {
+    "NetworkIn": null,
+    "NetworkInUsage": [
+      {
+        "Timestamp": 1568797260,
+        "Value": 12
+      },
+      {
+        "Timestamp": 1568797320,
+        "Value": 18
+      },
+      {
+        "Timestamp": 1568797380,
+        "Value": 17
+      },
+      {
+        "Timestamp": 1568797440,
+        "Value": 17
+      }
+    ],
+    "NetworkOut": null,
+    "NetworkOutUsage": [
+      {
+        "Timestamp": 1568797260,
+        "Value": 14
+      },
+      {
+        "Timestamp": 1568797320,
+        "Value": 23
+      },
+      {
+        "Timestamp": 1568797380,
+        "Value": 21
+      },
+      {
+        "Timestamp": 1568797440,
+        "Value": 20
+      }
+    ]
+  },
+  "Message": "",
+  "RetCode": 0
 }
 ```
+
+
+
+
 

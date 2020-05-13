@@ -1,33 +1,22 @@
-# 概览
-* [获取UEDN可用机房列表-DescribeUEdnAvailableIDC](api/uedn-api/describe_u_edn_available_idc)
-* [导入自定义镜像-ImportUEdnCustomImage](api/uedn-api/import_u_edn_custom_image)
-* [获取vnc登录信息-GetUEdnVncInfo·](api/uedn-api/get_u_edn_vnc_info)
-* [获取节点调整差价-GetUEdnUpgradePrice](api/uedn-api/get_u_edn_upgrade_price)
-* [修改镜像名称-ModifyUEdnImageName](api/uedn-api/modify_u_edn_image_name)
-* [删除UEDN客户自定义镜像-DeleteUEdnCustomImage](api/uedn-api/delete_u_edn_custom_image)
-* [创建子网-CreateUEdnSubnet](api/uedn-api/create_u_edn_subnet)
-* [获取子网列表-DescribeUEdnSubnet](api/uedn-api/describe_u_edn_subnet)
-* [更新子网信息-UpdateUEdnSubnet](api/uedn-api/update_u_edn_subnet)
-* [删除子网-DeleteUEdnSubnet](api/uedn-api/delete_u_edn_subnet)
-* [获取IDC机房列表-DescribeUvodnIDC](api/uedn-api/describe_uvodn_idc)
-* [创建节点v2.0-CreateUvodnNode](api/uedn-api/create_uvodn_node)
-* [获取节点列表2.0-DescribeUvodnNode](api/uedn-api/describe_uvodn_node)
-* [获取节点监控数据-GetUvodnNodeData](api/uedn-api/get_uvodn_node_data)
-* [获取镜像列表-GetUvodnImage](api/uedn-api/get_uvodn_image)
-* [停止UEDN节点-StopUvodnNode](api/uedn-api/stop_uvodn_node)
-* [启动edn节点-StartUvodnNode](api/uedn-api/start_uvodn_node)
-* [重启节点v2.0-RestartUvodnNode](api/uedn-api/restart_uvodn_node)
-* [节点重装系统-ReinstallUvodnNode](api/uedn-api/reinstall_uvodn_node)
-* [修改镜像名称-ModifyUEdnImageName](api/uedn-api/modify_u_edn_image_name)
-* [节点断电-PoweroffUvodnNode](api/uedn-api/poweroff_uvodn_node)
-* [删除node节点v2.0-DeleteUvodnNode](api/uedn-api/delete_uvodn_node)
-* [绑定防火墙-BindUEdnFirewall](api/uedn-api/bind_u_edn_firewall)
-* [创建外网防火墙-CreateUEdnFirewall](api/uedn-api/create_u_edn_firewall)
-* [删除防火墙-DeleteUEdnFirewall](api/uedn-api/delete_u_edn_firewall)
-* [获取防火墙信息-DescribeUEdnFirewall](api/uedn-api/describe_u_edn_firewall)
-* [防火墙绑定的资源列表-DescribeUEdnFirewallResource](api/uedn-api/describe_u_edn_firewall_resource)
-* [解绑防火墙-UnBindUEdnFirewall](api/uedn-api/un_bind_u_edn_firewall)
-* [更新防火墙信息-UpdateUEdnFirewall](api/uedn-api/update_u_edn_firewall)
-* [更新防火墙属性-UpdateUEdnFirewallAttribute](api/uedn-api/update_u_edn_firewall_attribute)
-* [获取节点价格-GetUvodnNodePrice](api/uedn-api/get_uvodn_node_price)
+
+
+
+
+# 边缘分发节点 API 简介
+
+欢迎您选择 边缘分发节点（UEDN），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UEDN API 索引](api/uedn-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UEDN SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 

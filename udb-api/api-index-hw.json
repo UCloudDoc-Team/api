@@ -1,0 +1,120 @@
+{
+  "product": "UDB",
+  "index": [
+    {
+      "section": "MySQL",
+      "navigated": true,
+      "apis": [
+        {
+          "api": "DescribeUDBLogBackupURL"
+        },
+        {
+          "api": "SwitchUDBInstanceToHA"
+        },
+        {
+          "api": "CheckUDBInstanceToHAAllowance"
+        },
+        {
+          "api": "PromoteUDBSlave"
+        },
+        {
+          "api": "DescribeUDBBinlogBackupURL"
+        },
+        {
+          "api": "DescribeUDBInstanceBinlog"
+        },
+        {
+          "api": "DescribeUDBBackupBlacklist"
+        },
+        {
+          "api": "FetchUDBInstanceEarliestRecoverTime"
+        },
+        {
+          "api": "CheckRecoverUDBInstance"
+        },
+        {
+          "api": "EditUDBBackupBlacklist"
+        },
+        {
+          "api": "SwitchUDBHAToSentinel"
+        },
+        {
+          "api": "BackupUDBInstanceSlowLog"
+        },
+        {
+          "api": "BackupUDBInstanceBinlog"
+        },
+        {
+          "api": "CreateUDBInstanceByRecovery"
+        },
+        {
+          "api": "UpdateUDBInstanceSlaveBackupSwitch"
+        },
+        {
+          "api": "PromoteUDBInstanceToHA"
+        },
+        {
+          "api": "CreateUDBSlave"
+        },
+        {
+          "api": "EnableUDBRWSplitting"
+        },
+        {
+          "api": "DisableUDBRWSplitting"
+        },
+        {
+          "api": "RestartRWSplitting"
+        },
+        {
+          "api": "SetUDBRWSplitting"
+        }
+      ]
+    },
+    {
+      "section": "MongoDB",
+      "navigated": true,
+      "apis": [
+        {"api": "CreateUDBRouteInstance"},
+        {"api": "CreateMongoDBReplicaSet"},
+        {"api": "CreateUDBReplicationInstance"}
+      ]
+    },
+    {
+      "section": "公共 API",
+      "navigated": false,
+      "apis": [
+        {"api": "DescribeUDBInstance"},
+        {"api": "DescribeUDBInstancePrice"},
+        {"api": "ClearUDBLog"},
+        {"api": "RestartUDBInstance"},
+        {"api": "ResizeUDBInstance"},
+        {"api": "ChangeUDBParamGroup"},
+        {"api": "DescribeUDBInstanceLog"},
+        {"api": "DescribeUDBLogPackage"},
+        {"api": "DescribeUDBInstanceState"},
+        {"api": "DescribeUDBInstanceBackupState"},
+        {"api": "ModifyUDBInstanceName"},
+        {"api": "StartUDBInstance"},
+        {"api": "ModifyUDBInstancePassword"},
+        {"api": "ExtractUDBParamGroup"},
+        {"api": "DescribeUDBType"},
+        {"api": "StopUDBInstance"},
+        {"api": "DeleteUDBInstance"},
+        {"api": "BackupUDBInstance"},
+        {"api": "DescribeUDBInstanceBinlogBackupState"},
+        {"api": "DeleteUDBParamGroup"},
+        {"api": "DescribeUDBInstanceBackupURL"},
+        {"api": "CreateUDBInstance"},
+        {"api": "UpdateUDBInstanceBackupStrategy"},
+        {"api": "BackupUDBInstanceErrorLog"},
+        {"api": "UploadUDBParamGroup"},
+        {"api": "DeleteUDBLogPackage"},
+        {"api": "CreateUDBParamGroup"},
+        {"api": "DescribeUDBParamGroup"},
+        {"api": "DescribeUDBBackup"},
+        {"api": "UpdateUDBParamGroup"},
+        {"api": "DescribeUDBInstanceUpgradePrice"}
+      ]
+    }
+  ]
+}

@@ -1,19 +1,22 @@
-# 概览
-* [省份和运营商列表](api/ucdn-api/province)
-* [获取域名详细状态码监控-GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)
-* [获取回源带宽数据（按时间分类）-GetUcdnPassBandwidth](api/ucdn-api/get_ucdn_pass_bandwidth)
-* [获取域名预取开启状态-GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)
-* [切换账号计费方式-SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)
-* [获取域名带宽数据-GetNewUcdnDomainBandwidth](api/ucdn-api/get_new_ucdn_domain_bandwidth)
-* [刷新缓存-RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)
-* [获取预取任务状态-DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)
-* [获取流量信息-GetUcdnTraffic](api/ucdn-api/get_ucdn_traffic)
-* [获取域名命中率-GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)
-* [提交预取任务-PrefetchNewUcdnDomainCache](api/ucdn-api/prefetch_new_ucdn_domain_cache)
-* [批量获取加速域名配置 - BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)
-* [获取域名请求数-GetUcdnDomainRequestNumV2](api/ucdn-api/get_ucdn_domain_request_num_v2)
-* [获取加速域名流量使用信息-GetUcdnDomainTraffic](api/ucdn-api/get_ucdn_domain_traffic)
-* [获取域名状态码监控-GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)
-* [获取加速域名原始日志-GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)
-* [获取域名刷新任务状态-DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
-* [获取域名请求数-GetNewUcdnDomainRequestNum（已下线）](api/ucdn-api/get_new_ucdn_domain_request_num)
+
+
+
+
+# 云分发 API 简介
+
+欢迎您选择 云分发（UCDN），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UCDN API 索引](api/ucdn-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UCDN SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
