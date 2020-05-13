@@ -1,41 +1,22 @@
-# 概览
-
-## Memcache相关
-
-* [重要说明](api/umem-api/description)
-* [重启单机Memcache-RestartUMemcacheGroup](api/umem-api/reboot_umemcache_group)
-* [显示Memcache-DescribeUMemcacheGroup](api/umem-api/describe_umemcache_group)
-* [获取umemcache升级价格-DescribeUMemcacheUpgradePrice](api/umem-api/describe_umemcache_upgrade_price)
-* [获取umemcache组价格-DescribeUMemcachePrice](api/umem-api/describe_umemcache_price)
-* [创建单机Memcache-CreateUMemcacheGroup](api/umem-api/create_umemcache_group)
-* [删除单机Memcache-DeleteUMemcacheGroup](api/umem-api/delete_umemcache_group)
 
 
-## Redis相关
 
-* [重要说明](api/umem-api/description)
-* [创建主备redis-CreateURedisGroup](api/umem-api/create_group)
-* [查询URedis慢日志-DescribeURedisSlowlog](api/umem-api/describe_u_redis_slowlog)
-* [调整容量-ResizeURedisGroup](api/umem-api/resize_group)
-* [取uredis价格信息-DescribeURedisPrice](api/umem-api/describe_u_redis_price)
-* [获取主备Redis备份下载链接-DescribeURedisBackupURL](api/umem-api/describe_backup_url)
-* [获取uredis升级价格信息-DescribeURedisUpgradePrice](api/umem-api/describe_u_redis_upgrade_price)
-* [查询主备Redis所有配置文件-DescribeURedisConfig](api/umem-api/describe_u_redis_config)
-* [查询主备redis备份-DescribeURedisBackup](api/umem-api/describe_backup)
-* [查询主备Redis-DescribeURedisGroup](api/umem-api/describe_group)
-* [修改名称-ModifyURedisGroupName](api/umem-api/modify_group_name)
-* [删除主备redis-DeleteURedisGroup](api/umem-api/delete_group)
-* [修改主备密码-ModifyURedisGroupPassword](api/umem-api/modify_u_redis_group_password)
-* [创建内存空间-CreateUMemSpace](api/umem-api/create_space)
-* [调整容量-ResizeUMemSpace](api/umem-api/resize_space)
-* [获取升级价格-DescribeUMemUpgradePrice](api/umem-api/describe_upgrade_price)
-* [获取价格-DescribeUMemPrice](api/umem-api/describe_price)
-* [获取空间状态-GetUMemSpaceState](api/umem-api/get_space_state)
-* [修改名称-ModifyUMemSpaceName](api/umem-api/modify_space_name)
-* [删除空间-DeleteUMemSpace](api/umem-api/delete_space)
-* [查询空间-DescribeUMemSpace](api/umem-api/describe_space)
-* [创建分布式redis备份-CreateUMemBackup](api/umem-api/create_u_mem_backup)
-* [查询分布式redis备份-DescribeUMemBackup](api/umem-api/describe_u_mem_backup)
-* [获取分布式redis备份下载链接-DescribeUMemBackupURL](api/umem-api/describe_u_mem_backup_url)
-* [拉取分布式redis分片信息-DescribeUMemBlockInfo](api/umem-api/describe_u_mem_block_info)
-* [UMem 错误码](api/umem-api/error_code)
+
+# 云内存存储 API 简介
+
+欢迎您选择 云内存存储（UMem），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UMem API 索引](api/umem-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UMem SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

@@ -1,13 +1,22 @@
-# 概览
-* [更改物理机信息-ModifyPHostInfo](api/uphost-api/modifyphostinfo)
-* [断电物理机-PoweroffPHost](api/uphost-api/poweroffphost)
-* [重启物理机-RebootPHost](api/uphost-api/rebootphost)
-* [获取物理机价格-GetPHostPrice](api/uphost-api/getphostprice)
-* [获取物理机信息 - DescribePHost](api/uphost-api/describephost)
-* [创建物理机-CreatePHost](api/uphost-api/create_uphost)
-* [删除物理机-TerminatePHost](api/uphost-api/terminatephost)
-* [获取物理机业务组-DescribePHostTags](api/uphost-api/describephosttags)
-* [重装物理机-ReinstallPHost](api/uphost-api/reinstallphost)
-* [启动物理机-StartPHost](api/uphost-api/startphost)
-* [获取物理机镜像-DescribePHostImage](api/uphost-api/describephostimage)
-* [获取物理云机型信息-DescribePHostMachineType](api/uphost-api/describe_p_host_machine_type)
+
+
+
+
+# 物理云主机 API 简介
+
+欢迎您选择 物理云主机（UPHost），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UPHost API 索引](api/uphost-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UPHost SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

@@ -1,21 +1,22 @@
-# 概览
-* [创建全球加速配置项-CreateUGAInstance](api/pathx-api/create_uga_instance)
-* [删除全球加速服务加速配置-DeleteUGAInstance](api/pathx-api/delete_uga_instance)
-* [绑定PathX SSL证书-BindPathXSSL](api/pathx-api/bind_path_xssl)
-* [创建加速实例转发器-CreateUGAForwarder](api/pathx-api/create_uga_forwarder)
-* [删除PathX SSL证书-DeletePathXSSL](api/pathx-api/delete_path_xssl)
-* [修改UPath监控告警项-ModifyUPathTemplate](api/pathx-api/modify_u_path_template)
-* [获取SSL证书信息-DescribePathXSSL](api/pathx-api/describe_path_xssl)
-* [获取加速线路信息-DescribeUPath](api/pathx-api/describe_u_path)
-* [获取全球加速服务加速配置信息-DescribeUGAInstance](api/pathx-api/describe_uga_instance)
-* [查询UPath的监控模板-DescribeUPathTemplate](api/pathx-api/describe_u_path_template)
-* [修改加速线路带宽-ModifyUPathBandwidth](api/pathx-api/modify_u_path_bandwidth)
-* [创建UPath-CreateUPath](api/pathx-api/create_u_path)
-* [UGA与UPath解绑-UGAUnBindUPath](api/pathx-api/uga_un_bind_u_path)
-* [UGA绑定UPath-UGABindUPath](api/pathx-api/uga_bind_u_path)
-* [创建证书-CreatePathXSSL](api/pathx-api/create_path_xssl)
-* [获取全球加速线路信息-DescribePathXLineConfig](api/pathx-api/describe_path_x_line_config)
-* [删除UPath-DeleteUPath](api/pathx-api/delete_u_path)
-* [删除加速实例转发器-DeleteUGAForwarder](api/pathx-api/delete_uga_forwarder)
-* [获取全球加速监控信息-GetPathXMetric](api/pathx-api/get_path_x_metric)
-* [解绑PathX SSL 证书-UnBindPathXSSL](api/pathx-api/un_bind_path_xssl)
+
+
+
+
+# 全球动态加速 API 简介
+
+欢迎您选择 全球动态加速（PathX），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [PathX API 索引](api/pathx-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- PathX SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+

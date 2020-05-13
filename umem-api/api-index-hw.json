@@ -1,0 +1,46 @@
+{
+  "product": "UMem",
+  "index": [
+    {
+      "section": "Memcached",
+      "navigated": true,
+      "apis": [
+        {"api": "RestartUMemcacheGroup"},
+        {"api": "DescribeUMemcacheGroup"},
+        {"api": "DescribeUMemcacheUpgradePrice"},
+        {"api": "DescribeUMemcachePrice"},
+        {"api": "CreateUMemcacheGroup"},
+        {"api": "GetUMemSpaceState"},
+        {"api": "DeleteUMemcacheGroup"}
+      ]
+    },
+    {
+      "section": "Redis",
+      "navigated": true,
+      "apis": [
+        {"api": "CreateURedisGroup"},
+        {"api": "DescribeURedisSlowlog"},
+        {"api": "ResizeURedisGroup"},
+        {"api": "DescribeURedisPrice"},
+        {"api": "ModifyUMemSpaceName"},
+        {"api": "DescribeURedisBackupURL"},
+        {"api": "DescribeURedisUpgradePrice"},
+        {"api": "DescribeURedisConfig"},
+        {"api": "ResizeUMemSpace"},
+        {"api": "DescribeUMemPrice"},
+        {"api": "DescribeUMemUpgradePrice"},
+        {"api": "DeleteUMemSpace"},
+        {"api": "DescribeURedisBackup"},
+        {"api": "DescribeUMemSpace"},
+        {"api": "DescribeURedisGroup"},
+        {"api": "ModifyURedisGroupName"},
+        {"api": "DeleteURedisGroup"},
+        {"api": "CreateUMemSpace"},
+        {"api": "ModifyURedisGroupPassword"},
+        {"api": "CreateUMemBackup"},
+        {"api": "DescribeUMemBackup"},
+        {"api": "DescribeUMemBackupURL"}
+      ]
+    }
+  ]
+}

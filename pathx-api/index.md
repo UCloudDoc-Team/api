@@ -1,0 +1,31 @@
+# API 索引
+
+
+
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[BindPathXSSL](api/pathx-api/bind_path_xssl)|绑定PathX SSL证书|
+|[CreatePathXSSL](api/pathx-api/create_path_xssl)|创建证书|
+|[CreateUGAForwarder](api/pathx-api/create_uga_forwarder)|创建加速实例转发器|
+|[CreateUGAInstance](api/pathx-api/create_uga_instance)|创建全球加速配置项|
+|[CreateUPath](api/pathx-api/create_upath)|创建UPath|
+|[DeletePathXSSL](api/pathx-api/delete_path_xssl)|删除PathX SSL证书|
+|[DeleteUGAForwarder](api/pathx-api/delete_uga_forwarder)|删除加速实例转发器|
+|[DeleteUGAInstance](api/pathx-api/delete_uga_instance)|删除全球加速服务加速配置|
+|[DeleteUPath](api/pathx-api/delete_upath)|删除UPath|
+|[DescribePathXLineConfig](api/pathx-api/describe_path_x_line_config)|获取全球加速线路信息|
+|[DescribePathXSSL](api/pathx-api/describe_path_xssl)|获取SSL证书信息|
+|[DescribeUGAInstance](api/pathx-api/describe_uga_instance)|获取全球加速服务加速配置信息|
+|[DescribeUPath](api/pathx-api/describe_upath)|获取加速线路信息|
+|[DescribeUPathTemplate](api/pathx-api/describe_upath_template)|查询UPath的监控模板|
+|[GetPathXMetric](api/pathx-api/get_path_x_metric)|获取全球加速监控信息|
+|[ModifyUPathBandwidth](api/pathx-api/modify_upath_bandwidth)|修改加速线路带宽|
+|[ModifyUPathTemplate](api/pathx-api/modify_upath_template)|修改UPath监控告警项|
+|[UGABindUPath](api/pathx-api/uga_bind_upath)|UGA绑定UPath|
+|[UGAUnBindUPath](api/pathx-api/uga_un_bind_upath)|UGA与UPath解绑|
+|[UnBindPathXSSL](api/pathx-api/un_bind_path_xssl)|解绑PathX SSL 证书|
+
+
+

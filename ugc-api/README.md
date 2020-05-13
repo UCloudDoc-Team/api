@@ -1,12 +1,22 @@
-# 概览
-* [获取授权Token-GetAccessToken](api/ugc-api/get_access_token)
-* [获取异步任务结果-GetTaskResult](api/ugc-api/get_task_result)
-* [删除镜像-DeleteImage](api/ugc-api/delete_image)
-* [获取所有的镜像名称-GetAllImages](api/ugc-api/get_all_images)
-* [查询任务列表-GetTaskList](api/ugc-api/get_task_list)
-* [创建镜像仓库-CreateDockerImageBucket](api/ugc-api/create_docker_image_bucket)
-* [获取可用的镜像仓库列表-GetImageBucketList](api/ugc-api/get_image_bucket_list)
-* [获取可用的镜像列表-GetDockerImageList](api/ugc-api/get_docker_image_list)
-* [提交任务-SubmitTask](api/ugc-api/submit_task)
-* [查看任务详情-GetTaskDetail](api/ugc-api/get_task_detail)
+
+
+
+
+# 通用计算 API 简介
+
+欢迎您选择 通用计算（UGC），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+
+## 使用限制
+
+如果您的资源用量超过了配额限制，可以联系客户经理，或提交工单申请。
+
+## 阅读指南
+
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+
+接下来浏览 [UGC API 索引](api/ugc-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+
+- UGC SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 
