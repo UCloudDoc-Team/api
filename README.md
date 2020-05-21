@@ -74,7 +74,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |:---|:---|
 |媒体工厂 UMedia|[文档](/api/umedia-api/)|
 |云直播 ULive|[文档](/api/ulive-api/)|
-|实时音视频 URtc|[文档](/api/urtc-api/)|
+|实时音视频 URTC|[文档](/api/urtc-api/)|
 
 ### 企业应用
 | 产品 | 相关链接 |

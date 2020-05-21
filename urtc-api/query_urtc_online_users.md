@@ -51,7 +51,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **RoomId** | string | 房间id |**Yes**|
-| **Num** | int | 在线人数 |**Yes**|
+| **Num** | int | 在线人数（后续请用CurrentAmount） |**Yes**|
 | **CurrentAmount** | int | 当前用户数量 |**Yes**|
 | **PeekAmount** | int | 峰值用户数量 |**Yes**|
 | **AccumulationAmount** | int | 累计用户数量 |**Yes**|

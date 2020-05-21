@@ -1,8 +1,8 @@
-# 查用用户通话时长清单 - QueryURtcCallDetail
+# 查询用户通话时长清单 - QueryURtcCallDetail
 
 ## 简介
 
-查用用户通话时长清单
+查询用户通话时长清单
 
 
 

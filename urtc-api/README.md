@@ -4,7 +4,7 @@
 
 # 实时音视频 API 简介
 
-欢迎您选择 实时音视频（URtc），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+欢迎您选择 实时音视频（URTC），API 适合通过编写程序，自动化管理和编排云上资源的场景。
 
 ## 使用限制
 
@@ -14,7 +14,7 @@
 
 ?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
 
-接下来浏览 [URtc API 索引](api/urtc-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
+接下来浏览 [URTC API 索引](api/urtc-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
 
