@@ -8,12 +8,14 @@
 
 !> note<br />在更新防火墙规则时，新的规则会覆盖掉原有规则。所以若需要更改或加入新的规则，需要将原所有规则与新规则一起提交。
 
+
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=UpdateFirewall)
 - [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
 
 ## 定义
 
