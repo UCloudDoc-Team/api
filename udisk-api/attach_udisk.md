@@ -45,6 +45,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **UHostId** | string | 挂载的UHost实例ID |No|
 | **UDiskId** | string | 挂载的UDisk实例ID |No|
+| **DeviceName** | string | 挂载的设备名称 |No|
 
 
 
@@ -67,6 +68,7 @@ http://api.ucloud.cn/?Action=AttachUDisk
 ```json
 {
   "Action": "AttachUDiskResponse",
+  "DeviceName": "VidxyHWm",
   "RetCode": 0,
   "UDiskId": "bs-xxx",
   "UHostId": "uhost-xxx"
