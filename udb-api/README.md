@@ -19,7 +19,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - UDB SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
 - [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 
 
