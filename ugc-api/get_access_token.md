@@ -8,12 +8,13 @@
 
 !> 关于AccessToken的说明： AccessToken的有效期为ExpireIn来传达，默认为7200秒，为了保证调用安全，建议不要设置过长的有效期。 用户需要根据有效时间提前去刷新AccessToken。刷新后及旧Token过期前新老AccessToken都可用，保证业务的平滑过渡。
 
+
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetAccessToken)
 - [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
 
 ## 定义
 

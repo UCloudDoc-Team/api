@@ -16,7 +16,9 @@
 
 接下来浏览 [UArchive API 索引](api/uarchive-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
 
-- UArchive SDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail)
 - [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
 

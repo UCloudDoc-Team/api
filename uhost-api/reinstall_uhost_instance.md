@@ -8,12 +8,14 @@
 
 !> 1.请确认在重新安装之前，该实例已被关闭； 2.请确认该实例未挂载UDisk； 3.将原系统重装为不同类型的系统时(Linux-&gt;Windows)，不可选择保留数据盘； 4.重装不同版本的系统时(CentOS6-&gt;CentOS7)，若选择保留数据盘，请注意数据盘的文件系统格式； 5.若主机CPU低于2核，不可重装为Windows系统。
 
+
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK（[Python](https://github.com/ucloud/ucloud-sdk-python3) / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java)）
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=ReinstallUHostInstance)
 - [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
+
 
 ## 定义
 
