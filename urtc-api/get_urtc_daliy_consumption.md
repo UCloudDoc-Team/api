@@ -2,7 +2,7 @@
 
 ## 简介
 
-查询消费时长日详情，(根据起始日期和结束日期查询appid的日消费详情，详情包括音频，标清，高清，蓝光，注解默认传入的时间戳参数，后端处理截取到日，查询间隔最大为180天）
+查询消费时长日详情，(根据起始日期和结束日期查询appid的日消费详情，详情包括音频，标清，高清，超高清，注解默认传入的时间戳参数，后端处理截取到日，查询间隔最大为180天）
 
 
 
@@ -37,7 +37,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Msg** | string | RetCode为0时返回succed,不为0返回具体的错误消息提示内容 |**Yes**|
-| **Data** | [*AppTConsumption*](#AppTConsumption) | 类型参见AppTConsumption，对应的appid每日消费时长详情，包含音频消费时长数组，标清，高清蓝光消费时长数组，数组中具体值的内容参见DailyConsumptionData |**Yes**|
+| **Data** | [*AppTConsumption*](#AppTConsumption) | 类型参见AppTConsumption，对应的appid每日消费时长详情，包含音频消费时长数组，标清，高清，超高清的消费时长数组，数组中具体值的内容参见DailyConsumptionData |**Yes**|
 
 #### 数据模型
 
