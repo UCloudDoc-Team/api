@@ -14,7 +14,7 @@
 
 ?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
 
-接下来浏览 [UBill API 索引](api/ubill-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用：
+接下来浏览 [UBill API 索引](api/ubill-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
 您可以选择以下方式中的任意一种，发起 API 请求：
