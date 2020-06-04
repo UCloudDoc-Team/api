@@ -41,6 +41,7 @@
 | **IsolationGroup** | string | 硬件隔离组id。通过硬件隔离组筛选主机。 |No|
 | **VPCId** | string | vpc id。通过VPC筛选主机。北京一地域无效。 |No|
 | **SubnetId** | string | 子网id。通过子网筛选主机。北京一地域无效。 |No|
+| **UDiskIdForAttachment** | string | 要挂载的云盘id，过滤返回能被UDiskId挂载的云主机。目前主要针对rssd云盘使用 |No|
 
 ### 响应字段
 
@@ -64,6 +65,7 @@
 | **UHostId** | string | UHost实例ID |No|
 | **UHostType** | string | 【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
+| **CpuPlatform** | string | 云主机CPU平台。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
 | **StorageType** | string | 【建议不再使用】主机磁盘类型。 枚举值为：<br /><br /> > LocalDisk，本地磁盘; <br /><br /> > UDisk 云盘。<br /><br />只要有一块磁盘为本地盘，即返回LocalDisk。 |No|
 | **ImageId** | string | 【建议不再使用】主机的系统盘ID。 |No|
 | **BasicImageId** | string | 基础镜像ID（指当前自定义镜像的来源镜像） |No|
@@ -139,6 +141,10 @@ https://api.ucloud.cn/?Action=DescribeUHostInstance
 &IsolationGroup=lvbanUiO
 &VPCId=SNCWNQEL
 &SubnetId=nWauQBws
+&NoEIP=true
+&ResourceType=HXEgUOtY
+&UDiskId=PcQBriun
+&UDiskId=lwifaBLE
 ```
 
 ### 响应示例
