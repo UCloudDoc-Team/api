@@ -266,13 +266,22 @@
         "listname":"开发者工具",
         "listvalue":[
             {
-                "name":"API产品 UAPI",
+                "name":"API浏览器 UAPI",
                 "links":"/uapi/README"
             },
             {
-                "name":"UCloud CLI",
+                "name":"命令行管理工具 CLI",
                 "links":"/cli/README"
             },
+            {
+                "name":"资源编排工具 Terraform",
+                "links":"/terraform/README"
+            }
+        ],
+        "listpros":["uapi","cli","terraform"]
+    }, {
+        "listname":"OpenAPI SDK",
+        "listvalue":[
             {
                 "name":"OpenSDK Go",
                 "links":"/opensdk-go/README"
@@ -284,12 +293,8 @@
             {
                 "name":"OpenSDK Python",
                 "links":"/opensdk-python/README"
-            },
-            {
-                "name":"资源编排 Terraform",
-                "links":"/terraform/README"
             }
         ],
-        "listpros":["uapi","cli","opensdk-go","opensdk-java","opensdk-python","terraform"]
+        "listpros":["opensdk-go","opensdk-java","opensdk-python"]
     }]
 }
