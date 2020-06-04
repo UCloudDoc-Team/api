@@ -277,10 +277,10 @@
                 "name":"资源编排工具 Terraform",
                 "links":"/terraform/README"
             },
-      {
-        "name":"镜像打包工具 Packer",
-        "links":"/uhost/guide/image/packer"
-      }
+            {
+                "name":"镜像构建工具 Packer",
+                "links":"/uhost/guide/image/packer"
+            }
         ],
         "listpros":["uapi","cli","terraform"]
     }, {
