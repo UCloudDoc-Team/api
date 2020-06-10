@@ -60,5 +60,7 @@
     - [获取备份列表 - DescribeUDBBackup](api/udb-api/describe_udb_backup)
     - [更新配置 - UpdateUDBParamGroup](api/udb-api/update_udb_param_group)
     - [获取UDB实例升降级价格信息 - DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
+- **API**
+    - [描述读写分离功能 - DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)
 - **附录**
   - [UDB 错误码列表](api/udb-api/error_code)

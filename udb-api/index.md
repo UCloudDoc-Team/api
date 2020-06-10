@@ -72,5 +72,11 @@
 |[UpdateUDBParamGroup](api/udb-api/update_udb_param_group)|更新配置|
 |[DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)|获取UDB实例升降级价格信息|
 
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
+
 
 
