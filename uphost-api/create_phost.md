@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **ImageId** | string | ImageId，可以通过接口 [DescribePHostImage](describephostimage)获取 |**Yes**|
+| **ImageId** | string | ImageId，可以通过接口 [DescribePHostImage](../uphost-api/describe_phost_image)获取 |**Yes**|
 | **Password** | string | 密码（密码需使用base64进行编码） |**Yes**|
 | **Type** | string | 物理机类型，默认为：db-2(基础型-SAS-V3) |No|
 | **Name** | string | 物理机名称，默认为phost |No|
