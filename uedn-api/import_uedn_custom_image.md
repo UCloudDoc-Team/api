@@ -26,11 +26,11 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **IdcId.N** | string | 镜像需要导入机房 |**Yes**|
+| **IdcId.N** | string | 镜像需要导入机房，默认分发到所有机房 |No|
 | **ImageId** | string | 镜像Id，不传参表示新导入镜像，传参表示已有镜像分发到指定机房 |No|
 | **ImageName** | string | 镜像名称，不带镜像ID时必填 |No|
 | **UFileUrl** | string | UFile镜像文件下载地址，不带镜像ID时必填 |No|
-| **OsType** | string | 操作系统平台，linux、windows，不带镜像ID时必填 |No|
+| **OsType** | string | 操作系统平台，linux、windows(当前版本暂不支持windows)，不带镜像ID时必填 |No|
 | **Format** | string | 镜像格式，可选RAW、qcow2， 不带镜像ID时必填 |No|
 | **ImageDesc** | string | 镜像描述 |No|
 
@@ -52,14 +52,13 @@
     
 ```
 https://api.ucloud.cn/?Action=ImportUEdnCustomImage
-&ProjectId=NMKlpokg
-&ImageName=buufJkSJ
-&UFileUrl=YWwobTcX
-&OsType=xWZrLvIH
-&Format=SrbnKCbS
-&IdcId.n=yejuAhRZ
-&ImageDesc=KjFVIejJ
-&ImageId=EROnlqHT
+&ProjectId=org-xxx
+&ImageName=test
+&UFileUrl=http://test.cn-bj.ufileos.com/test.raw
+&OsType=linux
+&Format=RAW
+&IdcId.0=uedn-idc-xxx
+&ImageDesc=xxx
 ```
 
 ### 响应示例
@@ -67,7 +66,7 @@ https://api.ucloud.cn/?Action=ImportUEdnCustomImage
 ```json
 {
   "Action": "ImportUEdnCustomImageResponse",
-  "ImageId": "DffcgmDT",
+  "ImageId": "uedn-image-xxx",
   "RetCode": 0
 }
 ```
