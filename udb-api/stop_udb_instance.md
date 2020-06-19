@@ -55,7 +55,7 @@
 ```
 https://api.ucloud.cn/?Action=StopUDBInstance   
 &Region=cn-bj2
-&DBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&DBId=udb-xxx
 ```
 
 ### 响应示例

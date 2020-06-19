@@ -98,6 +98,7 @@
 | **DataSet** | array[[*UDBSlaveInstanceSet*](#UDBSlaveInstanceSet)] | 如果在需要返回从库的场景下，返回该DB实例的所有从库DB实例信息列表。列表中每一个元素的内容同UDBSlaveInstanceSet 。如果这个DB实例没有从库的情况下，此时返回一个空的列表 |No|
 | **BackupZone** | string | 跨可用区高可用备库所在可用区 |No|
 | **IPv6Address** | string | 该实例的ipv6地址 |No|
+| **UserUFileData** | [*UFileDataSet*](#UFileDataSet) | 用户转存备份到自己的UFILE配置, 结构参考UFileDataSet |No|
 
 #### UDBSlaveInstanceSet
 
@@ -140,6 +141,13 @@
 | **InstanceTypeId** | int | UDB数据库机型ID |No|
 | **Tag** | string | 获取资源其他信息 |No|
 | **IPv6Address** | string | 获取该实例的IPv6地址 |No|
+
+#### UFileDataSet
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **TokenID** | string | Ufile的令牌tokenid |No|
+| **Bucket** | string | bucket名称 |No|
 
 ## 示例
 
