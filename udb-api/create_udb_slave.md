@@ -46,6 +46,9 @@
 | **InstanceType** | string | UDB实例类型：Normal、SATA_SSD、NVMe_SSD |No|
 | **SubnetId** | string | 子网ID（如果不传用默认子网） |No|
 | **VPCId** | string | VPCID（如果不传用默认的VPC） |No|
+| **ChargeType** | string | Year， Month， Dynamic，Trial，默认和主库保持一致 |No|
+| **Quantity** | int | 购买时长，默认默认和主库保持一致 |No|
+| **ParamGroupId** | int | DB实例使用的配置参数组id，默认和主库保持一致 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -75,6 +78,11 @@ https://api.ucloud.cn/?Action=CreateUDBSlave
 &SubnetId=CSKpxQOp
 &SubnetId=ICAmjpca
 &VPCId=iGLJHujL
+&ChargeType=RyAdXrgR
+&Quantity=5
+&ChargeType=IPwSWCtM
+&Quantity=5
+&ParamGroupId=4
 ```
 
 ### 响应示例
