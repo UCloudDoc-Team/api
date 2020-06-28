@@ -8,48 +8,10 @@
 
 | Name      |Description                           |Notes                               |
 |---|---|---|
+| API调用地址  | 调用API的webservice入口                    | http(s)://api.ucloud.cn         |
 | 公共参数     | 调用API时需要给出的公共参数                       | 参见 [公共参数列表](api/summary/public)  |
 | API指令    | 即API指令名称，如 **DescribeUhostInstance**  | 参见 [API指令列表](api/index)                |
 | 指令参数     | 执行每个指令时所需要提供的参数                       | 参见 [API指令列表](api/index)                |
-
-## API 访问地址
-这里介绍的 API 访问地址是 UCloud 开放 API 通常使用的访问地址。部分 API 使用的访问地址可能会有所不同，这种情况会在具体产品的 API 文档里面说明。
-### 公网访问
-#### 访问地址
-http(s)://api.ucloud.cn
-#### 注意事项
-1. 可以在 https://console.ucloud.cn/uapi/apikey 页面中配置开放 API 调用 IP 白名单（默认对所有 IP 地址开放）
-2. 公网链路上各环节抖动可能会对访问开放 API 造成影响
-### VPC 内网访问
-可以在云主机内直接使用，不用绕行公网，避免公网链路上各环节抖动带来的影响。
-#### 访问地址
-http://api.service.ucloud.cn
-#### 注意事项
-1. 目前不支持 HTTPS 协议
-2. 如果用户在 https://console.ucloud.cn/uapi/apikey 页面中配置了 IP 白名单，需要将 10.10.10.10 加入白名单
-#### 提供服务的可用区
-|  地域   | 可用区  |
-|  ----  | ----  |
-| 北京二  | B、C、D、E |
-| 上海二  | A、B、C |
-| 广州  | B |
-| 香港  | B |
-| 台北  | A |
-| 东京  | A |
-| 首尔  | A |
-| 曼谷  | A |
-| 新加坡 | A |
-| 雅加达 | A |
-| 胡志明 | A |
-| 洛杉矶 | A |
-| 华盛顿 | A |
-| 莫斯科 | A |
-| 法兰克福 | A |
-| 伦敦 | A |
-| 孟买 | A |
-| 迪拜 | A |
-| 圣保罗 | A |
-| 拉各斯 | A |
 
 ## API 请求示例
 
