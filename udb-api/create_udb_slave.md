@@ -41,7 +41,7 @@
 | **SSDType** | string | SSD类型，可选值为"SATA"、"PCI-E"、“NVMe”，如果UseSSD为true ，则必选 |No|
 | **IsLock** | boolean | 是否锁主库，默认为true |No|
 | **InstanceMode** | string | UDB实例部署模式，可选值如下：<br />Normal: 普通单点实例<br />HA: 高可用部署实例 |No|
-| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 1000M/2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M |No|
+| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 1000M/2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
 | **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 3000G（API支持，前端暂时只开放内存定制） |No|
 | **InstanceType** | string | UDB实例类型：Normal、SATA_SSD、NVMe_SSD |No|
 | **SubnetId** | string | 子网ID（如果不传用默认子网） |No|

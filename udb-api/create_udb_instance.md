@@ -38,9 +38,9 @@
 | **AdminPassword** | string | 管理员密码 |**Yes**|
 | **DBTypeId** | string | DB类型id，mysql/mongodb/postgesql按版本细分 1：mysql-5.1，2：mysql-5.5，3：percona-5.5，4：mysql-5.6，5：percona-5.6，6：mysql-5.7，7：percona-5.7，8：mariadb-10.0，9：mongodb-2.4，10：mongodb-2.6，11：mongodb-3.0，12：mongodb-3.2,13：postgresql-9.4，14：postgresql-9.6，14：postgresql-10.4 |**Yes**|
 | **Port** | int | 端口号，mysql默认3306，mongodb默认27017，postgresql默认5432 |**Yes**|
-| **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 3000G |**Yes**|
+| **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 32T |**Yes**|
 | **ParamGroupId** | int | DB实例使用的配置参数组id |**Yes**|
-| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 1000M/2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M |**Yes**|
+| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 1000M/2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |**Yes**|
 | **ChargeType** | string | Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **AdminUser** | string | 管理员帐户名，默认root |No|
