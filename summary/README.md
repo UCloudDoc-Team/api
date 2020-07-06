@@ -64,6 +64,7 @@ http://api.service.ucloud.cn
 | 迪拜 | A |
 | 圣保罗 | A |
 | 拉各斯 | A |
+| 马尼拉 | A |
 
 ## API 请求示例
 
