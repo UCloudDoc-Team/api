@@ -10,6 +10,7 @@
 |[CloneUDisk](api/udisk-api/clone_udisk)|克隆云硬盘|
 |[CloneUDiskSnapshot](api/udisk-api/clone_udisk_snapshot)|克隆快照|
 |[CloneUDiskUDataArk](api/udisk-api/clone_udisk_udataark)|从数据方舟的备份创建UDisk|
+|[CreateAttachUDisk](api/udisk-api/create_attach_udisk)|创建并挂载云硬盘|
 |[CreateUDisk](api/udisk-api/create_udisk)|创建云硬盘|
 |[CreateUDiskSnapshot](api/udisk-api/create_udisk_snapshot)|创建快照|
 |[DeleteUDisk](api/udisk-api/delete_udisk)|删除云硬盘|

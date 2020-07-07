@@ -40,7 +40,8 @@
 | **Comment** | string | Disk注释 |No|
 | **ChargeType** | string | Year , Month, Dynamic，Postpay 默认: Dynamic |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
-| **UDataArkMode** | string | 是否开启数据方舟 Yes:开启数据方舟 No:关闭数据方舟 默认:No |No|
+| **UDataArkMode** | string | 	<br />【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
+| **SnapshotService** | string | 	<br />是否开启快照服务。Yes：开启，No：不开启，默认值：No |No|
 | **Tag** | string | 业务组 默认：Default |No|
 | **CouponId** | string | 使用的代金券id |No|
 
@@ -67,6 +68,7 @@ https://api.ucloud.cn/?Action=CloneUDiskSnapshot
 &Size=20
 &SourceId=bsSnap-xxx
 &Tag=LSaZloNt
+&SnapshotService=qXPYAcHA
 ```
 
 ### 响应示例
