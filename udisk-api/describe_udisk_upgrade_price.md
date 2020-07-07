@@ -36,7 +36,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；普通系统盘：范围[1\~8000]；SSD系统盘：范围[1\~4000]；RSSD数据盘：范围[1\~32000]。 |**Yes**|
 | **SourceId** | string | 升级目标UDisk ID |**Yes**|
-| **UDataArkMode** | string | 是否打开数据方舟, 打开"Yes",关闭"No", 默认关闭 |No|
+| **UDataArkMode** | string | 【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
+| **SnapshotService** | string | 	<br />是否开启快照服务。Yes：开启，No：不开启，默认值：No |No|
 | **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），RSSDDataDisk（RSSD数据盘），默认值（DataDisk） |No|
 | **MachineType** | string | 云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 
@@ -66,6 +67,7 @@ https://api.ucloud.cn/udisk/?Action=DescribeUDiskUpgradePrice
 &UDataArkMode =Yes
 &DiskType = DataDisk
 &MachineType=bSHaETUa
+&SnapshotService=pYhGDMfE
 ```
 
 ### 响应示例

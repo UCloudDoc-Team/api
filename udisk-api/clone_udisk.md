@@ -36,7 +36,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Name** | string | 实例名称 |**Yes**|
 | **SourceId** | string | 克隆父Disk的Id |**Yes**|
-| **UDataArkMode** | string | 方舟是否开启，"Yes":开启，"No":关闭；默认为"No" |No|
+| **UDataArkMode** | string | 【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
+| **SnapshotService** | string | 是否开启快照服务。Yes：开启，No：不开启，默认值：No |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **Comment** | string | Disk注释 |No|
 | **ChargeType** | string | Year , Month, Dynamic，Postpay，Trial 默认: Month |No|
@@ -67,6 +68,9 @@ https://api.ucloud.cn/?Action=CloneUDisk
 &ProjectId=org-xxx
 &Name=xxx
 &Tag=GtBUxADe
+&SnapshotService=CdMIsrJf
+&SnapshotService=xnbZYyFp
+&SnapshotService=gXtrrouS
 ```
 
 ### 响应示例

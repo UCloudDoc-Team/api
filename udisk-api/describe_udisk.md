@@ -37,10 +37,11 @@
 | **UDiskId** | string | UDisk Id(留空返回全部) |No|
 | **Offset** | int | 数据偏移量, 默认为0 |No|
 | **Limit** | int | 返回数据长度, 默认为20 |No|
-| **DiskType** | string | ProtocolVersion字段为1时，需结合IsBoot确定具体磁盘类型:普通数据盘：DiskType:"CLOUD_NORMAL",IsBoot:"False"；普通系统盘：DiskType:"CLOUD_NORMAL",IsBoot:"True"；<br />SSD数据盘：DiskType:"CLOUD_SSD",IsBoot:"False"；SSD系统盘：DiskType:"CLOUD_SSD",IsBoot:"True"；RSSD数据盘：DiskType:"CLOUD_RSSD",IsBoot:"False"；为空拉取所有。ProtocolVersion字段为0或没有该字段时，可设为以下几个值:普通数据盘：DataDisk；普通系统盘：SystemDisk；SSD数据盘：SSDDataDisk；SSD系统盘：SSDSystemDisk；RSSD数据盘：RSSDDataDisk；为空拉取所有。 |No|
+| **DiskType** | string | ProtocolVersion字段为1时，需结合IsBoot确定具体磁盘类型:普通数据盘：DiskType:"CLOUD_NORMAL",IsBoot:"False"；普通系统盘：DiskType:"CLOUD_NORMAL",IsBoot:"True"；SSD数据盘：DiskType:"CLOUD_SSD",IsBoot:"False"；SSD系统盘：DiskType:"CLOUD_SSD",IsBoot:"True"；RSSD数据盘：DiskType:"CLOUD_RSSD",IsBoot:"False"；为空拉取所有。ProtocolVersion字段为0或没有该字段时，可设为以下几个值:普通数据盘：DataDisk；普通系统盘：SystemDisk；SSD数据盘：SSDDataDisk；SSD系统盘：SSDSystemDisk；RSSD数据盘：RSSDDataDisk；为空拉取所有。 |No|
 | **ProtocolVersion** | int | 请求协议版本，建议升级为1，为1时DiskType与UHost磁盘类型定义一致；默认为0 |No|
 | **IsBoot** | string | ProtocolVersion字段为1且DiskType不为空时，必须设置，设置规则请参照DiskType；ProtocolVersion字段为1且DiskType为空时，该字段无效。ProtocolVersion字段为0或没有该字段时，该字段无效。 |No|
 | **IgnoreUBillInfo** | string | 是否忽略计费信息。Yes：忽略，No：不忽略，默认值（No）。（如不关心账单信息，建议选填“Yes”，可降低请求延时） |No|
+| **UHostIdForAttachment** | string | 根据传入的UHostIdForAttachment，筛选出虚机在同一PodId下的云盘 |No|
 
 ### 响应字段
 
@@ -87,6 +88,7 @@
 | **CmkIdStatus** | string | 该盘cmk的状态, Enabled(正常)，Disabled(失效)，Deleted(删除)，NoCmkId(非加密盘) |No|
 | **CmkIdAlias** | string | cmk id 别名 |No|
 | **IsBoot** | string | 是否是系统盘，是："True", 否："False" |No|
+| **BackupMode** | string | 该盘的备份方式。快照服务："SnapshotService"；数据方舟："UDataArk"；无备份方式："" |No|
 
 ## 示例
 
@@ -101,6 +103,7 @@ https://api.ucloud.cn/?Action=DescribeUDisk
 &ProtocolVersion=8
 &IsBoot=irVoOnAn
 &IgnoreUBillInfo=kcHclIeG
+&UHostIdForAttachment=nMOZskoE
 ```
 
 ### 响应示例
