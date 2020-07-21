@@ -1,4 +1,4 @@
-# GetRegion - GetRegion
+# 获取地域和可用区列表 - GetRegion
 
 ## 简介
 
