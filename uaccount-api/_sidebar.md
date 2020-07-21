@@ -10,6 +10,7 @@
     - [获取成员列表 - DescribeMemberList](api/uaccount-api/describe_member_list)
     - [冻结成员 - FreezeMember](api/uaccount-api/freeze_member)
     - [获取帐号下的项目列表 - GetProjectList](api/uaccount-api/get_project_list)
+    - [GetRegion - GetRegion](api/uaccount-api/get_region)
     - [邀请子帐号成员 - InviteSubaccount](api/uaccount-api/invite_subaccount)
     - [修改角色 - ModifyCharacter](api/uaccount-api/modify_character)
     - [从项目中移除成员 - RemoveMemberFromProject](api/uaccount-api/remove_member_from_project)
