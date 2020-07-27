@@ -14,7 +14,6 @@ UDB高可用实例从HAProxy版本升级为Sentinel版本（不带HAProxy）升�
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=SwitchUDBHAToSentinel)
-- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 
 
 ## 定义

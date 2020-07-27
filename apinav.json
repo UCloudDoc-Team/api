@@ -230,75 +230,165 @@
     ]
   }
 ],
-    "hotprods": [
+  "hotprods": [
+    {
+      "url": "/api/summary/README",
+      "title": "API 文档综览",
+      "des": "",
+      "imglinks": ""
+    },
+    {
+      "url": "/api/summary/public",
+      "title": "快速开始",
+      "des": "",
+      "imglinks": ""
+    },
+    {
+      "url": "/api/summary/signature",
+      "title": "签名算法",
+      "des": "",
+      "imglinks": ""
+    },
+    {
+      "url": "/api/summary/regionlist",
+      "title": "获取地域和可用区列表",
+      "des": "",
+      "imglinks": ""
+    },
+    {
+      "url": "/api/summary/get_project_list",
+      "title": "获取项目列表",
+      "des": "",
+      "imglinks": ""
+    }
+  ],
+  "developer": [
+    {
+      "listname": "开发者工具",
+      "listvalue": [
         {
-            "url": "/api/summary/README",
-            "title": "API 文档综览",
-            "des": "",
-            "imglinks": ""
+          "name": "API浏览器 UAPI",
+          "links": "/uapi/README"
         },
         {
-            "url": "/api/summary/signature",
-            "title": "签名算法",
-            "des": "",
-            "imglinks": ""
+          "name": "命令行管理工具 CLI",
+          "links": "/cli/README"
         },
         {
-            "url": "/api/summary/public",
-            "title": "公共参数",
-            "des": "",
-            "imglinks": ""
+          "name": "资源编排工具 Terraform",
+          "links": "/terraform/README"
         },
         {
-            "url": "/api/summary/regionlist",
-            "title": "获取地域和可用区列表",
-            "des": "",
-            "imglinks": ""
-        },
-        {
-            "url": "/api/summary/get_project_list",
-            "title": "获取项目ID",
-            "des": "",
-            "imglinks": ""
+          "name": "镜像构建工具 Packer",
+          "links": "/uhost/guide/image/packer"
         }
-    ],
-    "developer": [{
-        "listname":"开发者工具",
-        "listvalue":[
-            {
-                "name":"API浏览器 UAPI",
-                "links":"/uapi/README"
-            },
-            {
-                "name":"命令行管理工具 CLI",
-                "links":"/cli/README"
-            },
-            {
-                "name":"资源编排工具 Terraform",
-                "links":"/terraform/README"
-            },
-            {
-                "name":"镜像构建工具 Packer",
-                "links":"/uhost/guide/image/packer"
-            }
-        ],
-        "listpros":["uapi","cli","terraform"]
-    }, {
-        "listname":"OpenAPI SDK",
-        "listvalue":[
-            {
-                "name":"OpenSDK Go",
-                "links":"/opensdk-go/README"
-            },
-            {
-                "name":"OpenSDK Java",
-                "links":"/opensdk-java/README"
-            },
-            {
-                "name":"OpenSDK Python",
-                "links":"/opensdk-python/README"
-            }
-        ],
-        "listpros":["opensdk-go","opensdk-java","opensdk-python"]
-    }]
+      ],
+      "listpros": [
+        "uapi",
+        "cli",
+        "opensdk-go",
+        "opensdk-java",
+        "opensdk-python"
+      ]
+    },
+    {
+      "listname": "OpenAPI SDK",
+      "listvalue": [
+        {
+          "name": "OpenSDK Go",
+          "links": "/opensdk-go/README"
+        },
+        {
+          "name": "OpenSDK Java",
+          "links": "/opensdk-java/README"
+        },
+        {
+          "name": "OpenSDK Python",
+          "links": "/opensdk-python/README"
+        },
+        {
+          "name": "UToken SDK",
+          "links": "/utoken/sdk/prerequisites"
+        },
+        {
+          "name": "USMS Python",
+          "links": "/usms/sdk_docs/7003"
+        },
+        {
+          "name": "USMS Go",
+          "links": "/usms/sdk_docs/7007"
+        },
+        {
+          "name": "USMS Java",
+          "links": "/usms/sdk_docs/7009"
+        },
+        {
+          "name": "USMS PHP",
+          "links": "/usms/sdk_docs/7005"
+        }
+      ]
+    },
+    {
+      "listname": "对象存储 UFile",
+      "listvalue": [
+        {
+          "name": "Javascript",
+          "links": "https://github.com/ufilesdk-dev/ufile-jssdk"
+        },
+        {
+          "name": "C++",
+          "links": "https://github.com/ufilesdk-dev/ufile-cppsdk"
+        },
+        {
+          "name": "C",
+          "links": "https://github.com/ufilesdk-dev/ufile-csdk"
+        },
+        {
+          "name": "PHP",
+          "links": "https://github.com/ufilesdk-dev/ufile-phpsdk"
+        },
+        {
+          "name": "Python",
+          "links": "https://github.com/ufilesdk-dev/ufile-sdk-python"
+        },
+        {
+          "name": "Go",
+          "links": "https://github.com/ufilesdk-dev/ufile-gosdk"
+        },
+        {
+          "name": "C#",
+          "links": "https://github.com/ufilesdk-dev/ufile-csharpsdk"
+        },
+        {
+          "name": "NodeJS",
+          "links": "https://github.com/ufilesdk-dev/ufile-nodejssdk"
+        },
+        {
+          "name": "Java",
+          "links": "https://github.com/ucloud/ufile-sdk-java"
+        },
+        {
+          "name": "iOS",
+          "links": "https://github.com/ucloud/ufile-sdk-ios"
+        },
+        {
+          "name": "Android",
+          "links": "https://github.com/ufilesdk-dev/ufile-androidsdk"
+        }
+      ]
+    },
+    {
+      "listname": "移动网络探测工具 UMQA",
+      "listvalue": [
+        {
+          "name": "iOS",
+          "links": "https://github.com/ucloud/netanalysis-sdk-ios"
+        },
+        {
+          "name": "Go",
+          "links": "https://github.com/ucloud/netanalysis-sdk-android"
+        }
+      ]
+    }
+  ]
 }

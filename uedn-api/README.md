@@ -12,7 +12,7 @@
 
 ## 阅读指南
 
-?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/README)。
+?> 如果您是第一次使用 UCloud API，请先阅读 [API 文档综览](/api/summary/)。
 
 接下来浏览 [UEDN API 索引](api/uedn-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 

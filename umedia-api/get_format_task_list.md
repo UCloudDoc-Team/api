@@ -14,7 +14,6 @@
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetFormatTaskList)
-- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 
 
 ## 定义
