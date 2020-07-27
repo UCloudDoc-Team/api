@@ -31,10 +31,11 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **DomainId.N** | string | 域名ID，创建加速域名时生成。默认全部域名 |No|
-| **Areacode** | string | 查询流量区域 cn代表国内 abroad代表海外，默认全部区域。 |No|
-| **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。 |No|
-| **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
+| **AccountType** | string | 指定按项目查询，还是按整个账户查询  取值 top 表示按整个账户查询，取值org表示按项目查询 |No|
+| **DomainId.N** | string | 域名ID，创建加速域名时生成，n从自然数0开始。默认全部域名 |No|
+| **Areacode** | string | 查询流量区域 cn代表国内 abroad代表海外，默认全部区域 |No|
+| **BeginTime** | int | 查询的起始日期，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值 |No|
+| **EndTime** | int | 查询的结束日期，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天 |No|
 
 ### 响应字段
 
@@ -61,10 +62,13 @@
     
 ```
 http://api.ucloud.cn/?Action=GetUcdnDomainTraffic
-&DomainId.0=ucdn-0331qd
+&ProjectId=org-xxxxx
+&DomainId.0=ucdn-xxx
 &BeginTime=1420992000
 &EndTime=1421166064
 &Areacode=cn
+&AccountType=CjFxZeTe
+&AccountType=THIOdFPl
 ```
 
 ### 响应示例
