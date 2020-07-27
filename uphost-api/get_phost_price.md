@@ -14,7 +14,6 @@
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetPHostPrice)
-- [工作流引擎 StepFlow](https://console.ucloud.cn/stepflow/manage/)
 
 
 ## 定义
@@ -37,8 +36,8 @@
 | **Count** | int | 购买数量，范围[1-5] |**Yes**|
 | **ChargeType** | string | 计费模式，枚举值为： Year/Month/Trial/Dynamic |**Yes**|
 | **Quantity** | int | 购买时长，1-10个月或1-10年 |**Yes**|
+| **Cluster** | string | 网络环境，可选千兆：1G ；万兆：10G；25G网络：25G。 |No|
 | **Type** | string | 默认为：DB(数据库型)，可以通过接口 [DescribePHostMachineType](api/uphost-api/describe_phost_machine_type.html)获取 |No|
-| **Cluster** | string | 网络环境，可选千兆：1G ，万兆：10G |No|
 
 ### 响应字段
 
