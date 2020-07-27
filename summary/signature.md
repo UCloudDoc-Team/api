@@ -53,7 +53,8 @@ ActionDescribeUHostInstanceLimit10PublicKeyucloudsomeone@example.com129623512085
 注意：
 
 - 对于 bool 类型，应编码为 `true/false`
-- 对于浮点数类型，如果小数部分为 0，应仅保留证书部分，如 `42.0` 应保留 `42`
+- 对于浮点数类型，如果小数部分为 0，应仅保留整数部分，如 `42.0` 应保留 `42`
+- 对于浮点数类型，不能使用科学计数法
 
 ### 3. 计算签名
 
