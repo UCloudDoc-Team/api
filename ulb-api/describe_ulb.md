@@ -68,12 +68,15 @@
 | **IPSet** | array[[*ULBIPSet*](#ULBIPSet)] | ULB的详细信息列表，具体结构见下方 ULBIPSet |No|
 | **VServerSet** | array[[*ULBVServerSet*](#ULBVServerSet)] | 负载均衡实例中存在的VServer实例列表，具体结构见下方 ULBVServerSet |No|
 | **ULBType** | string | ULB 的类型 |No|
+| **IPVersion** | string | ULB ip类型，枚举值：IPv6 / IPv4 （内部测试，暂未对外开放） |No|
+| **ListenType** | string | ULB 监听器类型，枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发；Comprehensive，兼容型；Pending，未定型 |No|
 | **VPCId** | string | ULB所在的VPC的ID |No|
 | **SubnetId** | string | ULB 为 InnerMode 时，ULB 所属的子网ID，默认为空 |No|
 | **BusinessId** | string | ULB 所属的业务组ID |No|
 | **PrivateIP** | string | ULB的内网IP，当ULBType为OuterMode时，该值为空 |No|
+| **FirewallSet** | [*FirewallSet*](#FirewallSet) | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
-| **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回 |No|
+| **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
 
 #### ULBIPSet
 
@@ -95,6 +98,7 @@
 | **VServerId** | string | VServer实例的Id |No|
 | **VServerName** | string | VServer实例的名字 |No|
 | **Protocol** | string | VServer实例的协议。 枚举值为：HTTP，TCP，UDP，HTTPS。 |No|
+| **EnableHTTP2** | int | 是否开启http2.0，取值范围[0-1]；0代表关闭，1代表开启，默认为0 |No|
 | **FrontendPort** | int | VServer服务端口 |No|
 | **Method** | string | VServer负载均衡的模式，枚举值：Roundrobin -> 轮询;Source -> 源地址；ConsistentHash -> 一致性哈希；SourcePort -> 源地址（计算端口）；ConsistentHashPort -> 一致性哈希（计算端口）。 |No|
 | **PersistenceType** | string | VServer会话保持方式。枚举值为： None -> 关闭会话保持； ServerInsert -> 自动生成； UserDefined -> 用户自定义。 |No|
@@ -105,6 +109,13 @@
 | **BackendSet** | array[[*ULBBackendSet*](#ULBBackendSet)] | 后端资源信息列表，具体结构见下方 ULBBackendSet |No|
 | **ListenType** | string | 监听器类型，枚举值为: RequestProxy -> 请求代理；PacketsTransmit -> 报文转发 |No|
 | **PolicySet** | array[[*ULBPolicySet*](#ULBPolicySet)] | 内容转发信息列表，具体结构见下方 ULBPolicySet |No|
+
+#### FirewallSet
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **FirewallName** | string | 防火墙名称 |No|
+| **FirewallId** | string | 防火墙ID |No|
 
 #### LoggerSet
 
@@ -141,6 +152,7 @@
 | **Enabled** | int | 后端提供服务的实例启用与否，枚举值：0 禁用 1 启用 |No|
 | **Status** | int | 后端提供服务的实例运行状态，枚举值：0健康检查健康状态 1 健康检查异常 |No|
 | **SubnetId** | string | 后端提供服务的资源所在的子网的ID |No|
+| **IsBackup** | int | 是否为backup，只有当vserver的Backup属性为1时才会有此字段，说明：<br /><br />0：主rs<br />1：备rs |No|
 
 #### ULBPolicySet
 
@@ -160,10 +172,11 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **BackendId** | string | 所添加的后端资源在ULB中的对象ID，（为ULB系统中使用，与资源自身ID无关 |No|
+| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube |No|
+| **ResourceName** | string | 后端资源的实例名称 |No|
 | **ObjectId** | string | 后端资源的对象ID |No|
 | **Port** | int | 所添加的后端资源服务端口 |No|
 | **PrivateIP** | string | 后端资源的内网IP |No|
-| **ResourceName** | string | 后端资源的实例名称 |No|
 
 #### SSLBindedTargetSet
 

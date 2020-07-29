@@ -60,6 +60,7 @@
 | **VServerId** | string | VServer实例的Id |No|
 | **VServerName** | string | VServer实例的名字 |No|
 | **Protocol** | string | VServer实例的协议。 枚举值为：HTTP，TCP，UDP，HTTPS。 |No|
+| **EnableHTTP2** | int | 是否开启http2.0，取值范围[0-1]；0代表关闭，1代表开启，默认为0 |No|
 | **FrontendPort** | int | VServer服务端口 |No|
 | **Method** | string | VServer负载均衡的模式，枚举值：Roundrobin -> 轮询;Source -> 源地址；ConsistentHash -> 一致性哈希；SourcePort -> 源地址（计算端口）；ConsistentHashPort -> 一致性哈希（计算端口）。 |No|
 | **PersistenceType** | string | VServer会话保持方式。枚举值为： None -> 关闭会话保持； ServerInsert -> 自动生成； UserDefined -> 用户自定义。 |No|
@@ -98,6 +99,7 @@
 | **Enabled** | int | 后端提供服务的实例启用与否，枚举值：0 禁用 1 启用 |No|
 | **Status** | int | 后端提供服务的实例运行状态，枚举值：0健康检查健康状态 1 健康检查异常 |No|
 | **SubnetId** | string | 后端提供服务的资源所在的子网的ID |No|
+| **IsBackup** | int | 是否为backup，只有当vserver的Backup属性为1时才会有此字段，说明：<br /><br />0：主rs<br />1：备rs |No|
 
 #### ULBPolicySet
 
@@ -117,10 +119,11 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **BackendId** | string | 所添加的后端资源在ULB中的对象ID，（为ULB系统中使用，与资源自身ID无关 |No|
+| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube |No|
+| **ResourceName** | string | 后端资源的实例名称 |No|
 | **ObjectId** | string | 后端资源的对象ID |No|
 | **Port** | int | 所添加的后端资源服务端口 |No|
 | **PrivateIP** | string | 后端资源的内网IP |No|
-| **ResourceName** | string | 后端资源的实例名称 |No|
 
 #### SSLBindedTargetSet
 
