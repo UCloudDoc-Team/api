@@ -12,6 +12,7 @@
     - [获取域名状态码监控 - GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)
     - [获取域名详细状态码监控 - GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)
     - [获取域名请求数 - GetNewUcdnDomainRequestNum](api/ucdn-api/get_new_ucdn_domain_request_num)
+    - [批量获取加速域名配置 - GetUcdnDomainConfig](api/ucdn-api/get_ucdn_domain_config)
     - [获取加速域名原始日志 - GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)
     - [获取域名预取开启状态 - GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)
     - [获取域名请求数 - GetUcdnDomainRequestNumV2](api/ucdn-api/get_ucdn_domain_request_num_v2)
