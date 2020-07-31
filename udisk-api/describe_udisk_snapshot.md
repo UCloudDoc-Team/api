@@ -55,6 +55,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Zone** | string | 可用区 |**Yes**|
 | **SnapshotId** | string | 快照Id |**Yes**|
 | **Name** | string | 快照名称 |**Yes**|
 | **UDiskId** | string | 快照的源UDisk的Id |**Yes**|

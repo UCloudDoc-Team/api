@@ -1,4 +1,4 @@
-# 拉取回收站中云硬盘列表 - DescribeRecycleUDisk
+# 【已废弃】拉取回收站中云硬盘列表 - DescribeRecycleUDisk
 
 ## 简介
 
