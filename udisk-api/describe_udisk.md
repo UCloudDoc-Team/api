@@ -88,6 +88,7 @@
 | **CmkIdAlias** | string | cmk id 别名 |No|
 | **IsBoot** | string | 是否是系统盘，是："True", 否："False" |No|
 | **BackupMode** | string | 该盘的备份方式。快照服务："SnapshotService"；数据方舟："UDataArk"；无备份方式："" |No|
+| **RdmaClusterId** | string | RDMA集群id，仅RSSD返回该值；其他类型云盘返回""。当云盘的此值与快杰云主机的RdmaClusterId相同时，RSSD可以挂载到这台云主机。 |No|
 
 ## 示例
 
