@@ -33,8 +33,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量，默认0，非负整数 |No|
 | **Limit** | int | 返回数据长度， 默认全部，非负整数 |No|
-| **DomainId.N** | string | 域名id，创建域名时生成的id。默认获取账号下的所有域名信息,n为自然数 |No|
-| **ChannelType** | string | 渠道ucdn、ufile、uvideo |No|
+| **DomainId.N** | string | 域名id，创建域名时生成的id。默认获取账号下的所有域名信息,n为自然数,从DomainId.0开始。 |No|
+| **ChannelType** | string | 产品类型ucdn，可不填，默认为ucdn |No|
 
 ### 响应字段
 
