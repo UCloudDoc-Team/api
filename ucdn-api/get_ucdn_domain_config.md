@@ -77,11 +77,11 @@
 | **OriginIpList** | array[string] | 源站ip即cdn服务器回源访问的ip地址。多个源站ip，可以这样表述，如：["1.1.1.1","2.2.2.2"] |No|
 | **OriginHost** | string | 回源Http请求头部Host，默认是加速域名 |No|
 | **OriginPort** | int | 回源端口 |No|
-| **BackupOriginEnable** | boolean | 1如果为false表示BackupOriginIp为空，表示没有备份源站，忽略BackupOriginIp，BackupOriginHost字段<br />2如果为false表示BackupOriginIp.n必须至少有一个备份源站地址<br /> |No|
+| **BackupOriginEnable** | boolean | 1如果为false表示BackupOriginIp为空，表示没有备份源站，忽略BackupOriginIp，BackupOriginHost字段<br />2如果为true表示BackupOriginIp.n必须至少有一个备份源站地址<br /> |No|
 | **BackupOriginIpList** | array[string] | 备份源站ip即cdn服务器回源访问的ip地址。多个源站ip，可以这样表述，如：["1.1.1.1","2.2.2.2"] |No|
 | **BackupOriginHost** | string | 备份回源Http请求头部Host，默认是加速域名 |No|
-| **OriginErrorCode** | string | 回源错误码（如：404\|500），默认空字符串 |No|
-| **OriginErrorNum** | int | 回源失败数，默认1 |No|
+| **OriginErrorCode** | string | 主源响应的回源错误码（如：404\|500），默认空字符串 |No|
+| **OriginErrorNum** | int | 回主源的回源失败数，默认1 |No|
 | **OriginProtocol** | string | 源站协议http，http\|https   默认http |No|
 | **OriginFollow301** | int | 跟随301跳转  0=不跟随 1=跟随 |No|
 
@@ -105,7 +105,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **HttpClientHeader** | array[string] | 客户http头列表 |No|
+| **HttpClientHeader** | array[string] | 客户端响应http头列表 |No|
 | **HttpOriginHeader** | array[string] | 源站http头列表 |No|
 | **Http2Https** | boolean | http转https回源 true是，false否 |No|
 
