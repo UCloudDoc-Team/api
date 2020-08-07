@@ -95,6 +95,7 @@
 | **TotalDiskSpace** | int | 总的数据盘存储空间。 |No|
 | **IsolationGroup** | string | 隔离组id，不在隔离组则返回"" |No|
 | **CloudInitFeature** | boolean | true，支持cloutinit方式初始化；false,不支持 |No|
+| **RdmaClusterId** | string | RDMA集群id，仅快杰云主机返回该值；其他类型云主机返回""。当云主机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台云主机。 |No|
 
 #### UHostDiskSet
 
@@ -132,18 +133,7 @@
 ```
 https://api.ucloud.cn/?Action=DescribeUHostInstance
 &Region=cn-bj2
-&Zone=cn-bj2-04
-&ProjectId=org-xxx
-&Offset=0
-&Limit=20
-&UHostIds.0=uhost-xxx
-&IsolationGroup=lvbanUiO
-&VPCId=SNCWNQEL
-&SubnetId=nWauQBws
-&NoEIP=true
-&ResourceType=HXEgUOtY
-&UDiskId=PcQBriun
-&UDiskId=lwifaBLE
+&Zone=cn-bj2-02
 ```
 
 ### 响应示例
@@ -156,60 +146,84 @@ https://api.ucloud.cn/?Action=DescribeUHostInstance
   "UHostSet": [
     {
       "AutoRenew": "Yes",
-      "BasicImageId": "uimage-xxx",
-      "BasicImageName": "1",
+      "BasicImageId": "uimage-xxxx",
+      "BasicImageName": "CentOS 6.6 64位",
       "BootDiskState": "Normal",
-      "CPU": 4,
-      "ChargeType": "Month",
-      "CreateTime": 1529891542,
+      "CPU": 2,
+      "ChargeType": "Dynamic",
+      "CloudInitFeature": false,
+      "CpuPlatform": "Intel/Skylake",
+      "CreateTime": 1583922462,
       "DiskSet": [
         {
-          "DiskId": "xxx",
+          "DiskId": "bsi-dq2fwxoy",
+          "DiskType": "CLOUD_SSD",
           "Drive": "vda",
-          "Encrypted": "No",
+          "Encrypted": "false",
+          "IsBoot": "True",
+          "Name": "系统盘_UHost",
           "Size": 20,
           "Type": "Boot"
         },
         {
-          "DiskId": "xxx",
+          "DiskId": "bsm-pvr22btt",
+          "DiskType": "CLOUD_SSD",
           "Drive": "vdb",
-          "Encrypted": "No",
-          "Size": 20,
-          "Type": "Data"
+          "Encrypted": "false",
+          "IsBoot": "False",
+          "Name": "TestUDisk",
+          "Size": 50,
+          "Type": "Udisk"
         }
       ],
-      "ExpireTime": 1532483542,
+      "EncryptedDiskFeature": true,
+      "ExpireTime": 1596722400,
       "GPU": 0,
-      "HostType": "N2",
+      "HostType": "N3",
       "HotplugFeature": false,
       "IPSet": [
         {
-          "IP": "10.19.xxx.xxx",
-          "Mac": "xxx",
-          "SubnetId": "subnet-xxxx",
+          "Default": "true",
+          "IP": "10.9.86.248",
+          "IPMode": "IPv4",
+          "Mac": "52:54:00:B1:A5:A6",
+          "SubnetId": "subnet-xxxxxx",
           "Type": "Private",
-          "VPCId": "uvnet-xxx"
+          "VPCId": "uvnet-xxxxx"
+        },
+        {
+          "Bandwidth": 1,
+          "IP": "117.52.19.92",
+          "IPId": "eip-xxxxxx",
+          "IPMode": "IPv4",
+          "Type": "BGP",
+          "Weight": 50
         }
       ],
-      "ImageId": "xxx",
+      "IPv6Feature": false,
+      "ImageId": "bsi-xxxxxx",
+      "IsExpire": "No",
+      "IsolationGroup": "",
       "LifeCycle": "Normal",
-      "Memory": 8192,
+      "MachineType": "N",
+      "Memory": 2048,
       "Name": "UHost",
       "NetCapFeature": true,
       "NetCapability": "Normal",
       "NetworkState": "Connected",
-      "OsName": "CentOS 6.5 64位",
+      "OsName": "CentOS 6.6 64位",
       "OsType": "Linux",
+      "RdmaClusterId": "",
       "Remark": "",
       "State": "Running",
-      "StorageType": "LocalDisk",
+      "StorageType": "UDisk",
       "SubnetType": "Default",
       "Tag": "Default",
       "TimemachineFeature": "no",
-      "TotalDiskSpace": 20,
-      "UHostId": "uhost-xxx",
-      "UHostType": "Normal",
-      "Zone": "cn-bj2-04"
+      "TotalDiskSpace": 50,
+      "UHostId": "uhost-xxxxx",
+      "UHostType": "N3",
+      "Zone": "cn-bj2-05"
     }
   ]
 }
