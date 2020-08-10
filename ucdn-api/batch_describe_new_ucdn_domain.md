@@ -94,7 +94,7 @@
 | **CacheTTL** | int | 缓存时间 |No|
 | **CacheUnit** | string | 缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）。上限1年。 |No|
 | **CacheBehavior** | boolean | 是否缓存，true为缓存，flase为不缓存。为flase的情况下，CacheTTL和CacheUnit强制不生效 |No|
-| **FollowOriginRule** | int | 是否优先遵循源站头部缓存策略，0为不优先遵循源站，1为优先遵循源站缓存头部。默认为0 |No|
+| **FollowOriginRule** | boolean | 是否优先遵循源站头部缓存策略，false为不优先遵循源站，true为优先遵循源站缓存头部。默认为0 |No|
 
 #### AccessConf
 
