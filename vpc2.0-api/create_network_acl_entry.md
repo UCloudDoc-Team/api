@@ -39,7 +39,7 @@
 | **CidrBlock** | string | IPv4段的CIDR表示 |**Yes**|
 | **PortRange** | string | 针对的端口范围 |**Yes**|
 | **EntryAction** | string | 规则的行为("Accept", "Reject") |**Yes**|
-| **Description** | string | 描述 |No|
+| **Description** | string | 描述。长度限制为不超过32字节。 |No|
 | **TargetType** | int | 应用目标类型。0代表“子网内全部资源”，1代表“子网内指定资源”，默认为0 |No|
 | **TargetResourceIds.N** | string | 应用目标资源列表。默认为全部资源生效。TargetType为0时不用填写该值。 |No|
 
