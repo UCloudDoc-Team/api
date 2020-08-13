@@ -66,7 +66,7 @@
 | **DomainId** | string | 域名Id |No|
 | **Domain** | string | 域名 |No|
 | **OriginConf** | [*OriginConf*](#OriginConf) | 源站配置 |No|
-| **AccessControlConf** | [*AccessAllConfig*](#AccessAllConfig) | 访问控制配置 |No|
+| **AccessAllConfig** | [*AccessAllConfig*](#AccessAllConfig) | 访问控制配置 |No|
 | **CacheConf** | [*CacheAllConfig*](#CacheAllConfig) | 缓存配置 |No|
 | **AdvancedConf** | [*AdvancedConf*](#AdvancedConf) | 高级配置 |No|
 
