@@ -1,10 +1,10 @@
-# 批量获取加速域名配置 - BatchDescribeNewUcdnDomain
+# 【已废弃】批量获取加速域名配置 - BatchDescribeNewUcdnDomain
 
 ## 简介
 
 批量获取加速域名配置
 
-
+?> 该接口即将下线，获取域名配置可使用GetUcdnDomainConfig
 
 
 

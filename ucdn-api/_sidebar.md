@@ -3,8 +3,8 @@
 - [概览](api/ucdn-api/README.md)
 - [索引](api/ucdn-api/index.md)
 - **API**
-    - [批量获取加速域名配置 - BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)
-    - [批量刷新缓存 - BatchRefreshNewUcdnDomainCache](api/ucdn-api/batch_refresh_new_ucdn_domain_cache)
+    - [【已废弃】批量获取加速域名配置 - BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)
+    - [【已废弃】批量刷新缓存 - BatchRefreshNewUcdnDomainCache](api/ucdn-api/batch_refresh_new_ucdn_domain_cache)
     - [获取预取任务状态 - DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)
     - [获取域名刷新任务状态 - DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
     - [获取域名带宽数据 - GetNewUcdnDomainBandwidth](api/ucdn-api/get_new_ucdn_domain_bandwidth)
