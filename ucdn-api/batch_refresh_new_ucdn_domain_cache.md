@@ -1,10 +1,10 @@
-# 批量刷新缓存 - BatchRefreshNewUcdnDomainCache
+# 【已废弃】批量刷新缓存 - BatchRefreshNewUcdnDomainCache
 
 ## 简介
 
 批量刷新缓存
 
-
+?> 该接口即将下线，刷新缓存可使用RefreshNewUcdnDomainCache
 
 
 
