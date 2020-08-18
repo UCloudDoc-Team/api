@@ -54,8 +54,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Time** | int | 带宽获取的时间点。格式：时间戳 |No|
-| **FlowHitRate** | string | 流量命中率，单位% |No|
-| **RequestHitRate** | string | 请求数命中率，单位% |No|
+| **FlowHitRate** | float | 流量命中率，单位% |No|
+| **RequestHitRate** | float | 请求数命中率，单位% |No|
 
 ## 示例
 
