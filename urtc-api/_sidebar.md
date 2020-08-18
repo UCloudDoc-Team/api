@@ -4,6 +4,7 @@
 - [索引](api/urtc-api/index.md)
 - **API**
     - [创建APP - CreateUrtcApp](api/urtc-api/create_urtc_app)
+    - [根据CallId获取流信息（最大连麦人数&连麦列表） - DescribeURtcStreamByCallId](api/urtc-api/describe_urtc_stream_by_call_id)
     - [启用或者关停APP - EnableURtcApp](api/urtc-api/enable_urtc_app)
     - [获取每日消费时长信息 - GetURtcDaliyConsumption](api/urtc-api/get_urtc_daliy_consumption)
     - [修改项目名称 - ModifyURtcProjectName](api/urtc-api/modify_urtc_project_name)

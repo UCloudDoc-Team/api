@@ -7,6 +7,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[CreateUrtcApp](api/urtc-api/create_urtc_app)|创建APP|
+|[DescribeURtcStreamByCallId](api/urtc-api/describe_urtc_stream_by_call_id)|根据CallId获取流信息（最大连麦人数&连麦列表）|
 |[EnableURtcApp](api/urtc-api/enable_urtc_app)|启用或者关停APP|
 |[GetURtcDaliyConsumption](api/urtc-api/get_urtc_daliy_consumption)|获取每日消费时长信息|
 |[ModifyURtcProjectName](api/urtc-api/modify_urtc_project_name)|修改项目名称|

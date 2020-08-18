@@ -31,7 +31,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度） |**Yes**|
+| **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度）默认5分钟 |No|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外，只支持国内 |No|
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
@@ -54,8 +54,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Time** | int | 带宽获取的时间点。格式：时间戳 |No|
-| **FlowHitRate** | float | 流量命中率，单位% |No|
-| **RequestHitRate** | float | 请求数命中率，单位% |No|
+| **FlowHitRate** | string | 流量命中率，单位% |No|
+| **RequestHitRate** | string | 请求数命中率，单位% |No|
 
 ## 示例
 
@@ -64,10 +64,10 @@
 ```
 https://api.ucloud.cn/?Action=GetNewUcdnDomainHitRate
 &DomainId.n=kdINXUac
-&Areacode=OvvqAfwC
-&BeginTime=5
-&EndTime=1
-&Type=9
+&Areacode=cn
+&BeginTime=1029568275
+&EndTime=1030432275
+&Type=1
 ```
 
 ### 响应示例
@@ -75,41 +75,36 @@ https://api.ucloud.cn/?Action=GetNewUcdnDomainHitRate
 ```json
 {
   "Action": "GetNewUcdnDomainHitRateResponse",
-  "RequestList": [
+  "HitRateInfo": [
     {
-      "CdnRequest": 8,
-      "OriginRequest": 4,
-      "Time": 6
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029569275
     },
     {
-      "CdnRequest": 2,
-      "OriginRequest": 1,
-      "Time": 4
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029569375
     },
     {
-      "CdnRequest": 6,
-      "OriginRequest": 2,
-      "Time": 1
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029569575
     },
     {
-      "CdnRequest": 2,
-      "OriginRequest": 9,
-      "Time": 9
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029569875
     },
     {
-      "CdnRequest": 1,
-      "OriginRequest": 1,
-      "Time": 7
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029569975
     },
     {
-      "CdnRequest": 4,
-      "OriginRequest": 6,
-      "Time": 8
-    },
-    {
-      "CdnRequest": 3,
-      "OriginRequest": 8,
-      "Time": 8
+      "FlowHitRate": 90,
+      "RequestHitRate": 90,
+      "Time": 1029570275
     }
   ],
   "RetCode": 0
