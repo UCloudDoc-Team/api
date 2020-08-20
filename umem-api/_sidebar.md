@@ -34,6 +34,8 @@
     - [查询分布式redis备份 - DescribeUMemBackup](api/umem-api/describe_umem_backup)
     - [获取分布式redis 备份下载链接 - DescribeUMemBackupURL](api/umem-api/describe_umem_backup_url)
 - **API**
+    - [创建主备Redis备份 - CreateURedisBackup](api/umem-api/create_uredis_backup)
     - [拉取UDRedis分片信息 - DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)
+    - [更改zhubeiredis的备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)
