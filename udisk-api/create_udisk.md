@@ -43,6 +43,7 @@
 | **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），RSSDDataDisk（RSSD数据盘），默认值（DataDisk） |No|
 | **UKmsMode** | string | 是否加密。Yes：加密，No：不加密，默认值（No） |No|
 | **CmkId** | string | 加密需要的cmk id，UKmsMode为Yes时，必填 |No|
+| **RdmaClusterId** | string | RDMA集群id。DiskType为RSSDDataDisk可填，指定云盘创建到对应的RDMA集群。 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -73,6 +74,7 @@ https://api.ucloud.cn/?Action=CreateUDisk
 &IgnoreUBillInfo=ehrQXgoX
 &UHostIdForAttachment=yIbJQDVn
 &SnapshotService=VSFFRIXh
+&RdmaClusterId=MBKDGzzF
 ```
 
 ### 响应示例
