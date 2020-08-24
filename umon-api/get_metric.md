@@ -141,6 +141,12 @@
 |参数|描述信息|单位|
 |:---|:---|:---|
 |**CurrentConnections**|VServer连接数|个|
+|**NewConnections**|vserver每秒新建连接数|个/s|
+|**UlbVserverHrsp2xx**|VServer每秒返回2XX的次数|个/s|
+|**UlbVserverHrsp3xx**|VServer每秒返回3XX的次数|个/s|
+|**UlbVserverHrsp4xx**|VServer每秒返回4XX的次数|个/s|
+|**UlbVserverHrsp5xx**|VServer每秒返回5XX的次数|个/s|
+|**UlbVserverHrspOther**|VServer每秒返回其它状态码的次数|个/s|
 
 #### ResourceType:udisk
 
