@@ -21,6 +21,7 @@
 |[DescribePolicyGroup](api/ulb-api/describe_policy_group)|获取内容转发组信息|
 |[DescribeSSL](api/ulb-api/describe_ssl)|获取SSL证书信息|
 |[DescribeULB](api/ulb-api/describe_ulb)|获取负载均衡信息|
+|[DescribeULBSimple](api/ulb-api/describe_ulb_simple)|获取负载均衡信息|
 |[DescribeVServer](api/ulb-api/describe_vserver)|获取VServer信息|
 |[ReleaseBackend](api/ulb-api/release_backend)|释放后端实例|
 |[UnbindSSL](api/ulb-api/unbind_ssl)|解绑SSL证书|
