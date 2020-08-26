@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -19,6 +17,3 @@
 |[QueryURtcTargetQosIndex](api/urtc-api/query_urtc_target_qos_index)|查询特定指标|
 |[QueryURtcTotalQosIndex](api/urtc-api/query_urtc_total_qos_index)|查询总的QOS质量指标(上行总码率，下行总码率，卡顿)|
 |[QueryURtcUserEvent](api/urtc-api/query_urtc_user_event)|查询用户的事件列表|
-
-
-

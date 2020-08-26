@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -26,6 +24,3 @@
 |[GetWaterMarkPattenList](api/umedia-api/get_water_mark_patten_list)|获取水印模版列表|
 |[UpdateCodecPatten](api/umedia-api/update_codec_patten)|更新转码模版|
 |[UpdateWatermarkPatten](api/umedia-api/update_watermark_patten)|更新水印模版|
-
-
-

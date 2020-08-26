@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -36,6 +34,3 @@
 |[TerminateCustomImage](api/uhost-api/terminate_custom_image)|删除自制镜像|
 |[TerminateUHostInstance](api/uhost-api/terminate_uhost_instance)|删除云主机|
 |[UpgradeToArkUHostInstance](api/uhost-api/upgrade_to_ark_uhost_instance)|普通升级为方舟机型|
-
-
-

@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -26,6 +24,3 @@
 |[UGABindUPath](api/pathx-api/uga_bind_upath)|UGA绑定UPath|
 |[UGAUnBindUPath](api/pathx-api/uga_un_bind_upath)|UGA与UPath解绑|
 |[UnBindPathXSSL](api/pathx-api/un_bind_path_xssl)|解绑PathX SSL 证书|
-
-
-

@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## MySQL
 
 | API | 描述信息 |
@@ -77,6 +75,3 @@
 | API | 描述信息 |
 |:---|:---|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
-
-
-

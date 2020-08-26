@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -18,6 +16,3 @@
 |[StopUDDBInstance](api/uddb-api/stop_uddb_instance)|关闭UDDB实例|
 |[UpgradeUDDBDataNode](api/uddb-api/upgrade_uddb_data_node)|升降级分布式数据库数据节点的配置|
 |[UpgradeUDDBInstance](api/uddb-api/upgrade_uddb_instance)|升降级分布式数据库中间件的配置|
-
-
-

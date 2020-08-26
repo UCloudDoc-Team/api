@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -17,6 +15,3 @@
 |[GetTaskResult](api/ugc-api/get_task_result)|获取异步任务结果|
 |[StopTask](api/ugc-api/stop_task)|停止异步任务|
 |[SubmitTask](api/ugc-api/submit_task)|提交任务|
-
-
-
