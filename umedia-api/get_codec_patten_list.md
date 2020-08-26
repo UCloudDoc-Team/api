@@ -14,6 +14,7 @@
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetCodecPattenList)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义

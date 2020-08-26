@@ -19,5 +19,6 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 

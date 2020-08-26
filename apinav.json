@@ -271,6 +271,10 @@
           "links": "/uapi/README"
         },
         {
+            "name": "云命令行 CloudShell",
+            "links": "/cloudshell/README"
+        },
+        {
           "name": "命令行管理工具 CLI",
           "links": "/cli/README"
         },
