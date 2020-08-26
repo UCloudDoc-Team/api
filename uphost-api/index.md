@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -18,6 +16,3 @@
 |[ReinstallPHost](api/uphost-api/reinstall_phost)|重装物理机|
 |[StartPHost](api/uphost-api/start_phost)|启动物理机|
 |[TerminatePHost](api/uphost-api/terminate_phost)|删除物理机|
-
-
-

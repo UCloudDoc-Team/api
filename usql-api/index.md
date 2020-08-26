@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -28,6 +26,3 @@
 |[RemoveUSQLToken](api/usql-api/remove_usql_token)|删除授权|
 |[RunSQLQuery](api/usql-api/run_sql_query)|运行SQL查询|
 |[UpdateUSQLSetting](api/usql-api/update_usql_setting)|更新USQL设置|
-
-
-

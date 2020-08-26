@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -25,6 +23,3 @@
 |[PrefetchNewUcdnDomainCache](api/ucdn-api/prefetch_new_ucdn_domain_cache)|提交预取任务|
 |[RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)|刷新缓存|
 |[SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)|切换账号计费方式|
-
-
-

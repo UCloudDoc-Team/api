@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -13,6 +11,3 @@
 |[GetRepo](api/uhub-api/get_repo)|获取镜像仓库|
 |[GetRepoImage](api/uhub-api/get_repo_image)|获取镜像仓库下的镜像|
 |[UpdateRepo](api/uhub-api/update_repo)|更新镜像仓库|
-
-
-

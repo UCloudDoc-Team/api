@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -71,6 +69,3 @@
 |[StatWafReqsTrend](api/uewaf-api/stat_waf_reqs_trend)|获取WAF请求数趋势|
 |[StatWafTXTRend](api/uewaf-api/stat_waf_txt_rend)|获取WAF下行流量趋势|
 |[UpdateAssurePageCache](api/uewaf-api/update_assure_page_cache)|网页防篡改更新指定url的缓存|
-
-
-

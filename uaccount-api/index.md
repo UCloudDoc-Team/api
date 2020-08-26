@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -20,6 +18,3 @@
 |[TerminateCharacter](api/uaccount-api/terminate_character)|删除角色|
 |[TerminateMember](api/uaccount-api/terminate_member)|删除子账号|
 |[TerminateProject](api/uaccount-api/terminate_project)|删除项目|
-
-
-

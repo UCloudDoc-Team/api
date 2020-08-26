@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## API
 
 | API | 描述信息 |
@@ -11,6 +9,3 @@
 |[GetCleanServiceRegion](api/uddos-uclean-api/get_clean_service_region)|获取可用地域|
 |[GetCleanServiceResizeContract](api/uddos-uclean-api/get_clean_service_resize_contract)|获取降级任务|
 |[GetCleanServiceStatistics](api/uddos-uclean-api/get_clean_service_statistics)|获取清洗流量历史统计|
-
-
-

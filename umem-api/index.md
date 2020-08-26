@@ -1,7 +1,5 @@
 # API 索引
 
-
-
 ## Memcached
 
 | API | 描述信息 |
@@ -48,6 +46,3 @@
 |[CreateURedisBackup](api/umem-api/create_uredis_backup)|创建主备Redis备份|
 |[DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)|拉取UDRedis分片信息|
 |[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改zhubeiredis的备份策略|
-
-
-
