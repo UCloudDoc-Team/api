@@ -45,7 +45,6 @@
 | **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测，<br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path;<br />报文转发型TCP协议仅支持Port，UDP协议支持Ping和Port，默认值为Ping |No|
 | **Domain** | string | 根据MonitorType确认； 当MonitorType为Path时，此字段有意义，代表HTTP检查域名 |No|
 | **Path** | string | 根据MonitorType确认； 当MonitorType为Path时，此字段有意义，代表HTTP检查路径 |No|
-| **EnableHTTP2** | int | 是否开启http2.0，取值范围[0-1]；0代表关闭，1代表开启，默认为0 |No|
 
 ### 响应字段
 

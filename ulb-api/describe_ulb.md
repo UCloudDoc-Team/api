@@ -99,7 +99,6 @@
 | **VServerId** | string | VServer实例的Id |No|
 | **VServerName** | string | VServer实例的名字 |No|
 | **Protocol** | string | VServer实例的协议。 枚举值为：HTTP，TCP，UDP，HTTPS。 |No|
-| **EnableHTTP2** | int | 是否开启http2.0，取值范围[0-1]；0代表关闭，1代表开启，默认为0 |No|
 | **FrontendPort** | int | VServer服务端口 |No|
 | **Method** | string | VServer负载均衡的模式，枚举值：Roundrobin -> 轮询;Source -> 源地址；ConsistentHash -> 一致性哈希；SourcePort -> 源地址（计算端口）；ConsistentHashPort -> 一致性哈希（计算端口）。 |No|
 | **PersistenceType** | string | VServer会话保持方式。枚举值为： None -> 关闭会话保持； ServerInsert -> 自动生成； UserDefined -> 用户自定义。 |No|
