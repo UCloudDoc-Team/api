@@ -30,6 +30,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |通用计算 UGC|[文档](/api/ugc-api/)|
 |容器服务 UDocker|[文档](/api/udocker-api/)|
 |公共镜像库 UHub|[文档](/api/uhub-api/)|
+|容器云 UK8S|[文档](/api/uk8s-api/)|
 
 ### 网络
 | 产品 | 相关链接 |
