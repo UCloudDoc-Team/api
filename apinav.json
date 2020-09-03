@@ -28,6 +28,10 @@
       {
         "links": "/api/uhub-api/README",
         "name": "公共镜像库 UHub"
+      },
+      {
+        "links": "/api/uk8s-api/README",
+        "name": "容器云 UK8S"
       }
     ]
   },
