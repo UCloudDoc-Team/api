@@ -49,11 +49,49 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AttackTypeDistribution** | array[string] | {AttackType: "cc", AttackName: "CC攻击", AttackCount: 9} |No|
-| **RiskRankDistribution** | array[string] | {RiskRankType: "High", Priority: 0, AttackCount: 3} |No|
-| **TimeAxisDistribution** | array[string] | {Time: 1564653600, AcceptCount: 0, DenyCount: 0} |No|
-| **TopAttackIP** | array[string] | {SrcIp: "120.132.23.61", AttackCount: 3,IPDB:{}} |No|
-| **TopAttackUri** | array[string] | {AttackUrl: "/test2", AttackCount: 7} |No|
+| **AttackTypeDistribution** | array[[*AttackTypeDistribution*](#AttackTypeDistribution)] | {AttackType: "cc", AttackName: "CC攻击", AttackCount: 9} |No|
+| **RiskRankDistribution** | array[[*RiskRankDistribution*](#RiskRankDistribution)] | {RiskRankType: "High", Priority: 0, AttackCount: 3} |No|
+| **TimeAxisDistribution** | array[[*TimeAxisDistribution*](#TimeAxisDistribution)] | {Time: 1564653600, AcceptCount: 0, DenyCount: 0} |No|
+| **TopAttackIP** | array[[*TopAttackIP*](#TopAttackIP)] | {SrcIp: "120.132.23.61", AttackCount: 3,IPDB:{}} |No|
+| **TopAttackUri** | array[[*TopAttackUri*](#TopAttackUri)] | {AttackUrl: "/test2", AttackCount: 7} |No|
+
+#### AttackTypeDistribution
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **AttackType** | string | 攻击类型 |No|
+| **AttackName** | string | 攻击类型中文名 |No|
+| **AttackCount** | int | 攻击统计数 |No|
+
+#### RiskRankDistribution
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **RiskRankType** | string | 风险级别 |**Yes**|
+| **Priority** | int | 风险优先级 |**Yes**|
+| **AttackCount** | int | 攻击统计数 |**Yes**|
+
+#### TimeAxisDistribution
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Time** | int | 时间戳 |**Yes**|
+| **AcceptCount** | int | 放行统计 |**Yes**|
+| **DenyCount** | int | 拦截统计 |No|
+
+#### TopAttackIP
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **SrcIp** | string | 攻击源IP |**Yes**|
+| **AttackCount** | int | 攻击统计数 |**Yes**|
+
+#### TopAttackUri
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **AttackUrl** | string | 受攻击URL |**Yes**|
+| **AttackCount** | int | 攻击统计数 |**Yes**|
 
 ## 示例
 

@@ -36,7 +36,7 @@
     - [获取域名攻击次数 - DescribeWafDomainAttackCount](api/uewaf-api/describe_waf_domain_attack_count)
     - [获取域名黑名单列表 - DescribeWafDomainBlackList](api/uewaf-api/describe_waf_domain_black_list)
     - [显示域名对应的证书 - DescribeWafDomainCertificateInfo](api/uewaf-api/describe_waf_domain_certificate_info)
-    - [获取waf防护域名列表 - DescribeWafDomainHostInfo](api/uewaf-api/describe_waf_domain_host_info)
+    - [获取WAF防护域名列表 - DescribeWafDomainHostInfo](api/uewaf-api/describe_waf_domain_host_info)
     - [查询WAF域名QPS趋势 - DescribeWafDomainQPSTrend](api/uewaf-api/describe_waf_domain_qps_trend)
     - [获取域名白名单列表 - DescribeWafDomainWhiteList](api/uewaf-api/describe_waf_domain_white_list)
     - [获取防护规则列表 - DescribeWafProtectionSummaryInfo](api/uewaf-api/describe_waf_protection_summary_info)

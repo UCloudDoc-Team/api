@@ -47,7 +47,7 @@ CC防御规则列表
 |:---|:---|:---|:---|
 | **State** | string | 指定域名的CC防护状态 |**Yes**|
 | **Mode** | string | 指定域名的CC防护模式 |**Yes**|
-| **Max** | string | CC规则最大容量 |**Yes**|
+| **Max** | int | CC规则最大容量 |**Yes**|
 | **Rules** | array[[*AntiCcRule*](#AntiCcRule)] | CC规则列表，参考AntiCcRule |**Yes**|
 
 #### AntiCcRule
@@ -60,7 +60,7 @@ CC防御规则列表
 | **Duration** | int | 统计时长. 单位:秒 |**Yes**|
 | **Reqs** | int | 请求次数 |**Yes**|
 | **Action** | string | 执行动作 |**Yes**|
-| **Validity** | string | 动作有效期,单位:分钟 |**Yes**|
+| **Validity** | int | 动作有效期,单位:分钟 |**Yes**|
 
 ## 示例
 

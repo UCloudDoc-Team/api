@@ -74,7 +74,7 @@
 | **VServerCount** | int | ulb下vserver数量 |No|
 | **ULBType** | string | ULB 的类型（InnerMode or OuterMode） |No|
 | **FirewallSet** | [*FirewallSet*](#FirewallSet) | 防火墙信息，具体结构见下方 FirewallSet |No|
-| **EnableLog** | boolean | ULB是否开启日志功能。0，关闭；1，开启 |No|
+| **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
 
 #### ULBIPSet

@@ -54,7 +54,7 @@
 | **IntervalTime** | int | 攻击统计区间，单位:秒 |**Yes**|
 | **ExpiredTime** | int | 攻击过期区间，单位:秒 |**Yes**|
 | **Enable** | int | 启用状态;1表示启用,0表示禁用 |**Yes**|
-| **CreateTime** | string | 创建时间 |**Yes**|
+| **CreateTime** | int | 创建时间 |**Yes**|
 
 ## 示例
 

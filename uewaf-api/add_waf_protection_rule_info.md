@@ -31,8 +31,8 @@
 | **RuleName** | string | 规则名称 |**Yes**|
 | **RuleAction** | string | 规则命中之后的动作，Deny:拦截，Accept |**Yes**|
 | **RiskRank** | string | 风险等级，Low:低,Middle:中,High:高 |**Yes**|
-| **Rule.N** | string | 规则匹配条件，举例：Field:UserAgent,Operator:Contain,Content:xxxx |**Yes**|
 | **FullDomain** | string | 要添加防护规则的域名 |**Yes**|
+| **Rule.N** | string | 规则匹配条件，举例：Field:UserAgent,Operator:Contain,Content:xxxx |**Yes**|
 | **RiskType** | string | 风险种类；可选值：scan,loopholes,xss,cc,sql,exec,webshell,infoleak,eaa,protocol,other |No|
 
 ### 响应字段
