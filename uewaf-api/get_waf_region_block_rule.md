@@ -39,7 +39,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Count** | int | 规则数量 |No|
-| **RuleList** | [*RegionBlackInfo*](#RegionBlackInfo) | 规则列表，参考RegionBlackInfo |No|
+| **RuleList** | array[[*RegionBlackInfo*](#RegionBlackInfo)] | 规则列表，参考RegionBlackInfo |No|
 
 #### 数据模型
 

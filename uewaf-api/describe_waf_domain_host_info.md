@@ -1,8 +1,8 @@
-# 获取waf防护域名列表 - DescribeWafDomainHostInfo
+# 获取WAF防护域名列表 - DescribeWafDomainHostInfo
 
 ## 简介
 
-获取waf防护域名列表
+获取WAF防护域名列表
 
 
 
@@ -38,7 +38,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TotalCount** | string | 域名总数 |No|
+| **TotalCount** | int | 域名总数 |No|
 | **DomainHostList** | array[[*HostStatausInfo*](#HostStatausInfo)] | 域名信息列表，参考HostStatausInfo |No|
 
 #### 数据模型
@@ -67,7 +67,6 @@
 | **RealIPHeader** | string | 真实IP头部 |No|
 | **AttackCount** | int | 攻击次数 |No|
 | **DomainStatus** | array[[*DomainStatus*](#DomainStatus)] | 域名状态信息，参考DomainStatus |No|
-| **DefenceIps** | object | 防御IP地址表(map)，如：{"cn-gd":["192.168.1.2","192.168.1.3"] |No|
 
 #### SrcIPInfo
 

@@ -35,7 +35,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TransactionInfo** | array[[*TransactionInfo*](#TransactionInfo)] | 用户购买服务的详细信息，参考TransactionInfo |**Yes**|
+| **TransactionInfo** | [*TransactionInfo*](#TransactionInfo) | 用户购买服务的详细信息，参考TransactionInfo |**Yes**|
 
 #### 数据模型
 

@@ -27,7 +27,6 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 不填为默认项目 |No|
-| **EditionType** | string | 版本类型名，Enhanced:增强版,Deluxe:高级版,Enterprise:企业版,Professional:旗舰版（已废弃） |No|
 
 ### 响应字段
 
@@ -46,13 +45,13 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **IPUsage** | [*UsageInfoDetail*](#UsageInfoDetail) | 独享ip用量，参考UsageInfoDetail |No|
-| **DomainUsage** | object | 已添加域名数量，参考UsageInfoDetail |No|
-| **BoardWidthUsageInner** | object | 内部带宽占用，参考UsageInfoDetail |No|
-| **BoardWidthUsageOuter** | object | 外部带宽占用，参考UsageInfoDetail |No|
-| **DomainLimit** | object | 域名数量限额，参考UsageInfoDetail |No|
-| **ExclusiveIPLimit** | object | 独享ip限额，参考UsageInfoDetail |No|
-| **BandwidthInner** | object | 内部带宽限额，参考UsageInfoDetail |No|
-| **BandwidthOuter** | object | 外部带宽限额，参考UsageInfoDetail |No|
+| **DomainUsage** | [*UsageInfoDetail*](#UsageInfoDetail) | 已添加域名数量，参考UsageInfoDetail |No|
+| **BoardWidthUsageInner** | [*UsageInfoDetail*](#UsageInfoDetail) | 内部带宽占用，参考UsageInfoDetail |No|
+| **BoardWidthUsageOuter** | [*UsageInfoDetail*](#UsageInfoDetail) | 外部带宽占用，参考UsageInfoDetail |No|
+| **DomainLimit** | [*UsageInfoDetail*](#UsageInfoDetail) | 域名数量限额，参考UsageInfoDetail |No|
+| **ExclusiveIPLimit** | [*UsageInfoDetail*](#UsageInfoDetail) | 独享ip限额，参考UsageInfoDetail |No|
+| **BandwidthInner** | [*UsageInfoDetail*](#UsageInfoDetail) | 内部带宽限额，参考UsageInfoDetail |No|
+| **BandwidthOuter** | [*UsageInfoDetail*](#UsageInfoDetail) | 外部带宽限额，参考UsageInfoDetail |No|
 
 #### UsageInfoDetail
 
