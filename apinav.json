@@ -18,10 +18,6 @@
         "name": "私有专区 UDHost"
       },
       {
-        "links": "/api/ugc-api/README",
-        "name": "通用计算 UGC"
-      },
-      {
         "links": "/api/udocker-api/README",
         "name": "容器服务 UDocker"
       },
