@@ -115,7 +115,7 @@
       },
       {
         "links": "/api/uedn-api/README",
-        "name": "边缘分发节点 UEDN"
+        "name": "边缘计算节点 UEDN"
       }
     ]
   },

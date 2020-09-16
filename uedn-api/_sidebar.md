@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__uedn">边缘分发节点 UEDN</div>
+<div class="sidebar_title icon__uedn">边缘计算节点 UEDN</div>
 
 - [概览](api/uedn-api/README.md)
 - [索引](api/uedn-api/index.md)
