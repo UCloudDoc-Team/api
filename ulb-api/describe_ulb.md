@@ -75,7 +75,7 @@
 | **SubnetId** | string | ULB 为 InnerMode 时，ULB 所属的子网ID，默认为空 |No|
 | **BusinessId** | string | ULB 所属的业务组ID |No|
 | **PrivateIP** | string | ULB的内网IP，当ULBType为OuterMode时，该值为空 |No|
-| **FirewallSet** | [*FirewallSet*](#FirewallSet) | 防火墙信息，具体结构见下方 FirewallSet |No|
+| **FirewallSet** | array[[*FirewallSet*](#FirewallSet)] | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
 
