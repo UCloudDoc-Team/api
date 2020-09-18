@@ -65,7 +65,7 @@
 | **Remark** | string | 负载均衡的备注 |No|
 | **CreateTime** | int | ULB的创建时间，格式为Unix Timestamp |No|
 | **VPCId** | string | ULB所在的VPC的ID |No|
-| **SubnetId** | string | ULB 为 InnerMode 时，ULB 所属的子网ID，默认为空 |No|
+| **SubnetId** | string | ULB 为 InnerMode 时，ULB 所属的子网ID |No|
 | **BusinessId** | string | ULB 所属的业务组ID |No|
 | **PrivateIP** | string | ULB的内网IP，当ULBType为OuterMode时，该值为空<br /> |No|
 | **BandwidthType** | int | 带宽类型，枚举值为： 0，非共享带宽； 1，共享带宽<br /> |No|
@@ -73,7 +73,7 @@
 | **IPSet** | array[[*ULBIPSet*](#ULBIPSet)] | ULB的详细信息列表，具体结构见下方 ULBIPSet |No|
 | **VServerCount** | int | ulb下vserver数量 |No|
 | **ULBType** | string | ULB 的类型（InnerMode or OuterMode） |No|
-| **FirewallSet** | [*FirewallSet*](#FirewallSet) | 防火墙信息，具体结构见下方 FirewallSet |No|
+| **FirewallSet** | array[[*FirewallSet*](#FirewallSet)] | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
 
