@@ -190,7 +190,7 @@
     ]
   },
   {
-    "listname": "监控与管理",
+    "listname": "监控与运维",
     "listvalue": [
       {
         "links": "/api/umon-api/README",
