@@ -45,4 +45,5 @@
 |:---|:---|
 |[CreateURedisBackup](api/umem-api/create_uredis_backup)|创建主备Redis备份|
 |[DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)|拉取UDRedis分片信息|
+|[DescribeURedisVersion](api/umem-api/describe_uredis_version)|获取主Redis可用版本|
 |[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改zhubeiredis的备份策略|
