@@ -64,8 +64,6 @@
 | **BandwidthType** | int | 带宽类型，枚举值为： 0，非共享带宽； 1，共享带宽 |No|
 | **Bandwidth** | int | 带宽 |No|
 | **CreateTime** | int | ULB的创建时间，格式为Unix Timestamp |No|
-| **ExpireTime** | int | ULB的到期时间，格式为Unix Timestamp |No|
-| **Resource** | array[string] | ULB的详细信息列表（废弃） |No|
 | **IPSet** | array[[*ULBIPSet*](#ULBIPSet)] | ULB的详细信息列表，具体结构见下方 ULBIPSet |No|
 | **VServerSet** | array[[*ULBVServerSet*](#ULBVServerSet)] | 负载均衡实例中存在的VServer实例列表，具体结构见下方 ULBVServerSet |No|
 | **ULBType** | string | ULB 的类型 |No|
