@@ -5,6 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[BindPathXSSL](api/pathx-api/bind_path_xssl)|绑定PathX SSL证书|
+|[CreateGlobalSSHInstance](api/pathx-api/create_global_ssh_instance)|创建GlobalSSH实例|
 |[CreatePathXSSL](api/pathx-api/create_path_xssl)|创建证书|
 |[CreateUGAForwarder](api/pathx-api/create_uga_forwarder)|创建加速实例转发器|
 |[CreateUGAInstance](api/pathx-api/create_uga_instance)|创建全球加速配置项|
@@ -13,12 +14,16 @@
 |[DeleteUGAForwarder](api/pathx-api/delete_uga_forwarder)|删除加速实例转发器|
 |[DeleteUGAInstance](api/pathx-api/delete_uga_instance)|删除全球加速服务加速配置|
 |[DeleteUPath](api/pathx-api/delete_upath)|删除UPath|
+|[DescribeGlobalSSHInstance](api/pathx-api/describe_global_ssh_instance)|获取GlobalSSH实例列表|
 |[DescribePathXLineConfig](api/pathx-api/describe_path_x_line_config)|获取全球加速线路信息|
 |[DescribePathXSSL](api/pathx-api/describe_path_xssl)|获取SSL证书信息|
 |[DescribeUGAInstance](api/pathx-api/describe_uga_instance)|获取全球加速服务加速配置信息|
 |[DescribeUPath](api/pathx-api/describe_upath)|获取加速线路信息|
 |[DescribeUPathTemplate](api/pathx-api/describe_upath_template)|查询UPath的监控模板|
+|[GetGlobalSSHPrice](api/pathx-api/get_global_ssh_price)|获取GlobalSSH价格|
+|[GetGlobalSSHUpdatePrice](api/pathx-api/get_global_ssh_update_price)|获取GlobalSSH升级价格|
 |[GetPathXMetric](api/pathx-api/get_path_x_metric)|获取全球加速监控信息|
+|[ModifyGlobalSSHType](api/pathx-api/modify_global_ssh_type)|修改GlobalSSH实例类型|
 |[ModifyUPathBandwidth](api/pathx-api/modify_upath_bandwidth)|修改加速线路带宽|
 |[ModifyUPathTemplate](api/pathx-api/modify_upath_template)|修改UPath监控告警项|
 |[UGABindUPath](api/pathx-api/uga_bind_upath)|UGA绑定UPath|
