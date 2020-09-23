@@ -5,11 +5,13 @@
 | API | 描述信息 |
 |:---|:---|
 |[BindPathXSSL](api/pathx-api/bind_path_xssl)|绑定PathX SSL证书|
+|[CreateCommonUGAInstance](api/pathx-api/create_common_uga_instance)|创建苹果审核加速通道|
 |[CreateGlobalSSHInstance](api/pathx-api/create_global_ssh_instance)|创建GlobalSSH实例|
 |[CreatePathXSSL](api/pathx-api/create_path_xssl)|创建证书|
 |[CreateUGAForwarder](api/pathx-api/create_uga_forwarder)|创建加速实例转发器|
 |[CreateUGAInstance](api/pathx-api/create_uga_instance)|创建全球加速配置项|
 |[CreateUPath](api/pathx-api/create_upath)|创建UPath|
+|[DeleteCommonUGAInstance](api/pathx-api/delete_common_uga_instance)|删除苹果加速通道|
 |[DeletePathXSSL](api/pathx-api/delete_path_xssl)|删除PathX SSL证书|
 |[DeleteUGAForwarder](api/pathx-api/delete_uga_forwarder)|删除加速实例转发器|
 |[DeleteUGAInstance](api/pathx-api/delete_uga_instance)|删除全球加速服务加速配置|
