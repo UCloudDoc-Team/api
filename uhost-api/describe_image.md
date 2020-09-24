@@ -61,10 +61,10 @@
 | **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist)  |No|
 | **ImageId** | string | 镜像ID |No|
 | **ImageName** | string | 镜像名称 |No|
-| **OsType** | string | 操作系统类型：Liunx，Windows |No|
+| **OsType** | string | 操作系统类型：Linux，Windows |No|
 | **OsName** | string | 操作系统名称 |No|
 | **ImageType** | string | 镜像类型 标准镜像：Base， 行业镜像：Business，自定义镜像：Custom |No|
-| **Features** | array[string] | 特殊状态标识， 目前包含NetEnhnced（网络增强1.0）, NetEnhanced_Ultra]（网络增强2.0）,HotPlug(热升级),CloudInit |No|
+| **Features** | array[string] | 特殊状态标识， 目前包含NetEnhnced（网络增强1.0）, NetEnhanced_Ultra]（网络增强2.0）, HotPlug(热升级), CloudInit, IPv6 |No|
 | **FuncType** | string | 行业镜像类型（仅行业镜像将返回这个值） |No|
 | **IntegratedSoftware** | string | 集成软件名称（仅行业镜像将返回这个值） |No|
 | **Vendor** | string | 供应商（仅行业镜像将返回这个值） |No|
