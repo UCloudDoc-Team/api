@@ -20,7 +20,7 @@ Request Headers
 |prefix           |String|前缀，utf-8编码，默认为空字符串                         |No      |
 |marker|String|标志字符串，utf-8编码，默认为空字符串)                         |No      |
 |limit|Integer|文件列表数目，默认为20                         |No      |
-|Authorization    |String|下载请求的授权签名                         |No      |
+|Authorization    |String|下载请求的授权签名，[UFile API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)         |No      |
 
 Request Elements
 

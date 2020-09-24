@@ -17,7 +17,7 @@ Request Headers
 
 |Name         |Type  |Description|Required|
 |---|---|---|---|
-|Authorization|String|存储类型转换请求的授权签名  |Yes     |
+|Authorization|String|存储类型转换请求的授权签名，详情可参考 [UFile API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |Yes     |
 
 Request Elements
 
