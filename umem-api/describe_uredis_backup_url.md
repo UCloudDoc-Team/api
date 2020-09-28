@@ -32,10 +32,12 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **BackupId** | int | 备份ID |**Yes**|
+| **BackupId** | string | 备份ID |**Yes**|
 | **RegionFlag** | boolean | 是否是跨机房URedis(默认false) |No|
+| **GroupId** | string | 实例名称 |No|
+| **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
 
 ### 响应字段
 
@@ -45,6 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **BackupURL** | string | 备份文件公网的地址 |No|
+| **BackupPath** | string | 备份文件公网的地址 |No|
 
 
 
@@ -56,8 +59,10 @@
 ```
 https://api.ucloud.cn/?Action=DescribeURedisBackupURL
 &Region=cn-bj2
-&Zone=cn-bj2-03
-&BackupId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&Zone=cn-bj2-04
+&BackupId=00XXX68c-c7f5-XX52-9eac-dXXXXXXX8f0e1
+&GroupId=mfweUQnQ
+&SlaveZone=VlwscEJR
 ```
 
 ### 响应示例
@@ -65,7 +70,9 @@ https://api.ucloud.cn/?Action=DescribeURedisBackupURL
 ```json
 {
   "Action": "DescribeURedisBackupURLResponse",
-  "BackupURL": "http://umembackup-5001.cn-bj.ufileos.com/uredis-onb4ha/2222222-8862ba8c-65b0-4691-a8b7-c4ed5f699c64?UCloudPublicKey=ucloududb@ucloud.cn1426152414000604875621\u0026Expires=1495708249\u0026Signature=m/Nh8eEvdF8GvGdYUj/joSf4RJQ=",
+  "BackupPath": "KgVuXeBu",
+  "BackupURL": "http://umembXXXXXup-9001.cn-bj.ilXXXXeos.com/uredis-XXXXbz/sgbf_xxxxxx-a75b24a9-d9e1-4d38-9dc1-aecad464XXX45?UCloudPublicKey=ucloudXXX@ucloud.cn142615241XXXX604875621\u0026Expires=1529927068\u0026Signature=sbH+QOWbtxXXXX6z5o6HBxrOcU=\n",
+  "InnerBackupPath": "zeAzhTZt",
   "RetCode": 0
 }
 ```
