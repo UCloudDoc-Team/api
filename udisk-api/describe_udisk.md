@@ -67,12 +67,9 @@
 | **Status** | string | 状态:Available(可用),Attaching(挂载中), InUse(已挂载), Detaching(卸载中), Initializating(分配中), Failed(创建失败),Cloning(克隆中),Restoring(恢复中),RestoreFailed(恢复失败), |No|
 | **CreateTime** | int | 创建时间 |No|
 | **ExpiredTime** | int | 过期时间 |No|
-| **UHostId** | string | 挂载的UHost的Id。【即将废弃，建议使用HostId】 |No|
-| **UHostName** | string | 挂载的UHost的Name。【即将废弃，建议使用HostName】 |No|
-| **UHostIP** | string | 挂载的UHost的IP。【即将废弃，建议使用HostIP】 |No|
-| **HostId** | string | 挂载的Host的Id |No|
-| **HostName** | string | 挂载的Host的Name |No|
-| **HostIP** | string | 挂载的Host的IP |No|
+| **UHostId** | string | 挂载的UHost的Id |No|
+| **UHostName** | string | 挂载的UHost的Name |No|
+| **UHostIP** | string | 挂载的UHost的IP |No|
 | **DeviceName** | string | 挂载的设备名称 |No|
 | **ChargeType** | string | Year,Month,Dynamic,Trial,Postpay |No|
 | **Tag** | string | 业务组名称 |No|
