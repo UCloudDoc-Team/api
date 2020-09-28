@@ -110,7 +110,7 @@
 | **Name** | string | UDisk名字（仅当磁盘是UDisk时返回） |No|
 | **Drive** | string | 磁盘盘符 |No|
 | **Size** | int | 磁盘大小，单位: GB |No|
-| **BackupType** | string | 备份方案。若开通了数据方舟，则为DATAARK |No|
+| **BackupType** | string | 备份方案。若开通了数据方舟，则为DataArk |No|
 
 #### UHostIPSet
 
