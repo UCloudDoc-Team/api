@@ -132,7 +132,8 @@
 | **SSLType** | string | SSL证书类型，暂时只有 Pem 一种类型 |No|
 | **SSLContent** | string | SSL证书的内容 |No|
 | **CreateTime** | int | SSL证书的创建时间 |No|
-| **SSLBindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
+| **HashValue** | string | SSL证书的HASH值 |No|
+| **BindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
 
 #### ULBBackendSet
 
@@ -172,6 +173,9 @@
 | **BackendId** | string | 所添加的后端资源在ULB中的对象ID，（为ULB系统中使用，与资源自身ID无关 |No|
 | **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube |No|
 | **ResourceName** | string | 后端资源的实例名称 |No|
+| **SubResourceId** | string | 如果资源绑定了弹性网卡，则展示弹性网卡的资源ID |No|
+| **SubResourceName** | string | 如果资源绑定了弹性网卡，则展示弹性网卡的资源名称 |No|
+| **SubResourceType** | string | "UNI"或者为空 |No|
 | **ObjectId** | string | 后端资源的对象ID |No|
 | **Port** | int | 所添加的后端资源服务端口 |No|
 | **PrivateIP** | string | 后端资源的内网IP |No|

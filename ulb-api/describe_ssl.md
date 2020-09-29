@@ -59,7 +59,8 @@
 | **SSLType** | string | SSL证书类型，暂时只有 Pem 一种类型 |No|
 | **SSLContent** | string | SSL证书的内容 |No|
 | **CreateTime** | int | SSL证书的创建时间 |No|
-| **SSLBindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
+| **HashValue** | string | SSL证书的HASH值 |No|
+| **BindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
 
 #### SSLBindedTargetSet
 
