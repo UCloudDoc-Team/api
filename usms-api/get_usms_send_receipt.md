@@ -61,7 +61,7 @@
 |:---|:---|:---|:---|
 | **Phone** | string | 手机号码 |**Yes**|
 | **CostCount** | int | 消耗短信条数 |**Yes**|
-| **ReceiptResult** | string | 回执结果 |**Yes**|
+| **ReceiptResult** | string | 回执结果<br/><br/>**枚举值**：<ul><li>`发送成功`: 代表成功</li><li>`Success`: 代表成功</li><li>`发送失败`: 代表失败</li><li>`Fail`: 代表失败</li><li>`状态未知`: 代表未知</li><li>`Unknow`: 代表未知</li></ul> |**Yes**|
 | **ReceiptDesc** | string | 回执结果描述 |**Yes**|
 | **ReceiptTime** | int | 回执返回时间 |**Yes**|
 
@@ -99,8 +99,3 @@ https://api.ucloud.cn/?Action=GetUSMSSendReceipt
   "RetCode": 0
 }
 ```
-
-
-
-
-
