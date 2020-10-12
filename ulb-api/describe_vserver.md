@@ -120,7 +120,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **BackendId** | string | 所添加的后端资源在ULB中的对象ID，（为ULB系统中使用，与资源自身ID无关 |No|
-| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube |No|
+| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube；UNI -> 虚拟网卡 |No|
 | **ResourceName** | string | 后端资源的实例名称 |No|
 | **SubResourceId** | string | 如果资源绑定了弹性网卡，则展示弹性网卡的资源ID |No|
 | **SubResourceName** | string | 如果资源绑定了弹性网卡，则展示弹性网卡的资源名称 |No|

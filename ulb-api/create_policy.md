@@ -38,6 +38,7 @@
 | **BackendId.N** | string | 内容转发策略应用的后端资源实例的ID，来源于 AllocateBackend 返回的 BackendId |**Yes**|
 | **Match** | string | 内容转发匹配字段 |**Yes**|
 | **Type** | string | 内容转发匹配字段的类型 |No|
+| **PolicyPriority** | int | 策略优先级，1-9999 |No|
 
 ### 响应字段
 
@@ -58,12 +59,13 @@
 ```
 https://api.ucloud.cn/?Action=CreatePolicy
 &Region=cn-bj2
-&ProjectId=project-xs13ik
-&GroupId=ulb-fr-2axjbg
+&ProjectId=project-XXX
 &Match=ok
-&ULBId=ulb-kix54p
-&VServerId=vserver-9b646b
-&BackendId.0=backend-67a442
+&Type=Domain
+&ULBId=ulb-XXXXX
+&VServerId=vserver-XXXX
+&BackendId.0=backend-XXXX
+&PolicyPriority=7
 ```
 
 ### 响应示例
@@ -71,7 +73,7 @@ https://api.ucloud.cn/?Action=CreatePolicy
 ```json
 {
   "Action": "CreatePolicyResponse",
-  "PolicyId": "0a074d02-b7c9-4a5d-9acf-414081f1b85f",
+  "PolicyId": "0a074d02-b7c9-4a5d-9acf-XXXXXXX",
   "RetCode": 0
 }
 ```

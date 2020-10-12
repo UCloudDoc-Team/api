@@ -54,9 +54,9 @@
 ```
 https://api.ucloud.cn/?Action=ReleaseBackend
 &Region=cn-bj2
-&ProjectId=project-xs13ik
-&ULBId=ulb-a3qq0o
-&BackendId=backend-d0d9e8
+&ProjectId=project-XXXX
+&ULBId=ulb-XXXX
+&BackendId=backend-XXXX
 ```
 
 ### 响应示例
