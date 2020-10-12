@@ -55,9 +55,9 @@
 ```
 https://api.ucloud.cn/?Action=DeletePolicy
 &Region=cn-bj2
-&ProjectId=project-xs13ik
-&GroupId=ulb-fr-2axjbg
-&PolicyId=0a074d02-b7c9-4a5d-9acf-414081f1b85f
+&ProjectId=project-XXXXX
+&VServerId=vserver-XXXXX
+&PolicyId=0a074d02-b7c9-4a5d-9acf-XXXXXX
 ```
 
 ### 响应示例

@@ -35,7 +35,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
 | **ULBId** | string | 负载均衡实例的ID |**Yes**|
 | **VServerId** | string | VServer实例的ID |**Yes**|
-| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube；默认值为UHost。报文转发模式不支持UDocker、UHybrid、CUBE |**Yes**|
+| **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UNI -> 虚拟网卡；UPM -> 物理云主机； UDHost -> 私有专区主机；UDocker -> 容器；UHybrid->混合云主机；CUBE->Cube；默认值为UHost。报文转发模式不支持UDocker、UHybrid、CUBE |**Yes**|
 | **ResourceId** | string | 所添加的后端资源的资源ID |**Yes**|
 | **ResourceIP** | string | 所添加的后端服务器的资源实例IP，当ResourceType 为 UHybrid 时有效，且必填 |No|
 | **VPCId** | string | 所添加的后端服务器所在的vpc，当ResourceType 为 UHybrid 时有效，且必填 |No|
