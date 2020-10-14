@@ -353,7 +353,7 @@
         },
         {
           "name": "Python",
-          "links": "https://github.com/ufilesdk-dev/ufile-sdk-python"
+          "links": "https://github.com/ucloud/ufile-sdk-python"
         },
         {
           "name": "Go",
@@ -377,7 +377,7 @@
         },
         {
           "name": "Android",
-          "links": "https://github.com/ufilesdk-dev/ufile-androidsdk"
+          "links": "https://github.com/ucloud/ufile-sdk-android"
         }
       ]
     },
@@ -389,7 +389,7 @@
           "links": "https://github.com/ucloud/netanalysis-sdk-ios"
         },
         {
-          "name": "Go",
+          "name": "Android",
           "links": "https://github.com/ucloud/netanalysis-sdk-android"
         }
       ]
