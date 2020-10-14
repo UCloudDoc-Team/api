@@ -309,25 +309,26 @@
         {
           "name": "OpenSDK Python",
           "links": "/opensdk-python/README"
-        },
+        }
+      ]
+    },
+    {
+      "listname": "短信包 USMS",
+      "listvalue": [
         {
-          "name": "UToken SDK",
-          "links": "/utoken/sdk/prerequisites"
-        },
-        {
-          "name": "USMS Python",
+          "name": "Python",
           "links": "/usms/sdk_docs/7003"
         },
         {
-          "name": "USMS Go",
+          "name": "Go",
           "links": "/usms/sdk_docs/7007"
         },
         {
-          "name": "USMS Java",
+          "name": "Java",
           "links": "/usms/sdk_docs/7009"
         },
         {
-          "name": "USMS PHP",
+          "name": "PHP",
           "links": "/usms/sdk_docs/7005"
         }
       ]
@@ -391,6 +392,15 @@
         {
           "name": "Android",
           "links": "https://github.com/ucloud/netanalysis-sdk-android"
+        }
+      ]
+    },
+    {
+      "listname": "其他",
+      "listvalue": [
+        {
+          "name": "UToken SDK",
+          "links": "/utoken/sdk/prerequisites"
         }
       ]
     }
