@@ -54,7 +54,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Time** | int | 时间 |**Yes**|
+| **Time** | int | 时间 |No|
+| **Total** | int | 当前分组的总状态码数 |No|
 | **Http100** | int | http100数量 |No|
 | **Http101** | int | http101数量 |No|
 | **Http102** | int | http102数量 |No|
