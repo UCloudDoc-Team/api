@@ -14,7 +14,7 @@
 |[DescribeUEdnAvailableIDC](api/uedn-api/describe_uedn_available_idc)|获取UEDN可用机房列表|
 |[DescribeUEdnFirewall](api/uedn-api/describe_uedn_firewall)|获取防火墙信息|
 |[DescribeUEdnFirewallResource](api/uedn-api/describe_uedn_firewall_resource)|防火墙绑定的资源列表|
-|[DescribeUEdnNodeISP](api/uedn-api/describe_uedn_node_isp)|获取物理机房信息|
+|[DescribeUEdnNodeISP](api/uedn-api/describe_uedn_node_isp)|获取机房信息|
 |[DescribeUEdnSubnet](api/uedn-api/describe_uedn_subnet)|获取子网列表|
 |[DescribeUvodnIDC](api/uedn-api/describe_uvodn_idc)|获取IDC机房列表|
 |[DescribeUvodnNode](api/uedn-api/describe_uvodn_node)|获取节点列表|

@@ -1,4 +1,4 @@
-# 获取物理机房信息 - DescribeUEdnNodeISP
+# 获取机房信息 - DescribeUEdnNodeISP
 
 ## 简介
 
@@ -49,8 +49,8 @@
 | **Province** | string | 省份 |No|
 | **City** | string | 城市 |No|
 | **LineType** | string | 线路类型 |No|
-| **Isp** | string | 机房运营商名称 |No|
-| **PyOcName** | string | 物理机房名称 |No|
+| **IspName** | string | 机房运营商名称 |No|
+| **IdcName** | string | 机房名称 |No|
 
 ## 示例
 
