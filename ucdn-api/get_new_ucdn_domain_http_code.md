@@ -1,10 +1,10 @@
-# 获取域名状态码监控 - GetNewUcdnDomainHttpCode
+# 【待下线】获取域名状态码监控 - GetNewUcdnDomainHttpCode
 
 ## 简介
 
 获取域名状态码监控
 
-
+?> 该接口即将下线，获取域名请求数可使用最新接口GetUcdnDomainHttpCodeV2
 
 
 

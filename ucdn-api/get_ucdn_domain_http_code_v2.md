@@ -1,10 +1,10 @@
-# 【待下线】获取域名详细状态码监控 - GetNewUcdnDomainHttpCodeV2
+# 获取域名状态码信息【新】 - GetUcdnDomainHttpCodeV2
 
 ## 简介
 
-获取域名详细状态码监控
+获取域名状态码信息
 
-?> 详细状态码监控仅返回有数量的详细状态码，若无数量则不返回。该接口即将下线，获取域名请求数可使用最新接口GetUcdnDomainHttpCodeV2
+
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetNewUcdnDomainHttpCodeV2)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetUcdnDomainHttpCodeV2)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetNewUcdnDomainHttpCodeV2`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetUcdnDomainHttpCodeV2`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -32,11 +32,12 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天粒度，3表示按照一分钟粒度） |**Yes**|
-| **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。 |**Yes**|
-| **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。 |**Yes**|
+| **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度，3表示1分钟粒度） |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外，只支持国内 |No|
+| **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
+| **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
+| **Layer** | string | 指定获取的状态码是边缘还是上层    edge 表示边缘  layer 表示上层 |No|
 
 ### 响应字段
 
@@ -45,10 +46,22 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **HttpCodeV2Detail** | array[[*HttpCodeV2Detail*](#HttpCodeV2Detail)] | 状态码详情 |No|
+| **HttpCodeDetail** | array[[*HttpCodeInfoV2*](#HttpCodeInfoV2)] | 状态码实例表。详细见HttpCodeInfoV2 |No|
 
 #### 数据模型
 
+
+#### HttpCodeInfoV2
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Time** | int | 带宽获取的时间点。格式：时间戳 |No|
+| **Http1XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 1xx信息，参考HttpCodeV2Detail结构 |No|
+| **Http2XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 2xx信息，参考HttpCodeV2Detail结构 |No|
+| **Http3XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 3xx信息，参考HttpCodeV2Detail结构 |No|
+| **Http4XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 4xx信息，参考HttpCodeV2Detail结构 |No|
+| **Http5XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 5xx信息，参考HttpCodeV2Detail结构 |No|
+| **Http6XX** | [*HttpCodeV2Detail*](#HttpCodeV2Detail) | 6xx信息，参考HttpCodeV2Detail结构 |No|
 
 #### HttpCodeV2Detail
 
@@ -118,31 +131,28 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=GetNewUcdnDomainHttpCodeV2
-&ProjectId=wBkjkOLu
-&Type=2
-&DomainId.n=www.ucloud.cn
-&Areacode=cn
-&BeginTime=8
+https://api.ucloud.cn/?Action=GetUcdnDomainHttpCodeV2
+&ProjectId=VSXKSpMI
+&Type=4
+&DomainId.n=TZDyiSOZ
+&Areacode=whbCZOhz
+&BeginTime=7
 &EndTime=8
+&Layer=yESvaTXp
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "GetNewUcdnDomainHttpCodeV2Response",
-  "HttpCodeV2Detail": [
+  "Action": "GetUcdnDomainHttpCodeV2Response",
+  "HttpCodeDetail": [
     {
-      "Http200": 2137102581,
-      "Http206": 92972,
-      "Http302": 5,
-      "Http304": 931756,
-      "Http404": 230669,
-      "Http412": 305,
-      "Http416": 74,
-      "Http500": 160,
-      "Time": 1558443000
+      "HttpFiveXX": 1,
+      "HttpFourXX": 1,
+      "HttpThreeXX": 4,
+      "HttpTwoXX": 9,
+      "Time": 6
     }
   ],
   "RetCode": 0

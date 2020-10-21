@@ -1,10 +1,10 @@
-# 获取域名带宽数据 - GetNewUcdnDomainBandwidth
+# 【待下线】获取域名带宽数据 - GetNewUcdnDomainBandwidth
 
 ## 简介
 
 获取域名带宽数据
 
-
+?> 该接口即将下线，获取域名带宽数据可使用GetUcdnDomainBandwidthV2
 
 
 
