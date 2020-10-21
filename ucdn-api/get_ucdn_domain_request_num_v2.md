@@ -1,10 +1,10 @@
-# 获取域名请求数 - GetUcdnDomainRequestNumV2
+# 【待下线】获取域名请求数 - GetUcdnDomainRequestNumV2
 
 ## 简介
 
 获取域名请求数
 
-
+?> 该接口即将下线，获取域名请求数可使用最新接口GetUcdnDomainRequestNumV3 
 
 
 

@@ -1,10 +1,10 @@
-# 获取加速域名流量使用信息 - GetUcdnDomainTraffic
+# 【待下线】获取加速域名流量使用信息 - GetUcdnDomainTraffic
 
 ## 简介
 
 获取加速域名流量使用信息
 
-
+?> 该接口即将下线，获取域名流量数据可使用GetUcdnDomainBandwidthV2
 
 !> note<br />流量使用数据最长保留3个月的时间。
 

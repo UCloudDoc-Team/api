@@ -1,4 +1,4 @@
-# 获取流量信息 - GetUcdnTraffic
+# 【待下线】获取流量信息 - GetUcdnTraffic
 
 ## 简介
 
