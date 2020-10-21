@@ -2,7 +2,7 @@
 
 ## 简介
 
-获取物理机房信息
+获取机房信息
 
 
 
@@ -69,13 +69,13 @@ https://api.ucloud.cn/?Action=DescribeUEdnNodeISP
 ```json
 {
   "Action": "DescribeUEdnNodeISPResponse",
-  "PcOcSet": [
+  "NodeIspList": [
     {
       "City": "uGwAvINF",
-      "Isp": "ATsnAkXh",
+      "IdcName": "qgggmCfn",
+      "IspName": "ATsnAkXh",
       "LineType": "StfjJyGk",
-      "Province": "jTHjxILr",
-      "PyOcName": "qgggmCfn"
+      "Province": "jTHjxILr"
     }
   ],
   "RetCode": 0
