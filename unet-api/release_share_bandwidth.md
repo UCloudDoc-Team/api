@@ -35,7 +35,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **ShareBandwidthId** | string | 共享带宽ID |**Yes**|
 | **EIPBandwidth** | int | 关闭共享带宽后，各EIP恢复为的带宽值 |**Yes**|
-| **PayMode** | string | Bandwidth 带宽计费, Traffic 转流量计费 |No|
+| **PayMode** | string | 默认为 Bandwidth 带宽计费 |No|
 
 ### 响应字段
 
@@ -55,7 +55,7 @@
 ```
 https://api.ucloud.cn/?Action=ReleaseShareBandwidth
 &Region=cn-bj2
-&ShareBandwidthId=bwshare-fvdr45
+&ShareBandwidthId=bwshare-XXXX
 &EIPBandwidth=2
 ```
 
@@ -64,6 +64,7 @@ https://api.ucloud.cn/?Action=ReleaseShareBandwidth
 ```json
 {
   "Action": "ReleaseShareBandwidthResponse",
+  "Request_uuid": "d1e70f3e-1a3b-49ef-a2bb-XXXXXX",
   "RetCode": 0
 }
 ```
