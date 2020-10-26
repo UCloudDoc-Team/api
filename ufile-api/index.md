@@ -5,7 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[CreateBucket](api/ufile-api/create_bucket)|创建Bucket|
-|[CreateUFileToken](api/ufile-api/create_ufile_token)|创建UFile令牌|
+|[CreateUFileToken](api/ufile-api/create_ufile_token)|创建US3令牌|
 |[DeleteBucket](api/ufile-api/delete_bucket)|删除Bucket|
 |[DeleteUFileToken](api/ufile-api/delete_ufile_token)|删除令牌|
 |[DescribeBucket](api/ufile-api/describe_bucket)|获取Bucket信息|

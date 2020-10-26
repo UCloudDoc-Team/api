@@ -4,7 +4,7 @@
 - [概览](api/ufile-api/README.md)
 - **管理类 API**
     - [创建Bucket - CreateBucket](api/ufile-api/create_bucket)
-    - [创建UFile令牌 - CreateUFileToken](api/ufile-api/create_ufile_token)
+    - [创建US3令牌 - CreateUFileToken](api/ufile-api/create_ufile_token)
     - [删除Bucket - DeleteBucket](api/ufile-api/delete_bucket)
     - [删除令牌 - DeleteUFileToken](api/ufile-api/delete_ufile_token)
     - [获取Bucket信息 - DescribeBucket](api/ufile-api/describe_bucket)
