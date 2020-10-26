@@ -19,7 +19,7 @@ Request Headers
 
 |Name             |Type  |Description                       |Required|
 |---|---|---|---|
-|Authorization    |String|下载请求的授权签名，[UFile API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)  |No      |
+|Authorization    |String|下载请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)  |No      |
 |Range            |String|分片下载的文件范围                         |No      |
 |If-Modified-Since|String|只返回从某时修改过的文件，否则返回304(not modified)|No      |
 
@@ -27,7 +27,7 @@ Request Elements
 
 |Name             |Type  |Description                       |Required|
 |---|---|---|---|
-|ufileattname    |String|指定ufile返回请求的Content-Disposition头                   |No      |
+|ufileattname    |String|指定US3返回请求的Content-Disposition头                   |No      |
 
 Responses
 
@@ -38,7 +38,7 @@ Response Headers
 |Content-Type  |String |请求下载文件的类型       |
 |Content-Length|Integer|请求下载文件的长度       |
 |Content-Range |String |请求下载文件的范围       |
-|ETag          |String |请求下载文件在UFile的哈希值|
+|ETag          |String |请求下载文件在US3的哈希值|
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
 Response Elements

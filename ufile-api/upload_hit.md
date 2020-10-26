@@ -2,7 +2,7 @@
 
 秒传
 
-说明：先判断待上传文件的hash值，如果UFile中可以查到此文件，则不必再传文件本身。
+说明：先判断待上传文件的hash值，如果US3中可以查到此文件，则不必再传文件本身。
 
 Requests
 
@@ -19,7 +19,7 @@ Request Headers
 
 |Name         |Type  |Description|Required|
 |---|---|---|---|
-|Authorization|String|上传请求的授权签名，[UFile API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |Yes     |
+|Authorization|String|上传请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |Yes     |
 
 Request Elements
 
