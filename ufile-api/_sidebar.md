@@ -33,4 +33,4 @@
   * [解冻文件-Restore](api/ufile-api/restore)
   * [操作文件的Meta信息-OpMeta](api/ufile-api/op_meta)
 - **附录**
-  - [UFile 错误码列表](api/ufile-api/error_code)
+  - [US3 错误码列表](api/ufile-api/error_code)
