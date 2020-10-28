@@ -6,7 +6,7 @@
 
 
 
-!> 1.请确认在重新安装之前，该实例已被关闭； 2.请确认该实例未挂载UDisk； 3.将原系统重装为不同类型的系统时(Linux-&gt;Windows)，不可选择保留数据盘； 4.重装不同版本的系统时(CentOS6-&gt;CentOS7)，若选择保留数据盘，请注意数据盘的文件系统格式； 5.若主机CPU低于2核，不可重装为Windows系统。
+!> 1.请确认在重新安装之前，该实例已被关闭； 2.将原系统重装为不同类型的系统时(Linux-&gt;Windows)，不可选择保留数据盘； 3.重装不同版本的系统时(CentOS6-&gt;CentOS7)，若选择保留数据盘，请注意数据盘的文件系统格式；
 
 
 ## 使用方法
@@ -37,9 +37,11 @@
 | **UHostId** | string | UHost实例资源ID 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
 | **Password** | string | 如果创建UHost实例时LoginMode为Password，则必须填写，如果LoginMode为KeyPair，不需要填写 （密码格式使用BASE64编码；LoginMode不可变更） |No|
 | **ImageId** | string | 镜像Id，默认使用原镜像 参见 [DescribeImage](api/uhost-api/describe_image) |No|
-| **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不报留：No， 默认：Yes |No|
-| **ResourceType** | int | 云灾备指明191 |No|
+| **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不报留：No， 默认：Yes；如果是从Windows重装为Linux或反之，则无法保留数据盘（该参数目前仅对本地数据盘起作用） |No|
 | **DNSServers.N** | string | 针对非私有子网主机，可自定义DNS。n可为0-2 |No|
+| **BootDiskSpace** | int | 系统盘大小。 单位：GB， 范围[20,100]， 步长：10 |No|
+| **UserData** | string | cloudinit初始化使用。注意：1、总数据量大小不超多16K 2、使用base64编码 |No|
+| **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持Cloud-init Feature时可填写此字段。取值“On”（默认值）， “Off” |No|
 
 ### 响应字段
 
@@ -48,7 +50,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **UhostId** | string | UHost实例资源ID |No|
+| **UHostId** | string | UHost实例资源ID |No|
 
 
 
@@ -61,8 +63,12 @@
 https://api.ucloud.cn/?Action=ReinstallUHostInstance
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&UHostId=uhost-qs20fr
-&Password=UCloud123
+&ProjectId=org-xxx
+&UHostId=uhost-xxx
+&Password=xxx
+&BootDiskSpace=6
+&UserData=TdFuRmBV
+&AutoDataDiskInit=LpCzTmbU
 ```
 
 ### 响应示例
@@ -71,7 +77,7 @@ https://api.ucloud.cn/?Action=ReinstallUHostInstance
 {
   "Action": "ReinstallUHostInstanceResponse",
   "RetCode": 0,
-  "UHostId": "uhost-qs20fr"
+  "UHostId": "uhost-xxx"
 }
 ```
 

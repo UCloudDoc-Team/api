@@ -44,7 +44,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **UhostId** | string | UHost实例ID |No|
+| **UHostId** | string | UHost实例ID |No|
 
 
 
@@ -57,8 +57,10 @@
 https://api.ucloud.cn/?Action=ResetUHostInstancePassword
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&UHostId=uhost-qs20fr
-&Password=UCloud123
+&ProjectId=org-xxx
+&UHostId=uhost-xxx
+&Password=xxx
+
 ```
 
 ### 响应示例
@@ -67,7 +69,7 @@ https://api.ucloud.cn/?Action=ResetUHostInstancePassword
 {
   "Action": "ResetUHostInstancePasswordResponse",
   "RetCode": 0,
-  "UHostId": "uhost-qs20fr"
+  "UHostId": "uhost-xxx"
 }
 ```
 
