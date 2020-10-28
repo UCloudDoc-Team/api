@@ -52,7 +52,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 ### 存储
 | 产品 | 相关链接 |
 |:---|:---|
-|对象存储 UFile|[文档](/api/ufile-api/)|
+|对象存储 US3|[文档](/api/ufile-api/)|
 |文件存储 UFS|[文档](/api/ufs-api/)|
 |归档存储 UArchive|[文档](/api/uarchive-api/)|
 |云硬盘 UDisk|[文档](/api/udisk-api/)|
