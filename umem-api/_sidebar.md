@@ -37,6 +37,7 @@
     - [创建主备Redis备份 - CreateURedisBackup](api/umem-api/create_uredis_backup)
     - [拉取UDRedis分片信息 - DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)
     - [获取主Redis可用版本 - DescribeURedisVersion](api/umem-api/describe_uredis_version)
+    - [清除主备redis数据 - FlushallURedisGroup](api/umem-api/flushall_uredis_group)
     - [更改zhubeiredis的备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)
