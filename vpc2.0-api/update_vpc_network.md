@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
 | **VPCId** | string | VPC的ID |**Yes**|
-| **Network.N** | string | 需要保留的VPC网段。当前仅支持删除VPC网段，添加网段请参考[AddVPCNetwork](../vpc2.0-api/add_vpc_network.html) |**Yes**|
+| **Network.N** | string | 需要保留的VPC网段。当前仅支持删除VPC网段，添加网段请参考[AddVPCNetwork](https://docs.ucloud.cn/api/vpc2.0-api/add_vpc_network) |**Yes**|
 
 ### 响应字段
 
