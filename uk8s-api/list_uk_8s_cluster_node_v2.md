@@ -4,14 +4,6 @@
 
 获取UK8S集群节点信息
 
-
-
-
-
-
-
-
-
 ## 定义
 
 ### 公共参数
@@ -102,15 +94,13 @@ https://api.ucloud.cn/?Action=ListUK8SClusterNodeV2
 ```json
 {
   "Action": "ListUK8SClusterNodeV2Response",
-  "MasterList": [
+  "NodeSet": [
     {
       "AsgId": "ZSoMzQUG",
-      "BasicImageName": "AvDDPeuv",
-      "CPU": 9,
-      "CreateTime": 1,
-      "ExpireTime": 9,
-      "GPU": 3,
-      "HostType": "CiqztSMG",
+      "CPU": 2,
+      "CreateTime": 1600066267,
+      "ExpireTime": 1600066267,
+      "GPU": 0,
       "IPSet": [
         {
           "Bandwidth": 1,
@@ -123,37 +113,24 @@ https://api.ucloud.cn/?Action=ListUK8SClusterNodeV2
           "VPCId": "bjpJSrMz"
         }
       ],
-      "InstanceId": "rbTPwvaj",
-      "InstanceName": "zbUQMbej",
-      "MachineType": "opgyDvSn",
-      "Memory": 9,
-      "NodeId": "gNvfqKWV",
-      "OsName": "bgpWkLID",
-      "OsType": "vkzHZoYO",
-      "State": "EyECtWVo",
-      "UHostDiskSet": [
-        {
-          "BackupType": "GPAKbeiX",
-          "DiskId": "ILwnaPJR",
-          "DiskType": "qIGGJZOD",
-          "Drive": "uHjecSxj",
-          "Encrypted": "CmdZIplB",
-          "IOPS": 4,
-          "IsBoot": "svkrxtpA",
-          "Name": "QfPxfuar",
-          "Size": 3,
-          "Type": "WhHaGvPu"
-        }
-      ],
-      "Zone": "flRgPYsL"
+      "InstanceId": "uhost-rbtpwvaj",
+      "InstanceName": "uk8s-zbuqmbej-m-a",
+      "InstanceType": "uhost",
+      "KubeProxy": {
+        "Mode": "iptables"
+      },
+      "MachineType": "O",
+      "Memory": 4096,
+      "NodeId": "uk8s-zbuqmbej-m-a",
+      "NodeRole": "master",
+      "NodeStatus": "Ready",
+      "OsName": "高内核Ubuntu 18.04 64位",
+      "OsType": "Linux",
+      "Unschedulable": true,
+      "Zone": "cn-bj2-02"
     }
   ],
-  "NodeList": {},
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 1
 }
 ```
-
-
-
-
-
