@@ -61,7 +61,6 @@
 | **Remark** | string | 备注 |**Yes**|
 | **FirewallId** | string | 绑定的防火墙Id |**Yes**|
 | **VPCId** | string | 所属VPC Id |**Yes**|
-| **VPCInfo** | string | 所属VPC 信息 |**Yes**|
 | **SubnetSet** | array[[*NatGatewaySubnetSet*](#NatGatewaySubnetSet)] | 子网 Id |**Yes**|
 | **IPSet** | array[[*NatGatewayIPSet*](#NatGatewayIPSet)] | 绑定的EIP 信息 |**Yes**|
 | **PolicyId** | array[string] | 转发策略Id |No|
