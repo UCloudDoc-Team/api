@@ -59,8 +59,6 @@
 | **CreateTime** | int | 创建时间, 格式为Unix Timestamp |No|
 | **ExpireTime** | int | 过期时间, 格式为Unix Timestamp |No|
 | **EIPSet** | array[[*EIPSetData*](#EIPSetData)] | EIP信息,详情见 EIPSetData |No|
-| **BandwidthGuarantee** | int | 共享带宽保底值(后付费) |No|
-| **PostPayStartTime** | int | 共享带宽后付费开始计费时间(后付费) |No|
 | **Name** | string | 共享带宽名称 |No|
 
 #### EIPSetData
