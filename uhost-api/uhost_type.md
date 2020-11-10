@@ -1,5 +1,4 @@
 
-
 # 【参考】云主机机型 
 
 ## 主机概念2.0版本
@@ -10,7 +9,10 @@
 
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
 |---|---|---|---|---|
-| MachineType = O                  | 快杰型          | Intel/Auto,<br>  Intel/CascadeLake | 4C4G-64C256G                                                                                | SSD云盘 + RSSD云盘 |
+| MachineType = OS              | 快杰S型          | Intel/Auto,<br>  Intel/CascadeLakeR | 1C1G-64C512G                                                                                | RSSD云盘 + RSSD云盘 |
+| MachineType = OPRO                 | 快杰PRO型          | Amd/Auto,<br>  Amd/Epyc2 | 2C2G-48C128G                                                                                | RSSD云盘 + RSSD云盘 |
+| MachineType = OMAX                  | 快杰MAX型          | Amd/Auto,<br>  Amd/Eypc2 | 2C2G-240C1024G                                                                                | RSSD云盘 + RSSD云盘 |
+| MachineType = O                  | 快杰型          | Intel/Auto,<br>  Intel/CascadeLake, <br> Amd/Auto,<br>  Amd/Epyc2 | 1C1G-96C768G                                                                                | SSD云盘 + RSSD云盘 |
 | MachineType = N                  | 通用型          | Intel/Auto,<br>  Intel/IvyBridge,<br>  Intel/Haswell,<br> Intel/Broadwell，<br>Intel/Skylake | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘<br>SSD云盘 + 普通云盘/SSD云盘<br>SSD本地盘 + SSD本地盘  |
 | MachineType = C                  | 高主频型         | Intel/Auto, <br> Intel/Skylake                                                         | 1C1G-32C128G                                                                                | SSD本地盘 + SSD本地盘<br> SSD云盘 + 普通云盘/SSD云盘                   |
 | MachineType = G, GpuType = V100  | GPU型 - V100  | Intel/Auto,<br> Intel/Broadwell                                                        | 4C 8G,16G + 1颗GPU<br> 8C 16G,32G + 1颗/2颗GPU<br> 16C 32G,64G + 2颗/4颗GPU<br>32C 64G,128G + 4颗GPU  | SSD本地盘 + SSD本地盘<br>SSD云盘 + 普通云盘/SSD云盘                    | 
