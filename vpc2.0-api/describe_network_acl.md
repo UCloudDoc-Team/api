@@ -84,7 +84,6 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **AssociationId** | string | 绑定ID |**Yes**|
-| **VpcId** | string | 所属的VPC ID |**Yes**|
 | **AclId** | string | ACL的ID |**Yes**|
 | **SubnetworkId** | string | 绑定的子网ID |**Yes**|
 | **CreateTime** | int | 创建的Unix时间戳 |**Yes**|
