@@ -68,6 +68,7 @@
 | **ImageName** | string | 镜像名称 |No|
 | **NodeIpList** | array[string] | 外网ip集合 |No|
 | **FirewallId** | string | 防火墙Id |No|
+| **ProductType** | string | 机器类型 |No|
 
 ## 示例
 
