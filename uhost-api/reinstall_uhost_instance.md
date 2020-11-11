@@ -38,6 +38,7 @@
 | **Password** | string | 如果创建UHost实例时LoginMode为Password，则必须填写，如果LoginMode为KeyPair，不需要填写 （密码格式使用BASE64编码；LoginMode不可变更） |No|
 | **ImageId** | string | 镜像Id，默认使用原镜像 参见 [DescribeImage](api/uhost-api/describe_image) |No|
 | **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不报留：No， 默认：Yes；如果是从Windows重装为Linux或反之，则无法保留数据盘（该参数目前仅对本地数据盘起作用） |No|
+| **DNSServers.N** | string | 针对非私有子网主机，可自定义DNS。n可为0-2 |No|
 | **BootDiskSpace** | int | 系统盘大小。 单位：GB， 范围[20,100]， 步长：10 |No|
 | **UserData** | string | cloudinit初始化使用。注意：1、总数据量大小不超多16K 2、使用base64编码 |No|
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持Cloud-init Feature时可填写此字段。取值“On”（默认值）， “Off” |No|
