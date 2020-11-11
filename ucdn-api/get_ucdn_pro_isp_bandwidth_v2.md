@@ -34,7 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **BeginTime** | int | 查询的起始日期，格式为Unix Timestamp   |**Yes**|
 | **EndTime** | int | 查询的结束日期，格式为Unix Timestamp   |**Yes**|
-| **Type** | int | 时间粒度<br />0 (按5分钟粒度)<br />1 (按小时粒度)<br />2(按天粒度) |**Yes**|
+| **Type** | int | 时间粒度<br />0 (按5分钟粒度)<br />1 (按小时粒度)<br />2(按天粒度)<br />3(按分钟粒度） |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Province.N** | string | 省份代码，可以传多个，不传则查询所有省份 |No|
 | **Isp** | string | 运营商代码，一次只能查询一个运营商，不传递默认取所有运营商 |No|
