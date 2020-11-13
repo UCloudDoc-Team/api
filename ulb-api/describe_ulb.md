@@ -103,7 +103,7 @@
 | **PersistenceInfo** | string | 根据PersistenceType确定： None或ServerInsert，此字段为空； UserDefined，此字段展示用户自定义会话string。 |No|
 | **ClientTimeout** | int | 空闲连接的回收时间，单位：秒。 |No|
 | **Status** | int | VServer的运行状态。枚举值： 0 -> rs全部运行正常;1 -> rs全部运行异常；2 -> rs部分运行异常。 |No|
-| **SSLSet** | array[[*ULBSSLSet*](#ULBSSLSet)] | VServer绑定的SSL证书信息，具体结构见下方 ULBSSLSet |No|
+| **SSLSet** | array[[*ULBSSLSet*](#ULBSSLSet)] | VServer绑定的SSL证书信息，具体结构见下方 ULBSSLSet。 |No|
 | **BackendSet** | array[[*ULBBackendSet*](#ULBBackendSet)] | 后端资源信息列表，具体结构见下方 ULBBackendSet |No|
 | **ListenType** | string | 监听器类型，枚举值为: RequestProxy -> 请求代理；PacketsTransmit -> 报文转发 |No|
 | **PolicySet** | array[[*ULBPolicySet*](#ULBPolicySet)] | 内容转发信息列表，具体结构见下方 ULBPolicySet |No|
