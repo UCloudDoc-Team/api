@@ -17,6 +17,7 @@
     - [获取子网列表 - DescribeUEdnSubnet](api/uedn-api/describe_uedn_subnet)
     - [获取IDC机房列表 - DescribeUvodnIDC](api/uedn-api/describe_uvodn_idc)
     - [获取节点列表 - DescribeUvodnNode](api/uedn-api/describe_uvodn_node)
+    - [获得机房割接信息 - GetUEdnIDCCutInfo](api/uedn-api/get_uedn_idc_cut_info)
     - [获取节点调整差价 - GetUEdnUpgradePrice](api/uedn-api/get_uedn_upgrade_price)
     - [获取vnc登录信息 - GetUEdnVncInfo](api/uedn-api/get_uedn_vnc_info)
     - [获取镜像列表 - GetUvodnImage](api/uedn-api/get_uvodn_image)
