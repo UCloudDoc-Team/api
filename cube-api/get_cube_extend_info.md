@@ -49,7 +49,7 @@
 |:---|:---|:---|:---|
 | **CubeId** | string | Cube的Id |**Yes**|
 | **Name** | string | Cube的名称 |No|
-| **Eip** | [*EIPSet*](#EIPSet) | EIPSet |No|
+| **Eip** | array[[*EIPSet*](#EIPSet)] | EIPSet |No|
 | **Expiration** | int | 资源有效期 |No|
 | **Tag** | string | 业务组名称 |No|
 
