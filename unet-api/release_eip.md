@@ -51,16 +51,10 @@
 ### 请求示例
     
 ```
-http://internal.api.ucloud.cn
-{
-	"Backend":"UNETFE-INTERNAL",
-	"Action":"ReleaseEIP",
-	"channel":1,
-	"az_group":1000001,
-	"top_organization_id":50606263,
-	"organization_id":50606469,
-	"EIPId":"eip-dgftkg"
-}
+https://api.ucloud.cn/?Action=ReleaseEIP
+&Region=VZIeYXdr
+&ProjectId=GjFONPoC
+&EIPId=DiXJOezg
 ```
 
 ### 响应示例
@@ -68,7 +62,6 @@ http://internal.api.ucloud.cn
 ```json
 {
   "Action": "ReleaseEIPResponse",
-  "Request_uuid": "",
   "RetCode": 0
 }
 ```
