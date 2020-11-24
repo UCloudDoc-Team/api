@@ -1,8 +1,8 @@
-# 解绑防火墙 - UnBindUEdnFirewall
+# 登录容器 - LoginUEdnDocker
 
 ## 简介
 
-解绑防火墙
+登录容器
 
 
 
@@ -18,7 +18,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `UnBindUEdnFirewall`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `LoginUEdnDocker`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -27,8 +27,8 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **FirewallId** | string | 防火墙Id |**Yes**|
-| **ResourceId** | string | 节点Id或容器组资源id |**Yes**|
+| **ResourceId** | string | 容器组资源id |**Yes**|
+| **Name** | string | 容器名称 |**Yes**|
 
 ### 响应字段
 
@@ -37,6 +37,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **SessionId** | string | 返回的token |**Yes**|
+| **Link** | string | 登录地址 |No|
+| **LinkPort** | int | 登录端口 |No|
 
 
 
@@ -46,18 +49,21 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=UnBindUEdnFirewall
-&ProjectId=zLUZJKmO
-&FirewallId=exNyWKxv
-&ResourceId=jUWtCTvl
+https://api.ucloud.cn/?Action=LoginUEdnDocker
+&ProjectId=GHEgbGjU
+&ResourceId=wLFjiZGY
+&Name=PMciJFQd
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "UnBindUEdnFirewallResponse",
-  "RetCode": 0
+  "Action": "LoginUEdnDockerResponse",
+  "Link": "uIfJDRRJ",
+  "LinkPort": 8,
+  "RetCode": 0,
+  "SessionId": "oxVpfbzp"
 }
 ```
 
