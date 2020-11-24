@@ -65,7 +65,7 @@
 | **PayMode** | string | 付费模式，带宽付费或者流量付费 |No|
 | **Resource** | string | EIP绑定对象的资源Id |No|
 | **Status** | string | EIP状态，表示使用中或者空闲 |No|
-| **Weight** | string | EIP权重 |No|
+| **Weight** | int | EIP权重 |No|
 
 #### EIPAddr
 
