@@ -33,9 +33,7 @@
 | **ServiceCIDR** | string | Service 网段，用于分配ClusterIP，如172.17.0.0/16。该网段不能与集群所属VPC网段重叠。 |**Yes**|
 | **ClusterName** | string | 集群名称 |**Yes**|
 | **Password** | string | 集群节点密码，包括Master和Node。密码需包含最少一个大写字母，请使用base64进行编码，举例如下：# echo -n Password1 \| base64 |**Yes**|
-| **Master.N.Zone** | string | 第三个Master节点所属可用区，三个节点可部署在不同可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **Master.N.Zone** | string | 第三个Master节点所属可用区，三个节点可部署在不同可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **Master.N.Zone** | string | 第三个Master节点所属可用区，三个节点可部署在不同可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
+| **Master.N.Zone** | string | Master节点所属可用区，需要设置 Master.0.Zone、 Master.1.Zone、Master.2.Zone 三个 Master 节点的可用区。 三个节点可部署在不同可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
 | **MasterMachineType** | string | Master节点的云主机机型（V2.0），如["N", "C", "O", "OS"]，具体请参照云主机机型。 |**Yes**|
 | **MasterCPU** | int | Master节点的虚拟CPU核数。可选参数：2-64（具体机型与CPU的对应关系参照控制台）。 |**Yes**|
 | **MasterMem** | int | Master节点的内存大小。单位：MB。范围 ：[4096, 262144]，取值为1024的倍数（可选范围参考控制台）。 |**Yes**|
