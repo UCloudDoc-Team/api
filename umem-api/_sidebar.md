@@ -35,6 +35,7 @@
     - [获取分布式redis 备份下载链接 - DescribeUMemBackupURL](api/umem-api/describe_umem_backup_url)
 - **API**
     - [创建主备Redis备份 - CreateURedisBackup](api/umem-api/create_uredis_backup)
+    - [查询UDRedis慢日志 - DescribeUDRedisSlowlog](api/umem-api/describe_ud_redis_slowlog)
     - [拉取UDRedis分片信息 - DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)
     - [获取主Redis可用版本 - DescribeURedisVersion](api/umem-api/describe_uredis_version)
     - [清除主备redis数据 - FlushallURedisGroup](api/umem-api/flushall_uredis_group)
