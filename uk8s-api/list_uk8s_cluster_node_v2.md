@@ -75,7 +75,6 @@
 | **IPId** | string | IP资源ID (内网IP无对应的资源ID) |No|
 | **IP** | string | IP地址 |No|
 | **Bandwidth** | int | IP对应的带宽, 单位: Mb (内网IP不显示带宽信息) |No|
-| **Default** | string | 是否默认的弹性网卡的信息。true: 是默认弹性网卡；其他值：不是。 |No|
 | **VPCId** | string | IP地址对应的VPC ID |No|
 | **SubnetId** | string | IP地址对应的子网 ID |No|
 | **Mac** | string | Mac地址 |No|
