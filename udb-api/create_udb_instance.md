@@ -49,11 +49,10 @@
 | **BackupDuration** | int | 备份策略，备份时间间隔，单位小时计，默认24小时 |No|
 | **BackupId** | int | 备份id，如果指定，则表明从备份恢复实例 |No|
 | **UseSSD** | boolean | 是否使用SSD，默认为true。目前主要可用区、海外机房、新机房只提供SSD资源，非SSD资源不再提供。 |No|
-| **SSDType** | string | SSD类型，可选值为"SATA"、"PCI-E"、“NVMe”，如果UseSSD为true ，则必选 |No|
+| **SSDType** | string | SSD类型，可选值为"SATA"、“NVMe”，如果UseSSD为true ，则必选 |No|
 | **InstanceMode** | string | UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal" |No|
 | **UDBCId** | string | 专区ID信息（如果这个参数存在这说明是在专区中创建DB） |No|
 | **CPU** | int | cpu核数 |No|
-| **InstanceType** | string | UDB数据库机型: "Normal": "标准机型" , "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" , "Normal_Volume": "标准大容量机型", "SATA_SSD_Volume": "SSD大容量机型" , "PCIE_SSD_Volume": "SSD高性能大容量机型", "NVMe_SSD": "快杰机型" |No|
 | **BackupZone** | string | 跨可用区高可用备库所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
