@@ -48,4 +48,5 @@
 |[DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)|拉取UDRedis分片信息|
 |[DescribeURedisVersion](api/umem-api/describe_uredis_version)|获取主Redis可用版本|
 |[FlushallURedisGroup](api/umem-api/flushall_uredis_group)|清除主备redis数据|
+|[RemoveUDRedisData](api/umem-api/remove_ud_redis_data)|清除udredis实例数据|
 |[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改zhubeiredis的备份策略|
