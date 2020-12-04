@@ -47,7 +47,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AppId** | string | AppId（项目id） |No|
+| **AppId** | string | AppId(同入参AppId，后续不再返回) |No|
 | **Audio** | array[[*DailyConsumptionData*](#DailyConsumptionData)] | 音频消费时长,数组类型，内含每日的具体数据，详情参见DailyConsumptionData  |No|
 | **SdVideo** | array[[*DailyConsumptionData*](#DailyConsumptionData)] | 标清消费时长,数组类型，内含每日的具体数据，详情参见DailyConsumptionData  |No|
 | **HdVideo** | array[[*DailyConsumptionData*](#DailyConsumptionData)] | 高清消费时长,数组类型，内含每日的具体数据，详情参见DailyConsumptionData  |No|
