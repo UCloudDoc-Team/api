@@ -30,6 +30,8 @@
 | **RoomId** | string | 查询的房间id(不能为空) |**Yes**|
 | **StartTime** | int | 待查询开始时间 |**Yes**|
 | **EndTime** | int | 待查询结束时间 |**Yes**|
+| **UserId** | string | 查询的用户id(不填默认返回房间全部用户) |No|
+| **RoleType** | string | 用户角色(PUSH/PULL/BOTH) |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0<br /> |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100<br /> |No|
 
@@ -74,6 +76,8 @@ https://api.ucloud.cn/?Action=QueryURtcRoomUsers
 &EndTime=3
 &Offset=4
 &Limit=1
+&UserId=kMmOIPXE
+&RoleType=tELpTgGD
 ```
 
 ### 响应示例

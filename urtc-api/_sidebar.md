@@ -6,7 +6,7 @@
     - [创建APP - CreateUrtcApp](api/urtc-api/create_urtc_app)
     - [根据CallId获取流信息（最大连麦人数&连麦列表） - DescribeURtcStreamByCallId](api/urtc-api/describe_urtc_stream_by_call_id)
     - [启用或者关停APP - EnableURtcApp](api/urtc-api/enable_urtc_app)
-    - [获取每日消费时长信息 - GetURtcDaliyConsumption](api/urtc-api/get_urtc_daliy_consumption)
+    - [获取每日消费时长信息（仅含音视频数据） - GetURtcDaliyConsumption](api/urtc-api/get_urtc_daliy_consumption)
     - [修改项目名称 - ModifyURtcProjectName](api/urtc-api/modify_urtc_project_name)
     - [查询app基本信息 - QueryURtcApp](api/urtc-api/query_urtc_app)
     - [查询用户通话时长清单 - QueryURtcCallDetail](api/urtc-api/query_urtc_call_detail)

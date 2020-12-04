@@ -1,4 +1,4 @@
-# 获取每日消费时长信息 - GetURtcDaliyConsumption
+# 获取每日消费时长信息（仅含音视频数据） - GetURtcDaliyConsumption
 
 ## 简介
 
