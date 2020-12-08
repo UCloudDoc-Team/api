@@ -49,7 +49,7 @@
 | **City** | string | 城市 |No|
 | **StartTime** | int | 割接开始时间 |No|
 | **EndTime** | int | 割接结束时间 |No|
-| **CutType** | string | 割接类型 |No|
+| **CutType** | string | 割接类型（中断、抖动、断电） |No|
 | **ResourceSet** | array[[*ResourceSet*](#ResourceSet)] | 受影响的资源信息列表 |No|
 
 #### ResourceSet
@@ -74,24 +74,24 @@ https://api.ucloud.cn/?Action=GetUEdnIDCCutInfo
   "Action": "GetUEdnIDCCutInfoResponse",
   "IDCCutInfo": [
     {
-      "City": "ZSwjjLcU",
-      "CutType": "EmLHTPSr",
-      "EndTime": 2,
-      "IDCName": "nEgyGcoQ",
-      "Province": "laHZRYJT",
+      "City": "bbJBZCTX",
+      "CutType": "IbUDCrWO",
+      "EndTime": 9,
+      "IDCName": "baXTsuGb",
+      "Province": "XyLfwepV",
       "ResourceSet": [
         {
-          "NodeId": "PjRmKrgk",
+          "NodeId": "aqkDpRSA",
           "OuterIps": [
-            "oKKLvDOw"
+            "cZEgqCsO"
           ]
         }
       ],
-      "StartTime": 9
+      "StartTime": 2
     }
   ],
   "RetCode": 0,
-  "TotalCount": 4
+  "TotalCount": 1
 }
 ```
 
