@@ -35,8 +35,8 @@
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **UHostId** | string | UHost资源Id 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
-| **ReleaseEIP** | boolean | 删除主机时是否释放绑定的EIP。默认为False。 |No|
-| **ReleaseUDisk** | boolean | 删除主机时是否同时删除挂载的数据盘。默认为False。 |No|
+| **ReleaseEIP** | boolean | 删除主机时是否释放绑定的EIP。默认为false。 |No|
+| **ReleaseUDisk** | boolean | 删除主机时是否同时删除挂载的数据盘。默认为false。 |No|
 
 ### 响应字段
 

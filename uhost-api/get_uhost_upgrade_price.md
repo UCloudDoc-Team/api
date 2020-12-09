@@ -47,6 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Price** | float | 规格调整差价。精确到小数点后2位。 |No|
+| **OriginalPrice** | float | 限时优惠的折前原价 |No|
 
 
 
@@ -70,6 +71,7 @@ https://api.ucloud.cn/?Action=GetUHostUpgradePrice
 ```json
 {
   "Action": "GetUHostUpgradePriceResponse",
+  "OriginalPrice": 5.21987,
   "Price": 19.96,
   "RetCode": 0
 }

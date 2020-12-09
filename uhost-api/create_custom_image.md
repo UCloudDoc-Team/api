@@ -57,8 +57,8 @@
 ```
 https://api.ucloud.cn/?Action=CreateCustomImage
 &Region=cn-bj2
-&Zone=cn-bj2-04
-&UHostId=uhost-qs20fr
+&ProjectId=org-xxx
+&UHostId=uhost-xxx
 &ImageName=Test
 ```
 
@@ -67,7 +67,8 @@ https://api.ucloud.cn/?Action=CreateCustomImage
 ```json
 {
   "Action": "CreateCustomImageResponse",
-  "RetCode": "0"
+  "ImageId": "uimage-xxx",
+  "RetCode": 0
 }
 ```
 

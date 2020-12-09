@@ -37,7 +37,7 @@
 | **DiskSpace** | int | 磁盘大小，单位GB，步长为10。取值范围需大于当前磁盘大小，最大值请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
 | **DiskId** | string | 磁盘ID。参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance)返回值中的DiskSet。 |**Yes**|
 | **UHostId** | string | UHost实例ID。 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance)。 |**Yes**|
-| **BackupMode** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br /> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type)。默认值为当前的备份模式。 |No|
+| **BackupMode** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br />> SNAPSHOT(SNAPSHOT模式目前仅在上海C支持)，快照 <br /><br /> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type)。默认值为当前的备份模式。 |No|
 
 ### 响应字段
 

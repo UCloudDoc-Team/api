@@ -27,7 +27,7 @@
     - [重装系统 - ReinstallUHostInstance](api/uhost-api/reinstall_uhost_instance)
     - [重置主机密码 - ResetUHostInstancePassword](api/uhost-api/reset_uhost_instance_password)
     - [修改挂载的磁盘大小 - ResizeAttachedDisk](api/uhost-api/resize_attached_disk)
-    - [修改主机配置 - ResizeUHostInstance](api/uhost-api/resize_uhost_instance)
+    - [修改主机规格 - ResizeUHostInstance](api/uhost-api/resize_uhost_instance)
     - [启动主机 - StartUHostInstance](api/uhost-api/start_uhost_instance)
     - [关闭主机 - StopUHostInstance](api/uhost-api/stop_uhost_instance)
     - [删除自制镜像 - TerminateCustomImage](api/uhost-api/terminate_custom_image)
