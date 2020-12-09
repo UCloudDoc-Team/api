@@ -33,6 +33,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Offset** | string | 偏移量，默认为 0 |No|
 | **Limit** | string | 请求数量，默认为 20 |No|
+| **Type** | string | 任务类型 |No|
 
 ### 响应字段
 
@@ -78,6 +79,7 @@ https://api.ucloud.cn/?Action=ListUDTSTask
 &Limit=3
 &Offset=0
 &ProjectId=org-hiny12
+&Type=EqMkhIbB
 ```
 
 ### 响应示例
