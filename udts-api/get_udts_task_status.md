@@ -32,6 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **TaskId** | string | 任务ID |**Yes**|
+| **Type** | string | 任务类型 |No|
 
 ### 响应字段
 
@@ -83,6 +84,7 @@
 https://api.ucloud.cn/?Action=GetUDTSTaskStatus
 &ProjectId=org-hiny12
 &TaskId=udts-ixdp441
+&Type=YJymvzTG
 ```
 
 ### 响应示例

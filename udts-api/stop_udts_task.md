@@ -32,6 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **TaskId** | string | 任务 ID |**Yes**|
+| **Type** | string | 任务类型 |No|
 
 ### 响应字段
 
@@ -52,6 +53,7 @@
 https://api.ucloud.cn/?Action=StopUDTSTask
 &ProjectId=org-dave12
 &TaskId=udts-vasg2a
+&Type=qxfkFiSf
 ```
 
 ### 响应示例
