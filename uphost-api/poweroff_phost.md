@@ -54,10 +54,10 @@
     
 ```
 https://api.ucloud.cn/?Action=PoweroffPHost
-&PHostId=upm-oaix4s
-&ProjectId=org1
-&Region=cn-bj2
-&Zone=cn-bj2-04
+&Region=KqzbYzth
+&Zone=VWJkRuZp
+&ProjectId=VRTABSeN
+&PHostId=NgElmzHz
 ```
 
 ### 响应示例
@@ -65,7 +65,7 @@ https://api.ucloud.cn/?Action=PoweroffPHost
 ```json
 {
   "Action": "PoweroffPHostResponse",
-  "PHostId": "upm-oaix4s",
+  "PHostId": "DepblxUp",
   "RetCode": 0
 }
 ```

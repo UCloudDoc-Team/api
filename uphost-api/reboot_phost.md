@@ -54,10 +54,10 @@
     
 ```
 https://api.ucloud.cn/?Action=RebootPHost
-&PHostId=upm-oaix4s
-&ProjectId=org1
-&Region=cn-bj2
-&Zone=cn-bj2-04
+&Region=GjevbXYJ
+&Zone=TnaGRikX
+&ProjectId=oExZeRjt
+&PHostId=fOqXGRRY
 ```
 
 ### 响应示例
@@ -65,7 +65,7 @@ https://api.ucloud.cn/?Action=RebootPHost
 ```json
 {
   "Action": "RebootPHostResponse",
-  "PHostId": "upm-oaix4s",
+  "PHostId": "QKHHSPdb",
   "RetCode": 0
 }
 ```

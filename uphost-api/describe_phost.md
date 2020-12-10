@@ -37,6 +37,7 @@
 | **PHostId.N** | string | PHost资源ID，若为空，则返回当前Region所有PHost。 |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
+| **UDiskIdForAttachment** | string | 要挂载的云盘id，过滤返回能被UDiskId挂载的云主机。目前主要针对rssd云盘使用 |No|
 
 ### 响应字段
 
@@ -66,7 +67,7 @@
 | **OSname** | string | 操作系统名称 |No|
 | **CreateTime** | int | 创建时间 |No|
 | **ExpireTime** | int | 到期时间 |No|
-| **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）； Trial，试用（需开启权限）默认为月付 |No|
+| **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费；默认为月付 |No|
 | **PowerState** | string | 电源状态，on 或 off |No|
 | **PHostType** | string | 物理机类型，参见DescribePHostMachineType返回值 |No|
 | **Memory** | int | 内存大小，单位：MB |No|
@@ -79,6 +80,7 @@
 | **OSType** | string | 操作系统类型 |No|
 | **Components** | string | 组件信息（暂不支持） |No|
 | **RaidSupported** | string | 是否支持Raid。枚举值：Yes：支持；No：不支持。 |No|
+| **PhostClass** | string | 物理云产品类型，枚举值：LocalDisk=>代表传统本地盘机型， CloudDisk=>云盘裸金属机型 |No|
 
 #### PHostCPUSet
 
@@ -98,6 +100,9 @@
 | **Type** | string | 磁盘属性 |No|
 | **Name** | string | 磁盘名称，sys/data |No|
 | **IOCap** | int | 磁盘IO性能，单位MB/s（待废弃） |No|
+| **Drive** | string | 裸金属机型参数：磁盘盘符 |No|
+| **DiskId** | string | 裸金属机型参数：磁盘ID |No|
+| **IsBoot** | string | 裸金属机型参数：是否是启动盘。True/False |No|
 
 #### PHostIPSet
 
@@ -117,12 +122,13 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribePHost
-&Region=cn-bj2
-&Zone=cn-bj2-04
-&ProjectId=org-xxx
-&Offset=0
-&Limit=20
-&PHostId.0=upm-xxx
+&Region=jpfMKyfI
+&Zone=vdTrBzdz
+&ProjectId=edaZIUNR
+&PHostId.n=wdKzhBfK
+&Offset=2
+&Limit=9
+&UDiskIdForAttachment=XmuOwhco
 ```
 
 ### 响应示例
@@ -132,65 +138,56 @@ https://api.ucloud.cn/?Action=DescribePHost
   "Action": "DescribePHostResponse",
   "PHostSet": [
     {
-      "AutoRenew": "On",
-      "CPUSet": {
-        "CoreCount": 32,
-        "Count": 2,
-        "Frequence": 2.4000000953674316,
-        "Model": "Intel E5-2630 v3"
-      },
-      "ChargeType": "Month",
-      "CreateTime": 1529905686,
+      "AutoRenew": "vElhSowt",
+      "CPUSet": {},
+      "ChargeType": "HOJWsIek",
+      "Cluster": "SvWpSdGG",
+      "Components": "NHahHEJf",
+      "CreateTime": 9,
       "DiskSet": [
         {
-          "IOCap": 1000,
-          "Name": "sys",
-          "Raid": "Raid1",
-          "Space": 1000,
-          "Type": "SATA"
-        },
-        {
-          "IOCap": 1000,
-          "Name": "data",
-          "Raid": "Raid10",
-          "Space": 1800,
-          "Type": "SAS"
+          "Count": 2,
+          "DiskId": "PVQamRGq",
+          "Drive": "iIFxawYp",
+          "IOCap": 2,
+          "IsBoot": "IAZXBkLX",
+          "Name": "YQkYorHg",
+          "Space": 5,
+          "Type": "hLDhTxqn"
         }
       ],
-      "ExpireTime": 1530374400,
+      "ExpireTime": 5,
       "IPSet": [
         {
-          "Bandwidth": 2,
-          "IPAddr": "106.75.xxx.xxx",
-          "IPId": "eip-xxx",
-          "OperatorName": "BGP"
-        },
-        {
-          "IPAddr": "10.10.xxx.xxx",
-          "MACAddr": "xxx",
-          "OperatorName": "Private",
-          "SubnetId": "subnet-xxx",
-          "VPCId": "uvnet-xxx"
+          "Bandwidth": 3,
+          "IPAddr": "qCusNtNv",
+          "IPId": "LwjcdFGT",
+          "MACAddr": "PSlpiPlG",
+          "OperatorName": "gUOcEZye",
+          "SubnetId": "ixWBJCUq",
+          "VPCId": "zwqAPBrO"
         }
       ],
-      "ImageName": "CentOS 6.7 64Bit",
-      "IsSupportKVM": "Yes",
-      "Memory": 65536,
-      "Name": "apyapy",
-      "OSType": "CentOS",
-      "OSname": "CentOS 6.7 64Bit",
-      "PHostId": "upm-xxx",
-      "PHostType": "DB-2",
-      "PMStatus": "Running",
-      "PowerState": "On",
-      "Remark": "",
-      "SN": "817336542",
-      "Tag": "Default",
-      "Zone": "cn-bj2-04"
+      "ImageName": "gUYdJqug",
+      "IsSupportKVM": "KqCCSXRY",
+      "Memory": 7,
+      "Name": "FozvyzAs",
+      "OSType": "sEcEUJdn",
+      "OSname": "oUGwtCWs",
+      "PHostId": "tGnqGyiM",
+      "PHostType": "JhbxVSaA",
+      "PMStatus": "HJDlIYWi",
+      "PhostClass": "hPSEhtat",
+      "PowerState": "cBAaaIxY",
+      "RaidSupported": "GgiMyJLC",
+      "Remark": "etGTUBlU",
+      "SN": "zPIhEFwm",
+      "Tag": "HLukoXZc",
+      "Zone": "zubgQpUw"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 5
 }
 ```
 

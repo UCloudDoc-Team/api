@@ -56,12 +56,14 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action= ModifyPHostInfo
-&Region=cn-bj2
-&Zone=cn-bj2-04
-&projectId=562
-&PHostId=upm-oaix4s
-&Name=other
+https://api.ucloud.cn/?Action=ModifyPHostInfo
+&Region=akPCUYjy
+&Zone=VPqSBrFd
+&ProjectId=eCPjhxgW
+&PHostId=nTIAslQb
+&Name=DPFKOtCL
+&Remark=JaFKXSsO
+&Tag=yuEOSlXb
 ```
 
 ### 响应示例
@@ -69,7 +71,7 @@ https://api.ucloud.cn/?Action= ModifyPHostInfo
 ```json
 {
   "Action": "ModifyPHostInfoResponse",
-  "PHostId": "upm-oaix4s",
+  "PHostId": "cVqtBqrO",
   "RetCode": 0
 }
 ```

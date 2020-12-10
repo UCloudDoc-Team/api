@@ -4,7 +4,7 @@
 
 重装物理机操作系统
 
-?> 密码需要通过base64进行编码<br /><br /># echo password1 \| base<br />ugfzc3dvcmqxcg==
+?> 密码需要通过base64进行编码 # echo password1 \| base ugfzc3dvcmqxcg==
 
 
 
@@ -42,6 +42,7 @@
 | **Tag** | string | 业务组，默认不更改。 |No|
 | **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不报留：No， 默认：Yes |No|
 | **Raid** | string | 不保留数据盘重装，可选Raid |No|
+| **BootDiskSpace** | int | 裸金属机型参数->系统盘大小。 单位：GB， 范围[20,500]， 步长：10 |No|
 
 ### 响应字段
 
@@ -61,14 +62,18 @@
     
 ```
 https://api.ucloud.cn/?Action=ReinstallPHost
-&Region=cn-bj2
-&Zone=cn-bj2-04
-&ProjectId=org-xxx
-&PHostId=upm-xxx
-&Password=xxx
-&ImageId=pimg-xxx
-&Name=123
-&ReserveDisk=Yes
+&Region=MIPhSXgO
+&Zone=IDPyrAHK
+&ProjectId=gRyApbDA
+&PHostId=jLJtdODY
+&Password=sGnKzAjP
+&ImageId=dIjWWkvV
+&Name=dcXksFaw
+&Remark=kUhuVXxS
+&Tag=yXzMWRQa
+&ReserveDisk=oynhHeNM
+&Raid=bHPMFdMe
+&BootDiskSpace=4
 ```
 
 ### 响应示例
@@ -76,7 +81,7 @@ https://api.ucloud.cn/?Action=ReinstallPHost
 ```json
 {
   "Action": "ReinstallPHostResponse",
-  "PHostId": "upm-xxx",
+  "PHostId": "vwHuJPaW",
   "RetCode": 0
 }
 ```
