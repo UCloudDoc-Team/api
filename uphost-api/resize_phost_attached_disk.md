@@ -1,19 +1,19 @@
-# 删除物理机 - TerminatePHost
+# 修改挂载的磁盘大小 - ResizePHostAttachedDisk
 
 ## 简介
 
-删除物理云主机
+修改裸金属物理云已经挂载的云盘容量大小
 
 
 
-
+!> 1、已经挂载状态，包含系统盘和数据盘；2、开关机均可；3、必须是裸金属机型此接口有效
 
 
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=TerminatePHost)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=ResizePHostAttachedDisk)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `TerminatePHost`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `ResizePHostAttachedDisk`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -32,11 +32,11 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **PHostId** | string | PHost资源ID |**Yes**|
-| **ReleaseEIP** | boolean | 是否释放绑定的EIP。true: 解绑EIP后，并释放；其他值或不填：解绑EIP。 |No|
-| **ReleaseUDisk** | boolean | 裸金属机型参数->删除主机时是否同时删除挂载的数据盘。默认为false。 |No|
+| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **PHostId** | string | UPHost实例ID。 |No|
+| **UDiskId** | string | 磁盘ID。 |No|
+| **DiskSpace** | int | 裸金属机型参数->磁盘大小，单位GB，必须是10GB的整数倍。系统盘20-500GB，数据盘单块盘20-32000GB。 |No|
 
 ### 响应字段
 
@@ -45,7 +45,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **PHostId** | string | PHost 的资源ID |No|
+| **DiskId** | string | 改配成功的磁盘id |No|
 
 
 
@@ -55,21 +55,21 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=TerminatePHost
-&Region=geMFFVTJ
-&Zone=BAJaGwVv
-&ProjectId=oSWbEAst
-&PHostId=PoTZbUmp
-&ReleaseEIP=false
-&ReleaseUDisk=false
+https://api.ucloud.cn/?Action=ResizePHostAttachedDisk
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=JKdlhsDP
+&PHostId=eJrpOPeA
+&UDiskId=gcMEavLg
+&DiskSpace=5
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "TerminatePHostResponse",
-  "PHostId": "BzNdSIyb",
+  "Action": "ResizePHostAttachedDiskResponse",
+  "DiskId": "MrDhSNvu",
   "RetCode": 0
 }
 ```

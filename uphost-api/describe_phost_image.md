@@ -34,10 +34,11 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **ImageType** | string | 镜像类别，枚举为：Base,标准镜像；默认为标准镜像。 |No|
+| **ImageType** | string | 镜像类别，枚举值，Base是基础镜像； |No|
 | **ImageId.N** | string | 镜像ID |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
+| **MachineType** | string | 机器型号，只支持当前zone的展示机型 |No|
 
 ### 响应字段
 
@@ -60,6 +61,8 @@
 | **ImageName** | string | 镜像名称 |No|
 | **OsName** | string | 操作系统名称 |No|
 | **OsType** | string | 操作系统类型 |No|
+| **Support** | array[string] | 支持的机型 |No|
+| **Version** | string | 当前版本 |No|
 
 ## 示例
 
@@ -67,9 +70,14 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribePHostImage
-&ProjectId=org1
-&Region=cn-bj2
-&Zone=cn-bj2-04
+&Region=lPknnhFJ
+&Zone=BkUzrVGH
+&ProjectId=tLfmjwpi
+&ImageType=Ajlqqiqf
+&ImageId.n=hmIDkOMO
+&Offset=7
+&Limit=1
+&MachineType=QxVNPRCH
 ```
 
 ### 响应示例
@@ -77,15 +85,20 @@ https://api.ucloud.cn/?Action=DescribePHostImage
 ```json
 {
   "Action": "DescribePHostImageResponse",
-  "Images": [
+  "ImageSet": [
     {
-      "ImageId": "pimg-yg-f2634b",
-      "ImageName": " Ubuntu 12.04 64位",
-      "OsName": "Ubuntu 12.04 64位",
-      "OsType": "Ubuntu"
+      "ImageId": "jMonPUZs",
+      "ImageName": "zZHLkcpk",
+      "OsName": "ICNxbWaj",
+      "OsType": "KinGDoGa",
+      "Support": [
+        "rVxQDlcE"
+      ],
+      "Version": "EtexDjJR"
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 5
 }
 ```
 

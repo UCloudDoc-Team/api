@@ -54,10 +54,10 @@
     
 ```
 https://api.ucloud.cn/?Action=StartPHost
-&Region=cn-bj2
-&Zone=cn-bj2-04
-&ProjectId=org-xxx
-&PHostId=upm-xxx
+&Region=CbfpIWun
+&Zone=UVThGqVW
+&ProjectId=nLaifYOm
+&PHostId=eDdqAIsK
 ```
 
 ### 响应示例
@@ -65,7 +65,7 @@ https://api.ucloud.cn/?Action=StartPHost
 ```json
 {
   "Action": "StartPHostResponse",
-  "PHostId": "upm-xxx",
+  "PHostId": "NCfWExWO",
   "RetCode": 0
 }
 ```

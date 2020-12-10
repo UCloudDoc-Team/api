@@ -53,9 +53,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Type** | string | 物理云主机机型别名，全网唯一。 |**Yes**|
-| **Name** | string | 机型名 |No|
 | **CPU** | [*PHostCPUSet*](#PHostCPUSet) | CPU信息 |No|
-| **Memory** | int | 内存大小，单位GB |No|
+| **Memory** | int | 内存大小，单位MB |No|
 | **Disks** | array[[*PHostDiskSet*](#PHostDiskSet)] | 磁盘信息 |No|
 | **Components** | [*PHostComponentSet*](#PHostComponentSet) | 其他组件信息 |No|
 | **Clusters** | array[[*PHostClusterSet*](#PHostClusterSet)] | 集群库存信息 |No|
@@ -79,6 +78,9 @@
 | **Type** | string | 磁盘属性 |No|
 | **Name** | string | 磁盘名称，sys/data |No|
 | **IOCap** | int | 磁盘IO性能，单位MB/s（待废弃） |No|
+| **Drive** | string | 裸金属机型参数：磁盘盘符 |No|
+| **DiskId** | string | 裸金属机型参数：磁盘ID |No|
+| **IsBoot** | string | 裸金属机型参数：是否是启动盘。True/False |No|
 
 #### PHostComponentSet
 
@@ -91,7 +93,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Name** | string | 集群名。枚举值：千兆网络集群：1G；万兆网络集群：10G |No|
+| **Name** | string | 集群名。枚举值：千兆网络集群：1G；万兆网络集群：10G；智能网卡网络：25G； |No|
 | **StockStatus** | string | 库存状态。枚举值：有库存：Available；无库存：SoldOut |No|
 
 ## 示例
@@ -99,9 +101,11 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=DecribePHostMachineType
-&Region=cn-bj2
-&Zone=cn-bj2-02
+https://api.ucloud.cn/?Action=DescribePHostMachineType
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=NiYMXdyn
+&Type=hadlNlxA
 ```
 
 ### 响应示例
@@ -111,41 +115,29 @@ https://api.ucloud.cn/?Action=DecribePHostMachineType
   "Action": "DescribePHostMachineTypeResponse",
   "MachineTypes": [
     {
-      "CPU": {
-        "CoreCount": 32,
-        "Count": 2,
-        "Frequence": "2.40",
-        "Model": "Intel E5-2630 v3"
-      },
+      "CPU": {},
       "Clusters": [
         {
-          "Name": "10G",
-          "StockStatus": "SoldOut"
+          "Name": "lvPbAvXK",
+          "StockStatus": "EAHjdlhs"
         }
       ],
-      "Components": {
-        "Count": 0,
-        "Name": ""
-      },
+      "Components": {},
       "Disks": [
         {
-          "Count": 2,
-          "IOCap": 1000,
-          "Name": "sys",
-          "Space": 1000,
-          "Type": "SATA"
-        },
-        {
-          "Count": 6,
-          "IOCap": 1000,
-          "Name": "data",
-          "Space": 600,
-          "Type": "SAS"
+          "Count": 7,
+          "DiskId": "mHfyPxnl",
+          "Drive": "ceBtoEmK",
+          "IOCap": 1,
+          "IsBoot": "QfqSZlpU",
+          "Name": "PKnEqKAg",
+          "Space": 3,
+          "Type": "RIhnJHXi"
         }
       ],
-      "Memory": 65536,
-      "RaidSupported": "YES",
-      "Type": "DB-2"
+      "Memory": 2,
+      "RaidSupported": "xttxwlrP",
+      "Type": "ooxVOdgG"
     }
   ],
   "RetCode": 0
