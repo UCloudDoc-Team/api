@@ -1,276 +1,239 @@
+
+
 {
-  "api": [
-    {
-      "listname": "计算",
-      "listvalue": [
-        {
-          "links": "/api/uhost-api/README",
-          "name": "云主机 UHost",
-          "key": "uhost"
-        },
-        {
-          "links": "/api/uphost-api/README",
-          "name": "物理云主机 UPHost",
-          "key": "uphost"
-        },
-        {
-          "links": "/api/udhost-api/README",
-          "name": "私有专区 UDHost",
-          "key": "udset"
-        },
-        {
-          "links": "/api/udocker-api/README",
-          "name": "容器服务 UDocker",
-          "key": "udocker"
-        },
-        {
-          "links": "/api/uhub-api/README",
-          "name": "公共镜像库 UHub",
-          "key": "uhub"
-        },
-        {
-          "links": "/api/uk8s-api/README",
-          "name": "容器云 UK8S",
-          "key": "uk8s"
-        },
-        {
-          "links": "/api/cube-api/README",
-          "name": "容器实例 Cube",
-          "key": "cube"
-        }
-      ]
-    },
-    {
-      "listname": "网络",
-      "listvalue": [
-        {
-          "links": "/api/unet-api/README",
-          "name": "基础网络 UNet",
-          "key": "unet"
-        },
-        {
-          "links": "/api/ulb-api/README",
-          "name": "负载均衡 ULB",
-          "key": "ulb"
-        },
-        {
-          "links": "/api/vpc2.0-api/README",
-          "name": "私有网络 UVPC",
-          "key": "vpc"
-        },
-        {
-          "links": "/api/ipsecvpn-api/README",
-          "name": "VPN网关 IPSec VPN",
-          "key": "ipsecvpn"
-        },
-        {
-          "links": "/api/udpn-api/README",
-          "name": "高速通道 UDPN",
-          "key": "udpn"
-        },
-        {
-          "links": "/api/pathx-api/README",
-          "name": "全球动态加速 PathX",
-          "key": "ugaa"
-        }
-      ]
-    },
-    {
-      "listname": "数据库",
-      "listvalue": [
-        {
-          "links": "/api/udb-api/index?id=mysql",
-          "name": "云数据库 UDB MySQL",
-          "key": "mysql"
-        },
-        {
-          "links": "/api/udb-api/index?id=mongodb",
-          "name": "云数据库 UDB MongoDB",
-          "key": "nosql"
-        },
-        {
-          "links": "/api/umem-api/index?id=memcached",
-          "name": "云内存 UMem Memcached",
-          "key": "memcache"
-        },
-        {
-          "links": "/api/umem-api/index?id=redis",
-          "name": "云内存 UMem Redis",
-          "key": "redis"
-        },
-        {
-          "links": "/api/uddb-api/README",
-          "name": "分布式数据库 UDDB",
-          "key": "uddb"
-        }
-      ]
-    },
-    {
-      "listname": "存储",
-      "listvalue": [
-        {
-          "links": "/api/ufile-api/README",
-          "name": "对象存储 US3",
-          "key": "us3"
-        },
-        {
-          "links": "/api/ufs-api/README",
-          "name": "文件存储 UFS",
-          "key": "ufs"
-        },
-        {
-          "links": "/api/uarchive-api/README",
-          "name": "归档存储 UArchive",
-          "key": "uarchive"
-        },
-        {
-          "links": "/api/udisk-api/README",
-          "name": "云硬盘 UDisk",
-          "key": "udisk"
-        }
-      ]
-    },
-    {
-      "listname": "云分发",
-      "listvalue": [
-        {
-          "links": "/api/ucdn-api/README",
-          "name": "云分发 UCDN",
-          "key": "ucdn"
-        },
-        {
-          "links": "/api/uedn-api/README",
-          "name": "边缘计算节点 UEDN",
-          "key": "uedn"
-        }
-      ]
-    },
-    {
-      "listname": "数据分析",
-      "listvalue": [
-        {
-          "links": "/api/ukafka-api/README",
-          "name": "Kafka消息队列 UKafka",
-          "key": "ukafka"
-        },
-        {
-          "links": "/api/usql-api/README",
-          "name": "数据湖分析 USQL",
-          "key": "usql"
-        }
-      ]
-    },
-    {
-      "listname": "视频服务",
-      "listvalue": [
-        {
-          "links": "/api/umedia-api/README",
-          "name": "媒体工厂 UMedia",
-          "key": "umedia"
-        },
-        {
-          "links": "/api/ulive-api/README",
-          "name": "云直播 ULive",
-          "key": "ulive"
-        },
-        {
-          "links": "/api/urtc-api/README",
-          "name": "实时音视频 URTC",
-          "key": "urtc"
-        }
-      ]
-    },
-    {
-      "listname": "企业应用",
-      "listvalue": [
-        {
-          "links": "/api/usms-api/README",
-          "name": "短信服务 USMS",
-          "key": "usms"
-        }
-      ]
-    },
-    {
-      "listname": "安全防护",
-      "listvalue": [
-        {
-          "links": "/api/uddos-uclean-api/README",
-          "name": "DDoS攻击防护 UDDos",
-          "key": "uads"
-        },
-        {
-          "links": "/api/uewaf-api/README",
-          "name": "WEB应用防火墙 UEWAF",
-          "key": "upwaf"
-        }
-      ]
-    },
-    {
-      "listname": "安全合规",
-      "listvalue": [
-        {
-          "links": "/api/ukms-api/README",
-          "name": "密钥管理服务 UKMS",
-          "key": "ukms"
-        }
-      ]
-    },
-    {
-      "listname": "混合云",
-      "listvalue": [
-        {
-          "links": "/api/uhybridv3-api/README",
-          "name": "混合云 UHybrid",
-          "key": "uhybrid"
-        }
-      ]
-    },
-    {
-      "listname": "监控与运维",
-      "listvalue": [
-        {
-          "links": "/api/umon-api/README",
-          "name": "云监控 UMon",
-          "key": "umon"
-        },
-        {
-          "links": "/api/stepflow-api/README",
-          "name": "工作流服务 StepFlow",
-          "key": "hela"
-        }
-      ]
-    },
-    {
-      "listname": "多云与迁移",
-      "listvalue": [
-        {
-          "links": "/api/udts-api/README",
-          "name": "数据传输服务 UDTS",
-          "key": "udts"
-        }
-      ]
-    },
-    {
-      "listname": "账号与权限",
-      "listvalue": [
-        {
-          "links": "/api/uaccount-api/README",
-          "name": "账号与权限管理 UAM",
-          "key": "uam"
-        }
-      ]
-    },
-    {
-      "listname": "购买与计费",
-      "listvalue": [
-        {
-          "links": "/api/ubill-api/README",
-          "name": "账单管理 UBill",
-          "key": "bill_bill"
-        }
-      ]
-    }
-  ],
+    "api": [
+  {
+    "listname": "计算",
+    "listvalue": [
+      {
+        "links": "/api/uhost-api/README",
+        "name": "云主机 UHost"
+      },
+      {
+        "links": "/api/uphost-api/README",
+        "name": "物理云主机 UPHost"
+      },
+      {
+        "links": "/api/udhost-api/README",
+        "name": "私有专区 UDHost"
+      },
+      {
+        "links": "/api/udocker-api/README",
+        "name": "容器服务 UDocker"
+      },
+      {
+        "links": "/api/uhub-api/README",
+        "name": "公共镜像库 UHub"
+      },
+      {
+        "links": "/api/uk8s-api/README",
+        "name": "容器云 UK8S"
+      },
+      {
+        "links": "/api/cube-api/README",
+        "name": "容器实例 Cube"
+      }
+    ]
+  },
+  {
+    "listname": "网络",
+    "listvalue": [
+      {
+        "links": "/api/unet-api/README",
+        "name": "基础网络 UNet"
+      },
+      {
+        "links": "/api/ulb-api/README",
+        "name": "负载均衡 ULB"
+      },
+      {
+        "links": "/api/vpc2.0-api/README",
+        "name": "私有网络 UVPC"
+      },
+      {
+        "links": "/api/ipsecvpn-api/README",
+        "name": "VPN网关 IPSec VPN"
+      },
+      {
+        "links": "/api/udpn-api/README",
+        "name": "高速通道 UDPN"
+      },
+      {
+        "links": "/api/pathx-api/README",
+        "name": "全球动态加速 PathX"
+      }
+    ]
+  },
+  {
+    "listname": "数据库",
+    "listvalue": [
+      {
+        "links": "/api/udb-api/index?id=mysql",
+        "name": "云数据库 UDB MySQL"
+      },
+      {
+        "links": "/api/udb-api/index?id=mongodb",
+        "name": "云数据库 UDB MongoDB"
+      },
+      {
+        "links": "/api/umem-api/index?id=memcached",
+        "name": "云内存 UMem Memcached"
+      },
+      {
+        "links": "/api/umem-api/index?id=redis",
+        "name": "云内存 UMem Redis"
+      },
+      {
+        "links": "/api/uddb-api/README",
+        "name": "分布式数据库 UDDB"
+      }
+    ]
+  },
+  {
+    "listname": "存储",
+    "listvalue": [
+      {
+        "links": "/api/ufile-api/README",
+        "name": "对象存储 US3"
+      },
+      {
+        "links": "/api/ufs-api/README",
+        "name": "文件存储 UFS"
+      },
+      {
+        "links": "/api/uarchive-api/README",
+        "name": "归档存储 UArchive"
+      },
+      {
+        "links": "/api/udisk-api/README",
+        "name": "云硬盘 UDisk"
+      }
+    ]
+  },
+  {
+    "listname": "云分发",
+    "listvalue": [
+      {
+        "links": "/api/ucdn-api/README",
+        "name": "云分发 UCDN"
+      },
+      {
+        "links": "/api/uedn-api/README",
+        "name": "边缘计算节点 UEDN"
+      }
+    ]
+  },
+  {
+    "listname": "数据分析",
+    "listvalue": [
+      {
+        "links": "/api/ukafka-api/README",
+        "name": "Kafka消息队列 UKafka"
+      },
+      {
+        "links": "/api/usql-api/README",
+        "name": "数据湖分析 USQL"
+      }
+    ]
+  },
+  {
+    "listname": "视频服务",
+    "listvalue": [
+      {
+        "links": "/api/umedia-api/README",
+        "name": "媒体工厂 UMedia"
+      },
+      {
+        "links": "/api/ulive-api/README",
+        "name": "云直播 ULive"
+      },
+      {
+        "links": "/api/urtc-api/README",
+        "name": "实时音视频 URTC"
+      }
+    ]
+  },
+  {
+    "listname": "企业应用",
+    "listvalue": [
+      {
+        "links": "/api/usms-api/README",
+        "name": "短信服务 USMS"
+      }
+    ]
+  },
+  {
+    "listname": "安全防护",
+    "listvalue": [
+      {
+        "links": "/api/uddos-uclean-api/README",
+        "name": "DDoS攻击防护 UDDos"
+      },
+      {
+        "links": "/api/uewaf-api/README",
+        "name": "WEB应用防火墙 UEWAF"
+      }
+    ]
+  },
+  {
+    "listname": "安全合规",
+    "listvalue": [
+      {
+        "links": "/api/ukms-api/README",
+        "name": "密钥管理服务 UKMS"
+      }
+    ]
+  },
+  {
+    "listname": "混合云",
+    "listvalue": [
+      {
+        "links": "/api/uhybridv3-api/README",
+        "name": "混合云 UHybrid"
+      }
+    ]
+  },
+  {
+    "listname": "监控与运维",
+    "listvalue": [
+      {
+        "links": "/api/umon-api/README",
+        "name": "云监控 UMon"
+      },
+      {
+        "links": "/api/stepflow-api/README",
+        "name": "工作流服务 StepFlow"
+      }
+    ]
+  },
+  {
+    "listname": "多云与迁移",
+    "listvalue": [
+      {
+        "links": "/api/udts-api/README",
+        "name": "数据传输服务 UDTS"
+      }
+    ]
+  },
+  {
+    "listname": "账号与权限",
+    "listvalue": [
+      {
+        "links": "/api/uaccount-api/README",
+        "name": "账号与权限管理 UAM"
+      }
+    ]
+  },
+  {
+    "listname": "购买与计费",
+    "listvalue": [
+      {
+        "links": "/api/ubill-api/README",
+        "name": "账单管理 UBill"
+      }
+    ]
+  }
+],
   "hotprods": [
     {
       "url": "/api/summary/README",
