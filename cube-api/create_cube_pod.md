@@ -35,9 +35,10 @@
 | **Group** | string | pod所在组 |No|
 | **Name** | string | pod的名字 |No|
 | **Tag** | string | 业务组。默认：Default（Default即为未分组） |No|
-| **CpuPlatform** | string | Cpu平台（V6、A2），默认V6 |No|
+| **CpuPlatform** | string | Cpu平台（V6：Intel、A2：AMD），默认V6。支持的地域（北京2B、北京2E、上海2A、广东、香港 、东京）目前北京2E仅有A2，其余地域仅有V6 |No|
 | **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Postpay， <br /><br /> 后付费；默认为后付费 |No|
 | **Quantity** | int | 购买时长。默认:值 1。 月付时，此参数传0，代表购买至月末。 |No|
+| **CouponId** | string | 代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
 
@@ -72,6 +73,7 @@ https://api.ucloud.cn/?Action=CreateCubePod
 &ChargeType=iZfEqMCC
 &ChargeType=thtWusXL
 &Quantity=4
+&CouponId=TkrdYMXF
 ```
 
 ### 响应示例
