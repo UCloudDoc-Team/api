@@ -41,7 +41,9 @@
 | **ProtocolVersion** | int | 请求协议版本，建议升级为1，为1时DiskType与UHost磁盘类型定义一致；默认为0 |No|
 | **IsBoot** | string | ProtocolVersion字段为1且DiskType不为空时，必须设置，设置规则请参照DiskType；ProtocolVersion字段为1且DiskType为空时，该字段无效。ProtocolVersion字段为0或没有该字段时，该字段无效。 |No|
 | **IgnoreUBillInfo** | string | 是否忽略计费信息。Yes：忽略，No：不忽略，默认值（No）。（如不关心账单信息，建议选填“Yes”，可降低请求延时） |No|
-| **UHostIdForAttachment** | string | 根据传入的UHostIdForAttachment，筛选出虚机在同一PodId下的云盘 |No|
+| **UHostIdForAttachment** | string | 根据传入的UHostIdForAttachment，筛选出虚机在同一PodId下的云盘【本字段即将废弃，建议使用HostIdForAttachment】 |No|
+| **HostIdForAttachment** | string | 根据传入的HostIdForAttachment，筛选出虚机在同一PodId下的云盘 |No|
+| **HostProduct** | string | 宿主产品类型，可筛选挂载在该类型宿主上的云盘。可选值：uhost, uphost。为空拉取所有。（当HostIdForAttachment字段不为空时，该字段可以不填，若HostIdForAttachment与该字段宿主类型冲突，则以HostIdForAttachment字段为准。） |No|
 
 ### 响应字段
 
@@ -108,6 +110,11 @@ https://api.ucloud.cn/?Action=DescribeUDisk
 &IsBoot=irVoOnAn
 &IgnoreUBillInfo=kcHclIeG
 &UHostIdForAttachment=nMOZskoE
+&HostProduct=FsHZvACv
+&HostIdForAttachment=HdrfzmYJ
+&HostIdForAttachment=gEfcFPyq
+&HostProduct=pRsBGeKD
+&HostProduct=bCAPVgsw
 ```
 
 ### 响应示例

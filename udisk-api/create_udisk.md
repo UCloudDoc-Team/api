@@ -36,7 +36,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；RSSD数据盘：范围[1\~32000]。 |**Yes**|
 | **Name** | string | 实例名称 |**Yes**|
-| **ChargeType** | string | Year , Month, Dynamic, Postpay, Trial 。 Size小于等于2000时，默认为Dynamic；Size大于2000时，默认为Month。 |No|
+| **ChargeType** | string | Year , Month, Dynamic, Postpay, Trial 。默认为Dynamic。 |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **UDataArkMode** | string | 【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
 | **SnapshotService** | string | 是否开启快照服务。Yes：开启，No：不开启，默认值：No |No|
