@@ -36,7 +36,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
 | **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；RSSD数据盘：范围[1\~32000]。 |**Yes**|
 | **Name** | string | 实例名称 |**Yes**|
-| **UHostId** | string | 当创建云盘类型为RSSDDataDisk时，根据传入的UHostId，创建与虚机在同一PodId下的云盘 |**Yes**|
+| **UHostId** | string | UHost实例ID。当创建云盘类型为RSSDDataDisk时，根据传入的UHostId，创建与虚机在同一PodId下的云盘。【UHostId和HostId必须选填一个，本字段即将废弃，建议使用HostId】 |No|
 | **ChargeType** | string | Year , Month, Dynamic, Postpay, Trial 。 Size小于等于2000时，默认为Dynamic；Size大于2000时，默认为Month。 |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **UDataArkMode** | string | 【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
@@ -46,6 +46,7 @@
 | **UKmsMode** | string | 是否加密。Yes：加密，No：不加密，默认值（No） |No|
 | **CmkId** | string | 加密需要的cmk id，UKmsMode为Yes时，必填 |No|
 | **MultiAttach** | string | 是否允许多点挂载（Yes: 允许多点挂载， No: 不允许多点挂载， 不填默认Yes ） |No|
+| **HostId** | string | Host实例ID。当创建云盘类型为RSSDDataDisk时，根据传入的HostId，创建与虚机在同一PodId下的云盘。 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -56,7 +57,8 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **UDiskId** | string | 挂载的UDisk实例ID |No|
-| **UHostId** | string | 挂载的UHost实例ID |No|
+| **UHostId** | string | 挂载的UHost实例ID。【即将废弃，建议使用HostId】 |No|
+| **HostId** | string | 挂载的Host实例ID |No|
 | **DeviceName** | string | 挂载设备名称 |No|
 
 
@@ -85,6 +87,8 @@ https://api.ucloud.cn/?Action=CreateAttachUDisk
 &MultiAttach=yyMqSgep
 &MultiAttach=ejvSWdAP
 &SnapshotService=VlgfpSlc
+&HostId=FKnpCGZT
+&HostProduct=VGePkIjN
 ```
 
 ### 响应示例
@@ -93,6 +97,7 @@ https://api.ucloud.cn/?Action=CreateAttachUDisk
 {
   "Action": "CreateAttachUDiskResponse",
   "DeviceName": "lGfgoKdq",
+  "HostId": "PIUVdtUD",
   "RetCode": 0,
   "UDiskId": [
     "lVjpdPEC"
