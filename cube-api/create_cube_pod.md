@@ -31,7 +31,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
 | **VPCId** | string | VPCId |**Yes**|
 | **SubnetId** | string | 子网Id |**Yes**|
-| **Pod** | string | base64编码的Pod的yaml |**Yes**|
+| **Pod** | string | base64编码的Pod的yaml。大小不超过16KB |**Yes**|
 | **Group** | string | pod所在组 |No|
 | **Name** | string | pod的名字 |No|
 | **Tag** | string | 业务组。默认：Default（Default即为未分组） |No|
