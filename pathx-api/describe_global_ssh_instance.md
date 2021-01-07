@@ -62,6 +62,8 @@
 | **CreateTime** | int | 资源创建时间戳 |**Yes**|
 | **ExpireTime** | int | 资源过期时间戳 |**Yes**|
 | **Expire** | boolean | 是否过期 |**Yes**|
+| **BandwidthPackage** | string | globalssh Ultimate带宽包大小 |No|
+| **ForwardRegion** | string | InstanceType为Basic版本时，需要展示具体分配的转发机房 |No|
 
 ## 示例
 

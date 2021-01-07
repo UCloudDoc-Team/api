@@ -40,6 +40,8 @@
 | **ChargeType** | string | 支付方式，如按月、按年、按时 |No|
 | **Quantity** | int | 购买数量 |No|
 | **InstanceType** | string | 枚举值：["Enterprise","Basic","Free"], 分别代表企业版，基础版，免费版 |No|
+| **BandwidthPackage** | int | Ultimate版本带宽包大小,枚举值：[0,20,40]。单位MB |No|
+| **ForwardRegion** | string | InstanceType等于Basic时可以在["cn-bj2","cn-sh2","cn-gd"]中选择1个作为转发机房，Free版本固定为cn-bj2,其他付费版默认配置三个转发机房 |No|
 | **CouponId** | string | 使用代金券可冲抵部分费用 |No|
 
 ### 响应字段
@@ -71,6 +73,8 @@ https://api.ucloud.cn/?Action=CreateGlobalSSHInstance
 &Quantity=1
 &AreaCode=LAX
 &InstanceType=Basic
+&BandwidthPackage=5
+&ForwardRegion=UKclgoRu
 ```
 
 ### 响应示例
