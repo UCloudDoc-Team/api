@@ -69,7 +69,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomainOriginRequestNum
 &EndTime=2
 &DomainId.n=EOvOmBca
 &Areacode=IGnjREZm
-&Protocol=kjLOYJEJ
+
 ```
 
 ### 响应示例
@@ -79,8 +79,8 @@ https://api.ucloud.cn/?Action=GetUcdnDomainOriginRequestNum
   "Action": "GetUcdnDomainOriginRequestNumResponse",
   "RequestList": [
     {
-      "CdnRequest": 7.17666,
-      "OriginRequest": 7.89742,
+      "CdnRequest": 7,
+      "OriginRequest": 8,
       "Time": 6
     }
   ],
