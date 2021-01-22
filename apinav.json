@@ -18,10 +18,6 @@
         "name": "私有专区 UDHost"
       },
       {
-        "links": "/api/udocker-api/README",
-        "name": "容器服务 UDocker"
-      },
-      {
         "links": "/api/uhub-api/README",
         "name": "公共镜像库 UHub"
       },
