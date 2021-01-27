@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **UHostIds.N** | string | 【数组】UHost主机的资源ID，例如UHostIds.0代表希望获取信息 的主机1，UHostIds.1代表主机2。 如果不传入，则返回当前Region 所有符合条件的UHost实例。 |No|
 | **Tag** | string | 要查询的业务组名称 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
@@ -61,7 +61,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **IPv6Feature** | boolean | true:有ipv6特性；false，没有ipv6特性 |**Yes**|
+| **IPv6Feature** | boolean | true:有ipv6特性；false，没有ipv6特性 |No|
 | **UHostId** | string | UHost实例ID |No|
 | **UHostType** | string | 【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
@@ -75,7 +75,7 @@
 | **Name** | string | UHost实例名称 |No|
 | **State** | string | 实例状态，枚举值：<br /><br /> >初始化: Initializing; <br /><br /> >启动中: Starting; <br /><br />> 运行中: Running; <br /><br />> 关机中: Stopping; <br /><br /> >关机: Stopped <br /><br /> >安装失败: Install Fail; <br /><br /> >重启中: Rebooting |No|
 | **CreateTime** | int | 创建时间，格式为Unix时间戳 |No|
-| **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）；  |No|
+| **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）；Preemptive 为抢占式实例； |No|
 | **ExpireTime** | int | 到期时间，格式为Unix时间戳 |No|
 | **CPU** | int | 虚拟CPU核数，单位: 个 |No|
 | **Memory** | int | 内存大小，单位: MB |No|
@@ -97,6 +97,7 @@
 | **IsolationGroup** | string | 隔离组id，不在隔离组则返回"" |No|
 | **CloudInitFeature** | boolean | true，支持cloutinit方式初始化；false,不支持 |No|
 | **RdmaClusterId** | string | RDMA集群id，仅快杰云主机返回该值；其他类型云主机返回""。当云主机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台云主机。 |No|
+| **RestrictMode** | string | 仅抢占式实例返回，LowSpeed为低速模式，PowerOff为关机模式 |No|
 
 #### UHostDiskSet
 
@@ -116,16 +117,17 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Default** | string | 【暂未支持】是否为默认网卡。true: 是默认网卡；其他值：不是。 |**Yes**|
-| **Mac** | string | 当前网卡的Mac。 |**Yes**|
-| **Weight** | int | 当前EIP的权重。权重最大的为当前的出口IP。 |**Yes**|
 | **IPMode** | string | IPv4/IPv6； |**Yes**|
+| **Default** | string | 内网 Private 类型下，表示是否为默认网卡。true: 是默认网卡；其他值：不是。 |No|
+| **Mac** | string | 内网 Private 类型下，当前网卡的Mac。 |No|
+| **Weight** | int | 当前EIP的权重。权重最大的为当前的出口IP。 |No|
 | **Type** | string | 国际: Internation，BGP: Bgp，内网: Private |No|
 | **IPId** | string | 外网IP资源ID 。(内网IP无对应的资源ID) |No|
 | **IP** | string | IP地址 |No|
 | **Bandwidth** | int | IP对应的带宽, 单位: Mb  (内网IP不显示带宽信息) |No|
 | **VPCId** | string | IP地址对应的VPC ID。（北京一不支持，字段返回为空） |No|
 | **SubnetId** | string | IP地址对应的子网 ID。（北京一不支持，字段返回为空） |No|
+| **NetworkInterfaceId** | string | 弹性网卡为默认网卡时，返回对应的 ID 值 |No|
 
 ## 示例
 

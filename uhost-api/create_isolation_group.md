@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目id |No|
 | **GroupName** | string | 硬件隔离组名称。请遵照[字段规范](api/uhost-api/specification)设定隔离组名称。 |**Yes**|
 | **Remark** | string | 备注。请遵照[字段规范](api/uhost-api/specification)设定隔离组备注。 |No|
@@ -58,6 +58,7 @@ https://api.ucloud.cn/?Action=CreateIsolationGroup
 &GroupName=SNINkvJp
 &Remark=uvgtNeqg
 &ProjectId=ceguExuq
+&ResourceType=jKAWOxeD
 ```
 
 ### 响应示例

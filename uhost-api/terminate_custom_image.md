@@ -31,9 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ImageId** | string | 自制镜像ID 参见 [DescribeImage](api/uhost-api/describe_image) |**Yes**|
 
 ### 响应字段
@@ -56,7 +55,8 @@
 https://api.ucloud.cn/?Action=TerminateCustomImage
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&ImageId=6fa91ff8-663c-4a7c-b054-1824aa41a1a3
+&ProjectId=org-xxx
+&ImageId=uimage-xxx
 ```
 
 ### 响应示例
@@ -64,7 +64,8 @@ https://api.ucloud.cn/?Action=TerminateCustomImage
 ```json
 {
   "Action": "TerminateCustomImageResponse",
-  "RetCode": "0"
+  "ImageId": "uimage-xxx",
+  "RetCode": 0
 }
 ```
 
