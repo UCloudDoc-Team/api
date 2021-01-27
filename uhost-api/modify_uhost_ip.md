@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写时为默认项目。请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写时为默认项目。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **PresentIpAddress** | string | 需要修改为的 IP 地址。新的IP地址和旧IP地址必须属于统一子网，且和主机内部的配置文件一致。 |**Yes**|
 | **UHostId** | string | 指定云主机 ID。 |**Yes**|
 | **PreviousIpAddress** | string | 所需修改的原 IP 地址 ，当云主机只有一个IP地址时，此参数不必填写。 |No|

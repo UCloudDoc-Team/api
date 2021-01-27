@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目id |No|
 | **GroupId** | string | 待查的硬件隔离组id |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
@@ -45,6 +45,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **IsolationGroupSet** | array[[*IsolationGroup*](#IsolationGroup)] | 硬件隔离组集合。参见数据结构IsolationGroup。 |No|
+| **TotalCount** | int | 硬件隔离组总数 |No|
 
 #### 数据模型
 
@@ -63,7 +64,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区信息 |No|
-| **UHostCount** | int | 可用区中硬件隔离组中云主机的数量，不超过7。 |No|
+| **UHostCount** | int | 当前地域所有可用区中硬件隔离组中云主机的数量，不超过7。 |No|
 
 ## 示例
 
@@ -76,6 +77,8 @@ https://api.ucloud.cn/?Action=DescribeIsolationGroup
 &ProjectId=UAfwElsL
 &Offset=4
 &Limit=3
+&GroupId.N=qKyTKzgY
+&ResourceType=aYJzspBZ
 ```
 
 ### 响应示例
@@ -437,7 +440,8 @@ https://api.ucloud.cn/?Action=DescribeIsolationGroup
       ]
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 6
 }
 ```
 

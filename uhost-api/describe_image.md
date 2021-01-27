@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ImageType** | string | 镜像类型。标准镜像：Base，镜像市场：Business， 自定义镜像：Custom，默认返回所有类型 |No|
 | **OsType** | string | 操作系统类型：Linux， Windows 默认返回所有类型 |No|
 | **ImageId** | string | 镜像Id |No|
@@ -81,12 +81,15 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeImage
-&Region=cn-bj2
-&Zone=cn-bj2-04
-&ImageType=Base
-&OsType=Windows
-&Test=skwrlRby
-&Test=JZcyYKMV
+&Region=PhaAzVTd
+&Zone=cqKjGzBc
+&ProjectId=COzFsxJJ
+&ImageType=gzhDcTIW
+&OsType=YKGOVXER
+&ImageId=NucmrhHv
+&Offset=7
+&Limit=3
+&PriceSet=8
 ```
 
 ### 响应示例
@@ -96,26 +99,28 @@ https://api.ucloud.cn/?Action=DescribeImage
   "Action": "DescribeImageResponse",
   "ImageSet": [
     {
-      "CreateTime": 1503554550,
+      "CreateTime": 7,
       "Features": [
-        "GPU",
-        "HotPlug"
+        "fIjpPBic"
       ],
-      "ImageDescription": "Windows Server 2012 R2 Datacenter 64-bit ",
-      "ImageId": "uimage-xxxx",
-      "ImageName": "Windows 2012 64位",
-      "ImageSize": 40,
-      "ImageType": "Base",
-      "OsName": "Windows 2012 64位",
-      "OsType": "Windows",
-      "PriceSet": [],
-      "State": "Available",
-      "Tag": "Default",
-      "Zone": "cn-bj2-04"
+      "FuncType": "HUUNWmIe",
+      "ImageDescription": "HVeLQVxc",
+      "ImageId": "DSFagZyu",
+      "ImageName": "tLrQRsEd",
+      "ImageSize": 5,
+      "ImageType": "qHUuzcMF",
+      "IntegratedSoftware": "IHavDZNf",
+      "Links": "fKLwvSib",
+      "MinimalCPU": "RDlcZqYK",
+      "OsName": "NxoYUnar",
+      "OsType": "DxLQCAes",
+      "State": "eGSoZznP",
+      "Vendor": "JjBqzeus",
+      "Zone": "BOUCCxQH"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 4
 }
 ```
 
