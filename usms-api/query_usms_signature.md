@@ -51,10 +51,10 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **SigId** | string | 签名ID |**Yes**|
-| **SigContent** | string | 签名内容 |**Yes**|
-| **Status** | int | 签名状态。0-待审核 1-审核中 2-审核通过 3-审核未通过 4-被禁用  |**Yes**|
-| **ErrDesc** | string | 签名审核失败原因 |**Yes**|
+| **SigId** | string | 短信签名ID |**Yes**|
+| **SigContent** | string | 短信签名内容 |**Yes**|
+| **Status** | int | 签名状态，0-待审核 1-审核中 2-审核通过 3-审核未通过 4-被禁用  |**Yes**|
+| **ErrDesc** | string | 短信签名未通过审核原因 |**Yes**|
 
 ## 示例
 
