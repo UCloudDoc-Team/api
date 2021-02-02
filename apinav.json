@@ -114,8 +114,8 @@
         "name": "云分发 UCDN"
       },
       {
-        "links": "/api/uedn-api/README",
-        "name": "边缘计算节点 UEDN"
+        "links": "/api/uec-api/README",
+        "name": "边缘计算 UEC"
       }
     ]
   },
