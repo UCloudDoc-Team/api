@@ -1,6 +1,6 @@
 # UCloud API 文档中心
 
-欢迎您使用 UCloud OpenAPI，API 适合通过编写程序，自动化管理和编排云上资源的场景
+欢迎您使用 UCloud OpenAPI，API 适合通过编写程序，自动化管理和编排云上资源的场景。
 
 ?> 使用前请先阅读 [API 综览](/api/summary)。
 
