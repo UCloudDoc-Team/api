@@ -31,11 +31,11 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **Offset** | int | 分页显示的起始偏移，列表操作则指定 |**Yes**|
-| **Limit** | int | 分页显示的条目数，列表操作则指定 |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **Offset** | int | 分页显示的起始偏移，列表操作则指定 |No|
+| **Limit** | int | 分页显示的条目数，列表操作则指定 |No|
 | **GroupId** | int | 参数组id，如果指定则获取描述，否则是列表操作，需要 指定Offset/Limit |No|
 | **IsInUDBC** | boolean | 是否选取专区中配置 |No|
 | **RegionFlag** | boolean | 当请求没有填写Zone时，如果指定为true，表示只拉取跨可用区的相关配置文件，否则，拉取所有机房的配置文件（包括每个单可用区和跨可用区） |No|
