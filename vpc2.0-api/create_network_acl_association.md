@@ -31,9 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **AclId** | string | ACL的ID |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SubnetworkId** | string | 需要绑定的子网ID |**Yes**|
 
 ### 响应字段
@@ -43,7 +42,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **AclId** | string | Acl的ID |**Yes**|
+| **AclId** | string | 新绑定的Acl的ID（暂不支持返回该参） |**Yes**|
 | **AssociationId** | string | 创建的绑定关系的ID |**Yes**|
 | **PrevAssociation** | [*AssociationInfo*](#AssociationInfo) | 该子网之前的绑定关系信息 |No|
 
