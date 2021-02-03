@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目Id。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目Id。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **NATGWId** | string | NAT网关Id |**Yes**|
 
 ### 响应字段
@@ -56,11 +56,11 @@
 | **ResourceName** | string | 资源名称 |**Yes**|
 | **PrivateIP** | string | 资源的内网Ip |**Yes**|
 | **ResourceType** | string | 资源类型。"uhost"：云主机； "upm"，物理云主机； "hadoophost"：hadoop节点； "fortresshost"：堡垒机： "udockhost"，容器 |**Yes**|
-| **SubResouceId** | string | 资源绑定的虚拟网卡的实例ID |**Yes**|
 | **SubResourceName** | string | 资源绑定的虚拟网卡的实例名称 |**Yes**|
-| **SubResouceType** | string | 资源绑定的虚拟网卡的实例类型 |**Yes**|
 | **VPCId** | string | 资源所属VPCId |**Yes**|
 | **SubnetworkId** | string | 资源所属子网Id |**Yes**|
+| **SubResouceId** | string | 资源绑定的虚拟网卡的实例ID |No|
+| **SubResouceType** | string | 资源绑定的虚拟网卡的实例类型 |No|
 
 ## 示例
 
