@@ -34,11 +34,11 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Offset** | int | 分页显示的起始偏移，列表操作则指定 |**Yes**|
+| **Limit** | int | 分页显示的条目数，列表操作则指定 |**Yes**|
 | **GroupId** | int | 参数组id，如果指定则获取描述，否则是列表操作，需要 指定Offset/Limit |No|
-| **Offset** | int | 分页显示的起始偏移，列表操作则指定 |No|
-| **Limit** | int | 分页显示的条目数，列表操作则指定 |No|
 | **IsInUDBC** | boolean | 是否选取专区中配置 |No|
-| **RegionFlag** | boolean | 是否是跨可用区的配置文件 |No|
+| **RegionFlag** | boolean | 当请求没有填写Zone时，如果指定为true，表示只拉取跨可用区的相关配置文件，否则，拉取所有机房的配置文件（包括每个单可用区和跨可用区） |No|
 | **ClassType** | string | 如果未指定GroupId，则可选是否选取特定DB类型的配置(sql, nosql, postgresql, sqlserver) |No|
 
 ### 响应字段
@@ -85,7 +85,8 @@
 https://api.ucloud.cn/?Action=DescribeUDBParamGroup
 &Region=cn-bj2
 &Zone=cn-bj2-04
-&GroupId=20                               
+&Offset=0
+&Limit=3                        
 ```
 
 ### 响应示例
@@ -95,35 +96,38 @@ https://api.ucloud.cn/?Action=DescribeUDBParamGroup
   "Action": "DescribeUDBParamGroupResponse",
   "DataSet": [
     {
-      "DBTypeId": "mongodb-2.4",
-      "Description": "mongodb2.4默认配置",
-      "GroupId": 20,
-      "GroupName": "mongodb2.4默认配置",
-      "Modifiable": true,
-      "ParamMember": [
-        {
-          "AllowedVal": "true,false",
-          "ApplyType": "PAT_STATIC",
-          "FormatType": "PVFT_ENUM",
-          "Key": "auth",
-          "Modifiable": true,
-          "Value": "false",
-          "ValueType": "PVT_BOOL"
-        },
-        {
-          "AllowedVal": "1-100000",
-          "ApplyType": "PAT_STATIC",
-          "FormatType": "PVFT_RANGE",
-          "Key": "maxConns",
-          "Modifiable": true,
-          "Value": "2000",
-          "ValueType": "PVT_INT"
-        }
-      ]
+      "DBTypeId": "postgresql-9.6",
+      "Description": "postgresql-9.6默认配置",
+      "GroupId": 1859,
+      "GroupName": "postgresql-9.6默认配置",
+      "Modifiable": false,
+      "ParamGroupTypeName": "Undefined",
+      "RegionFlag": false,
+      "Zone": "cn-bj2-02"
+    },
+    {
+      "DBTypeId": "mysql-5.1",
+      "Description": "mysql5.1默认配置",
+      "GroupId": 2,
+      "GroupName": "mysql5.1默认配置",
+      "Modifiable": false,
+      "ParamGroupTypeName": "Undefined",
+      "RegionFlag": false,
+      "Zone": "cn-bj2-02"
+    },
+    {
+      "DBTypeId": "mysql-5.5",
+      "Description": "mysql5.5默认配置",
+      "GroupId": 1,
+      "GroupName": "mysql5.5默认配置",
+      "Modifiable": false,
+      "ParamGroupTypeName": "Undefined",
+      "RegionFlag": false,
+      "Zone": "cn-bj2-02"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 3
 }
 ```
 
