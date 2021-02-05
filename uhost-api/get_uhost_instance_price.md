@@ -50,9 +50,6 @@
 | **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4"] |No|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表了购买至月末。 |No|
 | **CpuPlatform** | string | 取值"Intel" "Amd"，默认值“Intel” |No|
-| **Volumes.N.Type** | string | 存储文件卷类型，当前仅支持[CLOUD_FSX]。请参考[卷类型](api/uhost-api/volume_type)。 |No|
-| **Volumes.N.Size** | int | 存储文件卷大小，单位GB，必须是10GB的整数倍，至少 100GB。 |No|
-| **Volumes.N.IsBoot** | string | 存储文件卷，当前只用于数据卷，且限于 Windows，默认为 fase。 |No|
 
 ### 响应字段
 
@@ -97,6 +94,7 @@ https://api.ucloud.cn/?Action=GetUHostInstancePrice
 &Volumes.N.Type=asluorww
 &Volumes.N.Size=3
 &Volumes.N.IsBoot=eHeLEeHi
+&HpcEnhanced=false
 ```
 
 ### 响应示例
