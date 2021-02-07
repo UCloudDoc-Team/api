@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ImageId** | string | ImageId，可以通过接口 [DescribePHostImage](api/uphost-api/describe_phost_image.html)获取 |**Yes**|
 | **Password** | string | 密码（密码需使用base64进行编码） |**Yes**|
 | **Type** | string | 物理机类型，默认为：db-2(基础型-SAS-V3) |No|
@@ -51,6 +51,7 @@
 | **Disks.N.Type** | string | 裸金属机型参数->磁盘类型：枚举值：CLOUD_RSSD |No|
 | **Disks.N.Size** | int | 裸金属机型参数->磁盘大小，单位GB，必须是10GB的整数倍。系统盘20-500GB，数据盘单块盘20-32000GB。 |No|
 | **Disks.N.CouponId** | string | 裸金属机型参数->云盘代金券id。不适用于系统盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
+| **VpcIp** | string | 指定内网ip创建 |No|
 | **CouponId** | string | 代金券 |No|
 
 ### 响应字段
@@ -93,6 +94,7 @@ https://api.ucloud.cn/?Action=CreatePHost
 &Disks.N.Size=7
 &Disks.N.CouponId=NKehxKWX
 &CouponId=nDNLOYMb
+&VpcIp=UZNQMwbL
 ```
 
 ### 响应示例
