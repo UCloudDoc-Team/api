@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 源VPC所在地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 源VPC所在项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 源VPC所在地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 源VPC所在项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **VPCId** | string | VPC短ID |**Yes**|
 | **DstRegion** | string | 目的VPC所在地域，默认为全部地域 |No|
 | **DstProjectId** | string | 目的项目ID，默认为全部项目 |No|
@@ -54,6 +54,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目Id |No|
+| **VPCType** | int | vpc类型（1表示托管VPC，0表示公有云VPC） |**Yes**|
+| **AccountId** | int | 项目Id（数字） |**Yes**|
 | **Network** | array[string] | VPC的地址空间<br /> |No|
 | **DstRegion** | string | 所属地域 |No|
 | **Name** | string | VPC名字 |No|
