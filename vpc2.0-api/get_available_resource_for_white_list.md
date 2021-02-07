@@ -59,8 +59,8 @@
 | **SubResourceName** | string | 资源绑定的虚拟网卡的实例名称 |**Yes**|
 | **VPCId** | string | 资源所属VPCId |**Yes**|
 | **SubnetworkId** | string | 资源所属子网Id |**Yes**|
-| **SubResouceId** | string | 资源绑定的虚拟网卡的实例ID |No|
-| **SubResouceType** | string | 资源绑定的虚拟网卡的实例类型 |No|
+| **SubResourceId** | string | 资源绑定的虚拟网卡的实例ID |No|
+| **SubResourceType** | string | 资源绑定的虚拟网卡的实例类型 |No|
 
 ## 示例
 
