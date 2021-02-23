@@ -26,9 +26,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **VPCId** | string | VPCId |**Yes**|
 | **SubnetId** | string | 子网Id |**Yes**|
 | **Pod** | string | base64编码的Pod的yaml。大小不超过16KB |**Yes**|
@@ -38,6 +38,7 @@
 | **CpuPlatform** | string | Cpu平台（V6：Intel、A2：AMD），默认V6。支持的地域（北京2B、北京2E、上海2A、广东、香港 、东京）目前北京2E仅有A2，其余地域仅有V6 |No|
 | **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Postpay， <br /><br /> 后付费；默认为后付费 |No|
 | **Quantity** | int | 购买时长。默认:值 1。 月付时，此参数传0，代表购买至月末。 |No|
+| **KubeConfig** | string | base64编码的kubeconfig。大小不超过16KB |No|
 | **CouponId** | string | 代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -74,6 +75,8 @@ https://api.ucloud.cn/?Action=CreateCubePod
 &ChargeType=thtWusXL
 &Quantity=4
 &CouponId=TkrdYMXF
+&Kubeconfig=LKZTnJsi
+&Kubeconfig=jOhgfkrz
 ```
 
 ### 响应示例
