@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **EIPId** | string | EIP资源ID |**Yes**|
 | **Name** | string | 名字（Name Tag Remark都为空则报错） |No|
 | **Tag** | string | 业务 |No|
@@ -54,9 +54,9 @@
 ### 请求示例
     
 ```
-http(s)://api.spark.ucloud.cn/?Action=UpdateEIPAttribute
+https://api.ucloud.cn/?Action=UpdateEIPAttribute
 &Region=cn-bj2
-&EIPId=eip-w2pew1
+&EIPId=eip-XXXXX
 &Name=test
 &Tag=test
 &Remark=test
@@ -67,6 +67,7 @@ http(s)://api.spark.ucloud.cn/?Action=UpdateEIPAttribute
 ```json
 {
   "Action": "UpdateEIPAttributeResponse",
+  "Request_uuid": "a50bf300-1ff3-4192-b46f-XXXXXX",
   "RetCode": 0
 }
 ```
