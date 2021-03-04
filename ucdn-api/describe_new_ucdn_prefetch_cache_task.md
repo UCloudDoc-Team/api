@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **TaskId.N** | string | 提交任务时返回的任务ID |No|
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值 |No|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
@@ -58,7 +58,6 @@
 |:---|:---|:---|:---|
 | **TaskId** | string | 提交任务时返回的任务ID |No|
 | **UrlLists** | array[[*UrlProgressInfo*](#UrlProgressInfo)] | 任务url的信息列表，参考UrlProgressInfo |No|
-| **Type** | string | file/dir  刷新任务会返回Type，预取任务没有 |No|
 | **CreateTime** | int | 刷新任务创建的时间。格式为Unix Timestamp |No|
 | **Status** | string | 刷新任务的当前状态，枚举值：success：成功；wait：排队中；process：处理中；failure：失败； unknow：未知 |No|
 

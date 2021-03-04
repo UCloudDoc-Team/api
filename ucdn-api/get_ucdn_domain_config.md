@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量，默认0，非负整数 |No|
 | **Limit** | int | 返回数据长度， 默认全部，非负整数 |No|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认获取账号下的所有域名信息,n为自然数,从DomainId.0开始。 |No|
@@ -66,10 +66,10 @@
 | **Tag** | string | 业务组：Default |**Yes**|
 | **DomainId** | string | 域名Id |No|
 | **Domain** | string | 域名 |No|
-| **OriginConf** | [*OriginConf*](#OriginConf) | 源站配置 |No|
-| **AccessAllConfig** | [*AccessAllConfig*](#AccessAllConfig) | 访问控制配置 |No|
-| **CacheConf** | [*CacheAllConfig*](#CacheAllConfig) | 缓存配置 |No|
-| **AdvancedConf** | [*AdvancedConf*](#AdvancedConf) | 高级配置 |No|
+| **OriginConf** | [*OriginConf*](#OriginConf) | 源站配置 参考OriginConf |No|
+| **AccessControlConf** | [*AccessControlConf*](#AccessControlConf) | 访问控制配置 参考AccessControlConf |No|
+| **CacheConf** | [*CacheAllConfig*](#CacheAllConfig) | 缓存配置 参考CacheAllConfig |No|
+| **AdvancedConf** | [*AdvancedConf*](#AdvancedConf) | 高级配置 参考AdvancedConf |No|
 
 #### OriginConf
 
@@ -86,12 +86,12 @@
 | **OriginProtocol** | string | 源站协议http，http\|https   默认http |No|
 | **OriginFollow301** | int | 跟随301跳转  0=不跟随 1=跟随 |No|
 
-#### AccessAllConfig
+#### AccessControlConf
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **IpBlackList** | array[string] | ip黑名单列表 ["1.1.1.1","2.2.2.2"] |No|
-| **ReferConf** | array[[*ReferConf*](#ReferConf)] | Refer配置,参考ReferConf结构 |No|
+| **IpBlackList** | array[string] | ip黑名单，多个ip，可表示为：<br />IpBlackList.0=1.1.1.1，IpBlackList.1=2.2.2.2 |No|
+| **ReferConf** | [*ReferConf*](#ReferConf) | refer配置 |No|
 
 #### CacheAllConfig
 
@@ -134,9 +134,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ReferType** | int | 0白名单，1黑名单 |No|
-| **NullRefer** | int | ReferType为白名单时，(删除)NullRefer为0代表不允许NULL refer访问，为1代表允许Null refer访问 |No|
-| **ReferList** | array[string] | Refer列表，支持正则表达式 |No|
+| **ReferType** | int | Refer防盗链配置  0白名单，1黑名单 |No|
+| **NullRefer** | int | ReferType为白名单时（删除），NullRefer为0代表不允许NULL refer访问，为1代表允许Null refer访问 |No|
+| **ReferList** | array[string] | Refer防盗链规则列表，支持正则表达式 |No|
 
 ## 示例
 
