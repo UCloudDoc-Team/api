@@ -4,15 +4,12 @@
 
 | API | 描述信息 |
 |:---|:---|
-|[BatchDescribeNewUcdnDomain](api/ucdn-api/batch_describe_new_ucdn_domain)|【已废弃】批量获取加速域名配置|
-|[BatchRefreshNewUcdnDomainCache](api/ucdn-api/batch_refresh_new_ucdn_domain_cache)|【已废弃】批量刷新缓存|
 |[DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)|获取预取任务状态|
 |[DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)|获取域名刷新任务状态|
 |[GetNewUcdnDomainBandwidth](api/ucdn-api/get_new_ucdn_domain_bandwidth)|【待下线】获取域名带宽数据|
 |[GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)|获取域名命中率|
 |[GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)|【待下线】获取域名状态码监控|
 |[GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)|【待下线】获取域名详细状态码监控|
-|[GetNewUcdnDomainRequestNum](api/ucdn-api/get_new_ucdn_domain_request_num)|【已废弃】获取域名请求数|
 |[GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain_95bandwidth_v2)|获取域名九五峰值带宽数据【新】|
 |[GetUcdnDomainBandwidthV2](api/ucdn-api/get_ucdn_domain_bandwidth_v2)|获取域名带宽数据【新】|
 |[GetUcdnDomainConfig](api/ucdn-api/get_ucdn_domain_config)|批量获取加速域名配置|
