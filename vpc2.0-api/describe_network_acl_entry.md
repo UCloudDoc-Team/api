@@ -9,7 +9,12 @@
 
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeNetworkAclEntry)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
@@ -26,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **AclId** | string | ACL的ID |**Yes**|
 
 ### 响应字段
@@ -69,8 +74,8 @@
 | **ResourceType** | int | 资源类型 |**Yes**|
 | **SubResourceName** | string | 资源绑定的虚拟网卡的名称 |**Yes**|
 | **SubResourceId** | string | 资源绑定的虚拟网卡的ID |**Yes**|
-| **SubResourceType** | string | 资源绑定虚拟网卡的类型。uni，“虚拟网卡”。 |**Yes**|
-| **PrivateIP** | string | 资源内网IP |**Yes**|
+| **SubResourceType** | int | 资源绑定虚拟网卡的类型 |**Yes**|
+| **PrivateIp** | string | 资源内网IP |**Yes**|
 
 ## 示例
 
