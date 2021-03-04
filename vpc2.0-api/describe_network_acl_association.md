@@ -9,7 +9,12 @@
 
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeNetworkAclAssociation)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
@@ -49,7 +54,6 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **AssociationId** | string | 绑定ID |**Yes**|
-| **VpcId** | string | 所属的VPC ID |**Yes**|
 | **AclId** | string | ACL的ID |**Yes**|
 | **SubnetworkId** | string | 绑定的子网ID |**Yes**|
 | **CreateTime** | int | 创建的Unix时间戳 |**Yes**|

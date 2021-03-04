@@ -9,7 +9,12 @@
 
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=CreateNetworkAclAssociation)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
@@ -26,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **AclId** | string | ACL的ID |**Yes**|
 | **SubnetworkId** | string | 需要绑定的子网ID |**Yes**|
 
@@ -38,7 +43,6 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **AclId** | string | Acl的ID |**Yes**|
 | **AssociationId** | string | 创建的绑定关系的ID |**Yes**|
 | **PrevAssociation** | [*AssociationInfo*](#AssociationInfo) | 该子网之前的绑定关系信息 |No|
 
@@ -50,7 +54,6 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **AssociationId** | string | 绑定ID |**Yes**|
-| **VpcId** | string | 所属的VPC ID |**Yes**|
 | **AclId** | string | ACL的ID |**Yes**|
 | **SubnetworkId** | string | 绑定的子网ID |**Yes**|
 | **CreateTime** | int | 创建的Unix时间戳 |**Yes**|
