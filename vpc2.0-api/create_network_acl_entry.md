@@ -9,12 +9,7 @@
 
 
 
-## 使用方法
 
-您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=CreateNetworkAclEntry)
-- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
@@ -40,7 +35,7 @@
 | **CidrBlock** | string | IPv4段的CIDR表示 |**Yes**|
 | **PortRange** | string | 针对的端口范围 |**Yes**|
 | **EntryAction** | string | 规则的行为("Accept", "Reject") |**Yes**|
-| **Description** | string | 描述。长度限制为不超过32字节。 |No|
+| **Description** | string | 描述 |No|
 | **TargetType** | int | 应用目标类型。0代表“子网内全部资源”，1代表“子网内指定资源”，默认为0 |No|
 | **TargetResourceIds.N** | string | 应用目标资源列表。默认为全部资源生效。TargetType为0时不用填写该值。 |No|
 
