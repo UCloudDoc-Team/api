@@ -13,6 +13,7 @@
     - [获取域名带宽数据【新】 - GetUcdnDomainBandwidthV2](api/ucdn-api/get_ucdn_domain_bandwidth_v2)
     - [批量获取加速域名配置 - GetUcdnDomainConfig](api/ucdn-api/get_ucdn_domain_config)
     - [获取域名状态码信息【新】 - GetUcdnDomainHttpCodeV2](api/ucdn-api/get_ucdn_domain_http_code_v2)
+    - [获取域名基本信息 - GetUcdnDomainInfoList](api/ucdn-api/get_ucdn_domain_info_list)
     - [获取加速域名原始日志 - GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)
     - [获取域名回源请求数【新】 - GetUcdnDomainOriginRequestNum](api/ucdn-api/get_ucdn_domain_origin_request_num)
     - [获取域名预取开启状态 - GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)
