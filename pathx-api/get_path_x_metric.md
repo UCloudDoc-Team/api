@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **ResourceId** | string | ResourceId，如upath ID  和 uga ID  |**Yes**|
 | **BeginTime** | int | 查询起始时间，10位长度时间戳 |**Yes**|
 | **EndTime** | int | 查询结束时间，10位长度时间戳 |**Yes**|
@@ -46,7 +46,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **DataSet** | array[[*MetricPeriod*](#MetricPeriod)] | 监控数据结果集 |No|
+| **DataSet** | [*MetricPeriod*](#MetricPeriod) | 监控数据结果集 |No|
 
 #### 数据模型
 

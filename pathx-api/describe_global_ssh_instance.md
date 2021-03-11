@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID，如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID，如org-xxxx。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **InstanceId** | string | 实例ID，资源唯一标识 |No|
 
 ### 响应字段
@@ -62,7 +62,7 @@
 | **CreateTime** | int | 资源创建时间戳 |**Yes**|
 | **ExpireTime** | int | 资源过期时间戳 |**Yes**|
 | **Expire** | boolean | 是否过期 |**Yes**|
-| **BandwidthPackage** | string | globalssh Ultimate带宽包大小 |No|
+| **BandwidthPackage** | int | globalssh Ultimate带宽包大小 |No|
 | **ForwardRegion** | string | InstanceType为Basic版本时，需要展示具体分配的转发机房 |No|
 
 ## 示例

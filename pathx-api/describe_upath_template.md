@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **UPathId** | string | 加速线路实例ID,格式 upath-xxxx |**Yes**|
 
 ### 响应字段
@@ -57,7 +57,7 @@
 | **MetricName** | string | 告警指标名称, 所有n的个数必须一致。目前仅允许以下四项：UpathNetworkOut:出向带宽，UpathNetworkIn:入向带宽，UpathNetworkOutUsage:出向带宽使用率，UpathNetworkInUsage:入向带宽使用率 |**Yes**|
 | **Threshold** | int | 告警阈值，带宽使用率的阈值范围是[50,100]的正整数，带宽告警阈值为1000000的倍数, 如大于2Mbps则告警 阈值应该传 2000000 |**Yes**|
 | **TriggerCount** | int | 告警触发周期（次数） |**Yes**|
-| **AlarmTemplateRuleId** | string | 告警模板策略ID |**Yes**|
+| **AlarmTemplateRuleId** | int | 告警模板策略ID |**Yes**|
 | **ResourceType** | string | 资源类型 |No|
 
 ## 示例
