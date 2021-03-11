@@ -4,6 +4,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[AddSnatRule](api/vpc2.0-api/add_snat_rule)|添加出口规则（SNAT规则）|
 |[AddVPCNetwork](api/vpc2.0-api/add_vpc_network)|添加VPC网段|
 |[AddWhiteListResource](api/vpc2.0-api/add_white_list_resource)|添加NAT网关白名单|
 |[AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)|分配ip|
@@ -26,6 +27,7 @@
 |[DeleteNetworkAclEntry](api/vpc2.0-api/delete_network_acl_entry)|删除ACL的规则|
 |[DeleteRouteTable](api/vpc2.0-api/delete_route_table)|删除自定义路由表|
 |[DeleteSecondaryIp](api/vpc2.0-api/delete_secondary_ip)|删除Ip|
+|[DeleteSnatRule](api/vpc2.0-api/delete_snat_rule)|删除出口规则（SNAT规则）|
 |[DeleteSubnet](api/vpc2.0-api/delete_subnet)|删除子网|
 |[DeleteVPC](api/vpc2.0-api/delete_vpc)|删除VPC|
 |[DeleteVPCIntercom](api/vpc2.0-api/delete_vpc_intercom)|删除VPC互通|
@@ -38,6 +40,7 @@
 |[DescribeNetworkAclEntry](api/vpc2.0-api/describe_network_acl_entry)|获取ACL的规则信息|
 |[DescribeRouteTable](api/vpc2.0-api/describe_route_table)|获取路由表详细信息(包括路由策略)|
 |[DescribeSecondaryIp](api/vpc2.0-api/describe_secondary_ip)|查询SecondaryIp|
+|[DescribeSnatRule](api/vpc2.0-api/describe_snat_rule)|获取Nat网关的出口规则（SNAT规则）|
 |[DescribeSubnet](api/vpc2.0-api/describe_subnet)|获取子网信息|
 |[DescribeSubnetResource](api/vpc2.0-api/describe_subnet_resource)|展示子网资源|
 |[DescribeVIP](api/vpc2.0-api/describe_vip)|获取内网虚拟IP信息|
@@ -57,6 +60,7 @@
 |[UpdateNetworkAcl](api/vpc2.0-api/update_network_acl)|更改ACL|
 |[UpdateNetworkAclEntry](api/vpc2.0-api/update_network_acl_entry)|更新ACL的规则|
 |[UpdateRouteTableAttribute](api/vpc2.0-api/update_route_table_attribute)|更新路由表基本信息|
+|[UpdateSnatRule](api/vpc2.0-api/update_snat_rule)|更新出口规则（SNAT规则）|
 |[UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)|更新子网信息|
 |[UpdateVIPAttribute](api/vpc2.0-api/update_vip_attribute)|更新VIP信息|
 |[UpdateVPCNetwork](api/vpc2.0-api/update_vpc_network)|更新VPC网段|
