@@ -35,7 +35,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **NATGWId** | string | NAT网关的ID， |**Yes**|
 | **SourceIp** | string | 需要出外网的私网IP地址，例如10.9.7.xx |**Yes**|
-| **SnatIp** | string | EIP的ip地址,例如106.75.xx.xx |No|
+| **SnatIp** | string | EIP的ip地址,例如106.75.xx.xx |**Yes**|
 | **Name** | string | snat名称，即出口规则名称 |No|
 
 ### 响应字段
