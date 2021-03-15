@@ -7,6 +7,7 @@
     - [删除Pod - DeleteCubePod](api/cube-api/delete_cube_pod)
     - [获取Cube的额外信息 - GetCubeExtendInfo](api/cube-api/get_cube_extend_info)
     - [获取Pod的详细信息 - GetCubePod](api/cube-api/get_cube_pod)
+    - [获取cube的价格 - GetCubePrice](api/cube-api/get_cube_price)
     - [获取Pods列表 - ListCubePod](api/cube-api/list_cube_pod)
     - [修改Cube额外信息 - ModifyCubeExtendInfo](api/cube-api/modify_cube_extend_info)
     - [修改业务组 - ModifyCubeTag](api/cube-api/modify_cube_tag)
