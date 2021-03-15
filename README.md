@@ -55,6 +55,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |文件存储 UFS|[文档](/api/ufs-api/)|
 |归档存储 UArchive|[文档](/api/uarchive-api/)|
 |云硬盘 UDisk|[文档](/api/udisk-api/)|
+|快照服务 USnap|[文档](/api/usnap-api/)|
 
 ### 云分发
 | 产品 | 相关链接 |

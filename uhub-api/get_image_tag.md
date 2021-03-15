@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **RepoName** | string | 镜像仓库名称 |**Yes**|
 | **ImageName** | string | 镜像名称 |**Yes**|
 | **Offset** | int | 偏移量，默认0 |No|
@@ -57,6 +57,7 @@
 |:---|:---|:---|:---|
 | **UpdateTime** | string | 镜像更新时间 |**Yes**|
 | **TagName** | string | Tag名称 |**Yes**|
+| **Digest** | string | 镜像digest值 |No|
 
 ## 示例
 
@@ -64,13 +65,12 @@
     
 ```
 https://api.ucloud.cn/?Action=GetImageTag
-&ProjectId=PYFWFOHm
-&RepoName=ZPGYodrQ
-&ImageName=EpDfWhyI
-&Offset=4
-&Limit=6
-&ProjectId=EiCgAvZy
-&TagName=mBJNxhdo
+&ProjectId=BvXJygZe
+&RepoName=HOJJPcie
+&ImageName=PWKlOfuO
+&Offset=9
+&Limit=9
+&TagName=uuEBQFTj
 ```
 
 ### 响应示例
@@ -81,15 +81,12 @@ https://api.ucloud.cn/?Action=GetImageTag
   "RetCode": 0,
   "TagSet": [
     {
-      "TagName": "WAIUkrwN",
-      "UpdateTime": "JuCcdSiy"
-    },
-    {
-      "TagName": "cMPKnfJc",
-      "UpdateTime": "uCNRUKaI"
+      "Digest": "VzEacruq",
+      "TagName": "OLlvXCrO",
+      "UpdateTime": "CTydYXMK"
     }
   ],
-  "TotalCount": 3
+  "TotalCount": 5
 }
 ```
 

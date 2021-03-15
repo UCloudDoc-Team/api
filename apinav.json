@@ -103,6 +103,10 @@
       {
         "links": "/api/udisk-api/README",
         "name": "云硬盘 UDisk"
+      },
+      {
+        "links": "/api/usnap-api/README",
+        "name": "快照服务 USnap"
       }
     ]
   },
