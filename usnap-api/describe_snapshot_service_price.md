@@ -29,9 +29,9 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Size** | string | 磁盘大小 |**Yes**|
+| **Size** | int | 磁盘大小 |**Yes**|
 | **ChargeType** | string | Year , Month, Dynamic 默认: Month |No|
-| **Quantity** | string | 购买服务的时长，默认值为1 |No|
+| **Quantity** | int | 购买服务的时长，默认值为1 |No|
 
 ### 响应字段
 
