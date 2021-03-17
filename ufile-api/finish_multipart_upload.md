@@ -24,6 +24,9 @@ Request Headers
 |Authorization |String |上传请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |Yes     |
 |Content-Length|Integer|请求body部分的长度|Yes     |
 |Content-Type  |String |请求body部分的类型|No      |
+| X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
+| X-Ufile-Metadata-Directive   | String   | UNCHANGED（默认值）:保持初始化时设置的用户自定义元数据不变。<br>REPLACE：忽略初始化分片时设置的用户自定义元数据，直接采用Finish请求中指定的元数据。   | No        |
+
 
 Request Elements
 
