@@ -24,6 +24,7 @@ Request Headers
 | Content-Length  | Integer  | 请求body的长度                                     | Yes       |
 | Content-MD5     | String   | 文件内容的MD5摘要，为了保证数据的完整性，建议要配置Content-MD5并检查一致性  | No        |
 | X-Ufile-Storage-Class   | String   | 文件存储类型，分别是标准、低频、归档，对应有效值：STANDARD, IA, ARCHIVE                            | No        |
+| X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
 
 Request Parameters
 
