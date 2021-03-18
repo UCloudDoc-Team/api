@@ -40,6 +40,7 @@ Response Headers
 |Content-Range |String |请求下载文件的范围       |
 |ETag          |String |请求下载文件在US3的哈希值|
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
+|X-Ufile-Meta- *   |String |US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。|
 
 Response Elements
 
