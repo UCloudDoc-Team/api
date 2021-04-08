@@ -32,8 +32,10 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目id |**Yes**|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **NATGWIds.N** | string | NAT网关的Id |**Yes**|
+| **Offset** | int | 数据偏移量, 默认为0 |No|
+| **Limit** | int | 数据分页值, 默认为20 |No|
 
 ### 响应字段
 
@@ -79,6 +81,8 @@ https://api.ucloud.cn/?Action=DescribeWhiteListResource
 &Region=cn-bj2
 &NATGWIds.0=NbbRAeIJ
 &ProjectId=KwzficzX
+&Offset=5
+&Limit=5
 ```
 
 ### 响应示例
