@@ -32,6 +32,7 @@
     - [获取虚拟机价格 - GetUEcVHostPrice](api/uec-api/get_u_ec_v_host_price)
     - [导入自定义镜像 - ImportUEcCustomImage](api/uec-api/import_u_ec_custom_image)
     - [登录容器 - LoginUEcDocker](api/uec-api/login_u_ec_docker)
+    - [修改节点带宽限制 - ModifyUEcBandwidth](api/uec-api/modify_u_ec_bandwidth)
     - [修改容器组名称 - ModifyUEcHolderName](api/uec-api/modify_u_ec_holder_name)
     - [修改镜像名称 - ModifyUEcImageName](api/uec-api/modify_u_ec_image_name)
     - [虚拟机断电 - PoweroffUEcVHost](api/uec-api/poweroff_u_ec_v_host)
