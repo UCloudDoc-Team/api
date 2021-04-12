@@ -78,12 +78,12 @@ spec:
         - "foo.remote"
         - "bar.remote"
     hostname: "aaa-bbb-ccc" # Cube 主机名称
-    imagePullSecrets: # 镜像参数
-      - registryServer: "uhub.service.ucloud.cn" # 镜像仓库域名
-        username: "username"  # 镜像仓库用户名 
-        password: "password"  # 镜像仓库密码
-        registryaddr: "10.x.x.x"  # 镜像仓库内网地址，适用于自建镜像仓库
-        vpcId: "uvnet-xxxxxxxx"  # 镜像仓库所在 VPC ID，适用于自建镜像仓库
+    imagePullSecrets: # 镜像参数，非必填，仓库设置拉取密码时必须填写
+    - registryServer: "uhub.service.ucloud.cn" # 镜像仓库域名
+      username: "username"  # 镜像仓库用户名 
+      password: "password"  # 镜像仓库密码
+      registryaddr: "10.x.x.x"  # 镜像仓库内网地址，适用于自建镜像仓库
+      vpcId: "uvnet-xxxxxxxx"  # 镜像仓库所在 VPC ID，适用于自建镜像仓库
     restartPolicy: Never # 容器重启策略，支持 Always, OnFailure, 及 Never
     volumes: # 卷设置
       - name: configmap-volume
