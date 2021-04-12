@@ -13,5 +13,5 @@
     - [修改业务组 - ModifyCubeTag](api/cube-api/modify_cube_tag)
     - [更新Pod - RenewCubePod](api/cube-api/renew_cube_pod)
 - **附录**
-  * [pod yaml 格式](api/cube-api/pod_yaml)
-  * [deployment yaml 格式](api/cube-api/deploy_yaml)
+  * [pod yaml 格式](api/cube-api/pod_yaml.md)
+  * [deployment yaml 格式](api/cube-api/deploy_yaml.md)
