@@ -17,7 +17,7 @@ spec:
       value: '111'
     - name: bbb
       value: '222'
-    image: 'uhub.service.ucloud.cn/xxx/xxx:xxx'  # 必填，镜像，只支持UHub
+    image: 'uhub.service.ucloud.cn/xxx/xxx:xxx'  # 必填，镜像地址，已支持自建镜像仓库
     name: cube01  # 必填，名字，规则（^[a-zA-Z0-9-_]{1,32}）
     resources:
       limits:
@@ -50,7 +50,7 @@ spec:
       value: '111'
     - name: bbb
       value: '222'
-    image: 'uhub.service.ucloud.cn/xxx/xxx:xxx' # 必填，镜像，只支持UHub
+    image: 'uhub.service.ucloud.cn/xxx/xxx:xxx' # 必填，镜像地址，已支持自建镜像仓库
     name: initcube01  # 必填，名字，规则（^[a-zA-Z0-9-_]{1,32}）
     volumeMounts:  # 非必填，使用存储时必填
     - mountPath: /data  # mount路径
@@ -79,9 +79,11 @@ spec:
         c2VydmVyIHsKICAgIGxpc3RlbiAgICAgICA4MDsKICAgIHNlcnZlcl9uYW1lICBsb2NhbGhvc3Q7CgogICAgbG9jYXRpb24gLyB7CiAgICAgICAgcm9vdCAgIC91c3Ivc2hhcmUvbmdpbngvaHRtbC93b3JkcHJlc3M7CiAgICAgICAgaW5kZXggIGluZGV4Lmh0bWwgaW5kZXgucGhwOwogICAgfQogICAgZXJyb3JfcGFnZSAgIDUwMCA1MDIgNTAzIDUwNCAgLzUweC5odG1sOwogICAgbG9jYXRpb24gPSAvNTB4Lmh0bWwgewogICAgICAgIHJvb3QgICAvdXNyL3NoYXJlL25naW54L2h0bWw7CiAgICB9CiAgICBsb2NhdGlvbiB+IFwucGhwJCB7CiAgICAgICAgZmFzdGNnaV9wYXNzIGxvY2FsaG9zdDo5MDAwOwogICAgICAgIGZhc3RjZ2lfaW5kZXggaW5kZXgucGhwOwogICAgICAgIGZhc3RjZ2lfYnVmZmVycyAxNiAxNms7CiAgICAgICAgZmFzdGNnaV9idWZmZXJfc2l6ZSAzMms7CiAgICAgICAgZmFzdGNnaV9wYXJhbSBTQ1JJUFRfRklMRU5BTUUgL3Zhci93d3cvaHRtbC93b3JkcHJlc3MvJGZhc3RjZ2lfc2NyaXB0X25hbWU7CiAgICAgICAgI2ZpeGVzIHRpbWVvdXRzCiAgICAgICAgZmFzdGNnaV9yZWFkX3RpbWVvdXQgNjAwOwogICAgICAgIGluY2x1ZGUgZmFzdGNnaV9wYXJhbXM7CiAgICB9Cn0=
   - emptyDir: {}
     name: emptydir  # 必填，vloumes名字
-  imagePullSecrets: #非必填  仓库设置拉取密码时必须填写
-  - password: password
-    registryserver: uhub.service.ucloud.cn
-    username: user@ucloud.cn
+  imagePullSecrets: #镜像参数，非必填，仓库设置拉取密码时必须填写
+  - registryServer: "uhub.service.ucloud.cn" # 镜像仓库域名
+    username: "username"  # 镜像仓库用户名 
+    password: "password"  # 镜像仓库密码
+    registryaddr: "10.x.x.x"  # 镜像仓库内网地址，适用于自建镜像仓库
+    vpcId: "uvnet-xxxxxxxx"  # 镜像仓库所在 VPC ID，适用于自建镜像仓库
   restartPolicy: Always  #非必填
 ```
