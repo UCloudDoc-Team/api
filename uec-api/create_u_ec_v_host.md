@@ -43,8 +43,8 @@
 | **SubnetId** | string | 子网ID |No|
 | **ProductType** | string | 产品类型：normal（标准型），hf（高频型） |No|
 | **FirewallId** | string | 外网防护墙规则组，默认 |No|
-| **IsNeedOuterIp** | string | 是否关联外网IP，（yes-是，no-否，默认yes） |No|
 | **Isp.N** | int | 运营商（1-电信，2-联通，4移动） |No|
+| **IsNeedOuterIp** | string | （已废弃）是否需要外网ip（yes-是，no-否） |No|
 
 ### 响应字段
 
@@ -70,25 +70,25 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUEcVHost
-&ProjectId=YxGkkTQL
-&IdcId=jIDjwIdN
-&CpuCore=9
-&MemSize=6
-&DiskSize=1
-&ImageId=wPqVbfPI
-&NetLimit=9
-&NodeName=RjAajccJ
-&SysDiskSize=8
-&AccountName=YHfiLzcA
-&PassWord=mosikhrs
-&NodeCount=2
-&ChargeType=4
-&ChargeQuantity=4
-&SubnetId=iYsMFYAL
-&ProductType=VbeHyCVn
-&FirewallId=UUvBPRWu
-&IsNeedOuterIp=QCwrnAIL
-&Isp.n=3
+&ProjectId=PpssYeHC
+&IdcId=rrnGZSat
+&CpuCore=5
+&MemSize=5
+&DiskSize=5
+&ImageId=kGgPYRdY
+&NetLimit=1
+&NodeName=TSgJsitE
+&SysDiskSize=5
+&AccountName=hOOAgbhI
+&PassWord=lNqmmPoI
+&NodeCount=8
+&ChargeType=2
+&ChargeQuantity=1
+&SubnetId=TntGPRCr
+&ProductType=ujCMuCtJ
+&FirewallId=HGhqKtTx
+&Isp.n=9
+&IsNeedOuterIp=HTpGacyz
 ```
 
 ### 响应示例
@@ -98,7 +98,7 @@ https://api.ucloud.cn/?Action=CreateUEcVHost
   "Action": "CreateUEcVHostResponse",
   "NodeList": [
     {
-      "NodeId": "dgMyDmAG"
+      "NodeId": "uhgckBbb"
     }
   ],
   "RetCode": 0
