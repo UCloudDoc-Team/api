@@ -3,6 +3,7 @@
   "index": [
     {
       "section": "MySQL",
+      "key": "mysql",
       "navigated": true,
       "apis": [
         {
@@ -72,6 +73,7 @@
     },
     {
       "section": "MongoDB",
+      "key": "nosql",
       "navigated": true,
       "apis": [
         {"api": "CreateUDBRouteInstance"},

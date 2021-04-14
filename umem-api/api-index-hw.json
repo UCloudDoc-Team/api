@@ -3,6 +3,7 @@
   "index": [
     {
       "section": "Memcached",
+      "key": "memcache",
       "navigated": true,
       "apis": [
         {"api": "RestartUMemcacheGroup"},
@@ -16,6 +17,7 @@
     },
     {
       "section": "Redis",
+      "key": "redis",
       "navigated": true,
       "apis": [
         {"api": "CreateURedisGroup"},
