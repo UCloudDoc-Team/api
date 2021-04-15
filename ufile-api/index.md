@@ -14,5 +14,6 @@
 |[GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)|获取配额信息|
 |[GetUFileQuotaPrice](api/ufile-api/get_ufile_quota_price)|查询配额支付价格|
 |[GetUFileReport](api/ufile-api/get_ufile_report)|查看配额使用报表|
+|[SetUFileReferer](api/ufile-api/set_ufile_referer)|设置对象存储防盗链|
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
 |[UpdateUFileToken](api/ufile-api/update_ufile_token)|更新令牌|
