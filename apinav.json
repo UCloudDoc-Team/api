@@ -57,6 +57,10 @@
       {
         "links": "/api/pathx-api/README",
         "name": "全球动态加速 PathX"
+      },
+      {
+        "links": "/api/ugn-api/README",
+        "name": "云联网 UGN"
       }
     ]
   },
@@ -154,11 +158,15 @@
     ]
   },
   {
-    "listname": "企业应用",
+    "listname": "云通信",
     "listvalue": [
       {
         "links": "/api/usms-api/README",
         "name": "短信服务 USMS"
+      },
+      {
+        "links": "/api/isms-api/README",
+        "name": "智能短信 ISMS"
       }
     ]
   },
