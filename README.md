@@ -40,6 +40,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |VPN网关 IPSec VPN|[文档](/api/ipsecvpn-api/)|
 |高速通道 UDPN|[文档](/api/udpn-api/)|
 |全球动态加速 PathX|[文档](/api/pathx-api/)|
+|云联网 UGN|[文档](/api/ugn-api/)|
 
 ### 数据库
 | 产品 | 相关链接 |
@@ -76,10 +77,11 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |云直播 ULive|[文档](/api/ulive-api/)|
 |实时音视频 URTC|[文档](/api/urtc-api/)|
 
-### 企业应用
+### 云通信
 | 产品 | 相关链接 |
 |:---|:---|
 |短信服务 USMS|[文档](/api/usms-api/)|
+|智能短信 ISMS|[文档](/api/isms-api/)|
 
 ### 安全防护
 | 产品 | 相关链接 |
