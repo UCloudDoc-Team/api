@@ -13,6 +13,7 @@
     - [获取配额信息 - GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)
     - [查询配额支付价格 - GetUFileQuotaPrice](api/ufile-api/get_ufile_quota_price)
     - [查看配额使用报表 - GetUFileReport](api/ufile-api/get_ufile_report)
+    - [设置对象存储防盗链 - SetUFileReferer](api/ufile-api/set_ufile_referer)
     - [更改Bucket属性 - UpdateBucket](api/ufile-api/update_bucket)
     - [更新令牌 - UpdateUFileToken](api/ufile-api/update_ufile_token)
 - **数据类 API**
