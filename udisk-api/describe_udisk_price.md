@@ -31,15 +31,15 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；普通系统盘：范围[1\~8000]；SSD系统盘：范围[1\~4000]；RSSD数据盘：范围[1\~32000]。 |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；普通系统盘：范围[1\~8000]；SSD系统盘：范围[1\~4000]；RSSD数据盘：范围[1\~32000]；RSSD系统盘：范围[1\~4000]；高效数据盘：范围[1\~32000]；高效系统盘：范围[1\~500]。 |**Yes**|
 | **ChargeType** | string | Year , Month, Dynamic，Postpay，Trial 默认: Month |No|
 | **Quantity** | int | 购买UDisk的时长，默认值为1 |No|
-| **UDataArkMode** | string | 【即将废弃，开启快照服务时，免费开启数据方舟】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
-| **SnapshotService** | string | 	<br />是否开启快照服务。Yes：开启，No：不开启，默认值：No |No|
-| **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），RSSDDataDisk（RSSD数据盘），默认值（DataDisk） |No|
+| **UDataArkMode** | string | 【开启数据方舟入口已关闭】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
+| **SnapshotService** | string | 是否开启快照服务（开启快照服务，可免费开启数据方舟）。Yes：开启，No：不开启，默认值：No |No|
+| **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），RSSDDataDisk(RSSD数据盘)，EfficiencyDataDisk（高效数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），RSSDSystemDisk(RSSD系统盘)，EfficiencySystemDisk（高效系统盘），默认值（DataDisk） |No|
 | **IsTotalPrice** | string | 是否将快照服务(数据方舟)，云硬盘放入一张订单, 是："Yes",否："No"，默认是"No" |No|
 | **MachineType** | string | 云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 
