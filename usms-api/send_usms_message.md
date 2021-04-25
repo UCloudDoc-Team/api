@@ -31,12 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **PhoneNumbers.N** | string | 电话号码数组，电话号码格式为(60)1xxxxxxxx，()中为国际长途区号(如中国为86或0086，两种格式都支持)，后面为电话号码.若不传入国际区号，如1851623xxxx，则默认为国内手机号 |**Yes**|
 | **SigContent** | string | 短信签名内容，请到[USMS控制台](https://console.ucloud.cn/usms)的签名管理页面查看；使用的短信签名必须是已申请并且通过审核； |**Yes**|
 | **TemplateId** | string | 模板ID（也即短信模板申请时的工单ID），请到[USMS控制台](https://console.ucloud.cn/usms)的模板管理页面查看；使用的短信模板必须是已申请并通过审核； |**Yes**|
 | **TemplateParams.N** | string | 模板可变参数，以数组的方式填写，举例，TempalteParams.0，TempalteParams.1，... 若模板中无可变参数，则该项可不填写；若模板中有可变参数，则该项为必填项，参数个数需与变量个数保持一致，否则无法发送； |No|
 | **ExtendCode** | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持 |No|
+| **UserId** | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位） |No|
 
 ### 响应字段
 
@@ -46,6 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **SessionNo** | string | 本次提交发送的短信的唯一ID，可根据该值查询本次发送的短信列表 |No|
+| **UserId** | string | 本次提交的自定义业务标识ID，仅当发送时传入有效的UserId，才返回该字段。 |No|
 
 
 
@@ -56,12 +58,16 @@
     
 ```
 https://api.ucloud.cn/?Action=SendUSMSMessage
-&ProjectId=org-XXXXqi
-&PhoneNumbers.0=185XXXX9057
+&ProjectId=org-xxxxxx
+&PhoneNumbers.0=185xxxxxxxx
+&PhoneNumbers.1=131xxxxxxxx
 &TemplateParams.0=123456
+&TemplateParams.1=10
 &SigContent=UCloud
-&TemplateId=UTA19XXXX2D5BEC
+&TemplateId=UTA20210101xxxx
 &PublicKey=vsRhB0Qzo9elXXXXXkw8o/vmss8Tb0vxi74A=
+&Signature=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+&UserId=hGBCrtQw
 ```
 
 ### 响应示例
@@ -71,7 +77,8 @@ https://api.ucloud.cn/?Action=SendUSMSMessage
   "Action": "SendUSMSMessageResponse",
   "Message": "提交发送成功",
   "RetCode": 0,
-  "SessionNo": "5a3XXXXXXb-7XXXX2-4XXX"
+  "SessionNo": "5a3XXXXXXb-7XXXX2-4XXX",
+  "UserId": "najiyZOy"
 }
 ```
 
