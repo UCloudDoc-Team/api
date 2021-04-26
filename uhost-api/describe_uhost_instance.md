@@ -73,7 +73,7 @@
 | **Tag** | string | 业务组名称 |No|
 | **Remark** | string | 备注 |No|
 | **Name** | string | UHost实例名称 |No|
-| **State** | string | 实例状态，枚举值：<br /><br /> >初始化: Initializing; <br /><br /> >启动中: Starting; <br /><br />> 运行中: Running; <br /><br />> 关机中: Stopping; <br /><br /> >关机: Stopped <br /><br /> >安装失败: Install Fail; <br /><br /> >重启中: Rebooting |No|
+| **State** | string | 实例状态，枚举值：<br /><br /> >初始化: Initializing; <br /><br /> >启动中: Starting; <br /><br />> 运行中: Running; <br /><br />> 关机中: Stopping; <br /><br /> >关机: Stopped <br /><br /> >安装失败: Install Fail; <br /><br /> >重启中: Rebooting; <br /><br /> > 未知(空字符串，获取状态超时或出错)："" |No|
 | **CreateTime** | int | 创建时间，格式为Unix时间戳 |No|
 | **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费（需开启权限）；Preemptive 为抢占式实例； |No|
 | **ExpireTime** | int | 到期时间，格式为Unix时间戳 |No|
@@ -98,6 +98,8 @@
 | **CloudInitFeature** | boolean | true，支持cloutinit方式初始化；false,不支持 |No|
 | **RdmaClusterId** | string | RDMA集群id，仅快杰云主机返回该值；其他类型云主机返回""。当云主机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台云主机。 |No|
 | **RestrictMode** | string | 仅抢占式实例返回，LowSpeed为低速模式，PowerOff为关机模式 |No|
+| **HpcFeature** | boolean | true: 开启 hpc 系列功能；false: 未开启 |No|
+| **KeyPair** | [*UHostKeyPair*](#UHostKeyPair) | 密钥信息见 UHostKeyPair |No|
 
 #### UHostDiskSet
 
@@ -129,6 +131,13 @@
 | **SubnetId** | string | IP地址对应的子网 ID。（北京一不支持，字段返回为空） |No|
 | **NetworkInterfaceId** | string | 弹性网卡为默认网卡时，返回对应的 ID 值 |No|
 
+#### UHostKeyPair
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **KeyPairId** | string | 密钥对ID |No|
+| **KeyPairState** | string | 主机密钥对状态，Normal 正常，Deleted 删除 |No|
+
 ## 示例
 
 ### 请求示例
@@ -137,6 +146,7 @@
 https://api.ucloud.cn/?Action=DescribeUHostInstance
 &Region=cn-bj2
 &Zone=cn-bj2-02
+&EpcInstance=false
 ```
 
 ### 响应示例
