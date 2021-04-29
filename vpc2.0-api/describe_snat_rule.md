@@ -47,7 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*NATGWSnatRule*](#NATGWSnatRule)] | 某个NAT网关的所有Snat规则 |**Yes**|
-| **TotalCount** | string | 规则数量 |**Yes**|
+| **TotalCount** | int | 规则数量 |**Yes**|
 
 #### 数据模型
 
