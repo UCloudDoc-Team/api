@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **UDPNId** | string | 申请到的 UDPN 资源 ID。若为空，则查询该用户在机房所有的专线信息。非默认项目资源，需填写ProjectId |No|
 | **Offset** | int | 列表起始位置偏移量，默认为 0 |No|
 | **Limit** | int | 返回数据长度，默认为 20 |No|
@@ -58,7 +58,7 @@
 | **Peer1** | string | 可用区域 1 |**Yes**|
 | **Peer2** | string | 可用区域 2 |**Yes**|
 | **ChargeType** | string | 计费类型 |**Yes**|
-| **Bandwidth** | string | 带宽 |**Yes**|
+| **Bandwidth** | int | 带宽 |**Yes**|
 | **CreateTime** | int | unix 时间戳 创建时间 |**Yes**|
 | **ExpireTime** | int | unix 时间戳 到期时间 |**Yes**|
 
@@ -68,8 +68,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUDPN
-&UDPNId=udpn-uy3qvu
-&ProjectId＝test
+&UDPNId=udpn-XXX
+&ProjectId＝org-XXXX
 ```
 
 ### 响应示例
@@ -81,15 +81,15 @@ https://api.ucloud.cn/?Action=DescribeUDPN
     {
       "Bandwidth": 2,
       "ChargeType": "Month",
-      "CreateTime": 1508413095,
-      "ExpireTime": 1509465600,
-      "Peer1": "cn-bj2",
-      "Peer2": "cn-gd",
-      "UDPNId": "udpn-uy3qvu"
+      "CreateTime": 1529907230,
+      "ExpireTime": 1532499230,
+      "Peer1": "cn-gd",
+      "Peer2": "cn-sh2",
+      "UDPNId": "udpn-XXXXX"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 5
+  "TotalCount": 1
 }
 ```
 
