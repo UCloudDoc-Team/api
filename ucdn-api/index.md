@@ -10,9 +10,10 @@
 |[GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)|获取域名命中率|
 |[GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)|【待下线】获取域名状态码监控|
 |[GetNewUcdnDomainHttpCodeV2](api/ucdn-api/get_new_ucdn_domain_http_code_v2)|【待下线】获取域名详细状态码监控|
-|[GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain_95bandwidth_v2)|获取域名九五峰值带宽数据【新】|
+|[GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain95_bandwidth_v2)|获取域名九五峰值带宽数据【新】|
 |[GetUcdnDomainBandwidthV2](api/ucdn-api/get_ucdn_domain_bandwidth_v2)|获取域名带宽数据【新】|
 |[GetUcdnDomainConfig](api/ucdn-api/get_ucdn_domain_config)|批量获取加速域名配置|
+|[GetUcdnDomainHitRate](api/ucdn-api/get_ucdn_domain_hit_rate)|获取域名命中率(新）|
 |[GetUcdnDomainHttpCodeV2](api/ucdn-api/get_ucdn_domain_http_code_v2)|获取域名状态码信息【新】|
 |[GetUcdnDomainInfoList](api/ucdn-api/get_ucdn_domain_info_list)|获取域名基本信息|
 |[GetUcdnDomainLog](api/ucdn-api/get_ucdn_domain_log)|获取加速域名原始日志|
