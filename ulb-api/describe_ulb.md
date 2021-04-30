@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 数据分页值，默认为20 |No|
 | **ULBId** | string | 负载均衡实例的Id。 若指定则返回指定的负载均衡实例的信息； 若不指定则返回当前数据中心中所有的负载均衡实例的信息 |No|
@@ -76,6 +76,7 @@
 | **FirewallSet** | array[[*FirewallSet*](#FirewallSet)] | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
+| **IsWAFOn** | string | 是否开启WAF。枚举类型： NotAvailable：无法开启WAF Available：可以开启WAF，但是未开启 On：已开启WAF |No|
 
 #### ULBIPSet
 
@@ -91,9 +92,11 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， 请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping和Port |**Yes**|
-| **Domain** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名 |**Yes**|
-| **Path** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径 |**Yes**|
+| **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， Customize -> UDP检查<br /><br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping、Port和Customize |**Yes**|
+| **Domain** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名 |No|
+| **Path** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径 |No|
+| **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
+| **ResponseMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查请求应收到的响应报文 |No|
 | **VServerId** | string | VServer实例的Id |No|
 | **VServerName** | string | VServer实例的名字 |No|
 | **Protocol** | string | VServer实例的协议。 枚举值为：HTTP，TCP，UDP，HTTPS。 |No|
