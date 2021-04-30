@@ -26,8 +26,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClusterId** | string | UK8S集群ID |**Yes**|
 
 ### 响应字段
@@ -65,6 +65,7 @@
 | **AsgId** | string | 节点所属伸缩组ID，非伸缩组创建出来的节点，伸缩组ID为Default。 |**Yes**|
 | **Unschedulable** | boolean | 是否允许Pod调度到该节点，枚举值为true或false。 |**Yes**|
 | **KubeProxy** | [*KubeProxy*](#KubeProxy) | kubeproxy信息，详细信息见KubeProxy。 |**Yes**|
+| **NodeLogInfo** | string | 加节点时判断是否没有资源，如果返回NORESOURCE则代表没有资源了 |**Yes**|
 | **GPU** | int | 节点的GPU颗数。 |No|
 
 #### UHostIPSet
