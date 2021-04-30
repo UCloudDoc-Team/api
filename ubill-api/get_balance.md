@@ -47,7 +47,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AmountFreeze** | float | 冻结账户金额 |No|
+| **AmountFreeze** | string | 冻结账户金额 |No|
 | **AmountCredit** | string | 信用账户余额 |No|
 | **AmountFree** | string | 赠送账户余额 |No|
 | **Amount** | string | 账户余额 |No|
