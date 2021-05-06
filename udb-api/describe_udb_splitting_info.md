@@ -42,7 +42,6 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Region** | string | 地域 |No|
 | **Zone** | string | 可用区 |No|
 | **MasterDBId** | string | DB实例ID |No|
 | **RWIP** | string | 读写分离IP |No|
@@ -52,8 +51,6 @@
 | **DBTypeId** | string | 数据库版本 |No|
 | **RWState** | string | 读写分离状态 |No|
 | **DataSet** | array[[*UDBRWSplittingSet*](#UDBRWSplittingSet)] | 读写分离从库信息 |No|
-| **MainZone** | string | 可用区。跨机房读写分离的主可用区 |No|
-| **BackupZone** | string | 可用区。跨机房读写分离的备可用区 |No|
 
 #### 数据模型
 
