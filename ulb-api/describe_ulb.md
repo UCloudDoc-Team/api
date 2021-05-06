@@ -76,7 +76,6 @@
 | **FirewallSet** | array[[*FirewallSet*](#FirewallSet)] | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
-| **IsWAFOn** | string | 是否开启WAF。枚举类型： NotAvailable：无法开启WAF Available：可以开启WAF，但是未开启 On：已开启WAF |No|
 
 #### ULBIPSet
 
