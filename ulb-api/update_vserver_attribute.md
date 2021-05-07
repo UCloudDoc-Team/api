@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **ULBId** | string | 负载均衡实例ID |**Yes**|
 | **VServerId** | string | VServer实例ID |**Yes**|
 | **VServerName** | string | VServer实例名称，若无此字段则不做修改 |No|
@@ -40,9 +40,11 @@
 | **PersistenceType** | string | VServer会话保持模式，若无此字段则不做修改。枚举值：None：关闭；ServerInsert：自动生成KEY；UserDefined：用户自定义KEY。 |No|
 | **PersistenceInfo** | string | 根据PersistenceType确定: None或ServerInsert, 此字段无意义; UserDefined, 则此字段传入用户自定义会话保持String. 若无此字段则不做修改 |No|
 | **ClientTimeout** | int | 请求代理的VServer下表示空闲连接的回收时间，单位：秒，取值范围：时(0，86400]，默认值为60；报文转发的VServer下表示回话保持的时间，单位：秒，取值范围：[60，900]，0 表示禁用连接保持 |No|
-| **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测，<br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path;<br />报文转发型TCP协议仅支持Port，UDP协议支持Ping和Port，默认值为Ping |No|
+| **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测，Customize -> UDP检查<br /><br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path;<br />报文转发型TCP协议仅支持Port，UDP协议支持Ping、Port和Customize，默认值为Ping |No|
 | **Domain** | string | MonitorType 为 Path 时指定健康检查发送请求时HTTP HEADER 里的域名 |No|
 | **Path** | string | MonitorType 为 Path 时指定健康检查发送请求时的路径，默认为 / |No|
+| **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
+| **ResponseMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查请求应收到的响应报文 |No|
 
 ### 响应字段
 
@@ -73,6 +75,8 @@ https://api.ucloud.cn/?Action=UpdateVServerAttribute
 &ClientTimeout=60
 &MonitorType=Port
 &EnableHTTP2=9
+&RequestMsg=QHpxxRrA
+&ResponseMsg=rVBUBWIh
 ```
 
 ### 响应示例
