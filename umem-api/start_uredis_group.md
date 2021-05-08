@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **GroupId** | string | 资源ID |**Yes**|
 
 ### 响应字段
@@ -53,6 +53,7 @@
 https://api.ucloud.cn/?Action=StartURedisGroup
 &Region=gZTrpUMC
 &GroupId=mlFnuYZg
+&Zone=rBqMxAHS
 ```
 
 ### 响应示例

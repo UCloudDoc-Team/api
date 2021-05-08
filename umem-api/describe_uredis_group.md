@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组的ID,如果指定则获取描述，否则为列表操 作,需指定Offset/Limit |No|
 | **Offset** | int | 分页显示的起始偏移, 默认值为0 |No|
 | **Limit** | int | 分页显示的条目数, 默认值为20 |No|
@@ -56,13 +56,13 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
-| **VPCId** | string | VPCId |**Yes**|
 | **RewriteTime** | int | 返回运维时间 0 //0点 1 //1点 以此类推 |**Yes**|
 | **Role** | string | 实例类型 |**Yes**|
+| **VPCId** | string | vpcid |No|
+| **SubnetId** | string | subnetid |No|
 | **GroupId** | string | 组ID |No|
 | **Name** | string | 组名称 |No|
 | **Type** | string | 空间类型:single(无热备),double(热备) |No|
-| **SubnetId** | string | 子网 |No|
 | **Protocol** | string | 协议 |No|
 | **MemorySize** | int | 容量单位GB |No|
 | **GroupName** | string | 组名称 |No|

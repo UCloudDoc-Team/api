@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Size** | int | 购买UMem大小,单位:GB |**Yes**|
 | **Type** | string | 空间类型:single(无热备),double(热备)(默认: double) |**Yes**|
 | **SpaceId** | string | 需要升级的空间的SpaceId |**Yes**|
@@ -45,19 +45,11 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Price** | int | 价格(兼容老版本) |No|
-| **DataSet** | [*PriceDataSet*](#PriceDataSet) | 价格 |No|
-
-#### 数据模型
+| **Price** | int | 价格 |No|
+| **OriginalPrice** | int | 原价 |No|
 
 
-#### PriceDataSet
 
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **TotalPrice** | int | 升降级资源的价格 |No|
-| **CustomPrice** | int | 用户折后价 |No|
-| **PurchaseValue** | int | 资源有效期 |No|
 
 ## 示例
 
@@ -77,7 +69,7 @@ https://api.ucloud.cn/?Action=DescribeUMemUpgradePrice
 ```json
 {
   "Action": "DescribeUMemUpgradePriceResponse",
-  "DataSet": {},
+  "OriginalPrice": 4,
   "Price": 4,
   "RetCode": 0
 }
