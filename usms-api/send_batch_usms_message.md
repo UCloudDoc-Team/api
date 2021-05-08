@@ -41,7 +41,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TaskId** | string | 本次提交发送任务的唯一ID，可根据该值查询本次发送的短信列表。注：成功提交短信数大于0时，才返回该字段 |No|
+| **SessionNo** | string | 本次提交发送任务的唯一ID，可根据该值查询本次发送的短信列表。注：成功提交短信数大于0时，才返回该字段 |No|
 | **ReqUuid** | string | 本次请求Uuid |No|
 | **SuccessCount** | int | 成功提交短信（未拆分）条数 |No|
 | **FailContent** | array[[*BatchInfo*](#BatchInfo)] | 未发送成功的详情，返回码非0时该字段有效，可根据该字段数据重发 |No|
@@ -74,10 +74,11 @@
     
 ```
 https://api.ucloud.cn/?Action=SendBatchUSMSMessage
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=jHjdvLeB
-&TaskContent=lGzKlUnG
+&PublicKey=vsRhB0Qzo9elXXXXXkw8o/vmss8Tb0vxi74A=
+&Signature=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+&ProjectId=org1234
+&TaskContent=WwogICAgewogICAgICAgICJUZW1wbGF0ZUlkIjoiVVRBMjAyMTI4MzFDODVDIiwKICAgICAgICAiU2lnQ29udGVudCI6IlVDbG91ZCIsCiAgICAgICAgIlRhcmdldCI6WwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAiVGVtcGxhdGVQYXJhbXMiOlsKICAgICAgICAgICAgICAgICAgICAi6aG257qn6ZK755+z55So5oi35YiY5aSn6ZSkIiwKICAgICAgICAgICAgICAgICAgICAiMjQ2ODAiCiAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAgIlBob25lIjoiMTg1WFhYWDA1MDciLAogICAgICAgICAgICAgICAgIlVzZXJJZCI6InlvdSBtYW4gYyBkZWZpbmUgdGhlIGNvbnRlbnQgYnkgeXJzZWxmIgogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAiVGVtcGxhdGVQYXJhbXMiOlsKICAgICAgICAgICAgICAgICAgICAi5byA5b+D5p6c5oyW5Zyf5py6IiwKICAgICAgICAgICAgICAgICAgICAiMTM1NzkiCiAgICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICAgIlBob25lIjoiMTg1WFhYWDA2MDgiLAogICAgICAgICAgICAgICAgIkV4dGVuZENvZGUiOiIxMjMiLAogICAgICAgICAgICAgICAgIlVzZXJJZCI6ImNhdGNoIHRoZSBiaWcgZmlzaCIKICAgICAgICAgICAgfQogICAgICAgIF0KICAgIH0KXQ==
+
 ```
 
 ### 响应示例
@@ -87,27 +88,27 @@ https://api.ucloud.cn/?Action=SendBatchUSMSMessage
   "Action": "SendBatchUSMSMessageResponse",
   "FailContent": [
     {
-      "FailureDetails": "WGFbPXLk",
-      "SigContent": "LdeMnKTC",
+      "FailureDetails": "phone in the black list",
+      "SigContent": "UCloud",
       "Target": [
         {
-          "ExtendCode": "QNHVflOk",
-          "FailureDetails": "EPXJZLbB",
-          "Phone": "iDupAFLi",
+          "ExtendCode": "123",
+          "Phone": "185XXXX0608",
           "TemplateParams": [
-            "DHDSUFXt"
+            "开心果挖土机",
+            "13579"
           ],
-          "UserId": "AHvVgPpN"
+          "UserId": "catch the big fish"
         }
       ],
-      "TemplateId": "xOYqUJBs"
+      "TemplateId": "UTA20212831C85C"
     }
   ],
-  "Message": "gZKQddsI",
-  "ReqUuid": "wMvBbWEB",
+  "Message": "submit success",
+  "ReqUuid": "abcd-dadd-dafs-dadfa-dafdsa",
   "RetCode": 0,
-  "SuccessCount": 3,
-  "TaskId": "HthkZehB"
+  "SessionNo": "abcd-dadd-dafs-dadfa-dafdsa",
+  "SuccessCount": 2
 }
 ```
 
