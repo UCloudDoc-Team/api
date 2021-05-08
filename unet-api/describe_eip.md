@@ -108,7 +108,7 @@
 ```
 https://api.ucloud.cn/?Action=DescribeEIP
 &Region=cn-bj2
-&EIPIds.0=eip-XXXXX
+&EIPIds.0=eip-XXXX
 &IPs.n=XXHDIxmf
 ```
 
