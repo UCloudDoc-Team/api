@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Size** | int | 创建实例的容量大小,，扩容时的分片目标容量大小 |**Yes**|
 | **Count** | string | 创建实例的数量，[1-10] |**Yes**|
 | **GroupId** | string | 资源ID，扩缩容时的必传参数 |No|
@@ -45,7 +45,6 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Count** | int | 创建实例资源时，表示可创建的数量；扩容资源时，返回1表示可以扩容，0表示可用区资源不足不能扩容 |**Yes**|
-| **NeedMigrate** | string | 返回为True时，表示需要迁移；为Flase时表示无需迁移 |No|
 
 
 
