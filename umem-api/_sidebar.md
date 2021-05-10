@@ -43,8 +43,6 @@
     - [清除主备redis数据 - FlushallURedisGroup](api/umem-api/flushall_uredis_group)
     - [清除udredis实例数据 - RemoveUDRedisData](api/umem-api/remove_ud_redis_data)
     - [重启主备实例 - RestartURedisGroup](api/umem-api/restart_uredis_group)
-    - [ShutdownURedisGroup - ShutdownURedisGroup](api/umem-api/shutdown_uredis_group)
-    - [StartURedisGroup - StartURedisGroup](api/umem-api/start_uredis_group)
     - [更改zhubeiredis的备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)
