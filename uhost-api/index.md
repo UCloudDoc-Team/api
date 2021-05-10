@@ -8,16 +8,20 @@
 |[CreateCustomImage](api/uhost-api/create_custom_image)|创建自制镜像|
 |[CreateIsolationGroup](api/uhost-api/create_isolation_group)|创建硬件隔离组|
 |[CreateUHostInstance](api/uhost-api/create_uhost_instance)|创建云主机|
+|[CreateUHostKeyPair](api/uhost-api/create_uhost_key_pair)|创建主机密钥对|
 |[DeleteIsolationGroup](api/uhost-api/delete_isolation_group)|删除硬件隔离组|
+|[DeleteUHostKeyPairs](api/uhost-api/delete_uhost_key_pairs)|删除主机密钥|
 |[DescribeImage](api/uhost-api/describe_image)|获取镜像列表|
 |[DescribeIsolationGroup](api/uhost-api/describe_isolation_group)|查询硬件隔离组|
 |[DescribeUHostInstance](api/uhost-api/describe_uhost_instance)|获取主机信息|
+|[DescribeUHostKeyPairs](api/uhost-api/describe_uhost_key_pairs)|查询主机密钥信息|
 |[DescribeUHostTags](api/uhost-api/describe_uhost_tags)|获取主机业务组列表|
 |[GetAttachedDiskUpgradePrice](api/uhost-api/get_attached_disk_upgrade_price)|获取挂载磁盘的升级价格|
 |[GetUHostInstancePrice](api/uhost-api/get_uhost_instance_price)|获取主机价格|
 |[GetUHostInstanceVncInfo](api/uhost-api/get_uhost_instance_vnc_info)|获取VNC登录信息|
 |[GetUHostUpgradePrice](api/uhost-api/get_uhost_upgrade_price)|获取主机规格调整差价|
 |[ImportCustomImage](api/uhost-api/import_custom_image)|导入镜像|
+|[ImportUHostKeyPairs](api/uhost-api/import_uhost_key_pairs)|导入密钥对的公钥部分|
 |[LeaveIsolationGroup](api/uhost-api/leave_isolation_group)|移除硬件隔离组中的主机|
 |[ModifyUHostIP](api/uhost-api/modify_uhost_ip)|修改云主机内部 IP 地址|
 |[ModifyUHostInstanceName](api/uhost-api/modify_uhost_instance_name)|修改主机名|
