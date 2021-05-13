@@ -63,6 +63,10 @@
 | **Network** | string | 网络类型 |**Yes**|
 | **FirstEnterTime** | int | 最早一次进入房间时间 |**Yes**|
 | **Available** | boolean | 设备可用性 |**Yes**|
+| **UserIp** | string | 用户Ip地址 |**Yes**|
+| **AccessIp** | string | 用户接入Ip地址 |**Yes**|
+| **RoleType** | string | 用户角色 |**Yes**|
+| **RoomType** | string | 房间类型（RTC：会议，LIVE：直播） |**Yes**|
 
 ## 示例
 
