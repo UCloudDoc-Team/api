@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SessionNoSet.N** | string | 发送短信时返回的SessionNo集合，SessionNoSet.0,SessionNoSet.1....格式 |**Yes**|
 
 ### 响应字段
@@ -61,9 +61,11 @@
 |:---|:---|:---|:---|
 | **Phone** | string | 手机号码 |**Yes**|
 | **CostCount** | int | 消耗短信条数 |**Yes**|
-| **ReceiptResult** | string | 回执结果<br/><br/>**枚举值**：<ul><li>`发送成功`: 代表成功</li><li>`Success`: 代表成功</li><li>`发送失败`: 代表失败</li><li>`Fail`: 代表失败</li><li>`状态未知`: 代表未知</li><li>`Unknow`: 代表未知</li></ul> |**Yes**|
+| **ReceiptResult** | string | 回执结果(发送成功、发送失败、状态未知) |**Yes**|
+| **ReceiptCode** | string | 状态报告编码 |**Yes**|
 | **ReceiptDesc** | string | 回执结果描述 |**Yes**|
 | **ReceiptTime** | int | 回执返回时间 |**Yes**|
+| **UserId** | string | 自定义的业务标识ID，字符串 |**Yes**|
 
 ## 示例
 
@@ -71,8 +73,10 @@
     
 ```
 https://api.ucloud.cn/?Action=GetUSMSSendReceipt
-&ProjectId=org-XXXXqi
-&SessionNoSet.0=497XXXX4-eXXXXc-4XXX
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=GqkCNOVN
+&SessionNoSet.N=nAQDODtO
 ```
 
 ### 响应示例
@@ -84,18 +88,24 @@ https://api.ucloud.cn/?Action=GetUSMSSendReceipt
     {
       "ReceiptSet": [
         {
-          "CostCount": 1,
-          "Phone": "185XXX9057",
-          "ReceiptCode": "",
-          "ReceiptDesc": "Successfully delivered to target phone",
-          "ReceiptResult": "Success",
-          "ReceiptTime": 1554168750
+          "CostCount": 6,
+          "Phone": "QbPtKJPa",
+          "ReceiptCode": "0",
+          "ReceiptDesc": "DxMRsuET",
+          "ReceiptResult": "发送成功",
+          "ReceiptTime": 6,
+          "UserId": "1213"
         }
       ],
-      "SessionNo": "497XXXX4-eXXXXc-4XXX"
+      "SessionNo": "BmThtoRB"
     }
   ],
-  "Message": "Action success",
+  "Message": "OnVhSPcD",
   "RetCode": 0
 }
 ```
+
+
+
+
+
