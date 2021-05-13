@@ -61,7 +61,7 @@
 |:---|:---|:---|:---|
 | **Phone** | string | 手机号码 |**Yes**|
 | **CostCount** | int | 消耗短信条数 |**Yes**|
-| **ReceiptResult** | string | 回执结果(发送成功、发送失败、状态未知) |**Yes**|
+| **ReceiptResult** | string | 回执结果，枚举值：<br /><br /> > 发送成功: 代表成功 <br /><br /> > Success: 代表成功 <br /><br /> > 发送失败: 代表失败 <br /><br /> > Fail: 代表失败 <br /><br /> > 状态未知: 代表未知 <br /><br /> > Unknow: 代表未知 |**Yes**|
 | **ReceiptCode** | string | 状态报告编码 |**Yes**|
 | **ReceiptDesc** | string | 回执结果描述 |**Yes**|
 | **ReceiptTime** | int | 回执返回时间 |**Yes**|
