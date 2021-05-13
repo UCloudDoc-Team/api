@@ -59,6 +59,8 @@
 | **StartTime** | int | 房间开始时间 |**Yes**|
 | **EndTime** | int | 房间结束时间 |**Yes**|
 | **RoomStatus** | boolean | 房间状态,进行中:true,已结束:false |**Yes**|
+| **CallId** | string | 通话记录ID |**Yes**|
+| **RoomType** | string | 房间类型（RTC：会议，LIVE：直播） |**Yes**|
 
 ## 示例
 
