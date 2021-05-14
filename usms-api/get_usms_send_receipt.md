@@ -2,7 +2,7 @@
 
 ## 简介
 
-调用接口GetUSMSSendReceipt短信发送状态信息.
+调用接口GetUSMSSendReceipt短信发送状态信息
 
 ?> 短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；若发送后未立即拿到回执状态，建议在发送后5至10分钟内在尝试代用获取，若超过12小时仍未拿到发送状态，可联系UCloud技术支持协助
 
