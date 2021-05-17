@@ -43,11 +43,11 @@
 | **Disks.N.BackupType** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br /> > SNAPSHOT，快照<br /><br /> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type) |No|
 | **ImageId** | string | 镜像Id，可通过 [DescribeImage](api/uhost-api/describe_image) 获取镜像ID， 如果镜像ID不传，系统盘大小必传 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段。 |No|
-| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时付费 // >Preemptive 抢占式实例 <br /><br /> 默认为月付。 |No|
+| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时付费 // >Preemptive 抢占式实例 <br /><br /> 如果不传某个枚举值，默认返回年付、月付、时付的价格组合集。 |No|
 | **NetCapability** | string | 网络增强。枚举值：Normal，不开启; Super，开启网络增强1.0。 默认值为Normal。 |No|
 | **UHostType** | string | 【待废弃】云主机机型（V1版本概念）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（V2版本概念）。枚举值["N", "C", "G", "O", "OS", "OPRO", "OMAX", "O.BM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4"] |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4S","2080Ti","2080Ti-4C","1080Ti"] |No|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表了购买至月末。 |No|
 | **CpuPlatform** | string | 取值"Intel" "Amd"，默认值“Intel” |No|
 
@@ -95,6 +95,8 @@ https://api.ucloud.cn/?Action=GetUHostInstancePrice
 &Volumes.N.Size=3
 &Volumes.N.IsBoot=eHeLEeHi
 &HpcEnhanced=false
+&VirtualGpu.GpuType=yHZoRaFQ
+&VirtualGpu.GPU=5
 ```
 
 ### 响应示例

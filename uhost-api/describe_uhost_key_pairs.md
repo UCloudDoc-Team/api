@@ -61,7 +61,7 @@
 | **KeyPairName** | string | 密钥对名称。 长度为1\~63个英文或中文字符。 |No|
 | **KeyPairFingerPrint** | string | 密钥对指纹。md5(ProjectId\|KeyPairId\|PublicKey) |No|
 | **PrivateKeyBody** | string | 密钥对的私钥内容。只有创建接口才会返回。 |No|
-| **CreateTime** | string | 密钥对的创建时间。 |No|
+| **CreateTime** | int | 密钥对的创建时间，格式为Unix Timestamp。 |No|
 
 ## 示例
 
