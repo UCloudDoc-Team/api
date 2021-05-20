@@ -41,6 +41,7 @@
     - [拉取UDRedis分片信息 - DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)
     - [获取主Redis可用版本 - DescribeURedisVersion](api/umem-api/describe_uredis_version)
     - [清除主备redis数据 - FlushallURedisGroup](api/umem-api/flushall_uredis_group)
+    - [打开/关闭URedis - ISolationURedisGroup](api/umem-api/i_solation_uredis_group)
     - [清除udredis实例数据 - RemoveUDRedisData](api/umem-api/remove_ud_redis_data)
     - [重启主备实例 - RestartURedisGroup](api/umem-api/restart_uredis_group)
     - [更改zhubeiredis的备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
