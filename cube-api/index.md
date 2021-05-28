@@ -13,6 +13,7 @@
 |[GetCubeMetrics](api/cube-api/get_cube_metrics)|获取Cube实例监控数据|
 |[GetCubePod](api/cube-api/get_cube_pod)|获取Pod的详细信息|
 |[GetCubePrice](api/cube-api/get_cube_price)|获取cube的价格|
+|[ListCubeDeployment](api/cube-api/list_cube_deployment)|获取Cube的Deployment列表|
 |[ListCubePod](api/cube-api/list_cube_pod)|获取Pods列表|
 |[ModifyCubeExtendInfo](api/cube-api/modify_cube_extend_info)|修改Cube额外信息|
 |[ModifyCubeTag](api/cube-api/modify_cube_tag)|修改业务组|
