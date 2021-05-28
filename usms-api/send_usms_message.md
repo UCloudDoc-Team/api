@@ -37,7 +37,7 @@
 | **TemplateId** | string | 模板ID（也即短信模板申请时的工单ID），请到[USMS控制台](https://console.ucloud.cn/usms)的模板管理页面查看；使用的短信模板必须是已申请并通过审核； |**Yes**|
 | **TemplateParams.N** | string | 模板可变参数，以数组的方式填写，举例，TempalteParams.0，TempalteParams.1，... 若模板中无可变参数，则该项可不填写；若模板中有可变参数，则该项为必填项，参数个数需与变量个数保持一致，否则无法发送； |No|
 | **ExtendCode** | string | 短信扩展码，格式为阿拉伯数字串，默认不开通，如需开通请联系 UCloud技术支持 |No|
-| **UserId** | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位） |No|
+| **UserId** | string | 自定义的业务标识ID，字符串（ 长度不能超过32 位），不支持 单引号、表情包符号等特殊字符 |No|
 
 ### 响应字段
 
