@@ -114,12 +114,12 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **PathPattern** | string | 路径模式，支持正则 |**Yes**|
+| **CacheTTL** | int | 缓存时间 |**Yes**|
+| **CacheUnit** | string | 缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）。上限1年。 |**Yes**|
+| **CacheBehavior** | boolean | 是否缓存，true为缓存，flase为不缓存。为flase的情况下，CacheTTL和CacheUnit强制不生效 |**Yes**|
 | **HttpCodePattern** | string | 状态码模式，非200，206状态码，多个状态码用竖线(\|)分隔，该属性仅仅在状态码缓存配置列表中返回 |No|
-| **PathPattern** | string | 路径模式，支持正则 |No|
 | **Description** | string | 缓存规则描述 |No|
-| **CacheTTL** | int | 缓存时间 |No|
-| **CacheUnit** | string | 缓存时间的单位。sec（秒），min（分钟），hour（小时），day（天）。上限1年。 |No|
-| **CacheBehavior** | boolean | 是否缓存，true为缓存，flase为不缓存。为flase的情况下，CacheTTL和CacheUnit强制不生效 |No|
 | **FollowOriginRule** | boolean | 是否优先遵循源站头部缓存策略，false为不优先遵循源站，true为优先遵循源站缓存头部。默认为0 |No|
 
 #### CacheKeyInfo

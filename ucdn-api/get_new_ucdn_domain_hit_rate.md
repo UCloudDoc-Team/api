@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度）默认5分钟 |No|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外，只支持国内 |No|
@@ -55,7 +55,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Time** | int | 带宽获取的时间点。格式：时间戳 |No|
-| **FlowHitRate** | float | 流量命中率，单位% |No|
+| **FlowHitRate** | float | 总流量命中率，单位% |No|
 | **RequestHitRate** | float | 请求数命中率，单位% |No|
 
 ## 示例

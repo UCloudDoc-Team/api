@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度, 3=按1分钟） |**Yes**|
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp |**Yes**|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp |**Yes**|
@@ -80,8 +80,8 @@ https://api.ucloud.cn/?Action=GetUcdnDomainRequestNumV3
   "Action": "GetUcdnDomainRequestNumV3Response",
   "RequestList": [
     {
-      "CdnRequest": 3.79898,
-      "OriginRequest": 2.63711,
+      "CdnRequest": 3,
+      "OriginRequest": 2,
       "Time": 4
     }
   ],
