@@ -31,13 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 查询的起始日期，格式为Unix Timestamp   |**Yes**|
 | **EndTime** | int | 查询的结束日期，格式为Unix Timestamp   |**Yes**|
 | **Type** | int | 时间粒度<br />0 (按5分钟粒度)<br />1 (按小时粒度)<br />2(按天粒度)<br />3(按分钟粒度） |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
-| **Province.N** | string | 省份代码，可以传多个，不传则查询所有省份 |No|
-| **Isp** | string | 运营商代码，一次只能查询一个运营商，不传递默认取所有运营商 |No|
+| **Province.N** | string | 省份代码（省份拼音），可以传多个，不传则查询所有省份 |No|
+| **Isp** | string | 运营商代码（运营商拼音），一次只能查询一个运营商，不传递默认取所有运营商 |No|
 
 ### 响应字段
 
@@ -77,8 +77,8 @@ https://api.ucloud.cn/?Action=GetUcdnProIspBandwidthV2
 &EndTime=9
 &Type=6
 &DomainId.n=SNEulleF
-&Province.n=CqLzocHr
-&Isp=uNowNygR
+&Province.n=shanghai
+&Isp=dianxin
 ```
 
 ### 响应示例
