@@ -47,6 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*FirewallDataSet*](#FirewallDataSet)] | 获取的防火墙组详细信息 参见 FirewallDataSet |No|
+| **TotalCount** | int | 防火墙资源数量 |No|
 
 #### 数据模型
 
@@ -126,7 +127,7 @@ https://api.ucloud.cn/?Action=DescribeFirewall
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 4
 }
 ```
 
