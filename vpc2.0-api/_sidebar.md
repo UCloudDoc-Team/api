@@ -53,6 +53,7 @@
     - [获取ACL规则应用目标列表 - GetNetworkAclTargetResource](api/vpc2.0-api/get_network_acl_target_resource)
     - [展示NAT网关可绑定的子网列表 - ListSubnetForNATGW](api/vpc2.0-api/list_subnet_for_natgw)
     - [路由策略增、删、改 - ModifyRouteRule](api/vpc2.0-api/modify_route_rule)
+    - [迁移SecondaryIP - MoveSecondaryIPMac](api/vpc2.0-api/move_secondary_ip_mac)
     - [释放内网虚拟IP - ReleaseVIP](api/vpc2.0-api/release_vip)
     - [设置NAT网关的默认出口 - SetGwDefaultExport](api/vpc2.0-api/set_gw_default_export)
     - [更新NAT网关端口转发规则 - UpdateNATGWPolicy](api/vpc2.0-api/update_natgw_policy)
