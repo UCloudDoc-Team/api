@@ -8,6 +8,7 @@
     - [删除Cube的Deployment - DeleteCubeDeployment](api/cube-api/delete_cube_deployment)
     - [删除Pod - DeleteCubePod](api/cube-api/delete_cube_pod)
     - [获取Deployment的详细信息 - GetCubeDeployment](api/cube-api/get_cube_deployment)
+    - [获取登录容器的token - GetCubeExecToken](api/cube-api/get_cube_exec_token)
     - [获取Cube的额外信息 - GetCubeExtendInfo](api/cube-api/get_cube_extend_info)
     - [获取Cube实例监控数据 - GetCubeMetrics](api/cube-api/get_cube_metrics)
     - [获取Pod的详细信息 - GetCubePod](api/cube-api/get_cube_pod)
