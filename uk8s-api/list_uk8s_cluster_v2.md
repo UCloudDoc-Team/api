@@ -26,8 +26,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0。 |No|
 | **Limit** | int | 返回数据长度，默认为20。 |No|
 | **ClusterId** | string | UK8S集群ID |No|
@@ -58,10 +58,11 @@
 | **MasterCount** | int | Master 节点数量 |**Yes**|
 | **ApiServer** | string | 集群apiserver地址 |**Yes**|
 | **K8sVersion** | string | 集群版本 |**Yes**|
+| **ClusterLogInfo** | string | 创建集群时判断如果为NORESOURCE则为没资源，否则为空 |**Yes**|
 | **CreateTime** | int | 创建时间 |No|
 | **NodeCount** | int | Node节点数量 |No|
 | **ExternalApiServer** | string | 集群外部apiserver地址	 |No|
-| **Status** | string | 状态 |No|
+| **Status** | string | 集群状态，枚举值：初始化："INITIALIZING"；启动中："STARTING"；创建失败："CREATEFAILED"；正常运行："RUNNING"；添加节点："ADDNODE"；删除节点："DELNODE"；删除中："DELETING"；删除失败："DELETEFAILED"；错误："ERROR"；升级插件："UPDATE_PLUGIN"；更新插件信息："UPDATE_PLUGIN_INFO"；异常："ABNORMAL"；升级集群中："UPGRADING"；容器运行时切换："CONVERTING" |No|
 
 ## 示例
 

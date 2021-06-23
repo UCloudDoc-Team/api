@@ -50,7 +50,7 @@
 | **Zone** | string | Node所在可用区 |**Yes**|
 | **NodeId** | string | NodeId，Node在UK8S处的唯一标示，如uk8s-reewqe5-sdasadsda |**Yes**|
 | **NodeRole** | string | node角色，枚举值为master、node |**Yes**|
-| **NodeStatus** | string | Node的状态 |**Yes**|
+| **NodeStatus** | string | Node的状态：枚举值：初始化："Initializing"；启动中："Starting"；运行："Running"；停止中："Stopping"；停止："Stopped"；待删除："ToBeDeleted"；删除中："Deleting"；异常："Error"；安装失败："Install Fail"； |**Yes**|
 | **InstanceType** | string | Node节点的资源类型，枚举值为UHost或UPHost。 |**Yes**|
 | **InstanceName** | string | 资源名称，初始值等于NodeId，用户可在UHost或UPHost处修改。 |**Yes**|
 | **InstanceId** | string | 资源ID，如uhost-xxxx，或uphost-xxxxx。 |**Yes**|
