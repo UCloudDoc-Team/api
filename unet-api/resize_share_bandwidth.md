@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ShareBandwidth** | int | 带宽值，单位为Mb，范围 [20-5000] (最大值受地域限制) |**Yes**|
 | **ShareBandwidthId** | string | 共享带宽的Id |**Yes**|
 
@@ -55,7 +55,7 @@
 https://api.ucloud.cn/?Action=ResizeShareBandwidth
 &Region=cn-bj2
 &ShareBandwidth=100
-&ShareBandwidthID=bwshare-fvdr45
+&ShareBandwidthID=bwshare-XXXXX
 ```
 
 ### 响应示例
@@ -63,6 +63,7 @@ https://api.ucloud.cn/?Action=ResizeShareBandwidth
 ```json
 {
   "Action": "ResizeShareBandwidthResponse",
+  "Request_uuid": "0a7acc0d-2619-40b1-8b3e-XXXXXXXX",
   "RetCode": 0
 }
 ```
