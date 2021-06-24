@@ -58,7 +58,7 @@
 | **MasterCount** | int | Master 节点数量 |**Yes**|
 | **ApiServer** | string | 集群apiserver地址 |**Yes**|
 | **K8sVersion** | string | 集群版本 |**Yes**|
-| **ClusterLogInfo** | string | 创建集群时判断如果为NORESOURCE则为没资源，否则为空 |**Yes**|
+| **ClusterLogInfo** | string | 创建集群时判断如果为NORESOURCE则为没资源，否则为空 |No|
 | **CreateTime** | int | 创建时间 |No|
 | **NodeCount** | int | Node节点数量 |No|
 | **ExternalApiServer** | string | 集群外部apiserver地址	 |No|
