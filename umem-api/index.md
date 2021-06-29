@@ -47,6 +47,7 @@
 |[CheckURedisAllowance](api/umem-api/check_uredis_allowance)|检查URedis资源是否足够|
 |[CreateURedisBackup](api/umem-api/create_uredis_backup)|创建主备Redis备份|
 |[DescribeUDRedisSlowlog](api/umem-api/describe_ud_redis_slowlog)|查询UDRedis慢日志|
+|[DescribeUMem](api/umem-api/describe_umem)|获取UMem列表|
 |[DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)|拉取UDRedis分片信息|
 |[DescribeURedisVersion](api/umem-api/describe_uredis_version)|获取主Redis可用版本|
 |[FlushallURedisGroup](api/umem-api/flushall_uredis_group)|清除主备redis数据|
