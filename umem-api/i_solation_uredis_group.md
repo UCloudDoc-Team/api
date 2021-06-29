@@ -36,8 +36,6 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组的ID |**Yes**|
 | **TransformType** | string | UNBind(关闭)或Bind(打开) |**Yes**|
-| **TopOrganizationId** | int | company_id |No|
-| **OrganizationId** | int | OrganizationId |No|
 | **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
 
 ### 响应字段
