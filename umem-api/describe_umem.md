@@ -4,7 +4,7 @@
 
 获取UMem列表
 
-
+?> (Protocol=redis:展示主备Redis以及分布式Redis; Protocol= memcache:展示单机memcache)
 
 
 
@@ -57,9 +57,9 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
-| **DataSet** | array[[*UMemSlaveDataSet*](#UMemSlaveDataSet)] | UMEM实例列表 UMemSlaveDataSet 如果没有slave，则没有该字段 |**Yes**|
 | **OwnSlave** | string | 是否拥有只读Slave<br />“Yes” 包含<br />“No” 不包含 |**Yes**|
-| **BlockCnt** | int | 分片个数 |**Yes**|
+| **DataSet** | array[[*UMemSlaveDataSet*](#UMemSlaveDataSet)] | UMEM实例列表 UMemSlaveDataSet 如果没有slave，则没有该字段 |No|
+| **BlockCnt** | int | 分片个数 |No|
 | **Role** | string | 表示实例是主库还是从库,master,slave<br />仅主备redis返回该项参数 |No|
 | **RewriteTime** | int | 主备redis和分布式redis运维时间<br />0  //0点<br />1  //1点<br />以此类推<br />单机版memcache不返回该项 |No|
 | **VPCId** | string | vpc |No|
@@ -95,7 +95,7 @@
 | **SubnetId** | string | 子网 |**Yes**|
 | **VPCId** | string | vpc |**Yes**|
 | **VirtualIP** | string |  |**Yes**|
-| **RewriteTIme** | int | 主备Redis返回运维时间 0//0点 1 //1点 以此类推 |No|
+| **RewriteTime** | int | 主备Redis返回运维时间 0//0点 1 //1点 以此类推 |No|
 | **MasterGroupId** | string | 主实例id |No|
 | **GroupId** | string | 资源id |No|
 | **Port** | int | 端口 |No|
