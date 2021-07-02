@@ -59,7 +59,6 @@
 | **Zone** | string | 实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
 | **OwnSlave** | string | 是否拥有只读Slave<br />“Yes” 包含<br />“No” 不包含 |**Yes**|
 | **DataSet** | array[[*UMemSlaveDataSet*](#UMemSlaveDataSet)] | UMEM实例列表 UMemSlaveDataSet 如果没有slave，则没有该字段 |No|
-| **BlockCnt** | int | 分片个数 |No|
 | **Role** | string | 表示实例是主库还是从库,master,slave<br />仅主备redis返回该项参数 |No|
 | **RewriteTime** | int | 主备redis和分布式redis运维时间<br />0  //0点<br />1  //1点<br />以此类推<br />单机版memcache不返回该项 |No|
 | **VPCId** | string | vpc |No|
@@ -82,10 +81,7 @@
 | **BackupTime** | int | 自动备份开始时间,单位小时计,范围[0-23] |No|
 | **HighAvailability** | string | 是否开启高可用,enable,disable |No|
 | **Version** | string | Redis版本信息 |No|
-| **URedisType** | string | 主备Redis，提供两种类型：同机房高可用Redis，和同地域跨机房高可用Redis |No|
 | **SlaveZone** | string | 跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
-| **IPv6** | string | 获取该实例的IPv6地址,仅主备Redis返回，主备Redis从实例不返回 |No|
-| **ProxyName** | string | 标识读写分离是否打开 |No|
 
 #### UMemSlaveDataSet
 
