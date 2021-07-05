@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Type** | string | 具体机型。若不填写，则返回全部机型 |No|
 
 ### 响应字段
@@ -65,7 +65,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Model** | string | CPU型号 |No|
-| **Frequence** | float | CPU主频 |No|
+| **Frequence** | string | CPU主频 |No|
 | **Count** | int | CPU个数 |No|
 | **CoreCount** | int | CPU核数 |No|
 
@@ -78,16 +78,13 @@
 | **Type** | string | 磁盘属性 |No|
 | **Name** | string | 磁盘名称，sys/data |No|
 | **IOCap** | int | 磁盘IO性能，单位MB/s（待废弃） |No|
-| **Drive** | string | 裸金属机型参数：磁盘盘符 |No|
-| **DiskId** | string | 裸金属机型参数：磁盘ID |No|
-| **IsBoot** | string | 裸金属机型参数：是否是启动盘。True/False |No|
 
 #### PHostComponentSet
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Name** | string | 组件名称 |No|
-| **Count** | string | 组件数量 |No|
+| **Count** | int | 组件数量 |No|
 
 #### PHostClusterSet
 

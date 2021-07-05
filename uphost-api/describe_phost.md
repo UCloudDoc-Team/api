@@ -31,13 +31,14 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **PHostId.N** | string | PHost资源ID，若为空，则返回当前Region所有PHost。 |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
 | **UDiskIdForAttachment** | string | 要挂载的云盘id，过滤返回能被UDiskId挂载的云主机。目前主要针对rssd云盘使用 |No|
+| **VPCId** | string | ULB使用参数，获取同VPC下机器信息。 |No|
 
 ### 响应字段
 
@@ -59,7 +60,7 @@
 | **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist) |No|
 | **PHostId** | string | PHost资源ID |No|
 | **SN** | string | 物理机序列号 |No|
-| **PMStatus** | string | 物理云主机状态。枚举值：<br /><br /> > 初始化:Initializing; <br /><br /> > 启动中：Starting； <br /><br /> > 运行中：Running；<br /><br /> > 关机中：Stopping； <br /><br /> > 安装失败：InstallFailed； <br /><br /> > 重启中：Rebooting；<br /><br /> > 关机：Stopped； |No|
+| **PMStatus** | string | 物理云主机状态。枚举值：<br /><br /> > 初始化:Initializing; <br /><br /> > 启动中：Starting； <br /><br /> > 运行中：Running；<br /><br /> > 关机中：Stopping； <br /><br /> > 安装失败：InstallFailed； <br /><br /> > 重启中：Rebooting；<br /><br /> > 关机：Stopped； <br /><br /> > 迁移中(裸金属云盘)：Migrating |No|
 | **Name** | string | 物理机名称 |No|
 | **Remark** | string | 物理机备注 |No|
 | **Tag** | string | 业务组 |No|
@@ -72,7 +73,7 @@
 | **PHostType** | string | 物理机类型，参见DescribePHostMachineType返回值 |No|
 | **Memory** | int | 内存大小，单位：MB |No|
 | **CPUSet** | [*PHostCPUSet*](#PHostCPUSet) | CPU信息，见 PHostCPUSet |No|
-| **DiskSet** | array[[*PHostDiskSet*](#PHostDiskSet)] | 磁盘信息，见 PHostDiskSet |No|
+| **DiskSet** | array[[*PHostDescDiskSet*](#PHostDescDiskSet)] | 磁盘信息，见 PHostDescDiskSet |No|
 | **IPSet** | array[[*PHostIPSet*](#PHostIPSet)] | IP信息，见 PHostIPSet |No|
 | **Cluster** | string | 网络环境。枚举值：千兆：1G ，万兆：10G |No|
 | **AutoRenew** | string | 自动续费 |No|
@@ -87,11 +88,11 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Model** | string | CPU型号 |No|
-| **Frequence** | float | CPU主频 |No|
+| **Frequence** | string | CPU主频 |No|
 | **Count** | int | CPU个数 |No|
 | **CoreCount** | int | CPU核数 |No|
 
-#### PHostDiskSet
+#### PHostDescDiskSet
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
@@ -129,6 +130,7 @@ https://api.ucloud.cn/?Action=DescribePHost
 &Offset=2
 &Limit=9
 &UDiskIdForAttachment=XmuOwhco
+&VPCId=xnyTdDlO
 ```
 
 ### 响应示例
