@@ -21,6 +21,7 @@
     - [获取弹性IP计费方式 - GetEIPPayMode](api/unet-api/get_eip_pay_mode)
     - [获取弹性IP价格 - GetEIPPrice](api/unet-api/get_eip_price)
     - [获取弹性IP带宽改动价格 - GetEIPUpgradePrice](api/unet-api/get_eip_upgrade_price)
+    - [获取流量计费EIP每日流量计费信息 - GetThroughputDailyBillingInfo](api/unet-api/get_throughput_daily_billing_info)
     - [应用防火墙 - GrantFirewall](api/unet-api/grant_firewall)
     - [调整弹性IP带宽 - ModifyEIPBandwidth](api/unet-api/modify_eip_bandwidth)
     - [修改弹性IP出口权重 - ModifyEIPWeight](api/unet-api/modify_eip_weight)
