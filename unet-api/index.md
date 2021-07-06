@@ -22,6 +22,7 @@
 |[GetEIPPayMode](api/unet-api/get_eip_pay_mode)|获取弹性IP计费方式|
 |[GetEIPPrice](api/unet-api/get_eip_price)|获取弹性IP价格|
 |[GetEIPUpgradePrice](api/unet-api/get_eip_upgrade_price)|获取弹性IP带宽改动价格|
+|[GetThroughputDailyBillingInfo](api/unet-api/get_throughput_daily_billing_info)|获取流量计费EIP每日流量计费信息|
 |[GrantFirewall](api/unet-api/grant_firewall)|应用防火墙|
 |[ModifyEIPBandwidth](api/unet-api/modify_eip_bandwidth)|调整弹性IP带宽|
 |[ModifyEIPWeight](api/unet-api/modify_eip_weight)|修改弹性IP出口权重|
