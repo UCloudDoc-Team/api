@@ -88,7 +88,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Model** | string | CPU型号 |No|
-| **Frequence** | string | CPU主频 |No|
+| **Frequence** | float | CPU主频 |No|
 | **Count** | int | CPU个数 |No|
 | **CoreCount** | int | CPU核数 |No|
 
