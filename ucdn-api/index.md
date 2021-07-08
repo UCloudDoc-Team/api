@@ -31,5 +31,6 @@
 |[GetUcdnTraffic](api/ucdn-api/get_ucdn_traffic)|【待下线】获取流量信息|
 |[GetUcdnTrafficV2](api/ucdn-api/get_ucdn_traffic_v2)|获取账户总流量信息【新】|
 |[PrefetchNewUcdnDomainCache](api/ucdn-api/prefetch_new_ucdn_domain_cache)|提交预取任务|
+|[QueryIpLocation](api/ucdn-api/query_ip_location)|查询IP信息|
 |[RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)|刷新缓存|
 |[SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)|切换账号计费方式|

@@ -30,6 +30,7 @@
     - [【待下线】获取流量信息 - GetUcdnTraffic](api/ucdn-api/get_ucdn_traffic)
     - [获取账户总流量信息【新】 - GetUcdnTrafficV2](api/ucdn-api/get_ucdn_traffic_v2)
     - [提交预取任务 - PrefetchNewUcdnDomainCache](api/ucdn-api/prefetch_new_ucdn_domain_cache)
+    - [查询IP信息 - QueryIpLocation](api/ucdn-api/query_ip_location)
     - [刷新缓存 - RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)
     - [切换账号计费方式 - SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)
 - **附录**
