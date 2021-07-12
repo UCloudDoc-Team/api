@@ -4,7 +4,6 @@
 - [索引](api/uaccount-api/index.md)
 - **API**
     - [添加成员到项目 - AddMemberToProject](api/uaccount-api/add_member_to_project)
-    - [创建项目 - CreateProject](api/uaccount-api/create_project)
     - [冻结成员 - FreezeMember](api/uaccount-api/freeze_member)
     - [查询登录与API调用的网络掩码 - GetNetworkMask](api/uaccount-api/get_network_mask)
     - [获取帐号下的项目列表 - GetProjectList](api/uaccount-api/get_project_list)
