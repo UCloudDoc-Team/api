@@ -31,11 +31,14 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **UGAId** | string | 加速配置实例ID |**Yes**|
 | **HTTPHTTP.N** | int | HTTP接入HTTP回源，接入端口。禁用65123端口 |No|
 | **HTTPSHTTP.N** | int | HTTPS接入HTTP回源， 接入端口。禁用65123端口 |No|
 | **HTTPSHTTPS.N** | int | HTTPS接入HTTPS回源， 接入端口。禁用65123端口 |No|
+| **WSSWSS.N** | int | WebSocketS接入WebSocketS回源， 接入端口。禁用65123端口 |No|
+| **WSWS.N** | int | WebSocket接入WebSocket回源， 接入端口。禁用65123端口 |No|
+| **WSSWS.N** | int | WebSocketS接入WebSocket回源， 接入端口。禁用65123端口。 |No|
 | **TCP.N** | int | TCP接入端口 |No|
 | **UDP.N** | int | UDP接入端口 |No|
 
@@ -61,6 +64,9 @@ https://api.ucloud.cn/?Action=DeleteUGAForwarder
 &HTTPHTTP.n=80
 &HTTPSHTTP.n=443
 &TCP.n=22
+&WSSWSS.n=3
+&WSWS.n=2
+&WSSWS.n=4
 ```
 
 ### 响应示例
