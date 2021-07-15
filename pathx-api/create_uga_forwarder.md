@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **UGAId** | string | 加速配置实例ID |**Yes**|
 | **HTTPHTTP.N** | int | HTTP接入HTTP回源转发，接入端口。禁用65123端口 |No|
 | **HTTPHTTPRS.N** | int | HTTP接入HTTP回源转发，源站监听端口 |No|
@@ -39,10 +39,16 @@
 | **HTTPSHTTPRS.N** | int | HTTPS接入HTTP回源转发，回源端口 |No|
 | **HTTPSHTTPS.N** | int | HTTPS接入HTTPS回源转发，接入端口。禁用65123端口 |No|
 | **HTTPSHTTPSRS.N** | int | HTTPS接入HTTPS回源转发，源站监听端口 |No|
-| **TCP.N** | int | TCP接入端口 |No|
+| **TCP.N** | int | TCP接入端口，禁用65123端口 |No|
 | **TCPRS.N** | int | TCP回源端口 |No|
-| **UDP.N** | int | UDP接入端口 |No|
+| **UDP.N** | int | UDP接入端口，禁用65123端口 |No|
 | **UDPRS.N** | int | UDP回源端口 |No|
+| **WSWS.N** | int | WebSocket接入WebSocket回源转发，接入端口。禁用65123。 |No|
+| **WSWSRS.N** | int | WebSocket接入WebSocket回源转发，源站监听端口 |No|
+| **WSSWSS.N** | int | WebSocketS接入WebSocketS回源转发，接入端口。禁用65123。 |No|
+| **WSSWSSRS.N** | int | WebSocketS接入WebSocketS回源转发，源站监听端口。 |No|
+| **WSSWS.N** | int | WebSocketS接入WebSocket回源转发，接入端口。禁用65123。 |No|
+| **WSSWSRS.N** | int | WebSocketS接入WebSocket回源转发，源站监听端口。 |No|
 
 ### 响应字段
 
@@ -69,6 +75,12 @@ https://api.ucloud.cn/?Action=CreateUGAForwarder
 &HTTPSHTTPRS.n=80
 &TCP.n=22
 &TCPRS.n=22
+&WSWS.n=3
+&WSWSRS.n=9
+&WSSWSS.n=7
+&WSSWSSRS.n=7
+&WSSWS.n=6
+&WSSWSRS.n=9
 ```
 
 ### 响应示例
