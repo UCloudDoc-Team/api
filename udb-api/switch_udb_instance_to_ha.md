@@ -2,7 +2,7 @@
 
 ## 简介
 
-普通UDB切换为高可用，原db状态为WaitForSwitch时，调用改api
+普通UDB切换为高可用(只针对mysql5.5及以上版本SSD机型的实例) ，原db状态为WaitForSwitch时，调用该api； 对于NVMe机型的单点升级高可用，虽然也能使用PromoteUDBInstanceToHA再加上该操作，但是更建议直接调用新的API接口（SetUpHAWithExistingUDBInstance）
 
 
 
@@ -31,9 +31,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DBId** | string | 实例的Id,该值可以通过DescribeUDBInstance获取 |**Yes**|
+| **ChargeType** | string | Year， Month， Dynamic，Trial，不填则按现在单点计费执行<br /> |No|
+| **Quantity** | string | 购买时长，需要和 ChargeType 搭配使用，否则使用单点计费策略的值 |No|
+| **Tag** | string | 业务组 |No|
 
 ### 响应字段
 
@@ -55,6 +58,9 @@
 https://api.ucloud.cn/?Action=SwitchUDBInstanceToHA
 &Region=cn-bj2
 &DBId=udb-xxx
+&ChargeType=GFfPZuzb
+&Quantity=EIwSDflg
+&Tag=YgoEVhht
 ```
 
 ### 响应示例
