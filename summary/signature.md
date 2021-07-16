@@ -62,48 +62,4 @@ ActionDescribeUHostInstanceLimit10PublicKeyucloudsomeone@example.com129623512085
 
 ## 多语言 SDK
 
-UCloud 提供了多种语言的 SDK，以供计算签名使用，可在程序中直接导入使用。
-
-?> 如果使用 SDK 发起请求，SDK 会自动为请求签名，无需以下操作。
-
-<!-- tabs:start -->
-
-#### ** Python **
-
-```python
-from ucloud.core import auth
-
-cred = auth.Credential(
-    "ucloudsomeone@example.com1296235120854146120",
-    "46f09bb9fab4f12dfc160dae12273d5332b5debe",
-)
-d = {'Action': 'DescribeUHostInstance', 'Region': 'cn-bj2', 'Limit': 10}
-print(cred.verify_ac(d))
-```
-
-SDK 详细使用方法可参考 [官方文档](https://docs.ucloud.cn/opensdk-python/)
-
-#### ** Go **
-
-```go
-package main
-
-import (
-  "fmt"
-
-  "github.com/ucloud/ucloud-sdk-go/ucloud/auth"
-)
-
-func main() {
-  cred := &auth.Credential{
-    PublicKey:  "ucloudsomeone@example.com1296235120854146120",
-    PrivateKey: "46f09bb9fab4f12dfc160dae12273d5332b5debe",
-  }
-  d := "Action=DescribeUHostInstance&Limit=10&Region=cn-bj2"
-  fmt.Println(cred.CreateSign(d))
-}
-```
-
-SDK 详细使用方法可参考 [官方文档](https://docs.ucloud.cn/opensdk-go/)
-
-<!-- tabs:end -->
+UCloud 提供了多种语言的 SDK，如果使用 SDK 发起请求，SDK 会自动为请求签名，无需自行计算。
