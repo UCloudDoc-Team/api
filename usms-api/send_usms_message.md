@@ -68,6 +68,7 @@ https://api.ucloud.cn/?Action=SendUSMSMessage
 &PublicKey=vsRhB0Qzo9elXXXXXkw8o/vmss8Tb0vxi74A=
 &Signature=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 &UserId=hGBCrtQw
+&SenderId=VnxRzuQo
 ```
 
 ### 响应示例
