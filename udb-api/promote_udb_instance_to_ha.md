@@ -2,7 +2,7 @@
 
 ## 简介
 
-普通db升级为高可用(只针对mysql5.5及以上版本SSD机型的实例)  ，对于NVMe机型的单点升级高可用，虽然也能使用该操作再加上SwitchUDBInstanceToHA，但是更建议直接调用新的API接口（SetUpHAWithExistingUDBInstance）
+普通db升级为高可用(只针对mysql5.5及以上版本SSD机型的实例)  ，对于NVMe机型的单点升级高可用，虽然也能使用该操作再加上SwitchUDBInstanceToHA，但是更建议直接调用新的API接口（UpgradeUDBInstanceToHA）
 
 
 
