@@ -6,7 +6,7 @@
 
 
 
-!> 单一项目下Free版本的GlobalSSH实例有配额限制。免费版和基础版不支持对友商IP的加速，仅企业版支持第三方IP
+!> 单一项目下入门版本的GlobalSSH实例有配额限制。
 
 
 ## 使用方法
@@ -31,15 +31,15 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID,如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **Area** | string | 填写支持SSH访问IP的地区名称，如“洛杉矶”，“新加坡”，“香港”，“东京”，“华盛顿”，“法兰克福”。Area和AreaCode两者必填一个 |**Yes**|
+| **ProjectId** | string | 项目ID,如org-xxxx。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **Area** | string | 填写支持SSH访问IP的地区名称，如“洛杉矶”，“新加坡”，“香港”，“东京”，“华盛顿”，“法兰克福”，“首尔”。Area和AreaCode两者必填一个 |**Yes**|
 | **TargetIP** | string | 被SSH访问的源站IP，仅支持IPv4地址。 |**Yes**|
 | **Port** | int | 源站服务器监听的SSH端口，可取范围[1-65535]，不能使用80，443,  65123端口。如果InstanceType=Free，取值范围缩小为[22,3389],linux系统选择22，windows系统自动选3389。 |**Yes**|
 | **AreaCode** | string | AreaCode, 区域航空港国际通用代码。Area和AreaCode两者必填一个 |**Yes**|
 | **Remark** | string | 备注信息 |No|
-| **ChargeType** | string | 支付方式，如按月、按年、按时 |No|
-| **Quantity** | int | 购买数量 |No|
-| **InstanceType** | string | 枚举值：["Enterprise","Basic","Free"], 分别代表企业版，基础版，免费版 |No|
+| **ChargeType** | string | 支付方式，如按月：Month、 按年：Year、按时：Dynamic |No|
+| **Quantity** | int | 购买数量<br />按月购买至月底请传0 |No|
+| **InstanceType** | string | 枚举值：["Ultimate","Enterprise","Basic","Primary"], 分别代表旗舰版，企业版，基础版，入门版 |No|
 | **BandwidthPackage** | int | Ultimate版本带宽包大小,枚举值：[0,20,40]。单位MB |No|
 | **ForwardRegion** | string | InstanceType等于Basic时可以在["cn-bj2","cn-sh2","cn-gd"]中选择1个作为转发机房，Free版本固定为cn-bj2,其他付费版默认配置三个转发机房 |No|
 | **CouponId** | string | 使用代金券可冲抵部分费用 |No|

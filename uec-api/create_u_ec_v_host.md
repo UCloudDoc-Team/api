@@ -44,7 +44,7 @@
 | **ProductType** | string | 产品类型：normal（标准型），hf（高频型） |No|
 | **FirewallId** | string | 外网防护墙规则组，默认 |No|
 | **Isp.N** | int | 运营商（1-电信，2-联通，4移动） |No|
-| **IsNeedOuterIp** | string | （已废弃）是否需要外网ip（yes-是，no-否） |No|
+| **IsNeedOuterIp** | string | 是否需要外网ip（no-否） |No|
 
 ### 响应字段
 
