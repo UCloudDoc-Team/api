@@ -46,13 +46,13 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **KeyPairs** | array[[*KeyPair*](#KeyPair)] | 密钥对信息集合 |**Yes**|
+| **KeyPairs** | array[[*KeyPairDesc*](#KeyPairDesc)] | 密钥对信息集合 |**Yes**|
 | **TotalCount** | int | 密钥对总数 |**Yes**|
 
 #### 数据模型
 
 
-#### KeyPair
+#### KeyPairDesc
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
@@ -60,7 +60,6 @@
 | **KeyPairId** | string | 密钥对ID。 |No|
 | **KeyPairName** | string | 密钥对名称。 长度为1\~63个英文或中文字符。 |No|
 | **KeyPairFingerPrint** | string | 密钥对指纹。md5(ProjectId\|KeyPairId\|PublicKey) |No|
-| **PrivateKeyBody** | string | 密钥对的私钥内容。只有创建接口才会返回。 |No|
 | **CreateTime** | int | 密钥对的创建时间，格式为Unix Timestamp。 |No|
 
 ## 示例
