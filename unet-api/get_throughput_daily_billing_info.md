@@ -45,8 +45,8 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Stats** | array[[*ThroughputDailyBillingInfo*](#ThroughputDailyBillingInfo)] | EIP流量计费信息，详见模型ThroughputDailyBillingInfo |No|
-| **TotalOutMoney** | int | 计费总金额 |No|
-| **TotalOutSize** | string | 计费总流量 |No|
+| **TotalOut** | int | 计费总流量 |No|
+| **EIPId** | string | 资源ID |No|
 
 #### 数据模型
 
@@ -57,8 +57,7 @@
 |:---|:---|:---|:---|
 | **StartTime** | int | 计费开始时间 |No|
 | **EndTime** | int | 计费结束时间 |No|
-| **QuantityOutSize** | int | 计费流量，单位“GB” |No|
-| **QuantityOutMoney** | int | 计费金额，单位“元” |No|
+| **QuantityOut** | int | 计费流量，单位“GB” |No|
 | **BillingState** | string | 是否已计费，“Yes”或者“No” |No|
 
 ## 示例
@@ -80,6 +79,7 @@ https://api.ucloud.cn/?Action=GetThroughputDailyBillingInfo
 ```json
 {
   "Action": "GetThroughputDailyBillingInfoResponse",
+  "EIPId": "eJkOUbRj",
   "RetCode": 0,
   "Stats": [
     {
