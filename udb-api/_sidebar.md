@@ -62,5 +62,6 @@
     - [获取UDB实例升降级价格信息 - DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
 - **API**
     - [描述读写分离功能 - DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)
+    - [快杰普通db升级为高可用 - UpgradeUDBInstanceToHA](api/udb-api/upgrade_udb_instance_to_ha)
 - **附录**
   - [UDB 错误码列表](api/udb-api/error_code)

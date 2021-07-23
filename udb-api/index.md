@@ -75,3 +75,4 @@
 | API | 描述信息 |
 |:---|:---|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
+|[UpgradeUDBInstanceToHA](api/udb-api/upgrade_udb_instance_to_ha)|快杰普通db升级为高可用|
