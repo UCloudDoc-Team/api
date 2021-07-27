@@ -45,6 +45,10 @@
         {
           "name": "OpenSDK Python",
           "links": "/opensdk-python/README"
+        },
+        {
+          "name": "OpenSDK PHP",
+          "links": "/opensdk-php/README"
         }
       ],
       "listpros": [
