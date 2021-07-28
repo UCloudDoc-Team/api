@@ -12,7 +12,7 @@
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) /
+
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
