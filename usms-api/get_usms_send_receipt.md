@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **SessionNoSet.N** | string | 发送短信时返回的SessionNo集合，SessionNoSet.0,SessionNoSet.1....格式 |**Yes**|
+| **SessionNoSet.N** | string | 发送短信时返回的SessionNo集合，SessionNoSet.0,SessionNoSet.1....格式，单次调用集合数需控制在100个以内 |**Yes**|
 
 ### 响应字段
 
