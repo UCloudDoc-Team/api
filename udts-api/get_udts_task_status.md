@@ -30,9 +30,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **TaskId** | string | 任务ID |**Yes**|
-| **Type** | string | 任务类型 |No|
+| **Type** | string | 任务类型，值为 transfer 或 integration， transfer 时任务为 数据迁移，integration 时任务为 数据集成。 |No|
 
 ### 响应字段
 
@@ -51,7 +51,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **MaxRetryCount** | int | 用户设置的最大失败重试次数 |No|
-| **Status** | string | 任务状态, 可能的状态有Checking, Dumping, Loading, Syncing, Done, Failed 等 |No|
+| **Status** | string | 任务状态, 状态有 Created:已创建,Checking:检查中,Dumping:转储中,Loading:加载中,Syncing:同步中,Synced:已同步,Done:完成,Failed:失败,Stopping:停止中,Stopped:停止,RetryPending:重试等待中,Starting:启动中,FailedUnrecoverable:异常,StoppedUnrecoverable:异常,Success:成功,Started:已启动 |No|
 | **FailedMessage** | string | 当Status为Failed时, 显示失败原因 |No|
 | **CurRetryCount** | int | 当前失败重试次数 |No|
 | **Progress** | [*Progress*](#Progress) | Progress 全量迁移进度信息， 当类型为增量迁移时为空 |No|
