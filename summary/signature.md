@@ -1,5 +1,7 @@
 # 签名算法
 
+>! UCloud 提供了多种语言的 SDK，SDK 会自动为请求签名，请务必使用 SDK，无需自行计算，详情可见顶部**开发**导航。
+
 ## 数据假设
 
 在生成 API 请求中的签名（`Signature`） 时，需要提供账户中密钥，包括 `PublicKey` 和 `PrivateKey`，
@@ -59,7 +61,3 @@ ActionDescribeUHostInstanceLimit10PublicKeyucloudsomeone@example.com129623512085
 ### 3. 计算签名
 
 使用 SHA1 编码被签名串，生成最终签名。
-
-## 多语言 SDK
-
-UCloud 提供了多种语言的 SDK，如果使用 SDK 发起请求，SDK 会自动为请求签名，无需自行计算。
