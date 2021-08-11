@@ -30,3 +30,4 @@
     - [UGA绑定UPath - UGABindUPath](api/pathx-api/uga_bind_upath)
     - [UGA与UPath解绑 - UGAUnBindUPath](api/pathx-api/uga_un_bind_upath)
     - [解绑PathX SSL 证书 - UnBindPathXSSL](api/pathx-api/un_bind_path_xssl)
+    - [更新入口白名单 - UpdatePathXWhitelist](api/pathx-api/update_path_x_whitelist)
