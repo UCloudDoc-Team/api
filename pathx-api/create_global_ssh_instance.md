@@ -41,7 +41,7 @@
 | **Quantity** | int | 购买数量<br />按月购买至月底请传0 |No|
 | **InstanceType** | string | 枚举值：["Ultimate","Enterprise","Basic","Primary"], 分别代表旗舰版，企业版，基础版，入门版 |No|
 | **BandwidthPackage** | int | Ultimate版本带宽包大小,枚举值：[0,20,40]。单位MB |No|
-| **ForwardRegion** | string | InstanceType等于Basic时可以在["cn-bj2","cn-sh2","cn-gd"]中选择1个作为转发机房，Free版本固定为cn-bj2,其他付费版默认配置三个转发机房 |No|
+| **ForwardRegion** | string | InstanceType等于Basic时可以在["cn-bj2","cn-sh2","cn-gd"]中选择1个作为转发机房，其他付费版默认配置三个转发机房 |No|
 | **CouponId** | string | 使用代金券可冲抵部分费用 |No|
 
 ### 响应字段
