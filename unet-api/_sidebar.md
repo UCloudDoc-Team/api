@@ -18,6 +18,7 @@
     - [获取防火墙绑定资源 - DescribeFirewallResource](api/unet-api/describe_firewall_resource)
     - [获取共享带宽信息 - DescribeShareBandwidth](api/unet-api/describe_share_bandwidth)
     - [将EIP移出共享带宽 - DisassociateEIPWithShareBandwidth](api/unet-api/disassociate_eip_with_share_bandwidth)
+    - [解绑防火墙 - DisassociateFirewall](api/unet-api/disassociate_firewall)
     - [获取弹性IP计费方式 - GetEIPPayMode](api/unet-api/get_eip_pay_mode)
     - [获取弹性IP价格 - GetEIPPrice](api/unet-api/get_eip_price)
     - [获取弹性IP带宽改动价格 - GetEIPUpgradePrice](api/unet-api/get_eip_upgrade_price)
