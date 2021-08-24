@@ -101,10 +101,6 @@
         "name": "文件存储 UFS"
       },
       {
-        "links": "/api/uarchive-api/README",
-        "name": "归档存储 UArchive"
-      },
-      {
         "links": "/api/udisk-api/README",
         "name": "云硬盘 UDisk"
       },
