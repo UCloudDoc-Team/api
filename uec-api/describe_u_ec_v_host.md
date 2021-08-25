@@ -68,7 +68,7 @@
 | **ImageName** | string | 镜像名称 |No|
 | **NodeIpList** | array[[*NodeIpList*](#NodeIpList)] | 外网ip集合（详情参考NodeIpList） |No|
 | **FirewallId** | string | 防火墙Id |No|
-| **ProductType** | string | 机器类型 |No|
+| **ProductType** | string | 机器类型(normal-经济型,hf-标准型,g-GPU型) |No|
 
 #### NodeIpList
 

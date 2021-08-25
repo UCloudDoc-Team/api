@@ -32,7 +32,7 @@
 | **MemSize** | int | 容器组总内存，单位MB |**Yes**|
 | **SubnetId** | string | 子网ID |**Yes**|
 | **Name** | string | 容器组名称（默认default） |No|
-| **ProductType** | string | 机型（normal-标准型，hf-高性能型，默认normal） |No|
+| **ProductType** | string | 机型（normal-经济型，hf-标准型，默认normal） |No|
 | **RestartStrategy** | int | 重启策略（0总是，1失败是，2永不，默认0） |No|
 | **ElasticIp** | string | 绑定外网ip（yes-绑定，no-不绑定，默认no） |No|
 | **Bandwidth** | int | 外网绑定的带宽（单位M，默认0，只有当ElasticIp为yes时，默认1） |No|

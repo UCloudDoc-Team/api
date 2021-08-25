@@ -41,10 +41,12 @@
 | **ChargeType** | int | 付费方式，1按时，2按月，3按年，默认2 |No|
 | **ChargeQuantity** | int | 月数或者年数，0计费到月底， 默认0 |No|
 | **SubnetId** | string | 子网ID |No|
-| **ProductType** | string | 产品类型：normal（标准型），hf（高频型） |No|
+| **ProductType** | string | 产品类型：normal（经济型），hf（标准型）,g(Gpu型) |No|
 | **FirewallId** | string | 外网防护墙规则组，默认 |No|
 | **Isp.N** | int | 运营商（1-电信，2-联通，4移动） |No|
 | **IsNeedOuterIp** | string | 是否需要外网ip（no-否） |No|
+| **Gpu** | int | Gpu卡核心数。仅Gpu机型支持此字段 |No|
+| **GpuType** | string | Gpu类型，枚举值["T4S"],ProductType为G时必填 |No|
 
 ### 响应字段
 
@@ -89,6 +91,11 @@ https://api.ucloud.cn/?Action=CreateUEcVHost
 &FirewallId=HGhqKtTx
 &Isp.n=9
 &IsNeedOuterIp=HTpGacyz
+&Gpu=6
+&Gpu=2
+&GpuType=aJvxPBNj
+&Gpu=3
+&GpuType=azCTinMc
 ```
 
 ### 响应示例

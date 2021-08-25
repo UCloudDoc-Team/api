@@ -64,7 +64,7 @@
 | **RestartStrategy** | int | 0：总是；1：失败是；2：永不 |No|
 | **DockerCount** | int | 容器数量 |No|
 | **DockerInfo** | array[[*DockerInfo*](#DockerInfo)] | 容器信息（详情参考DockerInfo） |No|
-| **ProductType** | string | 机器类型（normal通用型，hf高性能型） |No|
+| **ProductType** | string | 机器类型（normal经济型，hf标准型） |No|
 | **NetLimit** | int | 外网绑定的带宽 |No|
 | **FirewallId** | string | 外网防火墙id |No|
 | **StorVolumeInfo** | array[[*StorVolumeInfo*](#StorVolumeInfo)] | 存储卷信息（详情参考StorVolumeInfo） |No|

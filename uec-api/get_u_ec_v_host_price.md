@@ -35,8 +35,10 @@
 | **NetLimit** | int | 网络带宽限速，单位Mbs |No|
 | **ChargeType** | int | 付费方式，1按时，2按月，3按年，默认2 |No|
 | **ChargeQuantity** | int | 月数或者年数，0计费到月底， 默认0 |No|
-| **ProductType** | string | 产品类型：normal（标准型），hf（高频型），默认normal |No|
+| **ProductType** | string | 产品类型：normal（经济型），hf（标准型），g(Gpu型),默认normal |No|
 | **IpCount** | int | 外网IP的数量，默认1 |No|
+| **Gpu** | int | Gpu卡核心数。仅Gpu机型支持此字段 |No|
+| **GpuType** | string | Gpu类型，枚举值["T4"],ProductType为g时必填 |No|
 
 ### 响应字段
 
@@ -68,6 +70,8 @@ https://api.ucloud.cn/?Action=GetUEcVHostPrice
 &ChargeQuantity=6
 &ProductType=iZqfxAyg
 &IpCount=2
+&Gpu=2
+&GpuType=AmSGDjhO
 ```
 
 ### 响应示例
