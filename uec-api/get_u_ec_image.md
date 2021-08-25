@@ -53,10 +53,11 @@ uec2.0
 | **ImageType** | int | 镜像类型：1标准镜像，2行业镜像，3自定义镜像 |No|
 | **OcType** | string | 系统类型：unix, windows |No|
 | **ImageDesc** | string | 镜像描述 |No|
-| **State** | int | 镜像状态：镜像状态 1可用，2不可用 |No|
+| **State** | int | 镜像状态：镜像状态 1可用，2不可用，3制作中 |No|
 | **ImageSize** | int | 镜像大小，单位GB |No|
 | **CreateTime** | int | 镜像创建时间戳 |No|
 | **DeployInfoList** | array[[*DeployImageInfo*](#DeployImageInfo)] | 部署详情列表 |No|
+| **Gpu** | int | 是否支持Gpu(1-支持,0-不支持) |No|
 
 #### DeployImageInfo
 
