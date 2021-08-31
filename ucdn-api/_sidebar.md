@@ -3,8 +3,11 @@
 - [概览](api/ucdn-api/README.md)
 - [索引](api/ucdn-api/index.md)
 - **API**
+    - [添加证书 - AddCertificate](api/ucdn-api/add_certificate)
+    - [删除证书 - DeleteCertificate](api/ucdn-api/delete_certificate)
     - [获取预取任务状态 - DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)
     - [获取域名刷新任务状态 - DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
+    - [获取证书 - GetCertificateV2](api/ucdn-api/get_certificate_v2)
     - [【待下线】获取域名带宽数据 - GetNewUcdnDomainBandwidth](api/ucdn-api/get_new_ucdn_domain_bandwidth)
     - [获取域名命中率 - GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)
     - [【待下线】获取域名状态码监控 - GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)

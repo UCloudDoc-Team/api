@@ -4,8 +4,11 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[AddCertificate](api/ucdn-api/add_certificate)|添加证书|
+|[DeleteCertificate](api/ucdn-api/delete_certificate)|删除证书|
 |[DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)|获取预取任务状态|
 |[DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)|获取域名刷新任务状态|
+|[GetCertificateV2](api/ucdn-api/get_certificate_v2)|获取证书|
 |[GetNewUcdnDomainBandwidth](api/ucdn-api/get_new_ucdn_domain_bandwidth)|【待下线】获取域名带宽数据|
 |[GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)|获取域名命中率|
 |[GetNewUcdnDomainHttpCode](api/ucdn-api/get_new_ucdn_domain_http_code)|【待下线】获取域名状态码监控|
