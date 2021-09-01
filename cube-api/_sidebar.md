@@ -13,6 +13,7 @@
     - [获取Cube实例监控数据 - GetCubeMetrics](api/cube-api/get_cube_metrics)
     - [获取Pod的详细信息 - GetCubePod](api/cube-api/get_cube_pod)
     - [获取cube的价格 - GetCubePrice](api/cube-api/get_cube_price)
+    - [获取Cube的token - GetCubeToken](api/cube-api/get_cube_token)
     - [获取Cube的Deployment列表 - ListCubeDeployment](api/cube-api/list_cube_deployment)
     - [获取Pods列表 - ListCubePod](api/cube-api/list_cube_pod)
     - [修改Cube额外信息 - ModifyCubeExtendInfo](api/cube-api/modify_cube_extend_info)
