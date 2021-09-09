@@ -50,7 +50,7 @@
 | **Quantity** | int | 购买时长。默认:值 1。按小时购买（Dynamic/Postpay）时无需此参数。 月付时，此参数传0，代表购买至月末。 |No|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4", "T4S","2080Ti","2080Ti-4C","1080Ti"]，MachineType为G时必填 |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S"]，MachineType为G时必填 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
 | **NetCapability** | string | 网络增强特性。枚举值：Normal（默认），不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0（仅支持部分可用区，请参考控制台） |No|
 | **HotplugFeature** | boolean | 热升级特性。True为开启，False为未开启，默认False。 |No|
@@ -60,8 +60,8 @@
 | **SecurityGroupId** | string | 防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](api/unet-api/describe_firewall.html)。 |No|
 | **IsolationGroup** | string | 硬件隔离组id。可通过DescribeIsolationGroup获取。 |No|
 | **AlarmTemplateId** | int | 告警模板id，如果传了告警模板id，且告警模板id正确，则绑定告警模板。绑定告警模板失败只会在后台有日志，不会影响创建主机流程，也不会在前端报错。 |No|
-| **MachineType** | string | 云主机机型（V2.0），在本字段和字段UHostType中，仅需要其中1个字段即可。枚举值["N", "C", "G", "O", "OS", "OPRO", "OMAX", "O.BM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake"；"Intel/CascadelakeR"; “Amd/Epyc2”,"Amd/Auto"],默认值是"Intel/Auto"。 |No|
+| **MachineType** | string | 云主机机型（V2.0），在本字段和字段UHostType中，仅需要其中1个字段即可。枚举值["N", "C", "G", "O", "OS", "OM", "OPRO", "OMAX", "O.BM", "O.EPC"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
+| **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake", "Intel/CascadelakeR", "Intel/IceLake", "Amd/Epyc2", "Amd/Auto"],默认值是"Intel/Auto"。 |No|
 | **MaxCount** | int | 本次最大创建主机数量，取值范围是[1,100]，默认值为1。 |No|
 | **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
 | **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
@@ -75,6 +75,7 @@
 | **UserData** | string | 用户自定义数据。当镜像支持Cloud-init Feature时可填写此字段。注意：1、总数据量大小不超过 16K；2、使用base64编码 |No|
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持“Cloud-init”Feature时可填写此字段。取值 >“On” 自动挂载（默认值）> “Off” 不自动挂载。 |No|
 | **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须 |No|
+| **Features.UNI** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启，仅与 NetCapability Normal 兼容。 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -96,82 +97,82 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUHostInstance
-&Region=KhbfjbHG
-&Zone=YYyQqOnq
-&ProjectId=QgTPtxIP
-&ImageId=FAVBOcJK
-&Disks.N.IsBoot=AAsMUJWA
-&Disks.N.Type=VXTUCMmb
-&Disks.N.Size=5
-&LoginMode=iGBJYCla
-&Password=ynIdzhmq
-&Name=CUlFCZIb
-&Tag=kmaysozr
-&ChargeType=fvBjGwPN
-&Quantity=8
-&UHostType=FiqyYvny
-&CPU=1
-&Memory=4
-&GpuType=CHVZbAaz
-&GPU=1
-&VirtualGpu.GpuType=XtrUwRYb
-&StorageType=tigsuUdQ
-&BootDiskSpace=6
-&DiskSpace=7
-&NetCapability=sxnGmrVv
+&Region=IrPRKVru
+&Zone=YxunehQG
+&ProjectId=SGGYxkiC
+&ImageId=WTrQVOVc
+&Disks.N.IsBoot=RprtMlkM
+&Disks.N.Type=cTNMVMgN
+&Disks.N.Size=4
+&LoginMode=ZDxcwBvI
+&Password=HjhrLmyV
+&Name=kWFfXPdF
+&Tag=mZmpwPll
+&ChargeType=SVUvekbj
+&Quantity=7
+&UHostType=xESfaKXW
+&CPU=7
+&Memory=9
+&GpuType=wcdlufLM
+&GPU=4
+&StorageType=hidVBsZq
+&BootDiskSpace=9
+&DiskSpace=9
+&NetCapability=UAaqyFEH
 &TimemachineFeature=yes
 &HotplugFeature=true
-&DiskPassword=cYUMmjlm
-&NetworkId=hUoFBsgO
-&VPCId=DhMenhVA
-&SubnetId=noCuOhjw
-&PrivateIp.N=BdwKOwXr
-&PrivateMac=iLUfFGcV
-&SecurityGroupId=quwhwKHz
-&HostType=uzsnNonr
-&InstallAgent=ZUDFXCRB
-&ResourceType=bUQOZLlj
-&Disks.N.BackupType=RQtOVzWi
-&IsolationGroup=qApGtgQL
-&Disks.N.Encrypted=true
-&Disks.N.KmsKeyId=QzbtgMyC
-&Disks.N.CouponId=tWjcmLlH
-&AlarmTemplateId=7
-&MachineType=fVyTQJSg
-&MinimalCpuPlatform=aLRBsBRN
-&MaxCount=6
-&NetworkInterface.N.EIP.Bandwidth=8
-&NetworkInterface.N.EIP.PayMode=RLecVWDN
-&NetworkInterface.N.EIP.ShareBandwidthId=MMlHWrvH
-&NetworkInterface.N.EIP.GlobalSSH.Area=osMPvQDW
-&NetworkInterface.N.EIP.OperatorName=zwoYMTeE
+&DiskPassword=ZhNHQpUa
+&NetworkId=CUvjmHLR
+&VPCId=INGnMbev
+&SubnetId=BzArPHsE
+&PrivateIp.N=kINtqkDh
+&PrivateMac=kpjksQBp
+&SecurityGroupId=jbPxuRXI
+&HostType=EMqnGIZZ
+&InstallAgent=mOfkpefj
+&ResourceType=KCqMZlIl
+&Disks.N.BackupType=LiQiEorj
+&IsolationGroup=MyYUcDKC
+&Disks.N.Encrypted=false
+&Disks.N.KmsKeyId=rwVpvLJi
+&Disks.N.CouponId=PvRWpaRb
+&AlarmTemplateId=2
+&MachineType=MJsjIQFC
+&MinimalCpuPlatform=VCokccwd
+&MaxCount=5
+&NetworkInterface.N.EIP.Bandwidth=9
+&NetworkInterface.N.EIP.PayMode=JujSAqbO
+&NetworkInterface.N.EIP.ShareBandwidthId=kHfdnNWd
+&NetworkInterface.N.EIP.GlobalSSH.Area=xyYTjrZB
+&NetworkInterface.N.EIP.OperatorName=WNXiYXjc
 &NetworkInterface.N.EIP.GlobalSSH.Port=1
-&NetworkInterface.N.EIP.CouponId=AphshTwN
-&NetworkInterface.N.EIP.GlobalSSH.AreaCode=lCHBBdbR
-&SetId=3
-&HostIp=kVpUTJMn
-&NetworkInterface.N.IPv6.ShareBandwidthId=DTksuRsm
-&UserData=TSbgFcwJ
-&Disks.N.Id=uptksdyg
-&AutoDataDiskInit=yAeMSDfv
-&NetworkInterface.N.IPv6.Address=mxQiIhBr
-&CharacterName=UQxCohuB
-&PromotionId=CkffmvlQ
-&ImageOsName=ndeFwuyV
-&PodId=wlHTTKtZ
-&BillActivityId=1
-&BillActivityRuleId=1
-&RestrictMode=MvCsntKy
-&Volumes.N.Type=mnAAYUMy
-&Volumes.N.IsBoot=sGQgalZK
-&Volumes.N.Size=6
-&Volumes.N.VolumeId=YGrkhwXY
-&Volumes.N.CouponId=VlowOoiV
+&NetworkInterface.N.EIP.CouponId=GFzoXEOo
+&NetworkInterface.N.EIP.GlobalSSH.AreaCode=JKcKCFjC
+&SetId=1
+&HostIp=VxccviHh
+&NetworkInterface.N.IPv6.ShareBandwidthId=nYbcxXrf
+&UserData=wTkIjHzw
+&Disks.N.Id=YnyPnaOj
+&AutoDataDiskInit=MynHIYht
+&NetworkInterface.N.IPv6.Address=wzQVOnfd
+&CharacterName=rDPtrUlu
+&PromotionId=iIzhvRBn
+&ImageOsName=XojzwILg
+&PodId=qwVrfmTT
+&BillActivityId=5
+&BillActivityRuleId=3
+&RestrictMode=kRfUiaKA
+&Volumes.N.Type=FKimwmGX
+&Volumes.N.IsBoot=zjLJQmIe
+&Volumes.N.Size=5
+&Volumes.N.VolumeId=lYyhJqrV
+&Volumes.N.CouponId=oiISGCSv
 &HpcEnhanced=false
-&NetworkInterface.N.CreateCernetIp=false
-&VirtualGpu.GPU=4
-&KeyPairId=VJamggNn
-&CouponId=erILPDhN
+&NetworkInterface.N.CreateCernetIp=true
+&KeyPairId=gYzfeRZI
+&SecGroupId.N=shbyPlMw
+&Features.UNI=PCaQdRus
+&CouponId=LIgqlYLP
 ```
 
 ### 响应示例
@@ -180,11 +181,11 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 {
   "Action": "CreateUHostInstanceResponse",
   "IPs": [
-    "UseKslnY"
+    "iUkWSFjX"
   ],
   "RetCode": 0,
   "UHostIds": [
-    "SZqxQvzE"
+    "GLKEpaXW"
   ]
 }
 ```
