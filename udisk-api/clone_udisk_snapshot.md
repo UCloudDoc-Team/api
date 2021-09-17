@@ -43,7 +43,8 @@
 | **UDataArkMode** | string | 【开启数据方舟入口已关闭】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
 | **SnapshotService** | string | 是否开启快照服务（开启快照服务，可免费开启数据方舟）。Yes：开启，No：不开启，默认值：No |No|
 | **Tag** | string | 业务组 默认：Default |No|
-| **RdmaClusterId** | string | RDMA集群id。指定RSSD云盘克隆到对应的RDMA集群。 |No|
+| **RdmaClusterId** | string | 【已废弃】RDMA集群id。指定RSSD云盘克隆到对应的RDMA集群。 |No|
+| **HostId** | string | Host实例ID。克隆出的云盘可直接挂载到该主机上。 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -71,6 +72,7 @@ https://api.ucloud.cn/?Action=CloneUDiskSnapshot
 &Tag=LSaZloNt
 &SnapshotService=qXPYAcHA
 &RdmaClusterId=hmzHOiGl
+&HostId=lnQqLvCP
 ```
 
 ### 响应示例
