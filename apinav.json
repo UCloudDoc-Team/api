@@ -53,10 +53,6 @@
       {
         "links": "/api/pathx-api/README",
         "name": "全球动态加速 PathX"
-      },
-      {
-        "links": "/api/ugn-api/README",
-        "name": "云联网 UGN"
       }
     ]
   },
