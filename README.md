@@ -39,7 +39,6 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |私有网络 UVPC|[文档](/api/vpc2.0-api/)|
 |VPN网关 IPSec VPN|[文档](/api/ipsecvpn-api/)|
 |全球动态加速 PathX|[文档](/api/pathx-api/)|
-|云联网 UGN|[文档](/api/ugn-api/)|
 
 ### 数据库
 | 产品 | 相关链接 |
