@@ -51,10 +51,6 @@
         "name": "VPN网关 IPSec VPN"
       },
       {
-        "links": "/api/udpn-api/README",
-        "name": "高速通道 UDPN"
-      },
-      {
         "links": "/api/pathx-api/README",
         "name": "全球动态加速 PathX"
       },
