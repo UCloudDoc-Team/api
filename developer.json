@@ -49,12 +49,18 @@
         {
           "name": "OpenSDK PHP",
           "links": "/opensdk-php/README"
+        },
+        {
+          "name": "OpenSDK Javascript",
+          "links": "/opensdk-js/README"
         }
       ],
       "listpros": [
         "opensdk-go",
         "opensdk-java",
-        "opensdk-python"
+        "opensdk-python",
+        "opensdk-php",
+        "opensdk-js"
       ]
     },
     {
