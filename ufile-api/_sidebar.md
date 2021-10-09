@@ -9,6 +9,7 @@
     - [删除令牌 - DeleteUFileToken](api/ufile-api/delete_ufile_token)
     - [获取Bucket信息 - DescribeBucket](api/ufile-api/describe_bucket)
     - [获取令牌信息 - DescribeUFileToken](api/ufile-api/describe_ufile_token)
+    - [查看日消费报表 - GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)
     - [查看配额状态 - GetUFileQuota](api/ufile-api/get_ufile_quota)
     - [获取配额信息 - GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)
     - [查询配额支付价格 - GetUFileQuotaPrice](api/ufile-api/get_ufile_quota_price)
