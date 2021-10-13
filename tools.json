@@ -1,0 +1,356 @@
+{
+  "tools": [
+    {
+      "listname": "开发者工具",
+      "listvalue": [
+        {
+          "name": "API浏览器 UAPI",
+          "img": "https://static.ucloud.cn/5e55f0bd008f9115d362efacfbb96877.png",
+          "sublinks": [
+            {
+              "links": "https://console.ucloud.cn/uapi/ucloudapi",
+              "name": "立即使用",
+              "img": ""
+            },
+            {
+              "links": "/uapi/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "云命令行 CloudShell",
+          "img": "https://static.ucloud.cn/ed3f2e601903a2ef5bdfd4b0c63ea221.png",
+          "sublinks": [
+            {
+              "links": "/cloudshell/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "命令行管理工具 CLI",
+          "img": "https://static.ucloud.cn/98be705b3577f53f1ce98d8b0b7c8127.png",
+          "sublinks": [
+            {
+              "links": "/cli/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "资源编排工具 Terraform",
+          "img": "https://static.ucloud.cn/6a522902003b8f6c3689caa16fd4829a.png",
+          "sublinks": [
+            {
+              "links": "/terraform/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "镜像构建工具 Packer",
+          "img": "https://static.ucloud.cn/42a1453736b02be397ada0224fa5803d.png",
+          "sublinks": [
+            {
+              "links": "/uhost/guide/image/packer",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "OpenAPI SDK",
+      "listvalue": [
+        {
+          "name": "OpenSDK Go",
+          "img": "https://static.ucloud.cn/39584ea7fbb884ad986e581ea7ac51d9.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ucloud-sdk-go",
+              "name": "Github",
+              "img": ""
+            },
+            {
+              "links": "/opensdk-go/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "OpenSDK Java",
+          "img": "https://static.ucloud.cn/c5d2a358301a9b819e607032d703587d.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ucloud-sdk-java",
+              "name": "Github",
+              "img": ""
+            },
+            {
+              "links": "/opensdk-java/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "OpenSDK Python",
+          "img": "https://static.ucloud.cn/eb0142529308141322a8022311662397.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ucloud-sdk-python",
+              "name": "Github",
+              "img": ""
+            },
+            {
+              "links": "/opensdk-python/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "OpenSDK PHP",
+          "img": "https://static.ucloud.cn/313812c73f1a4de02a92ab6a17a449c5.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ucloud-sdk-php",
+              "name": "Github",
+              "img": ""
+            },
+            {
+              "links": "/opensdk-php/README",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "短信包 USMS",
+      "listvalue": [
+        {
+          "name": "Python",
+          "img": "https://static.ucloud.cn/eb0142529308141322a8022311662397.png",
+          "sublinks": [
+            {
+              "links": "/usms/sdk_docs/7003",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Go",
+          "img": "https://static.ucloud.cn/39584ea7fbb884ad986e581ea7ac51d9.png",
+          "sublinks": [
+            {
+              "links": "/usms/sdk_docs/7007",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Java",
+          "img": "https://static.ucloud.cn/c5d2a358301a9b819e607032d703587d.png",
+          "sublinks": [
+            {
+              "links": "/usms/sdk_docs/7009",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "PHP",
+          "img": "https://static.ucloud.cn/313812c73f1a4de02a92ab6a17a449c5.png",
+          "sublinks": [
+            {
+              "links": "/usms/sdk_docs/7005",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "对象存储 US3",
+      "listvalue": [
+        {
+          "name": "Javascript",
+          "img": "https://static.ucloud.cn/d149e3ce8a8d3643ee740fcd78758990.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-jssdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "C++",
+          "img": "https://static.ucloud.cn/2bccb99dc95312f0a6606007f8e0b866.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-cppsdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "C",
+          "img": "https://static.ucloud.cn/78836a1dbc1cfd1c3d7c761df773b977.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-csdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "PHP",
+          "img": "https://static.ucloud.cn/313812c73f1a4de02a92ab6a17a449c5.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-phpsdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Python",
+          "img": "https://static.ucloud.cn/eb0142529308141322a8022311662397.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ufile-sdk-python",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Go",
+          "img": "https://static.ucloud.cn/39584ea7fbb884ad986e581ea7ac51d9.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-gosdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "C#",
+          "img": "https://static.ucloud.cn/e6e70ceb4fd18c263a1fda00d10637b8.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-csharpsdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "NodeJS",
+          "img": "https://static.ucloud.cn/f18182e049c14af6b4d0ca61306d8794.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ufilesdk-dev/ufile-nodejssdk",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Java",
+          "img": "https://static.ucloud.cn/c5d2a358301a9b819e607032d703587d.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ufile-sdk-java",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "iOS",
+          "img": "https://static.ucloud.cn/fc4c86a376c7a49b2d76e16c156bd807.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ufile-sdk-ios",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Android",
+          "img": "https://static.ucloud.cn/0c943e367249c27acdd86ea183edd172.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ufile-sdk-android",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "移动网络探测工具 UMQA",
+      "listvalue": [
+        {
+          "name": "iOS",
+          "img": "https://static.ucloud.cn/fc4c86a376c7a49b2d76e16c156bd807.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/netanalysis-sdk-ios",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        },
+        {
+          "name": "Android",
+          "img": "https://static.ucloud.cn/0c943e367249c27acdd86ea183edd172.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/netanalysis-sdk-android",
+              "name": "Github",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "其他",
+      "listvalue": [
+        {
+          "name": "UToken SDK",
+          "img": "https://static.ucloud.cn/574f41592d3aeb09c10ca149a332ffc0.png",
+          "sublinks": [
+            {
+              "links": "/utoken/sdk/prerequisites",
+              "name": "查看文档",
+              "img": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

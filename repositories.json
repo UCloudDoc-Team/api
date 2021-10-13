@@ -1,0 +1,68 @@
+{
+  "repositories": [
+    {
+      "organization": null,
+      "name": "react-components",
+      "stargazers_count": 46,
+      "forks_count": 14,
+      "watchers_count": 2,
+      "html_url": "https://github.com/UCloud-FE/react-components",
+      "description": "React components",
+      "language": "JavaScript",
+      "topics": [
+        "component",
+        "components",
+        "react",
+        "react-components"
+      ]
+    },
+    {
+      "organization": null,
+      "name": "terraform-provider-ucloud",
+      "stargazers_count": 50,
+      "forks_count": 15,
+      "watchers_count": 12,
+      "html_url": "https://github.com/ucloud/terraform-provider-ucloud",
+      "description": "Terraform is an awesome tool to implement Infrastructure as Code and GitOps",
+      "language": "Go",
+      "topics": [
+        "terraform",
+        "terraform-provider",
+        "ucloud"
+      ]
+    },
+    {
+      "organization": null,
+      "name": "netanalysis-sdk-android",
+      "stargazers_count": 39,
+      "forks_count": 8,
+      "watchers_count": 4,
+      "html_url": "https://github.com/ucloud/netanalysis-sdk-android",
+      "description": null,
+      "language": "Java",
+      "topics": []
+    },
+    {
+      "organization": null,
+      "name": "netanalysis-sdk-ios",
+      "stargazers_count": 28,
+      "forks_count": 7,
+      "watchers_count": 5,
+      "html_url": "https://github.com/ucloud/netanalysis-sdk-ios",
+      "description": null,
+      "language": "Objective-C",
+      "topics": []
+    },
+    {
+      "organization": null,
+      "name": "vision",
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "watchers_count": 2,
+      "html_url": "https://github.com/UCloud-FE/vision",
+      "description": "A framework to create the WYSIWYG Web Page Editor of yours.",
+      "language": "JavaScript",
+      "topics": []
+    }
+  ]
+}

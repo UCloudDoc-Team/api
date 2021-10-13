@@ -1,0 +1,518 @@
+{
+  "apis": [
+    {
+      "listname": "计算",
+      "listvalue": [
+        {
+          "name": "云主机 UHost",
+          "img": "uhost",
+          "sublinks": [
+            {
+              "links": "/api/uhost-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "物理云主机 UPHost",
+          "img": "uphost",
+          "sublinks": [
+            {
+              "links": "/api/uphost-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "私有专区 UDHost",
+          "img": "udhost",
+          "sublinks": [
+            {
+              "links": "/api/udhost-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "容器云 UK8S",
+          "img": "uk8s",
+          "sublinks": [
+            {
+              "links": "/api/uk8s-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "容器实例 Cube",
+          "img": "cube",
+          "sublinks": [
+            {
+              "links": "/api/cube-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "容器镜像库 UHub",
+          "img": "uhub",
+          "sublinks": [
+            {
+              "links": "/api/uhub-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "网络",
+      "listvalue": [
+        {
+          "name": "基础网络 UNet",
+          "img": "unet",
+          "sublinks": [
+            {
+              "links": "/api/unet-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "负载均衡 ULB",
+          "img": "ulb",
+          "sublinks": [
+            {
+              "links": "/api/ulb-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "私有网络 UVPC",
+          "img": "vpc",
+          "sublinks": [
+            {
+              "links": "/api/vpc2.0-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "全球动态加速 PathX",
+          "img": "ugaa",
+          "sublinks": [
+            {
+              "links": "/api/pathx-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "私有网络",
+      "listvalue": [
+        {
+          "name": "VPN网关 IPSecVPN",
+          "img": "ipsecvpn",
+          "sublinks": [
+            {
+              "links": "/api/ipsecvpn-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "数据库",
+      "listvalue": [
+        {
+          "name": "云数据库 MySQL UDB",
+          "img": "udb",
+          "sublinks": [
+            {
+              "links": "/api/udb-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "云数据库 MongoDB UDB",
+          "img": "udb",
+          "sublinks": [
+            {
+              "links": "/api/udb-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "云内存 UMem Memcache",
+          "img": "umem",
+          "sublinks": [
+            {
+              "links": "/api/umem-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "云内存 UMem Redis",
+          "img": "umem",
+          "sublinks": [
+            {
+              "links": "/api/umem-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "分布式数据库 UDDB",
+          "img": "uddb",
+          "sublinks": [
+            {
+              "links": "/api/uddb-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "存储",
+      "listvalue": [
+        {
+          "name": "云硬盘 UDisk",
+          "img": "udisk",
+          "sublinks": [
+            {
+              "links": "/api/udisk-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "文件存储 UFS",
+          "img": "ufs",
+          "sublinks": [
+            {
+              "links": "/api/ufs-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "对象存储 US3",
+          "img": "ufile",
+          "sublinks": [
+            {
+              "links": "/api/ufile-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "磁盘快照服务 USnap",
+          "img": "usnap",
+          "sublinks": [
+            {
+              "links": "/api/usnap-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "云分发",
+      "listvalue": [
+        {
+          "name": "云分发 UCDN",
+          "img": "ucdn",
+          "sublinks": [
+            {
+              "links": "/api/ucdn-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "视频服务",
+      "listvalue": [
+        {
+          "name": "云直播 ULive",
+          "img": "ulive",
+          "sublinks": [
+            {
+              "links": "/api/ulive-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "媒体工厂 UMedia",
+          "img": "umedia",
+          "sublinks": [
+            {
+              "links": "/api/umedia-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "实时音视频 URTC",
+          "img": "urtc",
+          "sublinks": [
+            {
+              "links": "/api/urtc-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "边缘计算",
+      "listvalue": [
+        {
+          "name": "边缘计算虚拟机 UEC-VM",
+          "img": "uodn2",
+          "sublinks": [
+            {
+              "links": "/api/uec-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "数据分析",
+      "listvalue": [
+        {
+          "name": "数据湖分析 USQL",
+          "img": "usql",
+          "sublinks": [
+            {
+              "links": "/api/usql-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "Kafka消息队列 UKafka",
+          "img": "ukafka",
+          "sublinks": [
+            {
+              "links": "/api/ukafka-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "人工智能",
+      "listvalue": null
+    },
+    {
+      "listname": "物联网",
+      "listvalue": null
+    },
+    {
+      "listname": "安全防护",
+      "listvalue": [
+        {
+          "name": "WEB应用防火墙 UWAF",
+          "img": "uewaf",
+          "sublinks": [
+            {
+              "links": "/api/uewaf-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "DDoS攻击防护 UDDoS",
+          "img": "uads",
+          "sublinks": [
+            {
+              "links": "/api/uddos-uclean-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "安全合规",
+      "listvalue": [
+        {
+          "name": "云安全中心 USC",
+          "img": "usa",
+          "sublinks": [
+            {
+              "links": "/api/usa-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "密钥管理服务 UKMS",
+          "img": "ukms",
+          "sublinks": [
+            {
+              "links": "/api/ukms-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "企业应用",
+      "listvalue": [
+        {
+          "name": "域名服务 UDNR",
+          "img": "udnr",
+          "sublinks": [
+            {
+              "links": "/api/udnrv2-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "RMQ消息队列 URocketMQ",
+          "img": "mq",
+          "sublinks": [
+            {
+              "links": "/api/urocketmq-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "云通信",
+      "listvalue": [
+        {
+          "name": "短信服务 USMS",
+          "img": "message",
+          "sublinks": [
+            {
+              "links": "/api/usms-api/README",
+              "name": "查看文档"
+            }
+          ]
+        },
+        {
+          "name": "智能短信 ISMS",
+          "img": "isms",
+          "sublinks": [
+            {
+              "links": "/api/isms-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "监控与运维",
+      "listvalue": [
+        {
+          "name": "资源监控 UMon",
+          "img": "umon",
+          "sublinks": [
+            {
+              "links": "/api/umon-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "多云与迁移",
+      "listvalue": [
+        {
+          "name": "数据传输服务 UDTS",
+          "img": "udts",
+          "sublinks": [
+            {
+              "links": "/api/udts-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "混合云",
+      "listvalue": [
+        {
+          "name": "混合云 UHybrid",
+          "img": "uhybrid",
+          "sublinks": [
+            {
+              "links": "/api/uhybridv3-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "私有云",
+      "listvalue": null
+    },
+    {
+      "listname": "账户服务",
+      "listvalue": null
+    },
+    {
+      "listname": "云市场",
+      "listvalue": null
+    },
+    {
+      "listname": "账号与权限",
+      "listvalue": [
+        {
+          "name": "账号与权限管理 UAM",
+          "img": "apikey",
+          "sublinks": [
+            {
+              "links": "/api/uaccount-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "购买与计费",
+      "listvalue": [
+        {
+          "name": "账单管理 ",
+          "img": "uencrypt",
+          "sublinks": [
+            {
+              "links": "/api/ubill-api/README",
+              "name": "查看文档"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "政策与规范",
+      "listvalue": null
+    }
+  ]
+}
