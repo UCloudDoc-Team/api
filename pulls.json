@@ -199,6 +199,186 @@
       }
     },
     {
+      "merged_at": "2019-04-20T12:16:52+02:00",
+      "opened_at": "2019-04-18T03:41:14Z",
+      "opened_by": "WANG Chao",
+      "number": null,
+      "title": "RAS/CEC: Increment cec_entered under the mutex lock",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=09cbd2197e9291d6a3d3f42873f06ca1f388c1a4",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=09cbd2197e9291d6a3d3f42873f06ca1f388c1a4",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=09cbd2197e9291d6a3d3f42873f06ca1f388c1a4",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=09cbd2197e9291d6a3d3f42873f06ca1f388c1a4",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-04-16T15:37:33+02:00",
+      "opened_at": "2019-04-12T15:55:39+08:00",
+      "opened_by": "WANG Chao",
+      "number": null,
+      "title": "x86/kvm: move kvm_load/put_guest_xcr0 into atomic context",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1811d979c71621aafc7b879477202d286f7e863b",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1811d979c71621aafc7b879477202d286f7e863b",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1811d979c71621aafc7b879477202d286f7e863b",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1811d979c71621aafc7b879477202d286f7e863b",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-03-29T13:29:15-07:00",
+      "opened_at": "2019-03-28T12:43:23+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "openvswitch: Make metadata_dst tunnel work in IP_TUNNEL_INFO_BRIDGE mode",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18b6f717483a835fb98de9f0df6c724df9324e78",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18b6f717483a835fb98de9f0df6c724df9324e78",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18b6f717483a835fb98de9f0df6c724df9324e78",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18b6f717483a835fb98de9f0df6c724df9324e78",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-03-05T12:57:28-08:00",
+      "opened_at": "2019-03-05T08:29:28+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "net/sched: act_tunnel_key: Fix double free dst_cache",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4177c5d94264b57f426ef5c45a788808d1a1e536",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4177c5d94264b57f426ef5c45a788808d1a1e536",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4177c5d94264b57f426ef5c45a788808d1a1e536",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4177c5d94264b57f426ef5c45a788808d1a1e536",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-03-04T20:05:34-06:00",
+      "opened_at": "2019-01-28T19:47:28+08:00",
+      "opened_by": "Yao Liu",
+      "number": null,
+      "title": "cifs: Fix NULL pointer dereference of devname",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=68e2672f8fbd1e04982b8d2798dd318bf2515dd2",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=68e2672f8fbd1e04982b8d2798dd318bf2515dd2",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=68e2672f8fbd1e04982b8d2798dd318bf2515dd2",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=68e2672f8fbd1e04982b8d2798dd318bf2515dd2",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-03-01T14:25:06+01:00",
+      "opened_at": "2019-02-22T17:00:43+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "netfilter: nft_tunnel: Add dst_cache support",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3e511d5652ce1c0cfb0092491e77a76ab80ed1f3",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3e511d5652ce1c0cfb0092491e77a76ab80ed1f3",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3e511d5652ce1c0cfb0092491e77a76ab80ed1f3",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3e511d5652ce1c0cfb0092491e77a76ab80ed1f3",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-02-27T12:50:17-08:00",
+      "opened_at": "2019-02-24T11:36:20+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "route: Add multipath_hash in flowi_common to make user-define hash",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=24ba14406c5c8e33fcbe064f77b3ab01b84ec830",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=24ba14406c5c8e33fcbe064f77b3ab01b84ec830",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=24ba14406c5c8e33fcbe064f77b3ab01b84ec830",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=24ba14406c5c8e33fcbe064f77b3ab01b84ec830",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-02-24T22:22:33-08:00",
+      "opened_at": "2019-02-24T08:24:45+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Add ip tunnel tun_info type dst_cache in ip_tunnel_xmit",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=186d93669fe0cba252d42a42ddcfdbe9f2ee101d",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=186d93669fe0cba252d42a42ddcfdbe9f2ee101d",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=186d93669fe0cba252d42a42ddcfdbe9f2ee101d",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=186d93669fe0cba252d42a42ddcfdbe9f2ee101d",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-02-24T22:13:49-08:00",
+      "opened_at": "2019-02-23T21:32:54+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Add dst_cache support in lwtunnel_state of ip tunnel",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3d25eabbbf6717bc0465754a66d6ebe51d5faa54",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3d25eabbbf6717bc0465754a66d6ebe51d5faa54",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3d25eabbbf6717bc0465754a66d6ebe51d5faa54",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=3d25eabbbf6717bc0465754a66d6ebe51d5faa54",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-02-24T21:51:55-08:00",
+      "opened_at": "2019-02-22T15:58:12+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "net/sched: act_tunnel_key: Add dst_cache support",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=41411e2fd6b8dcc91dadcc4f9d553b93e66da3b5",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=41411e2fd6b8dcc91dadcc4f9d553b93e66da3b5",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=41411e2fd6b8dcc91dadcc4f9d553b93e66da3b5",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=41411e2fd6b8dcc91dadcc4f9d553b93e66da3b5",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
       "merged_at": "2019-02-10T08:25:31Z",
       "opened_at": "2019-02-03T14:24:45Z",
       "opened_by": "wangrzneu",
@@ -217,6 +397,276 @@
       }
     },
     {
+      "merged_at": "2019-02-04T14:39:58+01:00",
+      "opened_at": "2019-01-29T15:51:17+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "netfilter: nft_tunnel: Add NFTA_TUNNEL_MODE options",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=a46c52d9f2659498f0c0871f7f2333a692c243fe",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=a46c52d9f2659498f0c0871f7f2333a692c243fe",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=a46c52d9f2659498f0c0871f7f2333a692c243fe",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=a46c52d9f2659498f0c0871f7f2333a692c243fe",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-28T12:08:30-05:00",
+      "opened_at": "2019-01-28T19:44:14+08:00",
+      "opened_by": "Yao Liu",
+      "number": null,
+      "title": "nfs: Fix NULL pointer dereference of dev_name",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=80ff00172407e0aad4b10b94ef0816fc3e7813cb",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=80ff00172407e0aad4b10b94ef0816fc3e7813cb",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=80ff00172407e0aad4b10b94ef0816fc3e7813cb",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=80ff00172407e0aad4b10b94ef0816fc3e7813cb",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-28T07:36:22+01:00",
+      "opened_at": "2019-01-24T22:23:49+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "meta: add iifkind and oifkind support",
+      "html_url": "http://git.netfilter.org/nftables/commit/?id=512795a673f999fb04b84dbbbe41174e9c581430",
+      "commits_url": "http://git.netfilter.org/nftables/commit/?id=512795a673f999fb04b84dbbbe41174e9c581430",
+      "checks_url": "http://git.netfilter.org/nftables/commit/?id=512795a673f999fb04b84dbbbe41174e9c581430",
+      "files_url": "http://git.netfilter.org/nftables/commit/?id=512795a673f999fb04b84dbbbe41174e9c581430",
+      "base": {
+        "repository": {
+          "organization": "netfilter",
+          "name": "nftables",
+          "html_url": "http://git.netfilter.org/nftables"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-26T09:43:03-08:00",
+      "opened_at": "2019-01-22T18:39:52+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_gre: Refactor collect metatdata mode tunnel xmit to ip_md_tunnel_xmit",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=962924fa2b7afa92b51088965ce5dca65ad90da7",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=962924fa2b7afa92b51088965ce5dca65ad90da7",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=962924fa2b7afa92b51088965ce5dca65ad90da7",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=962924fa2b7afa92b51088965ce5dca65ad90da7",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-26T09:43:03-08:00",
+      "opened_at": "2019-01-22T18:39:51+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Fix route fl4 init in ip_md_tunnel_xmit",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=6e6b904ad4f9aed43ec320afbd5a52ed8461ab41",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=6e6b904ad4f9aed43ec320afbd5a52ed8461ab41",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=6e6b904ad4f9aed43ec320afbd5a52ed8461ab41",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=6e6b904ad4f9aed43ec320afbd5a52ed8461ab41",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-26T09:43:03-08:00",
+      "opened_at": "2019-01-22T18:39:50+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Add tnl_update_pmtu in ip_md_tunnel_xmit",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=c8b34e680a090ab8dc42f8331020e31052b49a70",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=c8b34e680a090ab8dc42f8331020e31052b49a70",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=c8b34e680a090ab8dc42f8331020e31052b49a70",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=c8b34e680a090ab8dc42f8331020e31052b49a70",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-26T09:43:03-08:00",
+      "opened_at": "2019-01-22T18:39:49+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Add ip tunnel dst_cache in ip_md_tunnel_xmit",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=f46fe4f8d787bd66005120460317939b8c6d7c70",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=f46fe4f8d787bd66005120460317939b8c6d7c70",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=f46fe4f8d787bd66005120460317939b8c6d7c70",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=f46fe4f8d787bd66005120460317939b8c6d7c70",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-24T17:54:12-08:00",
+      "opened_at": "2019-01-19T13:11:25+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ip_tunnel: Make none-tunnel-dst tunnel port work with lwtunnel",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d71b57532d70c03f4671dd04e84157ac6bf021b0",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d71b57532d70c03f4671dd04e84157ac6bf021b0",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d71b57532d70c03f4671dd04e84157ac6bf021b0",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d71b57532d70c03f4671dd04e84157ac6bf021b0",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-25T09:17:27+13:00",
+      "opened_at": "2019-01-02T11:57:00+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "iproute: Set ip/ip6 lwtunnel flags",
+      "html_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=3d65cefbefc86a53877f1e6461a9461e5b8fd7b3",
+      "commits_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=3d65cefbefc86a53877f1e6461a9461e5b8fd7b3",
+      "checks_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=3d65cefbefc86a53877f1e6461a9461e5b8fd7b3",
+      "files_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=3d65cefbefc86a53877f1e6461a9461e5b8fd7b3",
+      "base": {
+        "repository": {
+          "organization": "network",
+          "name": "iproute2",
+          "html_url": "https://git.kernel.org/pub/scm/network/iproute2"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-18T15:58:20+01:00",
+      "opened_at": "2019-01-16T07:53:51+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "netfilter: nft_meta: Add NFT_META_I/OIFKIND meta type",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=0fb4d21956f4a9af225594a46857ccf29bd747bc",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=0fb4d21956f4a9af225594a46857ccf29bd747bc",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=0fb4d21956f4a9af225594a46857ccf29bd747bc",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git/commit/?id=0fb4d21956f4a9af225594a46857ccf29bd747bc",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-11T00:55:37+01:00",
+      "opened_at": "2019-01-10T14:51:35+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "netfilter: nft_flow_offload: fix interaction with vrf slave device",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=10f4e765879e514e1ce7f52ed26603047af196e2",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=10f4e765879e514e1ce7f52ed26603047af196e2",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=10f4e765879e514e1ce7f52ed26603047af196e2",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=10f4e765879e514e1ce7f52ed26603047af196e2",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-09T23:25:02+01:00",
+      "opened_at": "2019-01-09T10:40:11+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "netfilter: nft_flow_offload: Fix reverse route lookup",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a799aea0988ea0d1b1f263e996fdad2f6133c680",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a799aea0988ea0d1b1f263e996fdad2f6133c680",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a799aea0988ea0d1b1f263e996fdad2f6133c680",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a799aea0988ea0d1b1f263e996fdad2f6133c680",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-09T10:35:56+01:00",
+      "opened_at": "2018-12-11T00:37:25+08:00",
+      "opened_by": "WANG Chao",
+      "number": null,
+      "title": "x86, modpost: Replace last remnants of RETPOLINE with CONFIG_RETPOLINE",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e4f358916d528d479c3c12bd2fd03f2d5a576380",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e4f358916d528d479c3c12bd2fd03f2d5a576380",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e4f358916d528d479c3c12bd2fd03f2d5a576380",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e4f358916d528d479c3c12bd2fd03f2d5a576380",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
+      "merged_at": "2018-12-31T22:13:13-08:00",
+      "opened_at": "2018-12-24T16:49:44+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "iprule: Add tun_id filed in the selector",
+      "html_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=cb65a9cb81c95028bc97f421b0c4cfbf749f621c",
+      "commits_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=cb65a9cb81c95028bc97f421b0c4cfbf749f621c",
+      "checks_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=cb65a9cb81c95028bc97f421b0c4cfbf749f621c",
+      "files_url": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/commit/?id=cb65a9cb81c95028bc97f421b0c4cfbf749f621c",
+      "base": {
+        "repository": {
+          "organization": "network",
+          "name": "iproute2",
+          "html_url": "https://git.kernel.org/pub/scm/network/iproute2"
+        }
+      }
+    },
+    {
+      "merged_at": "2018-12-24T14:20:25-08:00",
+      "opened_at": "2018-12-23T16:18:39+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "iptunnel: Set tun_flags in the iptunnel_metadata_reply from src",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7bdca378b2301b1fc6a95c60d6d428408ae4e39e",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7bdca378b2301b1fc6a95c60d6d428408ae4e39e",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7bdca378b2301b1fc6a95c60d6d428408ae4e39e",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7bdca378b2301b1fc6a95c60d6d428408ae4e39e",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
+        }
+      }
+    },
+    {
       "merged_at": "2018-12-24T20:43:49Z",
       "opened_at": "2018-12-07T06:45:14Z",
       "opened_by": "shsjshentao",
@@ -231,6 +681,24 @@
           "organization": "kubernetes",
           "name": "klog",
           "html_url": "https://github.com/kubernetes/klog"
+        }
+      }
+    },
+    {
+      "merged_at": "2018-12-19T15:58:01-08:00",
+      "opened_at": "2018-12-19T14:11:15+08:00",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "iptunnel: make TUNNEL_FLAGS available in uapi",
+      "html_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1875a9ab01dfa96b06cb6649cb1ce56efa86c7cb",
+      "commits_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1875a9ab01dfa96b06cb6649cb1ce56efa86c7cb",
+      "checks_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1875a9ab01dfa96b06cb6649cb1ce56efa86c7cb",
+      "files_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1875a9ab01dfa96b06cb6649cb1ce56efa86c7cb",
+      "base": {
+        "repository": {
+          "organization": "linux",
+          "name": "kernel",
+          "html_url": "https://git.kernel.org/pub/scm/linux/kernel"
         }
       }
     },
@@ -447,6 +915,24 @@
           "organization": "moby",
           "name": "moby",
           "html_url": "https://github.com/moby/moby"
+        }
+      }
+    },
+    {
+      "merged_at": "2015-05-13T11:27:16+02:00",
+      "opened_at": "2015-05-13T11:15:05+08:00",
+      "opened_by": "WANG Chao",
+      "number": null,
+      "title": "lscpu: add cpu flags entry to summary output",
+      "html_url": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/commit/?id=ee1f1057e25d3cce300664ea449eea4fe6deb7ff",
+      "commits_url": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/commit/?id=ee1f1057e25d3cce300664ea449eea4fe6deb7ff",
+      "checks_url": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/commit/?id=ee1f1057e25d3cce300664ea449eea4fe6deb7ff",
+      "files_url": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/commit/?id=ee1f1057e25d3cce300664ea449eea4fe6deb7ff",
+      "base": {
+        "repository": {
+          "organization": "utils",
+          "name": "util-linux",
+          "html_url": "https://git.kernel.org/pub/scm/utils/util-linux"
         }
       }
     }
