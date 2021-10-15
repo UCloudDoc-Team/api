@@ -2,6 +2,36 @@
   "repositories": [
     {
       "organization": "ucloud",
+      "name": "redis-cluster-operator",
+      "stargazers_count": 207,
+      "forks_count": 76,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/redis-cluster-operator",
+      "description": "Redis Cluster Operator creates and manages Redis Clusters atop Kubernetes.",
+      "language": "Go",
+      "topics": [
+        "kubernetes",
+        "operator",
+        "redis-cluster"
+      ]
+    },
+    {
+      "organization": "ucloud",
+      "name": "redis-operator",
+      "stargazers_count": 151,
+      "forks_count": 50,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/redis-operator",
+      "description": "Redis operator build a Highly Available Redis cluster with Sentinel atop Kubernetes",
+      "language": "Go",
+      "topics": [
+        "kubernetes",
+        "operator",
+        "redis-sentinel"
+      ]
+    },
+    {
+      "organization": "ucloud",
       "name": "ucloud-cli",
       "stargazers_count": 100,
       "forks_count": 48,
@@ -117,6 +147,17 @@
     },
     {
       "organization": "ucloud",
+      "name": "ucloud-sdk-python3",
+      "stargazers_count": 27,
+      "forks_count": 16,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-sdk-python3",
+      "description": null,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
       "name": "ufile-sdk-java",
       "stargazers_count": 24,
       "forks_count": 16,
@@ -209,6 +250,17 @@
     },
     {
       "organization": "ucloud",
+      "name": "urtc-sdk-web",
+      "stargazers_count": 10,
+      "forks_count": 11,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-sdk-web",
+      "description": "URTC（UCloud实时音视频）web SDK",
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
       "name": "ucloud-sdk-php",
       "stargazers_count": 8,
       "forks_count": 4,
@@ -297,6 +349,17 @@
     },
     {
       "organization": "ucloud",
+      "name": "ucloud-iot-device-sdk-c",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-iot-device-sdk-c",
+      "description": "UCloud UIoT-Core设备端C-SDK",
+      "language": "C",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
       "name": "uai-saas-sdk",
       "stargazers_count": 4,
       "forks_count": 2,
@@ -304,6 +367,46 @@
       "html_url": "https://github.com/ucloud/uai-saas-sdk",
       "description": "UCloud AI SaaS SDK",
       "language": "Python",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "stepflow-stepo",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/stepflow-stepo",
+      "description": "UCloud StepFlow function template",
+      "language": "Python",
+      "topics": [
+        "faas",
+        "stepflow",
+        "ucloud"
+      ]
+    },
+    {
+      "organization": "ucloud",
+      "name": "pulumi-ucloud",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/pulumi-ucloud",
+      "description": "Pulumi is a cloud-native development kit to implement Infrastructure as Software",
+      "language": "Python",
+      "topics": [
+        "pulumi",
+        "terraform"
+      ]
+    },
+    {
+      "organization": "ucloud",
+      "name": "ucloud-iot-rtthread-package",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-iot-rtthread-package",
+      "description": "基于RT-Thread操作系统用于快速连接uiot-core的软件包",
+      "language": "C",
       "topics": []
     },
     {
@@ -362,6 +465,17 @@
       "topics": []
     },
     {
+      "organization": "ucloud",
+      "name": "grafana-operator",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/grafana-operator",
+      "description": "An operator that installs Grafana and manages Dashboards",
+      "language": "Go",
+      "topics": []
+    },
+    {
       "organization": "ufilesdk-dev",
       "name": "ufile-csdk",
       "stargazers_count": 3,
@@ -406,6 +520,17 @@
       "topics": []
     },
     {
+      "organization": "ucloud",
+      "name": "urtc-web-demo",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-web-demo",
+      "description": null,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
       "organization": "ufilesdk-dev",
       "name": "ufile-nodejssdk",
       "stargazers_count": 2,
@@ -447,6 +572,97 @@
       "html_url": "https://github.com/ucloud/urtc-mac-demo",
       "description": null,
       "language": "HTML",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-linux-demo",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-linux-demo",
+      "description": null,
+      "language": "C++",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "uiotedge-driver-sdk-c",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/uiotedge-driver-sdk-c",
+      "description": null,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-edu-demo",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-edu-demo",
+      "description": null,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "iotstack-driver-sdk-c",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/iotstack-driver-sdk-c",
+      "description": null,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "ularm-monitor-subscribe-demo",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ularm-monitor-subscribe-demo",
+      "description": null,
+      "language": "Go",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "ucloud-sdk-js",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-sdk-js",
+      "description": "nodejs sdk for ucloud services",
+      "language": "TypeScript",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "toa",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/toa",
+      "description": "A kernel module to obtain source IPv4 address in the TCP option section.",
+      "language": "C",
+      "topics": [
+        "lvs",
+        "toa"
+      ]
+    },
+    {
+      "organization": "ucloud",
+      "name": "opensource",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/opensource",
+      "description": "GitOps pipeline \u0026 data management for UCloud Developer Center",
+      "language": null,
       "topics": []
     },
     {
@@ -516,6 +732,193 @@
       "topics": []
     },
     {
+      "organization": "ucloud",
+      "name": "urtc-miniprogram-demo",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-miniprogram-demo",
+      "description": "urtc 小程序端demo",
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-win-demo-qt",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-win-demo-qt",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "grafana-dashboards",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/grafana-dashboards",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "flume-ng-sinks",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/flume-ng-sinks",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-ios-demo-swift",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-ios-demo-swift",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-im-web",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-im-web",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-arm-demo",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-arm-demo",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "uk8s-demo",
+      "stargazers_count": 0,
+      "forks_count": 8,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/uk8s-demo",
+      "description": null,
+      "language": null,
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "uiotedge-driver-sdk-python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/uiotedge-driver-sdk-python",
+      "description": null,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "ucloud-iot-sdk-arduino",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-iot-sdk-arduino",
+      "description": null,
+      "language": "C++",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "iotstack-application-sdk-c",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/iotstack-application-sdk-c",
+      "description": null,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "iotstack-application-sdk-python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/iotstack-application-sdk-python",
+      "description": null,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "iotstack-driver-sdk-python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/iotstack-driver-sdk-python",
+      "description": null,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "iotstack-device-sdk-c",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/iotstack-device-sdk-c",
+      "description": null,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-react-native-demo",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-react-native-demo",
+      "description": null,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "urtc-react-native-plugin",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/urtc-react-native-plugin",
+      "description": null,
+      "language": "Java",
+      "topics": []
+    },
+    {
+      "organization": "ucloud",
+      "name": "ucloud-developer-examples",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": null,
+      "html_url": "https://github.com/ucloud/ucloud-developer-examples",
+      "description": "The examples for developer",
+      "language": "PHP",
+      "topics": []
+    },
+    {
       "organization": "UCloud-FE",
       "name": "styled-components",
       "stargazers_count": 0,
@@ -528,24 +931,13 @@
     },
     {
       "organization": "UCloud-FE",
-      "name": "design-tokens",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": null,
-      "html_url": "https://github.com/UCloud-FE/design-tokens",
-      "description": "Tool for generate design tokens ",
-      "language": null,
-      "topics": []
-    },
-    {
-      "organization": "UCloud-FE",
       "name": "design-token-editor",
       "stargazers_count": 0,
       "forks_count": 0,
       "watchers_count": null,
       "html_url": "https://github.com/UCloud-FE/design-token-editor",
       "description": "An editor for design-token",
-      "language": null,
+      "language": "TypeScript",
       "topics": []
     },
     {
