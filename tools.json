@@ -10,12 +10,12 @@
             {
               "links": "https://console.ucloud.cn/uapi/ucloudapi",
               "name": "立即使用",
-              "img": ""
+              "img": "settings"
             },
             {
               "links": "/uapi/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -26,7 +26,7 @@
             {
               "links": "/cloudshell/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -37,7 +37,7 @@
             {
               "links": "/cli/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -48,7 +48,7 @@
             {
               "links": "/terraform/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -59,7 +59,7 @@
             {
               "links": "/uhost/guide/image/packer",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         }
@@ -75,12 +75,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-go",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             },
             {
               "links": "/opensdk-go/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -91,12 +91,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-java",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             },
             {
               "links": "/opensdk-java/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -105,14 +105,14 @@
           "img": "https://static.ucloud.cn/eb0142529308141322a8022311662397.png",
           "sublinks": [
             {
-              "links": "https://github.com/ucloud/ucloud-sdk-python",
+              "links": "https://github.com/ucloud/ucloud-sdk-python3",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             },
             {
               "links": "/opensdk-python/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -123,12 +123,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-php",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             },
             {
               "links": "/opensdk-php/README",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         }
@@ -144,7 +144,7 @@
             {
               "links": "/usms/sdk_docs/7003",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -155,7 +155,7 @@
             {
               "links": "/usms/sdk_docs/7007",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -166,7 +166,7 @@
             {
               "links": "/usms/sdk_docs/7009",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         },
@@ -177,7 +177,7 @@
             {
               "links": "/usms/sdk_docs/7005",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         }
@@ -193,7 +193,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-jssdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -204,7 +204,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-cppsdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -215,7 +215,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-csdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -226,7 +226,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-phpsdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -237,7 +237,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-python",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -248,7 +248,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-gosdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -259,7 +259,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-csharpsdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -270,7 +270,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-nodejssdk",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -281,7 +281,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-java",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -292,7 +292,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-ios",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -303,7 +303,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-android",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         }
@@ -319,7 +319,7 @@
             {
               "links": "https://github.com/ucloud/netanalysis-sdk-ios",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         },
@@ -330,7 +330,7 @@
             {
               "links": "https://github.com/ucloud/netanalysis-sdk-android",
               "name": "Github",
-              "img": ""
+              "img": "Github"
             }
           ]
         }
@@ -346,7 +346,7 @@
             {
               "links": "/utoken/sdk/prerequisites",
               "name": "查看文档",
-              "img": ""
+              "img": "book"
             }
           ]
         }
