@@ -253,6 +253,24 @@
       }
     },
     {
+      "merged_at": "2019-03-21T07:05:07Z",
+      "opened_at": "2019-03-19T12:47:31Z",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "dpif-netlink: make offload failed EOPNOTSUPP and ENOSPC cases lower priority level log",
+      "html_url": "https://github.com/openvswitch/ovs/commit/1028cb71d0eed0c5abb3166924029773708c3f9d",
+      "commits_url": "https://github.com/openvswitch/ovs/commit/1028cb71d0eed0c5abb3166924029773708c3f9d",
+      "checks_url": "https://github.com/openvswitch/ovs/commit/1028cb71d0eed0c5abb3166924029773708c3f9d",
+      "files_url": "https://github.com/openvswitch/ovs/commit/1028cb71d0eed0c5abb3166924029773708c3f9d",
+      "base": {
+        "repository": {
+          "organization": "openvswitch",
+          "name": "ovs",
+          "html_url": "https://github.com/openvswitch/ovs"
+        }
+      }
+    },
+    {
       "merged_at": "2019-03-05T12:57:28-08:00",
       "opened_at": "2019-03-05T08:29:28+08:00",
       "opened_by": "wenxu",
@@ -577,6 +595,42 @@
       }
     },
     {
+      "merged_at": "2019-01-16T05:11:58Z",
+      "opened_at": "2019-01-10T08:53:51Z",
+      "opened_by": "wanghonghui",
+      "number": null,
+      "title": "vhost: do not close a closed connfd",
+      "html_url": "https://github.com/spdk/spdk/commit/3eb66ba88edd1ad59df9c4bb2f3b031e55152303",
+      "commits_url": "https://github.com/spdk/spdk/commit/3eb66ba88edd1ad59df9c4bb2f3b031e55152303",
+      "checks_url": "https://github.com/spdk/spdk/commit/3eb66ba88edd1ad59df9c4bb2f3b031e55152303",
+      "files_url": "https://github.com/spdk/spdk/commit/3eb66ba88edd1ad59df9c4bb2f3b031e55152303",
+      "base": {
+        "repository": {
+          "organization": "spdk",
+          "name": "spdk",
+          "html_url": "https://github.com/spdk/spdk"
+        }
+      }
+    },
+    {
+      "merged_at": "2019-01-15T17:01:09Z",
+      "opened_at": "2019-01-11T10:47:17Z",
+      "opened_by": "wanghonghui",
+      "number": null,
+      "title": "vhost fix potential memleak in vhost_backend_cleanup",
+      "html_url": "https://github.com/spdk/spdk/commit/554aaffe3bbd2d4a37409acdf3fb6a62ccf4b479",
+      "commits_url": "https://github.com/spdk/spdk/commit/554aaffe3bbd2d4a37409acdf3fb6a62ccf4b479",
+      "checks_url": "https://github.com/spdk/spdk/commit/554aaffe3bbd2d4a37409acdf3fb6a62ccf4b479",
+      "files_url": "https://github.com/spdk/spdk/commit/554aaffe3bbd2d4a37409acdf3fb6a62ccf4b479",
+      "base": {
+        "repository": {
+          "organization": "spdk",
+          "name": "spdk",
+          "html_url": "https://github.com/spdk/spdk"
+        }
+      }
+    },
+    {
       "merged_at": "2019-01-11T00:55:37+01:00",
       "opened_at": "2019-01-10T14:51:35+08:00",
       "opened_by": "wenxu",
@@ -703,6 +757,42 @@
       }
     },
     {
+      "merged_at": "2018-10-26T20:14:06Z",
+      "opened_at": "2018-09-18T05:48:52Z",
+      "opened_by": "Faicker Mo",
+      "number": null,
+      "title": "net/ixgbe: fix flow create in ntuple check",
+      "html_url": "https://github.com/DPDK/dpdk/commit/d0dd0cf06135ec043c587bf14b66ec55adde876a",
+      "commits_url": "https://github.com/DPDK/dpdk/commit/d0dd0cf06135ec043c587bf14b66ec55adde876a",
+      "checks_url": "https://github.com/DPDK/dpdk/commit/d0dd0cf06135ec043c587bf14b66ec55adde876a",
+      "files_url": "https://github.com/DPDK/dpdk/commit/d0dd0cf06135ec043c587bf14b66ec55adde876a",
+      "base": {
+        "repository": {
+          "organization": "DPDK",
+          "name": "dpdk",
+          "html_url": "https://github.com/DPDK/dpdk"
+        }
+      }
+    },
+    {
+      "merged_at": "2018-08-07T22:06:32Z",
+      "opened_at": "2018-08-04T08:31:36Z",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "datapath: support upstream ndo_udp_tunnel_add in net_device_ops",
+      "html_url": "https://github.com/openvswitch/ovs/commit/e2e11c890e1e6c5e9d6685c5f81dca3c41b1b03a",
+      "commits_url": "https://github.com/openvswitch/ovs/commit/e2e11c890e1e6c5e9d6685c5f81dca3c41b1b03a",
+      "checks_url": "https://github.com/openvswitch/ovs/commit/e2e11c890e1e6c5e9d6685c5f81dca3c41b1b03a",
+      "files_url": "https://github.com/openvswitch/ovs/commit/e2e11c890e1e6c5e9d6685c5f81dca3c41b1b03a",
+      "base": {
+        "repository": {
+          "organization": "openvswitch",
+          "name": "ovs",
+          "html_url": "https://github.com/openvswitch/ovs"
+        }
+      }
+    },
+    {
       "merged_at": "2018-06-20T03:33:13Z",
       "opened_at": "2018-06-05T07:54:23Z",
       "opened_by": "zmlcc",
@@ -721,6 +811,24 @@
       }
     },
     {
+      "merged_at": "2018-04-18T23:31:15Z",
+      "opened_at": "2018-04-18T03:03:47Z",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "ofproto-dpif-xlate: makes OVS native tunneling honor tunnel-specified source addresses",
+      "html_url": "https://github.com/openvswitch/ovs/commit/8e4e45887ec3eb5f5833fd7b415b63ff47fc9642",
+      "commits_url": "https://github.com/openvswitch/ovs/commit/8e4e45887ec3eb5f5833fd7b415b63ff47fc9642",
+      "checks_url": "https://github.com/openvswitch/ovs/commit/8e4e45887ec3eb5f5833fd7b415b63ff47fc9642",
+      "files_url": "https://github.com/openvswitch/ovs/commit/8e4e45887ec3eb5f5833fd7b415b63ff47fc9642",
+      "base": {
+        "repository": {
+          "organization": "openvswitch",
+          "name": "ovs",
+          "html_url": "https://github.com/openvswitch/ovs"
+        }
+      }
+    },
+    {
       "merged_at": "2018-02-19T18:32:14Z",
       "opened_at": "2018-02-09T02:34:13Z",
       "opened_by": "wcwxyz",
@@ -735,6 +843,24 @@
           "organization": "moby",
           "name": "moby",
           "html_url": "https://github.com/moby/moby"
+        }
+      }
+    },
+    {
+      "merged_at": "2018-01-25T18:20:47Z",
+      "opened_at": "2017-12-29T04:45:03Z",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "gre: strip gre-tso offload flags",
+      "html_url": "https://github.com/openvswitch/ovs/commit/48bcbcc6db7faccb3976d5f16c73d2739249d215",
+      "commits_url": "https://github.com/openvswitch/ovs/commit/48bcbcc6db7faccb3976d5f16c73d2739249d215",
+      "checks_url": "https://github.com/openvswitch/ovs/commit/48bcbcc6db7faccb3976d5f16c73d2739249d215",
+      "files_url": "https://github.com/openvswitch/ovs/commit/48bcbcc6db7faccb3976d5f16c73d2739249d215",
+      "base": {
+        "repository": {
+          "organization": "openvswitch",
+          "name": "ovs",
+          "html_url": "https://github.com/openvswitch/ovs"
         }
       }
     },
@@ -861,6 +987,24 @@
           "organization": "containers",
           "name": "virtcontainers",
           "html_url": "https://github.com/containers/virtcontainers"
+        }
+      }
+    },
+    {
+      "merged_at": "2017-04-07T00:06:28Z",
+      "opened_at": "2017-03-09T04:01:02Z",
+      "opened_by": "wenxu",
+      "number": null,
+      "title": "bundle: add nw_src/dst hash method",
+      "html_url": "https://github.com/openvswitch/ovs/commit/417cfdb60c762aaf6b73ba29829855754b2a1c72",
+      "commits_url": "https://github.com/openvswitch/ovs/commit/417cfdb60c762aaf6b73ba29829855754b2a1c72",
+      "checks_url": "https://github.com/openvswitch/ovs/commit/417cfdb60c762aaf6b73ba29829855754b2a1c72",
+      "files_url": "https://github.com/openvswitch/ovs/commit/417cfdb60c762aaf6b73ba29829855754b2a1c72",
+      "base": {
+        "repository": {
+          "organization": "openvswitch",
+          "name": "ovs",
+          "html_url": "https://github.com/openvswitch/ovs"
         }
       }
     },
