@@ -10,12 +10,12 @@
             {
               "links": "https://console.ucloud.cn/uapi/ucloudapi",
               "name": "立即使用",
-              "img": "settings"
+              "img": "https://static.ucloud.cn/609dfdb766cb4fbdc842513cb03063e2.png"
             },
             {
               "links": "/uapi/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -26,7 +26,7 @@
             {
               "links": "/cloudshell/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -37,7 +37,7 @@
             {
               "links": "/cli/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -48,7 +48,7 @@
             {
               "links": "/terraform/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -59,7 +59,7 @@
             {
               "links": "/uhost/guide/image/packer",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -75,12 +75,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-go",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             },
             {
               "links": "/opensdk-go/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -91,12 +91,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-java",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             },
             {
               "links": "/opensdk-java/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -107,12 +107,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-python3",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             },
             {
               "links": "/opensdk-python/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -123,12 +123,12 @@
             {
               "links": "https://github.com/ucloud/ucloud-sdk-php",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             },
             {
               "links": "/opensdk-php/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -144,7 +144,7 @@
             {
               "links": "/usms/sdk_docs/7003",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -155,7 +155,7 @@
             {
               "links": "/usms/sdk_docs/7007",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -166,7 +166,7 @@
             {
               "links": "/usms/sdk_docs/7009",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
@@ -177,7 +177,7 @@
             {
               "links": "/usms/sdk_docs/7005",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -193,7 +193,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-jssdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -204,7 +204,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-cppsdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -215,7 +215,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-csdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -226,7 +226,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-phpsdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -237,7 +237,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-python",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -248,7 +248,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-gosdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -259,7 +259,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-csharpsdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -270,7 +270,7 @@
             {
               "links": "https://github.com/ufilesdk-dev/ufile-nodejssdk",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -281,7 +281,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-java",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -292,7 +292,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-ios",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -303,7 +303,7 @@
             {
               "links": "https://github.com/ucloud/ufile-sdk-android",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         }
@@ -319,7 +319,7 @@
             {
               "links": "https://github.com/ucloud/netanalysis-sdk-ios",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         },
@@ -330,7 +330,7 @@
             {
               "links": "https://github.com/ucloud/netanalysis-sdk-android",
               "name": "Github",
-              "img": "Github"
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
             }
           ]
         }
@@ -346,7 +346,7 @@
             {
               "links": "/utoken/sdk/prerequisites",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
