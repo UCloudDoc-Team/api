@@ -1,71 +1,71 @@
 {
-  "apis": [
+  "api": [
     {
       "listname": "计算",
       "listvalue": [
         {
           "name": "云主机 UHost",
-          "img": "uhost",
+          "img": "icon-product__uhost",
           "sublinks": [
             {
               "links": "/api/uhost-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "物理云主机 UPHost",
-          "img": "uphost",
+          "img": "icon-product__uphost",
           "sublinks": [
             {
               "links": "/api/uphost-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "私有专区 UDHost",
-          "img": "udhost",
+          "img": "icon-product__udhost",
           "sublinks": [
             {
               "links": "/api/udhost-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "容器云 UK8S",
-          "img": "uk8s",
+          "img": "icon-product__uk8s",
           "sublinks": [
             {
               "links": "/api/uk8s-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "容器实例 Cube",
-          "img": "cube",
+          "img": "icon-product__cube",
           "sublinks": [
             {
               "links": "/api/cube-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "容器镜像库 UHub",
-          "img": "uhub",
+          "img": "icon-product__uhub",
           "sublinks": [
             {
               "links": "/api/uhub-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -76,45 +76,45 @@
       "listvalue": [
         {
           "name": "基础网络 UNet",
-          "img": "unet",
+          "img": "icon-product__unet",
           "sublinks": [
             {
               "links": "/api/unet-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "负载均衡 ULB",
-          "img": "ulb",
+          "img": "icon-product__ulb",
           "sublinks": [
             {
               "links": "/api/ulb-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "私有网络 UVPC",
-          "img": "vpc",
+          "img": "icon-product__vpc",
           "sublinks": [
             {
               "links": "/api/vpc2.0-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "全球动态加速 PathX",
-          "img": "ugaa",
+          "img": "icon-product__ugaa",
           "sublinks": [
             {
               "links": "/api/pathx-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -125,12 +125,12 @@
       "listvalue": [
         {
           "name": "VPN网关 IPSecVPN",
-          "img": "ipsecvpn",
+          "img": "icon-product__ipsecvpn",
           "sublinks": [
             {
               "links": "/api/ipsecvpn-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -141,56 +141,56 @@
       "listvalue": [
         {
           "name": "云数据库 MySQL UDB",
-          "img": "udb",
+          "img": "icon-product__udb",
           "sublinks": [
             {
               "links": "/api/udb-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "云数据库 MongoDB UDB",
-          "img": "udb",
+          "img": "icon-product__udb",
           "sublinks": [
             {
               "links": "/api/udb-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "云内存 UMem Memcache",
-          "img": "umem",
+          "img": "icon-product__umem",
           "sublinks": [
             {
               "links": "/api/umem-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "云内存 UMem Redis",
-          "img": "umem",
+          "img": "icon-product__umem",
           "sublinks": [
             {
               "links": "/api/umem-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "分布式数据库 UDDB",
-          "img": "uddb",
+          "img": "icon-product__uddb",
           "sublinks": [
             {
               "links": "/api/uddb-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -201,45 +201,45 @@
       "listvalue": [
         {
           "name": "云硬盘 UDisk",
-          "img": "udisk",
+          "img": "icon-product__udisk",
           "sublinks": [
             {
               "links": "/api/udisk-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "文件存储 UFS",
-          "img": "ufs",
+          "img": "icon-product__ufs",
           "sublinks": [
             {
               "links": "/api/ufs-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "对象存储 US3",
-          "img": "ufile",
+          "img": "icon-product__ufile",
           "sublinks": [
             {
               "links": "/api/ufile-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "磁盘快照服务 USnap",
-          "img": "usnap",
+          "img": "icon-product__usnap",
           "sublinks": [
             {
               "links": "/api/usnap-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -250,12 +250,12 @@
       "listvalue": [
         {
           "name": "云分发 UCDN",
-          "img": "ucdn",
+          "img": "icon-product__ucdn",
           "sublinks": [
             {
               "links": "/api/ucdn-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -266,34 +266,34 @@
       "listvalue": [
         {
           "name": "云直播 ULive",
-          "img": "ulive",
+          "img": "icon-product__ulive",
           "sublinks": [
             {
               "links": "/api/ulive-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "媒体工厂 UMedia",
-          "img": "umedia",
+          "img": "icon-product__umedia",
           "sublinks": [
             {
               "links": "/api/umedia-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "实时音视频 URTC",
-          "img": "urtc",
+          "img": "icon-product__urtc",
           "sublinks": [
             {
               "links": "/api/urtc-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -304,12 +304,12 @@
       "listvalue": [
         {
           "name": "边缘计算虚拟机 UEC-VM",
-          "img": "uodn2",
+          "img": "icon-product__uodn2",
           "sublinks": [
             {
               "links": "/api/uec-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -320,23 +320,23 @@
       "listvalue": [
         {
           "name": "数据湖分析 USQL",
-          "img": "usql",
+          "img": "icon-product__usql",
           "sublinks": [
             {
               "links": "/api/usql-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "Kafka消息队列 UKafka",
-          "img": "ukafka",
+          "img": "icon-product__ukafka",
           "sublinks": [
             {
               "links": "/api/ukafka-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -355,23 +355,23 @@
       "listvalue": [
         {
           "name": "WEB应用防火墙 UWAF",
-          "img": "uewaf",
+          "img": "icon-product__uewaf",
           "sublinks": [
             {
               "links": "/api/uewaf-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "DDoS攻击防护 UDDoS",
-          "img": "uads",
+          "img": "icon-product__uads",
           "sublinks": [
             {
               "links": "/api/uddos-uclean-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -382,23 +382,23 @@
       "listvalue": [
         {
           "name": "云安全中心 USC",
-          "img": "usa",
+          "img": "icon-product__usa",
           "sublinks": [
             {
               "links": "/api/usa-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "密钥管理服务 UKMS",
-          "img": "ukms",
+          "img": "icon-product__ukms",
           "sublinks": [
             {
               "links": "/api/ukms-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -409,23 +409,23 @@
       "listvalue": [
         {
           "name": "域名服务 UDNR",
-          "img": "udnr",
+          "img": "icon-product__udnr",
           "sublinks": [
             {
               "links": "/api/udnrv2-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "RMQ消息队列 URocketMQ",
-          "img": "mq",
+          "img": "icon-product__mq",
           "sublinks": [
             {
               "links": "/api/urocketmq-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -436,23 +436,23 @@
       "listvalue": [
         {
           "name": "短信服务 USMS",
-          "img": "message",
+          "img": "icon-product__message",
           "sublinks": [
             {
               "links": "/api/usms-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         },
         {
           "name": "智能短信 ISMS",
-          "img": "isms",
+          "img": "icon-product__isms",
           "sublinks": [
             {
               "links": "/api/isms-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -463,12 +463,12 @@
       "listvalue": [
         {
           "name": "资源监控 UMon",
-          "img": "umon",
+          "img": "icon-product__umon",
           "sublinks": [
             {
               "links": "/api/umon-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -479,12 +479,12 @@
       "listvalue": [
         {
           "name": "数据传输服务 UDTS",
-          "img": "udts",
+          "img": "icon-product__udts",
           "sublinks": [
             {
               "links": "/api/udts-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -495,12 +495,12 @@
       "listvalue": [
         {
           "name": "混合云 UHybrid",
-          "img": "uhybrid",
+          "img": "icon-product__uhybrid",
           "sublinks": [
             {
               "links": "/api/uhybridv3-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -523,12 +523,12 @@
       "listvalue": [
         {
           "name": "账号与权限管理 UAM",
-          "img": "apikey",
+          "img": "icon-product__apikey",
           "sublinks": [
             {
               "links": "/api/uaccount-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
@@ -539,12 +539,12 @@
       "listvalue": [
         {
           "name": "账单管理 ",
-          "img": "uencrypt",
+          "img": "icon-product__uencrypt",
           "sublinks": [
             {
               "links": "/api/ubill-api/README",
               "name": "查看文档",
-              "img": "book"
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
         }
