@@ -5,6 +5,7 @@
 - [索引](api/uec-api/index.md)
 - **API**
     - [绑定防火墙 - BindUEcFirewall](api/uec-api/bind_u_ec_firewall)
+    - [创建自制镜像 - CreateUEcCustomImage](api/uec-api/create_u_ec_custom_image)
     - [创建外网防火墙 - CreateUEcFirewall](api/uec-api/create_u_ec_firewall)
     - [创建容器组 - CreateUEcHolder](api/uec-api/create_u_ec_holder)
     - [创建子网 - CreateUEcSubnet](api/uec-api/create_u_ec_subnet)
