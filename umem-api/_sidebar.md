@@ -37,6 +37,7 @@
     - [检查高性能UMem剩余资源 - CheckUDredisSpaceAllowance](api/umem-api/check_udredis_space_allowance)
     - [检查URedis资源是否足够 - CheckURedisAllowance](api/umem-api/check_uredis_allowance)
     - [创建主备Redis备份 - CreateURedisBackup](api/umem-api/create_uredis_backup)
+    - [拉取udredis代理信息 - DescribeUDRedisProxyInfo](api/umem-api/describe_ud_redis_proxy_info)
     - [查询UDRedis慢日志 - DescribeUDRedisSlowlog](api/umem-api/describe_ud_redis_slowlog)
     - [获取UMem列表 - DescribeUMem](api/umem-api/describe_umem)
     - [拉取UDRedis分片信息 - DescribeUMemBlockInfo](api/umem-api/describe_umem_block_info)
