@@ -31,7 +31,8 @@
 | **Memory** | int | 节点内存大小， 单位GB |**Yes**|
 | **IdcId.N** | string | Idc机房id。默认全部机房 |No|
 | **Type** | int | 0-其它, 1-一线城市单线,2-二线城市单线, 3-全国教育网, 4-全国三通 |No|
-| **ProductType** | string | 产品类型：normal（通用型），hf（高主频型） |No|
+| **ProductType** | string | 产品类型：normal（经济型），hf（标准型）,g(GPU型) |No|
+| **Gpu** | int | Gpu卡核心数 |No|
 
 ### 响应字段
 
@@ -69,6 +70,8 @@ https://api.ucloud.cn/?Action=DescribeUEcIDC
 &IdcId.n=PdMVSOSi
 &Type=6
 &ProductType=ddqgeqRa
+&Gpu=5
+&Gpu=9
 ```
 
 ### 响应示例
