@@ -85,11 +85,11 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUEcVHost
-&ProjectId=mgvpviWs
-&IdcId.n=ipckEAYE
-&NodeId.n=BWbWInyo
+&ProjectId=ctvhHzGM
+&IdcId.n=sYFSfiLL
+&NodeId.n=ChncWLiu
 &Offset=5
-&Limit=7
+&Limit=6
 ```
 
 ### 响应示例
@@ -99,36 +99,39 @@ https://api.ucloud.cn/?Action=DescribeUEcVHost
   "Action": "DescribeUEcVHostResponse",
   "NodeList": [
     {
-      "ChargeType": 5,
-      "City": "IDEBpXJt",
-      "CoreNum": 6,
-      "CreateTime": 3,
-      "DiskSize": 6,
-      "ExpiredTime": 6,
-      "FirewallId": "IdADaLNf",
-      "IdcId": "LmHwaXpN",
-      "ImageName": "SgSGAchm",
-      "MemSize": 1,
-      "NetLimit": 2,
-      "NodeId": "VGGLRHtb",
+      "ChargeType": 7,
+      "City": "YdVyXzhO",
+      "CoreNum": 7,
+      "CreateTime": 1,
+      "DiskSize": 8,
+      "ExpiredTime": 2,
+      "FirewallId": "YYVXnnHw",
+      "IdcId": "dGCsJDYU",
+      "ImageName": "eZDEJNYq",
+      "InnerIps": [
+        "ntQHeAzQ"
+      ],
+      "MemSize": 7,
+      "NetLimit": 6,
+      "NodeId": "FEeTsNwf",
       "NodeIpList": [
         {
-          "Ip": "jvWznvrh",
-          "Isp": "FEdZNdIg",
-          "IspName": "nIKhSjbE"
+          "Ip": "UgftxtQq",
+          "Isp": "zLktXaPO",
+          "IspName": "aBkVcMvd"
         }
       ],
-      "NodeName": "xUptzCGU",
-      "OcName": "eSdJfvFQ",
-      "ProductType": "AdQQeKsE",
-      "Province": "bhIuwEzj",
+      "NodeName": "IMyRMCNm",
+      "OcName": "JOTzqjSF",
+      "ProductType": "sekcycVM",
+      "Province": "vsAzqCtJ",
       "State": 2,
-      "SysDiskSize": 2,
+      "SysDiskSize": 6,
       "Type": 2
     }
   ],
   "RetCode": 0,
-  "TotalCount": 3
+  "TotalCount": 5
 }
 ```
 
