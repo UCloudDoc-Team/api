@@ -43,9 +43,34 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **AccelerationInfos** | array[[*AccelerationInfo*](#AccelerationInfo)] | 加速详情 |No|
+
+#### 数据模型
 
 
+#### AccelerationInfo
 
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **AccelerationArea** | string | 加速大区代码 |**Yes**|
+| **AccelerationName** | string | 加速大区名称 |**Yes**|
+| **NodeInfo** | array[[*NodeDelays*](#NodeDelays)] | 加速提升情况 |**Yes**|
+
+#### NodeDelays
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Area** | string | 加速区域 |**Yes**|
+| **AreaCode** | string | 加速区域Code |**Yes**|
+| **CountryCode** | string | 国家代码 |**Yes**|
+| **FlagUnicode** | string | 国旗Code |**Yes**|
+| **FlagEmoji** | string | 国旗Emoji |**Yes**|
+| **Latency** | float | 加速延迟 |**Yes**|
+| **LatencyInternet** | float | 公网延迟 |**Yes**|
+| **LatencyOptimization** | float | 加速提升比例 |**Yes**|
+| **Loss** | float | 加速后丢包率 |**Yes**|
+| **LossInternet** | float | 原始丢包率 |**Yes**|
+| **LossOptimization** | float | 丢包下降比例 |**Yes**|
 
 ## 示例
 
