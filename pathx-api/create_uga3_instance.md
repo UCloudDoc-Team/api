@@ -32,11 +32,11 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID,如org-xxxx。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **Bandwidth** | string | 实例的共享带宽 |**Yes**|
+| **Bandwidth** | int | 实例的共享带宽大小，单位Mbps |**Yes**|
 | **Name** | string | 加速配置实例名称,默认PathX |No|
 | **AreaCode** | string | 非必填,如果不填，会根据Domain 和IPList 去选一个最近的源站区域<br />BKK表示AreaCode;曼谷表示Area<br />["BKK":"曼谷","DXB":"迪拜","FRA":"法兰克福","SGN":"胡志明市","HKG":"香港",CGK":"雅加达","LOS":"拉各斯","LHR":"伦敦","LAX":"洛杉矶","MNL":"马尼拉","DME":"莫斯科","BOM":"孟买","MSP":"圣保罗","ICN":"首尔","PVG":"上海","SIN":"新加坡","NRT":"东京","IAD":"华盛顿","TPE": "台北"] |No|
 | **Remark** | string | 备注项 |No|
-| **ChargeType** | string | 支付方式，如按月、按年、按时 |No|
+| **ChargeType** | string | 支付方式，如按月、按年、按时<br />[Year,Month,Dynamic] |No|
 | **Quantity** | int | 购买周期 |No|
 | **AccelerationArea** | string | 加速大区,默认Global,[<br />    "Global":"全球",<br />    "AP":"亚太",<br />    "EU":"欧洲",<br />    "ME":"中东",<br />    "OA":"大洋洲",<br />    "AF":"非洲",<br />    "NA":"北美洲",<br />    "SA":"南美洲"<br />] |No|
 | **OriginIPList** | string | 加速源IP，多个IP用英文半角逗号(,)隔开；IPList和Domain二选一必填 |No|
