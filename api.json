@@ -343,7 +343,7 @@
       ]
     },
     {
-      "listname": "人工智能",
+      "listname": "人工智能产品",
       "listvalue": null
     },
     {
@@ -523,7 +523,7 @@
       "listvalue": [
         {
           "name": "账号与权限管理 UAM",
-          "img": "icon-product__apikey",
+          "img": "icon-product__account-security",
           "sublinks": [
             {
               "links": "/api/uaccount-api/README",
@@ -539,7 +539,7 @@
       "listvalue": [
         {
           "name": "账单管理 ",
-          "img": "icon-product__uencrypt",
+          "img": "icon-product__finance",
           "sublinks": [
             {
               "links": "/api/ubill-api/README",
