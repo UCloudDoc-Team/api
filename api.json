@@ -343,14 +343,6 @@
       ]
     },
     {
-      "listname": "人工智能产品",
-      "listvalue": null
-    },
-    {
-      "listname": "物联网",
-      "listvalue": null
-    },
-    {
       "listname": "安全防护",
       "listvalue": [
         {
@@ -507,18 +499,6 @@
       ]
     },
     {
-      "listname": "私有云",
-      "listvalue": null
-    },
-    {
-      "listname": "账户服务",
-      "listvalue": null
-    },
-    {
-      "listname": "云市场",
-      "listvalue": null
-    },
-    {
       "listname": "账号与权限",
       "listvalue": [
         {
@@ -549,10 +529,6 @@
           ]
         }
       ]
-    },
-    {
-      "listname": "政策与规范",
-      "listvalue": null
     }
   ]
 }
