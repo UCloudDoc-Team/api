@@ -1,8 +1,8 @@
-# 获取直播域名带宽流量(新系统) - GetLiveBandwidthTraffic
+# 获取直播域名带宽流量 - GetLiveBandwidthTraffic
 
 ## 简介
 
-获取直播域名带宽流量(新系统)
+获取直播域名带宽流量
 
 
 
@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 查询流量的起始时间，格式：Unix时间戳 |**Yes**|
 | **EndTime** | string | 查询流量的结束时间，格式：Unix时间戳 |**Yes**|
 | **Domain.N** | string | 域名,可以传多个，如果不传该参数则获取用户账户的总带宽，n为自然数多个Domain的你不相同，表示多个域名 |No|
@@ -54,7 +54,15 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Domain** | string | 域名,指定Sum参数为1的情况下，值为 "sum" |No|
-| **BandwidthList** | string | 带宽流量实例表。具体参考下面BandwidthInfo |No|
+| **BandwidthList** | array[[*BandwidthInfo*](#BandwidthInfo)] | 带宽流量实例表。具体参考下面BandwidthInfo |No|
+
+#### BandwidthInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Time** | int | 带宽获取的时间点。格式：Unix时间戳 |No|
+| **Bandwidth** | float | 带宽值，单位：Mbps |No|
+| **Traffic** | float | 流量值，单位：字节 |No|
 
 ## 示例
 

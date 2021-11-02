@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Domain.N** | string | 获取域名的配置信息，如果不传该参数则获取用户帐号下所有直播域名配置信息,n为自然数多个域名 一次从0增加 |No|
 | **DomainType** | string | 域名加速类型：publish(推流) pull(拉流)不传获取所有类型的域名 <br /> |No|
 
@@ -59,8 +59,8 @@
 | **ResourceExtend** | string | 业务组 |**Yes**|
 | **Status** | string | 加速状态。checking：配置中；enabled：加速中；failed：失败；deleting：删除中；disabling：禁用中；disabled：禁用 |**Yes**|
 | **AuthConf** | [*AuthConf*](#AuthConf) | 鉴权配置 |**Yes**|
-| **PublishNotifyConf** | [*PublishNotifyConf*](#PublishNotifyConf) | 推流回调配置 |**Yes**|
-| **RecordConf** | [*RecordConf*](#RecordConf) | 录制配置 |**Yes**|
+| **PublishNotifyConf** | [*PublishNotifyConf*](#PublishNotifyConf) | 推流回调配置 |No|
+| **RecordConf** | [*RecordConf*](#RecordConf) | 录制配置 |No|
 | **SourceInfo** | [*SourceInfo*](#SourceInfo) | 源站信息，DomainType=pull时才有 |No|
 
 #### AuthConf
@@ -102,7 +102,7 @@
 |:---|:---|:---|:---|
 | **SourcePlatformType** | string | 拉流加速时使用的源站平台，ucloud或者other<br />other表示自定义源站<br /> |No|
 | **SourceList** | array[string] | 源站列表源站ip或者域名的数组(如果是域名则只有一个) |No|
-| **SourceBackupList** | array[string] | 备份源站列表 |No|
+| **SourceListBack** | array[string] | 备份源站列表 |No|
 | **PushDomainCname** | string | 当源站平台是ucloud时，表示该源站对应的推流域名的cname域名，自定义源站返回空 |No|
 
 ## 示例
@@ -111,9 +111,9 @@
     
 ```
 https://api.ucloud.cn/?Action=GetLiveDomainConfigV2
-&ProjectId=VIuorikd
-&Domain.n=HYYGluZo
-&DomainType=EUNrJVTv
+&ProjectId=wwQMABFM
+&Domain.n=HDdfamZr
+&DomainType=cPwjVuyl
 ```
 
 ### 响应示例
@@ -123,17 +123,18 @@ https://api.ucloud.cn/?Action=GetLiveDomainConfigV2
   "Action": "GetLiveDomainConfigV2Response",
   "DomainList": [
     {
-      "AccessPoint": "ZeIeGHCH",
-      "Cname": "mfjGujkT",
-      "CreateTime": 1,
-      "Domain": "lIgJLBTv",
-      "DomainId": "prIqeBga",
-      "DomainType": "QRubhcyh",
-      "PushEndCallBackUrl": "MMfkzHCt",
-      "PushStartCallBackUrl": "tqbxxRan",
-      "ResourceExtend": "RLJFPyIe",
+      "AccessPoint": "FZIMnffQ",
+      "AuthConf": {},
+      "Cname": "PpXztuaf",
+      "CreateTime": 2,
+      "Domain": "ZXKRKHmK",
+      "DomainId": "iPyYIsMH",
+      "DomainType": "cOOHiZSH",
+      "PublishNotifyConf": {},
+      "RecordConf": {},
+      "ResourceExtend": "ikEosNyt",
       "SourceInfo": {},
-      "Status": "tjyrLVNo"
+      "Status": "KtNTDUPX"
     }
   ],
   "RetCode": 0
