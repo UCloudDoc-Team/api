@@ -1,6 +1,66 @@
 {
   "api": [
     {
+    "listname": "公共",
+    "listvalue": [
+      {
+        "name": "API 文档综览",
+        "img": "",
+        "sublinks": [
+          {
+            "links": "/api/summary/README",
+            "name": "查看文档",
+            "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+          }
+        ]
+      },
+      {
+        "name": "快速开始",
+        "img": "",
+        "sublinks": [
+          {
+            "links": "/api/summary/public",
+            "name": "查看文档",
+            "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+          }
+        ]
+      },
+      {
+        "name": "签名算法",
+        "img": "",
+        "sublinks": [
+          {
+            "links": "/api/summary/signature",
+            "name": "查看文档",
+            "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+          }
+        ]
+      },
+      {
+        "name": "获取地域和可用区列表",
+        "img": "",
+        "sublinks": [
+          {
+            "links":  "/api/summary/regionlist",
+            "name": "查看文档",
+            "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+          }
+        ]
+      },
+      {
+        "name": "获取项目列表",
+        "img": "",
+        "sublinks": [
+          {
+            "links": "/api/summary/get_project_list",
+            "name": "查看文档",
+            "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+          }
+        ]
+      }
+    ]
+},
+    {
       "listname": "计算",
       "listvalue": [
         {
