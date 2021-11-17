@@ -18,6 +18,7 @@
     - [获取Pods列表 - ListCubePod](api/cube-api/list_cube_pod)
     - [修改Cube额外信息 - ModifyCubeExtendInfo](api/cube-api/modify_cube_extend_info)
     - [修改业务组 - ModifyCubeTag](api/cube-api/modify_cube_tag)
+    - [重启Cube Pod - RebootCubePod](api/cube-api/reboot_cube_pod)
     - [更新Pod - RenewCubePod](api/cube-api/renew_cube_pod)
     - [更新Deployment - UpdateCubeDeployment](api/cube-api/update_cube_deployment)
 - **附录**
