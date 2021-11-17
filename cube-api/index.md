@@ -19,5 +19,6 @@
 |[ListCubePod](api/cube-api/list_cube_pod)|获取Pods列表|
 |[ModifyCubeExtendInfo](api/cube-api/modify_cube_extend_info)|修改Cube额外信息|
 |[ModifyCubeTag](api/cube-api/modify_cube_tag)|修改业务组|
+|[RebootCubePod](api/cube-api/reboot_cube_pod)|重启Cube Pod|
 |[RenewCubePod](api/cube-api/renew_cube_pod)|更新Pod|
 |[UpdateCubeDeployment](api/cube-api/update_cube_deployment)|更新Deployment|
