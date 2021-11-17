@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **VPNTunnelName** | string | VPN隧道名称 |**Yes**|
 | **VPNGatewayId** | string | VPN网关的资源ID |**Yes**|
 | **RemoteVPNGatewayId** | string | 客户VPN网关的资源ID |**Yes**|
@@ -52,10 +52,11 @@
 | **IKESALifetime** | string | IKE中SA的生存时间，可填写范围为600-604800。默认为86400。 |No|
 | **IPSecProtocol** | string | 使用的安全协议，枚举值，“esp”，“ah”。默认为“esp” |No|
 | **IPSecEncryptionAlgorithm** | string | IPSec隧道中使用的加密算法，枚举值，"aes128", "aes192", "aes256", "aes512", "3des"。默认值为“aes128” |No|
-| **IPSecAuthenticationAlgorithm** | string | IPSec隧道中使用的认证算法，枚举值，"md5", "sha1"。默认值为“sha1” |No|
+| **IPSecAuthenticationAlgorithm** | string | IPSec隧道中使用的认证算法，枚举值，"md5", "sha1","sha256"。默认值为“sha1” |No|
 | **IPSecSALifetime** | string | IPSec中SA的生存时间，可填写范围为1200 - 604800。默认为3600 |No|
 | **IPSecSALifetimeBytes** | string | IPSec中SA的生存时间（以字节计）。可选为8000 – 20000000。默认使用SA生存时间， |No|
 | **IPSecPFSDhGroup** | string | IPSec的PFS是否开启，枚举值，，不开启，"disable"；数字表示DH组, "1", "2", "5", "14", "15", "16"。默认为“disable”。 |No|
+| **IPSecCloseAction** | string | IPSec隧道关闭后的处理动作，枚举值：“none”，流量触发；“restart”，自动重联，默认为none |No|
 
 ### 响应字段
 
@@ -101,6 +102,7 @@ https://api.ucloud.cn/?Action=CreateVPNTunnel
 &IPSecSALifetimeBytes=100
 &IPSecPFSDhGroup=disable
 &IKEVersion=BXVWyidt
+&IPSecCloseAction=gGJzmMxv
 ```
 
 ### 响应示例
