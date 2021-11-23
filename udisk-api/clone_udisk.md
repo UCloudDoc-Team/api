@@ -42,7 +42,7 @@
 | **Comment** | string | Disk注释 |No|
 | **ChargeType** | string | Year , Month, Dynamic，Postpay，Trial 默认: Month |No|
 | **Tag** | string | 业务组 默认：Default |No|
-| **RdmaClusterId** | string | 【已废弃】RDMA集群id。指定RSSD云盘克隆到对应的RDMA集群。 |No|
+| **RdmaClusterId** | string | RDMA集群id。指定RSSD云盘克隆到对应的RDMA集群。 |No|
 | **HostId** | string | Host实例ID。克隆出的云盘可直接挂载到该主机上。 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
