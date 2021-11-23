@@ -78,6 +78,10 @@
       {
         "links": "/api/uddb-api/README",
         "name": "分布式数据库 UDDB"
+      },
+      {
+        "links": "/api/tidb-api/README",
+        "name": "分布式NewSQL数据库 TiDB"
       }
     ]
   },
