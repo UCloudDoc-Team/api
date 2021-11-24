@@ -131,6 +131,22 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
+        },
+        {
+          "name": "OpenSDK JS",
+          "img": "https://static.ucloud.cn/313812c73f1a4de02a92ab6a17a449c5.png",
+          "sublinks": [
+            {
+              "links": "https://github.com/ucloud/ucloud-sdk-js",
+              "name": "Github",
+              "img": "https://static.ucloud.cn/69479c0b432d5a0d314bd1e8ef1b0b8b.png"
+            },
+            {
+              "links": "/opensdk-js/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
         }
       ]
     },
