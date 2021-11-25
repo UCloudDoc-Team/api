@@ -35,6 +35,7 @@ http://api.service.ucloud.cn
 | 广州  | B |
 | 香港  | B |
 | 台北  | A |
+| 乌兰察布 | A |
 | 东京  | A |
 | 首尔  | A |
 | 曼谷  | A |
