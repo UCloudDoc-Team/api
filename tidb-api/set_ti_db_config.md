@@ -55,17 +55,10 @@
 ```
 https://api.ucloud.cn/?Action=SetTiDBConfig
 &Region=cn-zj
-&ProjectId=quicKzFz
-&Configs=CIQMSUaz
-&Id=wvpMEcvV
-&Id=yaNQhUGG
-&Id=AfvxACpl
-&Id=gQqWkvbI
-&Id=HjisYxHF
-&Id=GkUluyRB
-&Id=dCEQmKjq
-&Configs.N.Value=XIwvNtXf
-&Configs.N.Value=RcjMsZKF
+&ProjectId=WnXXJMCv
+&Id=JSYqhWJH
+&Configs.N.Name=Ybdhjbyj
+&Configs.N.Value=wYTrwYvk
 ```
 
 ### 响应示例
@@ -74,7 +67,7 @@ https://api.ucloud.cn/?Action=SetTiDBConfig
 {
   "Action": "SetTiDBConfigResponse",
   "RetCode": 0,
-  "ServiceId": "YBuFDzRG"
+  "ServiceId": "IVSXmDir"
 }
 ```
 
