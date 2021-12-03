@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 |No|
 | **Name** | string | 共享带宽名字 |**Yes**|
 | **ChargeType** | string | 付费方式:Year 按年,Month 按月,Dynamic 按时; |**Yes**|
