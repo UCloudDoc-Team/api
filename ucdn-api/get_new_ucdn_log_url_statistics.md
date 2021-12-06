@@ -46,7 +46,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **LogStatisticsList** | array[[*UrlStatistics*](#UrlStatistics)] | 按天统计实例。 |No|
+| **UrlStatisticsList** | array[[*UrlStatistics*](#UrlStatistics)] | 按天统计实例。 |No|
 
 #### 数据模型
 
@@ -73,13 +73,13 @@
     
 ```
 https://api.ucloud.cn/?Action=GetNewUcdnLogUrlStatistics
-&ProjectId=KAKuuufq
-&DomainId=www.test.com
-&Areacode=cn
-&BeginTime=1620057600
-&EndTime=1620067600
-&OrderBy=1
-&Limit=100
+&ProjectId=KaStjefE
+&DomainId=apVismjF
+&Areacode=MvvZFjqG
+&BeginTime=9
+&EndTime=2
+&OrderBy=8
+&Limit=6
 ```
 
 ### 响应示例
@@ -89,13 +89,13 @@ https://api.ucloud.cn/?Action=GetNewUcdnLogUrlStatistics
   "Action": "GetNewUcdnLogUrlStatisticsResponse",
   "LogStatisticsList": [
     {
-      "Date": "dxwsuHiy",
+      "Date": "xoeJcpan",
       "UrlList": [
         {
-          "DownloadTimes": 8,
-          "Percent": 9.51194,
-          "Traffic": 7.93618,
-          "Url": "YjnQUSSE"
+          "DownloadTimes": 4,
+          "Percent": 3.61651,
+          "Traffic": 1.63161,
+          "Url": "LeiDBXkN"
         }
       ]
     }
