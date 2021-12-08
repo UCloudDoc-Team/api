@@ -10,7 +10,6 @@
 |[DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)|获取域名刷新任务状态|
 |[GetCertificateV2](api/ucdn-api/get_certificate_v2)|获取证书|
 |[GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)|获取域名命中率|
-|[GetNewUcdnLogClientIpStatistics](api/ucdn-api/get_new_ucdn_log_client_ip_statistics)|获取日志客户端ip统计|
 |[GetNewUcdnLogRefererStatistics](api/ucdn-api/get_new_ucdn_log_referer_statistics)|获取热点referer统计|
 |[GetNewUcdnLogUrlStatistics](api/ucdn-api/get_new_ucdn_log_url_statistics)|获取日志url统计|
 |[GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain95_bandwidth_v2)|获取域名九五峰值带宽数据【新】|
