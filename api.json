@@ -354,6 +354,22 @@
       ]
     },
     {
+      "listname": "物联网",
+      "listvalue": [
+        {
+          "name": "智能接入盒子 UBox",
+          "img": "icon-product__accessgw",
+          "sublinks": [
+            {
+              "links": "/api/ubox-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "listname": "安全防护",
       "listvalue": [
         {
