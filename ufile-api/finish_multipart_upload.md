@@ -71,7 +71,7 @@ Example Response:
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 79 
-ETag: AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH
+ETag: "AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH"
 
 {
     "Bucket": "demobucket",

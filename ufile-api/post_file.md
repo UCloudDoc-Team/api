@@ -88,7 +88,7 @@ Example Response:
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
-ETag: AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH
+ETag: "AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH"
 ```
 
 
