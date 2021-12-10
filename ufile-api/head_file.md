@@ -58,7 +58,7 @@ Example Response:
 
 ```
 HTTP/1.1 200 OK
-ETag: c5371fe3624d438cd8a59420a3221978
+ETag: "c5371fe3624d438cd8a59420a3221978"
 Content-Type: image/jpg
 Content-Length: 1234
 ```

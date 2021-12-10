@@ -67,7 +67,7 @@ Example Response:
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 21
-ETag: AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH
+ETag: "AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH"
 Content-Type: application/json
 Content-Length: 21
 
