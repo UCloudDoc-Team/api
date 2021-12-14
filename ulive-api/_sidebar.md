@@ -18,6 +18,7 @@
     - [获取单个直播推流视频帧率统计 - GetStreamUploadFrameRate](api/ulive-api/get_stream_upload_frame_rate)
     - [查询直播加速带宽 - GetULiveBandWidthData](api/ulive-api/get_u_live_band_width_data)
     - [获取域名以及其接入点列表 - GetULiveConfigAppInfo](api/ulive-api/get_u_live_config_app_info)
+    - [获取在线流列表控制台 - GetULiveDomRealStreamListInfo](api/ulive-api/get_u_live_dom_real_stream_list_info)
     - [获取域名状态码监控 - GetULiveDomainHttpCode](api/ulive-api/get_u_live_domain_http_code)
     - [禁推流列表 - GetULiveForbidStreamList](api/ulive-api/get_u_live_forbid_stream_list)
     - [获取历史推流列表 - GetULiveHistoryStreamList](api/ulive-api/get_u_live_history_stream_list)
