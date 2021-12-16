@@ -263,7 +263,7 @@
   "hotprods": [
     {
       "url": "/api/summary/README",
-      "title": "API 文档综览",
+      "title": "API 综览",
       "des": "",
       "imglinks": ""
     },
@@ -274,14 +274,14 @@
       "imglinks": ""
     },
     {
-      "url": "/api/summary/signature",
-      "title": "签名算法",
+      "url": "/api/summary/regionlist",
+      "title": "地域和可用区",
       "des": "",
       "imglinks": ""
     },
     {
-      "url": "/api/summary/regionlist",
-      "title": "获取地域和可用区列表",
+      "url": "/api/summary/signature",
+      "title": "签名算法",
       "des": "",
       "imglinks": ""
     },
