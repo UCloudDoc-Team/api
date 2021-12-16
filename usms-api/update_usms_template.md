@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **TemplateId** | string | 短信模板ID |**Yes**|
 | **Template** | string | 新的模板内容。模板名称和模板内容必须提供一个，否则会报错。小于等于600个字 |**Yes**|
 | **TemplateName** | string | 新的模板名称。小于等于32个字，每个中文、英文、数组、符合都计为一个字 |No|

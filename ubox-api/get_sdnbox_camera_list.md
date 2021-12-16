@@ -60,7 +60,18 @@
 | **Status** | int | 推流状态 |No|
 | **VideoParams** | string | 视频参数 |No|
 | **SmallPullRTMPAddress** | string | 小窗口视频拉流地址 |No|
-| **PullRTMPAddress** | array[string] | 拉流地址, 是 map 格式, key 是流类型, value是地址 |No|
+| **PullRTMPAddress** | [*PullRTMPAddress*](#PullRTMPAddress) | 拉流地址, 是 map 格式, key 是流类型, value是地址 |No|
+| **IsOnline** | boolean | 摄像头是否在线 |No|
+
+#### PullRTMPAddress
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Rtmp** | string |  |No|
+| **Flv** | string |  |No|
+| **Hls** | string |  |No|
+| **Dash** | string |  |No|
+| **Webrtc** | string |  |No|
 
 ## 示例
 
