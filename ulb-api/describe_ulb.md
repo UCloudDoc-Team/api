@@ -92,6 +92,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， Customize -> UDP检查<br /><br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping、Port和Customize |**Yes**|
+| **ULBId** | string | 负载均衡实例的Id |**Yes**|
 | **Domain** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名 |No|
 | **Path** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径 |No|
 | **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
@@ -159,6 +160,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **DomainMatchMode** | string | 内容转发规则中域名的匹配方式。枚举值：Regular，正则；Wildcard，泛域名	 |**Yes**|
 | **PolicyId** | string | 内容转发Id，默认内容转发类型下为空。 |No|
 | **PolicyType** | string | 内容类型，枚举值：Custom -> 客户自定义；Default -> 默认内容转发 |No|
 | **Type** | string | 内容转发匹配字段的类型，枚举值：Domain -> 域名；Path -> 路径； 默认内容转发类型下为空 |No|

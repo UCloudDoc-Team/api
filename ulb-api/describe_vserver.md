@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 负载均衡实例的Id |**Yes**|
+| **ULBId** | string | 负载均衡实例的Id |No|
 | **VServerId** | string | VServer实例的Id；若指定则返回指定的VServer实例的信息； 若不指定则返回当前负载均衡实例下所有VServer的信息 |No|
 | **Limit** | int | 数据分页值 |No|
 | **Offset** | int | 数据偏移量 |No|
@@ -56,6 +56,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， Customize -> UDP检查<br /><br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping、Port和Customize |**Yes**|
+| **ULBId** | string | 负载均衡实例的Id |**Yes**|
 | **Domain** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名 |No|
 | **Path** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径 |No|
 | **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
@@ -108,6 +109,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **DomainMatchMode** | string | 内容转发规则中域名的匹配方式。枚举值：Regular，正则；Wildcard，泛域名	 |**Yes**|
 | **PolicyId** | string | 内容转发Id，默认内容转发类型下为空。 |No|
 | **PolicyType** | string | 内容类型，枚举值：Custom -> 客户自定义；Default -> 默认内容转发 |No|
 | **Type** | string | 内容转发匹配字段的类型，枚举值：Domain -> 域名；Path -> 路径； 默认内容转发类型下为空 |No|
