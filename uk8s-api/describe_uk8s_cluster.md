@@ -43,8 +43,8 @@
 | **SubnetId** | string | 所属子网 |**Yes**|
 | **PodCIDR** | string | Pod网段 |**Yes**|
 | **ServiceCIDR** | string | 服务网段 |**Yes**|
-| **MasterList** | array[[*UhostInfo*](#UhostInfo)] | Master节点配置信息，具体参考UhostInfo |**Yes**|
-| **MasterCount** | string | Master 节点数量 |**Yes**|
+| **MasterList** | array[[*UhostInfo*](#UhostInfo)] | Master节点配置信息，具体参考UhostInfo。托管版不返回该信息 |No|
+| **MasterCount** | int | Master 节点数量 |**Yes**|
 | **NodeList** | array[[*UhostInfo*](#UhostInfo)] | Node节点配置信息,具体参考UhostInfo |No|
 | **CreateTime** | int | 创建时间 |No|
 | **NodeCount** | int | Node节点数量 |No|
@@ -72,7 +72,7 @@
 | **IPSet** | array[[*IPSet*](#IPSet)] | 节点IP信息 |**Yes**|
 | **DiskSet** | array[[*DiskSet*](#DiskSet)] | 节点磁盘信息 |**Yes**|
 | **NodeId** | string | 主机ID |**Yes**|
-| **Image** | string | 镜像信息 |**Yes**|
+| **OsName** | string | 镜像信息 |**Yes**|
 | **CreateTime** | int | 创建时间 |**Yes**|
 | **ExpireTime** | int | 到期时间 |**Yes**|
 | **State** | string | 主机状态 |**Yes**|
@@ -94,12 +94,11 @@
 |:---|:---|:---|:---|
 | **Type** | string | 磁盘类型。系统盘: Boot，数据盘: Data,网络盘：Udisk |No|
 | **DiskId** | string | 磁盘长ID |No|
-| **Name** | int | UDisk名字（仅当磁盘是UDisk时返回） |No|
+| **Name** | string | UDisk名字（仅当磁盘是UDisk时返回） |No|
 | **Drive** | string | 磁盘盘符 |No|
 | **Size** | int | 磁盘大小，单位: GB |No|
 | **BackupType** | string | 备份方案，枚举类型：BASIC_SNAPSHOT,普通快照；DATAARK,方舟。无快照则不返回该字段。 |No|
 | **IOPS** | int | 当前主机的IOPS值 |No|
-| **DiskShortId** | string | 磁盘短ID |No|
 | **Encrypted** | string | Yes: 加密 No: 非加密 |No|
 | **DiskType** | string | LOCAL_NOMAL\| CLOUD_NORMAL\| LOCAL_SSD\| CLOUD_SSD\|EXCLUSIVE_LOCAL_DISK |No|
 | **IsBoot** | string | True\| False |No|

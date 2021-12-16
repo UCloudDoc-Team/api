@@ -13,7 +13,7 @@
     - [获取最早可回档时间 - FetchUDBInstanceEarliestRecoverTime](api/udb-api/fetch_udb_instance_earliest_recover_time)
     - [核查db是否可以使用回档功能 - CheckRecoverUDBInstance](api/udb-api/check_recover_udb_instance)
     - [编辑备份黑名单 - EditUDBBackupBlacklist](api/udb-api/edit_udb_backup_blacklist)
-    - [UDB高可用实例升级为Sentinel版本（不带HAProxy）升级耗时30-70秒 - SwitchUDBHAToSentinel](api/udb-api/switch_udb_ha_to_sentinel)
+    - [UDB高可用实例升级为Sentinel版本（不带HAProxy）升级耗时5-10秒 - SwitchUDBHAToSentinel](api/udb-api/switch_udb_ha_to_sentinel)
     - [备份UDB指定时间段的slowlog分析结果 - BackupUDBInstanceSlowLog](api/udb-api/backup_udb_instance_slow_log)
     - [备份UDB指定时间段的binlog列表 - BackupUDBInstanceBinlog](api/udb-api/backup_udb_instance_binlog)
     - [将新建的db恢复到指定db某个指定时间点 - CreateUDBInstanceByRecovery](api/udb-api/create_udb_instance_by_recovery)
