@@ -587,18 +587,6 @@
       "title": "地域和可用区",
       "des": "",
       "imglinks": ""
-    },
-    {
-      "url": "/api/summary/signature",
-      "title": "签名算法",
-      "des": "",
-      "imglinks": ""
-    },
-    {
-      "url": "/api/summary/get_project_list",
-      "title": "获取项目列表",
-      "des": "",
-      "imglinks": ""
     }
   ]
 }
