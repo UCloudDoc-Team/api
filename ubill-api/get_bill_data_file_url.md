@@ -30,10 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **BillPeriod** | int | 账期（时间戳格式） |**Yes**|
 | **BillType** | int | 账单类型，传 0 时获取账单总览报表，传 1 获取账单明细报表 |**Yes**|
+| **BillingCycle** | string | 账期(字符串格式，YYYY-MM，例如2021-08).   <br />若BillingCycle 和 BillPeriod同时存在，BillingCycle 优先 |**Yes**|
+| **BillPeriod** | int | 此字段不推荐使用，建议使用BillingCycle.   <br />若BillingCycle 和 BillPeriod同时存在，BillingCycle 优先 |No|
 | **PaidType** | int | 获取账单总览报表时，账单的支付状态，传 0 时获取待支付账单，传 1 时获取已支付账单。获取账单明细报表时该参数无效 |No|
 | **RequireVersion** | string | 如需求其他语言版本的账单则使用此参数。默认中文。如 RequireVersion = "EN"，则提供英文版本账单。 |No|
+| **Version** | string | 文件版本，若为"v1"表示获取带有子用户信息的账单，可以为空 |No|
 
 ### 响应字段
 
@@ -54,10 +56,11 @@
     
 ```
 https://api.ucloud.cn/?Action=GetBillDataFileUrl
-&BillPeriod=1542681193
-&BillType=0
+&BillingCycle="2021-12"
+&BillType=1
 &PaidType=1
 &RequireVersion="EN"
+&Version="v1"
 ```
 
 ### 响应示例
@@ -65,7 +68,7 @@ https://api.ucloud.cn/?Action=GetBillDataFileUrl
 ```json
 {
   "Action": "GetBillDataFileUrlResponse",
-  "FileUrl": "http://pre-channel-1.cn-sh2.ufileos.com/summary-bill-transaction-1-2018-11.xlsx?UCloudPublicKey=dsdaef121dadew23dads2222s\u0026Expires=1553497568\u0026Signature=seadfg3232ssdads1=",
+  "FileUrl": "https://channel-1.cn-bj.ufileos.com/order-detail-1-2021-12-en.v1.csv?UCloudPublicKey=TOKEN_6ecddc1d-96c3-49a0-bfa6-ef1621f075fa\u0026Expires=1640163358\u0026Signature=0IfhSgJl2SrYbMl6bAnNW7kmhYw=",
   "IsValid": "yes",
   "RetCode": 0
 }
