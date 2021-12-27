@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目Id。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目Id。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **NATGWIds.N** | string | NAT网关Id。默认为该项目下所有NAT网关 |No|
 | **Offset** | int | 数据偏移量。默认为0 |No|
 | **Limit** | int | 数据分页值。默认为20 |No|
@@ -45,7 +45,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 满足条件的实例的总数 |**Yes**|
-| **DataSet** | array[[*NatGatewayDataSet*](#NatGatewayDataSet)] | 查到的NATGW信息列表 |**Yes**|
+| **DataSet** | array[[*NatGatewayDataSet*](#NatGatewayDataSet)] | 查到的NATGW信息列表 |No|
 
 #### 数据模型
 
@@ -54,15 +54,17 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **NATGWId** | string | natgw id |**Yes**|
-| **NATGWName** | string | natgw名称 |**Yes**|
-| **CreateTime** | int | natgw创建时间 |**Yes**|
-| **Tag** | string | 业务组 |**Yes**|
-| **Remark** | string | 备注 |**Yes**|
-| **FirewallId** | string | 绑定的防火墙Id |**Yes**|
-| **VPCId** | string | 所属VPC Id |**Yes**|
-| **SubnetSet** | array[[*NatGatewaySubnetSet*](#NatGatewaySubnetSet)] | 子网 Id |**Yes**|
-| **IPSet** | array[[*NatGatewayIPSet*](#NatGatewayIPSet)] | 绑定的EIP 信息 |**Yes**|
+| **NATGWId** | string | natgw id |No|
+| **NATGWName** | string | natgw名称 |No|
+| **Tag** | string | 业务组 |No|
+| **Remark** | string | 备注 |No|
+| **CreateTime** | int | natgw创建时间 |No|
+| **FirewallId** | string | 绑定的防火墙Id |No|
+| **VPCId** | string | 所属VPC Id |No|
+| **SubnetSet** | array[[*NatGatewaySubnetSet*](#NatGatewaySubnetSet)] | 子网 Id |No|
+| **IPSet** | array[[*NatGatewayIPSet*](#NatGatewayIPSet)] | 绑定的EIP 信息 |No|
+| **VPCName** | string | VPC名称 |No|
+| **IsSnatpoolEnabled** | string | 枚举值，“enable”，默认出口规则使用了负载均衡；“disable”，默认出口规则未使用负载均衡。 |No|
 | **PolicyId** | array[string] | 转发策略Id |No|
 
 #### NatGatewaySubnetSet
