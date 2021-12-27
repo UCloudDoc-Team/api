@@ -17,6 +17,7 @@
 |[CreateNetworkAclAssociation](api/vpc2.0-api/create_network_acl_association)|创建ACL的绑定关系|
 |[CreateNetworkAclEntry](api/vpc2.0-api/create_network_acl_entry)|创建ACL的规则|
 |[CreateRouteTable](api/vpc2.0-api/create_route_table)|创建路由表|
+|[CreateSnatDnatRule](api/vpc2.0-api/create_snat_dnat_rule)|使用NAT创建内外网IP映射|
 |[CreateSubnet](api/vpc2.0-api/create_subnet)|创建子网|
 |[CreateVPC](api/vpc2.0-api/create_vpc)|创建VPC|
 |[CreateVPCIntercom](api/vpc2.0-api/create_vpc_intercom)|新建VPC互通|
@@ -27,6 +28,7 @@
 |[DeleteNetworkAclEntry](api/vpc2.0-api/delete_network_acl_entry)|删除ACL的规则|
 |[DeleteRouteTable](api/vpc2.0-api/delete_route_table)|删除自定义路由表|
 |[DeleteSecondaryIp](api/vpc2.0-api/delete_secondary_ip)|删除Ip|
+|[DeleteSnatDnatRule](api/vpc2.0-api/delete_snat_dnat_rule)|删除NAT创建内外网IP映射规则|
 |[DeleteSnatRule](api/vpc2.0-api/delete_snat_rule)|删除出口规则（SNAT规则）|
 |[DeleteSubnet](api/vpc2.0-api/delete_subnet)|删除子网|
 |[DeleteVPC](api/vpc2.0-api/delete_vpc)|删除VPC|
@@ -40,6 +42,7 @@
 |[DescribeNetworkAclEntry](api/vpc2.0-api/describe_network_acl_entry)|获取ACL的规则信息|
 |[DescribeRouteTable](api/vpc2.0-api/describe_route_table)|获取路由表详细信息(包括路由策略)|
 |[DescribeSecondaryIp](api/vpc2.0-api/describe_secondary_ip)|查询SecondaryIp|
+|[DescribeSnatDnatRule](api/vpc2.0-api/describe_snat_dnat_rule)|获取基于NAT创建的内外网IP映射规则信息|
 |[DescribeSnatRule](api/vpc2.0-api/describe_snat_rule)|获取Nat网关的出口规则（SNAT规则）|
 |[DescribeSubnet](api/vpc2.0-api/describe_subnet)|获取子网信息|
 |[DescribeSubnetResource](api/vpc2.0-api/describe_subnet_resource)|展示子网资源|
