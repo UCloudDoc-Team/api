@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | string | 偏移量，默认为 0 |No|
 | **Limit** | string | 请求数量，默认为 20 |No|
 | **Type** | string | 任务类型 |No|
@@ -51,9 +51,14 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **TaskId** | string | 任务 ID |No|
-| **Name** | string | 任务名称 |No|
-| **Type** | string | 任务类型, full全量, incremental增量，full+incremental全量+增量。 |No|
+| **ServiceType** | string | 服务类型， small, medium, large  |**Yes**|
+| **ChargeType** | string | 资源付费类型，枚举：Dynamic/ Month/ Year/ Trial/ Day |**Yes**|
+| **AutoRenew** | string | 是否自动续费，枚举：Yes/ No  |**Yes**|
+| **IsExpire** | string | 资源是否过期，枚举：Yes/ No   |**Yes**|
+| **ExpireTime** | int | 资源有效期时间戳 |**Yes**|
+| **TaskId** | string | 任务 ID |**Yes**|
+| **Name** | string | 任务名称 |**Yes**|
+| **Type** | string | 任务类型, full全量, incremental增量，full+incremental全量+增量。 |**Yes**|
 | **MaxRetryCount** | int | 最大失败重试次数 |No|
 | **CurRetryCount** | int | 当前失败重试次数 |No|
 | **Status** | string | 任务状态 |No|
