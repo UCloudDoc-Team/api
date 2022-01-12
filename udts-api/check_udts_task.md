@@ -31,19 +31,19 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Name** | string | task 名称，长度不能超过 128 |**Yes**|
+| **Name** | string | 任务名称，长度不能超过 128 |**Yes**|
 | **Type** | string | 任务类型，值为 transfer 或 integration， transfer 时任务为 数据迁移，integration 时任务为 数据集成。 |**Yes**|
 | **MaxRetryCount** | string | 重试次数，最大为 5。 默认为0 |**Yes**|
-| **Query** | string | 废弃 |No|
-| **Source.N.Mode** | string | // 任务类型，值可以是 full, incremental, full+incremental, bidirectional |No|
-| **Source.N.DataType** | string | 数据库类型 |No|
+| **Source.N.ServiceType** | string | 服务类型，值可以是 small、medium、large，分别对应 “基础版”、“轻量版” 和 “旗舰版” |**Yes**|
+| **Source.N.Mode** | string | 任务模式，值可以是 full, incremental, full+incremental, bidirectional |No|
+| **Source.N.DataType** | string | 数据库类型，比如 mysql |No|
 | **Source.N.NWType** | string | 源网络类型，可以是 public,user,dedicated_line |No|
 | **Source.N.MySQLNode.Host** | string | 源数据库地址， 比如 10.9.37.200 |No|
 | **Source.N.MySQLNode.Port** | int | 源 MySQL 端口，如 3306 |No|
 | **Source.N.MySQLNode.User** | string | 源 MySQL 用户名，如 root |No|
 | **Source.N.MySQLNode.Password** | string | 源 MySQL 密码 |No|
-| **Source.N.MySQLNode.VPCId** | string | VPC |No|
-| **Source.N.MySQLNode.SubnetId** | string | 子网 ID |No|
+| **Source.N.MySQLNode.VPCId** | string | VPC ID, 可以从 https://console.ucloud.cn/vpc/vpc 获取，比如 uvnet-u0ecace |No|
+| **Source.N.MySQLNode.SubnetId** | string | 子网 ID，可以从 https://console.ucloud.cn/vpc/subnet，比如 subnet-2sloxs |No|
 | **Source.N.MySQLNode.DataRegion** | string | 数据库地域，比如 cn-bj2 |No|
 | **Source.N.MySQLNode.Database** | string | 需要迁移的 DB 名称 |No|
 | **Source.N.MySQLNode.Table** | string | 需要迁移的 table 名 |No|
@@ -53,6 +53,7 @@
 | **Source.N.MySQLNode.SyncData.BinlogGTID** | string | 增量时需要指定的 binlog gtid，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
 | **QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
 | **QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
+| **Query** | string | 废弃 |No|
 | **Target.DataType** | string | 目标数据库类型，比如 mysql |No|
 | **Target.NWType** | string | 目标 db 网络类型，目前进支持 user |No|
 | **Target.MySQLNode.Host** | string | 目标数据库地址， 比如 10.9.37.212 |No|
@@ -137,6 +138,7 @@ https://api.ucloud.cn/?Action=CheckUDTSTask
 &Target.MySQLNode.VPCId=kFiSKqpB
 &Target.MySQLNode.SubnetId=VTTYIvGY
 &Target.MySQLNode.DataRegion=MzdqBMqb
+&Source.N.ServiceType=epppksUq
 ```
 
 ### 响应示例

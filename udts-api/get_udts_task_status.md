@@ -71,9 +71,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **BinlogName** | string | Binlog 文件名， 长度不超过128字符 |**Yes**|
-| **BinlogPos** | int | Binlog Pos |**Yes**|
-| **ServerId** | int | 分配给UDTS task的server ID, 必须在MySQL集群中唯一 |**Yes**|
+| **BinlogName** | string | Binlog 文件名， 长度不超过128字符 |No|
+| **BinlogPos** | int | Binlog Pos |No|
 | **BinlogGTID** | string | GTID |No|
 
 ## 示例
