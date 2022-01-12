@@ -56,6 +56,8 @@ https://api.ucloud.cn/?Action=SendISMSMessage
 &ProjectId=EkNSajhM
 &TemplateId=pAZelVFJ
 &PhoneSet.N=imMxkYUz
+&TemplateParameters=gYJDeuXu
+&TemplateParameters=uxmiQtzz
 ```
 
 ### 响应示例
