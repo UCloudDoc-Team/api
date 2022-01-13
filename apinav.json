@@ -82,6 +82,10 @@
       {
         "links": "/api/tidb-api/README",
         "name": "分布式NewSQL数据库 TiDB"
+      },
+      {
+        "links": "/api/utsdb-api/README",
+        "name": "时序数据库 UTSDB"
       }
     ]
   },
