@@ -5,6 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[AddUK8SExistingUHost](api/uk8s-api/add_uk8s_existing_uhost)|添加Node节点（已有云主机）|
+|[AddUK8SNodeGroup](api/uk8s-api/add_uk8s_node_group)|添加UK8S节点池|
 |[AddUK8SPHostNode](api/uk8s-api/add_uk8s_phost_node)|添加Node节点（物理云主机）|
 |[AddUK8SUHostNode](api/uk8s-api/add_uk8s_uhost_node)|添加Node节点（云主机）|
 |[CreateUK8SClusterV2](api/uk8s-api/create_uk8s_cluster_v2)|创建UK8S集群V2版|
@@ -15,3 +16,5 @@
 |[DescribeUK8SNode](api/uk8s-api/describe_uk8s_node)|获取 UK8S 节点详情|
 |[ListUK8SClusterNodeV2](api/uk8s-api/list_uk8s_cluster_node_v2)|获取UK8S集群节点信息|
 |[ListUK8SClusterV2](api/uk8s-api/list_uk8s_cluster_v2)|获取UK8S集群信息|
+|[ListUK8SNodeGroup](api/uk8s-api/list_uk8s_node_group)|列出UK8S节点池|
+|[RemoveUK8SNodeGroup](api/uk8s-api/remove_uk8s_node_group)|删除UK8S节点池|
