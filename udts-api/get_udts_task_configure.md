@@ -62,6 +62,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **DataType** | string | 源数据类型可以是 mysql, tidb, csv, oracle, udb-mysql。<br />目的数据类型可以是 mysql, tidb, udb-mysql, udw. |**Yes**|
+| **ServiceType** | string | 服务类型，值可以是small、medium、large，分别对应“基础版”、“轻量版”和“旗舰版” |**Yes**|
 | **NWType** | string | 网络类型 |**Yes**|
 | **BandwidthLimit** | int | 设置的最大的速率，单位MB/s，公网/专线(0, 56]，用户网(0, 1024]，不填/超过默认是峰值 |No|
 | **CSVNode** | [*CSVNode*](#CSVNode) | 当 DataType 为csv的时候使用。 |No|
