@@ -30,6 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Domain** | string | 推流域名 |**Yes**|
 | **Application** | string | 禁播流所属的Application(应用名) |**Yes**|
 | **StreamId** | string | 禁播流Id |**Yes**|
@@ -54,6 +55,8 @@ https://api.ucloud.cn/?Action=UnforbidLiveStream
 &Domain=vftXvnGW
 &Application=sGKcwsTT
 &StreamId=JCHqgPQx
+&Projectid=IsBlWwtl
+&ProjectId=DQbkbyCu
 ```
 
 ### 响应示例
