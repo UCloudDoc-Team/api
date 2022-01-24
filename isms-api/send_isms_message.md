@@ -31,6 +31,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **TemplateId** | string | 视频短信模板Id |**Yes**|
 | **PhoneSet.N** | string | 手机号码列表。暂时只支持中国大陆号码。若号码中带区号，需要将区号使用小括号包含，放在号码前面。如: (86)1851623xxxx |**Yes**|
+| **TemplateParameter.N.VariableName** | string | 短信模板中的变量名 |No|
+| **TemplateParameter.N.VariableValue** | string | 变量名对应的变量值 |No|
 
 ### 响应字段
 
@@ -58,6 +60,7 @@ https://api.ucloud.cn/?Action=SendISMSMessage
 &PhoneSet.N=imMxkYUz
 &TemplateParameters=gYJDeuXu
 &TemplateParameters=uxmiQtzz
+&TemplateParameter.N.VariableValue=kNYMTWPa
 ```
 
 ### 响应示例
