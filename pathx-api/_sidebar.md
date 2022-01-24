@@ -34,6 +34,7 @@
     - [获取全球统一接入转发实例价格 - GetUGA3Price](api/pathx-api/get_uga3_price)
     - [全球统一接入获取实例更新价格（增加、删退） - GetUGA3UpdatePrice](api/pathx-api/get_uga3_update_price)
     - [修改GlobalSSH端口 - ModifyGlobalSSHPort](api/pathx-api/modify_global_ssh_port)
+    - [修改GlobalSSH备注 - ModifyGlobalSSHRemark](api/pathx-api/modify_global_ssh_remark)
     - [修改GlobalSSH实例类型 - ModifyGlobalSSHType](api/pathx-api/modify_global_ssh_type)
     - [修改统一接入加速配置带宽 - ModifyUGA3Bandwidth](api/pathx-api/modify_uga3_bandwidth)
     - [修改统一接入加速配置属性 - ModifyUGA3Instance](api/pathx-api/modify_uga3_instance)
