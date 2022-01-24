@@ -29,7 +29,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **TaskIdSet.N** | string | 发送记录TaskId集合。调用SendUSMSVideoMessage时返回的TaskId的集合。以TaskIdSet.0、TaskIdSet.1...TaskIdSet.N的形式传入。每次请求最多支持100个 |**Yes**|
+| **TaskIdSet.N** | string | 发送记录TaskId集合。调用SendISMSMessage时返回的TaskId的集合。以TaskIdSet.0、TaskIdSet.1...TaskIdSet.N的形式传入。每次请求最多支持100个 |**Yes**|
 
 ### 响应字段
 
@@ -70,8 +70,8 @@
 https://api.ucloud.cn/?Action=GetISMSSendReceipt
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=YxpiUfMK
-&TaskIdSet.N=nkVHwSwf
+&ProjectId=rfepGpxl
+&TaskIdSet.N=ewgIiUqD
 ```
 
 ### 响应示例
@@ -82,13 +82,20 @@ https://api.ucloud.cn/?Action=GetISMSSendReceipt
   "Data": [
     {
       "ReceiptSet": [
-        "dvLbalts"
+        {
+          "Phone": "CfIVRtfz",
+          "ReceiptCode": "XLUflHZQ",
+          "ReceiptDesc": "jpGASiAZ",
+          "ReceiptResult": "pZBdWEvX",
+          "ReceiptTime": 1,
+          "SessionId": "IANMkplu"
+        }
       ],
-      "TaskId": "IubvXews"
+      "TaskId": "OoQpNCoM"
     }
   ],
-  "Message": "dqZhPBJi",
-  "ReqUuid": "AqFSINSi",
+  "Message": "PUMBqOso",
+  "ReqUuid": "dAocsVDK",
   "RetCode": 0
 }
 ```
