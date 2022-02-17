@@ -64,7 +64,7 @@
 | **IdleFlow** | float | 闲时流量；单位byte；海外无此字段 |No|
 | **BusyFlow** | float | 忙时流量；单位byte；海外无此字段 |No|
 | **CdnFlow** | float | cdn回源流量;单位byte |No|
-| **ApiTimes** | float | API请求次数（次） |No|
+| **ApiTimes** | float | API请求次数（万次） |No|
 
 #### UFileDailyReportItem
 
@@ -80,7 +80,7 @@
 | **CdnFlow** | float | cdn回源流量;单位byte |No|
 | **Flow** | float | 下载流量：单位byte；国内无此字段 |No|
 | **Date** | int | 配额消费时间，unix时间戳（单位s），精确到日期 |No|
-| **ApiTimes** | float | API请求次数（次） |No|
+| **ApiTimes** | float | API请求次数（万次） |No|
 
 ## 示例
 
