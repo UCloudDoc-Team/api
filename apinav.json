@@ -24,10 +24,6 @@
       {
         "links": "/api/uk8s-api/README",
         "name": "容器云 UK8S"
-      },
-      {
-        "links": "/api/cube-api/README",
-        "name": "容器实例 Cube"
       }
     ]
   },
