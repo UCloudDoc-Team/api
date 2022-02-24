@@ -36,6 +36,7 @@
 | **Template** | string | 新的模板内容。模板名称和模板内容必须提供一个，否则会报错。小于等于600个字 |**Yes**|
 | **TemplateName** | string | 新的模板名称。小于等于32个字，每个中文、英文、数组、符合都计为一个字 |No|
 | **Remark** | string | 短信模板申请原因说明，字数不超过128，每个中文、符号、英文、数字等都计为1个字。 |No|
+| **Instruction** | string | 模板变量属性说明 |No|
 
 ### 响应字段
 
@@ -60,6 +61,7 @@ https://api.ucloud.cn/?Action=UpdateUSMSTemplate
 &TemplateName=ucloud-alert
 &Remark=XXXXXXXXXXXXXXX
 &UnsubscribeInfo=sUGREgjQ
+&Instruction=cmUVPDNr
 ```
 
 ### 响应示例
