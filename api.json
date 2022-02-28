@@ -126,88 +126,6 @@
       ]
     },
     {
-      "listname": "数据库",
-      "listvalue": [
-        {
-          "name": "云数据库 MySQL UDB",
-          "img": "icon-product__udb",
-          "sublinks": [
-            {
-              "links": "/api/udb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "云数据库 MongoDB UDB",
-          "img": "icon-product__udb",
-          "sublinks": [
-            {
-              "links": "/api/udb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "云内存 UMem Memcache",
-          "img": "icon-product__umem",
-          "sublinks": [
-            {
-              "links": "/api/umem-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "云内存 UMem Redis",
-          "img": "icon-product__umem",
-          "sublinks": [
-            {
-              "links": "/api/umem-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "分布式数据库 UDDB",
-          "img": "icon-product__uddb",
-          "sublinks": [
-            {
-              "links": "/api/uddb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "分布式NewSQL数据库 TiDB",
-          "img": "icon-product__tidb",
-          "sublinks": [
-            {
-              "links": "/api/tidb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "时序数据库 UTSDB",
-          "img": "icon-product__utsdb",
-          "sublinks": [
-            {
-              "links": "/api/utsdb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "listname": "存储",
       "listvalue": [
         {
@@ -327,7 +245,89 @@
       ]
     },
     {
-      "listname": "数据分析",
+      "listname": "数据库",
+      "listvalue": [
+        {
+          "name": "云数据库 MySQL UDB",
+          "img": "icon-product__udb",
+          "sublinks": [
+            {
+              "links": "/api/udb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "云数据库 MongoDB UDB",
+          "img": "icon-product__udb",
+          "sublinks": [
+            {
+              "links": "/api/udb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "云内存 UMem Memcache",
+          "img": "icon-product__umem",
+          "sublinks": [
+            {
+              "links": "/api/umem-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "云内存 UMem Redis",
+          "img": "icon-product__umem",
+          "sublinks": [
+            {
+              "links": "/api/umem-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "分布式数据库 UDDB",
+          "img": "icon-product__uddb",
+          "sublinks": [
+            {
+              "links": "/api/uddb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "分布式NewSQL数据库 TiDB",
+          "img": "icon-product__tidb",
+          "sublinks": [
+            {
+              "links": "/api/tidb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "时序数据库 UTSDB",
+          "img": "icon-product__utsdb",
+          "sublinks": [
+            {
+              "links": "/api/utsdb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "大数据",
       "listvalue": [
         {
           "name": "数据湖分析 USQL",
