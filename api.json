@@ -95,17 +95,6 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
-        },
-        {
-          "name": "全球动态加速 PathX",
-          "img": "icon-product__ugaa",
-          "sublinks": [
-            {
-              "links": "/api/pathx-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
         }
       ]
     },
@@ -118,6 +107,152 @@
           "sublinks": [
             {
               "links": "/api/ipsecvpn-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "存储",
+      "listvalue": [
+        {
+          "name": "云硬盘 UDisk",
+          "img": "icon-product__udisk",
+          "sublinks": [
+            {
+              "links": "/api/udisk-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "文件存储 UFS",
+          "img": "icon-product__ufs",
+          "sublinks": [
+            {
+              "links": "/api/ufs-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "对象存储 US3",
+          "img": "icon-product__ufile",
+          "sublinks": [
+            {
+              "links": "/api/ufile-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "磁盘快照服务 USnap",
+          "img": "icon-product__usnap",
+          "sublinks": [
+            {
+              "links": "/api/usnap-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "网络加速",
+      "listvalue": [
+        {
+          "name": "全球动态加速 PathX",
+          "img": "icon-product__ugaa",
+          "sublinks": [
+            {
+              "links": "/api/pathx-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "无人化智能盒子 UBox",
+          "img": "icon-product__accessgw",
+          "sublinks": [
+            {
+              "links": "/api/ubox-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "云分发",
+      "listvalue": [
+        {
+          "name": "云分发 UCDN",
+          "img": "icon-product__ucdn",
+          "sublinks": [
+            {
+              "links": "/api/ucdn-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "视频服务",
+      "listvalue": [
+        {
+          "name": "云直播 ULive",
+          "img": "icon-product__ulive",
+          "sublinks": [
+            {
+              "links": "/api/ulive-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "媒体工厂 UMedia",
+          "img": "icon-product__umedia",
+          "sublinks": [
+            {
+              "links": "/api/umedia-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "实时音视频 URTC",
+          "img": "icon-product__urtc",
+          "sublinks": [
+            {
+              "links": "/api/urtc-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "边缘计算",
+      "listvalue": [
+        {
+          "name": "边缘计算虚拟机 UEC-VM",
+          "img": "icon-product__uodn2",
+          "sublinks": [
+            {
+              "links": "/api/uec-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -208,126 +343,7 @@
       ]
     },
     {
-      "listname": "存储",
-      "listvalue": [
-        {
-          "name": "云硬盘 UDisk",
-          "img": "icon-product__udisk",
-          "sublinks": [
-            {
-              "links": "/api/udisk-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "文件存储 UFS",
-          "img": "icon-product__ufs",
-          "sublinks": [
-            {
-              "links": "/api/ufs-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "对象存储 US3",
-          "img": "icon-product__ufile",
-          "sublinks": [
-            {
-              "links": "/api/ufile-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "磁盘快照服务 USnap",
-          "img": "icon-product__usnap",
-          "sublinks": [
-            {
-              "links": "/api/usnap-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "云分发",
-      "listvalue": [
-        {
-          "name": "云分发 UCDN",
-          "img": "icon-product__ucdn",
-          "sublinks": [
-            {
-              "links": "/api/ucdn-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "视频服务",
-      "listvalue": [
-        {
-          "name": "云直播 ULive",
-          "img": "icon-product__ulive",
-          "sublinks": [
-            {
-              "links": "/api/ulive-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "媒体工厂 UMedia",
-          "img": "icon-product__umedia",
-          "sublinks": [
-            {
-              "links": "/api/umedia-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "实时音视频 URTC",
-          "img": "icon-product__urtc",
-          "sublinks": [
-            {
-              "links": "/api/urtc-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "边缘计算",
-      "listvalue": [
-        {
-          "name": "边缘计算虚拟机 UEC-VM",
-          "img": "icon-product__uodn2",
-          "sublinks": [
-            {
-              "links": "/api/uec-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "数据分析",
+      "listname": "大数据",
       "listvalue": [
         {
           "name": "数据湖分析 USQL",
@@ -346,22 +362,6 @@
           "sublinks": [
             {
               "links": "/api/ukafka-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "物联网",
-      "listvalue": [
-        {
-          "name": "无人化智能盒子 UBox",
-          "img": "icon-product__accessgw",
-          "sublinks": [
-            {
-              "links": "/api/ubox-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -424,33 +424,6 @@
       ]
     },
     {
-      "listname": "企业应用",
-      "listvalue": [
-        {
-          "name": "域名服务 UDNR",
-          "img": "icon-product__udnr",
-          "sublinks": [
-            {
-              "links": "/api/udnrv2-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "RMQ消息队列 URocketMQ",
-          "img": "icon-product__mq",
-          "sublinks": [
-            {
-              "links": "/api/urocketmq-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "listname": "云通信",
       "listvalue": [
         {
@@ -481,6 +454,33 @@
           "sublinks": [
             {
               "links": "/api/unvs-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "企业应用",
+      "listvalue": [
+        {
+          "name": "域名服务 UDNR",
+          "img": "icon-product__udnr",
+          "sublinks": [
+            {
+              "links": "/api/udnrv2-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "RMQ消息队列 URocketMQ",
+          "img": "icon-product__mq",
+          "sublinks": [
+            {
+              "links": "/api/urocketmq-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
