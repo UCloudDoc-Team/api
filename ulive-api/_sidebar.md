@@ -23,6 +23,7 @@
     - [禁推流列表 - GetULiveForbidStreamList](api/ulive-api/get_u_live_forbid_stream_list)
     - [获取历史推流列表 - GetULiveHistoryStreamList](api/ulive-api/get_u_live_history_stream_list)
     - [直播录制统计信息 - GetULiveRecordStatistic](api/ulive-api/get_u_live_record_statistic)
+    - [直播时移统计信息(计费) - GetULiveShiftStatistic](api/ulive-api/get_u_live_shift_statistic)
     - [获取直播截图计费统计信息 - GetULiveSnapshotStatistic](api/ulive-api/get_u_live_snapshot_statistic)
     - [获取直播转码计费统计信息 - GetULiveTranscodeStatistic](api/ulive-api/get_u_live_transcode_statistic)
     - [获取直播加速带宽流量 - GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)
