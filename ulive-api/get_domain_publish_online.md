@@ -30,10 +30,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 查询流量的起始时间，格式：时间戳 |**Yes**|
 | **EndTime** | int | 查询流量的结束时间，格式：时间戳 |**Yes**|
-| **DomainId.N** | string | 域名ID，创建域名时生成的ID，不传则获取所有 |No|
+| **DomainId.N** | string | 域名ID，创建域名时生成的ID，不传则获取所有域名ID |No|
 
 ### 响应字段
 
@@ -43,7 +43,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **OnlineSet** | array[[*OnlineSet*](#OnlineSet)] | 主播在线数据列表，具体参考下面OnlineSet |No|
-| **MaxOnline** | float | 主播在线峰值 |No|
+| **MaxOnline** | int | 主播在线峰值 |No|
 
 #### 数据模型
 
@@ -52,8 +52,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Time** | int | 时间点。格式：UNIX时间戳 |**Yes**|
-| **Value** | float | 在线人数，单位:人 |**Yes**|
+| **Time** | int | 时间点。格式：时间戳 |**Yes**|
+| **Value** | int | 在线人数，单位:人 |**Yes**|
 
 ## 示例
 

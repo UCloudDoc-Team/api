@@ -31,10 +31,10 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **BeginTime** | int | 查询开始时间，时间戳格式 |**Yes**|
-| **EndTime** | int | 查询结束时间，时间戳格式 |**Yes**|
+| **BeginTime** | int | 查询开始时间，UNIX时间戳格式 |**Yes**|
+| **EndTime** | int | 查询结束时间，UNIX时间戳格式 |**Yes**|
 | **Domain** | string | 域名 |**Yes**|
-| **StreamName** | string | 流名 |No|
+| **StreamName** | string | 流名称；等同于其他接口的streamid参数 |No|
 
 ### 响应字段
 
@@ -55,7 +55,7 @@
 | **Domain** | string | 域名 |No|
 | **StreamName** | string | 流名 |No|
 | **Application** | string | 接入点 |No|
-| **TimeSlot** | array[string] | 时间段集合 |No|
+| **TimeSlot** | array[string] | 时间段集合，示例：["1644325052-1644325092","1644324052-1644325062"]表示这路流在查询时间段内出现的时间段集合 |No|
 
 ## 示例
 
@@ -63,11 +63,11 @@
     
 ```
 https://api.ucloud.cn/?Action=GetULiveHistoryStreamList
-&ProjectId=anGqiBsI
-&BeginTime=6
-&EndTime=1
-&Domain=URSJVYLg
-&StreamName=DnUEUcXJ
+&ProjectId=KiaEWjZJ
+&BeginTime=5
+&EndTime=2
+&Domain=HLGLZKxg
+&StreamName=NJLdiEva
 ```
 
 ### 响应示例
@@ -77,11 +77,11 @@ https://api.ucloud.cn/?Action=GetULiveHistoryStreamList
   "Action": "GetULiveHistoryStreamListResponse",
   "HistorStreamList": [
     {
-      "Application": "MKJPrxpq",
-      "Domain": "aMwOPhfF",
-      "StreamName": "MYDVrlGI",
+      "Application": "tJOxxexM",
+      "Domain": "PmMHCeQO",
+      "StreamName": "TLMOrDue",
       "TimeSlot": [
-        "FDbcNDKZ"
+        "zRYfwySv"
       ]
     }
   ],

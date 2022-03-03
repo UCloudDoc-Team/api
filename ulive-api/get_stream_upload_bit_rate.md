@@ -2,7 +2,7 @@
 
 ## 简介
 
-获取单个直播推流码率统计
+获取单个直播推流码率统计（现仅支持视频码率统计，不支持音频统计）
 
 
 
@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DomainId** | string | 域名ID，创建域名时生成的ID |**Yes**|
-| **StreamName** | string | 流名称 |**Yes**|
+| **StreamName** | string | 流名称；等同于其他接口的streamid参数 |**Yes**|
 | **BeginTime** | int | 查询直播流统计信息的起始时间，格式：时间戳 |**Yes**|
 | **EndTime** | int | 查询直播流统计信息的结束时间，不传该参数则返回BeginTime当天的所有统计；实时流信息可以不传此参数。格式：UNIX时间戳。BeginTime与EndTime的区间不能超过24小时。 |No|
 

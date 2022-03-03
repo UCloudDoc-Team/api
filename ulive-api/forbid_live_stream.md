@@ -32,8 +32,8 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Domain** | string | 推流域名 |**Yes**|
-| **Application** | string | 禁播流所属的Application(应用名) |**Yes**|
-| **StreamId** | string | 禁播流Id |**Yes**|
+| **Application** | string | 接入点 |**Yes**|
+| **StreamId** | string | 流名 |**Yes**|
 | **ForbidDuration** | int | 禁播时长：默认30天,单位：秒(s) |No|
 
 ### 响应字段
