@@ -72,6 +72,13 @@ https://api.ucloud.cn/?Action=UpdateBackendAttribute
 ```json
 {
   "Action": "UpdateBackendAttributeResponse",
+  "BackendSet": [
+    {
+      "BackendId": "VrjEOOfp",
+      "SubMessage": "fHpUyKqK",
+      "SubRetCode": 1
+    }
+  ],
   "RetCode": 0
 }
 ```
