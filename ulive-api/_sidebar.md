@@ -25,6 +25,7 @@
     - [直播录制统计信息 - GetULiveRecordStatistic](api/ulive-api/get_u_live_record_statistic)
     - [直播时移统计信息(计费) - GetULiveShiftStatistic](api/ulive-api/get_u_live_shift_statistic)
     - [获取直播截图计费统计信息 - GetULiveSnapshotStatistic](api/ulive-api/get_u_live_snapshot_statistic)
+    - [获取流监控 - GetULiveStreamMonitor](api/ulive-api/get_u_live_stream_monitor)
     - [获取直播转码计费统计信息 - GetULiveTranscodeStatistic](api/ulive-api/get_u_live_transcode_statistic)
     - [获取直播加速带宽流量 - GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)
     - [获取直播域名下的日志 - GetUliveDomainLog](api/ulive-api/get_ulive_domain_log)
