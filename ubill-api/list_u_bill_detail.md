@@ -33,8 +33,8 @@
 | **BillingCycle** | string | 账期，YYYY-MM，比如2021-08，只支持2018-05之后的查询 |**Yes**|
 | **ProjectName** | string | 项目名称 (筛选项, 默认全部)	 |No|
 | **ResourceIds.N** | string | 资源ID(筛选项, 默认全部)	<br />支持多筛选，多筛选请在请求参数中添加多个字段<br />例<br />ResourceIds.0: uhost-bzgf1gh5，<br />ResourceIds.1: uhost-gu1xpspa，<br /> |No|
-| **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_REFUND:退费 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_ADDITIONAL:补单 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_PAYMENT:删除资源回款 <br /><br /> > OT_POSTPAID_PAYMENT:后付费回款 <br /><br /> > OT_RECOVER:删除恢复 <br /><br /> > OT_POSTPAID_RENEW:过期续费回款 |No|
-| **ChargeType** | string | 计费方式 (筛选项, 默认全部)。枚举值：<br /><br /> > Dynamic:按时 <br /><br /> > Month:按月 <br /><br /> > Year:按年 <br /><br /> > Once:一次性按量 <br /><br /> > Trial:试用 <br /><br /> > Donate:赠送 <br /><br /> > Used:按量 <br /><br /> > Post:后付费 <br /><br /> > Day:按天 <br /><br /> > Quarter:按季度 <br /><br /> > Semester:按半年 |No|
+| **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_REFUND:退费 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_PAYMENT:删除资源回款 <br /><br /> > OT_POSTPAID_PAYMENT:后付费回款 <br /><br /> > OT_RECOVER:删除恢复 <br /><br /> > OT_POSTPAID_RENEW:过期续费回款 |No|
+| **ChargeType** | string | 计费方式 (筛选项, 默认全部)。枚举值：<br /><br /> > Dynamic:按时 <br /><br /> > Month:按月 <br /><br /> > Year:按年 <br /><br /> > Once:一次性按量 <br /><br /> > Used:按量 <br /><br /> > Post:后付费 |No|
 | **ShowZero** | int | 是否显示0元订单 (0 不显示, 1 显示, 默认0) |No|
 | **PaidState** | int | 支付状态 (筛选项, 1:仅显示未支付订单; 2:仅显示已支付订单; 0:两者都显示)	 |No|
 | **UserEmail** | string | 用户邮箱，可以根据用户邮箱来进行筛选 |No|
@@ -64,11 +64,11 @@
 | **AmountFree** | string | 赠送金额抵扣 |**Yes**|
 | **AmountCoupon** | string | 代金券抵扣 |**Yes**|
 | **AzGroupCName** | string | 可用区 |**Yes**|
-| **ChargeType** | string | 计费方式。枚举值：<br /><br /> > Dynamic:按时 <br /><br /> > Month:按月 <br /><br /> > Year:按年 <br /><br /> > Once:一次性按量 <br /><br /> > Trial:试用 <br /><br /> > Donate:赠送 <br /><br /> > Used:按量 <br /><br /> > Post:后付费 <br /><br /> > Day:按天 <br /><br /> > Quarter:按季度 <br /><br /> > Semester:按半年 |**Yes**|
+| **ChargeType** | string | 计费方式 (筛选项, 默认全部)。枚举值：<br /><br /> > Dynamic:按时 <br /><br /> > Month:按月 <br /><br /> > Year:按年 <br /><br /> > Once:一次性按量 <br /><br /> > Used:按量 <br /><br /> > Post:后付费 |**Yes**|
 | **CreateTime** | int | 创建时间（时间戳） |**Yes**|
 | **StartTime** | int | 开始时间（时间戳） |**Yes**|
 | **OrderNo** | string | 订单号 |**Yes**|
-| **OrderType** | string | 订单类型。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_REFUND:退费 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_ADDITIONAL:补单 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_PAYMENT:删除资源回款 <br /><br /> > OT_POSTPAID_PAYMENT:后付费回款 <br /><br /> > OT_RECOVER:删除恢复 <br /><br /> > OT_POSTPAID_RENEW:过期续费回款 |**Yes**|
+| **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_REFUND:退费 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_PAYMENT:删除资源回款 <br /><br /> > OT_POSTPAID_PAYMENT:后付费回款 <br /><br /> > OT_RECOVER:删除恢复 <br /><br /> > OT_POSTPAID_RENEW:过期续费回款 |**Yes**|
 | **ProjectName** | string | 项目名称 |**Yes**|
 | **ResourceId** | string | 资源ID |**Yes**|
 | **ResourceType** | string | 产品类型。枚举值：<br /><br /> > uhost:云主机 <br /><br /> > udisk:普通云硬盘 <br /><br /> > udb:云数据库 <br /><br /> > eip:弹性IP <br /><br /> > ufile:对象存储 <br /><br /> > fortress_host:堡垒机 <br /><br /> > ufs:文件存储 <br /><br /> > waf:WEB应用防火墙 <br /><br /> > ues:弹性搜索 <br /><br /> > udisk_ssd:SSD云硬盘 <br /><br /> > rssd:RSSD云硬盘 |**Yes**|
