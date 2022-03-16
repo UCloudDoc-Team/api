@@ -39,6 +39,7 @@
     - [获取网络ACL的绑定关系列表 - DescribeNetworkAclAssociation](api/vpc2.0-api/describe_network_acl_association)
     - [获取子网的ACL绑定信息 - DescribeNetworkAclAssociationBySubnet](api/vpc2.0-api/describe_network_acl_association_by_subnet)
     - [获取ACL的规则信息 - DescribeNetworkAclEntry](api/vpc2.0-api/describe_network_acl_entry)
+    - [展示虚拟网卡信息 - DescribeNetworkInterface](api/vpc2.0-api/describe_network_interface)
     - [获取路由表详细信息(包括路由策略) - DescribeRouteTable](api/vpc2.0-api/describe_route_table)
     - [查询SecondaryIp - DescribeSecondaryIp](api/vpc2.0-api/describe_secondary_ip)
     - [获取基于NAT创建的内外网IP映射规则信息 - DescribeSnatDnatRule](api/vpc2.0-api/describe_snat_dnat_rule)
