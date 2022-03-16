@@ -33,6 +33,7 @@
     - [删除VPC - DeleteVPC](api/vpc2.0-api/delete_vpc)
     - [删除VPC互通 - DeleteVPCIntercom](api/vpc2.0-api/delete_vpc_intercom)
     - [删除NAT网关白名单列表 - DeleteWhiteListResource](api/vpc2.0-api/delete_white_list_resource)
+    - [展示云主机绑定的网卡信息 - DescribeInstanceNetworkInterface](api/vpc2.0-api/describe_instance_network_interface)
     - [获取NAT网关信息 - DescribeNATGW](api/vpc2.0-api/describe_natgw)
     - [展示NAT网关端口转发规则 - DescribeNATGWPolicy](api/vpc2.0-api/describe_natgw_policy)
     - [获取网络ACL - DescribeNetworkAcl](api/vpc2.0-api/describe_network_acl)
