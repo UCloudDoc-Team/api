@@ -10,7 +10,7 @@ http(s)://api.ucloud.cn
 
 ### 注意事项
 
-1. 可以在 https://console.ucloud.cn/uapi/apikey 页面中配置开放 API 调用 IP 白名单（默认对所有 IP 地址开放）
+1. 主账号可以在 https://console.ucloud.cn/uaccount/userinfo 页面中配置开放 API 调用 IP 白名单（默认对所有 IP 地址开放），仅支持根据公网 IP 进行限制，并且对所有子账号生效
 2. 公网链路上各环节抖动可能会对访问开放 API 造成影响
 
 ## VPC 内网访问
@@ -24,7 +24,8 @@ http://api.service.ucloud.cn
 ### 注意事项
 
 1. 目前不支持 HTTPS 协议
-2. 如果用户在 https://console.ucloud.cn/uapi/apikey 页面中配置了 IP 白名单，需要将 10.10.10.10 加入白名单
+2. 如果主账号在 https://console.ucloud.cn/uaccount/userinfo 页面中配置了 IP 白名单，需要将 10.10.10.10 加入白名单
+3. 目前不支持限制指定 VPC 内网 IP 的访问
 
 ### 提供内网服务的可用区
 
