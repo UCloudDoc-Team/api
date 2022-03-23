@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **ImageType** | string | 镜像类别，枚举值，Base是基础镜像； |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ImageType** | string | 镜像类别，枚举值，Base是基础镜像；Custom是自制镜像。 |No|
 | **ImageId.N** | string | 镜像ID |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
@@ -63,6 +63,11 @@
 | **OsType** | string | 操作系统类型 |No|
 | **Support** | array[string] | 支持的机型 |No|
 | **Version** | string | 当前版本 |No|
+| **ImageType** | string | 枚举值：Base=>基础镜像，Custom=>自制镜像。 |No|
+| **CreateTime** | int | 裸金属2.0参数。镜像创建时间。 |No|
+| **State** | string | 裸金属2.0参数。镜像当前状态。 |No|
+| **ImageSize** | int | 裸金属2.0参数。镜像大小。 |No|
+| **ImageDescription** | string | 镜像描述 |No|
 
 ## 示例
 
