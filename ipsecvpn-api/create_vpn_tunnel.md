@@ -38,9 +38,9 @@
 | **RemoteVPNGatewayId** | string | 客户VPN网关的资源ID |**Yes**|
 | **IKEPreSharedKey** | string | 预共享密钥 |**Yes**|
 | **VPCId** | string | vpcId |**Yes**|
+| **IKEVersion** | string | ike版本，枚举值： "IKE V1"，"IKE V2"，默认v1 |**Yes**|
 | **IPSecLocalSubnetIds.N** | string | 指定VPN连接的本地子网的资源ID，最多可填写10个。 |**Yes**|
 | **IPSecRemoteSubnets.N** | string | 指定VPN连接的客户网段，最多可填写20个。 |**Yes**|
-| **IKEVersion** | string | ike版本，枚举值： "IKE V1"，"IKE V2"，默认v1 |**Yes**|
 | **Tag** | string | 业务组，默认为“Default” |No|
 | **Remark** | string | 备注，默认为空 |No|
 | **IKEEncryptionAlgorithm** | string | IKE协商过程中使用的加密算法，枚举值，"aes128", "aes192", "aes256", "aes512", "3des"。默认值为“aes128” |No|
@@ -52,7 +52,7 @@
 | **IKESALifetime** | string | IKE中SA的生存时间，可填写范围为600-604800。默认为86400。 |No|
 | **IPSecProtocol** | string | 使用的安全协议，枚举值，“esp”，“ah”。默认为“esp” |No|
 | **IPSecEncryptionAlgorithm** | string | IPSec隧道中使用的加密算法，枚举值，"aes128", "aes192", "aes256", "aes512", "3des"。默认值为“aes128” |No|
-| **IPSecAuthenticationAlgorithm** | string | IPSec隧道中使用的认证算法，枚举值，"md5", "sha1","sha256"。默认值为“sha1” |No|
+| **IPSecAuthenticationAlgorithm** | string | IPSec隧道中使用的认证算法，枚举值，"md5", "sha1","sha2-256"。默认值为“sha1” |No|
 | **IPSecSALifetime** | string | IPSec中SA的生存时间，可填写范围为1200 - 604800。默认为3600 |No|
 | **IPSecSALifetimeBytes** | string | IPSec中SA的生存时间（以字节计）。可选为8000 – 20000000。默认使用SA生存时间， |No|
 | **IPSecPFSDhGroup** | string | IPSec的PFS是否开启，枚举值，，不开启，"disable"；数字表示DH组, "1", "2", "5", "14", "15", "16"。默认为“disable”。 |No|
