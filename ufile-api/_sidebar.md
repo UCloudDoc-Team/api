@@ -4,10 +4,13 @@
 - [概览](api/ufile-api/README.md)
 - **管理类 API**
     - [创建Bucket - CreateBucket](api/ufile-api/create_bucket)
+    - [创建生命周期管理 - CreateUFileLifeCycle](api/ufile-api/create_ufile_life_cycle)
     - [创建US3令牌 - CreateUFileToken](api/ufile-api/create_ufile_token)
     - [删除Bucket - DeleteBucket](api/ufile-api/delete_bucket)
+    - [删除生命周期管理 - DeleteUFileLifeCycle](api/ufile-api/delete_ufile_life_cycle)
     - [删除令牌 - DeleteUFileToken](api/ufile-api/delete_ufile_token)
     - [获取Bucket信息 - DescribeBucket](api/ufile-api/describe_bucket)
+    - [获取生命周期信息 - DescribeUFileLifeCycle](api/ufile-api/describe_ufile_life_cycle)
     - [获取令牌信息 - DescribeUFileToken](api/ufile-api/describe_ufile_token)
     - [查看日消费报表 - GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)
     - [查看配额状态 - GetUFileQuota](api/ufile-api/get_ufile_quota)
@@ -16,6 +19,7 @@
     - [查看配额使用报表 - GetUFileReport](api/ufile-api/get_ufile_report)
     - [设置对象存储防盗链 - SetUFileReferer](api/ufile-api/set_ufile_referer)
     - [更改Bucket属性 - UpdateBucket](api/ufile-api/update_bucket)
+    - [更新生命周期管理 - UpdateUFileLifeCycle](api/ufile-api/update_ufile_life_cycle)
     - [更新令牌 - UpdateUFileToken](api/ufile-api/update_ufile_token)
 - **数据类 API**
   * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
