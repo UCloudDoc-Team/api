@@ -537,14 +537,25 @@
       ]
     },
     {
-      "listname": "账号与权限",
+      "listname": "账户服务",
       "listvalue": [
         {
-          "name": "账号与权限管理 UAM",
+          "name": "账号管理 UAccount",
           "img": "icon-product__account-security",
           "sublinks": [
             {
               "links": "/api/uaccount-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "访问控制 IAM",
+          "img": "icon-product__access-control",
+          "sublinks": [
+            {
+              "links": "/api/iam-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }

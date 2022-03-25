@@ -237,7 +237,11 @@
     "listvalue": [
       {
         "links": "/api/uaccount-api/README",
-        "name": "账号与权限管理 UAM"
+        "name": "账号管理 UAccount"
+      },
+      {
+        "links": "/api/iam-api/README",
+        "name": "访问控制 IAM"
       }
     ]
   },
