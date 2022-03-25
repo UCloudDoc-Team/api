@@ -1,4 +1,4 @@
-<div class="sidebar_title ">账号与权限管理 UAM</div>
+<div class="sidebar_title ">账号管理 UAccount</div>
 
 - [概览](api/uaccount-api/README.md)
 - [索引](api/uaccount-api/index.md)
