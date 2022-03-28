@@ -18,6 +18,8 @@
 |[DescribeFirewall](api/unet-api/describe_firewall)|获取防火墙信息|
 |[DescribeFirewallResource](api/unet-api/describe_firewall_resource)|获取防火墙绑定资源|
 |[DescribeShareBandwidth](api/unet-api/describe_share_bandwidth)|获取共享带宽信息|
+|[DescribeShareBandwidthPrice](api/unet-api/describe_share_bandwidth_price)|获取共享带宽价格|
+|[DescribeShareBandwidthUpdatePrice](api/unet-api/describe_share_bandwidth_update_price)|获取共享带宽升级价格|
 |[DisassociateEIPWithShareBandwidth](api/unet-api/disassociate_eip_with_share_bandwidth)|将EIP移出共享带宽|
 |[DisassociateFirewall](api/unet-api/disassociate_firewall)|解绑防火墙|
 |[GetEIPPayMode](api/unet-api/get_eip_pay_mode)|获取弹性IP计费方式|
