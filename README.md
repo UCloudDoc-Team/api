@@ -80,6 +80,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |:---|:---|
 |短信服务 USMS|[文档](/api/usms-api/)|
 |智能短信 ISMS|[文档](/api/isms-api/)|
+|语音消息服务 UVMS|[文档](/api/uvms-api/)|
 |号码认证 UNVS|[文档](/api/unvs-api/)|
 
 ### 安全防护
