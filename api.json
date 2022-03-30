@@ -427,6 +427,17 @@
       "listname": "云通信",
       "listvalue": [
         {
+          "name": "语音消息服务 UVMS",
+          "img": "icon-product__uvms",
+          "sublinks": [
+            {
+              "links": "/api/uvms-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "短信服务 USMS",
           "img": "icon-product__message",
           "sublinks": [

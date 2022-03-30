@@ -161,6 +161,10 @@
         "name": "智能短信 ISMS"
       },
       {
+        "links": "/api/uvms-api/README",
+        "name": "语音消息服务 UVMS"
+      },
+      {
         "links": "/api/unvs-api/README",
         "name": "号码认证 UNVS"
       }
