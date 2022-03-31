@@ -6,3 +6,4 @@
 - **API**
     - [创建项目 - CreateProject](api/iam-api/create_project)
     - [删除项目 - DeleteProject](api/iam-api/delete_project)
+    - [列出拥有指定项目权限的实体 - ListEntitiesForProject](api/iam-api/list_entities_for_project)
