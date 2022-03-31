@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。  |No|
-| **OperatorName** | string | 弹性IP线路，枚举值：国际线路， International；BGP线路：Bgp。<br /><br />使用BGP线路的地域：北京二、上海金融云、上海二、广州等，其他地域均使用国际线路。 |**Yes**|
+| **OperatorName** | string | 弹性IP线路，枚举值：国际线路， International；BGP线路：Bgp；精品BGP：BGPPro。<br /><br />使用BGP线路的地域：北京二、上海金融云、上海二、广州等，其他地域均使用国际线路。<br />使用BGPPro线路的地域：香港 |**Yes**|
 | **Bandwidth** | int | 弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-10000] |**Yes**|
 | **Tag** | string | 业务组名称, 默认为 "Default" |No|
 | **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费; Dynamic, 按时付费，默认为按月付费。 |No|
@@ -41,6 +41,7 @@
 | **PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. 默认为 "Bandwidth".“PostAccurateBandwidth”：带宽后付费模式 |No|
 | **ShareBandwidthId** | string | 绑定的共享带宽Id,仅当PayMode为ShareBandwidth时有效 |No|
 | **Name** | string | 弹性IP的名称, 默认为 "EIP" |No|
+| **Count** | int | 购买EIP数量，默认值为1 |No|
 | **Remark** | string | 弹性IP的备注, 默认为空 |No|
 | **CouponId** | string | 代金券ID, 默认不使用 |No|
 
@@ -83,6 +84,7 @@ https://api.ucloud.cn/?Action=AllocateEIP
 &ChargeType=Month
 &Region=cn-bj2
 &UseType=GbJSTTUJ
+&Count=7
 ```
 
 ### 响应示例
