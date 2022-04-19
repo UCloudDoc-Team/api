@@ -21,6 +21,7 @@
     - [解绑SSL证书 - UnbindSSL](api/ulb-api/unbind_ssl)
     - [更新后端实例属性 - UpdateBackendAttribute](api/ulb-api/update_backend_attribute)
     - [更新内容转发规则 - UpdatePolicy](api/ulb-api/update_policy)
+    - [更新SSL属性 - UpdateSSLAttribute](api/ulb-api/update_ssl_attribute)
     - [更新负载均衡属性 - UpdateULBAttribute](api/ulb-api/update_ulb_attribute)
     - [更新VServer属性 - UpdateVServerAttribute](api/ulb-api/update_vserver_attribute)
 - **附录**
