@@ -43,20 +43,21 @@
 | **SubnetId** | string | 所属子网 |**Yes**|
 | **PodCIDR** | string | Pod网段 |**Yes**|
 | **ServiceCIDR** | string | 服务网段 |**Yes**|
-| **MasterList** | array[[*UhostInfo*](#UhostInfo)] | Master节点配置信息，具体参考UhostInfo。托管版不返回该信息 |No|
 | **MasterCount** | int | Master 节点数量 |**Yes**|
+| **MasterList** | array[[*UhostInfo*](#UhostInfo)] | Master节点配置信息，具体参考UhostInfo。托管版不返回该信息 |No|
 | **NodeList** | array[[*UhostInfo*](#UhostInfo)] | Node节点配置信息,具体参考UhostInfo |No|
 | **CreateTime** | int | 创建时间 |No|
 | **NodeCount** | int | Node节点数量 |No|
 | **ApiServer** | string | 集群apiserver地址 |No|
 | **Status** | string | 状态 |No|
 | **ExternalApiServer** | string | 集群外部apiserver地址 |No|
-| **KubeProxy** | object | kube-proxy配置 |No|
+| **KubeProxy** | [*KubeProxy*](#KubeProxy) | kube-proxy配置 |No|
 | **Version** | string | K8S版本 |No|
 | **ClusterDomain** | string | 自定义或者默认的clusterdomain |No|
 | **EtcdCert** | string | 集群etcd服务证书 |No|
 | **EtcdKey** | string | 集群etcd服务密钥 |No|
 | **CACert** | string | 集群CA根证书 |No|
+| **MasterResourceStatus** | string | Master配置预警：Normal正常；<br />Warning 需要升级；<br />Error    需要紧急升级； |No|
 
 #### 数据模型
 
@@ -77,6 +78,12 @@
 | **ExpireTime** | int | 到期时间 |**Yes**|
 | **State** | string | 主机状态 |**Yes**|
 | **NodeType** | string | 节点类型：uhost表示云主机;uphost表示物理云主机 |**Yes**|
+
+#### KubeProxy
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Mode** | string | KubeProxy模式，枚举值为[ipvs,iptables] |No|
 
 #### IPSet
 
@@ -125,6 +132,7 @@ https://api.ucloud.cn/?Action=DescribeUK8SCluster
   "EtcdKey": "fcwdvzzi",
   "ExternalApiServer": "GVZVJyHy",
   "KubeProxy": {},
+  "MasterResourceStatus": "BBlivSsQ",
   "RetCode": 0,
   "Version": "JSrvWaDf"
 }
