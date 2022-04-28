@@ -11,6 +11,7 @@
 |[CreateUHostKeyPair](api/uhost-api/create_uhost_key_pair)|创建主机密钥对|
 |[DeleteIsolationGroup](api/uhost-api/delete_isolation_group)|删除硬件隔离组|
 |[DeleteUHostKeyPairs](api/uhost-api/delete_uhost_key_pairs)|删除主机密钥|
+|[DescribeAvailableInstanceTypes](api/uhost-api/describe_available_instance_types)|获取某个地域下可售/售罄的所有机型信息|
 |[DescribeImage](api/uhost-api/describe_image)|获取镜像列表|
 |[DescribeIsolationGroup](api/uhost-api/describe_isolation_group)|查询硬件隔离组|
 |[DescribeUHostInstance](api/uhost-api/describe_uhost_instance)|获取主机信息|

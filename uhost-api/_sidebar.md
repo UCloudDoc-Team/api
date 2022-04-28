@@ -10,6 +10,7 @@
     - [创建主机密钥对 - CreateUHostKeyPair](api/uhost-api/create_uhost_key_pair)
     - [删除硬件隔离组 - DeleteIsolationGroup](api/uhost-api/delete_isolation_group)
     - [删除主机密钥 - DeleteUHostKeyPairs](api/uhost-api/delete_uhost_key_pairs)
+    - [获取某个地域下可售/售罄的所有机型信息 - DescribeAvailableInstanceTypes](api/uhost-api/describe_available_instance_types)
     - [获取镜像列表 - DescribeImage](api/uhost-api/describe_image)
     - [查询硬件隔离组 - DescribeIsolationGroup](api/uhost-api/describe_isolation_group)
     - [获取主机信息 - DescribeUHostInstance](api/uhost-api/describe_uhost_instance)
