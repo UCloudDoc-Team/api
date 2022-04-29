@@ -24,6 +24,10 @@
       {
         "links": "/api/uk8s-api/README",
         "name": "容器云 UK8S"
+      },
+      {
+        "links": "/api/uphone-api/README",
+        "name": "云手机 UPhone"
       }
     ]
   },
