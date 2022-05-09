@@ -31,7 +31,7 @@
 | **ServerId** | string | 云手机服务器的资源ID。 |No|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望获取信息的云手机 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。如果都不传入，则返回当前 城市 所有符合条件的云手机列表。 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
-| **Limit** | int | 返回数据长度，默认为20，最大100 |No|
+| **Limit** | int | 返回数据长度，默认为200，最大200 |No|
 | **Tag** | string | 要查询的业务组名称 |No|
 | **IsAll** | boolean | 是否返回全部。如果有此参数，分页不生效。 |No|
 
