@@ -38,5 +38,6 @@
   * [文件存储类型转换-ClassSwitch](api/ufile-api/class_switch)
   * [解冻文件-Restore](api/ufile-api/restore)
   * [操作文件的Meta信息-OpMeta](api/ufile-api/op_meta)
+  * [拷贝文件-Copy](api/ufile-api/copy)
 - **附录**
   - [US3 错误码列表](api/ufile-api/error_code)
