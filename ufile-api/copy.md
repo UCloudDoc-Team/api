@@ -62,8 +62,6 @@ Content-Length: 11434
 Content-Type: image/jpg
 Content-MD5: c5371fe3624d438cd8a59420a3221978
 X-Ufile-Copy-Source: /SourceBucketName/SourceObjectName
-
-[11434 bytes of file data]
 ```
 
 Example Response:
