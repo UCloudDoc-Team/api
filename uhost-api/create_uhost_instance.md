@@ -37,7 +37,7 @@
 | **ImageId** | string | 镜像ID。 请通过 [DescribeImage](api/uhost-api/describe_image)获取 |**Yes**|
 | **Disks.N.IsBoot** | string | 是否是系统盘。枚举值：<br /><br /> > True，是系统盘 <br /><br /> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。 |**Yes**|
 | **Disks.N.Type** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
-| **Disks.N.Size** | int | 磁盘大小，单位GB，必须是10GB的整数倍。请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
+| **Disks.N.Size** | int | 磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
 | **Disks.N.BackupType** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br /> > SNAPSHOT，快照 <br /><br />当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type),默认值:NONE |No|
 | **Disks.N.Encrypted** | boolean | 【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false<br />加密必须传入对应的的KmsKeyId,默认值false |No|
 | **Disks.N.KmsKeyId** | string | 【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。 |No|
@@ -52,7 +52,7 @@
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
 | **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S"]，MachineType为G时必填 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
-| **NetCapability** | string | 网络增强特性。枚举值：Normal（默认），不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0（仅支持部分可用区，请参考控制台） |No|
+| **NetCapability** | string | 网络增强特性。枚举值：Normal，不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0（详情参考官网文档） |No|
 | **HotplugFeature** | boolean | 热升级特性。True为开启，False为未开启，默认False。 |No|
 | **VPCId** | string | VPC ID。默认为当前地域的默认VPC。 |No|
 | **SubnetId** | string | 子网 ID。默认为当前地域的默认子网。 |No|
@@ -71,7 +71,7 @@
 | **NetworkInterface.N.CreateCernetIp** | boolean | 申请并绑定一个教育网EIP。True为申请并绑定，False为不会申请绑定，默认False。当前只支持具有HPC特性的机型。 |No|
 | **UserData** | string | 用户自定义数据。当镜像支持Cloud-init Feature时可填写此字段。注意：1、总数据量大小不超过 16K；2、使用base64编码 |No|
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持“Cloud-init”Feature时可填写此字段。取值 >“On” 自动挂载（默认值）> “Off” 不自动挂载。 |No|
-| **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须 |No|
+| **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须。 |No|
 | **Features.UNI** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启，仅与 NetCapability Normal 兼容。 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
@@ -167,6 +167,15 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 &SecGroupId.N=shbyPlMw
 &Features.UNI=PCaQdRus
 &CouponId=LIgqlYLP
+&GpuFsx=false
+&UfsMountId=owebqtsq
+&UFSMountId=zFLnxyoU
+&SecGroupId.N.Priority=DMnmhjIz
+&SecurityMode=ykuINtPs
+&Disks.N.BackupMode=rgqxGmlQ
+&Disks.N.CustomBackup.Journal=wHuWPXvg
+&Disks.N.CustomBackup.Hour=rrczngzO
+&Disks.N.CustomBackup.Day=sQHbfMoJ
 ```
 
 ### 响应示例
@@ -177,6 +186,7 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
   "IPs": [
     "iUkWSFjX"
   ],
+  "MountedUFSId": "qfAGtiIv",
   "RetCode": 0,
   "UHostIds": [
     "GLKEpaXW"
