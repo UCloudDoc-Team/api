@@ -53,12 +53,8 @@ https://api.ucloud.cn/?Action=RenewCubePod
 &Region=cn-zj
 &Zone=cn-zj-01
 &ProjectId=sIKglHFL
-&VPCId=uyffaQUT
-&SubnetId=kyBrEYgj
+&CubeId=ftZtHyuL
 &Pod=ZZZpNwks
-&BusinessId=ONiNliZw
-&Group=TMgluENG
-&Name=cEKpGswy
 ```
 
 ### 响应示例
