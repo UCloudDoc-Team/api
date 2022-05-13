@@ -32,6 +32,11 @@
 | **VDiskId** | string | 磁盘ID |**Yes**|
 | **ChargeType** | string | Year , Month, Dynamic 默认: Month |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
+| **Tag** | string | 业务组 默认：Default |No|
+| **BackupMode** | string | 默认采用入门级套餐开通，“ Primer”：入门版，“Base”：基础版，“ Enterprise”：企业版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
+| **Journal** | int | BackupMode为Custom时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48 |No|
+| **Hour** | int | BackupMode为Custom时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96 |No|
+| **Day** | int | BackupMode为Custom时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30 |No|
 | **CouponId** | string | 代金券ID |No|
 
 ### 响应字段
@@ -61,6 +66,15 @@ https://api.ucloud.cn/?Action=CreateSnapshotService
 &ChargeType=DBszwtFT
 &CouponId=CCpkbTeg
 &CouponId=xFISNPEZ
+&Tag=DjjJMPup
+&Form=1
+&Journal=3
+&Hour=1
+&Day=9
+&Form=3
+&Journal=9
+&Hour=2
+&Day=5
 ```
 
 ### 响应示例
