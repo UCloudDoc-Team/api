@@ -26,6 +26,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **CalledNumber** | string | 被叫号码，采用 E.164 标准，格式为+[国家代码][用户号码]。<br />例如：+8613512345678， 其中前面有一个+号 ，86为国家码，13512345678为手机号 |**Yes**|
 | **TemplateId** | string | 模板 ID，在控制台审核通过的模板 ID。 |**Yes**|
