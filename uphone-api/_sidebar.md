@@ -39,5 +39,6 @@
     - [设置云手机GPS信息 - SetUPhoneGPS](api/uphone-api/set_u_phone_gps)
     - [设置云手机管理模式 - SetUPhoneManagerMode](api/uphone-api/set_u_phone_manager_mode)
     - [设置启动画面 - SetUPhoneSplashScreen](api/uphone-api/set_u_phone_splash_screen)
+    - [设置云手机RTC连接Token - SetUPhoneToken](api/uphone-api/set_u_phone_token)
     - [卸载云手机应用版本 - UnInstallUPhoneAppVersion](api/uphone-api/un_install_u_phone_app_version)
     - [更新云手机镜像信息。 - UpdateUPhoneImage](api/uphone-api/update_u_phone_image)
