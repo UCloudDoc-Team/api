@@ -39,5 +39,6 @@
 |[SetUPhoneGPS](api/uphone-api/set_u_phone_gps)|设置云手机GPS信息|
 |[SetUPhoneManagerMode](api/uphone-api/set_u_phone_manager_mode)|设置云手机管理模式|
 |[SetUPhoneSplashScreen](api/uphone-api/set_u_phone_splash_screen)|设置启动画面|
+|[SetUPhoneToken](api/uphone-api/set_u_phone_token)|设置云手机RTC连接Token|
 |[UnInstallUPhoneAppVersion](api/uphone-api/un_install_u_phone_app_version)|卸载云手机应用版本|
 |[UpdateUPhoneImage](api/uphone-api/update_u_phone_image)|更新云手机镜像信息。|
