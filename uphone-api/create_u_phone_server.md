@@ -28,10 +28,10 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 云手机服务器实例名称。默认：UPhone。请遵照字段规范设定实例名称。 |**Yes**|
-| **ServerModelName** | string | 云手机服务器规格名称，不超过64个字节。可通过[查询云手机服务器规格列表]()查询支持的云手机服务器规格。 |**Yes**|
-| **UPhoneModelName** | string | 云手机规格名称，不超过64个字节。可通过[查询云手机规格列表]()查询支持的云手机规格。 |**Yes**|
-| **ImageId** | string | 云手机镜像ID，不超过32个字节。可通过[查询手机镜像]()查询云手机规格对应的镜像ID。 |**Yes**|
-| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **ServerModelName** | string | 云手机服务器规格名称，不超过64个字节。可通过[查询云手机服务器规格列表](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_server_model<br />)查询支持的云手机服务器规格。 |**Yes**|
+| **UPhoneModelName** | string | 云手机规格名称，不超过64个字节。可通过[查询云手机规格列表](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_model<br />)查询支持的云手机规格。 |**Yes**|
+| **ImageId** | string | 云手机镜像ID，不超过32个字节。可通过[查询手机镜像](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_image)查询云手机规格对应的镜像ID。 |**Yes**|
+| **CityId** | string | 城市Id，通过[获取城市列表](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_cities)获取 |**Yes**|
 | **ChargeType** | string | 计费模式。枚举值为：<br />> 年 Year，按年付费；<br />> Month，按月付费；<br />> Dynamic，按小时预付费;<br />默认为月付 |No|
 | **Quantity** | string | 购买时长。默认值: 1。月付时，此参数传0，代表购买至月末。 |No|
 | **IpDestRegion** | string | 购买独立IP必须此参数。绑定的目的地域。参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
