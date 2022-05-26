@@ -44,12 +44,12 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **NetworkInterfaceSet** | array[[*NetworkInterface*](#NetworkInterface)] | 虚拟网卡信息 |**Yes**|
+| **NetworkInterfaceSet** | array[[*InstanceNetworkInterface*](#InstanceNetworkInterface)] | 虚拟网卡信息 |**Yes**|
 
 #### 数据模型
 
 
-#### NetworkInterface
+#### InstanceNetworkInterface
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
@@ -59,7 +59,6 @@
 | **PrivateIpSet** | array[string] | 关联内网IP。当前一个网卡仅支持绑定一个内网IP |**Yes**|
 | **MacAddress** | string | 关联Mac |**Yes**|
 | **Status** | int | 绑定状态 |**Yes**|
-| **PrivateIp** | array[string] | 网卡的内网IP信息 |**Yes**|
 | **Name** | string | 虚拟网卡名称 |No|
 | **Netmask** | string | 内网IP掩码 |No|
 | **Gateway** | string | 默认网关 |No|
@@ -70,7 +69,6 @@
 | **Tag** | string | 业务组 |No|
 | **EIPIdSet** | array[string] | 虚拟网卡绑定的EIP ID信息 |No|
 | **FirewallIdSet** | array[string] | 虚拟网卡绑定的防火墙ID信息 |No|
-| **PrivateIplimit** | array[string] | 网卡的内网IP配额信息 |No|
 
 ## 示例
 
