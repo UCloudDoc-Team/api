@@ -54,18 +54,18 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **NATGWId** | string | natgw id |No|
-| **NATGWName** | string | natgw名称 |No|
-| **Tag** | string | 业务组 |No|
-| **Remark** | string | 备注 |No|
-| **CreateTime** | int | natgw创建时间 |No|
-| **FirewallId** | string | 绑定的防火墙Id |No|
-| **VPCId** | string | 所属VPC Id |No|
-| **SubnetSet** | array[[*NatGatewaySubnetSet*](#NatGatewaySubnetSet)] | 子网 Id |No|
-| **IPSet** | array[[*NatGatewayIPSet*](#NatGatewayIPSet)] | 绑定的EIP 信息 |No|
-| **VPCName** | string | VPC名称 |No|
-| **IsSnatpoolEnabled** | string | 枚举值，“enable”，默认出口规则使用了负载均衡；“disable”，默认出口规则未使用负载均衡。 |No|
-| **PolicyId** | array[string] | 转发策略Id |No|
+| **NATGWId** | string | natgw id |**Yes**|
+| **NATGWName** | string | natgw名称 |**Yes**|
+| **Tag** | string | 业务组 |**Yes**|
+| **Remark** | string | 备注 |**Yes**|
+| **CreateTime** | int | natgw创建时间 |**Yes**|
+| **FirewallId** | string | 绑定的防火墙Id |**Yes**|
+| **VPCId** | string | 所属VPC Id |**Yes**|
+| **SubnetSet** | array[[*NatGatewaySubnetSet*](#NatGatewaySubnetSet)] | 子网 Id |**Yes**|
+| **IPSet** | array[[*NatGatewayIPSet*](#NatGatewayIPSet)] | 绑定的EIP 信息 |**Yes**|
+| **VPCName** | string | VPC名称 |**Yes**|
+| **IsSnatpoolEnabled** | string | 枚举值，“enable”，默认出口规则使用了负载均衡；“disable”，默认出口规则未使用负载均衡。 |**Yes**|
+| **PolicyId** | array[string] | 转发策略Id |**Yes**|
 
 #### NatGatewaySubnetSet
 

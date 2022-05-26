@@ -36,6 +36,7 @@
 | **EIPId** | string | 弹性IP的资源Id |**Yes**|
 | **ResourceType** | string | 弹性IP请求绑定的资源类型, 枚举值为: uhost: 云主机; ulb, 负载均衡器 upm: 物理机; hadoophost: 大数据集群;fortresshost：堡垒机；udockhost：容器；udhost：私有专区主机；natgw：natgw；udb：udb；vpngw：ipsec vpn；ucdr：云灾备；dbaudit：数据库审计；uni：虚拟网卡；cube，Cube容器。如果EIP为普通带宽计费，且带宽值高于2G，则只允许绑定在快杰型云主机和ULB |**Yes**|
 | **ResourceId** | string | 弹性IP请求绑定的资源ID |**Yes**|
+| **PrivateIP** | string | EIP与内网IP进行绑定时需要传入UNI下未绑定过EIP的内网IP |No|
 
 ### 响应字段
 
@@ -53,11 +54,16 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=BindEIP
-&Region=cn-bj2
-&EIPId=eip-XXXX
-&ResourceType=uhost
-&ResourceId=uhost-XXXXX
+{
+	"Action": "BindEIP",
+	"request_uuid":"XXXXX-XXXXXX",
+	"az_group":1111111,
+	"EIPId":"eip-XXXXX",
+	"ResourceType":"ulb",
+	"ResourceId":"ulb-XXXXXX",
+        "top_organization_id": 11111111 ,
+        "organization_id": 11111111
+}
 ```
 
 ### 响应示例

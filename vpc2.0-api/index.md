@@ -7,6 +7,7 @@
 |[AddSnatRule](api/vpc2.0-api/add_snat_rule)|添加出口规则（SNAT规则）|
 |[AddVPCNetwork](api/vpc2.0-api/add_vpc_network)|添加VPC网段|
 |[AddWhiteListResource](api/vpc2.0-api/add_white_list_resource)|添加NAT网关白名单|
+|[AllocateBatchSecondaryIp](api/vpc2.0-api/allocate_batch_secondary_ip)|批量申请虚拟网卡辅助IP|
 |[AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)|分配ip|
 |[AllocateVIP](api/vpc2.0-api/allocate_vip)|申请内网虚拟IP|
 |[AssociateRouteTable](api/vpc2.0-api/associate_route_table)|绑定子网的路由表|
@@ -16,6 +17,7 @@
 |[CreateNetworkAcl](api/vpc2.0-api/create_network_acl)|创建网络ACL|
 |[CreateNetworkAclAssociation](api/vpc2.0-api/create_network_acl_association)|创建ACL的绑定关系|
 |[CreateNetworkAclEntry](api/vpc2.0-api/create_network_acl_entry)|创建ACL的规则|
+|[CreateNetworkInterface](api/vpc2.0-api/create_network_interface)|创建虚拟网卡|
 |[CreateRouteTable](api/vpc2.0-api/create_route_table)|创建路由表|
 |[CreateSnatDnatRule](api/vpc2.0-api/create_snat_dnat_rule)|使用NAT创建内外网IP映射|
 |[CreateSubnet](api/vpc2.0-api/create_subnet)|创建子网|
