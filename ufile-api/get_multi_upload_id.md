@@ -63,3 +63,6 @@ Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:Vd
 }
 ```
 
+## 备注
+
+1. 该接口处于灰度状态，需要申请开通才能使用
