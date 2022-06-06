@@ -48,8 +48,8 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSLKScenario
-&Scenario=BJAoINCc
-&ScenarioDesc=SZOBdOxJ
+&Scenario=saWDTkEI
+&ScenarioDesc=dDGloCwF
 ```
 
 ### 响应示例
@@ -57,7 +57,8 @@ https://api.ucloud.cn/?Action=CreateUSLKScenario
 ```json
 {
   "Action": "CreateUSLKScenarioResponse",
-  "RequestUuid": "flcXIbkC",
+  "Message": "SRFChUxS",
+  "ReqUuid": "mBHijGpf",
   "RetCode": 0,
   "ScenarioID": 4
 }

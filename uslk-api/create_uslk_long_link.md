@@ -48,8 +48,8 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSLKLongLink
-&Scenario=DEaFxnGM
-&ScenarioDesc=ZSbwdArM
+&ScenarioID=cVAXqmKg
+&LongLink=FYSJhDXw
 ```
 
 ### 响应示例
@@ -57,10 +57,10 @@ https://api.ucloud.cn/?Action=CreateUSLKLongLink
 ```json
 {
   "Action": "CreateUSLKLongLinkResponse",
-  "Message": "cuXUhCTl",
-  "RequestUuid": "jGPruXSJ",
-  "RetCode": 0,
-  "ScenarioID": 5
+  "LongLinkID": 4,
+  "Message": "nbysUcSF",
+  "ReqUuid": "KXlIqQae",
+  "RetCode": 0
 }
 ```
 
