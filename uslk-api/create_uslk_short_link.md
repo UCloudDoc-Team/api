@@ -59,6 +59,7 @@ https://api.ucloud.cn/?Action=CreateUSLKShortLink
 &Ssl=8
 &SecondaryLinks=PvHCITRL
 &Type=9
+&SecondaryLinks=ASGbtdLz
 ```
 
 ### 响应示例
