@@ -51,15 +51,12 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSLKShortLink
-&ScenarioID=enbopykt
-&LongLink=yoSItrlc
-&EndTime=4
-&ShortLinkDomain=5
-&ShortLinkDomain=7
-&Ssl=8
-&SecondaryLinks=PvHCITRL
+&LongLinkID=4
+&StartTime=9
+&EndTime=7
 &Type=9
-&SecondaryLinks=ASGbtdLz
+&Proto=NRzAobRq
+&ShortLinkDomain=NxiXMBxY
 ```
 
 ### 响应示例
@@ -67,10 +64,9 @@ https://api.ucloud.cn/?Action=CreateUSLKShortLink
 ```json
 {
   "Action": "CreateUSLKShortLinkResponse",
-  "LongLinkID": 2,
-  "Message": "bhSGGjoJ",
-  "RequestUuid": "RDXGEkLV",
-  "RetCode": 0
+  "Message": "PeuIxect",
+  "RetCode": 0,
+  "ShortLink": "TNwjuevK"
 }
 ```
 
