@@ -18,7 +18,7 @@
     - [获取云手机城市列表 - DescribeUPhoneCities](api/uphone-api/describe_u_phone_cities)
     - [查询应用所安装的云手机列表 - DescribeUPhoneDetailByApp](api/uphone-api/describe_u_phone_detail_by_app)
     - [获取云手机镜像信息列表 - DescribeUPhoneImage](api/uphone-api/describe_u_phone_image)
-    - [获取云手机支持绑定独立IP的城市列表 - DescribeUPhoneIpRegions](api/uphone-api/describe_u_phone_ip_regions)
+    - [获取云手机所在城市支持绑定独立IP的地域列表 - DescribeUPhoneIpRegions](api/uphone-api/describe_u_phone_ip_regions)
     - [查询Job的执行状态。 - DescribeUPhoneJob](api/uphone-api/describe_u_phone_job)
     - [获取云手机规格列表 - DescribeUPhoneModel](api/uphone-api/describe_u_phone_model)
     - [获取云手机服务器列表 - DescribeUPhoneServer](api/uphone-api/describe_u_phone_server)
