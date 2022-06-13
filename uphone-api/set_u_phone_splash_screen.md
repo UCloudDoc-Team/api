@@ -30,6 +30,7 @@
 | **URL** | string | 启动画面下载地址 |**Yes**|
 | **UPhoneId** | string | 云手机ID |**Yes**|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -52,6 +53,7 @@ https://api.ucloud.cn/?Action=SetUPhoneSplashScreen
 &UPhoneId=VEtafHrs
 &URL=IbEeQTIN
 &CityId=HeRheMoe
+&BizType=ggbnfNHN
 ```
 
 ### 响应示例

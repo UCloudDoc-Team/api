@@ -47,7 +47,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ChargeType** | string | 计费类型，枚举值：Year，Month |**Yes**|
+| **ChargeType** | string | 计费类型，枚举值：Year，Month, Dynamic |**Yes**|
 | **Price** | float | 价格，单位: 元，保留小数点后两位有效数字	 |**Yes**|
 | **OriginalPrice** | float | 限时优惠的折前原价（即列表价乘以商务折扣后的单价）	 |**Yes**|
 | **ListPrice** | float | 产品列表价 |No|

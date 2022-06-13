@@ -30,6 +30,7 @@
 | **ImageId** | string | 云手机自定义镜像资源ID |**Yes**|
 | **Name** | string | 镜像名称。长度为2\~128个英文或中文字符。 |No|
 | **Description** | string | 镜像的描述信息。长度为2\~256个英文或中文字符 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -54,6 +55,7 @@ https://api.ucloud.cn/?Action=UpdateUPhoneImage
 &ImageId=NQilKMzj
 &ImageName=hNZueavv
 &Description=fzHFwshN
+&BizType=ZgMHsCTT
 ```
 
 ### 响应示例

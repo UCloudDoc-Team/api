@@ -31,6 +31,7 @@
 | **ImageIds.N** | string | 【数组】云手机镜像资源 ID，调用方式举例：ImageIds.0=希望获取信息的云手机镜像 1，ImageIds.1=云手机镜像 2。 如果不传入，则返回当前 城市 所有符合条件的云手机镜像。 |No|
 | **Offset** | string | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | string | 最大返回镜像数量，默认为20，最大100 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -86,6 +87,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneImage
 &OsType=FQGJgubs
 &Offset=inLKPiri
 &Limit=gtUTZvij
+&BizType=cYaxzseW
 ```
 
 ### 响应示例

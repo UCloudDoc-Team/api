@@ -28,11 +28,12 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
-| **JobIds.N** | string | 【数组】Job 的唯一标识 Id，调用方式举例：ServerIds.0=希望查询状态的 Job1，ServerIds.1=Job2。 如果不传入，则返回当前 城市 所有符合条件的 Job 。 |No|
+| **JobIds.N** | string | 【数组】Job 的唯一标识 Id，调用方式举例：JobIds.0=希望查询状态的 Job1，JobIds.1=Job2。 如果不传入，则返回当前 城市 所有符合条件的 Job 。 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
 | **State** | string | Job状态，枚举值：<br />* 等待状态: PENDING;<br />* 运行状态: RUNNING;<br />* 成功状态: SUCCESS<br />* 失败状态: FAILED<br />* 部分成功状态：PARTIAL_SUCCESS |No|
 | **Types.N** | string | 【数组】Job 类型，调用方式举例：JobTypes.0=希望查询的 Job 类型 1，JobTypes.1=Job 类型 2。 如果不传入，则返回当前 城市 所有符合条件的 Job 类型。Job 类型仅支持 INSTALL_APP、UNINSTALL_APP、RUN_ASYNC_COMMAND、CREATE_SERVER_AND_UPHONE、SET_UPHONE_GPS、SET_UPHONE_CONFIG、UPLOAD_FILE、DELETE_UPHONE |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。<br /> |No|
 
 ### 响应字段
 
@@ -88,6 +89,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneJob
 &Offset=8
 &Limit=7
 &CityId=ZXenAKca
+&ProductType=XvENrhMO
 ```
 
 ### 响应示例

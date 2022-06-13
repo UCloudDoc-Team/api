@@ -29,6 +29,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望关闭的云手机实例 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。 |**Yes**|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -51,6 +52,7 @@ https://api.ucloud.cn/?Action=PoweroffUPhone
 &ProjectId=vXGuOEfa
 &UPhoneIds.N=NgAyiLHJ
 &CityId=BQeRHOIl
+&BizType=kMKZVGdt
 ```
 
 ### 响应示例

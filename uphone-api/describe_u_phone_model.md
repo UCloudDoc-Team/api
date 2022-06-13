@@ -2,7 +2,7 @@
 
 ## 简介
 
-
+获取云手机规格列表。两种类型：uphone代表单云手机场景、uphone-server代表云手机服务器场景。
 
 
 
@@ -30,6 +30,7 @@
 | **UPhoneModelNames.N** | string | 【数组】要获得信息的 UPhoneModel 名称。调用方式举例：UPhoneModelNames.0=希望获取信息的 UPhoneModel1，UPhoneModelNames.1=UPhoneModel2。 如果不传入，则返回当前 城市 所有符合条件的 UPhoneModel。 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -54,6 +55,8 @@
 | **DiskSize** | int | 磁盘大小，单位: GB |**Yes**|
 | **Resolution** | string | 分辨率 |**Yes**|
 | **Refresh** | int | 刷新率 |**Yes**|
+| **Dpi** | int | DPI |No|
+| **Description** | string | 型号描述信息 |No|
 
 ## 示例
 
@@ -67,6 +70,8 @@ https://api.ucloud.cn/?Action=DescribeUPhoneModel
 &Offset=8
 &Limit=7
 &CityId=pKekkCXR
+&Type=jzachoPc
+&BizType=QNxKgjPh
 ```
 
 ### 响应示例

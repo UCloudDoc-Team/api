@@ -30,6 +30,7 @@
 | **AppIds.N** | string | 数组】应用的唯一标识 ID，调用方式举例：AppIds.0=希望获取应用信息的应用 1，AppIds.1=应用 2。 如果不传入，则返回当前 城市 所有符合条件的应用列表。 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -68,6 +69,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneApp
 &Offset=6
 &Limit=6
 &Type=xKfMzOnT
+&BizType=lKsfdQWI
 ```
 
 ### 响应示例

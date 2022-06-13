@@ -32,6 +32,7 @@
 | **UPhoneGPSs.N.Longitude** | float | 经度：-180\~180 |No|
 | **UPhoneGPSs.N.Latitude** | float | 纬度：-90\~90 |No|
 | **UPhoneGPSs.N.Altitude** | float | 海拔 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -59,6 +60,7 @@ https://api.ucloud.cn/?Action=SetUPhoneGPS
 &UPhoneGPSs.N.Latitude=8.24851
 &UPhoneGPSs.N.Altitude=6.12783
 &CityId=QlYovAFx
+&BizType=BjeTcHiL
 ```
 
 ### 响应示例
