@@ -31,6 +31,7 @@
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -50,7 +51,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **UPhoneName** | string | 云手机的名称，不超过65个字符。<br /> |No|
-| **UPhoneId** | string | 云手机规格名称<br /> |No|
+| **UPhoneId** | string | 云手机的唯一标识，不超过32个字节。<br /> |No|
+| **UPhoneModelName** | string | 云手机规格名称<br /> |No|
 | **CPU** | int | 虚拟CPU核数。<br /> |No|
 | **Memory** | int | 内存大小。单位MB<br /> |No|
 | **DiskSize** | int | 磁盘大小，单位: GB<br /> |No|
@@ -90,6 +92,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneDetailByApp
 &Offset=5
 &Limit=3
 &CityId=ymRopIeR
+&BizType=VkHNMLfE
 ```
 
 ### 响应示例

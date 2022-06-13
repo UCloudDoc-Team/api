@@ -1,8 +1,8 @@
-# 重启云手机 - RebootUPhone
+# 设置云手机异步操作回调 - SetUPhoneCallback
 
 ## 简介
 
-重新启动云手机实例
+设置云手机异步操作以及状态更新回调，支持云手机重置，安装应用，卸载应用，设备占用状态回调
 
 
 
@@ -18,7 +18,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `RebootUPhone`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `SetUPhoneCallback`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -27,8 +27,9 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望重启的云手机实例 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。 |**Yes**|
-| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **CityId** | string | 城市ID |**Yes**|
+| **UPhoneId** | string | 云手机ID。 |**Yes**|
+| **URL** | string | 接收POST请求的http接口。Content-Type：application/json; charset=UTF-8，Accept：application/json。 |**Yes**|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
@@ -38,7 +39,6 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **JobId** | string | 异步请求成功后返回JobId，用以查询Job状态 |No|
 
 
 
@@ -48,21 +48,20 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=RebootUPhone
-&Region=cn-zj
-&ProjectId=csXXGyUY
-&UPhoneIds.N=UwHrHCgt
-&CityId=PlkEaKvC
-&BizType=XTvsfhkc
+https://api.ucloud.cn/?Action=SetUPhoneCallback
+&ProjectId=ZhOaJNYA
+&UPhoneId=kDZrJBzv
+&URL=EfrRhVfS
+&BizType=iAGgLYSp
+&CityId=kyITwqVR
+&CityId=lQRMvtxU
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "RebootUPhoneResponse",
-  "JobId": "SuqIQuDE",
-  "Message": "MRzUwLAB",
+  "Action": "SetUPhoneCallbackResponse",
   "RetCode": 0
 }
 ```

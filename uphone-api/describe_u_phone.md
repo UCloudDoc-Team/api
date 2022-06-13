@@ -34,6 +34,7 @@
 | **Limit** | int | 返回数据长度，默认为200，最大200 |No|
 | **Tag** | string | 要查询的业务组名称 |No|
 | **IsAll** | boolean | 是否返回全部。如果有此参数，分页不生效。 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -71,6 +72,10 @@
 | **SplashScreen** | string | 云手机启动图片URL链接 |**Yes**|
 | **Callback** | string | 云手机异步任务回调 |**Yes**|
 | **Remark** | string | 备注 |No|
+| **ChargeType** | string | 计费模式。枚举值为： > 年 Year，按年付费； > Month，按月付费； > Dynamic，按小时预付费; 默认为月付 |No|
+| **ExpireTime** | int | 到期时间；格式为Unix时间戳 |No|
+| **IpRegion** | string | IP所属地域Id，eg: hk，th-bkk |No|
+| **Ip** | string | 云手机IP地址 |No|
 
 ## 示例
 
@@ -88,6 +93,7 @@ https://api.ucloud.cn/?Action=DescribeUPhone
 &CityId=EQvCvWeY
 &Tag=KYtleBzj
 &IsAll=true
+&BizType=lTWBNOpE
 ```
 
 ### 响应示例

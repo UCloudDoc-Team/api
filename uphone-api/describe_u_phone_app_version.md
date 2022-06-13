@@ -32,6 +32,7 @@
 | **UPhoneId** | string | 云手机Id。此参数表示查询手机上所安装的应用版本。 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -73,6 +74,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneAppVersion
 &AppId=BbdiEyEM
 &UPhoneId=VQNCBJxd
 &Type=tTnFrkpv
+&BizType=YVZSXzFk
 ```
 
 ### 响应示例

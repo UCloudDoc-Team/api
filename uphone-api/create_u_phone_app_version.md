@@ -31,6 +31,7 @@
 | **AppId** | string | 应用的唯一标识ID。 |**Yes**|
 | **URL** | string | 应用版本相关的Apk文件存放的公网URL地址。 |**Yes**|
 | **Description** | string | 应用版本描述。 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -59,6 +60,7 @@ https://api.ucloud.cn/?Action=CreateUPhoneAppVersion
 &Type=dlBHyewJ
 &PackageName=sCQdgFFc
 &MainActivity=zjLfygfD
+&BizType=DUyKbsAX
 ```
 
 ### 响应示例

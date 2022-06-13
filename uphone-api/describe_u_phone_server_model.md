@@ -40,10 +40,18 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | ServerModelInstance总数 |**Yes**|
-| **ServerModels** | array[[*ServerModelInstance*](#ServerModelInstance)] | ServerModel实例列表，每项参数可见数据模型 ServerModelInstance |**Yes**|
+| **Stock** | array[[*StockInfo*](#StockInfo)] | 服务器model的库存 |No|
+| **ServerModels** | array[[*ServerModelInstance*](#ServerModelInstance)] | ServerModel实例列表，每项参数可见数据模型 ServerModelInstance |No|
 
 #### 数据模型
 
+
+#### StockInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ModelName** | string | ServerModel名称 |No|
+| **StockCount** | int | 资源余量 |No|
 
 #### ServerModelInstance
 
@@ -95,27 +103,28 @@ https://api.ucloud.cn/?Action=DescribeUPhoneServerModel
   "RetCode": 0,
   "ServerModels": [
     {
-      "Cpu": 6,
+      "CPU": 7,
       "DiskSet": [
         {
-          "DiskType": "NzBVaNSJ",
-          "IsBoot": "FGYpcUNS",
-          "Size": 2
+          "DiskType": "cJLszXWG",
+          "IsBoot": true,
+          "Size": 5
         }
       ],
-      "Gpu": 6,
-      "GpuType": "ncEXYdRT",
-      "Memory": 4,
-      "ServerModelName": "sGzGCrSQ",
-      "ServerModelState": "uQktGymL",
+      "GPU": 2,
+      "GPUType": "OkEaQKtJ",
+      "Memory": 6,
+      "ServerModelName": "vKFljdot",
+      "ServerModelState": "qYJfcaJW",
       "UPhoneSpecs": [
         {
-          "UPhoneCount": 6,
-          "UPhoneModelName": "CHpeqfCk"
+          "UPhoneCount": 2,
+          "UPhoneModelName": "yxKzoPlr"
         }
       ]
     }
   ],
+  "Stock": "XaUtljEV",
   "TotalCount": 7
 }
 ```

@@ -30,6 +30,7 @@
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
 | **Content** | string | 待执行的命令。 |**Yes**|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望执行命令的云手机实例 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。 |**Yes**|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -55,6 +56,7 @@ https://api.ucloud.cn/?Action=RunAsyncCommand
 &AppVersionId=roWtiRdb
 &UPhoneIds.N=MBjydWvb
 &CityId=haESCDNq
+&BizType=GUHTbxhR
 ```
 
 ### 响应示例

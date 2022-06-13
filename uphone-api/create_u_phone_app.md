@@ -29,6 +29,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 应用名称。 |**Yes**|
 | **Description** | string | 应用描述。 |No|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -52,6 +53,7 @@ https://api.ucloud.cn/?Action=CreateUPhoneApp
 &Name=eBDYfsdV
 &Description=seNEYXXO
 &Type=ONBMpBDX
+&BizType=SBsGWSff
 ```
 
 ### 响应示例

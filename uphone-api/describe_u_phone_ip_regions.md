@@ -28,6 +28,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **CityId** | string | 城市Id，eg: cn-shanghai, cn-hangzhou |**Yes**|
+| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
@@ -59,6 +60,7 @@ https://api.ucloud.cn/?Action=DescribeUPhoneIpRegions
 &Zone=cn-zj-01
 &ProjectId=xOrhNUTr
 &CityId=wtchwGYc
+&BizType=SfqqISyb
 ```
 
 ### 响应示例
