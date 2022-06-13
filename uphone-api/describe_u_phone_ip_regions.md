@@ -1,8 +1,8 @@
-# 获取云手机支持绑定独立IP的城市列表 - DescribeUPhoneIpRegions
+# 获取云手机所在城市支持绑定独立IP的地域列表 - DescribeUPhoneIpRegions
 
 ## 简介
 
-获取云手机支持绑定独立IP的城市列表
+获取云手机所在城市支持绑定独立IP的地域列表
 
 
 
@@ -27,7 +27,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **CityId** | string | 城市Id，eg: cn-shanghai, cn-hangzhou |**Yes**|
+| **CityId** | string | 城市Id，通过[获取城市列表](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_cities)获取 |**Yes**|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
