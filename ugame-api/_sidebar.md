@@ -1,0 +1,27 @@
+<div class="sidebar_title icon__ugame">云游戏 UGame</div>
+
+
+- [概览](api/ugame-api/README.md)
+- [索引](api/ugame-api/index.md)
+- **API**
+    - [创建云游戏应用版本 - CreateUGameAppVersion](api/ugame-api/create_u_game_app_version)
+    - [创建云游戏服务器 - CreateUGameServer](api/ugame-api/create_u_game_server)
+    - [删除云游戏应用版本 - DeleteUGameAppVersion](api/ugame-api/delete_u_game_app_version)
+    - [删除云游戏服务器 - DeleteUGameServer](api/ugame-api/delete_u_game_server)
+    - [获取应用版本列表 - DescribeUGameAppVersion](api/ugame-api/describe_u_game_app_version)
+    - [获取云游戏城市列表 - DescribeUGameCities](api/ugame-api/describe_u_game_cities)
+    - [获取云游戏服务器列表 - DescribeUGameServer](api/ugame-api/describe_u_game_server)
+    - [获取服务器规格列表 - DescribeUGameServerModel](api/ugame-api/describe_u_game_server_model)
+    - [下线云游戏应用版本 - DisableUGameAppVersion](api/ugame-api/disable_u_game_app_version)
+    - [锁定云游戏服务器 - DisableUGameServer](api/ugame-api/disable_u_game_server)
+    - [上线云游戏应用版本 - EnableUGameAppVersion](api/ugame-api/enable_u_game_app_version)
+    - [解锁云游戏服务器 - EnableUGameServer](api/ugame-api/enable_u_game_server)
+    - [获取云游戏调度参数 - GetUGameSchedulerParam](api/ugame-api/get_u_game_scheduler_param)
+    - [获取云游戏服务器价格 - GetUGameServerPrice](api/ugame-api/get_u_game_server_price)
+    - [修改云游戏游戏名称 - ModifyUGameAppVersionGameName](api/ugame-api/modify_u_game_app_version_game_name)
+    - [修改云游戏应用版本名 - ModifyUGameAppVersionName](api/ugame-api/modify_u_game_app_version_name)
+    - [修改云游戏应用版本备注 - ModifyUGameAppVersionRemark](api/ugame-api/modify_u_game_app_version_remark)
+    - [修改云游戏服务器名称 - ModifyUGameServerName](api/ugame-api/modify_u_game_server_name)
+    - [修改云游戏服务器备注 - ModifyUGameServerRemark](api/ugame-api/modify_u_game_server_remark)
+    - [适配云游戏版本 - SetUGameAppVersionAdaptation](api/ugame-api/set_u_game_app_version_adaptation)
+    - [设置云游戏调度参数 - SetUGameSchedulerParam](api/ugame-api/set_u_game_scheduler_param)
