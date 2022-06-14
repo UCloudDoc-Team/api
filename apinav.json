@@ -28,6 +28,10 @@
       {
         "links": "/api/uphone-api/README",
         "name": "云手机 UPhone"
+      },
+      {
+        "links": "/api/ugame-api/README",
+        "name": "云游戏 UGame"
       }
     ]
   },
