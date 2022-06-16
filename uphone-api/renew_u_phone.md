@@ -30,7 +30,7 @@
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望重启的云手机实例 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。 |**Yes**|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
-| **Customize** | boolean | 自定义设备参数设置的开关，true时会读取用户设置的DeviceInfo；false时随机读取ucloud内置设备参数。默认false |No|
+| **Customize** | boolean | 自定义设备参数设置的开关，true时会读取用户设置的下列设备参数信息；false时随机读取ucloud内置设备参数。默认false |No|
 | **Brand** | string | 品牌 |No|
 | **Model** | string | 设备型号 |No|
 | **Manufacture** | string | 厂商 |No|
@@ -47,8 +47,14 @@
 | **BuildTags** | string | 系统标记 |No|
 | **BuildVersionInc** | string | 版本增加说明 |No|
 | **IMEI** | string | 串号 |No|
+| **PhoneNumber** | string | 手机号码 |No|
+| **ICCID** | string | SIM卡唯一标识 |No|
+| **IMSI** | string | 移动识别码 |No|
+| **IMEISV** | string | 移动设备标识码软件 |No|
+| **RadioMac** | string | 移动网络mac地址 |No|
+| **WiFiName** | string | 当前连接Wi-Fi名称 |No|
+| **BSSID** | string | Wi-Fi 物理地址 |No|
 | **AndroidID** | string | AOSP唯一标识 |No|
-| **PhoneNumber** | string | 手机号码（暂不支持） |No|
 
 ### 响应字段
 
@@ -91,6 +97,18 @@ https://api.ucloud.cn/?Action=RenewUPhone
 &IMEI=QiNMlniy
 &AndroidID=LogWjPlP
 &PhoneNumber=FrEMKVBC
+&ICCID=mXwsnbyG
+&IMSI=TzMzfOIK
+&IMEISV=reCPUQDn
+&RadioMac=PURzLjNY
+&WiFiName=QTCucePr
+&BSSID=NqfQspRX
+&ICCID=KaxvfVLq
+&IMSI=duBiSgxx
+&IMEISV=LFOyeAZy
+&RadioMac=GbwPuJzI
+&WiFiName=UqEZmxeE
+&BSSID=xLJTUahU
 ```
 
 ### 响应示例
