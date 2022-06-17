@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ugame">云游戏 UGame</div>
+<div class="sidebar_title icon__ucgs">云游戏 UGame</div>
 
 
 - [概览](api/ugame-api/README.md)

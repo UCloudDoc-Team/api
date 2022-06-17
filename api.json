@@ -52,7 +52,7 @@
           "img": "icon-product__ucgs",
           "sublinks": [
             {
-              "links": "/api/ucgs-api/README",
+              "links": "/api/ugame-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
