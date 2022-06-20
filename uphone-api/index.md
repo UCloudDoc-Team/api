@@ -29,6 +29,7 @@
 |[GetUPhoneScreenCapture](api/uphone-api/get_u_phone_screen_capture)|云手机截屏|
 |[GetUPhoneServerPrice](api/uphone-api/get_u_phone_server_price)|获取云手机服务器价格|
 |[GetUPhoneServerRenewPrice](api/uphone-api/get_u_phone_server_renew_price)|获取云手机服务器续费价格|
+|[ImportFile](api/uphone-api/import_file)|上传文件|
 |[InstallUPhoneAppVersion](api/uphone-api/install_u_phone_app_version)|安装云手机应用版本|
 |[ModifyUPhoneName](api/uphone-api/modify_u_phone_name)|修改云手机名称|
 |[ModifyUPhoneRemark](api/uphone-api/modify_u_phone_remark)|修改云手机备注信息|
