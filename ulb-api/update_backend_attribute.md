@@ -36,7 +36,7 @@
 | **ULBId** | string | 负载均衡资源ID |**Yes**|
 | **BackendId** | string | 后端资源实例的ID(ULB后端ID，非资源自身ID) |**Yes**|
 | **Port** | int | 后端资源服务端口，取值范围[1-65535] |No|
-| **Weight** | int | 所添加的后端RS权重（在加权轮询算法下有效），取值范围[0-100]，默认为1 |No|
+| **Weight** | int | 所添加的后端RS权重（在加权轮询算法下有效），取值范围[1-100]，默认为1 |No|
 | **Enabled** | int | 后端实例状态开关 |No|
 | **IsBackup** | int | 是否为backup<br />0：主rs<br />1：备rs<br />默认为0 |No|
 
