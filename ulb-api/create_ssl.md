@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **SSLName** | string | SSL证书的名字，默认值为空 |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **SSLName** | string | SSL证书的名字，默认值不为空 |**Yes**|
 | **SSLType** | string | 所添加的SSL证书类型，目前只支持Pem格式 |No|
 | **SSLContent** | string | SSL证书的完整内容，包括用户证书、加密证书的私钥、CA证书 |No|
 | **UserCert** | string | 用户的证书 |No|
@@ -59,7 +59,7 @@
 ```
 https://api.ucloud.cn/?Action=CreateSSL
 &Region=cn-bj2
-&ProjectId=project-xs13ik
+&ProjectId=project-XXXXXX
 &SSLName=new-ssl
 &SSLContent=-----BEGIN&nbspRSA&nbspPRIVATE&nbspKEY-----xxx
 ```
@@ -70,7 +70,7 @@ https://api.ucloud.cn/?Action=CreateSSL
 {
   "Action": "CreateSSLResponse",
   "RetCode": 0,
-  "SSLId": "ssl-s1v2e0"
+  "SSLId": "ssl-XXXXXX"
 }
 ```
 
