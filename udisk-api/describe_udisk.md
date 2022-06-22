@@ -47,6 +47,7 @@
 | **HostIdForAttachment** | string | 根据传入的HostIdForAttachment，筛选出能被挂载在该主机上的云盘。目前主要针对RSSD云盘。 |No|
 | **HostId** | string | 根据传入的HostId，返回与该主机关联的云盘信息。 |No|
 | **HostProduct** | string | 宿主产品类型，可筛选挂载在该类型宿主上的云盘。可选值：uhost, uphost。为空拉取所有。（当HostIdForAttachment字段不为空时，该字段可以不填，若HostIdForAttachment与该字段宿主类型冲突，则以HostIdForAttachment字段为准。） |No|
+| **Status** | string | 云盘状态。All(所有状态)，Available(可用)，Attaching(挂载中)，InUse(已挂载)， Detaching(卸载中)， Initializating(分配中)，Failed(创建失败)，Cloning(克隆中)，Restoring(恢复中)，RestoreFailed(恢复失败)。默认值：All |No|
 
 ### 响应字段
 
@@ -69,7 +70,7 @@
 | **UDiskId** | string | UDisk实例Id |No|
 | **Name** | string | 实例名称 |No|
 | **Size** | int | 容量单位GB |No|
-| **Status** | string | 状态:Available(可用),Attaching(挂载中), InUse(已挂载), Detaching(卸载中), Initializating(分配中), Failed(创建失败),Cloning(克隆中),Restoring(恢复中),RestoreFailed(恢复失败), |No|
+| **Status** | string | 状态:Available(可用),Attaching(挂载中), InUse(已挂载), Detaching(卸载中), Initializating(分配中), Failed(创建失败),Cloning(克隆中),Restoring(恢复中),RestoreFailed(恢复失败) |No|
 | **CreateTime** | int | 创建时间 |No|
 | **ExpiredTime** | int | 过期时间 |No|
 | **UHostId** | string | 挂载的UHost的Id。【即将废弃，建议使用HostId】 |No|
@@ -127,6 +128,7 @@ https://api.ucloud.cn/?Action=DescribeUDisk
 &IgnoreBackupMode=SUFDaFBS
 &UDiskBasicInfo=XJaFNkfA
 &HostId=bsRfMMHc
+&Status=ZFCNKvKR
 ```
 
 ### 响应示例
