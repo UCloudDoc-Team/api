@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ScenarioID** | string | 场景ID |**Yes**|
+| **ScenarioID** | int | 场景ID |**Yes**|
 | **LongLink** | string | 要报备的长链接 |**Yes**|
 
 ### 响应字段
