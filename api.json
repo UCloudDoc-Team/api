@@ -298,7 +298,7 @@
         },
         {
           "name": "云数据库 MongoDB UDB",
-          "img": "icon-product__udb",
+          "img": "icon-product__mongodb",
           "sublinks": [
             {
               "links": "/api/udb-api/README",
