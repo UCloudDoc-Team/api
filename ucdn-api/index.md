@@ -34,3 +34,4 @@
 |[QueryIpLocation](api/ucdn-api/query_ip_location)|查询IP信息|
 |[RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)|刷新缓存|
 |[SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)|切换账号计费方式|
+|[UpdateUcdnDomainStatus](api/ucdn-api/update_ucdn_domain_status)|更新加速域名状态|

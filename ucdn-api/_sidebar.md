@@ -33,5 +33,6 @@
     - [查询IP信息 - QueryIpLocation](api/ucdn-api/query_ip_location)
     - [刷新缓存 - RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)
     - [切换账号计费方式 - SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)
+    - [更新加速域名状态 - UpdateUcdnDomainStatus](api/ucdn-api/update_ucdn_domain_status)
 - **附录**
   - [省份和运营商列表](api/ucdn-api/province)
