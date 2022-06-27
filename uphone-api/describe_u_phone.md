@@ -76,6 +76,9 @@
 | **ExpireTime** | int | 到期时间；格式为Unix时间戳 |No|
 | **IpRegion** | string | IP所属地域Id，eg: hk，th-bkk |No|
 | **Ip** | string | 云手机IP地址 |No|
+| **EipId** | string | 云手机IP地址ID |No|
+| **ShareBandwidthId** | string | 所属共享带宽ID |No|
+| **ShareBandwidthName** | string | 所属共享带宽名称 |No|
 
 ## 示例
 
