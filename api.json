@@ -38,7 +38,7 @@
         },
         {
           "name": "云手机服务器 UPhoneServer",
-          "img": "icon-product__uphone",
+          "img": "icon-product__uphoneserver",
           "sublinks": [
             {
               "links": "/api/uphone-api/README",
