@@ -38,8 +38,10 @@
 | **IpDestRegion** | string | 购买独立IP必须有此参数。绑定的目的地域。参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **Tag** | string | 业务组。默认：Default（Default即为未分组）。请遵照[字段规范](api/uhost-api/specification)设定业务组。 |No|
 | **BindIp** | boolean | 绑定独立IP |No|
-| **Bandwidth** | int | 独立IP带宽 |No|
+| **Bandwidth** | int | 共享带宽大小 |No|
 | **IpProportion** | int | 独立IP参数。需要独立IP的比例。eg: [4:1]->4， [3:1]->3。 |No|
+| **ShareBandwidthName** | string | 共享带宽名称，可以在创建新的共享带宽时指定一个名称 |No|
+| **ShareBandwidthId** | string | 共享带宽ID，使用现有共享带宽时需要传入此参数 |No|
 | **CouponId** | string | 云手机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看。注：代金券对带宽不适用，仅适用于云手机计费 |No|
 
 ### 响应字段
@@ -78,6 +80,8 @@ https://api.ucloud.cn/?Action=CreateUPhone
 &IpGroupUuid=pdTAGgMl
 &GroupUuid=GrgqJWmt
 &IpProportion=3
+&ShareBandwidthName=wcpbgZiX
+&ShareBandwidthId=wSyprlze
 ```
 
 ### 响应示例
