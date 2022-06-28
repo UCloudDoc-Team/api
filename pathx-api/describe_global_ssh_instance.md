@@ -62,8 +62,11 @@
 | **CreateTime** | int | 资源创建时间戳 |**Yes**|
 | **ExpireTime** | int | 资源过期时间戳 |**Yes**|
 | **Expire** | boolean | 是否过期 |**Yes**|
+| **IPV6Access** | boolean | 是否开启EIP IPV6 接入,Flase:未开启 |No|
+| **ExtraDomain** | array[string] | GlobalSSH分配的其他可用加速域名列表 |No|
 | **BandwidthPackage** | int | globalssh Ultimate带宽包大小 |No|
 | **ForwardRegion** | string | InstanceType为Basic版本时，需要展示具体分配的转发机房 |No|
+| **DomainStatus** | object | 加速域名当前可用性检测结果 HashMap 结构 0表示可用, 1 表示有污染  |No|
 
 ## 示例
 
@@ -71,8 +74,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeGlobalSSHInstance
-&ProjectId=org-xxxx
-&InstanceId=uga-xxxx
+&ProjectId=UjsPseDf
+&InstanceId=djsjuLQU
 ```
 
 ### 响应示例
@@ -82,16 +85,25 @@ https://api.ucloud.cn/?Action=DescribeGlobalSSHInstance
   "Action": "DescribeGlobalSSHInstanceResponse",
   "InstanceSet": [
     {
-      "AcceleratedIP": "1.1.2.2",
-      "AcceleratingDomain": "1.1.2.2.ipssh.net",
-      "ChargeType": "Month",
-      "CreationTime": "2018-06-28",
-      "ExpirationTime": "2018-06-30",
-      "InstanceId": "uga-xxxx",
-      "InstanceType": "Basic",
-      "Name": "SSH加速",
-      "Port": 22,
-      "RSPort:": 22
+      "AcceleratingDomain": "muLRknRb",
+      "Area": "rojJRrWD",
+      "BandwidthPackage": 5,
+      "ChargeType": "Year",
+      "CreateTime": 4,
+      "DomainStatus": {},
+      "Expire": true,
+      "ExpireTime": 7,
+      "ExtraDomain": [
+        "JSweMMIB"
+      ],
+      "ForwardRegion": "yBKumXLK",
+      "GlobalSSHPort": 5,
+      "IPV6Access": false,
+      "InstanceId": "jUtFMSnm",
+      "InstanceType": "ZpSbjafD",
+      "Port": 2,
+      "Remark": "mtRmapTE",
+      "TargetIP": "OhMnFNvq"
     }
   ],
   "RetCode": 0
