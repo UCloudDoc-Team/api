@@ -102,7 +102,7 @@ DescribeAvailableInstanceTypes
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Value** | int | 值，单位是TFlops |No|
+| **Value** | float | 值，单位是TFlops |No|
 | **Rate** | int | 交互展示参数，可忽略 |No|
 
 #### FeatureModes
