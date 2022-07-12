@@ -11,6 +11,7 @@
 |[AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)|分配ip|
 |[AllocateVIP](api/vpc2.0-api/allocate_vip)|申请内网虚拟IP|
 |[AssociateRouteTable](api/vpc2.0-api/associate_route_table)|绑定子网的路由表|
+|[AttachNetworkInterface](api/vpc2.0-api/attach_network_interface)|绑定网卡到云主机|
 |[CloneRouteTable](api/vpc2.0-api/clone_route_table)|克隆路由表|
 |[CreateNATGW](api/vpc2.0-api/create_natgw)|创建NAT网关|
 |[CreateNATGWPolicy](api/vpc2.0-api/create_natgw_policy)|添加NAT网关端口转发规则|
