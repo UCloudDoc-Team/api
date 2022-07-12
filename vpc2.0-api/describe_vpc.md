@@ -31,12 +31,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **VPCIds.N** | string | VPCId |No|
 | **Tag** | string | 业务组名称 |No|
-| **Offset** | int |  |No|
-| **Limit** | int |  |No|
+| **Offset** | int | 数据偏移量，默认为0 |No|
+| **Limit** | int | 数据分页值 |No|
 
 ### 响应字段
 
@@ -46,6 +46,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*VPCInfo*](#VPCInfo)] | vpc信息，具体结构见下方VPCInfo |No|
+| **TotalCount** | int |  |No|
 
 #### 数据模型
 
@@ -54,14 +55,15 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **NetworkInfo** | array[[*VPCNetworkInfo*](#VPCNetworkInfo)] |  |**Yes**|
-| **SubnetCount** | int |  |**Yes**|
-| **CreateTime** | int |  |**Yes**|
-| **UpdateTime** | int |  |**Yes**|
-| **Tag** | string |  |**Yes**|
-| **Name** | string |  |**Yes**|
-| **VPCId** | string | VPCId |No|
-| **Network** | array[string] |  |No|
+| **NetworkInfo** | array[[*VPCNetworkInfo*](#VPCNetworkInfo)] | vpc地址空间信息，详见VPCNetworkInfo |**Yes**|
+| **SubnetCount** | int | 子网数 |**Yes**|
+| **CreateTime** | int | 创建时间 |**Yes**|
+| **UpdateTime** | int | 更新时间 |**Yes**|
+| **Tag** | string | 业务组 |**Yes**|
+| **Name** | string | VPC名称 |**Yes**|
+| **VPCType** | string | DefaultVPC 默认VPC，DefinedVPC，自定义VPC      |No|
+| **VPCId** | string | VPC资源ID |No|
+| **Network** | array[string] | VPC网段 |No|
 | **IPv6Network** | string | VPC关联的IPv6网段 |No|
 | **OperatorName** | string | VPC关联的IPv6网段所属运营商 |No|
 
@@ -132,7 +134,8 @@ https://api.ucloud.cn/?Action=DescribeVPC
       "VPCId": "uvnet-xxxxx"
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 9
 }
 ```
 

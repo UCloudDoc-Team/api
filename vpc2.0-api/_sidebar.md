@@ -10,6 +10,7 @@
     - [分配ip - AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)
     - [申请内网虚拟IP - AllocateVIP](api/vpc2.0-api/allocate_vip)
     - [绑定子网的路由表 - AssociateRouteTable](api/vpc2.0-api/associate_route_table)
+    - [绑定网卡到云主机 - AttachNetworkInterface](api/vpc2.0-api/attach_network_interface)
     - [克隆路由表 - CloneRouteTable](api/vpc2.0-api/clone_route_table)
     - [创建NAT网关 - CreateNATGW](api/vpc2.0-api/create_natgw)
     - [添加NAT网关端口转发规则 - CreateNATGWPolicy](api/vpc2.0-api/create_natgw_policy)
