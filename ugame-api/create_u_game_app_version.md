@@ -30,10 +30,11 @@
 | **GameName** | string | 游戏名称 |**Yes**|
 | **Name** | string | 应用版本名称，最大字符长度为255。 |**Yes**|
 | **Url** | string | 应用版本相关的Apk文件存放的公网URL地址。 |**Yes**|
+| **PackageName** | string | 应用包名 |**Yes**|
+| **MainActivity** | string | 启动应用Activity |**Yes**|
 | **Adapt** | boolean | 是否适配，默认否 |No|
 | **Description** | string | 应用版本描述。 |No|
-| **PackageName** | string | 应用包名 |No|
-| **MainActivity** | string | 启动应用Activity |No|
+| **Icon** | string | 游戏图标地址 |No|
 
 ### 响应字段
 
@@ -62,6 +63,7 @@ https://api.ucloud.cn/?Action=CreateUGameAppVersion
 &Adapt=true
 &PackageName=HDghLdAx
 &MainActivity=mNraffMA
+&Icon=ADqSICOF
 ```
 
 ### 响应示例

@@ -58,6 +58,7 @@
 | **ChargeType** | string | 计费模式。枚举值为：<br /> *Year，按年付费；<br />* Month，按月付费；<br />默认为月付 |**Yes**|
 | **CityId** | string | 城市Id，eg: cn-shanghai, cn-jinan |**Yes**|
 | **CityName** | string | 城市名称，eg:上海二、济南市 |**Yes**|
+| **Bandwidth** | int | 带宽，单位M |No|
 | **Remark** | string | 云游戏服务器备注。 |No|
 | **AllocatedCount** | int | 配分游戏数量。 |No|
 | **State** | string | 实例状态，枚举值： * 初始化: Initializing; * 云手机创建中: UPhoneCreating; * 运行中: Running; * 删除中: Deleting; * 创建失败: CreateFailed * 未知(空字符串，获取状态超时或出错)："" |No|
