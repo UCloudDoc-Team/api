@@ -60,6 +60,7 @@
 | **PackageName** | string | 包名 |**Yes**|
 | **MainActivity** | string | 应用启动Activity |**Yes**|
 | **Description** | string | 应用版本描述。 |No|
+| **Icon** | string | 游戏图标 |No|
 
 ## 示例
 
