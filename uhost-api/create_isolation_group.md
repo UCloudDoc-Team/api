@@ -52,7 +52,7 @@
 
 ### 请求示例
     
-```
+```bash
 https://api.ucloud.cn/?Action=CreateIsolationGroup
 &Region=cn-zj
 &GroupName=SNINkvJp
