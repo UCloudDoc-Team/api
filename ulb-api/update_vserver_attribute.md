@@ -45,6 +45,8 @@
 | **Path** | string | MonitorType 为 Path 时指定健康检查发送请求时的路径，默认为 / |No|
 | **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
 | **ResponseMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查请求应收到的响应报文 |No|
+| **SecurityPolicyId** | string | 安全策略组ID |No|
+| **EnableCompression** | int | 0:关闭 1：开启,用于数据压缩功能 |No|
 
 ### 响应字段
 
@@ -77,6 +79,8 @@ https://api.ucloud.cn/?Action=UpdateVServerAttribute
 &EnableHTTP2=9
 &RequestMsg=QHpxxRrA
 &ResponseMsg=rVBUBWIh
+&SecurityPolicyId=cbupUwHT
+&EnableCompression=5
 ```
 
 ### 响应示例
