@@ -56,6 +56,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **MonitorType** | string | 健康检查类型，枚举值：Port -> 端口检查；Path -> 路径检查；Ping -> Ping探测， Customize -> UDP检查<br /><br />请求代理型默认值为Port，其中TCP协议仅支持Port，其他协议支持Port和Path; 报文转发型TCP协议仅支持Port，UDP协议支持Ping、Port和Customize |**Yes**|
+| **PersistenceType** | string | VServer会话保持方式。枚举值为： None -> 关闭会话保持； ServerInsert -> 自动生成； UserDefined -> 用户自定义。 |**Yes**|
 | **ULBId** | string | 负载均衡实例的Id |No|
 | **Domain** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查域名 |No|
 | **Path** | string | 根据MonitorType确认； 当MonitorType为Port时，此字段无意义。当MonitorType为Path时，代表HTTP检查路径 |No|
@@ -66,7 +67,6 @@
 | **Protocol** | string | VServer实例的协议。 枚举值为：HTTP，TCP，UDP，HTTPS。 |No|
 | **FrontendPort** | int | VServer服务端口 |No|
 | **Method** | string | VServer负载均衡的模式，枚举值：Roundrobin -> 轮询;Source -> 源地址；ConsistentHash -> 一致性哈希；SourcePort -> 源地址（计算端口）；ConsistentHashPort -> 一致性哈希（计算端口）。 |No|
-| **PersistenceType** | string | VServer会话保持方式。枚举值为： None -> 关闭会话保持； ServerInsert -> 自动生成； UserDefined -> 用户自定义。 |No|
 | **PersistenceInfo** | string | 根据PersistenceType确定： None或ServerInsert，此字段为空； UserDefined，此字段展示用户自定义会话string。 |No|
 | **ClientTimeout** | int | 空闲连接的回收时间，单位：秒。 |No|
 | **Status** | int | VServer的运行状态。枚举值： 0 -> rs全部运行正常;1 -> rs全部运行异常；2 -> rs部分运行异常。 |No|
@@ -74,6 +74,8 @@
 | **BackendSet** | array[[*ULBBackendSet*](#ULBBackendSet)] | 后端资源信息列表，具体结构见下方 ULBBackendSet |No|
 | **ListenType** | string | 监听器类型，枚举值为: RequestProxy -> 请求代理；PacketsTransmit -> 报文转发 |No|
 | **PolicySet** | array[[*ULBPolicySet*](#ULBPolicySet)] | 内容转发信息列表，具体结构见下方 ULBPolicySet |No|
+| **EnableCompression** | int | 数据压缩开关，0:关闭 1：开启 |No|
+| **SecurityPolicy** | [*BindSecurityPolicy*](#BindSecurityPolicy) | VServer绑定的安全策略,具体结构见BindSecurityPolicy |No|
 
 #### ULBSSLSet
 
@@ -104,6 +106,8 @@
 | **Status** | int | 后端提供服务的实例运行状态，枚举值：0健康检查健康状态 1 健康检查异常 |No|
 | **SubnetId** | string | 后端提供服务的资源所在的子网的ID |No|
 | **IsBackup** | int | 是否为backup，只有当vserver的Backup属性为1时才会有此字段，说明：<br /><br />0：主rs<br />1：备rs |No|
+| **Weight** | int | 后端RS权重（在加权轮询算法下有效） |No|
+| **VPCId** | string | 后端服务器所在的VPC |No|
 
 #### ULBPolicySet
 
@@ -118,6 +122,16 @@
 | **VServerId** | string | 所属VServerId |No|
 | **TotalCount** | int | 默认内容转发类型下返回当前rs总数 |No|
 | **BackendSet** | array[[*PolicyBackendSet*](#PolicyBackendSet)] | 内容转发下rs的详细信息，参考PolicyBackendSet |No|
+
+#### BindSecurityPolicy
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **SecurityPolicyId** | string | 安全策略组ID |No|
+| **SecurityPolicyName** | string | 安全策略组名称 |No|
+| **TLSVersion** | string | TLS最低版本 |No|
+| **SSLCiphers** | array[string] | 加密套件 |No|
+| **SecurityPolicyType** | int | 安全策略类型 0：预定义 1：自定义 |No|
 
 #### PolicyBackendSet
 
