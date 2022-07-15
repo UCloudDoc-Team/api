@@ -52,6 +52,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **JobId** | string | 任务ID，用来查询创建云手机任务状态 |**Yes**|
+| **UPhoneIds** | array[string] | 【数组】创建的云手机ID |No|
 
 
 
@@ -91,7 +92,10 @@ https://api.ucloud.cn/?Action=CreateUPhone
   "Action": "CreateUPhoneResponse",
   "JobId": "XvgSYrEc",
   "Message": "QmAvYLMU",
-  "RetCode": 0
+  "RetCode": 0,
+  "UPhoneIds": [
+    "DWjsqMnS"
+  ]
 }
 ```
 

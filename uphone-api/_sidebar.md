@@ -55,5 +55,6 @@
     - [设置云手机Root模式 - SetUPhoneRootMode](api/uphone-api/set_u_phone_root_mode)
     - [设置云手机RTC连接Token - SetUPhoneToken](api/uphone-api/set_u_phone_token)
     - [更换云手机独立IP - SwitchUPhoneIndependentIp](api/uphone-api/switch_u_phone_independent_ip)
+    - [故障更换云手机 - SwitchUPhoneInstance](api/uphone-api/switch_u_phone_instance)
     - [卸载云手机应用版本 - UnInstallUPhoneAppVersion](api/uphone-api/un_install_u_phone_app_version)
     - [更新云手机镜像信息。 - UpdateUPhoneImage](api/uphone-api/update_u_phone_image)

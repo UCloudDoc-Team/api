@@ -30,6 +30,7 @@
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望重置的云手机实例 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。 |**Yes**|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
+| **ImageId** | string | 镜像ID，默认为空。不为空则手机会以填写的镜像进行重置，为空则手机会以重置前的镜像重置 |No|
 
 ### 响应字段
 
@@ -54,6 +55,9 @@ https://api.ucloud.cn/?Action=ResetUPhone
 &UPhoneIds.N=zwZrpkCk
 &CityId=xFXLvbhZ
 &BizType=EFBDFdpb
+&ImageId=Otmxpqph
+&UPhoneModelName=FIbzXsnS
+&MediaBandwidth=BqYadJEW
 ```
 
 ### 响应示例
