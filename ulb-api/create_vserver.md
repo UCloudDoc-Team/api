@@ -48,7 +48,9 @@
 | **RequestMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查发出的请求报文 |No|
 | **ResponseMsg** | string | 根据MonitorType确认； 当MonitorType为Customize时，此字段有意义，代表UDP检查请求应收到的响应报文 |No|
 | **SecurityPolicyId** | string | 安全策略组ID，默认值'Default' |No|
-| **EnableCompression** | int | 0:关闭 1：开启,用于数据压缩功能	 |No|
+| **EnableCompression** | int | 0:关闭 1:开启，用于数据压缩功能	 |No|
+| **ForwardPort** | int | 重定向端口，取值范围[0-65535]；默认值为0，代表关闭；仅HTTP协议支持开启重定向功能 |No|
+| **EnableHTTP2** | int | 0:关闭 1:开启，用于开启http2功能；默认值为0 |No|
 
 ### 响应字段
 
@@ -88,6 +90,8 @@ https://api.ucloud.cn/?Action=CreateVServer
 &ResponseMsg=gKFbkkOl
 &SecurityPolicyId=OEKOGXjU
 &EnableCompression=3
+&ForwardPort=6
+&EnableHTTP2=5
 ```
 
 ### 响应示例
