@@ -89,9 +89,8 @@ https://api.ucloud.cn/?Action=CreateVServer
 &RequestMsg=zMpxnICB
 &ResponseMsg=gKFbkkOl
 &SecurityPolicyId=OEKOGXjU
-&EnableCompression=3
+&EnableCompression=1
 &ForwardPort=6
-&EnableHTTP2=5
 ```
 
 ### 响应示例
