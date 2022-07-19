@@ -110,8 +110,10 @@
 | **BackendSet** | array[[*ULBBackendSet*](#ULBBackendSet)] | 后端资源信息列表，具体结构见下方 ULBBackendSet |No|
 | **ListenType** | string | 监听器类型，枚举值为: RequestProxy -> 请求代理；PacketsTransmit -> 报文转发 |No|
 | **PolicySet** | array[[*ULBPolicySet*](#ULBPolicySet)] | 内容转发信息列表，具体结构见下方 ULBPolicySet |No|
-| **EnableCompression** | int | 数据压缩开关，0:关闭 1：开启 |No|
+| **EnableCompression** | int | 数据压缩开关，0:关闭 1:开启 |No|
 | **SecurityPolicy** | [*BindSecurityPolicy*](#BindSecurityPolicy) | VServer绑定的安全策略,具体结构见BindSecurityPolicy |No|
+| **ForwardPort** | int | 重定向端口，取值范围[0-65535]；默认值为0，代表关闭；仅HTTP协议支持开启重定向功能 |No|
+| **EnableHTTP2** | int | 0:关闭 1:开启，用于开启http2功能；默认值为0 |No|
 
 #### FirewallSet
 
