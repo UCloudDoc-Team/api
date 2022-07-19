@@ -78,11 +78,10 @@ https://api.ucloud.cn/?Action=UpdateVServerAttribute
 &PersistenceInfo=None
 &ClientTimeout=60
 &MonitorType=Port
-&EnableHTTP2=9
 &RequestMsg=QHpxxRrA
 &ResponseMsg=rVBUBWIh
 &SecurityPolicyId=cbupUwHT
-&EnableCompression=5
+&EnableCompression=1
 &ForwardPort=4
 &EnableHTTP2=1
 ```
