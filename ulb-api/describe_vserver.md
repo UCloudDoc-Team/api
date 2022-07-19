@@ -167,8 +167,9 @@ https://api.ucloud.cn/?Action=DescribeVServer
 &Region=cn-bj2
 &ProjectId=project-XXXXX
 &ULBId=ulb-XXXXX
-&Limit=LSQaCCYc
-&Offset=OmWlbCEx
+&VServerId=vserver-XXXXX
+&Limit=10
+&Offset=0
 ```
 
 ### 响应示例
@@ -194,6 +195,9 @@ https://api.ucloud.cn/?Action=DescribeVServer
       "ClientTimeout": 60,
       "CreateTime": 1529909432,
       "Domain": "",
+      "EnableCompression": 1,
+      "EnableHTTP2": 1,
+      "ForwardPort": 4,
       "FrontendPort": 80,
       "ListenType": "RequestProxy",
       "Method": "Roundrobin",
@@ -229,6 +233,7 @@ https://api.ucloud.cn/?Action=DescribeVServer
       ],
       "Protocol": "HTTP",
       "SSLSet": [],
+      "SecurityPolicy": {},
       "Status": 0,
       "VServerId": "vserver-XXX",
       "VServerName": "VServer"
