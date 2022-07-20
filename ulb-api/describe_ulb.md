@@ -257,6 +257,9 @@ https://api.ucloud.cn/?Action=DescribeULB
           "ClientTimeout": 60,
           "CreateTime": 1529909432,
           "Domain": "",
+          "EnableCompression": 1,
+          "EnableHTTP2": 1,
+          "ForwardPort": 4,
           "FrontendPort": 80,
           "ListenType": "RequestProxy",
           "Method": "Roundrobin",
@@ -292,6 +295,7 @@ https://api.ucloud.cn/?Action=DescribeULB
           ],
           "Protocol": "HTTP",
           "SSLSet": [],
+          "SecurityPolicy": {},
           "Status": 0,
           "VServerId": "vserver-XXXX",
           "VServerName": "VServer"
