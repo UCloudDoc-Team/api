@@ -4,6 +4,7 @@
 - [概览](api/uslk-api/README.md)
 - [索引](api/uslk-api/index.md)
 - **API**
+    - [批量创建短链接【免审】 - BatchCreateUSLKShortLink](api/uslk-api/batch_create_uslk_short_link)
     - [报备长链接 - CreateUSLKLongLink](api/uslk-api/create_uslk_long_link)
     - [创建场景 - CreateUSLKScenario](api/uslk-api/create_uslk_scenario)
     - [创建短链接 - CreateUSLKShortLink](api/uslk-api/create_uslk_short_link)
