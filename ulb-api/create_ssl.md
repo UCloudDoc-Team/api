@@ -39,6 +39,7 @@
 | **UserCert** | string | 用户的证书 |No|
 | **PrivateKey** | string | 加密证书的私钥 |No|
 | **CaCert** | string | CA证书 |No|
+| **USSLId** | string | USSL证书的ID |No|
 
 ### 响应字段
 
@@ -62,6 +63,7 @@ https://api.ucloud.cn/?Action=CreateSSL
 &ProjectId=project-XXXXXX
 &SSLName=new-ssl
 &SSLContent=-----BEGIN&nbspRSA&nbspPRIVATE&nbspKEY-----xxx
+&USSLId=usecure_ussl-XXXXXX
 ```
 
 ### 响应示例
