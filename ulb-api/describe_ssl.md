@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **SSLId** | string | SSL证书的Id |No|
 | **Limit** | int | 数据分页值，默认为20 |No|
 | **Offset** | int | 数据偏移量，默认值为0 |No|
@@ -61,6 +61,9 @@
 | **CreateTime** | int | SSL证书的创建时间 |No|
 | **HashValue** | string | SSL证书的HASH值 |No|
 | **BindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
+| **SSLSource** | int | SSL证书来源，SSL证书来源，0代表证书来自于ULB平台，1代表证书来自于USSL平台 |No|
+| **USSLId** | string | USSL证书平台的编号,只有当SSLSource为1时才出现 |No|
+| **Domains** | string | USSL证书平台的域名,只有当SSLSource为1时才出现 |No|
 
 #### SSLBindedTargetSet
 

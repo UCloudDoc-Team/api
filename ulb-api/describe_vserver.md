@@ -90,6 +90,9 @@
 | **CreateTime** | int | SSL证书的创建时间 |No|
 | **HashValue** | string | SSL证书的HASH值 |No|
 | **BindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
+| **SSLSource** | int | SSL证书来源，SSL证书来源，0代表证书来自于ULB平台，1代表证书来自于USSL平台 |No|
+| **USSLId** | string | USSL证书平台的编号,只有当SSLSource为1时才出现 |No|
+| **Domains** | string | USSL证书平台的域名,只有当SSLSource为1时才出现 |No|
 
 #### ULBBackendSet
 
