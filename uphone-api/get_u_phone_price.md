@@ -77,6 +77,7 @@ https://api.ucloud.cn/?Action=GetUPhonePrice
 &MediaBandwidth=9
 &MediaBandwidth=8
 &UPhoneCount=DHGufODz
+&UseGlobalBws=true
 ```
 
 ### 响应示例

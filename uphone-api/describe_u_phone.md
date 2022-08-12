@@ -27,7 +27,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取，没有该参数表示获取所有城市 |No|
 | **ServerId** | string | 云手机服务器的资源ID。 |No|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望获取信息的云手机 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。如果都不传入，则返回当前 城市 所有符合条件的云手机列表。 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
@@ -56,7 +56,7 @@
 | **UPhoneName** | string | 云手机的名称，不超过65个字符。 |**Yes**|
 | **UPhoneId** | string | 云手机的唯一标识，不超过32个字节。 |**Yes**|
 | **UPhoneModelName** | string | 云手机规格名称 |**Yes**|
-| **CPU** | int | 虚拟CPU核数。 |**Yes**|
+| **CPU** | float | 虚拟CPU核数。 |**Yes**|
 | **Memory** | int | 内存大小。单位MB |**Yes**|
 | **DiskSize** | int | 磁盘大小，单位: GB |**Yes**|
 | **Resolution** | string | 分辨率 |**Yes**|
@@ -79,6 +79,7 @@
 | **EipId** | string | 云手机IP地址ID |No|
 | **ShareBandwidthId** | string | 所属共享带宽ID |No|
 | **ShareBandwidthName** | string | 所属共享带宽名称 |No|
+| **ADB** | string | 云手机的ADB信息 |No|
 
 ## 示例
 

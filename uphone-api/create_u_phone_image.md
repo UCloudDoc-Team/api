@@ -27,8 +27,8 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **CityId** | string | 城市Id，通过[获取城市列表](https://cms-docs.ucloudadmin.com/api/uphone-api/describe_u_phone_cities)获取 |**Yes**|
 | **UPhoneId** | string | 手机实例的资源ID |**Yes**|
+| **CityId** | string | 城市Id，通过[获取城市列表](https://cms-docs.ucloudadmin.com/api/uphone-api/describe_u_phone_cities)获取 |No|
 | **Name** | string | 镜像名称。长度为2\~128个英文或中文字符。 |No|
 | **Description** | string | 镜像的描述信息。长度为2\~256个英文或中文字符 |No|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|

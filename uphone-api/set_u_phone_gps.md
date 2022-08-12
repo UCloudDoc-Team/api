@@ -27,11 +27,12 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
+| **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |No|
 | **UPhoneGPSs.N.UPhoneId** | string | 云手机ID |No|
 | **UPhoneGPSs.N.Longitude** | float | 经度：-180\~180 |No|
 | **UPhoneGPSs.N.Latitude** | float | 纬度：-90\~90 |No|
 | **UPhoneGPSs.N.Altitude** | float | 海拔 |No|
+| **UPhoneGPSs.N.Enabled** | boolean | GPS开关，true开启，false关闭，默认false |No|
 | **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
@@ -61,6 +62,7 @@ https://api.ucloud.cn/?Action=SetUPhoneGPS
 &UPhoneGPSs.N.Altitude=6.12783
 &CityId=QlYovAFx
 &BizType=BjeTcHiL
+&UPhoneGPSs.N.Enabled=false
 ```
 
 ### 响应示例

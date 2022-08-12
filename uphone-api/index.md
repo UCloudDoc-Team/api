@@ -18,6 +18,7 @@
 |[DescribeUPhoneAppVersion](api/uphone-api/describe_u_phone_app_version)|获取应用版本列表|
 |[DescribeUPhoneCities](api/uphone-api/describe_u_phone_cities)|获取云手机城市列表|
 |[DescribeUPhoneDetailByApp](api/uphone-api/describe_u_phone_detail_by_app)|查询应用所安装的云手机列表|
+|[DescribeUPhoneEipList](api/uphone-api/describe_u_phone_eip_list)|获取云手机Eip列表|
 |[DescribeUPhoneImage](api/uphone-api/describe_u_phone_image)|获取云手机镜像信息列表|
 |[DescribeUPhoneIpRegions](api/uphone-api/describe_u_phone_ip_regions)|获取云手机所在城市支持绑定独立IP的地域列表|
 |[DescribeUPhoneJob](api/uphone-api/describe_u_phone_job)|查询Job的执行状态。|
@@ -54,7 +55,5 @@
 |[SetUPhoneManagerMode](api/uphone-api/set_u_phone_manager_mode)|设置云手机管理模式|
 |[SetUPhoneRootMode](api/uphone-api/set_u_phone_root_mode)|设置云手机Root模式|
 |[SetUPhoneToken](api/uphone-api/set_u_phone_token)|设置云手机RTC连接Token|
-|[SwitchUPhoneIndependentIp](api/uphone-api/switch_u_phone_independent_ip)|更换云手机独立IP|
-|[SwitchUPhoneInstance](api/uphone-api/switch_u_phone_instance)|故障更换云手机|
 |[UnInstallUPhoneAppVersion](api/uphone-api/un_install_u_phone_app_version)|卸载云手机应用版本|
 |[UpdateUPhoneImage](api/uphone-api/update_u_phone_image)|更新云手机镜像信息。|
