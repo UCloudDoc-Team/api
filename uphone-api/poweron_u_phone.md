@@ -38,6 +38,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **JobId** | string | 任务ID，用来查询当前任务状态 |No|
 
 
 
@@ -60,7 +61,7 @@ https://api.ucloud.cn/?Action=PoweronUPhone
 ```json
 {
   "Action": "PoweronUPhoneResponse",
-  "JobId": "RzTHLabn",
+  "JobId": "KYlhxdzQ",
   "Message": "ZTczRxBh",
   "RetCode": 0
 }
