@@ -36,6 +36,7 @@
 | **IpDestRegion** | string | 购买独立IP必须此参数。绑定的目的地域。参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **INetBandwidth** | int | 购买独立IP需要此参数，其中一个ip的带宽值。 |No|
 | **IpCount** | int | 购买独立IP需要此参数。需要的eip数量。 |No|
+| **BandwidthLine** | int | 购买独立IP时需要此参数，带宽线路数量，与云手机数量一致 |No|
 
 ### 响应字段
 
@@ -78,6 +79,7 @@ https://api.ucloud.cn/?Action=GetUPhonePrice
 &MediaBandwidth=8
 &UPhoneCount=DHGufODz
 &UseGlobalBws=true
+&BandwidthLine=6
 ```
 
 ### 响应示例
