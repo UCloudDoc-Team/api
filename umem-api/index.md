@@ -53,6 +53,7 @@
 |[DescribeURedisVersion](api/umem-api/describe_uredis_version)|获取主Redis可用版本|
 |[FlushallURedisGroup](api/umem-api/flushall_uredis_group)|清除主备redis数据|
 |[ISolationURedisGroup](api/umem-api/i_solation_uredis_group)|打开/关闭URedis|
+|[ModifyURedisConfig](api/umem-api/modify_uredis_config)|修改主备Redis配置文件参数|
 |[RemoveUDRedisData](api/umem-api/remove_ud_redis_data)|清除udredis实例数据|
 |[RestartURedisGroup](api/umem-api/restart_uredis_group)|重启主备实例|
-|[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改zhubeiredis的备份策略|
+|[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改主备Redis备份策略|
