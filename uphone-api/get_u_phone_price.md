@@ -29,7 +29,6 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取 |**Yes**|
 | **UPhoneModelName** | int | 云手机规格名称 |No|
-| **MediaBandwidth** | int | 云手机画面带宽值，画面带宽和手机强绑定关系，必须和手机数量对应。 |No|
 | **UPhoneCount** | int | 云手机个数 |No|
 | **ChargeType** | string | 计费模式。枚举值为： > Year，按年付费； > Month，按月付费； > Dynamic，按小时预付费; 如果不传某个枚举值，默认返回年付、月付的价格组合集。 |No|
 | **Quantity** | int | 购买时长。默认: 1。 月付时，此参数传0，代表了购买至月末。 |No|
