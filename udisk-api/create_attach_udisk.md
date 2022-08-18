@@ -47,6 +47,10 @@
 | **CmkId** | string | 加密需要的cmk id，UKmsMode为Yes时，必填 |No|
 | **MultiAttach** | string | 是否允许多点挂载（Yes: 允许多点挂载， No: 不允许多点挂载， 不填默认Yes ） |No|
 | **HostId** | string | Host实例ID。当创建云盘类型为RSSDDataDisk时，根据传入的HostId，创建与虚机在同一PodId下的云盘。 |No|
+| **BackupMode** | string | 快照服务备份策略。默认采用基础版套餐开通，“Base”：基础版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
+| **Journal** | int | BackupMode为Custom时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48 |No|
+| **Hour** | int | BackupMode为Custom时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96 |No|
+| **Day** | int | BackupMode为Custom时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -89,6 +93,10 @@ https://api.ucloud.cn/?Action=CreateAttachUDisk
 &SnapshotService=VlgfpSlc
 &HostId=FKnpCGZT
 &HostProduct=VGePkIjN
+&BackupMode=aAvKfYBB
+&Journal=6
+&Hour=3
+&Day=1
 ```
 
 ### 响应示例

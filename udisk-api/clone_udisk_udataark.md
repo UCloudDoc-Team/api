@@ -42,10 +42,14 @@
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **UDataArkMode** | string | 【开启数据方舟入口已关闭】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
 | **SnapshotService** | string | 是否开启快照服务（开启快照服务，可免费开启数据方舟）。Yes：开启，No：不开启，默认值：No |No|
-| **Size** | int | 购买UDisk大小,单位:GB,范围[1\~8000]。(UDisk大小设定对本地盘备份有效，对云盘备份无效) |No|
+| **Size** | int | 新克隆UDisk的大小,单位:GB。指定Size须大于等于源盘Size，小于源盘Size或者不指定该参数均按源盘Size克隆新盘。普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；RSSD数据盘：范围[1\~32000]；高效数据盘：范围[1\~32000]。 |No|
 | **Tag** | string | 业务组 默认：Default |No|
 | **RdmaClusterId** | string | RDMA集群id。指定RSSD云盘克隆到对应的RDMA集群。 |No|
 | **HostId** | string | Host实例ID。克隆出的云盘可直接挂载到该主机上。 |No|
+| **BackupMode** | string | 快照服务备份策略。默认采用基础版套餐开通，“Base”：基础版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
+| **Journal** | int | BackupMode为Custom时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48 |No|
+| **Hour** | int | BackupMode为Custom时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96 |No|
+| **Day** | int | BackupMode为Custom时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -75,6 +79,10 @@ https://api.ucloud.cn/?Action=CloneUDiskUDataArk
 &SnapshotService=SbsKvZHb
 &RdmaClusterId=fOAYalof
 &HostId=qMNVFVUO
+&BackupMode=dBoEybTD
+&Journal=9
+&Hour=2
+&Day=9
 ```
 
 ### 响应示例

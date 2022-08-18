@@ -65,7 +65,7 @@
 | **Size** | int | 容量单位GB |**Yes**|
 | **Status** | string | 快照状态，Normal:正常,Failed:失败,Creating:制作中 |**Yes**|
 | **DiskType** | int | 磁盘类型，0：普通数据盘；1：普通系统盘；2：SSD数据盘；3：SSD系统盘；4：RSSD数据盘；5：RSSD系统盘。 |**Yes**|
-| **ExpiredTime** | int | 过期时间 |No|
+| **ExpiredTime** | int | 【已废弃】过期时间 |No|
 | **Comment** | string | 快照描述 |No|
 | **IsUDiskAvailable** | boolean | 对应磁盘是否处于可用状态 |No|
 | **Version** | string | 快照版本 |No|
