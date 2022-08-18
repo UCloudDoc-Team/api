@@ -33,7 +33,7 @@
 | **ChargeType** | string | Year , Month, Dynamic 默认: Month |No|
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **Tag** | string | 业务组 默认：Default |No|
-| **BackupMode** | string | 默认采用入门级套餐开通，“ Primer”：入门版，“Base”：基础版，“ Enterprise”：企业版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
+| **BackupMode** | string | 默认采用基础版套餐开通，“Base”：基础版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
 | **Journal** | int | BackupMode为Custom时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48 |No|
 | **Hour** | int | BackupMode为Custom时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96 |No|
 | **Day** | int | BackupMode为Custom时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30 |No|
@@ -75,6 +75,7 @@ https://api.ucloud.cn/?Action=CreateSnapshotService
 &Journal=9
 &Hour=2
 &Day=5
+&UHostQuantity=6.71152
 ```
 
 ### 响应示例

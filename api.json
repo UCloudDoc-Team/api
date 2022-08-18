@@ -330,17 +330,6 @@
           ]
         },
         {
-          "name": "分布式数据库 UDDB",
-          "img": "icon-product__uddb",
-          "sublinks": [
-            {
-              "links": "/api/uddb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "分布式NewSQL数据库 TiDB",
           "img": "icon-product__tidb",
           "sublinks": [
