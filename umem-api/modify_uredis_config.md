@@ -37,7 +37,7 @@
 | **ConfigId** | string | 配置文件的ID |**Yes**|
 | **Key** | string | 参数名称 |**Yes**|
 | **Value** | string | 对应参数的值 |**Yes**|
-| **GroupId** | string |  |No|
+| **GroupId** | string | 如果修改使用默认配置的实例配置，需要填写GroupId |No|
 | **RegionFlag** | boolean | 是否是跨机房URedis(默认false) |No|
 
 ### 响应字段
