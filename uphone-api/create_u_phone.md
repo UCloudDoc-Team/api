@@ -29,7 +29,6 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 云手机实例名称，默认：UPhone。如果同时创建多个，则增加数字后缀，如UPhone-1 |**Yes**|
 | **UPhoneModelName** | string | 云手机规格名称，不超过64个字节。可通过[查询云手机规格列表]()查询支持的云手机规格。 |**Yes**|
-| **MediaBandwidth** | int | 云手机画面带宽，默认2M |**Yes**|
 | **ImageId** | string | 云手机镜像ID，不超过32个字节。可通过[查询手机镜像]()查询云手机规格对应的镜像ID。 |**Yes**|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取<br /> |**Yes**|
 | **UPhoneCount** | int | 创建云手机的个数 |**Yes**|
