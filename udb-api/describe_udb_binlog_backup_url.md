@@ -1,12 +1,12 @@
-# 获取UDB的Binlog备份地址 - DescribeUDBBinlogBackupURL
+# (新)获取UDB的日志备份地址 - DescribeUDBBinlogBackupURL
 
 ## 简介
 
-获取UDB的Binlog备份地址
+获取UDB的Binlog或者错误日志或者慢查询日志的备份地址
 
 
 
-
+!> 不支持新版（NVMe型）MongoDB/PostgreSQL， 新版（NVMe型）MongoDB/PostgreSQL请使用对应产品的API
 
 
 ## 使用方法
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **DBId** | string | DB实例Id |**Yes**|
-| **BackupId** | int | DB实例binlog备份ID，可以从DescribeUDBLogPackage结果当中获得 |**Yes**|
+| **BackupId** | int | DB实例日志备份ID，可以从DescribeUDBLogPackage结果当中获得 |**Yes**|
 
 ### 响应字段
 

@@ -1,12 +1,12 @@
-# 获取UDB的slowlog备份地址 - DescribeUDBLogBackupURL
+# 获取UDB的日志备份地址 - DescribeUDBLogBackupURL
 
 ## 简介
 
-获取UDB的slowlog备份地址
+获取UDB的错误日志或者慢查询日志备份地址
 
 
 
-
+!> 即将被废弃的API， 不支持NVMe型实例。 请使用替换API DescribeUDBBinlogBackupURL
 
 
 ## 使用方法
@@ -35,7 +35,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DBId** | string | DB实例Id |**Yes**|
-| **BackupId** | int | DB实例备份ID |**Yes**|
+| **BackupId** | int | DB实例日志备份ID, 可以从DescribeUDBLogPackage结果当中获得。 |**Yes**|
 
 ### 响应字段
 
@@ -56,10 +56,11 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUDBLogBackupURL
-&Region=cn-bj2
-&DBId=udb-xxx
-&BackupId=1234
-&ProjectId=FGVLZXBt
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=CXhsEFFo
+&DBId=vBzmUVZJ
+&BackupId=3
 ```
 
 ### 响应示例
@@ -67,9 +68,9 @@ https://api.ucloud.cn/?Action=DescribeUDBLogBackupURL
 ```json
 {
   "Action": "DescribeUDBLogBackupURLResponse",
-  "BackupPath": "http://udbbackup.ufile.ucloud.cn/bbasd?UCloudPublicKey=ucloududb@ucloud.cn1426152414000604875621\u0026Expires=1426761552\u0026Signature=8MEqKJlwRVLWI1ZvLE/23pveM=",
+  "BackupPath": "jKkFuaLl",
   "RetCode": 0,
-  "UsernetPath": "skBogOBR"
+  "UsernetPath": "DPdvlsxY"
 }
 ```
 

@@ -4,11 +4,11 @@
 
 | API | 描述信息 |
 |:---|:---|
-|[DescribeUDBLogBackupURL](api/udb-api/describe_udb_log_backup_url)|获取UDB的slowlog备份地址|
+|[DescribeUDBLogBackupURL](api/udb-api/describe_udb_log_backup_url)|获取UDB的日志备份地址|
 |[SwitchUDBInstanceToHA](api/udb-api/switch_udb_instance_to_ha)|普通UDB切换为高可用|
 |[CheckUDBInstanceToHAAllowance](api/udb-api/check_udb_instance_to_ha_allowance)|核查db是否可以升级为高可用|
 |[PromoteUDBSlave](api/udb-api/promote_udb_slave)|提升从库|
-|[DescribeUDBBinlogBackupURL](api/udb-api/describe_udb_binlog_backup_url)|获取UDB的Binlog备份地址|
+|[DescribeUDBBinlogBackupURL](api/udb-api/describe_udb_binlog_backup_url)|(新)获取UDB的日志备份地址|
 |[DescribeUDBInstanceBinlog](api/udb-api/describe_udb_instance_binlog)|获取UDBbinlog列表|
 |[DescribeUDBBackupBlacklist](api/udb-api/describe_udb_backup_blacklist)|获取备份黑名单|
 |[FetchUDBInstanceEarliestRecoverTime](api/udb-api/fetch_udb_instance_earliest_recover_time)|获取最早可回档时间|
