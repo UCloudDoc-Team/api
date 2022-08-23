@@ -49,10 +49,33 @@ API 文档可参考 [获取地域和可用区列表 - GetRegion](https://docs.uc
 
 
 
-共计 **0** 个地域
+共计 **23** 个地域
 
 | 地域短 ID | 地域名称 |
-| ---:| ---:|
+| --- | --- |
+| cn-bj2 | 华北一 |
+| cn-gd | 广州 |
+| cn-qz | 福建 |
+| cn-sh2 | 上海二 |
+| cn-wlcb | 华北二 |
+| afr-nigeria | 拉各斯 |
+| bra-saopaulo | 圣保罗 |
+| ge-fra | 法兰克福 |
+| hk | 香港 |
+| idn-jakarta | 雅加达 |
+| ind-mumbai | 孟买 |
+| jpn-tky | 东京 |
+| kr-seoul | 首尔 |
+| ph-mnl | 马尼拉 |
+| rus-mosc | 莫斯科 |
+| sg | 新加坡 |
+| th-bkk | 曼谷 |
+| tw-tp | 台北 |
+| uae-dubai | 迪拜 |
+| uk-london | 伦敦 |
+| us-ca | 洛杉矶 |
+| us-ws | 华盛顿 |
+| vn-sng | 胡志明市 |
 
 
 ### 各可用区 (Zone) 名称列表
