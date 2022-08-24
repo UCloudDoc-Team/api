@@ -32,8 +32,9 @@ DescribeAvailableInstanceTypes
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。  |No|
+| **MachineTypes.N** | string | 指定机型列表 |No|
 
 ### 响应字段
 
@@ -43,6 +44,7 @@ DescribeAvailableInstanceTypes
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **AvailableInstanceTypes** | array[[*AvailableInstanceTypes*](#AvailableInstanceTypes)] | AvailableInstanceTypes |**Yes**|
+| **Status** | string | 当前区域是否可售 |No|
 
 #### 数据模型
 
@@ -51,6 +53,7 @@ DescribeAvailableInstanceTypes
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Zone** | string | 可用区信息 |No|
 | **Name** | string | 机型名称：快杰O型\|O 、快杰共享型\|OM 、快杰内存型\|OMEM 、 快杰PRO型\|OPRO、通用N型\|N、高主频C型\|C和GPU G型\|G等 |No|
 | **Status** | string | 机型状态：可售\|Normal 、 公测\|Beta、售罄\|Soldout、隐藏\|Hidden |No|
 | **CpuPlatforms** | [*CpuPlatforms*](#CpuPlatforms) | 支持的CPU平台，并且按照Intel、AMD和Ampere分类返回 |No|
@@ -148,6 +151,7 @@ https://api.ucloud.cn/?Action=DescribeAvailableInstanceTypes
 &Region=cn-zj
 &Zone=cn-zj-01
 &ProjectId=qOkTGfWf
+&MachineTypes.N=STscCopU
 ```
 
 ### 响应示例
@@ -156,7 +160,8 @@ https://api.ucloud.cn/?Action=DescribeAvailableInstanceTypes
 {
   "Action": "DescribeAvailableInstanceTypesResponse",
   "AvailableInstanceTypes": "sNSlnDFQ",
-  "RetCode": 0
+  "RetCode": 0,
+  "Status": "UGBTxoLj"
 }
 ```
 
