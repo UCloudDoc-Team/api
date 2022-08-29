@@ -32,9 +32,9 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **UserName** | string | 用户名 |**Yes**|
-| **AccessKeyStatus** | string | API密钥访问状态 |**Yes**|
-| **LoginProfileStatus** | string | 控制台登录访问状态 |**Yes**|
-| **Email** | string | 用户邮箱 |No|
+| **AccessKeyStatus** | string | API密钥访问状态（LoginProfileStatus值为Inactive时，AccessKeyStatus不能为Inactive） |**Yes**|
+| **LoginProfileStatus** | string | 控制台登录访问状态（AccessKeyStatus值为Inactive时，LoginProfileStatus不能为Inactive） |**Yes**|
+| **Email** | string | 用户邮箱（LoginProfileStatus值等于Active必传，LoginProfileStatus值等于Inactive不传） |No|
 | **DisplayName** | string | 显示名称 |No|
 
 ### 响应字段
