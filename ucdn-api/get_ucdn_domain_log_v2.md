@@ -60,7 +60,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **LogTime** | int | Unix时间戳 |**Yes**|
-| **LogUrl** | string | 日志url地址 |**Yes**|
+| **LogUrl** | string | 日志url地址，多个URL用分号隔开 |**Yes**|
 
 ## 示例
 
