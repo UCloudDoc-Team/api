@@ -55,6 +55,7 @@
 |[DescribeVPC](api/vpc2.0-api/describe_vpc)|获取VPC信息|
 |[DescribeVPCIntercom](api/vpc2.0-api/describe_vpc_intercom)|获取VPC互通信息|
 |[DescribeWhiteListResource](api/vpc2.0-api/describe_white_list_resource)|展示NAT网关白名单资源列表|
+|[DetachNetworkInterface](api/vpc2.0-api/detach_network_interface)|解绑云主机关联网卡|
 |[EnableWhiteList](api/vpc2.0-api/enable_white_list)|修改NAT网关白名单开关|
 |[GetAvailableResourceForPolicy](api/vpc2.0-api/get_available_resource_for_policy)|获取NAT网关可配置端口转发规则的资源信息|
 |[GetAvailableResourceForSnatRule](api/vpc2.0-api/get_available_resource_for_snat_rule)|获得可添加snat规则（出口规则）的资源列表|
