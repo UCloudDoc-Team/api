@@ -61,11 +61,8 @@
     
 ```
 https://api.ucloud.cn/?Action=ModifyAutoRenewFlag
-&ItemSet.n=PeQVqUMT
-&Flag=asSCkphD
-&ResourceId=GLxBNXXw
-&RegionId=RGwvyHGR
-&ResourceType=VCgvJpAf
+&Flag=TURN_ON
+&ResourceId=PDSrpaDZ
 ```
 
 ### 响应示例
@@ -73,26 +70,21 @@ https://api.ucloud.cn/?Action=ModifyAutoRenewFlag
 ```json
 {
   "Action": "ModifyAutoRenewFlagResponse",
-  "Fail": 9,
+  "Fail": 1,
   "ResultSet": [
     {
-      "Message": "mxqrRAqq",
-      "ResourceId": "rLHqlMdz",
-      "RetCode": 4
+      "Message": "",
+      "ResourceId": "HHBMiHoq1",
+      "RetCode": 0
     },
     {
-      "Message": "cafLXQIW",
-      "ResourceId": "iRVkrKje",
-      "RetCode": 1
-    },
-    {
-      "Message": "FVSkPkbj",
-      "ResourceId": "yfhncBGh",
+      "Message": "fYUXfpKn",
+      "ResourceId": "HHBMiHoq2",
       "RetCode": 5
     }
   ],
   "RetCode": 0,
-  "Success": 5
+  "Success": 1
 }
 ```
 

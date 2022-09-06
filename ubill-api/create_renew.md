@@ -51,9 +51,8 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateRenew
-&ResourceId=jhTBTdCB
-&Quantity=MqireEtS
-&CouponId=earmqZQi
+&ResourceId=cdsemyLT
+&Quantity=1
 ```
 
 ### 响应示例
@@ -61,8 +60,7 @@ https://api.ucloud.cn/?Action=CreateRenew
 ```json
 {
   "Action": "CreateRenewResponse",
-  "Message": "rlFtcyEA",
-  "OrderNo": "OaSCWxit",
+  "OrderNo": "bhAHKLEp",
   "RetCode": 0
 }
 ```
