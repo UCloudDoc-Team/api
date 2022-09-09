@@ -40,6 +40,7 @@
 | **IpProportion** | int | 独立IP参数。需要独立IP的比例。eg: [4:1]->4， [3:1]->3。 |No|
 | **ShareBandwidthName** | string | 共享带宽名称，可以在创建新的共享带宽时指定一个名称 |No|
 | **ShareBandwidthId** | string | 共享带宽ID，使用现有共享带宽时需要传入此参数 |No|
+| **UseGlobalBws** | boolean | 使用区域全局共享带宽 |No|
 | **CouponId** | string | 云手机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看。注：代金券对带宽不适用，仅适用于云手机计费 |No|
 
 ### 响应字段
