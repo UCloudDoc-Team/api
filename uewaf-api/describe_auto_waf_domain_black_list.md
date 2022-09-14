@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 域名 |**Yes**|
 
 ### 响应字段
@@ -47,12 +47,12 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Id** | int | 规则ID |**Yes**|
-| **FullName** | string | 规则所属域名 |**Yes**|
+| **FullDomain** | string | 规则所属域名 |**Yes**|
 | **AttackType** | string | 攻击类型 |**Yes**|
 | **ActionType** | string | 防御模式 |**Yes**|
 | **AttackCount** | int | 攻击数量 |**Yes**|
 | **IntervalTime** | int | 攻击统计区间，单位:秒 |**Yes**|
-| **ExpiredTime** | int | 攻击过期区间，单位:秒 |**Yes**|
+| **ExpireTime** | int | 攻击过期区间，单位:秒 |**Yes**|
 | **Enable** | int | 启用状态;1表示启用,0表示禁用 |**Yes**|
 | **CreateTime** | int | 创建时间 |**Yes**|
 

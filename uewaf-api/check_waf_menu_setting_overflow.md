@@ -44,10 +44,6 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **IPUsage** | [*UsageInfoDetail*](#UsageInfoDetail) | 独享ip用量，参考UsageInfoDetail |No|
-| **DomainUsage** | [*UsageInfoDetail*](#UsageInfoDetail) | 已添加域名数量，参考UsageInfoDetail |No|
-| **BoardWidthUsageInner** | [*UsageInfoDetail*](#UsageInfoDetail) | 内部带宽占用，参考UsageInfoDetail |No|
-| **BoardWidthUsageOuter** | [*UsageInfoDetail*](#UsageInfoDetail) | 外部带宽占用，参考UsageInfoDetail |No|
 | **DomainLimit** | [*UsageInfoDetail*](#UsageInfoDetail) | 域名数量限额，参考UsageInfoDetail |No|
 | **ExclusiveIPLimit** | [*UsageInfoDetail*](#UsageInfoDetail) | 独享ip限额，参考UsageInfoDetail |No|
 | **BandwidthInner** | [*UsageInfoDetail*](#UsageInfoDetail) | 内部带宽限额，参考UsageInfoDetail |No|

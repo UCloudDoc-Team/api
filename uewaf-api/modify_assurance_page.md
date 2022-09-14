@@ -26,8 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | int | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ID** | int | 要编辑的防篡改记录ID |**Yes**|
 | **URL** | string | 防篡改的url |**Yes**|
 | **Remark** | string | 防篡改业务名称 |**Yes**|

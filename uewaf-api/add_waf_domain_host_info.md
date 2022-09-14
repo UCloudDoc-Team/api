@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 要防护的域名 |**Yes**|
 | **WorkRegions** | string | 工作区域，用户已购买区域的子集，以逗号分隔，如：cn-bj,cn-sh |**Yes**|
 | **WorkMode** | string | 工作模式，Defence:启用防护规则,Alarm:记录不拦截,Inactive:放行；默认Alarm |No|
@@ -35,6 +35,9 @@
 | **HTTPRedirection** | string | 使用HTTP跳转，YES是，NO否，只允许HTTPS:YES,HTTP:NO的情况下使用且只配置了https 443端口的源站 |No|
 | **ExclusiveIP** | string | 标识该域名使用独享防御IP，YES是，NO否；启用将为改域名分配一个独享防御IP |No|
 | **RealIPHeader** | string | 获取真实客户端地址字段，如对接CDN等其他代理时使用 |No|
+| **HTTPBack** | string | 是否使用HTTPS卸载，YES/NO |No|
+| **SourceIndicate** | string | 流量标记，格式为key:value |No|
+| **Http2** | string | 是否开启HTTP2， YES开启，其他关闭 |No|
 
 ### 响应字段
 
@@ -61,6 +64,9 @@ https://api.ucloud.cn/?Action=AddWafDomainHostInfo
 &SrcIP.0=http://106.75.66.11:80
 &CertificateID=0
 &ExclusiveIP=No
+&HTTPBack=jQqKWgcf
+&SourceIndicate=VyxSQeOP
+&HTTP2=pUmPZWTR
 ```
 
 ### 响应示例

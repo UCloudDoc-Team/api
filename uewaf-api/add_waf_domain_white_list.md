@@ -26,11 +26,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 要添加白名单的域名 |**Yes**|
 | **Source** | string | 白名单来源；可选值:用户自定义(custom)，机器行为检测(bot)，bot-rule |**Yes**|
 | **CIDRS.N** | string | IP、网段或者IP段，传递数组 |**Yes**|
-| **Name** | string | 名称 |No|
 | **Remark** | string | 备注信息 |No|
 
 ### 响应字段
