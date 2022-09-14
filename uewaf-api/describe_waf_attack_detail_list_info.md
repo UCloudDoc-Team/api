@@ -36,7 +36,6 @@
 | **BeginTime** | int | 自定义开始时间戳 |No|
 | **EndTime** | int | 自定义结束时间戳 |No|
 | **FullDomain** | string | 要查询的域名，为空时查询所有 |No|
-| **SortArray** | string | 排序方式 |No|
 
 ### 响应字段
 
@@ -61,7 +60,6 @@
 | **DestIp** | string | 目标IP地址 |No|
 | **Port** | string | 端口 |No|
 | **Alerts** | array[[*WafAlert*](#WafAlert)] | 告警匹配信息，参考WafAlert |No|
-| **RequestHeaders** | [*RequestHeader*](#RequestHeader) | http请求头部信息，参考RequestHeader |No|
 | **Attack** | string | 攻击类型 |No|
 | **Method** | string | 请求方法 |No|
 | **FalsePositive** | boolean | 是否误报 |No|
@@ -75,7 +73,6 @@
 | **Mode** | string | 工作模式 |No|
 | **Action** | string | 匹配动作 |No|
 | **UA** | string | 用户代理 |No|
-| **ClientIPInfo** | [*CityInfo*](#CityInfo) | 客户端位置信息，参考CityInfo |No|
 | **Args** | string | 参数 |No|
 
 #### WafAlert
@@ -83,35 +80,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Description** | string | 规则描述 |No|
-| **Match** | object | 匹配规则 |No|
 | **Id** | int | 匹配规则ID |No|
-
-#### RequestHeader
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **AcceptLanguage** | string | 接收语言类型 |No|
-| **AcceptEncoding** | string | 支持编码类型 |No|
-| **Host** | string | 主机 |No|
-| **Accept** | string | 数据类型 |No|
-| **UpgradeInsecureRequests** | string | http升级到https请求 |No|
-| **Connection** | string | 连接方式 |No|
-| **Cookie** | string | Cookie |No|
-| **CacheControl** | string | 缓存行为 |No|
-| **UserAgent** | string | 用户代理 |No|
-| **XForwardFor** | string | XFF |No|
-
-#### CityInfo
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **CountryName** | string | 国家 |No|
-| **RegionName** | string | 区域 |No|
-| **CityName** | string | 城市 |No|
-| **OwnerDomain** | string | 所属域名 |No|
-| **Latitude** | string | 纬度 |No|
-| **Longitude** | string | 经度 |No|
-| **Timezone** | string | 时区 |No|
 
 ## 示例
 

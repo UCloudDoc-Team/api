@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 
 ### 响应字段
 
@@ -48,13 +48,14 @@
 | **Editon** | string | 版本类型 |No|
 | **ExpireTime** | string | 服务到期时间 |No|
 | **ChargeType** | string | 付费类型 |No|
-| **Price** | float | 购买价格，单位：元，精确到分 |No|
 | **TransactionId** | int | 资源的唯一索引 |No|
 | **TransactionNo** | string | 资源订单号 |No|
 | **HasWaf** | boolean | 是否购买了WAF |No|
 | **Expired** | string | 是否已过期，有此字段即为已过期 |No|
-| **WorkRegions** | string | 部署区域 |No|
+| **WorkZone** | string | 主工作区 |No|
+| **WorkRegions** | string | 部署区域，WorkZone为ULB时，显示为ULB id（列表） |No|
 | **Serving** | string | 服务是否生效中 |No|
+| **Servers** | object | WorkZone 为ULB时候，显示对应ULB上的域名列表 |No|
 | **LogStorage** | int | 是否开启日志扩展包 |No|
 
 ## 示例

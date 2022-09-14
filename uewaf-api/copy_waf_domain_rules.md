@@ -26,11 +26,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 源域名 |**Yes**|
 | **DestDomain.N** | string | 目的域名 |**Yes**|
 | **RuleType** | string | 规则类型,CCRule:CC规则； ProtectionRule：防护规则； AutoBlacklistRule：自动拦截规则； HTTPDisguiseRule：信息防护规则； RegionBlockRule：区域封堵规则；WhiteList：白名单规则；BlackList：黑名单规则 |**Yes**|
-| **Append** | boolean | 赋值方式是否追加；true：追加，false：覆盖；默认未覆盖 |No|
 
 ### 响应字段
 

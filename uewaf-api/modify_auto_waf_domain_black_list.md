@@ -26,11 +26,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ID** | int | 需要修改的自动拦截规则ID |**Yes**|
 | **FullDomain** | string | 防御的域名，只能选择已添加的域名 |**Yes**|
 | **AttackType** | string | 攻击种类，默认统计所有攻击种类，可选值：all\|protocol\|xss\|sql\|loopholes\|exec\|webshell\|eaa\|infoleak\|scan\|cc\|other等 |No|
-| **State** | string | 枚举值："Enable", "Disable"，控制规则是否生效 |No|
 | **ActionType** | string | 检测到攻击后的动作， 默认为forbidden，支持captcha |No|
 | **ExpireTime** | int | 规则生效后， 添加黑名单的过期时间，单位分钟， 0 长期有效，默认60分钟 |No|
 | **AttackCount** | int | 攻击阈值，默认10个 |No|

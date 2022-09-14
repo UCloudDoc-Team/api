@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Domain** | string | 要获取的域名 |**Yes**|
 
 ### 响应字段
@@ -54,8 +54,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ID** | int | 反篡改规则ID |**Yes**|
-| **URL** | string | 防篡改页面url |**Yes**|
+| **Id** | int | 反篡改规则ID |**Yes**|
+| **Url** | string | 防篡改页面url |**Yes**|
 | **State** | string | 防护状态 |**Yes**|
 | **Remark** | string | 备注信息 |No|
 

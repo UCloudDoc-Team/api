@@ -26,14 +26,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 要查询的域名 |**Yes**|
 | **Limit** | int | 每页数量限制(等效page size) |**Yes**|
 | **Offset** | int | 页面偏移(等效page number) |**Yes**|
 | **Filter** | string | 想要查找的IP、网段或者IP段，传递数组（CIDRS） |No|
 | **Sort** | string | 排序参数，支持"ExpireTime", "-ExpireTime", "CreateTime", "-CreateTime" |No|
-| **Name** | string | 规则名称 |No|
-| **Remark** | string | 备注信息 |No|
 
 ### 响应字段
 
@@ -67,7 +65,6 @@
 | **ExpireTime** | int | 过期时间 |No|
 | **State** | int | 状态 |No|
 | **SRC** | string | 加入方式(白) |No|
-| **Geo** | array[string] | 位置信息 |No|
 | **Name** | string | 规则名称 |No|
 | **Remark** | string | 备注信息 |No|
 

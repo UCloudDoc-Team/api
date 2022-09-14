@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Limit** | int | 每页数量限制(等效page size) |**Yes**|
 | **Offset** | int | 页面偏移(等效page number) |**Yes**|
 | **FullDomain** | string | 域名，用于查询单一域名 |No|
@@ -50,7 +50,7 @@
 |:---|:---|:---|:---|
 | **FullDomain** | string | 域名 |No|
 | **WorkMode** | string | 工作模式 |No|
-| **RecordID** | int | 域名记录ID |No|
+| **RecordId** | int | 域名记录ID |No|
 | **CertificateID** | int | 证书ID |No|
 | **Cname** | string | CNAME记录值 |No|
 | **WorkRegions** | string | 部署区域 |No|
@@ -59,22 +59,24 @@
 | **CreateTime** | int | 创建时间戳 |No|
 | **SrcIPInfo** | array[[*SrcIPInfo*](#SrcIPInfo)] | 源站IP地址信息，参考SrcIPInfo |No|
 | **HTTPRedirection** | string | http是否重定向 |No|
-| **HTTPStatus** | string | http状态描述 |No|
-| **HTTPException** | string | http异常信息 |No|
-| **HTTPSStatus** | string | https状态 |No|
-| **HTTPSException** | string | https异常描述 |No|
+| **HTTPBack** | string | 是否开启HTTPS offload, YES - 是 |No|
+| **HttpStatus** | string | http状态描述，WAF主动探测结果 |No|
+| **HttpException** | string | http异常信息，WAF主动探测结果 |No|
+| **HttpsStatus** | string | https状态，WAF主动探测结果 |No|
+| **HttpsException** | string | https异常描述，WAF主动探测结果 |No|
 | **UniqueIP** | string | 是否独享IP地址 |No|
 | **RealIPHeader** | string | 真实IP头部 |No|
 | **AttackCount** | int | 攻击次数 |No|
-| **DomainStatus** | array[[*DomainStatus*](#DomainStatus)] | 域名状态信息，参考DomainStatus |No|
+| **DomainStatus** | array[[*DomainStatus*](#DomainStatus)] | WAF探测域名状态信息，参考DomainStatus，ULB版本无效 |No|
+| **Status** | int | 域名有效性，ULB版本有效，其他版本无效，为1时表示域名正常接入，为0 时表示域名已从ULB删除，WAF仅保留历史记录 |No|
 
 #### SrcIPInfo
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Proto** | string | 协议 |No|
-| **Ip** | string | 源IP地址 |No|
-| **Ports** | array[int] | 源端口 |No|
+| **SrcIP** | string | 源IP地址 |No|
+| **Port** | array[int] | 源端口 |No|
 | **URI** | string | URI |No|
 
 #### DomainStatus
