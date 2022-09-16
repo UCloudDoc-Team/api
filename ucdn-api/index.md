@@ -9,6 +9,7 @@
 |[DeleteCertificate](api/ucdn-api/delete_certificate)|删除证书|
 |[DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)|获取预取任务状态|
 |[DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)|获取域名刷新任务状态|
+|[GetAuthConfig](api/ucdn-api/get_auth_config)|接口获取鉴权信息(非标使用)|
 |[GetCertificateV2](api/ucdn-api/get_certificate_v2)|获取证书|
 |[GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)|获取域名命中率|
 |[GetNewUcdnLogRefererStatistics](api/ucdn-api/get_new_ucdn_log_referer_statistics)|获取热点referer统计|
