@@ -29,6 +29,7 @@
 |[DeleteNetworkAcl](api/vpc2.0-api/delete_network_acl)|删除网络ACL|
 |[DeleteNetworkAclAssociation](api/vpc2.0-api/delete_network_acl_association)|删除网络ACL绑定关系|
 |[DeleteNetworkAclEntry](api/vpc2.0-api/delete_network_acl_entry)|删除ACL的规则|
+|[DeleteNetworkInterface](api/vpc2.0-api/delete_network_interface)|删除网卡|
 |[DeleteRouteTable](api/vpc2.0-api/delete_route_table)|删除自定义路由表|
 |[DeleteSecondaryIp](api/vpc2.0-api/delete_secondary_ip)|删除Ip|
 |[DeleteSnatDnatRule](api/vpc2.0-api/delete_snat_dnat_rule)|删除NAT创建内外网IP映射规则|
