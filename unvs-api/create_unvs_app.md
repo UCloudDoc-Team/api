@@ -35,7 +35,7 @@
 | **PkgName** | string | android 包名，当且仅当Platform为1时必填 |No|
 | **PkgSign** | string | android 包签名，当且仅当Platform为1时必填 |No|
 | **Remark** | string | 备注 |No|
-| **Businesses** | string | 绑定业务场景具体内容，若不为空，则表示创建应用、新增业务场景并绑定。该参数是json数组的base64编码结果。示例： 发送内容json数组（base64编码前）：[{"BusinessName":"BIZ-000","Purpose":1}] 。json数组中各参数的定义："BusinessName":业务场景名称，"Purpose":业务场景认证类型。其中必传参数为"BusinessName", "Purpose"。 实际调用本接口时Businesses传值（发送内容base64编码后）为：W3siQnVzaW5lc3NOYW1lIjoiQklaLTAwMCIsIlB1cnBvc2UiOjF9XQ== |No|
+| **Businesses** | string | 绑定业务场景具体内容，若不为空，则表示创建应用、选择或创建业务场景并绑定。该参数是json数组的base64编码结果。示例： 发送内容json数组（base64编码前）：[{"BusinessId":"","BusinessName":"BIZ-000","Purpose":1}] 。json数组中各参数的定义："BusinessId":业务场景ID，如果为空，表示创建新的业务场景，如果不为空，表示绑定已有的业务场景， "BusinessName":业务场景名称，"Purpose":业务场景认证类型。其中必传参数为"BusinessName", "Purpose"。 实际调用本接口时Businesses传值（发送内容base64编码后）为：W3siQnVzaW5lc3NJZCI6IiIsIkJ1c2luZXNzTmFtZSI6IkJJWi0wMDAiLCJQdXJwb3NlIjoxfV0= |No|
 | **WebPageUrl** | string | h5 网页地址，当且仅当Platform为3时必填 |No|
 | **OriginUrl** | string | h5 源地址，当且仅当Platform为3时必填 |No|
 
