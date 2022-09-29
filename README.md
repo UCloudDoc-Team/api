@@ -46,7 +46,6 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |:---|:---|
 |云数据库 UDB|[文档](/api/udb-api/)|
 |云内存 UMem|[文档](/api/umem-api/)|
-|分布式数据库 UDDB|[文档](/api/uddb-api/)|
 |分布式NewSQL数据库 TiDB|[文档](/api/tidb-api/)|
 
 ### 存储
