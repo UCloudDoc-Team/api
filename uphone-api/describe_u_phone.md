@@ -27,6 +27,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ProductType** | string | 枚举值。表示当前操作的产品类型，目前固定值【uphone】，表示云手机场景。 |No|
 | **CityId** | string | 城市Id，通过[获取城市列表](#DescribeUPhoneCities)获取，没有该参数表示获取所有城市 |No|
 | **ServerId** | string | 云手机服务器的资源ID。 |No|
 | **UPhoneIds.N** | string | 【数组】云手机实例的资源 ID，调用方式举例：UPhoneIds.0=希望获取信息的云手机 1 的 UPhoneId，UPhoneIds.1=云手机实例 2 的 UPhoneId。如果都不传入，则返回当前 城市 所有符合条件的云手机列表。 |No|
@@ -34,7 +35,6 @@
 | **Limit** | int | 返回数据长度，默认为200，最大200 |No|
 | **Tag** | string | 要查询的业务组名称 |No|
 | **IsAll** | boolean | 是否返回全部。如果有此参数，分页不生效。 |No|
-| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
 
 ### 响应字段
 
