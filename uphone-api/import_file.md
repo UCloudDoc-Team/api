@@ -31,7 +31,8 @@
 | **FileName** | string | 文件名 |**Yes**|
 | **URL** | string | 文件下载链接 |**Yes**|
 | **CityId** | string | 城市。 参见 [云手机城市列表](https://docs.ucloud.cn/api/uphone-api/describe_u_phone_cities) |No|
-| **ProductType** | string | 枚举值。当前操作的产品类型，1、uphone：云手机场景；2、uphone-server：云手机服务器场景。默认云手机服务器场景。 |No|
+| **ProductType** | string | 枚举值。表示当前操作的产品类型，目前固定值【uphone】，表示云手机场景。 |No|
+| **ABI** | string | 上传文件为apk时，可强制指定32位还是64位运行<br />。armeabi-v7a（32位）;不填为系统默认值（64位） |No|
 
 ### 响应字段
 
@@ -58,6 +59,7 @@ https://api.ucloud.cn/?Action=ImportFile
 &File=nZcVXJQG
 &Object=XdZzkRse
 &BizType=srJzYcdC
+&ABI=jjmwmCad
 ```
 
 ### 响应示例
