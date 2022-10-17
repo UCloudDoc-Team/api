@@ -7,7 +7,7 @@ Requests
 Syntax:
 
 ```
-DELETE /<key_name>?uploadId=<upload_id> HTTP/1.1
+DELETE /<object_name>?uploadId=<upload_id> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```

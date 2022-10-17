@@ -11,7 +11,7 @@ PUT
 Syntax:
 
 ```
-PUT /<key_name> HTTP/1.1
+PUT /<object_name> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Length: <length>

@@ -9,7 +9,7 @@ Requests
 Syntax:
 
 ```
-POST /uploadhit?Hash=<hash_value>&FileName=<file_name>&FileSize=<filesize> HTTP/1.1
+POST /uploadhit?Hash=<hash_value>&ObjectName=<object_name>&FileSize=<filesize> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```
@@ -26,8 +26,8 @@ Request Elements
 |Name    |Type  |Description          |Required|
 |---|---|---|---|
 |Hash    |String|待上传文件的ETag,详见ETag生成文档|Yes     |
-|FileName|String|Bucket中文件的名称         |Yes     |
-|FileSize|String|待上传文件的大小             |Yes     |
+|ObjectName|String|Bucket中文件的名称         |Yes     |
+|ObjectSize|String|待上传文件的大小             |Yes     |
 
 Reponses
 

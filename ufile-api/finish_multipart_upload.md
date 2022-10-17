@@ -2,14 +2,14 @@
 
 完成分片上传
 
-> 完成分片上传是把之前的各个分片数据块组合成一个文件。由于分片上传适用的文件一般较大，传输耗时较长，等上传完毕开始指定的key可能已经被占用,遇到这种情形时会采用newKey参数的值作为文件最终的key，否则仍然采用原来的key。
+> 完成分片上传是把之前的各个分片数据块组合成一个文件。由于分片上传适用的文件一般较大，传输耗时较长，等上传完毕开始指定的object可能已经被占用,遇到这种情形时会采用newObject参数的值作为文件最终的object，否则仍然采用原来的object。
 
 Requests
 
 Syntax:
 
 ```
-POST /<key_name>?uploadId=<upload_id>&newKey=<new_key> HTTP/1.1
+POST /<object_name>?uploadId=<upload_id>&newObject=<new_object> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Type: <mimetype>

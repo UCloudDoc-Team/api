@@ -9,7 +9,7 @@ Requests
 Syntax:
 
 ```
-PUT /<file_name>?restore HTTP/1.1
+PUT /<object_name>?restore HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```

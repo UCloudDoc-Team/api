@@ -42,7 +42,7 @@ DataSet Item
 |Name   |Type   |Description|
 |---|---|---|
 |BucketName  |String |文件所属Bucket名称      |
-|FileName   |String |文件名称,utf-8编码      |
+|ObjectName   |String |文件名称,utf-8编码      |
 |Hash      |String |文件hash值     |
 |MimeType   |Array  |文件mimetype  |
 |Size	|Integer	|文件大小 |
@@ -69,7 +69,7 @@ Example Response:
     "DataSet": [
         {
             "BucketName": "blue",
-            "FileName": "aaa.jpg",
+            "ObjectName": "aaa.jpg",
             "Hash": "fbfc1aba39fdac0e0f298461970529d3",
             "MimeType": "image/jpeg",
             "Size": 344500,
