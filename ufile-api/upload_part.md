@@ -2,14 +2,14 @@
 
 上传文件分片
 
-> 在初始化一个Multipart Upload之后，可以根据指定的key_name和upload_id来上传一个文件的分片。每一个文件分片都有一个号码part_number，该号码标识了这块分片数据在整个文件内的相对位置。
+> 在初始化一个Multipart Upload之后，可以根据指定的object_name和upload_id来上传一个文件的分片。每一个文件分片都有一个号码part_number，该号码标识了这块分片数据在整个文件内的相对位置。
 
 Requests
 
 Syntax:
 
 ```
-PUT /<key_name>?uploadId=<upload_id>&partNumber=<part_number> HTTP/1.1
+PUT /<object_name>?uploadId=<upload_id>&partNumber=<part_number> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Type: <mimetype>

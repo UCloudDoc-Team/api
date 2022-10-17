@@ -7,7 +7,7 @@ Requests
 Syntax:
 
 ```
-GET /<file_name> HTTP/1.1
+GET /<object_name> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token> 
 Range: bytes=byte_range

@@ -7,7 +7,7 @@ Requests
 Syntax:
 
 ```
-PUT /<file_name>?storageClass=<storage_class> HTTP/1.1
+PUT /<object_name>?storageClass=<storage_class> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```

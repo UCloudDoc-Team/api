@@ -7,7 +7,7 @@ Requests
 Syntax:
 
 ```
-POST /<key_name>?opmeta HTTP/1.1
+POST /<object_name>?opmeta HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Type: application/json
@@ -54,7 +54,7 @@ Example
 Example Request:
 
 ```
-POST /demokey?opmeta HTTP/1.1
+POST /demoobject?opmeta HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 Content-Type: application/json

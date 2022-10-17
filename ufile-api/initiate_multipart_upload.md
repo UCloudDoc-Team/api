@@ -7,7 +7,7 @@ Requests
 Syntax:
 
 ```
-POST /<key_name>?uploads HTTP/1.1
+POST /<object_name>?uploads HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Length: 0
