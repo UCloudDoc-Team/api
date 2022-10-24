@@ -27,6 +27,7 @@
 |[DescribeUPhoneServerModel](api/uphone-api/describe_u_phone_server_model)|获取ServerModel列表。|
 |[DescribeUPhoneShareBandwidth](api/uphone-api/describe_u_phone_share_bandwidth)|获取共享带宽列表|
 |[GetUPhoneAllowance](api/uphone-api/get_u_phone_allowance)|获取云手机创建余量|
+|[GetUPhoneBandwidthUpgradePrice](api/uphone-api/get_u_phone_bandwidth_upgrade_price)|获取云手机带宽升降级价格|
 |[GetUPhonePrice](api/uphone-api/get_u_phone_price)|获取云手机价格|
 |[GetUPhoneRenewPrice](api/uphone-api/get_u_phone_renew_price)|获取云手机续费价格|
 |[GetUPhoneScreenCapture](api/uphone-api/get_u_phone_screen_capture)|云手机截屏|
@@ -35,6 +36,7 @@
 |[GetUPhoneShareBandwidthUpgradePrice](api/uphone-api/get_u_phone_share_bandwidth_upgrade_price)|获取云手机共享带宽升降级价格|
 |[ImportFile](api/uphone-api/import_file)|上传文件|
 |[InstallUPhoneAppVersion](api/uphone-api/install_u_phone_app_version)|安装云手机应用版本|
+|[ModifyUPhoneBandwidth](api/uphone-api/modify_u_phone_bandwidth)|修改云手机带宽|
 |[ModifyUPhoneName](api/uphone-api/modify_u_phone_name)|修改云手机名称|
 |[ModifyUPhoneRemark](api/uphone-api/modify_u_phone_remark)|修改云手机备注信息|
 |[ModifyUPhoneServerName](api/uphone-api/modify_u_phone_server_name)|修改云手机服务器名称|
