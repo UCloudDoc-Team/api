@@ -31,6 +31,7 @@
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
 | **ProductType** | string | 枚举值。表示当前操作的产品类型，目前固定值【uphone】，表示云手机场景。 |No|
+| **Scene** | string | 使用场景：海外(OVERSEA)，境内(INLAND) |No|
 
 ### 响应字段
 
