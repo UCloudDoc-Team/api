@@ -59,15 +59,15 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSMSSignature
-&ProjectId=org-bxxxxy
-&SigContent=UCloud
+&ProjectId=cn-zj
+&SigContent=IrvtYXdi
 &SigType=0
 &SigPurpose=0
 &CertificateType=0
-&Description=forcompanyused
-&File=iVBORw0KGgoXXXXXXXXXXXXXXXXXXNSUhEU
-&International=true
-&SigContent=FPqzBuBI
+&Description=EDYoldFz
+&File=ICMXVWmw
+&International=false
+&ProxyFile=IaCnaxJg
 ```
 
 ### 响应示例
@@ -75,9 +75,9 @@ https://api.ucloud.cn/?Action=CreateUSMSSignature
 ```json
 {
   "Action": "CreateUSMSSignatureResponse",
-  "Message": "Rqpugfyt",
+  "Message": "SzgLwgcG",
   "RetCode": 0,
-  "SignatureId": "SIG20190XXX2C1844"
+  "SigId": "RMkBxFFQ"
 }
 ```
 

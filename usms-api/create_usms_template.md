@@ -58,7 +58,9 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSMSTemplate
-&ProjectId=org-bxxxxy
+&PublicKey=AMxzvfXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+&Signature=cba5cf5XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+&ProjectId=org-geg1zh
 &Purpose=2
 &TemplateName=ucloud-alert
 &Template=alertXXXXXXXXXXXXXXXXXXXXXXXX
