@@ -53,6 +53,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Region** | string | 所属地区 |**Yes**|
 | **TokenId** | string | 令牌ID |**Yes**|
 | **TokenName** | string | 令牌名称 |**Yes**|
 | **PublicKey** | string | 令牌公钥 |**Yes**|
@@ -63,7 +64,8 @@
 | **ExpireTime** | int | 令牌的超时时间点 |**Yes**|
 | **CreateTime** | int | 创建时间 |**Yes**|
 | **ModifyTime** | int | 修改时间 |**Yes**|
-| **Region** | string | 所属地区 |**Yes**|
+| **BlackIPList** | array[string] | 令牌黑名单 |No|
+| **WhiteIPList** | array[string] | 令牌白名单 |No|
 
 ## 示例
 
