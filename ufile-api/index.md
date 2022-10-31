@@ -22,3 +22,4 @@
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
 |[UpdateUFileLifeCycle](api/ufile-api/update_ufile_life_cycle)|更新生命周期管理|
 |[UpdateUFileToken](api/ufile-api/update_ufile_token)|更新令牌|
+|[UpdateUdsRule](api/ufile-api/update_uds_rule)|更新解压缩规则|

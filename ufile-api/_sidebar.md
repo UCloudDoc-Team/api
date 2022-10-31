@@ -21,6 +21,7 @@
     - [更改Bucket属性 - UpdateBucket](api/ufile-api/update_bucket)
     - [更新生命周期管理 - UpdateUFileLifeCycle](api/ufile-api/update_ufile_life_cycle)
     - [更新令牌 - UpdateUFileToken](api/ufile-api/update_ufile_token)
+    - [更新解压缩规则 - UpdateUdsRule](api/ufile-api/update_uds_rule)
 - **数据类 API**
   * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
   * [上传文件-PutFile](api/ufile-api/put_file)
