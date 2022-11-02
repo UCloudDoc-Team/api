@@ -58,7 +58,7 @@
 | **TokenName** | string | 令牌名称 |**Yes**|
 | **PublicKey** | string | 令牌公钥 |**Yes**|
 | **PrivateKey** | string | 令牌私钥 |**Yes**|
-| **AllowedOps** | array[string] | 令牌允许执行的操作，[ TOKEN_ALLOW_NONE , TOKEN_ALLOW_READ , TOKEN_ALLOW_WRITE , TOKEN_ALLOW_DELETE , TOKEN_ALLOW_LIST, TOKEN_ALLOW_IOP , TOKEN_ALLOW_DP ] |**Yes**|
+| **AllowedOps** | array[string] | 令牌允许执行的操作，[ TOKEN_ALLOW_NONE 没有权限, TOKEN_ALLOW_READ 下载权限, TOKEN_ALLOW_WRITE 上传权限, TOKEN_ALLOW_DELETE 删除权限, TOKEN_ALLOW_LIST 列表权限, TOKEN_ALLOW_IOP 图片处理权限] |**Yes**|
 | **AllowedPrefixes** | array[string] | 令牌允许操作的key前缀 |**Yes**|
 | **AllowedBuckets** | array[string] | 令牌允许操作的bucket |**Yes**|
 | **ExpireTime** | int | 令牌的超时时间点 |**Yes**|
