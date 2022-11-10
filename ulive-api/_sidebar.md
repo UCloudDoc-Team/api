@@ -20,6 +20,7 @@
     - [获取域名以及其接入点列表 - GetULiveConfigAppInfo](api/ulive-api/get_u_live_config_app_info)
     - [获取在线流列表控制台 - GetULiveDomRealStreamListInfo](api/ulive-api/get_u_live_dom_real_stream_list_info)
     - [获取域名状态码监控 - GetULiveDomainHttpCode](api/ulive-api/get_u_live_domain_http_code)
+    - [获取域名请求数 - GetULiveDomainRequestInfo](api/ulive-api/get_u_live_domain_request_info)
     - [禁推流列表 - GetULiveForbidStreamList](api/ulive-api/get_u_live_forbid_stream_list)
     - [获取历史推流列表 - GetULiveHistoryStreamList](api/ulive-api/get_u_live_history_stream_list)
     - [直播录制统计信息 - GetULiveRecordStatistic](api/ulive-api/get_u_live_record_statistic)
