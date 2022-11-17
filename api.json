@@ -297,6 +297,17 @@
           ]
         },
         {
+          "name": "云数据库 MongoDB UDB（NVMe）",
+          "img": "icon-product__mongodb",
+          "sublinks": [
+            {
+              "links": "/api/umongodb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "云数据库 MongoDB UDB",
           "img": "icon-product__mongodb",
           "sublinks": [
