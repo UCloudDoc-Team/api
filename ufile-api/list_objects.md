@@ -1,22 +1,29 @@
 # 获取目录文件列表-ListObjects
 
+## 简介
+
 用于以目录形式列出Bucket下的文件信息
 
-# Request
-## Syntax:
+## 定义
+
+### 句法（Syntax）:
+
 ```
 GET /?listobjects&prefix=<prefix>&marker=<marker>&max-keys=<max-keys>&delimiter=<delimiter> HTTP/1.1
 Host: <bucket_name>.ufile.ucloud.cn
 Authorization: <token>
 ```
 
-# Request Parameters
-## Request Header
+### 请求参数（Request Parameters）
+
+**请求头（Request Headers）**
+
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Authorization|string|上传请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95) 	|**Yes**|
 
-## Request Elements
+**请求元素（Request Elements）**
+
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |Prefix|string|返回以Prefix作为前缀的目录文件列表|No|
@@ -24,14 +31,17 @@ Authorization: <token>
 |MaxKeys|int|指定返回目录文件列表的最大数量，默认值为100，不超过1000|No|
 |Delimiter|string|目录分隔符，当前只支持"/"和""，当Delimiter设置为"/"时，返回目录形式的文件列表，当Delimiter设置为""时，返回非目录层级文件列表|No|
 
-# Response
-## Response Header
+### 响应（Responses）
+
+**响应头（Response Headers）**
+
 |Parameter name|Type|Description|
 |---|---|---|
 |Content-Length|Integer|响应body部分的长度|
 |Content-Type|String|响应body部分的类型|
 
-## Response Elements
+**响应元素（Response Elements）**
+
 |Parameter name|Type|Description|
 |---|---|---|
 |Name|string|Bucket名称|
@@ -43,7 +53,7 @@ Authorization: <token>
 |Contents|array|文件列表|
 |CommonPrefixes|array|以Delimiter结尾，并且有共同前缀的目录列表|
 
-## Contents
+**内容（Contents）**
 |Parameter name|Type|Description|
 |---|---|---|
 |Key|string|文件名称|
@@ -54,19 +64,21 @@ Authorization: <token>
 |LastModified|int|文件最后修改时间|
 |CreateTime|int|文件创建时间|
 
-## CommonPrefixes
+**通用前缀（CommonPrefixes）**
 |Parameter name|Type|Description|
 |---|---|---|
 |Prefix|string|以Delimiter结尾的公共前缀目录名|
 
-# Request Example
+## 示例
+
+### 请求示例（Example Request）:
 ```
 GET /?listobjects&delimiter=/&max-keys=2 HTTP/1.1
 Host: buc-test.ufile.ucloud.cn
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 ```
 
-# Response Example
+### 响应示例（Example Response）:
 ```
 HTTP/1.1 200 OK
 Content-Length: 347

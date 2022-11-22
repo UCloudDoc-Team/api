@@ -1,10 +1,12 @@
 # 下载文件 - GetFile 
 
+## 简介
+
 下载文件
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 GET /<object_name> HTTP/1.1
@@ -13,9 +15,9 @@ Authorization: <token>
 Range: bytes=byte_range
 If-Modified-Since: <timestamp>
 ```
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name             |Type  |Description                       |Required|
 |---|---|---|---|
@@ -23,15 +25,15 @@ Request Headers
 |Range            |String|分片下载的文件范围                         |No      |
 |If-Modified-Since|String|只返回从某时修改过的文件，否则返回304(not modified)|No      |
 
-Request Elements
+**请求元素（Request Elements）**
 
 |Name             |Type  |Description                       |Required|
 |---|---|---|---|
 |ufileattname    |String|指定US3返回请求的Content-Disposition头                   |No      |
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -42,7 +44,7 @@ Response Headers
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 |X-Ufile-Meta- *   |String |US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name   |Type   |Description|
 |---|---|---|
@@ -51,19 +53,19 @@ Response Elements
 
 > 注意: 成功下载时返回HTTP 200或206和数据体。
 
-<table><tr><td bgcolor=orange>
- 注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
-  </td></tr></table>
-Example
+## 示例
 
-Example Request:
+> 注意：示例中的Host为源站域名，如果您使用CDN下载，请将Host替换为CDN域名
+
+### 请求示例（Example Request）:
+
 
 ```
 GET /demofile HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK
@@ -73,7 +75,7 @@ Content-Length: 1234
 
 <data>
 ```
-Example Response Only Get Partial Content:
+### 部分响应示例 (Example Response Only Get Partial Content):
 
 ```
 HTTP/1.1 206 Partial Content

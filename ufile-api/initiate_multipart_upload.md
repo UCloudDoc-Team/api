@@ -1,10 +1,12 @@
 # 初始化分片 - InitiateMultipartUpload 
 
+## 简介
+
 初始化分片上传
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 POST /<object_name>?uploads HTTP/1.1
@@ -12,9 +14,9 @@ Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 Content-Length: 0
 ```
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name          |Type   |Description|Required|
 |---|---|---|---|
@@ -23,13 +25,13 @@ Request Headers
 | X-Ufile-Storage-Class   | String   | 文件存储类型，分别是标准、低频、归档，对应有效值：STANDARD, IA, ARCHIVE                            | No        |
 | X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明：未使用。
+> 说明：未使用。
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -37,7 +39,7 @@ Response Headers
 |Content-Length|Integer|响应body部分的长度     |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name    |Type   |Description       |
 |---|---|---|
@@ -46,9 +48,9 @@ Response Elements
 |Bucket  |String |上传文件所属Bucket的名称   |
 |Key     |String |上传文件在Bucket中的Key名称|
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 POST /demokey?uploads HTTP/1.1
@@ -56,7 +58,7 @@ Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 Content-Length: 0
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

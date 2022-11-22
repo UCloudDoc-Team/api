@@ -1,31 +1,35 @@
 # 查询文件基本信息 - HEADFile 
 
+## 简介
 查询文件基本信息
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
+
 
 ```
 HEAD /<object_name> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token> 
 ```
-Request Parameters
 
-Request Headers
+### 请求参数（Request Parameters）
+
+**请求头（Request Headers）**
 
 |Name         |Type  |Description|Required|
 |---|---|---|---|
 |Authorization|String|下载请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |No      |
 
-Request Elements
 
-说明: 未使用。
+**请求元素（Request Elements）**
 
-Responses
+> 说明: 未使用。
 
-Response Headers
+### 响应（Responses）
+
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -36,7 +40,7 @@ Response Headers
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 |X-Ufile-Meta- *   |String |US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name   |Type   |Description|
 |---|---|---|
@@ -45,16 +49,16 @@ Response Elements
 
 > 注意: 成功下载时只返回HTTP 200回应和数据体。
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 HEAD /demofile HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

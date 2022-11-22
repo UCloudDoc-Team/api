@@ -1,10 +1,12 @@
 # 操作文件的Meta信息 - OpMeta 
 
+## 简介
+
 操作文件的Meta信息
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 POST /<object_name>?opmeta HTTP/1.1
@@ -19,11 +21,11 @@ Content-Length: <length>
      "metav": <meta-value>
  }
 ```
-说明： 目前本接口限定 op: "set" 和 metak: "mimetype"，即仅允许设置文件的mimetype。
+> 说明： 目前本接口限定 op: "set" 和 metak: "mimetype"，即仅允许设置文件的mimetype。
 
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name          |Type   |Description|Required|
 |---|---|---|---|
@@ -31,13 +33,13 @@ Request Headers
 |Content-Length|Integer|请求body部分的长度|Yes     |
 |Content-Type  |String |请求body部分的类型|Yes     |
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明: 未使用
+> 说明: 未使用
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -45,13 +47,13 @@ Response Headers
 |Content-Length|Integer|响应body部分的长度     |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
-说明: 未使用
+> 说明: 未使用
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 POST /demoobject?opmeta HTTP/1.1
@@ -66,7 +68,7 @@ Content-Length 53
     "metav": "text/plain"
 } 
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

@@ -1,40 +1,42 @@
 # 文件存储类型转换 - ClassSwitch 
 
-说明：用于转换文件的存储类型，可以任意转换文件为标准、低频、冷存三种存储类型，注意：冷存文件如果想转换为其他两种类型必须在解冻期内。
+## 简介
 
-Requests
+用于转换文件的存储类型，可以任意转换文件为标准、低频、冷存三种存储类型，注意：冷存文件如果想转换为其他两种类型必须在解冻期内。
 
-Syntax:
+## 定义
+
+### 句法（Syntax）:
 
 ```
 PUT /<object_name>?storageClass=<storage_class> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name         |Type  |Description|Required|
 |---|---|---|---|
 |Authorization|String|存储类型转换请求的授权签名，详情可参考 [API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)   |Yes     |
 
-Request Elements
+**Request Elements（请求元素）**
 
 |Name    |Type  |Description          |Required|
 |---|---|---|---|
 |storageClass    |String|目标存储类型，三种：STANDARD（标准）、IA（低频）、ARCHIVE（冷存）|Yes     |
 
-Reponses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
 |Content-Length|Integer|响应body部分的长度     |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name   |Type   |Description|
 |---|---|---|
@@ -43,23 +45,23 @@ Response Elements
 
 > 注意: 成功执行只会返回HTTP 200回应,不带body数据.
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 PUT /archive_file.txt?storageClass=IA HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
 ```
 
-Example Response with Error:
+### 响应错误示例（Example Response with Error）:
 
 ```
 HTTP/1.1 403 Forbidden
