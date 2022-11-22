@@ -1,12 +1,14 @@
 # 完成分片 - FinishMultipartUpload 
 
+## 简介
+
 完成分片上传
 
 > 完成分片上传是把之前的各个分片数据块组合成一个文件。由于分片上传适用的文件一般较大，传输耗时较长，等上传完毕开始指定的object可能已经被占用,遇到这种情形时会采用newObject参数的值作为文件最终的object，否则仍然采用原来的object。
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 POST /<object_name>?uploadId=<upload_id>&newObject=<new_object> HTTP/1.1
@@ -15,9 +17,9 @@ Authorization: <token>
 Content-Type: <mimetype>
 Content-Length: 63
 ```
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name          |Type   |Description|Required|
 |---|---|---|---|
@@ -27,13 +29,13 @@ Request Headers
 | X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
 | X-Ufile-Metadata-Directive   | String   | UNCHANGED（默认值）:保持初始化时设置的用户自定义元数据不变。<br>REPLACE：忽略初始化分片时设置的用户自定义元数据，直接采用Finish请求中指定的元数据。   | No        |
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明: 未使用
+> 说明: 未使用
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -42,7 +44,7 @@ Response Headers
 |ETag          |String |已上传文件的哈希值       |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name    |Type   |Description        |
 |---|---|---|
@@ -50,11 +52,11 @@ Response Elements
 |Key     |String |已上传文件在Bucket中的Key名称|
 |FileSize|Integer|已上传文件的大小           |
 
-说明: 同一文件所有已上传分片的ETag用逗号拼接的字符串，作为请求的 body 数据。
+> 说明: 同一文件所有已上传分片的ETag用逗号拼接的字符串，作为请求的 body 数据。
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 POST /demokey?uploadId=0f188eb2-5e19-49c3-94c9-36fb5a0ff72a&newKey=anotherkey HTTP/1.1
@@ -65,7 +67,7 @@ Content-Length 287
 
 9EV6kXgrhTfhy65nHAe84vby2po=,bt5wxJ2fYzAIsklPwAeB7Z9LHQI=,Tt_XCL1oic2KI9xD4Gyxa9g_ht0=,DMmtV-wLenWHa5zP0h24ewlvrsc=,UMEvhZgJZsCXV_jIAOXQC60MakI=,1CTgeZYujKyu9ob13800ndWR3f8=,a1_eDguW8oGbDDBbv9Ru3-lJD20=,Q9IVA8bANo4Fmsd2W3e3iiXQrDU=,MiTIX1Mt4wUbpto2-oZ26dovSek=,MuKlR_GmcZuVRx0YEbJZF4_yBvo=
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

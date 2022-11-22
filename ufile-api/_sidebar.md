@@ -26,7 +26,6 @@
   * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
   * [上传文件-PutFile](api/ufile-api/put_file)
   * [表单上传-PostFile](api/ufile-api/post_file)
-  * [秒传文件-UploadHit](api/ufile-api/upload_hit)
   * [下载文件-GetFile](api/ufile-api/get_file)
   * [查询文件基本信息-HEADFile](api/ufile-api/head_file)
   * [获取目录文件列表-ListObjects](api/ufile-api/list_objects)

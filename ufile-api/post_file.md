@@ -1,12 +1,14 @@
 # 表单上传 - PostFile 
 
+## 简介
+
 表单上传文件
 
-说明：适合使用浏览器的场景并且上传文件内容可以在一次HTTP请求完成，并且所有PUT上传支持的参数都可以在表单上传中指定。
+> 说明：适合使用浏览器的场景并且上传文件内容可以在一次HTTP请求完成，并且所有PUT上传支持的参数都可以在表单上传中指定。
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 POST / HTTP/1.1
@@ -16,7 +18,10 @@ Content-Length: <length>
 
 <file_content>
 ```
-Request Headers
+
+### 请求参数（Request Parameters）
+
+**请求头（Request Headers）**
 
 | Name            | Type     | Description                                 |Required  |
 |---|---|---|---|
@@ -26,7 +31,7 @@ Request Headers
 | X-Ufile-Storage-Class   | String   | 文件存储类型，分别是标准、低频、归档，对应有效值：STANDARD, IA, ARCHIVE                            | No        |
 | X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
 
-Request Parameters
+**请求元素（Request Elements）**
 
 |Name         |Type  |Description    |Required|
 |---|---|---|---|
@@ -34,13 +39,12 @@ Request Parameters
 |Authorization|String|上传请求的授权签名，[API 签名算法](https://docs.ucloud.cn/ufile/api/authorization?id=%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e7%ad%be%e5%90%8d%e7%ae%97%e6%b3%95)       |Yes     |
 |Content-Type |String|上传文件本身的MimeType|No      |
 
-<HTML><blockquote>
-   **注意:**     - 以上参数是在form表单中的参数。
-    - POST 表单上传时签名使用的是 form 表单参数的 Content-Type(即上传文件本身的 mimetype), 而非本次 HTTP 请求的 Content-Type。
-</blockquote></HTML>
-Responses
+> **注意:** - 以上参数是在form表单中的参数。- POST 表单上传时签名使用的是 form 表单参数的 Content-Type(即上传文件本身的 mimetype), 而非本次 HTTP 请求的 Content-Type。
+   
 
-Response Headers
+### 响应（Responses）
+
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -49,7 +53,7 @@ Response Headers
 |ETag          |String |完成上传的文件的哈希值     |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name   |Type   |Description|
 |---|---|---|
@@ -58,9 +62,9 @@ Response Elements
 
 > 注意: 成功执行只会返回HTTP 200回应,不带body数据.
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 POST / HTTP/1.1
@@ -83,7 +87,7 @@ Content-Type: image/jpeg
 <file_content>
 ------UCloudPOSTFormBoundary--
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

@@ -1,14 +1,11 @@
 # 上传文件 - PutFile 
 
+## 简介
 普通上传文件
 
-Requests 
+## 定义
 
-Request Method 
-
-PUT
-
-Syntax:
+### 句法（Syntax）:
 
 ```
 PUT /<object_name> HTTP/1.1
@@ -18,9 +15,10 @@ Content-Length: <length>
 Content-Type: <mimetype>
 Content-MD5: <md5>
 ```
-Request Parameters
 
-Request Headers
+### 请求参数（Request Parameters）
+
+**请求头（Request Headers）**
 
 | Name            | Type     |Description                                  |Required  |
 |---|---|---|---|
@@ -31,13 +29,13 @@ Request Headers
 | X-Ufile-Storage-Class   | String   | 文件存储类型，分别是标准、低频、归档，对应有效值：STANDARD, IA, ARCHIVE                            | No        |
 | X-Ufile-Meta- *   | String   | US3中规定所有以X-Ufile-Meta-为前缀的参数视为用户自定义元数据（User Meta），比如x-ufile-meta-location。一个文件可以有多个类似的参数，但所有的User Meta总大小不能超过8KB。这些User Meta信息会在GetFile或者HeadFile的时候在HTTP头部中返回。   | No        |
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明：未使用。
+> 说明：未使用。
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description      |
 |---|---|---|
@@ -46,18 +44,18 @@ Response Headers
 |ETag          |String |已经上传文件在US3中的哈希值|
 |X-SessionId   |String |请求失败时返回本次请求的会话Id |
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name   |Type   |Description|
 |---|---|---|
 |RetCode|Integer|执行失败时的错误代码 |
 |ErrMsg |String |执行失败时的错误消息 |
 
-注意: 成功执行只会返回HTTP 200回应,不带body数据。
+> 注意: 成功执行只会返回HTTP 200回应,不带body数据。
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 PUT /demokey HTTP/1.1
@@ -69,14 +67,14 @@ Content-MD5: c5371fe3624d438cd8a59420a3221978
 
 [11434 bytes of file data]
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
 ETag: "AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH"
 ```
-Example Response with Error:
+### 响应错误示例（Example Response with Error）：
 
 ```
 HTTP/1.1 404 Not Found
@@ -89,7 +87,7 @@ X-SessionId: e2f4fc84-3936-4a2d-85b5-ef8f2e79933c
     "ErrMsg": "bucket not exist"
 }
 ```
-说明：在带错误的响应中还有一个响应头X-SessionId，可用于服务端进行具体的错误定位。
+> 说明：在带错误的响应中还有一个响应头X-SessionId，可用于服务端进行具体的错误定位。
 
 
 

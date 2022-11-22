@@ -1,11 +1,13 @@
 # 获取已上传成功的分片列表-GetMultiUploadPart
 
+## 简介
+
 获取已上传成功的分片列表
 
-# Request Parameters
-|Parameter name|Type|Description|Required|
-|---|---|---|---|
-|UploadId|string|上传ID|**Yes**|
+## 定义
+
+### 句法（Syntax）:
+
 
 ``` 
 Syntax:
@@ -17,7 +19,14 @@ Request Headers
 	Authorization 下载请求的授权签名
 ```
 
-# Response Elements
+### 请求参数（Request Parameters）
+
+|Parameter name|Type|Description|Required|
+|---|---|---|---|
+|UploadId|string|上传ID|**Yes**|
+
+### 响应（Responses）
+
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |RetCode|int|返回码|**Yes**|
@@ -28,20 +37,24 @@ Request Headers
 |Status|int|上传状态，0：未完成，1：完成|No|
 |Parts|array|分片列表|No|
 
-## PartsItem
+### 分片信息（PartsItem）
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |PartNum|int|分片编号|No|
 |Etag|string|分片etag值|No|
 
-# Request Example
+## 示例
+
+### 请求示例（Example Request）:
+
 ```
 GET /?muploadpart&uploadId=e5af977e-329c-4a25-b907-d8bc39ff95e3 HTTP/1.1
 Host: example.cn-bj.ufileos.ucloud.cn
 Authorization:UCloud pRAtiCbYdYI9wqHMqcQe0D9m16YpTsKBVL3GeBZ6wn6N+00uMrI7NQ==:VdDRXKoBjX6FnxjOz+HbLtswW50=
 ```
 
-# Response Example
+### 响应示例（Example Response）:
+
 ```
 {
     "Status": 0, 

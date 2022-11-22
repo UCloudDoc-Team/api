@@ -9,7 +9,7 @@ Requests
 Syntax:
 
 ```
-POST /uploadhit?Hash=<hash_value>&ObjectName=<object_name>&FileSize=<filesize> HTTP/1.1
+POST /uploadhit?Hash=<hash_value>&FileName=<object_name>&FileSize=<filesize> HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: <token>
 ```

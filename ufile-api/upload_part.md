@@ -1,12 +1,13 @@
 # 上传分片 - UploadPart 
 
+## 简介
 上传文件分片
 
 > 在初始化一个Multipart Upload之后，可以根据指定的object_name和upload_id来上传一个文件的分片。每一个文件分片都有一个号码part_number，该号码标识了这块分片数据在整个文件内的相对位置。
 
-Requests
+## 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 PUT /<object_name>?uploadId=<upload_id>&partNumber=<part_number> HTTP/1.1
@@ -15,9 +16,9 @@ Authorization: <token>
 Content-Type: <mimetype>
 Content-Length: <length>
 ```
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 |Name          |Type   |Description      |Required|
 |---|---|---|---|
@@ -25,15 +26,15 @@ Request Headers
 |Content-Length|Integer|请求body部分即待上传分片的长度|Yes     |
 |Content-Type  |String |上传请求body部分的类型    |Yes     |
 
-注意：上传分片请求的Content-Length必须等于初始化上传返回的分片块大小，否则完成上传时校验会失败。各个分片可以 独立并发上传。
+> 注意：上传分片请求的Content-Length必须等于初始化上传返回的分片块大小，否则完成上传时校验会失败。各个分片可以 独立并发上传。
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明：未使用。
+> 说明：未使用。
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 |Name          |Type   |Description     |
 |---|---|---|
@@ -42,15 +43,15 @@ Response Headers
 |ETag          |String |已上传分片的哈希值       |
 |X-SessionId   |String |请求失败时返回本次请求的会话Id|
 
-Response Elements
+**响应元素（Response Elements）**
 
 |Name      |Type   |Description|
 |---|---|---|
 |PartNumber|Integer|本次分片上传的分片号码|
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 PUT /demokey?uploadId=0f188eb2-5e19-49c3-94c9-36fb5a0ff72a&partNumber=0 HTTP/1.1
@@ -61,7 +62,7 @@ Content-Length: 4194304
 
 [4194304 bytes of data, as part of a file]
 ```
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK

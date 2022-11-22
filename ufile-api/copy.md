@@ -1,10 +1,12 @@
 ## 文件拷贝 - Copy
 
+## 简介
+
 调用Copy接口拷贝同一地域下相同或不同存储空间（Bucket）之间的文件（Object）。
 
-Requests
+# 定义
 
-Syntax:
+### 句法（Syntax）:
 
 ```
 PUT /<object_name> HTTP/1.1
@@ -14,9 +16,9 @@ Content-Length: <length>
 X-Ufile-Copy-Source: </SourceBucketName/SourceObjectName>
 ```
 
-Request Parameters
+### 请求参数（Request Parameters）
 
-Request Headers
+**请求头（Request Headers）**
 
 | Name                       | Type    | Description                                                  | Required |
 | -------------------------- | ------- | ------------------------------------------------------------ | -------- |
@@ -26,13 +28,13 @@ Request Headers
 | X-Ufile-Metadata-Directive | String  | 指定如何设置目标Object的元信息。<br> *  COPY（默认值）：复制源Object的元数据到目标Object。<br/> *  REPLACE：忽略源Object的元数据，直接采用请求中指定的元数据。文件存储类型，分别是标准、低频、归档，对应有效值：STANDARD, IA, ARCHIVE | No       |
 | X-Ufile-Storage-Class      | String  |                                                              | No       |
 
-Request Elements
+**请求元素（Request Elements）**
 
-说明：未使用。
+> 说明：未使用。
 
-Responses
+### 响应（Responses）
 
-Response Headers
+**响应头（Response Headers）**
 
 | Name           | Type    | Description                    |
 | -------------- | ------- | ------------------------------ |
@@ -41,18 +43,18 @@ Response Headers
 | ETag           | String  | 已经上传文件在US3中的哈希值    |
 | X-SessionId    | String  | 请求失败时返回本次请求的会话Id |
 
-Response Elements
+**响应元素（Response Elements）**
 
 | Name    | Type    | Description          |
 | ------- | ------- | -------------------- |
 | RetCode | Integer | 执行失败时的错误代码 |
 | ErrMsg  | String  | 执行失败时的错误消息 |
 
-注意: 成功执行只会返回HTTP 200回应,不带body数据。
+> 注意: 成功执行只会返回HTTP 200回应,不带body数据。
 
-Example
+## 示例
 
-Example Request:
+### 请求示例（Example Request）:
 
 ```
 PUT /demokey HTTP/1.1
@@ -64,7 +66,7 @@ Content-MD5: c5371fe3624d438cd8a59420a3221978
 X-Ufile-Copy-Source: /SourceBucketName/SourceObjectName
 ```
 
-Example Response:
+### 响应示例（Example Response）:
 
 ```
 HTTP/1.1 200 OK
@@ -72,7 +74,7 @@ Content-Length: 0
 ETag: "AQAAABP9DJdoo2X0hKyax2pVTLQPaVzH"
 ```
 
-Example Response with Error:
+### 响应错误示例（Example Response with Error）：
 
 ```
 HTTP/1.1 404 Not Found
