@@ -57,3 +57,4 @@
 |[RemoveUDRedisData](api/umem-api/remove_ud_redis_data)|清除udredis实例数据|
 |[RestartURedisGroup](api/umem-api/restart_uredis_group)|重启主备实例|
 |[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改主备Redis备份策略|
+|[UpdateURedisRewriteTime](api/umem-api/update_uredis_rewrite_time)|修改主备redis重写时间|

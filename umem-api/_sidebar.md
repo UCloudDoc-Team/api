@@ -48,5 +48,6 @@
     - [清除udredis实例数据 - RemoveUDRedisData](api/umem-api/remove_ud_redis_data)
     - [重启主备实例 - RestartURedisGroup](api/umem-api/restart_uredis_group)
     - [更改主备Redis备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
+    - [修改主备redis重写时间 - UpdateURedisRewriteTime](api/umem-api/update_uredis_rewrite_time)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)
