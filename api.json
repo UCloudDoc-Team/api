@@ -37,17 +37,6 @@
           ]
         },
         {
-          "name": "云手机服务器 UPhoneServer",
-          "img": "icon-product__uphoneserver",
-          "sublinks": [
-            {
-              "links": "/api/uphone-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "容器云 UK8S",
           "img": "icon-product__uk8s",
           "sublinks": [
