@@ -39,7 +39,7 @@
 | **OuterMode** | string | 创建的ULB是否为外网模式，默认即为外网模式 |No|
 | **InnerMode** | string | 创建的ULB是否为内网模式 |No|
 | **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费; Dynamic, 按时付费 |No|
-| **VPCId** | string | ULB所在的VPC的ID, 如果不传则使用默认的VPC |No|
+| **VPCId** | string | ULB所在的VPC的ID。 如果不传则使用默认的VPC，若不传且无默认VPC则接口报错 |No|
 | **SubnetId** | string | ULB 所属的子网ID，如果不传则随机选择一个。 |No|
 | **BusinessId** | string | ULB 所属的业务组ID，如果不传则使用默认的业务组 |No|
 | **FirewallId** | string | 防火墙ID，如果不传，则默认不绑定防火墙 |No|
@@ -73,7 +73,7 @@ https://api.ucloud.cn/?Action=CreateULB
 &SubnetId=subnet-XXXXX
 &Tag=test
 &FirewallId=wXfLAbgy
-&IsWAFOn=huXFRIkp
+
 ```
 
 ### 响应示例
