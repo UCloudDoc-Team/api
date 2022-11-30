@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **UserName** | string | 用户名 |**Yes**|
 | **DisplayName** | string | 用户名称（用户名称和用户状态不能同时为空） |No|
-| **Status** | string | 用户状态（用户名称和用户状态不能同时为空） |No|
+| **Status** | string | 用户状态（用户名称和用户状态不能同时为空，枚举值：Active:解冻,Frozen:冻结） |No|
 | **NewUserName** | string | 新用户名 |No|
 
 ### 响应字段
