@@ -20,8 +20,6 @@
     - [获取域名状态码信息【新】 - GetUcdnDomainHttpCodeV2](api/ucdn-api/get_ucdn_domain_http_code_v2)
     - [获取域名基本信息 - GetUcdnDomainInfoList](api/ucdn-api/get_ucdn_domain_info_list)
     - [获取域名5分钟日志 - GetUcdnDomainLogV2](api/ucdn-api/get_ucdn_domain_log_v2)
-    - [获取域名源站状态码监控 - GetUcdnDomainOriginHttpCode](api/ucdn-api/get_ucdn_domain_origin_http_code)
-    - [获取域名源站详细状态码监控 - GetUcdnDomainOriginHttpCodeDetail](api/ucdn-api/get_ucdn_domain_origin_http_code_detail)
     - [获取域名回源请求数【新】 - GetUcdnDomainOriginRequestNum](api/ucdn-api/get_ucdn_domain_origin_request_num)
     - [获取域名预取开启状态 - GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)
     - [获取域名请求数【新】 - GetUcdnDomainRequestNumV3](api/ucdn-api/get_ucdn_domain_request_num_v3)
