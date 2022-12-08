@@ -34,7 +34,8 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClusterId** | string | 集群ID |**Yes**|
-| **BackupId** | string | 文件备份ID |**Yes**|
+| **BackupId** | string | 文件备份ID |No|
+| **PackageId** | int | 打包ID |No|
 | **ValidTime** | int | 备份链接过期时间（单位秒） |No|
 
 ### 响应字段
@@ -62,6 +63,7 @@ https://api.ucloud.cn/?Action=DescribeUMongoDBBackupURL
 &ClusterId=cDNCLXDU
 &BackupId=reAlkmik
 &ValidTime=1
+&PackageId=3
 ```
 
 ### 响应示例
