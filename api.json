@@ -334,7 +334,7 @@
           "img": "icon-product__udbproxy",
           "sublinks": [
             {
-              "links": "/api/udb_proxy-api/README",
+              "links": "/api/udbproxy-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
