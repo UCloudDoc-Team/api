@@ -86,6 +86,10 @@
       {
         "links": "/api/umongodb-api/README",
         "name": "云数据库 MongoDB UDB（NVMe）"
+      },
+      {
+        "links": "/api/udbproxy-api/README",
+        "name": "云数据库读写分离中间件 UDBProxy"
       }
     ]
   },
