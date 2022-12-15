@@ -297,6 +297,17 @@
           ]
         },
         {
+          "name": "云数据库 PostgreSQL UDB（NVMe）",
+          "img": "icon-product__postgresql",
+          "sublinks": [
+            {
+              "links": "/api/upgsql-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "云内存 UMem Memcache",
           "img": "icon-product__umem",
           "sublinks": [
