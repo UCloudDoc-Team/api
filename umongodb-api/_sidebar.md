@@ -7,6 +7,7 @@
     - [备份集群数据库 - BackupUMongoDBCluster](api/umongodb-api/backup_umon_go_db_cluster)
     - [创建配置模板 - CreateUMongoDBConfigTemplate](api/umongodb-api/create_umon_go_db_config_template)
     - [获取实例备份下载链接 - DescribeUMongoDBBackupURL](api/umongodb-api/describe_umon_go_db_backup_url)
+    - [描述MongoDB实例 - DescribeUMongoDBInstance](api/umongodb-api/describe_umon_go_db_instance)
     - [获取实例备份策略 - GetUMongoDBBackupParam](api/umongodb-api/get_umon_go_db_backup_param)
     - [获取配置模板内容 - GetUMongoDBCfgTempItem](api/umongodb-api/get_umon_go_db_cfg_temp_item)
     - [获取UMongoDB可回档时间范围 - GetUMongoDBRecoverTimeRange](api/umongodb-api/get_umon_go_db_recover_time_range)
