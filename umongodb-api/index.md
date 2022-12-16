@@ -7,6 +7,7 @@
 |[BackupUMongoDBCluster](api/umongodb-api/backup_umon_go_db_cluster)|备份集群数据库|
 |[CreateUMongoDBConfigTemplate](api/umongodb-api/create_umon_go_db_config_template)|创建配置模板|
 |[DescribeUMongoDBBackupURL](api/umongodb-api/describe_umon_go_db_backup_url)|获取实例备份下载链接|
+|[DescribeUMongoDBInstance](api/umongodb-api/describe_umon_go_db_instance)|描述MongoDB实例|
 |[GetUMongoDBBackupParam](api/umongodb-api/get_umon_go_db_backup_param)|获取实例备份策略|
 |[GetUMongoDBCfgTempItem](api/umongodb-api/get_umon_go_db_cfg_temp_item)|获取配置模板内容|
 |[GetUMongoDBRecoverTimeRange](api/umongodb-api/get_umon_go_db_recover_time_range)|获取UMongoDB可回档时间范围|
