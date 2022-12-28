@@ -28,8 +28,9 @@
 |[GetULiveShiftStatistic](api/ulive-api/get_u_live_shift_statistic)|直播时移统计信息(计费)|
 |[GetULiveSnapshotStatistic](api/ulive-api/get_u_live_snapshot_statistic)|获取直播截图计费统计信息|
 |[GetULiveStreamMonitor](api/ulive-api/get_u_live_stream_monitor)|获取流监控|
+|[GetULiveTranscodeCnt](api/ulive-api/get_u_live_transcode_cnt)|获取转码并发总数|
 |[GetULiveTranscodeStatistic](api/ulive-api/get_u_live_transcode_statistic)|获取直播转码计费统计信息|
-|[GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)|获取直播加速带宽流量|
+|[GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)|获取直播加速带宽|
 |[GetUliveDomainLog](api/ulive-api/get_ulive_domain_log)|获取直播域名下的日志|
 |[GetUliveProIspBandwidth](api/ulive-api/get_ulive_pro_isp_bandwidth)|按省份运营商获取域名带宽数据|
 |[UnforbidLiveStream](api/ulive-api/unforbid_live_stream)|对一个直播流实施解禁|

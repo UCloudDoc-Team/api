@@ -1,8 +1,8 @@
-# 获取直播加速带宽流量 - GetUliveBandwidth
+# 获取直播加速带宽 - GetUliveBandwidth
 
 ## 简介
 
-获取直播加速带宽流量
+获取直播加速带宽
 
 
 
@@ -35,6 +35,7 @@
 | **DomainId.N** | string | 域名ID，创建域名时生成的ID，不传则获取所有 |No|
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
+| **Protocol** | string | 协议。all:查询总带宽，https：查询https带宽，other：查询非https带宽，ipv4:查询ipv4带宽，ipv6:查询ipv6带宽，默认all |No|
 
 ### 响应字段
 
@@ -46,6 +47,7 @@
 | **BandwidthSet** | array[[*BandwidthSet*](#BandwidthSet)] | 带宽流量实例表。 |No|
 | **Traffic** | string | 从起始时间到结束时间内所使用的总流量，单位GB |No|
 | **MaxBandwidth** | string | 从起始时间到结束时间内带宽峰值 |No|
+| **MaxBandwidthTime** | int | 带宽峰值时间点，格式：时间戳 |No|
 
 #### 数据模型
 
@@ -63,11 +65,12 @@
     
 ```
 https://api.ucloud.cn/?Action=GetUliveBandwidth
-&ProjectId=bqFjcDDt
+&ProjectId=bpOUjwfl
 &Type=4
-&DomainId.n=yahDjCsK
-&BeginTime=2
-&EndTime=5
+&DomainId.n=UsgWxRYz
+&BeginTime=7
+&EndTime=6
+&Protocol=iVmuKZJN
 ```
 
 ### 响应示例
@@ -78,12 +81,13 @@ https://api.ucloud.cn/?Action=GetUliveBandwidth
   "BandwidthSet": [
     {
       "Time": 6,
-      "Value": 4.33639
+      "Value": 5.75534
     }
   ],
-  "MaxBandwidth": "QiEcRZXL",
+  "MaxBandwidth": "pVPTEOIj",
+  "MaxBandwidthTime": 1,
   "RetCode": 0,
-  "Traffic": "kByAJEpr"
+  "Traffic": "XSfNdZgo"
 }
 ```
 
