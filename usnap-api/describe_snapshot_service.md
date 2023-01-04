@@ -31,6 +31,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量, 默认为0 |No|
 | **Limit** | int | 返回数据长度, 默认为20 |No|
+| **SnapshotServiceId** | string | 快照服务ID(传入则获取当前快照服务ID, 不传则获取当前可用区快照服务列表)	 |No|
 | **VDiskId** | string | 磁盘ID (传入则获取当前盘快照服务, 不传则获取当前可用区快照服务列表)	 |No|
 | **SnapshotId** | string | 快照ID (传入则获取当前快照对应盘的快照服务, 不传则获取当前可用区快照服务列表，磁盘ID和快照ID同时传入以磁盘ID为准) |No|
 
@@ -64,6 +65,7 @@
 | **ChargeType** | string | 计费类型 |No|
 | **IsExpire** | string | 计费是否过期 |No|
 | **AutoRenew** | string | 是否自动续费 |No|
+| **Tag** | string | 业务组 |No|
 
 ## 示例
 
@@ -79,6 +81,7 @@ https://api.ucloud.cn/?Action=DescribeSnapshotService
 &VDiskId=BEjwyiFd
 &SnapshotId=JAQOCYXO
 &SnapshotId=zSeLTmxM
+&SnapshotServiceId=eHiegDYn
 ```
 
 ### 响应示例
