@@ -176,17 +176,6 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
-        },
-        {
-          "name": "无人化智能盒子 UBox",
-          "img": "icon-product__accessgw",
-          "sublinks": [
-            {
-              "links": "/api/ubox-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
         }
       ]
     },
