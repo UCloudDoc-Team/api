@@ -15,7 +15,7 @@
           ]
         },
         {
-          "name": "物理云主机 UPHost",
+          "name": "裸金属云主机 UPHost",
           "img": "icon-product__uphost",
           "sublinks": [
             {

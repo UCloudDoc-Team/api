@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__uphost">物理云主机 UPHost</div>
+<div class="sidebar_title icon__uphost">裸金属云主机 UPHost</div>
 
 - [概览](api/uphost-api/README.md)
 - [索引](api/uphost-api/index.md)

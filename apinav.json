@@ -11,7 +11,7 @@
       },
       {
         "links": "/api/uphost-api/README",
-        "name": "物理云主机 UPHost"
+        "name": "裸金属云主机 UPHost"
       },
       {
         "links": "/api/udhost-api/README",
