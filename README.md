@@ -25,7 +25,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 | 产品 | 相关链接 |
 |:---|:---|
 |云主机 UHost|[文档](/api/uhost-api/)|
-|物理云主机 UPHost|[文档](/api/uphost-api/)|
+|裸金属云主机 UPHost|[文档](/api/uphost-api/)|
 |私有专区 UDHost|[文档](/api/udhost-api/)|
 |公共镜像库 UHub|[文档](/api/uhub-api/)|
 |容器云 UK8S|[文档](/api/uk8s-api/)|
