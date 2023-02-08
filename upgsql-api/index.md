@@ -4,6 +4,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[BackupUPgSQLLog](api/upgsql-api/backup_u_pg_sql_log)|备份日志包|
 |[CreateUPgSQLInstance](api/upgsql-api/create_u_pg_sql_instance)|创建PG云数据库|
 |[CreateUPgSQLParamTemplate](api/upgsql-api/create_u_pg_sql_param_template)|创建PG参数模板|
 |[CreateUPgSQLReadonly](api/upgsql-api/create_u_pg_sql_readonly)|创建PG从库|
@@ -13,11 +14,13 @@
 |[GetUPgSQLBackupStrategy](api/upgsql-api/get_u_pg_sql_backup_strategy)|获取备份策略|
 |[GetUPgSQLBackupURL](api/upgsql-api/get_u_pg_sql_backup_url)|获取备份下载地址|
 |[GetUPgSQLInstance](api/upgsql-api/get_u_pg_sql_instance)|获取云数据库实例描述|
+|[GetUPgSQLInstanceLog](api/upgsql-api/get_u_pg_sql_instance_log)|查询日志|
 |[GetUPgSQLInstancePrice](api/upgsql-api/get_u_pg_sql_instance_price)|获取创建PG云数据库价格|
 |[GetUPgSQLParamTemplate](api/upgsql-api/get_u_pg_sql_param_template)|获取模板信息|
 |[GetUPgSQLUpgradePrice](api/upgsql-api/get_u_pg_sql_upgrade_price)| 获取 PG 云数据库升降级价格|
 |[ListUPgSQLBackup](api/upgsql-api/list_u_pg_sql_backup)|获取备份列表|
 |[ListUPgSQLInstance](api/upgsql-api/list_u_pg_sql_instance)|获取云数据库列表|
+|[ListUPgSQLLog](api/upgsql-api/list_u_pg_sql_log)|获取数据库日志|
 |[ListUPgSQLMachineType](api/upgsql-api/list_u_pg_sql_machine_type)|获取UPgSQL支持机器类型列表|
 |[ListUPgSQLVersion](api/upgsql-api/list_u_pg_sql_version)|获取UPgSQL支持版本列表|
 |[RestartUPgSQLInstance](api/upgsql-api/restart_u_pg_sql_instance)|重启PG实例|
