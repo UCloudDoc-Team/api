@@ -70,11 +70,11 @@
 | **IsUDiskAvailable** | boolean | 对应磁盘是否处于可用状态 |No|
 | **Version** | string | 快照版本 |No|
 | **UHostId** | string | 对应磁盘制作快照时所挂载的主机 |No|
-| **UKmsMode** | string | 是否是加密盘快照，是:"Yes", 否:"No" |No|
-| **CmkId** | string | 该快照的cmk id |No|
-| **DataKey** | string | 该快照的密文密钥 |No|
-| **CmkIdStatus** | string | 该快照cmk的状态, Enabled(正常)，Disabled(失效)，Deleted(删除)，NoCmkId(非加密盘) |No|
-| **CmkIdAlias** | string | cmk id 别名 |No|
+| **UKmsMode** | string | 【已废弃】是否是加密盘快照，是:"Yes", 否:"No" |No|
+| **CmkId** | string | 【已废弃】该快照的cmk id |No|
+| **DataKey** | string | 【已废弃】该快照的密文密钥 |No|
+| **CmkIdStatus** | string | 【已废弃】该快照cmk的状态, Enabled(正常)，Disabled(失效)，Deleted(删除)，NoCmkId(非加密盘) |No|
+| **CmkIdAlias** | string | 【已废弃】cmk id 别名 |No|
 
 ## 示例
 
