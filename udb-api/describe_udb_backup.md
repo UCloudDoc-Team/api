@@ -2,7 +2,7 @@
 
 ## 简介
 
-列表UDB实例备份信息
+列表UDB实例备份信息.Zone不填表示多可用区，填代表单可用区
 
 
 
@@ -31,15 +31,16 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 分页显示的起始偏移，列表操作则指定 |**Yes**|
 | **Limit** | int | 分页显示的条目数，列表操作则指定 |**Yes**|
 | **DBId** | string | DB实例Id，如果指定，则只获取该db的备份信息 该值可以通过DescribeUDBInstance获取 |No|
 | **BackupType** | int | 备份类型,取值为0或1，0表示自动，1表示手动 |No|
 | **BeginTime** | int | 过滤条件:起始时间(Unix时间戳) |No|
 | **EndTime** | int | 过滤条件:结束时间(Unix时间戳) |No|
+| **ClassType** | string | 如果未指定GroupId，则可选是否选取特定DB类型的配置(sql, nosql, postgresql, sqlserver) |No|
 
 ### 响应字段
 
@@ -58,17 +59,19 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Zone** | string | 备份所在可用区 |No|
 | **BackupId** | int | 备份id |No|
 | **BackupName** | string | 备份名称 |No|
 | **BackupTime** | int | 备份时间(Unix时间戳) |No|
 | **BackupSize** | int | 备份文件大小(字节) |No|
 | **BackupType** | int | 备份类型,取值为0或1,0表示自动，1表示手动 |No|
 | **State** | string | 备份状态 Backuping // 备份中 Success // 备份成功 Failed // 备份失败 Expired // 备份过期 |No|
+| **ErrorInfo** | string | 备份错误信息 |No|
 | **DBId** | string | dbid |No|
 | **DBName** | string | 对应的db名称 |No|
-| **Zone** | string | 备份所在可用区 |No|
 | **BackupZone** | string | 跨机房高可用备库所在可用区 |No|
 | **BackupEndTime** | int | 备份完成时间(Unix时间戳) |No|
+| **MD5** | string | 备份文件的MD5值，备份完成后显示，备份中或备份失败时为空,目前只支持Mysql NVMe机型与Mongo |No|
 
 ## 示例
 
@@ -79,6 +82,7 @@ https://api.ucloud.cn/?Action=DescribeUDBBackup
 &Region=cn-bj2
 &Offset=0
 &Limit=20
+&BackupId=1
 ```
 
 ### 响应示例
@@ -88,28 +92,36 @@ https://api.ucloud.cn/?Action=DescribeUDBBackup
   "Action": "DescribeUDBBackupResponse",
   "DataSet": [
     {
-      "BackupId": 57214,
+      "BackupEndTime": 1329867185,
+      "BackupId": 296133,
       "BackupName": "system backup",
-      "BackupSize": 138571,
-      "BackupTime": 1410894157,
+      "BackupSize": 167066,
+      "BackupTime": 1429867144,
       "BackupType": 0,
-      "DBId": "c1d1d90d-e039-4483-8cd6-b31614d71817",
-      "DBName": "testtest",
-      "State": "Backuping"
+      "BackupZone": null,
+      "DBId": "udbha-xxxxxx",
+      "DBName": "frombf-hassd-56",
+      "ErrorInfo": "",
+      "State": "Success",
+      "Zone": "cn-bj2-02"
     },
     {
-      "BackupId": 57215,
+      "BackupEndTime": 1429859800,
+      "BackupId": 29534,
       "BackupName": "system backup",
-      "BackupSize": 138571,
-      "BackupTime": 1412894156,
+      "BackupSize": 3105731,
+      "BackupTime": 1429859724,
       "BackupType": 0,
-      "DBId": "c1d1d90d-e039-4483-8cd6-b31614d71817",
-      "DBName": "testtest",
-      "State": "Success"
+      "BackupZone": null,
+      "DBId": "udb-xxxxx",
+      "DBName": "test_linshi",
+      "ErrorInfo": "",
+      "State": "Success",
+      "Zone": "cn-bj2-02"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 7
+  "TotalCount": 180
 }
 ```
 
