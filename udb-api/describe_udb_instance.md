@@ -71,7 +71,7 @@
 | **VPCId** | string | VPC的ID |No|
 | **SubnetId** | string | 子网ID |No|
 | **InstanceType** | string | UDB数据库机型 |No|
-| **InstanceTypeId** | int | UDB数据库机型ID |No|
+| **InstanceTypeId** | int | UDB数据库机型ID (已弃用) |No|
 | **Tag** | string | 获取资源其他信息 |No|
 | **Port** | int | 端口号，mysql默认3306，mongodb默认27017 |No|
 | **SrcDBId** | string | 对mysql的slave而言是master的DBId，对master则为空， 对mongodb则是副本集id |No|
@@ -105,6 +105,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区 |No|
+| **ReplicationDelaySeconds** | int | 延时从库时长 |No|
 | **DBId** | string | DB实例id |No|
 | **Name** | string | 实例名称，至少6位 |No|
 | **DBTypeId** | string | DB类型id，mysql/mongodb按版本细分各有一个id 目前id的取值范围为[1,7],数值对应的版本如下： 1：mysql-5.5，2：mysql-5.1，3：percona-5.5 4：mongodb-2.4，5：mongodb-2.6，6：mysql-5.6， 7：percona-5.6 |No|
