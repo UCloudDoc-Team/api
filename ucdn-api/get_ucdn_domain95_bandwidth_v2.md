@@ -36,6 +36,7 @@
 | **EndTime** | int | 查询的结束日期，格式为Unix Timestamp  |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外 不填默认为全部区域 |No|
+| **IsDcdn** | boolean | 是否是动态加速 默认是false |No|
 
 ### 响应字段
 
@@ -61,6 +62,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomain95BandwidthV2
 &EndTime=8
 &DomainId.n=VqFYNgfW
 &Areacode=gwlMdkcg
+&IsDcdn=true
 ```
 
 ### 响应示例

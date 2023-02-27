@@ -6,7 +6,7 @@
 
 
 
-!> note<br />目前支持暂停和启用加速域名。
+
 
 
 ## 使用方法
@@ -34,6 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DomainId** | string | 域名ID，创建加速域名时生成。 |**Yes**|
 | **Status** | string | 域名状态，enable代表加速中，disable代表停止加速，delete代表删除。 |**Yes**|
+| **IsDcdn** | boolean | 是否全站加速，默认false |No|
 
 ### 响应字段
 
@@ -55,6 +56,7 @@ http://api.ucloud.cn/?Action=UpdateUcdnDomainStatus
 &ProjectId=xxxxx
 &DomainId=ucdn-xxx
 &Status=disable
+&IsDcdn=true
 ```
 
 ### 响应示例
