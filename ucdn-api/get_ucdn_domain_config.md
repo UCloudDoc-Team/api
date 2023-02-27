@@ -36,6 +36,8 @@
 | **Limit** | int | 返回数据长度， 默认全部，非负整数 |No|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认获取账号下的所有域名信息,n为自然数,从DomainId.0开始。 |No|
 | **ChannelType** | string | 产品类型ucdn，可不填，默认为ucdn |No|
+| **Domain.N** | string | 域名 |No|
+| **IsDcdn** | boolean | 是否是动态加速 默认是false |No|
 
 ### 响应字段
 
@@ -55,7 +57,7 @@
 |:---|:---|:---|:---|
 | **AreaCode** | string | 查询带宽区域 cn代表国内 abroad代表海外 all表示全部区域 |**Yes**|
 | **CdnType** | string | 加速域名的业务类型，web代表网站，stream代表视频 ，download 代表下载 |**Yes**|
-| **Status** | string | 创建的加速域名的当前的状态。check代表审核中，checkSuccess代表审核通过，checkFail代表审核失败，enable代表加速中，disable代表停止加速，delete代表删除加速<br />enableing代表正在开启加速，disableing代表正在停止加速中，deleteing代表删除中 |**Yes**|
+| **Status** | string | 创建的加速域名的当前的状态。<br />check代表审核中；<br />checkSuccess代表审核通过；<br />checkFail代表审核失败；<br />enable代表加速中；<br />disable代表停止加速；<br />delete代表删除加速；<br />enableing代表正在开启加速；<br />disableing代表正在停止加速中；<br />deleteing代表删除中；<br />deploying代表部署中 |**Yes**|
 | **Cname** | string | cdn域名。创建加速域名生成的cdn域名，用于设置CNAME记录 |**Yes**|
 | **CreateTime** | int | 域名创建的时间。格式：时间戳 |**Yes**|
 | **TestUrl** | string | 测试url。用于域名创建加速时的测试 |**Yes**|
@@ -146,6 +148,8 @@
 http://api.spark.ucloud.cn/?Action= GetUcdnDomainConfig
 & DomainId.0=domain-0331qd
 &ChannelType=sdVTSYmK
+&Domain.n=AhjiGKwI
+&IsDcdn=false
 ```
 
 ### 响应示例

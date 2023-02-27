@@ -34,8 +34,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DomainId** | string | 域名Id |**Yes**|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外 只支持国内 |No|
-| **BeginTime** | int | 查询带宽的起始时间，格式：时间戳。BeginTime和EndTime必须同时赋值 |No|
-| **EndTime** | int | 查询统计日志的结束时间，格式：时间戳,最多可拉取30天 |No|
+| **BeginTime** | int | 查询带宽的起始时间，格式：时间戳 |No|
+| **EndTime** | int | 查询统计日志的结束时间，格式：时间戳，只能支持查询1天。可不填 |No|
 | **OrderBy** | int | 0表示按流量降序排列，1表示按照下载次数降序排列，默认为0 |No|
 | **Limit** | int | 返回的结果数量限制，默认1000 |No|
 

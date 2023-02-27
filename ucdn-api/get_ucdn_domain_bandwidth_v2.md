@@ -33,12 +33,13 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Type** | int | 时间粒度（0表示按照5分钟粒度，1表示按照1小时粒度，2表示按照一天的粒度，3表示按照1分钟粒度） |No|
-| **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
+| **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名;例(DomainId.0=ucdn-xxxxxx;DomainId.1=ucdn-xxxxxx) |No|
 | **Areacode** | string | 查询带宽区域 cn代表国内 abroad代表海外 不填默认为全部区域 |No|
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
-| **Protocol** | string | 协议，http、https  不传则查所有协议的带宽 |No|
+| **Protocol** | string | 协议，http、https、websocket  不传则查所有协议的带宽，可以查多个协议，用逗号分隔 |No|
 | **Primeval** | int | 原始带宽，不为0则获取原始带宽，默认为0 |No|
+| **IsDcdn** | boolean | 是否全站加速，默认false |No|
 
 ### 响应字段
 
@@ -74,6 +75,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomainBandwidthV2
 &EndTime=6
 &Protocol=DhcMWkkj
 &Primeval=2
+&IsDcdn=false
 ```
 
 ### 响应示例
