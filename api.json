@@ -346,6 +346,17 @@
       "listname": "大数据",
       "listvalue": [
         {
+          "name": "ES服务 ElasticSearch",
+          "img": "icon-product__ues",
+          "sublinks": [
+            {
+              "links": "/api/ues-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "数据湖分析 USQL",
           "img": "icon-product__usql",
           "sublinks": [
