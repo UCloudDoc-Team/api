@@ -50,6 +50,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |云数据库 MongoDB UDB（NVMe）|[文档](/api/umongodb-api/)|
 |云数据库读写分离中间件 UDBProxy|[文档](/api/udbproxy-api/)|
 |云数据库 PostgreSQL UDB（NVMe）|[文档](/api/upgsql-api/)|
+|ES服务 ElasticSearch|[文档](/api/ues-api/)|
 
 ### 存储
 | 产品 | 相关链接 |
