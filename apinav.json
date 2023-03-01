@@ -94,6 +94,10 @@
       {
         "links": "/api/upgsql-api/README",
         "name": "云数据库 PostgreSQL UDB（NVMe）"
+      },
+      {
+        "links": "/api/ues-api/README",
+        "name": "ES服务 ElasticSearch"
       }
     ]
   },
