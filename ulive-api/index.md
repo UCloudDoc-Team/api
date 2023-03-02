@@ -24,6 +24,7 @@
 |[GetULiveDomainRequestInfo](api/ulive-api/get_u_live_domain_request_info)|获取域名请求数|
 |[GetULiveForbidStreamList](api/ulive-api/get_u_live_forbid_stream_list)|禁推流列表|
 |[GetULiveHistoryStreamList](api/ulive-api/get_u_live_history_stream_list)|获取历史推流列表|
+|[GetULiveRecordFileInfo](api/ulive-api/get_u_live_record_file_info)|直播录制文件统计信息|
 |[GetULiveRecordStatistic](api/ulive-api/get_u_live_record_statistic)|直播录制统计信息|
 |[GetULiveShiftStatistic](api/ulive-api/get_u_live_shift_statistic)|直播时移统计信息(计费)|
 |[GetULiveSnapshotStatistic](api/ulive-api/get_u_live_snapshot_statistic)|获取直播截图计费统计信息|
