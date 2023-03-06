@@ -60,25 +60,25 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Flow** | float | 下载流量：单位byte；国内无此字段 |No|
-| **IdleFlow** | float | 闲时流量；单位byte；海外无此字段 |No|
-| **BusyFlow** | float | 忙时流量；单位byte；海外无此字段 |No|
-| **CdnFlow** | float | cdn回源流量;单位byte |No|
+| **Flow** | float | 下载流量：单位GB；国内无此字段 |No|
+| **IdleFlow** | float | 闲时流量；单位GB；海外无此字段 |No|
+| **BusyFlow** | float | 忙时流量；单位GB；海外无此字段 |No|
+| **CdnFlow** | float | cdn回源流量;单位GB |No|
 | **ApiTimes** | float | API请求次数（万次） |No|
 
 #### UFileDailyReportItem
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Storage** | float | 标准存储量；单位byte |No|
-| **IaStorage** | float | 低频存储量；单位byte |No|
-| **AcStorage** | float | 冷存（归档）存储量；单位byte |No|
-| **IaGetSize** | float | 低频数据取回量；单位byte |No|
-| **AcRestore** | float | 冷存激活量，即归档数据取回量；单位byte |No|
-| **BusyFlow** | float | 忙时流量；单位byte；海外无此字段 |No|
-| **IdleFlow** | float | 闲时流量；单位byte；海外无此字段 |No|
-| **CdnFlow** | float | cdn回源流量;单位byte |No|
-| **Flow** | float | 下载流量：单位byte；国内无此字段 |No|
+| **Storage** | float | 标准存储量；单位GB |No|
+| **IaStorage** | float | 低频存储量；单位GB |No|
+| **AcStorage** | float | 冷存（归档）存储量；单位GB |No|
+| **IaGetSize** | float | 低频数据取回量；单位GB |No|
+| **AcRestore** | float | 冷存激活量，即归档数据取回量；单位GB |No|
+| **BusyFlow** | float | 忙时流量；单位GB；海外无此字段 |No|
+| **IdleFlow** | float | 闲时流量；单位GB；海外无此字段 |No|
+| **CdnFlow** | float | cdn回源流量;单位GB |No|
+| **Flow** | float | 下载流量：单位GB；国内无此字段 |No|
 | **Date** | int | 配额消费时间，unix时间戳（单位s），精确到日期 |No|
 | **ApiTimes** | float | API请求次数（万次） |No|
 
