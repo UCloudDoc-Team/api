@@ -6,7 +6,7 @@
 
 
 
-!> Name Tag Remark 三个参数必传一个
+
 
 
 ## 使用方法
@@ -31,12 +31,17 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **ULBId** | string | ULB资源ID |**Yes**|
-| **Name** | string | 名字 |No|
-| **Tag** | string | 业务 |No|
-| **Remark** | string | 备注 |No|
+| **Name** | string | 名字，不传则默认不修改 |No|
+| **Tag** | string | 业务，不传则默认不修改 |No|
+| **Remark** | string | 备注，不传则默认不修改 |No|
+| **EnableLog** | int | 日志开关，1代表开启日志，0代表关闭日志，传1时必须同时传BucketName，TokenName与TokenId二选一 |No|
+| **BucketName** | string | 设置用于存储ulb日志的bucket |No|
+| **TokenName** | string | 用于指定上传到bucket所需的token，与TokenId选填其一即可 |No|
+| **TokenId** | string | 用于指定上传到bucket所需的token，与TokenName选填其一即可 |No|
+| **IsWAFOn** | string | 是否开启WAF。枚举类型：Yes，No，默认值为No |No|
 
 ### 响应字段
 
@@ -54,13 +59,18 @@
 ### 请求示例
     
 ```
-http://api.spark.ucloud.cn/?Action=UpdateULBAttribute
+https://api.ucloud.cn/?Action=UpdateULBAttribute
 &Region=cn-bj2
-&ProjectId=project-xs13ik
-&ULBId=ulb-xjqquy
+&ProjectId=project-XXXX
+&ULBId=ulb-XXXX
 &Name=test
 &Tag=test
 &Remark=test
+&EnableLog=4
+&BucketName=vDcQKdYV
+&TokenName=KKdfUrIJ
+&TokenId=USFJSFIY
+&IsWAFOn=obMkyjOy
 ```
 
 ### 响应示例
