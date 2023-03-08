@@ -37,6 +37,7 @@
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
 | **Areacode** | string | 查询区域 cn代表国内 abroad代表海外，只支持国内 |No|
+| **IsDcdn** | boolean | 是否全站加速  默认false |No|
 
 ### 响应字段
 
@@ -70,6 +71,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomainOriginRequestNum
 &DomainId.n=EOvOmBca
 &Areacode=IGnjREZm
 
+&IsDcdn=false
 ```
 
 ### 响应示例
