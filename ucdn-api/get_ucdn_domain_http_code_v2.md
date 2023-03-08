@@ -38,6 +38,7 @@
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
 | **Layer** | string | 指定获取的状态码是边缘还是上层    edge 表示边缘  layer 表示上层 |No|
+| **IsDcdn** | boolean | 是否全站加速 默认false |No|
 
 ### 响应字段
 
@@ -132,13 +133,14 @@
     
 ```
 https://api.ucloud.cn/?Action=GetUcdnDomainHttpCodeV2
-&ProjectId=VSXKSpMI
-&Type=4
-&DomainId.n=TZDyiSOZ
-&Areacode=whbCZOhz
-&BeginTime=7
-&EndTime=8
-&Layer=yESvaTXp
+&ProjectId=BeqyjoQb
+&Type=2
+&DomainId.n=EioEXfOq
+&Areacode=DheArqzT
+&BeginTime=4
+&EndTime=6
+&Layer=enynJrfS
+&IsDcdn=true
 ```
 
 ### 响应示例
@@ -148,11 +150,13 @@ https://api.ucloud.cn/?Action=GetUcdnDomainHttpCodeV2
   "Action": "GetUcdnDomainHttpCodeV2Response",
   "HttpCodeDetail": [
     {
-      "HttpFiveXX": 1,
-      "HttpFourXX": 1,
-      "HttpThreeXX": 4,
-      "HttpTwoXX": 9,
-      "Time": 6
+      "Http1XX": {},
+      "Http2XX": {},
+      "Http3XX": {},
+      "Http4XX": {},
+      "Http5XX": {},
+      "Http6XX": {},
+      "Time": 1
     }
   ],
   "RetCode": 0
