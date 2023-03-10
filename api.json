@@ -343,7 +343,7 @@
       ]
     },
     {
-      "listname": "大数据",
+      "listname": "大数据与中间件",
       "listvalue": [
         {
           "name": "ES服务 ElasticSearch",
@@ -373,6 +373,17 @@
           "sublinks": [
             {
               "links": "/api/ukafka-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "RMQ消息队列 URocketMQ",
+          "img": "icon-product__mq",
+          "sublinks": [
+            {
+              "links": "/api/urocketmq-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -503,17 +514,6 @@
           "sublinks": [
             {
               "links": "/api/udnrv2-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "RMQ消息队列 URocketMQ",
-          "img": "icon-product__mq",
-          "sublinks": [
-            {
-              "links": "/api/urocketmq-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }

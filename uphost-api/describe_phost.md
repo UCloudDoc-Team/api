@@ -82,6 +82,8 @@
 | **Components** | string | 组件信息（暂不支持） |No|
 | **RaidSupported** | string | 是否支持Raid。枚举值：Yes：支持；No：不支持。 |No|
 | **PhostClass** | string | 物理云产品类型，枚举值：LocalDisk=>代表传统本地盘机型， CloudDisk=>云盘裸金属机型 |No|
+| **BootDiskState** | string | 裸金属机型字段。枚举值：Normal=>正常、ImageMaking=>镜像制作中。 |No|
+| **RdmaClusterId** | string | RDMA集群id，仅云盘裸金属返回该值；其他类型物理云主机返回""。当物理机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台物理机。 |No|
 
 #### PHostCPUSet
 
