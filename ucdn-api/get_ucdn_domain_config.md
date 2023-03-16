@@ -111,6 +111,8 @@
 | **HttpClientHeader** | array[string] | 客户端响应http头列表 |No|
 | **HttpOriginHeader** | array[string] | 源站http头列表 |No|
 | **Http2Https** | boolean | http转https回源 true是，false否 |No|
+| **WebSocketEnable** | boolean | 是否开启websocket |No|
+| **QuicEnable** | boolean | 是否开启quic |No|
 
 #### CacheConf
 

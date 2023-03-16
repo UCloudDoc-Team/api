@@ -15,6 +15,7 @@
 |[GetNewUcdnLogRefererStatistics](api/ucdn-api/get_new_ucdn_log_referer_statistics)|获取热点referer统计|
 |[GetNewUcdnLogUrlStatistics](api/ucdn-api/get_new_ucdn_log_url_statistics)|获取日志url统计|
 |[GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain95_bandwidth_v2)|获取域名九五峰值带宽数据【新】|
+|[GetUcdnDomainBandwidthByIpProtocol](api/ucdn-api/get_ucdn_domain_bandwidth_by_ip_protocol)|获取域名带宽数据按ip协议【新】|
 |[GetUcdnDomainBandwidthV2](api/ucdn-api/get_ucdn_domain_bandwidth_v2)|获取域名带宽数据【新】|
 |[GetUcdnDomainConfig](api/ucdn-api/get_ucdn_domain_config)|批量获取加速域名配置|
 |[GetUcdnDomainHitRate](api/ucdn-api/get_ucdn_domain_hit_rate)|获取域名命中率(新）|
