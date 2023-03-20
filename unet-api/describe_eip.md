@@ -2,7 +2,7 @@
 
 ## 简介
 
-获取弹性IP信息
+获取弹性IP信息 
 
 
 
@@ -73,6 +73,7 @@
 | **PayMode** | string | 弹性IP的计费模式, 枚举值为: "Bandwidth", 带宽计费; "Traffic", 流量计费; "ShareBandwidth",共享带宽模式. 默认为 "Bandwidth". |No|
 | **ShareBandwidthSet** | [*ShareBandwidthSet*](#ShareBandwidthSet) | 共享带宽信息 参见 ShareBandwidthSet |No|
 | **Expire** | boolean | 弹性IP是否到期 |No|
+| **EIPBinding** | [*EIPBinding*](#EIPBinding) | EIP绑定内网IP关系数据 |No|
 
 #### UnetEIPResourceSet
 
@@ -90,7 +91,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **OperatorName** | string | 运营商信息如: 电信: Telecom, 联通: Unicom, 国际: International, Duplet: 双线IP（电信+联通), BGP: Bgp |No|
+| **OperatorName** | string | 运营商信息如: 国际: International, BGP: BGP |No|
 | **IP** | string | IP地址 |No|
 
 #### ShareBandwidthSet
@@ -100,6 +101,14 @@
 | **ShareBandwidth** | int | 共享带宽带宽值 |No|
 | **ShareBandwidthName** | string | 共享带宽的资源名称 |No|
 | **ShareBandwidthId** | string | 共享带宽ID |No|
+
+#### EIPBinding
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **EIP** | string | 外网ip |No|
+| **PrivateIP** | string | 内网ip |No|
+| **PrivateIPType** | string | 内网ip类型：PrimaryIP（默认）、SecondaryIP（非默认） |No|
 
 ## 示例
 
@@ -117,6 +126,13 @@ https://api.ucloud.cn/?Action=DescribeEIP
 ```json
 {
   "Action": "DescribeEIPResponse",
+  "EIPBinding": [
+    {
+      "EIP": "CcSrYinL",
+      "PrivateIP": "knTpCYwB",
+      "PrivateIPType": "cUMLjFZU"
+    }
+  ],
   "EIPSet": [
     {
       "Bandwidth": 20,
