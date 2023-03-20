@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 数据分页值，默认为10000 |No|
 | **ULBId** | string | 负载均衡实例的Id。 若指定则返回指定的负载均衡实例的信息； 若不指定则返回当前数据中心中所有的负载均衡实例的信息 |No|
@@ -59,6 +59,7 @@
 |:---|:---|:---|:---|
 | **ListenType** | string | ULB 监听器类型，枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发；Comprehensive，兼容型；Pending，未定型 |**Yes**|
 | **IPVersion** | string | ULB提供服务的IP类型。枚举值，“IPv4”,"IPv6"。默认为“IPv4” |**Yes**|
+| **SnatIps** | array[string] | ULB后向代理IP，仅当有代理IP时返回<br />否 |No|
 | **ULBId** | string | 负载均衡的资源ID<br /> |No|
 | **Name** | string | 负载均衡的资源名称 |No|
 | **Tag** | string | 负载均衡的业务组名称 |No|
@@ -76,6 +77,7 @@
 | **FirewallSet** | array[[*FirewallSet*](#FirewallSet)] | 防火墙信息，具体结构见下方 FirewallSet |No|
 | **EnableLog** | int | ULB是否开启日志功能。0，关闭；1，开启 |No|
 | **LogSet** | [*LoggerSet*](#LoggerSet) | 日志功能相关信息，仅当EnableLog为true时会返回，具体结构见下方 LoggerSet |No|
+| **WAFMode** | string | WAF功能状态，枚举类型：Unavailable：无法创建WAF；NoWAF：未绑定WAF；Intranet：内网回源Waf；Extranet：外网回源Waf |No|
 
 #### ULBIPSet
 

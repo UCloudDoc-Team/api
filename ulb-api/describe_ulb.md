@@ -68,6 +68,7 @@
 | **VServerSet** | array[[*ULBVServerSet*](#ULBVServerSet)] | 负载均衡实例中存在的VServer实例列表，具体结构见下方 ULBVServerSet |No|
 | **ULBType** | string | ULB 的类型 |No|
 | **IPVersion** | string | ULB ip类型，枚举值：IPv6 / IPv4 （内部测试，暂未对外开放） |No|
+| **SnatIps** | array[string] | ULB后向代理IP，仅当有代理IP时返回<br />否 |No|
 | **ListenType** | string | ULB 监听器类型，枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发；Comprehensive，兼容型；Pending，未定型 |No|
 | **VPCId** | string | ULB所在的VPC的ID |No|
 | **SubnetId** | string | ULB 为 InnerMode 时，ULB 所属的子网ID，默认为空 |No|
