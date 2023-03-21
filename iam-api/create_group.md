@@ -32,7 +32,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **GroupName** | string | 用户组名称 |**Yes**|
-| **Description** | string | 对用户组的描述 |**Yes**|
+| **Description** | string | 对用户组的描述 |No|
 
 ### 响应字段
 
