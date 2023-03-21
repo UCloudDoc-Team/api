@@ -51,7 +51,7 @@
 |:---|:---|:---|:---|
 | **GroupName** | string | 用户组名称 |**Yes**|
 | **Description** | string | 用户组描述信息 |**Yes**|
-| **CreateAt** | int | 用户组创建时间戳 |No|
+| **CreatedAt** | int | 用户组创建时间戳 |No|
 
 ## 示例
 
