@@ -40,7 +40,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **AccessKey** | [*AccessKey*](#AccessKey) | 密钥实例  |No|
+| **AccessKey** | [*AccessKey*](#AccessKey) | 密钥实例 |No|
 
 #### 数据模型
 
@@ -53,8 +53,8 @@
 | **UserId** | int | 用户ID |No|
 | **AccessKeySecret** | string | 用户私钥 |No|
 | **Description** | string | 密钥备注 |No|
-| **CreatedAt** | int | 密钥创建时间 |No|
 | **Status** | string | 密钥状态 |No|
+| **CreatedAt** | int | 密钥创建时间 |No|
 | **ExpiredAt** | int | 密钥过期时间 |No|
 | **UpdatedAt** | int | 密钥更新时间 |No|
 | **DeletedAt** | int | 密钥删除时间 |No|
