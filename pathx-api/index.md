@@ -14,7 +14,6 @@
 |[CreateUPath](api/pathx-api/create_upath)|创建UPath|
 |[DeleteGlobalSSHInstance](api/pathx-api/delete_global_ssh_instance)|删除GlobalSSH实例|
 |[DeletePathXSSL](api/pathx-api/delete_path_xssl)|删除PathX SSL证书|
-|[DeleteUGA3Instance](api/pathx-api/delete_uga3_instance)|删除全球统一接入转发实例|
 |[DeleteUGA3Port](api/pathx-api/delete_uga3_port)|删除统一接入加速实例转发器|
 |[DeleteUGAForwarder](api/pathx-api/delete_uga_forwarder)|删除加速实例转发器|
 |[DeleteUGAInstance](api/pathx-api/delete_uga_instance)|删除全球加速服务加速配置|
