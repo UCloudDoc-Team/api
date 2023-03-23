@@ -45,7 +45,6 @@ http://api.service.ucloud.cn
 | 胡志明 | A |
 | 洛杉矶 | A |
 | 华盛顿 | A |
-| 莫斯科 | A |
 | 法兰克福 | A |
 | 伦敦 | A |
 | 孟买 | A |
