@@ -28,7 +28,6 @@
 |[ModifyGlobalSSHPort](api/pathx-api/modify_global_ssh_port)|修改GlobalSSH端口|
 |[ModifyGlobalSSHRemark](api/pathx-api/modify_global_ssh_remark)|修改GlobalSSH备注|
 |[ModifyGlobalSSHType](api/pathx-api/modify_global_ssh_type)|修改GlobalSSH实例类型|
-|[ModifyUGA3Bandwidth](api/pathx-api/modify_uga3_bandwidth)|修改统一接入加速配置带宽|
 |[ModifyUGA3Instance](api/pathx-api/modify_uga3_instance)|修改统一接入加速配置属性|
 |[ModifyUGA3OriginInfo](api/pathx-api/modify_uga3_origin_info)|修改统一接入加速配置源站信息|
 |[ModifyUGA3Port](api/pathx-api/modify_uga3_port)|修改统一接入加速实例端口|
