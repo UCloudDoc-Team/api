@@ -4,7 +4,7 @@
 
 获取全球加速线路信息
 
-
+?> 该接口返回了各条线路的线路ID 可用于创建新线路，以及各条线路可售的带宽最大值(会不定期调整 且区分预付费和后付费)
 
 
 
@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID,如org-xxxx。请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID,如org-xxxx。不填为默认项目。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 
 ### 响应字段
 
@@ -53,9 +53,16 @@
 | **LineTo** | string | 线路目的 |**Yes**|
 | **LineFromName** | string | 线路源中文名称 |**Yes**|
 | **LineToName** | string | 线路目的中文名称 |**Yes**|
-| **MaxBandwidth** | int | 线路可售最大带宽 |**Yes**|
-| **LineId** | string | 线路计费Id |No|
-| **LineDetail** | array[[*LineDetail*](#LineDetail)] | 子线路信息 |No|
+| **MaxBandwidth** | int | 预付费线路可售最大带宽 |**Yes**|
+| **PostPaidMaxBandwidth** | int | 后付费线路最大可售带宽 |**Yes**|
+| **GuaranteedBandwidthProportion** | int | 后付费线路上限带宽与保底带宽的固定比例，正整数 |**Yes**|
+| **SupportPublicNetwork** | boolean | true:支持SD-WAN线路；false:不支持SD-WAN线路 |**Yes**|
+| **LineId** | string | 线路ID，可用于创建加速线路资源 |**Yes**|
+| **LineDetail** | array[[*LineDetail*](#LineDetail)] | 线路接入点信息 |**Yes**|
+| **FlagUnicodeFrom** | string | 加速国家区域国旗代码 |**Yes**|
+| **FlagUnicodeTo** | string | 源站所在国家区域国旗代码 |**Yes**|
+| **RegionCategoryFrom** | string | 加速国家区域所属地区代码 |**Yes**|
+| **RegionCategoryTo** | string | 源站所在国家区域所属地区代码 |**Yes**|
 
 #### LineDetail
 
@@ -73,7 +80,7 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribePathXLineConfig
-&ProjectId=org-xxxx
+&ProjectId=vtxLvmoV
 ```
 
 ### 响应示例
@@ -393,36 +400,6 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
         {
           "LineFrom": "cn-bj2",
           "LineFromName": "中国华北",
-          "LineId": "line_cn-bj2_rus-mosc",
-          "LineTo": "rus-mosc",
-          "LineToName": "莫斯科"
-        },
-        {
-          "LineFrom": "cn-gd",
-          "LineFromName": "中国华南",
-          "LineId": "line_cn-gd_rus-mosc",
-          "LineTo": "rus-mosc",
-          "LineToName": "莫斯科"
-        },
-        {
-          "LineFrom": "cn-sh2",
-          "LineFromName": "中国华东",
-          "LineId": "line_cn-sh2_rus-mosc",
-          "LineTo": "rus-mosc",
-          "LineToName": "莫斯科"
-        }
-      ],
-      "LineFrom": "cn-gd",
-      "LineFromName": "中国(多地)",
-      "LineId": "line_cn_rus-mosc",
-      "LineTo": "rus-mosc",
-      "LineToName": "莫斯科"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "cn-bj2",
-          "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
@@ -719,22 +696,6 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
         {
           "LineFrom": "hk",
           "LineFromName": "亚太",
-          "LineId": "line_hk_rus-mosc",
-          "LineTo": "rus-mosc",
-          "LineToName": "莫斯科"
-        }
-      ],
-      "LineFrom": "hk",
-      "LineFromName": "中国香港",
-      "LineId": "line_hk_rus-mosc",
-      "LineTo": "rus-mosc",
-      "LineToName": "莫斯科"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "hk",
-          "LineFromName": "亚太",
           "LineId": "line_hk_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
@@ -985,86 +946,6 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineId": "line_kr-seoul_us-ca",
       "LineTo": "us-ca",
       "LineToName": "洛杉矶"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "rus-mosc",
-          "LineFromName": "莫斯科",
-          "LineId": "line_rus-mosc_cn-bj2",
-          "LineTo": "cn-bj2",
-          "LineToName": "中国"
-        }
-      ],
-      "LineFrom": "rus-mosc",
-      "LineFromName": "莫斯科",
-      "LineId": "line_rus-mosc_cn-bj2",
-      "LineTo": "cn-bj2",
-      "LineToName": "中国"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "rus-mosc",
-          "LineFromName": "莫斯科",
-          "LineId": "line_rus-mosc_hk",
-          "LineTo": "hk",
-          "LineToName": "中国香港"
-        }
-      ],
-      "LineFrom": "rus-mosc",
-      "LineFromName": "莫斯科",
-      "LineId": "line_rus-mosc_hk",
-      "LineTo": "hk",
-      "LineToName": "中国香港"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "rus-mosc",
-          "LineFromName": "莫斯科",
-          "LineId": "line_rus-mosc_sg",
-          "LineTo": "sg",
-          "LineToName": "新加坡"
-        }
-      ],
-      "LineFrom": "rus-mosc",
-      "LineFromName": "莫斯科",
-      "LineId": "line_rus-mosc_sg",
-      "LineTo": "sg",
-      "LineToName": "新加坡"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "rus-mosc",
-          "LineFromName": "莫斯科",
-          "LineId": "line_rus-mosc_us-ca",
-          "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
-        }
-      ],
-      "LineFrom": "rus-mosc",
-      "LineFromName": "莫斯科",
-      "LineId": "line_rus-mosc_us-ca",
-      "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
-    },
-    {
-      "LineDetail": [
-        {
-          "LineFrom": "rus-mosc",
-          "LineFromName": "莫斯科",
-          "LineId": "line_rus-mosc_us-ws",
-          "LineTo": "us-ws",
-          "LineToName": "华盛顿"
-        }
-      ],
-      "LineFrom": "rus-mosc",
-      "LineFromName": "莫斯科",
-      "LineId": "line_rus-mosc_us-ws",
-      "LineTo": "us-ws",
-      "LineToName": "华盛顿"
     },
     {
       "LineDetail": [
