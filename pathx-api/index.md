@@ -7,7 +7,6 @@
 |[BindPathXSSL](api/pathx-api/bind_path_xssl)|绑定PathX SSL证书|
 |[CreateGlobalSSHInstance](api/pathx-api/create_global_ssh_instance)|创建GlobalSSH实例|
 |[CreatePathXSSL](api/pathx-api/create_path_xssl)|创建证书|
-|[CreateUGA3Instance](api/pathx-api/create_uga3_instance)|创建全球统一接入加速配置项|
 |[CreateUGAForwarder](api/pathx-api/create_uga_forwarder)|创建加速实例转发器|
 |[CreateUGAInstance](api/pathx-api/create_uga_instance)|创建全球加速配置项|
 |[CreateUPath](api/pathx-api/create_upath)|创建UPath|

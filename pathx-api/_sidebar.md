@@ -6,7 +6,6 @@
     - [绑定PathX SSL证书 - BindPathXSSL](api/pathx-api/bind_path_xssl)
     - [创建GlobalSSH实例 - CreateGlobalSSHInstance](api/pathx-api/create_global_ssh_instance)
     - [创建证书 - CreatePathXSSL](api/pathx-api/create_path_xssl)
-    - [创建全球统一接入加速配置项 - CreateUGA3Instance](api/pathx-api/create_uga3_instance)
     - [创建加速实例转发器 - CreateUGAForwarder](api/pathx-api/create_uga_forwarder)
     - [创建全球加速配置项 - CreateUGAInstance](api/pathx-api/create_uga_instance)
     - [创建UPath - CreateUPath](api/pathx-api/create_upath)
