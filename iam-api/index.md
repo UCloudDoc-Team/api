@@ -21,10 +21,12 @@
 |[DetachPoliciesFromUser](api/iam-api/detach_policies_from_user)|移除用户关联的IAM策略|
 |[GetGroup](api/iam-api/get_group)|查询用户组详情|
 |[GetIAMPolicy](api/iam-api/get_iam_policy)|获取策略详情|
+|[GetLoginProfile](api/iam-api/get_login_profile)|获取用户登录资料|
 |[GetUser](api/iam-api/get_user)|获取用户信息|
 |[ListAccessKeys](api/iam-api/list_access_keys)|获取指定用户密钥列表|
 |[ListEntitiesForPolicy](api/iam-api/list_entities_for_policy)|列出引用权限策略的实体|
 |[ListEntitiesForProject](api/iam-api/list_entities_for_project)|列出拥有指定项目权限的实体|
+|[ListGroups](api/iam-api/list_groups)|列出用户组|
 |[ListProjects](api/iam-api/list_projects)|列出所有项目|
 |[ListUsers](api/iam-api/list_users)|列出用户列表|
 |[ListUsersForGroup](api/iam-api/list_users_for_group)|列出用户组包含的用户|
@@ -35,4 +37,5 @@
 |[UpdateGroup](api/iam-api/update_group)|更新用户组信息|
 |[UpdateIAMPolicy](api/iam-api/update_iam_policy)|更新IAM策略|
 |[UpdateIAMPolicyName](api/iam-api/update_iam_policy_name)|修改自定义策略名称|
+|[UpdateLoginProfile](api/iam-api/update_login_profile)|更新用户登录资料|
 |[UpdateUser](api/iam-api/update_user)|更新用户|
