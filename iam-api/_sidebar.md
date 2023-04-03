@@ -27,6 +27,7 @@
     - [列出引用权限策略的实体 - ListEntitiesForPolicy](api/iam-api/list_entities_for_policy)
     - [列出拥有指定项目权限的实体 - ListEntitiesForProject](api/iam-api/list_entities_for_project)
     - [列出用户组 - ListGroups](api/iam-api/list_groups)
+    - [获取IAM策略列表 - ListPolicies](api/iam-api/list_policies)
     - [列出所有项目 - ListProjects](api/iam-api/list_projects)
     - [列出用户列表 - ListUsers](api/iam-api/list_users)
     - [列出用户组包含的用户 - ListUsersForGroup](api/iam-api/list_users_for_group)

@@ -27,6 +27,7 @@
 |[ListEntitiesForPolicy](api/iam-api/list_entities_for_policy)|列出引用权限策略的实体|
 |[ListEntitiesForProject](api/iam-api/list_entities_for_project)|列出拥有指定项目权限的实体|
 |[ListGroups](api/iam-api/list_groups)|列出用户组|
+|[ListPolicies](api/iam-api/list_policies)|获取IAM策略列表|
 |[ListProjects](api/iam-api/list_projects)|列出所有项目|
 |[ListUsers](api/iam-api/list_users)|列出用户列表|
 |[ListUsersForGroup](api/iam-api/list_users_for_group)|列出用户组包含的用户|
