@@ -34,6 +34,7 @@
 | **PolicyURN** | string | 策略URN |**Yes**|
 | **Document** | string | 策略内容 |**Yes**|
 | **Description** | string | 描述 |No|
+| **VersionDescription** | string | 策略版本描述 |No|
 
 ### 响应字段
 
@@ -55,6 +56,7 @@ https://api.ucloud.cn/?Action=UpdateIAMPolicy
 &PolicyURN=swKTwGtW
 &Description=yNpGOgeC
 &Document=kbCKqHzi
+&VersionDescription=hKDBtpKr
 ```
 
 ### 响应示例

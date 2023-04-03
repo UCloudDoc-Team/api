@@ -34,6 +34,7 @@
 | **PolicyName** | string | 策略名称 |**Yes**|
 | **Document** | string | 策略内容 |**Yes**|
 | **Description** | string | 描述 |No|
+| **ScopeType** | string | 策略作用域类型 |No|
 
 ### 响应字段
 
@@ -55,6 +56,7 @@ https://api.ucloud.cn/?Action=CreateIAMPolicy
 &PolicyName=OpLAebZl
 &Document=kaBXrBFq
 &Description=ivDZLoTd
+&ScopeType=ScopeRequired
 ```
 
 ### 响应示例
