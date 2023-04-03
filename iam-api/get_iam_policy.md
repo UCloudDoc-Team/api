@@ -56,14 +56,6 @@
 | **ScopeType** | string | IAM权限策略应用范围（ScopeRequired:项目级, ScopeEmpty:全局级, ScopeUnrestricted:项目级/全局级） |No|
 | **CreatedAt** | int | IAM权限策略创建时间 |No|
 | **UpdatedAt** | int | IAM权限策略更新时间 |No|
-| **Customize** | [*Customize*](#Customize) | IAM权限策略版本信息 |No|
-
-#### Customize
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Version** | string | 版本号 |No|
-| **VersionDescription** | string | 版本描述 |No|
 
 ## 示例
 
