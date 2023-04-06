@@ -5,7 +5,7 @@
 - **API**
     - [添加后端实例 - AllocateBackend](api/ulb-api/allocate_backend)
     - [绑定SSL证书 - BindSSL](api/ulb-api/bind_ssl)
-    - [创建转发策略 - CreatePolicy](api/ulb-api/create_policy)
+    - [创建内容转发策略 - CreatePolicy](api/ulb-api/create_policy)
     - [创建SSL证书 - CreateSSL](api/ulb-api/create_ssl)
     - [创建安全策略 - CreateSecurityPolicy](api/ulb-api/create_security_policy)
     - [创建负载均衡 - CreateULB](api/ulb-api/create_ulb)
