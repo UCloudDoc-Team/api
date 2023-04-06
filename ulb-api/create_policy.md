@@ -1,10 +1,10 @@
-# 创建转发策略 - CreatePolicy
+# 创建内容转发策略 - CreatePolicy
 
 ## 简介
 
 创建VServer内容转发策略
 
-
+?> 指定转发规则优先级目前只支持针对路径规则，暂不支持域名规则之前或域名和路径规则之间调整
 
 
 
@@ -31,12 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **ULBId** | string | 需要添加内容转发策略的负载均衡实例ID |**Yes**|
 | **VServerId** | string | 需要添加内容转发策略的VServer实例ID |**Yes**|
 | **BackendId.N** | string | 内容转发策略应用的后端资源实例的ID，来源于 AllocateBackend 返回的 BackendId |**Yes**|
 | **Match** | string | 内容转发匹配字段 |**Yes**|
+| **DomainMatchMode** | string | 内容转发规则中域名的匹配方式，默认与原本一致。枚举值：Regular，正则；Wildcard，泛域名 |No|
 | **Type** | string | 内容转发匹配字段的类型 |No|
 | **PolicyPriority** | int | 策略优先级，1-9999 |No|
 
@@ -66,6 +67,7 @@ https://api.ucloud.cn/?Action=CreatePolicy
 &VServerId=vserver-XXXX
 &BackendId.0=backend-XXXX
 &PolicyPriority=7
+&DomainMatchMode=GxmqumOf
 ```
 
 ### 响应示例
