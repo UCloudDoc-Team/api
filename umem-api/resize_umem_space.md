@@ -2,7 +2,7 @@
 
 ## 简介
 
-调整内存空间容量
+调整内存空间容量，只支持存量老分布式产品，不支持高性能分布式
 
 
 
@@ -31,11 +31,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SpaceId** | string | UMem 内存空间Id |**Yes**|
 | **Size** | int | 内存大小, 单位:GB (需要大于原size,<= 1024) |**Yes**|
+| **Type** | string | 空间类型:single(无热备),double(热备)(默认: double) |No|
 | **CouponId** | string | 使用的代金券Id |No|
 
 ### 响应字段
@@ -55,10 +56,11 @@
     
 ```
 https://api.ucloud.cn/?Action=ResizeUMemSpace
-&Region=cn-north-02
-&Zone=cn-bj2-04
-&SpaceId=umem-xxxx
+&Region=cn-bj2
+&SpaceId=umem-m3xXXXXXXX
 &Size=20
+&ChargeType=NWnhUsyN
+&Type=RuAltygD
 ```
 
 ### 响应示例
