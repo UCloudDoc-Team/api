@@ -26,9 +26,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 	<br />项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FullDomain** | string | 要删除的域名，该字段与RecordId不能同时为空，优先取RecordId进行删除 |No|
-| **RecordId** | int | 要删除的域名记录ID，该字段与FullDomain不能同时为空，优先取RecordId进行删除 |No|
 
 ### 响应字段
 
