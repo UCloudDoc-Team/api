@@ -40,6 +40,7 @@
 | **Ip** | string | ipv4 |No|
 | **Port** | string | 端口 |No|
 | **DTType** | string | 容灾类型：10:同可用区，20:跨可用区，默认是同可用区 |No|
+| **SecGroup** | string | 是否开启安全组："1" 开启。 "0" 或者不填 为不开启 |No|
 
 ### 响应字段
 
@@ -76,6 +77,7 @@ https://api.ucloud.cn/?Action=CreateTiDBService
 &Ip=IchjnUte
 &Port=6
 &DTType=ATRPviKe
+&SecGroup=mAICQrDK
 ```
 
 ### 响应示例
