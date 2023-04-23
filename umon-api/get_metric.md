@@ -540,7 +540,7 @@ UDPN产品获取监控数据需配合Region字段使用，Region表示获取该�
 |:---|:---|:---|
 | **BucketDownloadFlow**       | 下载流量         | Byte  |
 | **BucketUploadFlow**         | 上传流量         | Byte  |
-| **BucketTotalStorage**       | 总存储量         | Byte  |
+| **BucketTotalStorage**       | 标准存储量         | Byte  |
 | **BucketUploadInnerFlow**    | 内网上传流量      | Byte  |
 | **BucketDownloadInnerFlow**  | 内网下载流量      | Byte  |
 | **BucketUploadCount**        | 上传请求数        | 次     |
