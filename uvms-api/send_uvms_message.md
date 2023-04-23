@@ -55,16 +55,12 @@
     
 ```
 https://api.ucloud.cn/?Action=SendUVMSMessage
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=JMliDugq
-&CalledNumber=+8613512345678
-&TemplateId=xxxxxxxxx
-&TemplateParams.0=123456
-&UserId=ucloud
-&FromNumber=IIiUKXds
-&GroupType=1
-&DispatchRule=0
+&ProjectId=HlYdnQXI
+&CalledNumber=ckVJHMKo
+&TemplateId=FPNzjgUT
+&TemplateParams.N=kDYslXqs
+&FromNumber=iRlyIhqR
+&UserId=nOdsOSyd
 &GroupType=1
 &DispatchRule=0
 ```
@@ -74,12 +70,11 @@ https://api.ucloud.cn/?Action=SendUVMSMessage
 ```json
 {
   "Action": "SendUVMSMessageResponse",
-  "Message": "Send success",
-  "ReqUuid": "278fab0f-f0dc-4de6-a308-77f07ea276b4",
+  "Message": "BGyDMmQl",
+  "ReqUuid": "zMMUPeaQ",
   "RetCode": 0,
-  "SessionNo": "17ad00c9-8186-4e5a-8f64-c50a2c84cf0a",
-  "Test": "SdZdBQda",
-  "UserId": "ucloud"
+  "SessionNo": "ZuNZwWXY",
+  "UserId": "LkzlDEGU"
 }
 ```
 
