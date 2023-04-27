@@ -10,7 +10,8 @@
 | 传递值                              | 机型           | MinimalCpuPlatform                                                             | 配置范围                                                                                        | 可选磁盘（系统盘+数据盘）                                           |
 |---|---|---|---|---|
 | MachineType = OS              | 快杰S型          | Intel/Auto,<br>  Intel/CascadeLakeR | 1C1G-64C512G                                                                                | RSSD云盘 + RSSD云盘 |
-| MachineType = OPRO                 | 快杰PRO型          | Amd/Auto,<br>  Amd/Epyc2 | 2C2G-48C128G                                                                                | RSSD云盘 + RSSD云盘 |
+| MachineType = OPRO                 | 快杰PRO型          | Amd/Auto,<br>  Amd/Epyc2 | 2C2G-48C192G                                                                                | RSSD云盘 + RSSD云盘 |
+| MachineType = OPROG                 | 快杰PRO通用型          | Amd/Auto,<br>  Amd/Epyc2 | 2C4G-96C384G                                                                                | RSSD云盘 + RSSD云盘 |
 | MachineType = OMAX                  | 快杰MAX型          | Amd/Auto,<br>  Amd/Eypc2 | 2C2G-240C1024G                                                                                | RSSD云盘 + RSSD云盘 |
 | MachineType = O                  | 快杰型          | Intel/Auto,<br>  Intel/CascadeLake, <br> Amd/Auto,<br>  Amd/Epyc2 | 1C1G-96C768G                                                                                | SSD云盘 + RSSD云盘 |
 | MachineType = N                  | 通用型          | Intel/Auto,<br>  Intel/IvyBridge,<br>  Intel/Haswell,<br> Intel/Broadwell，<br>Intel/Skylake | 1C1G-32C128G                                                                                | 普通本地盘 + 普通本地盘<br>SSD云盘 + 普通云盘/SSD云盘<br>SSD本地盘 + SSD本地盘  |
