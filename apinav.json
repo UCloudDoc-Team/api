@@ -109,6 +109,10 @@
         "name": "对象存储 US3"
       },
       {
+        "links": "/api/udi-api/README",
+        "name": "数据智能 UDI"
+      },
+      {
         "links": "/api/ufs-api/README",
         "name": "文件存储 UFS"
       },
