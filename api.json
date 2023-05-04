@@ -388,6 +388,17 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
+        },
+        {
+          "name": "数据智能 UDI",
+          "img": "icon-product__udi",
+          "sublinks": [
+            {
+              "links": "/api/udi-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
         }
       ]
     },
