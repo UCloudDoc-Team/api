@@ -19,6 +19,7 @@
     - [获取挂载磁盘的升级价格 - GetAttachedDiskUpgradePrice](api/uhost-api/get_attached_disk_upgrade_price)
     - [获取主机价格 - GetUHostInstancePrice](api/uhost-api/get_uhost_instance_price)
     - [获取VNC登录信息 - GetUHostInstanceVncInfo](api/uhost-api/get_uhost_instance_vnc_info)
+    - [获取主机续费价格 - GetUHostRenewPrice](api/uhost-api/get_uhost_renew_price)
     - [获取主机规格调整差价 - GetUHostUpgradePrice](api/uhost-api/get_uhost_upgrade_price)
     - [导入镜像 - ImportCustomImage](api/uhost-api/import_custom_image)
     - [导入密钥对的公钥部分 - ImportUHostKeyPairs](api/uhost-api/import_uhost_key_pairs)

@@ -46,10 +46,12 @@
 | **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时付费 // >Preemptive 抢占式实例 <br /><br /> 如果不传某个枚举值，默认返回年付、月付、时付的价格组合集。 |No|
 | **NetCapability** | string | 网络增强。枚举值：Normal，不开启; Super，开启网络增强1.0。 默认值为Normal。 |No|
 | **UHostType** | string | 【待废弃】云主机机型（V1版本概念）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **MachineType** | string | 云主机机型（V2版本概念）。枚举值["N", "C", "G", "O", "OS", "OPRO", "OMAX", "O.BM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4S","2080Ti","2080Ti-4C","1080Ti"] |No|
+| **MachineType** | string | 云主机机型（V2版本概念）。枚举值["N", "C", "G", "O", "OS", "OPRO", "OMAX", "O.BM", "O.EPC"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4","MI100","V100S"] |No|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表了购买至月末。 |No|
 | **CpuPlatform** | string | 取值"Intel" "Amd"，默认值“Intel” |No|
+| **UDSetUHostInstance** | boolean | 专区云主机。如果要在专区宿主机上创建云主机，该参数可以填写为true |No|
+| **ShowPriceDetails** | boolean | 返回价格详细信息 |No|
 
 ### 响应字段
 
@@ -71,6 +73,18 @@
 | **Price** | float | 价格，单位: 元，保留小数点后两位有效数字 |**Yes**|
 | **OriginalPrice** | float | 限时优惠的折前原价（即列表价乘以商务折扣后的单价）。 |**Yes**|
 | **ListPrice** | float | 产品列表价。 |No|
+| **PriceDetail** | [*PriceDetail*](#PriceDetail) | 价格详细信息（只有询价接口返回）。 |No|
+| **OriginalPriceDetail** | [*PriceDetail*](#PriceDetail) | 原价详细信息（只有询价接口返回）。 |No|
+| **ListPriceDetail** | [*PriceDetail*](#PriceDetail) | 列表价详细信息（只有询价接口返回）。 |No|
+
+#### PriceDetail
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **UHost** | float | 主机价格 |No|
+| **UDisk** | float | 云盘价格 |No|
+| **Snapshot** | float | 快照价格 |No|
+| **Volume** | float | 数据卷价格 |No|
 
 ## 示例
 
@@ -95,8 +109,10 @@ https://api.ucloud.cn/?Action=GetUHostInstancePrice
 &Volumes.N.Size=3
 &Volumes.N.IsBoot=eHeLEeHi
 &HpcEnhanced=false
-&VirtualGpu.GpuType=yHZoRaFQ
-&VirtualGpu.GPU=5
+&GpuTyp=pmujj
+&GPU=1
+&UDSetUHostInstance=true
+&ShowPriceDetails=true
 ```
 
 ### 响应示例
