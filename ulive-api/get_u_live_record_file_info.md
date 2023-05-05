@@ -60,6 +60,7 @@
 | **Duration** | string | 录制时长，单位秒 |**Yes**|
 | **Size** | string | 录制文件大小，单位B |**Yes**|
 | **Url** | string | 获取录制文件URL |**Yes**|
+| **Type** | string | 录制类型 |**Yes**|
 
 ## 示例
 

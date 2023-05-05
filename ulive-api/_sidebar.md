@@ -5,6 +5,7 @@
 - **API**
     - [直播断流 - BreakLiveStream](api/ulive-api/break_live_stream)
     - [删除录制文件 - DelULiveRecordFile](api/ulive-api/del_u_live_record_file)
+    - [查询 IP 是否归属 CDN - DescribeULiveIPListInfo](api/ulive-api/describe_u_live_ip_list_info)
     - [停止直播域名 - DisableLiveDomain](api/ulive-api/disable_live_domain)
     - [对一个直播流实施禁播 - ForbidLiveStream](api/ulive-api/forbid_live_stream)
     - [获取域名观众在线人数 - GetDomainPlayOnline](api/ulive-api/get_domain_play_online)
