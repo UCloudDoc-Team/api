@@ -2,7 +2,7 @@
 
 ## 简介
 
-生成账单数据文件下载的 url
+生成账单数据文件下载的 url，包含三类文件，1. 已支付总览账单(支持CSV和PDF,从2023年03月开始支持PDF)；2. 未支付总览文件(支持CSV，只有当月账期可以查看)；3 账单详情文件(支持CSV)。           备注：文件生成有延迟，若返回值 IsValid=‘no’，需要使用者发起重试。
 
 
 
@@ -30,12 +30,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **BillType** | int | 账单类型，传 0 时获取账单总览报表，传 1 获取账单明细报表 |**Yes**|
-| **BillingCycle** | string | 账期(字符串格式，YYYY-MM，例如2021-08).   <br />若BillingCycle 和 BillPeriod同时存在，BillingCycle 优先 |**Yes**|
-| **BillPeriod** | int | 此字段不推荐使用，建议使用BillingCycle.   <br />若BillingCycle 和 BillPeriod同时存在，BillingCycle 优先 |No|
-| **PaidType** | int | 获取账单总览报表时，账单的支付状态，传 0 时获取待支付账单，传 1 时获取已支付账单。获取账单明细报表时该参数无效 |No|
-| **RequireVersion** | string | 如需求其他语言版本的账单则使用此参数。默认中文。如 RequireVersion = "EN"，则提供英文版本账单。 |No|
-| **Version** | string | 文件版本，若为"v1"表示获取带有子用户信息的账单，可以为空 |No|
+| **BillType** | int | 账单类型，枚举值：<br /><br /> > 0: 账单总览报表; <br /><br /> > 1: 账单明细报表 |**Yes**|
+| **BillingCycle** | string | 账期: YYYY-MM格式的字符串，例如 ”2021-08“ |**Yes**|
+| **BillPeriod** | int | 账期: 时间戳格式，已弃用，请使用BillingCycle |No|
+| **PaidType** | int | 账单支付状态，  (获取账单明细报表，不需要填写该参数)，枚举值：<br /><br /> > 0: 0待支付总览账单(只支持当前月份的账期);<br /><br /> > 1: 已支付账单总览 |No|
+| **RequireVersion** | string | 账单语言版本，枚举值：<br /><br /> > ”“: 默认中文;<br /><br /> > ”EN“: 英文版本 |No|
+| **Version** | string | 文件版本，固定值"v1"。 |No|
+| **Format** | string | 文件格式，枚举值：<br /><br /> > ”csv“: csv格式;<br /><br /> > ”pdf“: pdf格式(已支付总览文件 从2023年03月开始支持PDF) |No|
 
 ### 响应字段
 
@@ -44,8 +45,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **FileUrl** | string | 交易账单数据下载URL |No|
-| **IsValid** | string | 生成的 URL是否有效，即有对应数据文件 |No|
+| **FileUrl** | string | 交易账单文件下载URL |No|
+| **IsValid** | string | 是否有对应数据文件。(该参数返回no，表示文件正在生成中，需要用户发起重试获取。 |No|
 
 
 
@@ -61,6 +62,9 @@ https://api.ucloud.cn/?Action=GetBillDataFileUrl
 &PaidType=1
 &RequireVersion="EN"
 &Version="v1"
+&Format=fzBtbbkp
+&BillPeriod=6
+&BillPeriod=7
 ```
 
 ### 响应示例
