@@ -26,6 +26,10 @@
         "name": "容器云 UK8S"
       },
       {
+        "links": "/api/cube-api/README",
+        "name": "容器实例 Cube"
+      },
+      {
         "links": "/api/uphone-api/README",
         "name": "云手机 UPhone"
       },
