@@ -1,8 +1,8 @@
-# 创建Pod - CreateCubePod
+# 创建容器实例 - CreateCubePod
 
 ## 简介
 
-创建Pod
+创建一个容器实例
 
 
 
@@ -29,17 +29,9 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **VPCId** | string | VPCId |**Yes**|
-| **SubnetId** | string | 子网Id |**Yes**|
-| **Pod** | string | base64编码的Pod的yaml。大小不超过16KB |**Yes**|
-| **Group** | string | pod所在组 |No|
-| **Name** | string | pod的名字 |No|
-| **Tag** | string | 业务组。默认：Default（Default即为未分组） |No|
-| **CpuPlatform** | string | Cpu平台（V6：Intel、A2：AMD、Auto），默认Auto。支持的地域（北京2B、北京2E、上海2A、广东、香港 、东京）目前北京2E仅有A2，其余地域仅有V6 |No|
-| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Postpay， <br /><br /> 后付费；默认为后付费 |No|
-| **Quantity** | int | 购买时长。默认:值 1。 月付时，此参数传0，代表购买至月末。 |No|
-| **KubeConfig** | string | base64编码的kubeconfig。大小不超过16KB |No|
-| **CouponId** | string | 代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
+| **VPCId** | string | 容器实例所属的VPC ID |**Yes**|
+| **SubnetId** | string | 容器实例所属的子网ID |**Yes**|
+| **Pod** | string | Pod yaml，使用base64编码 |**Yes**|
 
 ### 响应字段
 
@@ -48,8 +40,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Pod** | string | base64编码的yaml |**Yes**|
-| **CubeId** | string | cube的资源Id |No|
+| **Pod** | string | Pod yaml，使用base64编码 |**Yes**|
+| **CubeId** | string | 容器实例ID |**Yes**|
 
 
 
@@ -62,21 +54,10 @@
 https://api.ucloud.cn/?Action=CreateCubePod
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=pndYiaRN
-&VPCId=URTXzGZi
-&SubnetId=uXbcciNB
-&Pod=siMmEMEZ
-&BusinessId=zxQytWtb
-&Group=ksLiPLbC
-&Name=VzPwOZLL
-&CpuPlatform=ToOJZHvR
-&CpuPlatform=cDYXouhW
-&ChargeType=iZfEqMCC
-&ChargeType=thtWusXL
-&Quantity=4
-&CouponId=TkrdYMXF
-&Kubeconfig=LKZTnJsi
-&Kubeconfig=jOhgfkrz
+&ProjectId=ehGalKjJ
+&VPCId=cLRwavKj
+&SubnetId=gksfLlBO
+&Pod=RGvJDNiJ
 ```
 
 ### 响应示例
@@ -84,8 +65,8 @@ https://api.ucloud.cn/?Action=CreateCubePod
 ```json
 {
   "Action": "CreateCubePodResponse",
-  "CubeId": "VrRtcHeJ",
-  "Pod": "QYQSVWuz",
+  "CubeId": "ArKzxfgb",
+  "Pod": "MPyWIePf",
   "RetCode": 0
 }
 ```

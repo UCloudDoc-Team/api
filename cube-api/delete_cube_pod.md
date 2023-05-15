@@ -1,8 +1,8 @@
-# 删除Pod - DeleteCubePod
+# 删除容器实例 - DeleteCubePod
 
 ## 简介
 
-删除Pod
+删除容器实例
 
 
 
@@ -26,12 +26,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **Uid** | string | cubeid和uid任意一个（必须） |No|
-| **CubeId** | string | cubeid和uid任意一个（必须） |No|
-| **ReleaseEIP** | boolean | 删除cube时是否释放绑定的EIP。默认为false。 |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **Uid** | string | 要删除的容器实例UID，若填写了CubeId则可忽略 |No|
+| **CubeId** | string | 要删除的容器实例ID，若填写了Uid则可忽略 |No|
+| **ReleaseEIP** | string | 要释放的EIP，如果容器实例绑定了EIP则可以填写，会将EIP一并释放。否则EIP会被保留。 |No|
 
 ### 响应字段
 
@@ -52,12 +52,10 @@
 https://api.ucloud.cn/?Action=DeleteCubePod
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=raUPOfzA
-&Uid=FaMWvDyw
-&CubeId=ZIvSaXTB
-&VPCId=GCdyewoz
-&SubnetId=HwkurDsf
-&ReleaseEIP=true
+&ProjectId=vdzyLCSu
+&CubeId=UBJUunSi
+&Uid=jjpjKtPa
+&ReleaseEIP=padxhAqe
 ```
 
 ### 响应示例

@@ -1,8 +1,8 @@
-# 获取Cube的额外信息 - GetCubeExtendInfo
+# 获取容器实例附加信息 - GetCubeExtendInfo
 
 ## 简介
 
-获取Cube的额外信息
+获取容器实例附加信息
 
 
 
@@ -26,10 +26,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **CubeIds** | string | id列表以逗号(,)分割 |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **CubeIds** | string | 容器实例ID，用逗号分割 |No|
 
 ### 响应字段
 
@@ -38,7 +38,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ExtendInfo** | array[[*CubeExtendInfo*](#CubeExtendInfo)] | CubeExtendInfo |**Yes**|
+| **ExtendInfo** | array[[*CubeExtendInfo*](#CubeExtendInfo)] | 容器实例的附加信息 |**Yes**|
 
 #### 数据模型
 
@@ -82,8 +82,9 @@
 https://api.ucloud.cn/?Action=GetCubeExtendInfo
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=wqWvowms
-&CubeIds=MuRksrzy
+&ProjectId=pyaiJSbC
+&CubeId=drdFlVYD
+&Uid=EfQChSGt
 ```
 
 ### 响应示例
@@ -93,9 +94,28 @@ https://api.ucloud.cn/?Action=GetCubeExtendInfo
   "Action": "GetCubeExtendInfoResponse",
   "ExtendInfo": [
     {
-      "CubeId": "WbDqEAaB",
-      "Eip": "AgJwuYWw",
-      "Name": "SCXnvwzq"
+      "CubeId": "CnQozsMJ",
+      "Eip": [
+        {
+          "Bandwidth": 8,
+          "BandwidthType": 9,
+          "CreateTime": 8,
+          "EIPAddr": [
+            {
+              "IP": "DAWzGwdM",
+              "OperatorName": "FcEzDCqh"
+            }
+          ],
+          "EIPId": "dkOpmIcx",
+          "PayMode": "YuIPkjVn",
+          "Resource": "MtAJiDrW",
+          "Status": "NQrGSBge",
+          "Weight": 9
+        }
+      ],
+      "Expiration": 2,
+      "Name": "TdFbaUbX",
+      "Tag": "iVXqPryE"
     }
   ],
   "RetCode": 0
