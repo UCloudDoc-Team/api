@@ -167,12 +167,12 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeVServer
-&Region=cn-bj2
-&ProjectId=project-XXXXX
-&ULBId=ulb-XXXXX
-&VServerId=vserver-XXXXX
-&Limit=10
-&Offset=0
+&Region=KYqxsypJ
+&ProjectId=GsYJSKSC
+&ULBId=gWhpMvaT
+&VServerId=KyxsohIo
+&Limit=2
+&Offset=6
 ```
 
 ### 响应示例
@@ -238,6 +238,7 @@ https://api.ucloud.cn/?Action=DescribeVServer
       "SSLSet": [],
       "SecurityPolicy": {},
       "Status": 0,
+      "ULBId": "ulb-XXX",
       "VServerId": "vserver-XXX",
       "VServerName": "VServer"
     }
