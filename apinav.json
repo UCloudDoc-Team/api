@@ -274,6 +274,10 @@
       {
         "links": "/api/iam-api/README",
         "name": "访问控制 IAM"
+      },
+      {
+        "links": "/api/ulog-api/README",
+        "name": "操作日志 ULog"
       }
     ]
   },
