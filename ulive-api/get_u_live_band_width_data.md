@@ -36,6 +36,8 @@
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp。如果有EndTime，BeginTime必须赋值。如没有赋值，则返回缺少参 数错误，如果没有EndTime，BeginTime也可以不赋值，EndTime默认当前时间，BeginTime 默认前一天的当前时间。 |No|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp。EndTime默认为当前时间，BeginTime默认为当前时间前一天时间。 |No|
 | **Area** | string | 区域，cn：国内；abroad：国外；all：全部。默认值为cn |No|
+| **Protocol** | string | 协议。all:查询总带宽，https：查询https带宽，other：查询非https带宽，ipv4:查询ipv4带宽，ipv6:查询ipv6带宽，默认all |No|
+| **DomainType** | string | 域名类型，推流: push,拉流 pull，默认pull |No|
 
 ### 响应字段
 
@@ -68,6 +70,8 @@ https://api.ucloud.cn/?Action=GetULiveBandWidthData
 &BeginTime=6
 &EndTime=4
 &Area=xrXxtGvE
+&Protocol=JCXWaKXJ
+&DomainType=ohCIuyjN
 ```
 
 ### 响应示例
