@@ -23,12 +23,12 @@
     - [更新令牌 - UpdateUFileToken](api/ufile-api/update_ufile_token)
     - [更新解压缩规则 - UpdateUdsRule](api/ufile-api/update_uds_rule)
 - **数据类 API**
-  * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
   * [上传文件-PutFile](api/ufile-api/put_file)
   * [表单上传-PostFile](api/ufile-api/post_file)
   * [下载文件-GetFile](api/ufile-api/get_file)
   * [查询文件基本信息-HEADFile](api/ufile-api/head_file)
   * [获取目录文件列表-ListObjects](api/ufile-api/list_objects)
+  * [前缀列表查询-PrefixFileList](api/ufile-api/prefix_file_list)
   * [删除文件-DeleteFile](api/ufile-api/delete_file)
   * [初始化分片-InitiateMultipartUpload](api/ufile-api/initiate_multipart_upload)
   * [上传分片-UploadPart](api/ufile-api/upload_part)
