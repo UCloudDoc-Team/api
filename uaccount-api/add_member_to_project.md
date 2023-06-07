@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID，请参考[GetProjectList接口](api/summary/get_project_list)的描述。不填写为创建时间最早的项目。  |No|
+| **ProjectId** | string | 项目ID，请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list)的描述。不填写为创建时间最早的项目。  |No|
 | **MemberEmail** | string | 被加入成员Email |**Yes**|
 | **CharacterId** | string | 被加入成员归属角色ID |**Yes**|
 
