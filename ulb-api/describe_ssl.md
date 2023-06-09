@@ -64,8 +64,8 @@
 | **SSLSource** | int | SSL证书来源，SSL证书来源，0代表证书来自于ULB平台，1代表证书来自于USSL平台 |No|
 | **USSLId** | string | USSL证书平台的编号,只有当SSLSource为1时才出现 |No|
 | **Domains** | string | USSL证书平台的域名,只有当SSLSource为1时才出现 |No|
-| **NotBefore** | int | 证书颁发时间 |No|
-| **NotAfter** | int | 证书过期时间 |No|
+| **NotBefore** | int | 证书颁发时间,只有当SSLSource为1时才出现 |No|
+| **NotAfter** | int | 证书过期时间,只有当SSLSource为1时才出现 |No|
 
 #### SSLBindedTargetSet
 
