@@ -35,6 +35,7 @@
 | **BeginTime** | int | 查询的起始时间，格式为Unix Timestamp |**Yes**|
 | **EndTime** | int | 查询的结束时间，格式为Unix Timestamp |**Yes**|
 | **DomainId.N** | string | 域名id，创建域名时生成的id。默认全部域名 |No|
+| **IsDcdn** | boolean | 是否全站加速  默认false |No|
 
 ### 响应字段
 
@@ -72,6 +73,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomainLogV2
 &BeginTime=1
 &EndTime=8
 &DomainId.n=ziMJIfEj
+&IsDcdn=false
 ```
 
 ### 响应示例

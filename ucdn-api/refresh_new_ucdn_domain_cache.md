@@ -56,6 +56,7 @@ https://api.ucloud.cn/?Action=RefreshNewUcdnDomainCache
 &ProjectId=CExXKOKn
 &Type=file
 &UrlList.n=JgkGaBpD
+&IsDcdn=true
 ```
 
 ### 响应示例
