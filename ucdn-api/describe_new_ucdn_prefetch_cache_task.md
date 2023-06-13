@@ -38,6 +38,7 @@
 | **Status** | string | 需要获取的内容预热的状态，枚举值：success：成功；wait：等待处理；process：正在处理；failure：失败； unknow：未知，默认选择所有状态 |No|
 | **Offset** | int | 数据偏移量，默认为0，自然数 |No|
 | **Limit** | int | 返回数据长度,默认全部，自然数 |No|
+| **IsDcdn** | boolean | 是否全站加速 默认false |No|
 
 ### 响应字段
 
@@ -84,6 +85,7 @@ https://api.ucloud.cn/?Action=DescribeNewUcdnPrefetchCacheTask
 &Status=uwNWouHX
 &Offset=1
 &Limit=1
+&IsDcdn=false
 ```
 
 ### 响应示例

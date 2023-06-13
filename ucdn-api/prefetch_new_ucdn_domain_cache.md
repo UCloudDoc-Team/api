@@ -55,6 +55,7 @@ https://api.ucloud.cn/?Action=PrefetchNewUcdnDomainCache
 &ProjectId=xxxxx
 &UrlList.0=http://abc.ucloud.cn/a/1.apk
 &UrlList.1=http://abc.ucloud.cn/a/2.apk
+&IsDcdn=false
 ```
 
 ### 响应示例
