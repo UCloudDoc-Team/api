@@ -6,6 +6,8 @@
 - **API**
     - [备份集群数据库 - BackupUMongoDBCluster](api/umongodb-api/backup_umon_go_db_cluster)
     - [创建配置模板 - CreateUMongoDBConfigTemplate](api/umongodb-api/create_umon_go_db_config_template)
+    - [创建副本集 - CreateUMongoDBReplSet](api/umongodb-api/create_umon_go_db_repl_set)
+    - [创建分片集群 - CreateUMongoDBShardedCluster](api/umongodb-api/create_umon_go_db_sharded_cluster)
     - [获取实例备份下载链接 - DescribeUMongoDBBackupURL](api/umongodb-api/describe_umon_go_db_backup_url)
     - [描述MongoDB实例 - DescribeUMongoDBInstance](api/umongodb-api/describe_umon_go_db_instance)
     - [获取实例备份策略 - GetUMongoDBBackupParam](api/umongodb-api/get_umon_go_db_backup_param)
