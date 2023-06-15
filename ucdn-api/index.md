@@ -23,7 +23,7 @@
 |[GetUcdnDomainInfoList](api/ucdn-api/get_ucdn_domain_info_list)|获取域名基本信息|
 |[GetUcdnDomainLogV2](api/ucdn-api/get_ucdn_domain_log_v2)|获取域名5分钟日志|
 |[GetUcdnDomainOriginRequestNum](api/ucdn-api/get_ucdn_domain_origin_request_num)|获取域名回源请求数【新】|
-|[GetUcdnDomainPrefetchEnable](api/ucdn-api/get_ucdn_domain_prefetch_enable)|获取域名预取开启状态|
+|[GetUcdnDomainPrefetchRefreshState](api/ucdn-api/get_ucdn_domain_prefetch_refresh_state)|获取域名预取刷新配额信息|
 |[GetUcdnDomainRequestNumV3](api/ucdn-api/get_ucdn_domain_request_num_v3)|获取域名请求数【新】|
 |[GetUcdnPassBandwidthV2](api/ucdn-api/get_ucdn_pass_bandwidth_v2)|获取回源带宽数据（按时间分类）【新】|
 |[GetUcdnProIspBandwidthV2](api/ucdn-api/get_ucdn_pro_isp_bandwidth_v2)|按省份运营商获取域名带宽数据【新】|
