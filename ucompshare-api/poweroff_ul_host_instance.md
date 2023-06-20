@@ -9,7 +9,11 @@
 !> 该操作可能会影响数据完整性或导致文件系统损坏
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
