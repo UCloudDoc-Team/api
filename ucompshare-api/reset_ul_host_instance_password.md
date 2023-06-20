@@ -9,7 +9,11 @@
 !> 该操作需要UHost实例处于关闭状态。
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义

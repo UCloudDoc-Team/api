@@ -17,6 +17,8 @@
 接下来浏览 [UCompShare API 索引](api/ucompshare-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
-
+您可以选择以下方式中的任意一种，发起 API 请求：
+- UCompShare SDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 

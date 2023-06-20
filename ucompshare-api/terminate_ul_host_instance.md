@@ -9,7 +9,11 @@
 !> 非试用的过期资源不可删除； 关机状态下才能执行删除操作
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
