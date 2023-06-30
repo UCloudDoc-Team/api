@@ -55,16 +55,12 @@
     
 ```
 https://api.ucloud.cn/?Action=UpdateSSLBinding
-&Region=rlOKcLRx
-&ProjectId=fFdbMoEE
-&ULBId=pecWyopE
-&VServerId=FvbeTLVk
-&OldSSLId=CbnyEXQg
-&NewSSLId=wezHQFgd
-&ULBId=zEuiHKHC
-&VServerId=fUAheFtz
-&ULBId=WtoMKBTg
-&VServerId=nMcQugdp
+&Region=IfBmlzJv
+&ProjectId=CHTuNqIH
+&OldSSLId=rxYUJoiy
+&NewSSLId=dDZmRgWr
+&LoadBalancerId=ZSwPqIpv
+&ListenerId=LNwDzfNF
 ```
 
 ### 响应示例
