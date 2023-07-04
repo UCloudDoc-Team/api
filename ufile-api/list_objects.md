@@ -64,6 +64,7 @@ Authorization: <token>
 |StorageClass|string|文件存储类型|
 |LastModified|int|文件最后修改时间|
 |CreateTime|int|文件创建时间|
+|UserMeta|键值对|用户元数据|
 
 **通用前缀（CommonPrefixes）**
 
