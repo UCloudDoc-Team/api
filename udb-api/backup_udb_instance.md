@@ -31,13 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DBId** | string | DB实例Id,该值可以通过DescribeUDBInstance获取 |**Yes**|
 | **BackupName** | string | 备份名称 |**Yes**|
 | **UseBlacklist** | boolean | 是否使用黑名单备份，默认false |No|
-| **BackupMethod** | string | 使用的备份方式。（快照备份即物理备份。注意只有SSD版本的mysql实例支持设置为snapshot） |No|
+| **BackupMethod** | string | 使用的备份方式。默认使用逻辑备份（快照备份即物理备份。SSD版本的mysql/mongodb实例支持设置为snapshot，NVMe版本的mysql实例支持设置为xtrabackup） |No|
 | **Blacklist** | string | 备份黑名单列表，以 ; 分隔。注意：只有逻辑备份下备份黑名单才生效，快照备份备份黑名单下无效 |No|
 | **ForceBackup** | boolean | true表示逻辑备份时是使用 --force 参数，false表示不使用 --force 参数。物理备份此参数无效。 |No|
 

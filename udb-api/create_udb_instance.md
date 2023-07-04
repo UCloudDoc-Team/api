@@ -58,6 +58,8 @@
 | **ClusterRole** | string | 当DB类型(DBTypeId)为mongodb时，需要指定mongo的角色，可选值为<br />configsrv (配置节点)，shardsrv (数据节点) |No|
 | **Tag** | string | 实例所在的业务组名称 |No|
 | **EnableIpV6** | boolean | 是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true |No|
+| **DBSubVersion** | string | mysql小版本号，支持指定小版本创建 |No|
+| **CaseSensitivityParam** | int | mysql大小写参数, 0 为大小写敏感, 1 为大小写不敏感, 目前只针对mysql8.0有效 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -95,6 +97,8 @@ https://api.ucloud.cn/?Action=CreateUDBInstance
 &Tag=awpGFPaP
 &EnableIpV6=true
 &BackupUrl=ArIyIIyj
+&DBSubVersion=8.0.16
+&CaseSensitivityParam=5
 ```
 
 ### 响应示例
