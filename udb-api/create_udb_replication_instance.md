@@ -31,14 +31,17 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SrcId** | string | primary节点的DBId,该值可以通过DescribeUDBInstance获取 |**Yes**|
 | **Name** | string | 实例名称，至少6位 |**Yes**|
 | **Port** | int | 端口号，默认27017，取值范围3306至65535。 |No|
 | **IsArbiter** | boolean | 是否是仲裁节点，默认false，仲裁节点按最小机型创建 |No|
-| **UseSSD** | boolean | 是否使用SSD，默认 为 true |No|
+| **UseSSD** | boolean | 是否使用SSD，默认为true。目前主要可用区、海外机房、新机房只提供SSD资源，非SSD资源不再提供。 |No|
+| **InstanceType** | string | UDB数据库机型: "Normal": "标准机型" , "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" , "Normal_Volume": "标准大容量机型", "SATA_SSD_Volume": "SSD大容量机型" , "PCIE_SSD_Volume": "SSD高性能大容量机型", "NVMe_SSD": "快杰机型" |No|
+| **ChargeType** | string | Year， Month， Dynamic，Trial，默认和主库保持一致 |No|
+| **Quantity** | string | 购买时长，默认默认和主库保持一致 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -62,6 +65,10 @@ https://api.ucloud.cn/?Action=CreateUDBReplicationInstance
 &Region=cn-bj2
 &SrcId=udb-xxxxx
 &Name=mongodb-xxxxxxx-01
+&InstanceType=OfalVzHs
+&ChargeType=pAfhbuZY
+&Quantity=sREIXrXW
+&CouponId=tsZYXxdk
 ```
 
 ### 响应示例

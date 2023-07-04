@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **SrcDBId** | string | 源实例的Id |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **SrcDBId** | string | 源实例的Id(只支持普通版DB不支持高可用) |**Yes**|
 
 ### 响应字段
 
@@ -55,7 +55,7 @@
 ```
 https://api.ucloud.cn/?Action=CheckRecoverUDBInstance 
 &Region=cn-bj2
-&SrcDBId=00f9868c-c7f5-4852-9eac-d200b678f0e1
+&SrcDBId=udb-xxx
 ```
 
 ### 响应示例
@@ -63,7 +63,6 @@ https://api.ucloud.cn/?Action=CheckRecoverUDBInstance
 ```json
 {
   "Action": "CheckRecoverUDBInstanceResponse",
-  "LastestTime": 1435852800,
   "RetCode": 0
 }
 ```
