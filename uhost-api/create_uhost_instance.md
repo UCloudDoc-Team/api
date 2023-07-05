@@ -42,11 +42,12 @@
 | **Disks.N.Encrypted** | boolean | 【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false<br />加密必须传入对应的的KmsKeyId,默认值false |No|
 | **Disks.N.KmsKeyId** | string | 【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。 |No|
 | **Disks.N.CouponId** | string | 云盘代金券id。不适用于系统盘/本地盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
+| **Disks.N.SnapshotId** | string | 从快照创建盘时所用快照id，目前仅支持数据盘 |No|
 | **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password，密钥：KeyPair。 |**Yes**|
 | **Password** | string | UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64UGFzc3dvcmQx。 |No|
 | **Name** | string | UHost实例名称。默认：UHost。请遵照[字段规范](api/uhost-api/specification)设定实例名称。 |No|
 | **Tag** | string | 业务组。默认：Default（Default即为未分组）。请遵照[字段规范](api/uhost-api/specification)设定业务组。 |No|
-| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br />Preemptive计费为抢占式实例(内测阶段) <br /><br /> 默认为月付<br /> |No|
+| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> > Spot计费为抢占式实例(内测阶段) <br /><br /> 默认为月付<br /> |No|
 | **Quantity** | int | 购买时长。默认:值 1。按小时购买（Dynamic/Postpay）时无需此参数。 月付时，此参数传0，代表购买至月末。 |No|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
@@ -73,6 +74,9 @@
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持“Cloud-init”Feature时可填写此字段。取值 >“On” 自动挂载（默认值）> “Off” 不自动挂载。 |No|
 | **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须。 |No|
 | **Features.UNI** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启，仅与 NetCapability Normal 兼容。 |No|
+| **UDSetId** | string | 【私有专区属性】专区id |No|
+| **UDHostId** | string | 【私有专区属性】专区宿主机id |No|
+| **HostBinding** | boolean | 【私有专区属性】专区云主机开启宿住关联属性 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -180,6 +184,7 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 &UDHostId=MuOlWCEV
 &HostBinding=true
 &HostBinding=true
+&Disks.N.SnapshotId=YdYHTrPx
 ```
 
 ### 响应示例
