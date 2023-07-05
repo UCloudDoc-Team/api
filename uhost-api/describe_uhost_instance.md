@@ -61,7 +61,6 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **IPv6Feature** | boolean | true:有ipv6特性；false，没有ipv6特性 |No|
 | **UHostId** | string | UHost实例ID |No|
 | **UHostType** | string | 【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
@@ -85,21 +84,29 @@
 | **NetCapability** | string | 网络增强。Normal: 无；Super： 网络增强1.0； Ultra: 网络增强2.0 |No|
 | **NetworkState** | string | 【建议不再使用】网络状态。 连接：Connected， 断开：NotConnected |No|
 | **TimemachineFeature** | string | 【建议不再使用】数据方舟模式。枚举值：<br /><br /> > Yes: 开启方舟； <br /><br /> > no，未开启方舟 |No|
-| **HotplugFeature** | boolean | true: 开启热升级； false，未开启热升级 |No|
 | **SubnetType** | string | 【建议不再使用】仅北京A的云主机会返回此字段。基础网络模式：Default；子网模式：Private |No|
 | **OsName** | string | 创建主机的最初来源镜像的操作系统名称（若直接通过基础镜像创建，此处返回和BasicImageName一致） |No|
 | **OsType** | string | 操作系统类别。返回"Linux"或者"Windows" |No|
 | **HostType** | string | 【建议不再使用】主机系列：N2，表示系列2；N1，表示系列1 |No|
 | **LifeCycle** | string | 主机的生命周期类型。目前仅支持Normal：普通； |No|
 | **GPU** | int | GPU个数 |No|
+| **GpuType** | string | GPU类型;枚举值["K80", "P40", "V100", "T4", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S"] |No|
+| **HotPlugMaxCpu** | int | 热升级支持的最大CPU个数 |No|
 | **BootDiskState** | string | 系统盘状态 Normal表示初始化完成；Initializing表示在初始化。仍在初始化的系统盘无法制作镜像。 |No|
 | **TotalDiskSpace** | int | 总的数据盘存储空间。 |No|
 | **IsolationGroup** | string | 隔离组id，不在隔离组则返回"" |No|
-| **CloudInitFeature** | boolean | true，支持cloutinit方式初始化；false,不支持 |No|
 | **RdmaClusterId** | string | RDMA集群id，仅快杰云主机返回该值；其他类型云主机返回""。当云主机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台云主机。 |No|
 | **RestrictMode** | string | 仅抢占式实例返回，LowSpeed为低速模式，PowerOff为关机模式 |No|
+| **HotplugFeature** | boolean | true: 开启热升级； false，未开启热升级 |No|
+| **CloudInitFeature** | boolean | true: 支持cloutinit方式初始化；false: 不支持 |No|
+| **IPv6Feature** | boolean | true: 有ipv6特性；false，没有ipv6特性 |No|
 | **HpcFeature** | boolean | true: 开启 hpc 系列功能；false: 未开启 |No|
+| **EpcInstance** | boolean | true: 高性能计算主机；false: 不是 |No|
+| **SecGroupInstance** | boolean | true: 绑定了安全组的主机；false: 不是 |No|
+| **HiddenKvm** | boolean | true: 开启 hidden kvm 功能；false: 不是 |No|
 | **KeyPair** | [*UHostKeyPair*](#UHostKeyPair) | 密钥信息见 UHostKeyPair |No|
+| **UDHostAttribute** | [*UDSetUDHostAttribute*](#UDSetUDHostAttribute) | 私有专区宿主机属性 |No|
+| **SpotAttribute** | [*SpotAttribute*](#SpotAttribute) | 竞价实例信息 |No|
 
 #### UHostDiskSet
 
@@ -138,15 +145,41 @@
 | **KeyPairId** | string | 密钥对ID |No|
 | **KeyPairState** | string | 主机密钥对状态，Normal 正常，Deleted 删除 |No|
 
+#### UDSetUDHostAttribute
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **UDHostId** | string | 私有专区宿主机 |No|
+| **UDSetId** | string | 私有专区 |No|
+| **HostBinding** | boolean | 是否绑定私有专区宿主机 |No|
+
+#### SpotAttribute
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **RecycleTime** | int | 回收时间 |No|
+
 ## 示例
 
 ### 请求示例
     
 ```
 https://api.ucloud.cn/?Action=DescribeUHostInstance
-&Region=cn-bj2
-&Zone=cn-bj2-02
-&EpcInstance=false
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=jrdYPkBQ
+&UHostIds.N=AUNsCFMm
+&Tag=DorQZLay
+&LifeCycle=6
+&Offset=6
+&Limit=3
+&IsolationGroup=nSNImHzi
+&VPCId=FPnJyAyj
+&SubnetId=HLhfwaFY
+&NoEIP=false
+&ResourceType=ghgUBbcV
+&UDiskIdForAttachment=UQmrMUGU
+&EpcInstance=true
 ```
 
 ### 响应示例
@@ -155,88 +188,75 @@ https://api.ucloud.cn/?Action=DescribeUHostInstance
 {
   "Action": "DescribeUHostInstanceResponse",
   "RetCode": 0,
-  "TotalCount": 1,
+  "TotalCount": 2,
   "UHostSet": [
     {
-      "AutoRenew": "Yes",
-      "BasicImageId": "uimage-xxxx",
-      "BasicImageName": "CentOS 6.6 64位",
-      "BootDiskState": "Normal",
-      "CPU": 2,
-      "ChargeType": "Dynamic",
-      "CloudInitFeature": false,
-      "CpuPlatform": "Intel/Skylake",
-      "CreateTime": 1583922462,
+      "AutoRenew": "qSWETQza",
+      "BasicImageId": "GCiPFJNV",
+      "BasicImageName": "AilAICpK",
+      "BootDiskState": "wvOqKxrL",
+      "CPU": 1,
+      "ChargeType": "eeXICSgb",
+      "CloudInitFeature": true,
+      "CpuPlatform": "aZLBvEiZ",
+      "CreateTime": 2,
       "DiskSet": [
         {
-          "DiskId": "bsi-dq2fwxoy",
-          "DiskType": "CLOUD_SSD",
-          "Drive": "vda",
-          "Encrypted": "false",
-          "IsBoot": "True",
-          "Name": "系统盘_UHost",
-          "Size": 20,
-          "Type": "Boot"
-        },
-        {
-          "DiskId": "bsm-pvr22btt",
-          "DiskType": "CLOUD_SSD",
-          "Drive": "vdb",
-          "Encrypted": "false",
-          "IsBoot": "False",
-          "Name": "TestUDisk",
-          "Size": 50,
-          "Type": "Udisk"
+          "BackupType": "wThaZMBG",
+          "DiskId": "HGkYYGPC",
+          "DiskType": "thFULWJN",
+          "Drive": "eFKaOPGI",
+          "Encrypted": "TTUcGitp",
+          "IsBoot": "uYTOToOh",
+          "Name": "AIFttSSZ",
+          "Size": 9,
+          "Type": "JJZViwCZ"
         }
       ],
-      "EncryptedDiskFeature": true,
-      "ExpireTime": 1596722400,
-      "GPU": 0,
-      "HostType": "N3",
-      "HotplugFeature": false,
+      "EpcInstance": true,
+      "ExpireTime": 4,
+      "GPU": 4,
+      "GpuType": "pJdSxKkv",
+      "HiddenKvm": false,
+      "HostType": "dQanjRcq",
+      "HotplugFeature": true,
+      "HpcFeature": false,
       "IPSet": [
         {
-          "Default": "true",
-          "IP": "10.9.86.248",
-          "IPMode": "IPv4",
-          "Mac": "52:54:00:B1:A5:A6",
-          "SubnetId": "subnet-xxxxxx",
-          "Type": "Private",
-          "VPCId": "uvnet-xxxxx"
-        },
-        {
-          "Bandwidth": 1,
-          "IP": "117.52.19.92",
-          "IPId": "eip-xxxxxx",
-          "IPMode": "IPv4",
-          "Type": "BGP",
-          "Weight": 50
+          "Bandwidth": 2,
+          "Default": "PemrNWxq",
+          "IP": "hGoWLqyN",
+          "IPId": "qBthvXCJ",
+          "SubnetId": "owZpgAju",
+          "Type": "TBHMANhj",
+          "VPCId": "KRvUYRsX"
         }
       ],
-      "IPv6Feature": false,
-      "ImageId": "bsi-xxxxxx",
-      "IsExpire": "No",
-      "IsolationGroup": "",
-      "LifeCycle": "Normal",
-      "MachineType": "N",
-      "Memory": 2048,
-      "Name": "UHost",
-      "NetCapFeature": true,
-      "NetCapability": "Normal",
-      "NetworkState": "Connected",
-      "OsName": "CentOS 6.6 64位",
-      "OsType": "Linux",
-      "RdmaClusterId": "",
-      "Remark": "",
-      "State": "Running",
-      "StorageType": "UDisk",
-      "SubnetType": "Default",
-      "Tag": "Default",
-      "TimemachineFeature": "no",
-      "TotalDiskSpace": 50,
-      "UHostId": "uhost-xxxxx",
-      "UHostType": "N3",
-      "Zone": "cn-bj2-05"
+      "IPv6Feature": true,
+      "ImageId": "laKdatME",
+      "IsolationGroup": "uUbVSIFS",
+      "KeyPair": {},
+      "LifeCycle": "wtcCMMQT",
+      "MachineType": "PyCWLFIG",
+      "Memory": 9,
+      "Name": "gsILwqks",
+      "NetCapability": "txhhItss",
+      "NetworkState": "jquNUNJz",
+      "OsName": "QHGtNxIw",
+      "OsType": "CnavCvrW",
+      "RdmaClusterId": "TqrHYSXc",
+      "Remark": "MxEcJQhA",
+      "RestrictMode": "EeJHESCx",
+      "SecGroupInstance": false,
+      "State": "UtnhXfCa",
+      "StorageType": "tEDwzsXb",
+      "SubnetType": "ZSfByswJ",
+      "Tag": "GbFHtrBQ",
+      "TimemachineFeature": "tZqkqfws",
+      "TotalDiskSpace": 3,
+      "UHostId": "qPzuUUCE",
+      "UHostType": "QaByhkja",
+      "Zone": "CiMUTSzW"
     }
   ]
 }
