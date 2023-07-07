@@ -83,39 +83,173 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeMediaFunctions
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=rpHOghmk
-&Function=QlNdxesU
+&Region=cn-bj2
+&Zone=cn-bj2-02
+&ProjectId=org-ZtBadiGe
+&Function=VideoTranscode
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "DescribeMediaFunctionsResponse",
+  "Action": "DescribeMediaFunctions",
   "Functions": [
     {
-      "DisplayName": "DefDPCaZ",
-      "FunctionName": "pGJiTiUL",
-      "InputType": "sZcacSrz",
-      "OutputType": "vyrKTIrI",
+      "DisplayName": "视频转码",
+      "FunctionName": "VideoTranscode",
+      "InputType": "video",
+      "OutputType": "video",
       "SupportParams": [
         {
-          "DisplayName": "CaUMazVU",
+          "DisplayName": "输出格式",
           "OptionalValues": [
-            "OCFPIIKh"
+            "mp4",
+            "flv",
+            "mpegts",
+            "webm"
           ],
-          "ParamName": "NzpCaFQH",
-          "Required": true,
+          "ParamName": "ContainerFormat",
+          "Required": true
+        },
+        {
+          "DisplayName": "编码格式",
+          "OptionalValues": [
+            "H.264",
+            "H.265",
+            "VPX",
+            "VPX-VP9"
+          ],
+          "ParamName": "EncodeFormat",
+          "Required": true
+        },
+        {
+          "DisplayName": "视频码率(Kbps)",
+          "OptionalValues": [
+            "custom",
+            "adpative"
+          ],
+          "ParamName": "VideoBitRate",
+          "Required": false,
           "WhenValueCustom": [
             {
-              "Max": 5,
-              "Min": 3,
-              "ParamName": "ZhphOUsA",
-              "ParamType": "hjGEHqDT"
+              "Max": 5000,
+              "Min": 100,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "VideoBitRateCustom",
+              "ParamType": "int"
             }
           ]
+        },
+        {
+          "DisplayName": "帧率(fps)",
+          "OptionalValues": [
+            "custom",
+            "25",
+            "30"
+          ],
+          "ParamName": "FrameRate",
+          "Required": false,
+          "WhenValueCustom": [
+            {
+              "Max": 60,
+              "Min": 1,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "FrameRateCustom",
+              "ParamType": "int"
+            }
+          ]
+        },
+        {
+          "DisplayName": "压缩率CRF",
+          "OptionalValues": [
+            "custom",
+            "15",
+            "22",
+            "30"
+          ],
+          "ParamName": "CRF",
+          "Required": false,
+          "WhenValueCustom": [
+            {
+              "Max": 51,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "CRFCustom",
+              "ParamType": "int"
+            }
+          ]
+        },
+        {
+          "DisplayName": "分辨率(px)",
+          "OptionalValues": [
+            "custom",
+            "origin"
+          ],
+          "ParamName": "Resolution",
+          "Required": false,
+          "WhenValueCustom": [
+            {
+              "Max": 1920,
+              "Min": 160,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "ResolutionWidth",
+              "ParamType": "int"
+            },
+            {
+              "Max": 1920,
+              "Min": 160,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "ResolutionHeight",
+              "ParamType": "int"
+            }
+          ]
+        },
+        {
+          "DisplayName": "音频码率(Kbps)",
+          "OptionalValues": [
+            "custom",
+            "48",
+            "64",
+            "128",
+            "160"
+          ],
+          "ParamName": "AudioBitRate",
+          "Required": false,
+          "WhenValueCustom": [
+            {
+              "Max": 1000,
+              "Min": 8,
+              "OpenMax": false,
+              "OpenMin": false,
+              "ParamName": "AudioBitRateCustom",
+              "ParamType": "int"
+            }
+          ]
+        },
+        {
+          "DisplayName": "音频采样率(Hz)",
+          "OptionalValues": [
+            "22050",
+            "32000",
+            "44100",
+            "48000"
+          ],
+          "ParamName": "AudioSampleRate",
+          "Required": false
+        },
+        {
+          "DisplayName": "音频声道",
+          "OptionalValues": [
+            "one",
+            "two"
+          ],
+          "ParamName": "AudioChannel",
+          "Required": false
         }
       ]
     }
