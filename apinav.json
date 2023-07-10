@@ -280,6 +280,10 @@
         "name": "访问控制 IAM"
       },
       {
+        "links": "/api/sts-api/README",
+        "name": "安全令牌服务 STS"
+      },
+      {
         "links": "/api/ulog-api/README",
         "name": "操作日志 ULog"
       }

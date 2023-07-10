@@ -129,6 +129,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |:---|:---|
 |账号管理 UAccount|[文档](/api/uaccount-api/)|
 |访问控制 IAM|[文档](/api/iam-api/)|
+|安全令牌服务 STS|[文档](/api/sts-api/)|
 |操作日志 ULog|[文档](/api/ulog-api/)|
 
 ### 购买与计费
