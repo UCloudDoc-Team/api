@@ -628,6 +628,17 @@
           ]
         },
         {
+          "name": "安全令牌服务 STS",
+          "img": "icon-product__access-control",
+          "sublinks": [
+            {
+              "links": "/api/uaccount_sts-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "操作日志 ULog",
           "img": "icon-product__ulog",
           "sublinks": [
