@@ -67,6 +67,7 @@
 | **ChargeType** | string | 计费方式 (筛选项, 默认全部)。枚举值：<br /><br /> > Year:按年<br /><br /> > Month:按月 <br /><br /> > Day:按天 <br /><br /> > Dynamic:按时 <br /><br /> > Used:按量 <br /><br /> > Donate:赠送 <br /><br /> > Trial:试用 <br /><br /> > Post:后付费 <br /><br /> > Spot:抢占式 |**Yes**|
 | **CreateTime** | int | 创建时间（时间戳） |**Yes**|
 | **StartTime** | int | 开始时间（时间戳） |**Yes**|
+| **EndTime** | int | 结束时间（时间戳） |**Yes**|
 | **OrderNo** | string | 订单号 |**Yes**|
 | **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_ADDITIONAL:补单 <br /><br /> > OT_REFUND:删除 <br /><br /> > OT_POSTPAID_RENEW:过期 <br /><br /> > OT_POSTPAID_PAYMENT:后付费 <br /><br /> > OT_RECOVER:删除恢复 |**Yes**|
 | **ProjectName** | string | 项目名称 |**Yes**|
