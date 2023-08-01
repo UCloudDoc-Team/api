@@ -4,7 +4,7 @@
 
 获取防火墙组信息
 
-
+?> 使用方案一：获取某个防火墙的信息。使用方法二：获取某个资源绑定的防火墙信息。使用方法三：获取项目下所有防火墙信息。
 
 
 
@@ -34,8 +34,8 @@
 | **Region** | string | 地域 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写 |No|
 | **FWId** | string | 防火墙ID，默认为返回所有防火墙 |No|
-| **ResourceType** | string | 绑定防火墙组的资源类型，默认为全部资源类型。枚举值为："unatgw"，NAT网关； "uhost"，云主机；“uni”，虚拟网卡； "upm"，物理云主机； "hadoophost"，hadoop节点； "fortresshost"，堡垒机； "udhost"，私有专区主机；"udockhost"，容器；"dbaudit"，数据库审计. |No|
-| **ResourceId** | string | 绑定防火墙组的资源ID |No|
+| **ResourceType** | string | 绑定防火墙的资源类型，仅获取资源对应防火墙信息时需要。枚举值为："unatgw"，NAT网关； "uhost"，云主机； "upm"，物理云主机； "hadoophost"，hadoop节点； "fortresshost"，堡垒机； "udhost"，私有专区主机；"udockhost"，容器；"dbaudit"，数据库审计；”uni“，虚拟网卡；“cube”，Cube容器实例；“ulb”，负载均衡实例。 |No|
+| **ResourceId** | string | 绑定防火墙组的资源ID。 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大10000000 |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 
