@@ -1,8 +1,8 @@
-# 备份UDB指定时间段的slowlog分析结果 - BackupUDBInstanceSlowLog
+# 修改云数据库备注 - ModifyUDBInstanceRemarkName
 
 ## 简介
 
-备份UDB指定时间段的slowlog分析结果
+修改UDB实例备注信息
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=BackupUDBInstanceSlowLog)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=ModifyUDBInstanceRemarkName)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `BackupUDBInstanceSlowLog`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `ModifyUDBInstanceRemarkName`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -32,11 +32,10 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **DBId** | string | DB实例Id,该值可以通过DescribeUDBInstance获取 |**Yes**|
-| **BeginTime** | int | 过滤条件:起始时间(时间戳) |**Yes**|
-| **EndTime** | int | 过滤条件:结束时间(时间戳) |**Yes**|
-| **BackupName** | string | 备份文件名称 |**Yes**|
+| **DBId** | string | 实例的Id,该值可以通过DescribeUDBInstance获取 |**Yes**|
+| **Name** | string | 实例的新备注 |**Yes**|
 
 ### 响应字段
 
@@ -54,19 +53,19 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=BackupUDBInstanceSlowLog
-&Region=cn-bj2
-&DBId=udbha-xxxxxx
-&BackupName=slow_log_backup
-&BeginTime=1432569600
-&EndTime=1432588600
+https://api.ucloud.cn/?Action=ModifyUDBInstanceRemarkName
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=sPYxpLGV
+&DBId=KLwPfxos
+&Name=xbbnGLEb
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "BackupUDBInstanceSlowlogResponse",
+  "Action": "ModifyUDBInstanceRemarkNameResponse",
   "RetCode": 0
 }
 ```

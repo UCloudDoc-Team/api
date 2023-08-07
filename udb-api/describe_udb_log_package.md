@@ -36,7 +36,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 分页显示的起始偏移，列表操作则指定 |**Yes**|
 | **Limit** | int | 分页显示的条目数，列表操作则指定 |**Yes**|
-| **Type** | int | 需要列出的备份文件类型，每种类型的值如下： 2 代表 BINLOG_BACKUP； 3 代表 SLOW_QUERY_BACKUP； 4 代表 ERRORLOG_BACKUP。 |No|
+| **Type** | int | 需要列出的备份文件类型，每种类型的值如下： 2 代表 BINLOG_BACKUP； 3 代表 SLOW_QUERY_BACKUP； 4 代表 ERRORLOG_BACKUP； |No|
 | **Types.N** | int | Types作为Type的补充，支持多值传入，可以获取多个类型的日志记录，如：Types.0=2&Types.1=3 |No|
 | **DBId** | string | DB实例Id，如果指定，则只获取该db的备份信息; 当Type为2时必填 |No|
 | **BeginTime** | int | 过滤条件:起始时间(时间戳) |No|
