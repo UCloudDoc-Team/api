@@ -50,10 +50,10 @@
 |:---|:---|:---|:---|
 | **Unit** | string | 单位：<br />bit Byte Kb KB Mb MB Gb GB Tb TB Pb PB Eb EB iops bps Bps Kbps KBps Mbps MBps Gbps GBps Tbps TBps 个 个/s 次 次/s 千次/s 万次/s % s ms us bool ‱ 个/min 个/核 个/10s bytes/10s MB/s dbm min |**Yes**|
 | **ConversionFactor** | int | 保留字段 |**Yes**|
-| **Type** | int | 指标类型（暂时没有意义） |**Yes**|
+| **Type** | string | 指标类型（暂时没有意义） |**Yes**|
 | **MetricGroup** | string | 监控指标组 |**Yes**|
 | **SupportAlarm** | string | 是否支持告警：Yes\|No |**Yes**|
-| **AlarmRange** | string | 告警阈值设置的有效范围 |**Yes**|
+| **AlarmRange** | object | 告警阈值设置的有效范围 |**Yes**|
 | **Frequency** | int | 告警频率 |**Yes**|
 | **MetricId** | int | 监控项id |**Yes**|
 | **CompareOption** | array[string] | 比较方法：GE大于等于\|LE小于等于 |**Yes**|

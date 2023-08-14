@@ -51,7 +51,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **HasAlarmTemlate** | string | 是否绑定了告警模板，Yes：是；No：否。若为No，不展示AlarmTemplateId、AlarmTemplateName、Remark |**Yes**|
+| **HasAlarmTemplate** | string | 是否绑定了告警模板，Yes：是；No：否。若为No，不展示AlarmTemplateId、AlarmTemplateName、Remark |**Yes**|
 | **ResourceId** | string | 资源id |**Yes**|
 | **AlarmTemplateId** | int | 告警模板id |No|
 | **AlarmTemplateName** | string | 告警模板名称 |No|
