@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 开始时间，时间戳 |No|
 | **EndTime** | int | 结束时间，时间戳（当前仅支持获取时间间隔在31天内的告警记录） |No|
 
@@ -50,17 +50,17 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ResourceId** | string | 资源id |**Yes**|
 | **Region** | string | 地域编号 |No|
 | **Zone** | string | 可用区编号 |No|
+| **ResourceId** | string | 资源id |**Yes**|
 | **ResourceType** | string | 资源类型 |**Yes**|
 | **Name** | string | 资源名称 |**Yes**|
 | **MetricName** | string | 指标名称 |**Yes**|
 | **OccurrenceTime** | int | 告警发生时间 |**Yes**|
-| **RecoveryTime** | int | 告警恢复时间 |**Yes**|
 | **Recovered** | string | 是否恢复 |**Yes**|
 | **Threshold** | float | 阈值 |**Yes**|
 | **Value** | float | 告警值 |**Yes**|
+| **RecoveryTime** | int | 告警恢复时间 |No|
 
 ## 示例
 
