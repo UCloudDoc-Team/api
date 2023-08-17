@@ -22,6 +22,7 @@
     - [获取云数据库列表 - ListUPgSQLInstance](api/upgsql-api/list_u_pg_sql_instance)
     - [获取数据库日志 - ListUPgSQLLog](api/upgsql-api/list_u_pg_sql_log)
     - [获取UPgSQL支持机器类型列表 - ListUPgSQLMachineType](api/upgsql-api/list_u_pg_sql_machine_type)
+    - [获取可用参数模板列表 - ListUPgSQLParamTemplate](api/upgsql-api/list_u_pg_sql_param_template)
     - [获取UPgSQL支持版本列表 - ListUPgSQLVersion](api/upgsql-api/list_u_pg_sql_version)
     - [重启PG实例 - RestartUPgSQLInstance](api/upgsql-api/restart_u_pg_sql_instance)
     - [启动PG实例 - StartUPgSQLInstance](api/upgsql-api/start_u_pg_sql_instance)
