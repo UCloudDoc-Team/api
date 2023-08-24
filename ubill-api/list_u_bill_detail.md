@@ -71,6 +71,7 @@
 | **OrderNo** | string | 订单号 |**Yes**|
 | **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_ADDITIONAL:补单 <br /><br /> > OT_REFUND:删除 <br /><br /> > OT_POSTPAID_RENEW:过期 <br /><br /> > OT_POSTPAID_PAYMENT:后付费 <br /><br /> > OT_RECOVER:删除恢复 |**Yes**|
 | **ProjectName** | string | 项目名称 |**Yes**|
+| **BusinessGroup** | string | 业务组 |**Yes**|
 | **ResourceId** | string | 资源ID |**Yes**|
 | **ResourceType** | string | 产品类型。枚举值：<br /><br /> > uhost:云主机 <br /><br /> > udisk:普通云硬盘 <br /><br /> > udb:云数据库 <br /><br /> > eip:弹性IP <br /><br /> > ufile:对象存储 <br /><br /> > fortress_host:堡垒机 <br /><br /> > ufs:文件存储 <br /><br /> > waf:WEB应用防火墙 <br /><br /> > ues:弹性搜索 <br /><br /> > udisk_ssd:SSD云硬盘 <br /><br /> > rssd:RSSD云硬盘 |**Yes**|
 | **ResourceTypeCode** | int | 产品类型代码 |**Yes**|
