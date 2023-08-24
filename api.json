@@ -379,17 +379,6 @@
           ]
         },
         {
-          "name": "数据湖分析 USQL",
-          "img": "icon-product__usql",
-          "sublinks": [
-            {
-              "links": "/api/usql-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "Kafka消息队列 UKafka",
           "img": "icon-product__ukafka",
           "sublinks": [
