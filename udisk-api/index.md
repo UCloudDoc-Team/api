@@ -18,6 +18,7 @@
 |[DescribeUDiskPrice](api/udisk-api/describe_udisk_price)|获取云硬盘价格|
 |[DescribeUDiskSnapshot](api/udisk-api/describe_udisk_snapshot)|获取快照列表|
 |[DescribeUDiskUpgradePrice](api/udisk-api/describe_udisk_upgrade_price)|获取云硬盘升级价格|
+|[DetachDeleteUDisk](api/udisk-api/detach_delete_udisk)|卸载删除云硬盘|
 |[DetachUDisk](api/udisk-api/detach_udisk)|卸载云硬盘|
 |[RecoverUDisk](api/udisk-api/recover_udisk)|【已废弃】恢复云硬盘|
 |[RenameUDisk](api/udisk-api/rename_udisk)|重命名云硬盘|
