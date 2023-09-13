@@ -6,6 +6,7 @@
 |:---|:---|
 |[AllocateBackend](api/ulb-api/allocate_backend)|添加后端实例|
 |[BindSSL](api/ulb-api/bind_ssl)|绑定SSL证书|
+|[CreateLoadBalancer](api/ulb-api/create_load_balancer)|创建负载均衡实例|
 |[CreatePolicy](api/ulb-api/create_policy)|创建内容转发策略|
 |[CreateSSL](api/ulb-api/create_ssl)|创建SSL证书|
 |[CreateSecurityPolicy](api/ulb-api/create_security_policy)|创建安全策略|
