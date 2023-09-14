@@ -11,6 +11,8 @@
     - [创建安全策略 - CreateSecurityPolicy](api/ulb-api/create_security_policy)
     - [创建负载均衡 - CreateULB](api/ulb-api/create_ulb)
     - [创建VServer - CreateVServer](api/ulb-api/create_vserver)
+    - [删除监听器 - DeleteListener](api/ulb-api/delete_listener)
+    - [删除负载均衡实例 - DeleteLoadBalancer](api/ulb-api/delete_load_balancer)
     - [删除转发策略 - DeletePolicy](api/ulb-api/delete_policy)
     - [删除转发规则 - DeleteRule](api/ulb-api/delete_rule)
     - [删除SSL证书 - DeleteSSL](api/ulb-api/delete_ssl)
