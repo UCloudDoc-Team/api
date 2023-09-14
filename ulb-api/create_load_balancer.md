@@ -63,15 +63,15 @@
 ```
 https://api.ucloud.cn/?Action=CreateLoadBalancer
 &Region=cn-bj2
-&ProjectId=project-XXXXX
+&ProjectId=org-XXXXX
 &VPCId=vnet-XXXXX
 &SubnetId=subnet-XXXXX
 &Type=Application
 &Name=lb
 &Tag=Default
 &Remark=iKgxzEnT
-&IPVersion= IPv4
-&ChargeType= Month
+&IPVersion=IPv4
+&ChargeType=Month
 &CouponId=KAxnpXFB
 &Quantity=3
 ```
