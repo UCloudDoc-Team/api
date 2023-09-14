@@ -13,6 +13,7 @@
 |[CreateULB](api/ulb-api/create_ulb)|创建负载均衡|
 |[CreateVServer](api/ulb-api/create_vserver)|创建VServer|
 |[DeletePolicy](api/ulb-api/delete_policy)|删除转发策略|
+|[DeleteRule](api/ulb-api/delete_rule)|删除转发规则|
 |[DeleteSSL](api/ulb-api/delete_ssl)|删除SSL证书|
 |[DeleteSecurityPolicy](api/ulb-api/delete_security_policy)|删除安全策略|
 |[DeleteULB](api/ulb-api/delete_ulb)|删除负载均衡|
