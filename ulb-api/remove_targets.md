@@ -6,7 +6,7 @@
 
 
 
-!> 删除Target在Target不存在或不合法的情况下，不报错；需校验lb和listener的合法性
+!> 删除Target在Target不存在或不合法的情况下，不报错；删除Target需校验lb和listener的合法性
 
 
 ## 使用方法
@@ -58,7 +58,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
     "Action": "RemoveTargets",
     "Region": "cn-bj2",
-    "ProjectId": "project-XXXXX",
+    "ProjectId": "org-XXXXX",
     "LoadBalancerId": "alb-XXXXX",
     "ListenerId": "als-XXXXX",
     "Ids": [
