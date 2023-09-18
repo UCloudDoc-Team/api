@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区，不填时默认全部可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区，不填时默认全部可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClassType** | string | DB种类，如果是列表操作，则需要指定,不区分大小写，其取值如下：mysql: SQL；mongo: NOSQL；postgresql: postgresql |No|
 | **Offset** | int | 分页显示起始偏移位置，列表操作时必填 |No|
 | **Limit** | int | 分页显示数量，列表操作时必填 |No|
@@ -41,6 +41,8 @@
 | **IsInUDBC** | boolean | 是否查看专区里面DB |No|
 | **UDBCId** | string | IsInUDBC为True,UDBCId为空，说明查看整个可用区的专区的db，如果UDBId不为空则只查看此专区下面的db |No|
 | **IncludeSlaves** | boolean | 当只获取这个特定DBId的信息时，如果有该选项，那么把这个DBId实例的所有从库信息一起拉取并返回 |No|
+| **VPCId** | string | 根据VPCId筛选DB |No|
+| **Tag** | string | 根据 业务组 筛选DB |No|
 
 ### 响应字段
 
@@ -60,6 +62,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | DB实例所在可用区 |No|
+| **CaseSensitivityParam** | int | 0区分大小写, 1不分区 |No|
 | **ClusterRole** | string | 当DB类型为mongodb时，返回该实例所在集群中的角色，包括：mongos、configsrv_sccc、configsrv_csrs、shardsrv_datanode、shardsrv_arbiter，其中congfigsrv分为sccc和csrs两种模式，shardsrv分为datanode和arbiter两种模式 |No|
 | **DBId** | string | DB实例id |No|
 | **Name** | string | 实例名称，至少6位 |No|
@@ -79,7 +82,7 @@
 | **BackupBeginTime** | int | 备份策略，不可修改，开始时间，单位小时计，默认3点 |No|
 | **BackupDuration** | int | 备份策略，一天内备份时间间隔，单位小时，默认24小时 |No|
 | **BackupBlacklist** | string | 备份策略，备份黑名单，mongodb则不适用 |No|
-| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败 |No|
+| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败, Remakeing:重做中,RemakeFail:重做失败，VersionUpgrading:小版本升级中，VersionUpgradeWaitForSwitch:高可用等待切换，VersionUpgradeFail：小版本升级失败 |No|
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|
@@ -99,6 +102,7 @@
 | **BackupZone** | string | 跨可用区高可用备库所在可用区 |No|
 | **IPv6Address** | string | 该实例的ipv6地址 |No|
 | **UserUFileData** | [*UFileDataSet*](#UFileDataSet) | 用户转存备份到自己的UFILE配置, 结构参考UFileDataSet |No|
+| **DBSubVersion** | string | mysql实例提供具体小版本信息 |No|
 
 #### UDBSlaveInstanceSet
 
@@ -119,7 +123,7 @@
 | **BackupBeginTime** | int | 备份策略，不可修改，开始时间，单位小时计，默认3点 |No|
 | **BackupDuration** | int | 备份策略，一天内备份时间间隔，单位小时，默认24小时 |No|
 | **BackupBlacklist** | string | 备份策略，备份黑名单，mongodb则不适用 |No|
-| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败 |No|
+| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败,Remakeing:重做中,RemakeFail:重做失败 |No|
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|
@@ -142,6 +146,7 @@
 | **InstanceTypeId** | int | UDB数据库机型ID |No|
 | **Tag** | string | 获取资源其他信息 |No|
 | **IPv6Address** | string | 获取该实例的IPv6地址 |No|
+| **CaseSensitivityParam** | int | 0 区分大小写, 1不区分, 只针对mysql8.0 |No|
 
 #### UFileDataSet
 
@@ -161,6 +166,8 @@ https://api.ucloud.cn/?Action=DescribeUDBInstance
 &ClassType=sql
 &Offset=0     
 &Limit=3    
+&VPCId=HXzwVLcy
+&Tag=VEUDumDL
 ```
 
 ### 响应示例
