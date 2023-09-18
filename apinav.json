@@ -265,6 +265,10 @@
       {
         "links": "/api/udts-api/README",
         "name": "数据传输服务 UDTS"
+      },
+      {
+        "links": "/api/usmc-api/README",
+        "name": "服务器迁移中心 USMC"
       }
     ]
   },
