@@ -6,7 +6,7 @@
 
 
 
-!> RuleConditions 或 RuleActions 不传则不做更改，传则以数组为粒度更新规则（数组内未传值项则按默认值进行修改）
+!> RuleConditions 或 RuleActions 不传该参数则不做更改，传则以数组为粒度更新规则（数组内未传项则按默认值进行修改）
 
 
 ## 使用方法
@@ -36,8 +36,8 @@
 | **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
 | **ListenerId** | string | 监听器的ID |**Yes**|
 | **RuleId** | string | 转发规则的ID |**Yes**|
-| **RuleConditions** | array[[*RuleCondition*](#RuleCondition)] | 转发规则匹配条件。数组长度至少为1，目前最多支持一个域名和一个路径类型的 RuleCondition，即数组长度最多为2且不同类型； 默认转发规则不可更改此项。 具体结构见下方 RuleCondition |No|
-| **RuleActions** | array[[*RuleActionSet*](#RuleActionSet)] | 转发动作。 数组长度只能为1。具体结构见下方 RuleActionSet |No|
+| **RuleConditions** | array[[*RuleCondition*](#RuleCondition)] | 转发规则匹配条件。数组长度至少为1，目前最多支持一个域名和一个路径类型的 RuleCondition，即数组长度最多为2且不同类型； 默认转发规则不可更改此项； 不传该参数则不做更改，传则该参数为粒度更新规则（数组内未传项则按默认值进行修改）。 具体结构见下方 RuleCondition |No|
+| **RuleActions** | array[[*RuleActionSet*](#RuleActionSet)] | 转发动作。 数组长度只能为1； 不传该参数则不做更改，传则以该参数为粒度更新规则（数组内未传项则按默认值进行修改）。具体结构见下方 RuleActionSet |No|
 | **Pass** | bool | 当转发的服务节点为空时，规则是否忽略。默认值true； 默认转发规则不可更改此项 |No|
 
 #### 数据模型
@@ -105,7 +105,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
   "Action": "UpdateRuleAttribute",
   "Region": "cn-bj2",
-  "ProjectId": "project-XXXXX",
+  "ProjectId": "org-XXXXX",
   "LoadBalancerId": "alb-XXXXX",
   "ListenerId": "als-XXXXX",
   "RuleId": "rule-XXXXX",

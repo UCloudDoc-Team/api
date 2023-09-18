@@ -44,9 +44,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Weight** | int | 服务节点的权重。限定取值：[1-100]； 仅在加权轮询算法时有效；不传则默认不修改 |No|
-| **Enabled** | bool | 服务节点是否启用。不传则默认不修改 |No|
-| **IsBackup** | bool | 服务节点是否为备节点。不传则默认不修改； 只有该target所属的listener时主备算法才允许修改主备属性 |No|
+| **Weight** | int | 服务节点的权重。限定取值：[1-100]； 仅在加权轮询算法时有效；不传该参数则默认不修改 |No|
+| **Enabled** | bool | 服务节点是否启用。不传该参数则默认不修改 |No|
+| **IsBackup** | bool | 服务节点是否为备节点。不传该参数则默认不修改； 只有该target所属的listener时主备算法才允许修改主备属性 |No|
 | **Id** | string | 服务节点的标识ID。 |No|
 
 ### 响应字段
@@ -70,7 +70,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
     "Action": "UpdateTargetsAttribute",
     "Region": "cn-bj2",
-    "ProjectId": "project-XXXXX",
+    "ProjectId": "org-XXXXX",
     "LoadBalancerId": "alb-XXXXX",
     "ListenerId": "als-XXXXX",
     "Targets": [

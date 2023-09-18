@@ -44,7 +44,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ResourceType** | string | 服务节点的类型。限定枚举值：UHost -> 云主机，UNI -> 虚拟网卡，UPM -> 物理云主机，IP ->  IP类型； 默认值："UHost"； 非IP类型，如果该资源有多个IP，将只能添加主IP； 非IP类型，展示时，会显示相关资源信息，IP类型只展示IP信息。 在相关资源被删除时，非IP类型会把相关资源从lb中剔除，IP类型不保证这个逻辑 |**Yes**|
+| **ResourceType** | string | 服务节点的类型。限定枚举值：UHost -> 云主机，UNI -> 虚拟网卡，UPM -> 物理云主机，IP -> IP类型； 默认值："UHost"； 非IP类型，如果该资源有多个IP，将只能添加主IP； 非IP类型，展示时，会显示相关资源信息，IP类型只展示IP信息。 在相关资源被删除时，非IP类型会把相关资源从lb中剔除，IP类型不保证这个逻辑 |**Yes**|
 | **ResourceId** | string | 服务节点的资源ID。在非IP类型时，必传 |No|
 | **VPCId** | string | 服务节点的VPC资源ID。在IP类型时，必传 |No|
 | **SubnetId** | string | 服务节点的子网资源ID。在IP类型时，必传 |No|
@@ -95,7 +95,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
     "Action": "AddTargets",
     "Region": "cn-bj2",
-    "ProjectId": "project-XXXXX",
+    "ProjectId": "org-XXXXX",
     "LoadBalancerId": "alb-XXXXX",
     "ListenerId": "als-XXXXX",
     "Targets": [

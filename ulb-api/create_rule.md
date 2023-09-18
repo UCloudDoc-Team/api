@@ -105,7 +105,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
   "Action": "CreateRule",
   "Region": "cn-bj2",
-  "ProjectId": "project-XXXXX",
+  "ProjectId": "org-XXXXX",
   "LoadBalancerId": "alb-XXXXX",
   "ListenerId": "als-XXXXX",
   "RuleConditions": [

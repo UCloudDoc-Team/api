@@ -56,7 +56,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Enabled** | bool | 是否开启会话保持功能。应用型负载均衡实例基于Cookie实现； 默认值为：false |No|
-| **Type** | string | （应用型专用）Cookie处理方式。限定枚举值： ServerInsert -> 自动生成KEY；UserDefined -> 用户自定义KEY。 |No|
+| **Type** | string | （应用型专用）Cookie处理方式。限定枚举值： ServerInsert -> 自动生成KEY；UserDefined -> 用户自定义KEY； 默认值： ServerInsert。 |No|
 | **CookieName** | string | （应用型专用）自定义Cookie。当Type取值"UserDefined"时有效且需必填； 限定字符长度：[1-255] |No|
 
 #### HealthCheckConfigSet
@@ -90,7 +90,7 @@ curl 'https://api.ucloud.cn' \
 --data '{
     "Action": "CreateListener",
     "Region": "cn-bj2",
-    "ProjectId": "project-XXXXX",
+    "ProjectId": "org-XXXXX",
     "LoadBalancerId": "alb-XXXXX",
     "Name":    "ListenerName",
     "Remark": "ListenerRemark",
