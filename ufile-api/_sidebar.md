@@ -34,6 +34,7 @@
   * [上传分片-UploadPart](api/ufile-api/upload_part)
   * [完成分片-FinishMultipartUpload](api/ufile-api/finish_multipart_upload)
   * [放弃分片-AbortMultipartUpload](api/ufile-api/abort_multipart_upload)
+  * [拷贝分片-UploadPartCopy](api/ufile-api/upload_part_copy)
   * [获取正在执行的分片上传id-GetMultiUploadId](api/ufile-api/get_multi_upload_id)
   * [文件存储类型转换-ClassSwitch](api/ufile-api/class_switch)
   * [解冻文件-Restore](api/ufile-api/restore)

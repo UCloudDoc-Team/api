@@ -1,3 +1,5 @@
+# 拷贝分片 - UploadPartCopy
+
 ## 简介
 
 通过在UploadPart请求的基础上增加一个请求头 `X-Ufile-Copy-Source` 来调用UploadPartCopy接口，实现从一个已存在的Object中拷贝数据来上传一个Part。
