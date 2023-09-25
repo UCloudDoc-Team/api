@@ -632,7 +632,7 @@
           "img": "icon-product__access-control",
           "sublinks": [
             {
-              "links": "/api/uaccount_sts-api/README",
+              "links": "/api/sts-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
