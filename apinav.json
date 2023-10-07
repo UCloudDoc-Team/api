@@ -301,6 +301,15 @@
         "name": "账单管理 UBill"
       }
     ]
+  },
+  {
+    "listname": "通用人工智能",
+    "listvalue": [
+      {
+        "links": "/api/uai-modelverse-api/README",
+        "name": "模型服务平台 UModelVerse"
+      }
+    ]
   }
 ],
   "hotprods": [
