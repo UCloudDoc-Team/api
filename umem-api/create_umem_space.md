@@ -49,6 +49,7 @@
 | **ClusterMode** | string | 是否是cluster模式（参数为cluster创建redis cluster，其他参数或者不传该参数仍然创建老版本分布式） |No|
 | **Version** | string | 分布式分片版本（默认版本是4.0，其他版本见DescribeUDRedisBlockVersion） |No|
 | **HighPerformance** | boolean | 是否创建性能增强性。默认为false，或者不填，填true为性能增强型。 |No|
+| **ProxySize** | int | 分布式代理CPU核数 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -83,6 +84,7 @@ https://api.ucloud.cn/?Action=CreateUMemSpace
 &ClusterMode=FZTxNVzD
 &Version=WWTSLAYj
 &HighPerformance=false
+&ProxySize=5
 ```
 
 ### 响应示例
