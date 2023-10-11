@@ -14,7 +14,7 @@
     - [创建主备redis - CreateURedisGroup](api/umem-api/create_uredis_group)
     - [查询URedis慢日志 - DescribeURedisSlowlog](api/umem-api/describe_uredis_slowlog)
     - [调整容量 - ResizeURedisGroup](api/umem-api/resize_uredis_group)
-    - [取uredis价格信息 - DescribeURedisPrice](api/umem-api/describe_uredis_price)
+    - [获取URedis价格信息 - DescribeURedisPrice](api/umem-api/describe_uredis_price)
     - [修改名称 - ModifyUMemSpaceName](api/umem-api/modify_umem_space_name)
     - [获取主备Redis备份下载链接 - DescribeURedisBackupURL](api/umem-api/describe_uredis_backup_url)
     - [获取uredis升级价格信息 - DescribeURedisUpgradePrice](api/umem-api/describe_uredis_upgrade_price)
