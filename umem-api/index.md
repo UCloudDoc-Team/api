@@ -19,7 +19,7 @@
 |[CreateURedisGroup](api/umem-api/create_uredis_group)|创建主备redis|
 |[DescribeURedisSlowlog](api/umem-api/describe_uredis_slowlog)|查询URedis慢日志|
 |[ResizeURedisGroup](api/umem-api/resize_uredis_group)|调整容量|
-|[DescribeURedisPrice](api/umem-api/describe_uredis_price)|取uredis价格信息|
+|[DescribeURedisPrice](api/umem-api/describe_uredis_price)|获取URedis价格信息|
 |[ModifyUMemSpaceName](api/umem-api/modify_umem_space_name)|修改名称|
 |[DescribeURedisBackupURL](api/umem-api/describe_uredis_backup_url)|获取主备Redis备份下载链接|
 |[DescribeURedisUpgradePrice](api/umem-api/describe_uredis_upgrade_price)|获取uredis升级价格信息|
