@@ -38,6 +38,9 @@
 | **Type** | string | 空间类型:single(无热备),double(热备)(默认: double) |**Yes**|
 | **ChargeType** | string | Year， Month， Dynamic 如果不指定，则一次性获取三种计费 |No|
 | **Quantity** | int | 购买UMem的时长，默认值为1 |No|
+| **HighPerformance** | boolean | 实例类型是否为性能增强型。默认为false，或者不填，true为性能增强型。 |No|
+| **BlockCnt** | int | umem 分片个数 |No|
+| **ProxySize** | int | umem 代理CPU核心数 |No|
 
 ### 响应字段
 
@@ -70,6 +73,9 @@ https://api.ucloud.cn/?Action=DescribeUMemPrice
 &Size=3
 &Type=single
 &RegionFlag=false
+&HighPerformance=true
+&BlockCnt=4
+&ProxySize=7
 ```
 
 ### 响应示例
