@@ -4,7 +4,7 @@
 - [索引](api/ulb-api/index.md)
 - **API**
     - [添加后端服务节点 - AddTargets](api/ulb-api/add_targets)
-    - [添加后端实例 - AllocateBackend](api/ulb-api/allocate_backend)
+    - [添加传统型负载均衡的后端实例 - AllocateBackend](api/ulb-api/allocate_backend)
     - [绑定SSL证书 - BindSSL](api/ulb-api/bind_ssl)
     - [创建监听器 - CreateListener](api/ulb-api/create_listener)
     - [创建负载均衡实例 - CreateLoadBalancer](api/ulb-api/create_load_balancer)
