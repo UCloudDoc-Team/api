@@ -1,12 +1,12 @@
-# 创建负载均衡 - CreateULB
+# 创建传统型负载均衡负载均衡 - CreateULB
 
 ## 简介
 
-创建负载均衡实例，可以选择内网或者外网
+创建传统型负载均衡负载均衡实例，可以选择内网或者外网
 
 
 
-!> OuterMode 与 InnerMode 同时传 Yes 时，以 OuterMode 为准当传了 InnerMode: Yes 之后，需要传一个 SubnetId 来表示ULB所在子网
+!> OuterMode 与 InnerMode 同时传 Yes 时，以 OuterMode 为准，当传了 InnerMode: Yes 之后，需要传一个 SubnetId 来表示CLB所在子网
 
 
 ## 使用方法
@@ -36,14 +36,14 @@
 | **ULBName** | string | 负载均衡的名字，默认值为“ULB” |No|
 | **Tag** | string | 业务组  |No|
 | **Remark** | string | 备注 |No|
-| **OuterMode** | string | 创建的ULB是否为外网模式，默认即为外网模式 |No|
-| **InnerMode** | string | 创建的ULB是否为内网模式 |No|
+| **OuterMode** | string | 创建的CLB是否为外网模式，默认即为外网模式 |No|
+| **InnerMode** | string | 创建的CLB是否为内网模式 |No|
 | **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费; Dynamic, 按时付费 |No|
-| **VPCId** | string | ULB所在的VPC的ID。 如果不传则使用默认的VPC，若不传且无默认VPC则接口报错 |No|
-| **SubnetId** | string | ULB 所属的子网ID，如果不传则随机选择一个。 |No|
-| **BusinessId** | string | ULB 所属的业务组ID，如果不传则使用默认的业务组 |No|
+| **VPCId** | string | CLB所在的VPC的ID。 如果不传则使用默认的VPC，若不传且无默认VPC则接口报错 |No|
+| **SubnetId** | string | CLB 所属的子网ID，如果不传则随机选择一个。 |No|
+| **BusinessId** | string | CLB 所属的业务组ID，如果不传则使用默认的业务组 |No|
 | **FirewallId** | string | 防火墙ID，如果不传，则默认不绑定防火墙 |No|
-| **ListenType** | string | ULB 监听器类型，外网ULB默认RequestProxy，内网ULB默认PacketsTransmit。枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发。 |No|
+| **ListenType** | string | CLB 监听器类型，外网CLB默认RequestProxy，内网ULB默认PacketsTransmit。枚举值：RequestProxy，请求代理； PacketsTransmit ，报文转发。 |No|
 
 ### 响应字段
 
@@ -52,7 +52,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ULBId** | string | 负载均衡实例的Id |No|
+| **ULBId** | string | 传统型负载均衡实例的Id |No|
 | **IPv6AddressId** | string | IPv6地址Id |No|
 
 

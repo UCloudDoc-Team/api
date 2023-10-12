@@ -1,8 +1,8 @@
-# 创建内容转发策略 - CreatePolicy
+# 传统型负载均衡创建内容转发策略 - CreatePolicy
 
 ## 简介
 
-创建VServer内容转发策略
+传统型负载均衡创建VServer内容转发策略
 
 ?> 指定转发规则优先级目前只支持针对路径规则生效，暂不支持域名规则之前或域名和路径规则之间调整
 
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 需要添加内容转发策略的负载均衡实例ID |**Yes**|
-| **VServerId** | string | 需要添加内容转发策略的VServer实例ID |**Yes**|
-| **BackendId.N** | string | 内容转发策略应用的后端资源实例的ID，来源于 AllocateBackend 返回的 BackendId |**Yes**|
+| **ULBId** | string | 需要添加内容转发策略的传统型负载均衡实例ID |**Yes**|
+| **VServerId** | string | 需要添加内容转发策略的传统型负载均衡VServer实例ID |**Yes**|
+| **BackendId.N** | string | 内容转发策略应用的传统型负载均衡后端资源实例的ID，来源于 AllocateBackend 返回的 BackendId |**Yes**|
 | **Match** | string | 内容转发匹配字段 |**Yes**|
 | **DomainMatchMode** | string | 内容转发规则中域名的匹配方式，默认与原本一致。枚举值：Regular，正则；Wildcard，泛域名 |No|
 | **Type** | string | 内容转发匹配字段的类型 |No|

@@ -1,8 +1,8 @@
-# 更新VServer属性 - UpdateVServerAttribute
+# 更新传统型负载均衡VServer属性 - UpdateVServerAttribute
 
 ## 简介
 
-更新VServer实例属性
+更新传统型负载均衡VServer实例属性
 
 
 
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 负载均衡实例ID |**Yes**|
-| **VServerId** | string | VServer实例ID |**Yes**|
+| **ULBId** | string | 传统型负载均衡实例ID |**Yes**|
+| **VServerId** | string | 传统型负载均衡VServer实例ID |**Yes**|
 | **VServerName** | string | VServer实例名称，若无此字段则不做修改 |No|
 | **Method** | string | VServer负载均衡模式，枚举值：Roundrobin -> 轮询;Source -> 源地址；ConsistentHash -> 一致性哈希；SourcePort -> 源地址（计算端口）；ConsistentHashPort -> 一致性哈希（计算端口）; WeightRoundrobin -> 加权轮询; Leastconn -> 最小连接数；Backup -> 主备模式。<br />ConsistentHash，SourcePort，ConsistentHashPort 只在报文转发中使用；Leastconn只在请求代理中使用；Roundrobin、Source和WeightRoundrobin,Backup在请求代理和报文转发中使用。<br />默认为："Roundrobin" |No|
 | **PersistenceType** | string | VServer会话保持模式，若无此字段则不做修改。枚举值：None：关闭；ServerInsert：自动生成KEY；UserDefined：用户自定义KEY。 |No|
