@@ -5,7 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[AddTargets](api/ulb-api/add_targets)|添加后端服务节点|
-|[AllocateBackend](api/ulb-api/allocate_backend)|添加后端实例|
+|[AllocateBackend](api/ulb-api/allocate_backend)|添加传统型负载均衡的后端实例|
 |[BindSSL](api/ulb-api/bind_ssl)|绑定SSL证书|
 |[CreateListener](api/ulb-api/create_listener)|创建监听器|
 |[CreateLoadBalancer](api/ulb-api/create_load_balancer)|创建负载均衡实例|

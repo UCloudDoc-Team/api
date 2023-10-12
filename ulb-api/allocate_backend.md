@@ -1,8 +1,8 @@
-# 添加后端实例 - AllocateBackend
+# 添加传统型负载均衡的后端实例 - AllocateBackend
 
 ## 简介
 
-添加ULB后端资源实例
+添加CLB后端资源实例
 
 
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 负载均衡实例的ID |**Yes**|
+| **ULBId** | string | 传统型负载均衡实例的ID |**Yes**|
 | **VServerId** | string | VServer实例的ID |**Yes**|
 | **ResourceType** | string | 所添加的后端资源的类型，枚举值：UHost -> 云主机；UNI -> 虚拟网卡；UPM -> 物理云主机；UHybrid->混合云主机；CUBE->Cube， IP->IP类型；默认值为UHost。报文转发模式不支持UHybrid、CUBE、IP |**Yes**|
 | **ResourceId** | string | 所添加的后端资源的资源ID；与ResourceIP二选一必填 |No|
@@ -52,7 +52,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **BackendId** | string | 所添加的后端资源在ULB中的对象ID，（为ULB系统中使用，与资源自身ID无关），可用于 UpdateBackendAttribute/UpdateBackendAttributeBatch/ReleaseBackend |No|
+| **BackendId** | string | 所添加的后端资源在CLB中的对象ID，（为CLB系统中使用，与资源自身ID无关），可用于 UpdateBackendAttribute/UpdateBackendAttributeBatch/ReleaseBackend |No|
 
 
 
