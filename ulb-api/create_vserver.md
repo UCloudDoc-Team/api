@@ -1,8 +1,8 @@
-# 创建VServer - CreateVServer
+# 创建CLB的VServer - CreateVServer
 
 ## 简介
 
-创建VServer实例，定义监听的协议和端口以及负载均衡算法
+创建CLB的VServer实例，定义监听的协议和端口以及负载均衡算法
 
 
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **ULBId** | string | 负载均衡实例ID |**Yes**|
+| **ULBId** | string | 传统型负载均衡实例ID |**Yes**|
 | **VServerName** | string | VServer实例名称，默认为"VServer" |No|
 | **ListenType** | string | 监听器类型，枚举值，RequestProxy ，请求代理；PacketsTransmit ，报文转发。默认为RequestProxy |No|
 | **Protocol** | string | VServer实例的协议，请求代理模式下有 HTTP、HTTPS、TCP，报文转发下有 TCP，UDP。默认为“HTTP" |No|

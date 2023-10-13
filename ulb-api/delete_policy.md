@@ -1,8 +1,8 @@
-# 删除转发策略 - DeletePolicy
+# 删除传统型负载均衡的内容转发策略 - DeletePolicy
 
 ## 简介
 
-删除内容转发策略
+删除传统型负载均衡的内容转发策略
 
 
 
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **PolicyId** | string | 内容转发策略ID |**Yes**|
-| **VServerId** | string | VServer 资源ID |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **PolicyId** | string | CLB的内容转发策略ID |**Yes**|
+| **VServerId** | string | CLB的VServer 资源ID |No|
 
 ### 响应字段
 
