@@ -1,12 +1,12 @@
-# 获取VServer信息 - DescribeVServer
+# 获取CLB下的VServer信息 - DescribeVServer
 
 ## 简介
 
-获取ULB下的VServer的详细信息
+获取CLB下的VServer的详细信息
 
 
 
-!> VServerId 对应 CreateVServer 返回的 VServerId<br />或者 DescribeULB 返回的 ULBVServerSet 中的 VServerId
+!> VServerId 对应 CreateVServer 返回的 VServerId或者 DescribeULB 返回的 ULBVServerSet 中的 VServerId，是传统型负载均衡监听器的Id
 
 
 ## 使用方法
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 负载均衡实例的Id |No|
-| **VServerId** | string | VServer实例的Id；若指定则返回指定的VServer实例的信息； 若不指定则返回当前负载均衡实例下所有VServer的信息 |No|
+| **ULBId** | string | 传统型负载均衡实例的Id |No|
+| **VServerId** | string | CLB下的VServer实例的Id；若指定则返回指定的VServer实例的信息； 若不指定则返回当前传统型负载均衡实例下所有VServer的信息 |No|
 | **Limit** | int | 数据分页值 |No|
 | **Offset** | int | 数据偏移量 |No|
 

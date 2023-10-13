@@ -1,8 +1,8 @@
-# 获取SSL证书信息 - DescribeSSL
+# 获取SSL证书信息 - DescribeSSLV2
 
 ## 简介
 
-获取SSL证书信息，仅能获取SSL证书与传统型负载均衡监听器的绑定关系
+获取SSL证书信息，该接口可以同时获取SSL与传统型和应用型负载均衡监听器的绑定关系
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeSSL)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeSSLV2)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeSSL`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeSSLV2`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -45,12 +45,12 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 满足条件的SSL证书总数 |No|
-| **DataSet** | array[[*ULBSSLSet*](#ULBSSLSet)] | SSL证书详细信息，具体结构见 ULBSSLSet |No|
+| **DataSet** | array[[*SSLInfo*](#SSLInfo)] | SSL证书详细信息，具体结构见SSLInfo |No|
 
 #### 数据模型
 
 
-#### ULBSSLSet
+#### SSLInfo
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
@@ -60,50 +60,55 @@
 | **SSLContent** | string | SSL证书的内容 |No|
 | **CreateTime** | int | SSL证书的创建时间 |No|
 | **HashValue** | string | SSL证书的HASH值 |No|
-| **BindedTargetSet** | array[[*SSLBindedTargetSet*](#SSLBindedTargetSet)] | SSL证书绑定到的对象 |No|
+| **Relations** | array[[*SSLRelation*](#SSLRelation)] | SSL绑定ULB和ALB的关系 |No|
 | **SSLSource** | int | SSL证书来源，SSL证书来源，0代表证书来自于ULB平台，1代表证书来自于USSL平台 |No|
 | **USSLId** | string | USSL证书平台的编号,只有当SSLSource为1时才出现 |No|
 | **Domains** | string | USSL证书平台的域名,只有当SSLSource为1时才出现 |No|
 | **NotBefore** | int | 证书颁发时间,只有当SSLSource为1时才出现 |No|
 | **NotAfter** | int | 证书过期时间,只有当SSLSource为1时才出现 |No|
 
-#### SSLBindedTargetSet
+#### SSLRelation
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **VServerId** | string | SSL证书绑定到的VServer的资源ID |No|
-| **VServerName** | string | 对应的VServer的名字 |No|
-| **ULBId** | string | VServer 所属的ULB实例的资源ID |No|
-| **ULBName** | string | ULB实例的名称 |No|
+| **LoadBalancerId** | string | 负载均衡实例的ID |No|
+| **LoadBalancerName** | string | 负载均衡实例的名称	 |No|
+| **ListenerId** | string | 监听器的ID	 |No|
+| **ListenerName** | string | 监听器的名称 |No|
+| **IsDefault** | boolean | 是否为监听器默认SSL证书 |No|
 
 ## 示例
 
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=DescribeSSL
-&Region=cn-bj2
-&ProjectId=project-XXXXXX
+https://api.ucloud.cn/?Action=DescribeSSLV2
+&Region=MugqZBZG
+&ProjectId=EAolgCLw
+&SSLId=gmehGNgp
+&Limit=5
+&Offset=9
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "DescribeSSLResponse",
-  "DataSet ": [
+  "Action": "DescribeSSLV2Response",
+  "DataSet": [
     {
-      "CreateTime": 1418099063,
-      "HashValue": "1d5da9cf215d7c0e7b41b85af8adac2b",
-      "SSLContent": "-----BEGIN RSA PRIVATE KEY-----\nXXXXXXXXXXXXX\n-----END CERTIFICATE-----",
-      "SSLId": "ssl-XXXXX",
-      "SSLName": "testpem",
-      "SSLType": "Pem",
-      "VServerId": ""
+      "CreateTime": 9,
+      "SSLBindedTargetSet": [
+        "ngLEWbOi"
+      ],
+      "SSLContent": "suFedZgn",
+      "SSLId": "wWpnuBzD",
+      "SSLName": "FLDjCBnm",
+      "SSLType": "iMInfAKH"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 5
 }
 ```
 

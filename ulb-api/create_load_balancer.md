@@ -1,8 +1,8 @@
-# 创建负载均衡实例 - CreateLoadBalancer
+# 创建应用型负载均衡实例 - CreateLoadBalancer
 
 ## 简介
 
-创建一个应用型负载均衡实例或者一个网络型负载均衡实例
+创建一个应用型负载均衡实例
 
 
 

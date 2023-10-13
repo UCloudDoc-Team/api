@@ -1,8 +1,8 @@
-# 获取负载均衡信息 - DescribeULBSimple
+# 获取传统型负载均衡信息 - DescribeULBSimple
 
 ## 简介
 
-获取ULB信息
+获取CLB信息
 
 
 
@@ -35,10 +35,10 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 数据分页值，默认为10000 |No|
-| **ULBId** | string | 负载均衡实例的Id。 若指定则返回指定的负载均衡实例的信息； 若不指定则返回当前数据中心中所有的负载均衡实例的信息 |No|
-| **VPCId** | string | ULB所属的VPC |No|
-| **SubnetId** | string | ULB所属的子网ID |No|
-| **BusinessId** | string | ULB所属的业务组ID |No|
+| **ULBId** | string | 传统型负载均衡实例的Id。 若指定则返回指定的传统型负载均衡实例的信息； 若不指定则返回当前数据中心中所有的传统型负载均衡实例的信息 |No|
+| **VPCId** | string | CLB所属的VPC |No|
+| **SubnetId** | string | CLB所属的子网ID |No|
+| **BusinessId** | string | CLB所属的业务组ID |No|
 
 ### 响应字段
 
@@ -47,8 +47,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TotalCount** | int | 满足条件的ULB总数 |**Yes**|
-| **DataSet** | array[[*ULBSimpleSet*](#ULBSimpleSet)] | ULB列表，每项参数详见 ULBSimpleSet |**Yes**|
+| **TotalCount** | int | 满足条件的CLB总数 |**Yes**|
+| **DataSet** | array[[*ULBSimpleSet*](#ULBSimpleSet)] | CLB列表，每项参数详见 ULBSimpleSet |**Yes**|
 
 #### 数据模型
 

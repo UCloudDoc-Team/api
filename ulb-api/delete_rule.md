@@ -1,4 +1,4 @@
-# 删除转发规则 - DeleteRule
+# 删除应用型负载均衡的转发规则 - DeleteRule
 
 ## 简介
 
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
-| **RuleId** | string | 转发规则的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例的ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
+| **RuleId** | string | 应用型负载均衡的转发规则的ID |**Yes**|
 
 ### 响应字段
 
