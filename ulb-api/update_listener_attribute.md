@@ -1,8 +1,8 @@
-# 更新监听器属性 - UpdateListenerAttribute
+# 更新应用型负载均衡监听器属性 - UpdateListenerAttribute
 
 ## 简介
 
-更新一个应用型负载均衡监听器或者一个网络型负载均衡监听器的属性
+更新一个应用型负载均衡监听器的属性
 
 
 
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
 | **Name** | string | 监听器的名称。限定字符长度：[1-255]； 限定特殊字符，仅支持：“-”，“_”，“.”； 不传该参数则默认不修改 |No|
 | **Remark** | string | 监听器的备注信息。限定字符长度：[0-255]； 不传该参数则默认不修改 |No|
 | **Certificates** | array[string] | （应用型专用）服务器默认证书ID。仅HTTPS监听支持； 暂时只支持最大长度为1； 不传该参数则默认不修改 |No|

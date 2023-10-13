@@ -1,8 +1,8 @@
-# 更新后端服务节点属性 - UpdateTargetsAttribute
+# 更新应用型负载均衡的后端服务节点属性 - UpdateTargetsAttribute
 
 ## 简介
 
-更新监听器后端服务节点的属性
+更新应用型负载均衡监听器后端服务节点的属性
 
 
 
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
-| **Targets** | array[[*TargetUpdate*](#TargetUpdate)] | 要添加的服务节点信息。数组长度至少为1； 不超过20个。具体结构详见 TargetUpdate |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
+| **Targets** | array[[*TargetUpdate*](#TargetUpdate)] | 要添加的应用型负载均衡服务节点信息。数组长度至少为1； 不超过20个。具体结构详见 TargetUpdate |**Yes**|
 
 #### 数据模型
 
