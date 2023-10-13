@@ -1,4 +1,4 @@
-# 更新转发规则属性 - UpdateRuleAttribute
+# 更新应用型负载均衡的转发规则属性 - UpdateRuleAttribute
 
 ## 简介
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例的ID |**Yes**|
 | **ListenerId** | string | 监听器的ID |**Yes**|
 | **RuleId** | string | 转发规则的ID |**Yes**|
 | **RuleConditions** | array[[*RuleCondition*](#RuleCondition)] | 转发规则匹配条件。数组长度至少为1，目前最多支持一个域名和一个路径类型的 RuleCondition，即数组长度最多为2且不同类型； 默认转发规则不可更改此项； 不传该参数则不做更改，传则该参数为粒度更新规则（数组内未传项则按默认值进行修改）。 具体结构见下方 RuleCondition |No|

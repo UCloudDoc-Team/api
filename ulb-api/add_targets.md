@@ -1,8 +1,8 @@
-# 添加后端服务节点 - AddTargets
+# 添加应用型负载均衡的后端服务节点 - AddTargets
 
 ## 简介
 
-给监听器添加后端服务节点
+给应用型负载均衡监听器添加后端服务节点
 
 
 
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
-| **Targets** | array[[*TargetConfig*](#TargetConfig)] | 要添加的服务节点信息。数组长度至少为1； 不超过20个。具体结构见下方 TargetConfig |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡的监听器ID |**Yes**|
+| **Targets** | array[[*TargetConfig*](#TargetConfig)] | 应用型负载均衡要添加的服务节点信息。数组长度至少为1； 不超过20个。具体结构见下方 TargetConfig |**Yes**|
 
 #### 数据模型
 
@@ -61,7 +61,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Targets** | array[[*TargetSet*](#TargetSet)] | 监听器的ID。具体结构见下方 TargetSet |No|
+| **Targets** | array[[*TargetSet*](#TargetSet)] | 应用型负载均衡监听器的ID。具体结构见下方 TargetSet |No|
 
 #### 数据模型
 
@@ -79,7 +79,7 @@
 | **Weight** | int | 服务节点的权重。限定取值：[1-100]； 仅在加权轮询算法时有效； 默认值：1 |No|
 | **Enabled** | bool | 服务节点是否启用。 默认值：true |No|
 | **IsBackup** | bool | 服务节点是否为备节点。 默认值：false |No|
-| **Id** | string | 服务节点的标识ID。 |No|
+| **Id** | string | 服务节点的标识ID（为ALB系统中使用）， 可用于UUpdateTargetsAttribute/RemoveTargets/CreateRule/UpdateRuleAttribute。 |No|
 | **State** | string | 服务节点的健康检查状态。限定枚举值：Healthy -> 健康，Unhealthy -> 不健康 |No|
 
 
@@ -159,8 +159,4 @@ curl 'https://api.ucloud.cn' \
     ]
 }
 ```
-
-
-
-
 

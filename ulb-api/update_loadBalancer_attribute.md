@@ -1,8 +1,8 @@
-# 更新负载均衡实例属性 - UpdateLoadBalancerAttribute
+# 更新应用型负载均衡实例属性 - UpdateLoadBalancerAttribute
 
 ## 简介
 
-更新一个应用型负载均衡实例或者一个网络型负载均衡实例的属性
+更新一个应用型负载均衡实例的属性
 
 
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例的ID |**Yes**|
 | **Name** | string | 名字，不传该参数则默认不修改 |No|
 | **Tag** | string | 负载均衡实例所属的业务组ID，不传该参数则默认不修改； 传空则为Default业务组 |No|
 | **Remark** | string | 负载均衡实例的备注信息，不传该参数则默认不修改，限定字符长度：[0-255] |No|

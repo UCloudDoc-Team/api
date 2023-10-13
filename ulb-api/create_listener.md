@@ -1,8 +1,8 @@
-# 创建监听器 - CreateListener
+# 创建应用型负载均衡监听器 - CreateListener
 
 ## 简介
 
-创建一个应用型负载均衡监听器或者一个网络型负载均衡监听器
+创建一个应用型负载均衡的监听器
 
 
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
 | **Name** | string | 监听器的名称。限定字符长度：[1-255]； 限定特殊字符，仅支持：“-”，“_”，“.”； 默认值：listener |No|
 | **Remark** | string | 监听器的备注信息。限定字符长度：[0-255] |No|
 | **ListenerPort** | int | 监听器的监听端口。应用型限定取值：[1-65535]； 默认值：80 |No|

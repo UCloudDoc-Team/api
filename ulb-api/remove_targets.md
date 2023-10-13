@@ -1,8 +1,8 @@
-# 删除后端服务节点 - RemoveTargets
+# 删除应用型负载均衡的后端服务节点 - RemoveTargets
 
 ## 简介
 
-从监听器删除后端服务节点
+从应用型负载均衡监听器删除后端服务节点
 
 
 
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
 | **ListenerId** | string | 监听器的ID |**Yes**|
-| **Ids** | array[string] |服务节点的标识ID。 不超过20个； 不允许为空 |**Yes**|
+| **Ids** | array[string] |应用型负载均衡服务节点的标识ID。 不超过20个； 不允许为空 |**Yes**|
 
 ### 响应字段
 
