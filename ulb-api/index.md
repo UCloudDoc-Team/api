@@ -35,6 +35,7 @@
 |[UnBindSecurityPolicy](api/ulb-api/un_bind_security_policy)|解绑安全策略|
 |[UnbindSSL](api/ulb-api/unbind_ssl)|传统型负载均衡解绑SSL证书|
 |[UpdateBackendAttribute](api/ulb-api/update_backend_attribute)|更新传统型负载均衡的后端实例属性|
+|[UpdateBackendBatch](api/ulb-api/update_backend_batch)|批量更新后端实例属性|
 |[UpdateListenerAttribute](api/ulb-api/update_listener_attribute)|更新监听器属性|
 |[UpdateLoadBalancerAttribute](api/ulb-api/update_load_balancer_attribute)|更新负载均衡实例属性|
 |[UpdatePolicy](api/ulb-api/update_policy)|更新传统型负载均衡内容转发规则|
