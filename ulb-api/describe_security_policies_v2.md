@@ -1,8 +1,8 @@
-# 获取安全策略的信息 - DescribeSecurityPolicies
+# 获取安全策略的信息 - DescribeSecurityPoliciesV2
 
 ## 简介
 
-获取安全策略的信息，绑定关系仅能获取安全策略与传统型负载均衡监听器的绑定关系
+获取安全策略的信息，可以同时获取安全策略与传统型和应用性负载均衡监听器的绑定关系
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeSecurityPolicies)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeSecurityPoliciesV2)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeSecurityPolicies`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeSecurityPoliciesV2`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -44,71 +44,71 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **DataSet** | array[[*SecurityPolicy*](#SecurityPolicy)] | 	<br />安全策略列表，每项参数详见SecurityPolicy |No|
+| **DataSet** | array[[*SecurityPolicyInfo*](#SecurityPolicyInfo)] | 	安全策略列表，每项参数详见SecurityPolicyInfo |No|
 | **TotalCount** | int | 满足条件的安全策略总数 |No|
 
 #### 数据模型
 
 
-#### SecurityPolicy
+#### SecurityPolicyInfo
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **SecurityPolicyId** | string | 安全策略ID |**Yes**|
-| **SecurityPolicyName** | string | 安全策略名称 |**Yes**|
-| **TLSVersion** | string | TLS最低版本 |**Yes**|
-| **SSLCiphers** | array[string] | 加密套件 |**Yes**|
-| **SecurityPolicyType** | int | 安全策略类型 0：预定义 1：自定义 |**Yes**|
-| **VServerSet** | array[[*BindVServerInfo*](#BindVServerInfo)] | 关联的监听 |**Yes**|
+| **SecurityPolicyId** | string | 安全策略ID |No|
+| **SecurityPolicyName** | string | 安全策略名称 |No|
+| **TLSVersion** | string | TLS最低版本 |No|
+| **SSLCiphers** | array[string] | 加密套件 |No|
+| **SecurityPolicyType** | int | 安全策略类型 0：预定义 1：自定义 |No|
+| **Relations** | array[[*SecurityPolicyRelation*](#SecurityPolicyRelation)] | 关联的监听 |No|
 
-#### BindVServerInfo
+#### SecurityPolicyRelation
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **VServerId** | string | 绑定的VServerId |**Yes**|
-| **VServerName** | string | 绑定的VServer名称 |**Yes**|
-| **Port** | int | VServer端口 |**Yes**|
-| **ULBId** | string | ULB的ID |**Yes**|
+| **LoadBalancerId** | string | 负载均衡实例的ID |No|
+| **ListenerId** | string | 监听器的ID |No|
+| **ListenerName** | string | 监听器的名称	 |No|
+| **ListenerPort** | int | 监听端口 |No|
 
 ## 示例
 
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=DescribeSecurityPolicies
-&Region=cn-bj2
-&ProjectId=project-XXXXX
-&SecurityPolicyId=security-XXXXX
-&Limit=2
-&Offset=8
+https://api.ucloud.cn/?Action=DescribeSecurityPoliciesV2
+&Region=cn-zj
+&ProjectId=NadrKrEQ
+&SecurityPolicyId=mBHSWzVg
+&Limit=1
+&Offset=6
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "DescribeSecurityPoliciesResponse",
+  "Action": "DescribeSecurityPoliciesV2Response",
   "DataSet": [
     {
       "SSLCiphers": [
-        "ECDHE-ECDSA-AES128-SHA256"
+        "RQnVrFsU"
       ],
-      "SecurityPolicyId": "security-XXXXX",
-      "SecurityPolicyName": "new-security",
+      "SecurityPolicyId": "ZYQSwjis",
+      "SecurityPolicyName": "yhoxriGI",
       "SecurityPolicyType": 1,
-      "TLSVersion": "TLSv1.2",
+      "TLSVersion": "hjBjlvYd",
       "VServerSet": [
         {
-          "Port": 443,
-          "ULBId": "ulb-XXXXX",
-          "VServerId": "vserver-XXXXX",
-          "VServerName": "443"
+          "Port": 6,
+          "ULBId": "UhNxiXbM",
+          "VServerId": "VuGFmING",
+          "VServerName": "vBKoaTLx"
         }
       ]
     }
   ],
   "RetCode": 0,
-  "TotalCount": 1
+  "TotalCount": 3
 }
 ```
 

@@ -1,8 +1,8 @@
-# 解绑SSL证书 - UnbindSSL
+# 传统型负载均衡解绑SSL证书 - UnbindSSL
 
 ## 简介
 
-从VServer解绑SSL证书
+从CLB下的VServer解绑SSL证书
 
 
 
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 所绑定ULB实例ID |**Yes**|
-| **VServerId** | string | 所绑定VServer实例ID |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **ULBId** | string | 所绑定CLB实例ID |**Yes**|
+| **VServerId** | string | CLB所绑定VServer实例ID |**Yes**|
 | **SSLId** | string | SSL证书的Id |**Yes**|
 
 ### 响应字段
@@ -55,10 +55,10 @@
 ```
 https://api.ucloud.cn/?Action=UnbindSSL
 &Region=cn-bj2
-&ProjectId=project-xs13ik
-&SSLId=ssl-kskl39s
-&ULBId=ulb-kix4tp
-&VServerId=vserver-9b646b
+&ProjectId=project-XXXX
+&SSLId=ssl-XXXX
+&ULBId=ulb-XXXX
+&VServerId=vserver-XXXX
 ```
 
 ### 响应示例

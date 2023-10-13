@@ -1,8 +1,8 @@
-# 删除监听器 - DeleteListener
+# 删除应用型负载均衡监听器 - DeleteListener
 
 ## 简介
 
-删除一个应用型负载均衡监听器或者一个网络型负载均衡监听器
+删除一个应用型负载均衡监听器
 
 
 
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例的ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
 | **RelatedRedirectDisabled** | boolean | 是否关闭相关监听器的重定向功能。默认为false，即有其他监听器重定向到本监听器，则删除失败。为true时，会先关闭相关监听器的重定向功能，再删除本监听器。默认值为：false |**Yes**|
 
 ### 响应字段

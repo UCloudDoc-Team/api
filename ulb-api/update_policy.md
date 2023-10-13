@@ -1,8 +1,8 @@
-# 更新内容转发规则 - UpdatePolicy
+# 更新传统型负载均衡内容转发规则 - UpdatePolicy
 
 ## 简介
 
-更新内容转发规则，包括转发规则后的服务节点
+更新传统型负载均衡内容转发规则，包括转发规则后的服务节点
 
 ?> 指定转发规则优先级目前只支持针对路径规则生效，暂不支持域名规则之前或域名和路径规则之间调整
 
@@ -33,13 +33,13 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 需要添加内容转发策略的负载均衡实例ID |**Yes**|
-| **VServerId** | string | 需要添加内容转发策略的VServer实例ID，只支持请求代理模式下，HTTP或HTTPS协议的VServer |**Yes**|
+| **ULBId** | string | 需要添加内容转发策略的传统型负载均衡实例ID |**Yes**|
+| **VServerId** | string | 需要添加内容转发策略的VServer实例ID，只支持请求代理模式下，HTTP或HTTPS协议的CLB下的VServer |**Yes**|
 | **Match** | string | 内容转发匹配字段 |**Yes**|
 | **PolicyPriority** | int | 策略优先级，1-9999；只针对路径规则生效 |No|
 | **DomainMatchMode** | string | 内容转发规则中域名的匹配方式，默认与原本一致。枚举值：Regular，正则；Wildcard，泛域名	 |No|
-| **PolicyId** | string | 转发规则的ID，当Type为Default时，可以不传或为空 |No|
-| **BackendId.N** | string | 内容转发策略应用的后端资源实例的ID，来源于 AllocateBackend 返回的 BackendId，不传表示更新转发节点为空 |No|
+| **PolicyId** | string | 传统型负载均衡转发规则的ID，当Type为Default时，可以不传或为空 |No|
+| **BackendId.N** | string | 内容转发策略应用的后端资源实例的ID（CLB的后端节点Id），来源于 AllocateBackend 返回的 BackendId，不传表示更新转发节点为空 |No|
 | **Type** | string | 内容转发匹配字段的类型，枚举值：Domain -> 域名转发规则；Path -> 路径转发规则；Default -> 默认转发规则，不传默认值Domain |No|
 
 ### 响应字段

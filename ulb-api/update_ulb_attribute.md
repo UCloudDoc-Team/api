@@ -1,8 +1,8 @@
-# 更新负载均衡属性 - UpdateULBAttribute
+# 更新传统型负载均衡属性 - UpdateULBAttribute
 
 ## 简介
 
-更新ULB名字业务组备注等属性字段
+更新CLB名字业务组备注等属性字段
 
 
 
@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | ULB资源ID |**Yes**|
+| **ULBId** | string | CLB资源ID |**Yes**|
 | **Name** | string | 名字，不传则默认不修改 |No|
 | **Tag** | string | 业务，不传则默认不修改 |No|
 | **Remark** | string | 备注，不传则默认不修改 |No|

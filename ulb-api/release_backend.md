@@ -1,12 +1,12 @@
-# 释放后端实例 - ReleaseBackend
+# 释放传统型负载均衡的后端实例 - ReleaseBackend
 
 ## 简介
 
-从VServer释放后端资源实例
+从CLB的VServer释放后端资源实例
 
 
 
-!> VServer 为7层时，必须先把后端实例从转发规则中移除之后才能释放<br /><br />BackendId 对应是 AllocateBackend 返回的 BackendId <br />或者 DescribeULB/DescribeVServer 返回的 ULBBackendSet 里的 BackendId
+!> VServer 为7层时，必须先把后端实例从转发规则中移除之后才能释放，BackendId 对应是 AllocateBackend 返回的 BackendId 或者 DescribeULB/DescribeVServer 返回的 ULBBackendSet 里的 BackendId，是传统型负载均衡服务节点Id
 
 
 ## 使用方法
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
-| **ULBId** | string | 负载均衡实例的ID |**Yes**|
-| **BackendId** | string | 后端资源实例的ID(ULB后端ID，非资源自身ID) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **ULBId** | string | 传统型负载均衡实例的ID |**Yes**|
+| **BackendId** | string | 后端资源实例的ID(CLB后端ID，非资源自身ID) |**Yes**|
 
 ### 响应字段
 
