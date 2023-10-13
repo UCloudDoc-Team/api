@@ -51,8 +51,16 @@
         "name": "基础网络 UNet"
       },
       {
-        "links": "/api/ulb-api/README",
-        "name": "负载均衡 ULB"
+        "links": "/api/ulb-api/index?id=alb",
+        "name": "负载均衡 ULB ALB"
+      },
+      {
+        "links": "/api/ulb-api/index?id=clb",
+        "name": "负载均衡 ULB CLB"
+      },
+      {
+        "links": "/api/ulb-api/index?id=公共 api",
+        "name": "负载均衡 ULB 公共 API"
       },
       {
         "links": "/api/vpc2.0-api/README",
