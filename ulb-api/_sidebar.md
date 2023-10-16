@@ -1,7 +1,6 @@
 <div class="sidebar_title icon__ulb">负载均衡 ULB</div>
 
 - [概览](api/ulb-api/README.md)
-- [索引](api/ulb-api/index.md)
 - **ALB**
     - [创建应用型负载均衡实例 - CreateLoadBalancer](api/ulb-api/create_load_balancer)
     - [创建监听器 - CreateListener](api/ulb-api/create_listener)
