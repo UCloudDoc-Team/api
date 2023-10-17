@@ -1,4 +1,4 @@
-# 更新转发规则属性 - UpdateRuleAttribute
+# 更新应用型负载均衡的转发规则属性 - UpdateRuleAttribute
 
 ## 简介
 

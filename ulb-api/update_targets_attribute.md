@@ -1,8 +1,8 @@
-# 更新后端服务节点属性 - UpdateTargetsAttribute
+# 更新应用型负载均衡的后端服务节点属性 - UpdateTargetsAttribute
 
 ## 简介
 
-更新监听器后端服务节点的属性
+更新应用型负载均衡监听器后端服务节点的属性
 
 
 

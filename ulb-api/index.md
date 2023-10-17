@@ -5,16 +5,16 @@
 | API | 描述信息 |
 |:---|:---|
 |[CreateLoadBalancer](api/ulb-api/create_load_balancer)|创建应用型负载均衡实例|
-|[CreateListener](api/ulb-api/create_listener)|创建监听器|
-|[AddTargets](api/ulb-api/add_targets)|添加后端服务节点|
+|[CreateListener](api/ulb-api/create_listener)|创建应用型负载均衡监听器|
+|[AddTargets](api/ulb-api/add_targets)|添加应用型负载均衡的后端服务节点|
 |[DeleteLoadBalancer](api/ulb-api/delete_load_balancer)|删除应用型负载均衡实例|
 |[DeleteListener](api/ulb-api/delete_listener)|删除应用型负载均衡监听器|
-|[RemoveTargets](api/ulb-api/remove_targets)|删除后端服务节点|
+|[RemoveTargets](api/ulb-api/remove_targets)|删除应用型负载均衡的后端服务节点|
 |[DeleteRule](api/ulb-api/delete_rule)|删除应用型负载均衡的转发规则|
-|[UpdateLoadBalancerAttribute](api/ulb-api/update_load_balancer_attribute)|更新负载均衡实例属性|
-|[UpdateListenerAttribute](api/ulb-api/update_listener_attribute)|更新监听器属性|
-|[UpdateTargetsAttribute](api/ulb-api/update_targets_attribute)|更新后端服务节点属性|
-|[UpdateRuleAttribute](api/ulb-api/update_rule_attribute)|更新转发规则属性|
+|[UpdateLoadBalancerAttribute](api/ulb-api/update_load_balancer_attribute)|更新应用型负载均衡实例属性|
+|[UpdateListenerAttribute](api/ulb-api/update_listener_attribute)|更新应用型负载均衡监听器属性|
+|[UpdateTargetsAttribute](api/ulb-api/update_targets_attribute)|更新应用型负载均衡的后端服务节点属性|
+|[UpdateRuleAttribute](api/ulb-api/update_rule_attribute)|更新应用型负载均衡的转发规则属性|
 
 ## CLB
 

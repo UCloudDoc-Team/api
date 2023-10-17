@@ -1,8 +1,8 @@
-# 更新负载均衡实例属性 - UpdateLoadBalancerAttribute
+# 更新应用型负载均衡实例属性 - UpdateLoadBalancerAttribute
 
 ## 简介
 
-更新一个应用型负载均衡实例或者一个网络型负载均衡实例的属性
+更新一个应用型负载均衡实例的属性
 
 
 

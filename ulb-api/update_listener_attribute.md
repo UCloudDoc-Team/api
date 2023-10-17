@@ -1,8 +1,8 @@
-# 更新监听器属性 - UpdateListenerAttribute
+# 更新应用型负载均衡监听器属性 - UpdateListenerAttribute
 
 ## 简介
 
-更新一个应用型负载均衡监听器或者一个网络型负载均衡监听器的属性
+更新一个应用型负载均衡监听器的属性
 
 
 
