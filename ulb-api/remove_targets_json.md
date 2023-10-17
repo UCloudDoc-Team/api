@@ -1,12 +1,12 @@
-# 删除后端服务节点 - RemoveTargets
+# 删除应用型负载均衡的后端服务节点 - RemoveTargets
 
 ## 简介
 
-从监听器删除后端服务节点
+从应用型负载均衡监听器删除后端服务节点
 
 
 
-
+!> 删除Target在Target不存在或不合法的情况下，不报错；删除Target需校验lb和listener的合法性
 
 
 ## 使用方法
@@ -33,9 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
 | **ListenerId** | string | 监听器的ID |**Yes**|
-| **Ids.N** | string | 服务节点的标识ID。不超过20个； |**Yes**|
+| **Ids** | array[string] |应用型负载均衡服务节点的标识ID。 不超过20个； 不允许为空 |**Yes**|
 
 ### 响应字段
 
@@ -52,22 +52,27 @@
 
 ### 请求示例
     
-```
-https://api.ucloud.cn/?Action=RemoveTargets
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=UxHteoSC
-&LoadBalancerId=qcoRdSnw
-&ListenerId=RNXxWMjs
-&Ids.n=kNDKzfCK
+```json
+curl 'https://api.ucloud.cn' \
+--header 'Content-Type: application/json' \
+--data '{
+    "Action": "RemoveTargets",
+    "Region": "cn-bj2",
+    "ProjectId": "org-XXXXX",
+    "LoadBalancerId": "alb-XXXXX",
+    "ListenerId": "als-XXXXX",
+    "Ids": [
+        "ars-XXXXX"
+    ]
+}'
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "RemoveTargetsResponse",
-  "RetCode": 0
+    "Action": "RemoveTargetsResponse",
+    "RetCode": 0,
 }
 ```
 

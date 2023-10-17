@@ -1,8 +1,8 @@
-# 更新后端服务节点属性 - UpdateTargetsAttribute
+# 更新应用型负载均衡的后端服务节点属性 - UpdateTargetsAttribute
 
 ## 简介
 
-更新监听器后端服务节点的属性
+更新应用型负载均衡监听器后端服务节点的属性
 
 
 
@@ -33,12 +33,21 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
-| **Targets.N.Id** | string | 服务节点的标识ID。限定枚举值："UHost" / "UNI"/"UPM"/"IP"；要更新的Targets数组长度至少为1，不超过20个 |No|
-| **Targets.N.Weight** | int | 服务节点的权重。限定取值：[1-100]，默认值1；仅在加权轮询算法时有效；要更新的Targets数组长度至少为1，不超过20个 |No|
-| **Targets.N.Enabled** | boolean | 服务节点是否启用。默认值true；要更新的Targets数组长度至少为1，不超过20个 |No|
-| **Targets.N.IsBackup** | boolean | 服务节点是否为备节点。默认值false；要更新的Targets数组长度至少为1，不超过20个 |No|
+| **LoadBalancerId** | string | 应用型负载均衡实例ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
+| **Targets** | array[[*TargetUpdate*](#TargetUpdate)] | 要添加的应用型负载均衡服务节点信息。数组长度至少为1； 不超过20个。具体结构详见 TargetUpdate |**Yes**|
+
+#### 数据模型
+
+
+#### TargetUpdate
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Weight** | int | 服务节点的权重。限定取值：[1-100]； 仅在加权轮询算法时有效；不传该参数则默认不修改 |No|
+| **Enabled** | bool | 服务节点是否启用。不传该参数则默认不修改 |No|
+| **IsBackup** | bool | 服务节点是否为备节点。不传该参数则默认不修改； 只有该target所属的listener时主备算法才允许修改主备属性 |No|
+| **Id** | string | 服务节点的标识ID。 |No|
 
 ### 响应字段
 
@@ -55,16 +64,26 @@
 
 ### 请求示例
     
-```
-https://api.ucloud.cn/?Action=UpdateTargetsAttribute
-&Region=cn-zj
-&ProjectId=atxiqBNn
-&LoadBalancerId=fixtpRiU
-&ListenerId=ERzAPtnL
-&Targets.n.Id=TTwZsppm
-&Targets.n.Weight=8
-&Targets.n.Enabled=true
-&Targets.n.IsBackup=true
+```json
+curl 'https://api.ucloud.cn' \
+--header 'Content-Type: application/json' \
+--data '{
+    "Action": "UpdateTargetsAttribute",
+    "Region": "cn-bj2",
+    "ProjectId": "org-XXXXX",
+    "LoadBalancerId": "alb-XXXXX",
+    "ListenerId": "als-XXXXX",
+    "Targets": [
+        {
+            "ResourceType": "IP",
+            "VPCId": "uvnet-XXXXX",
+            "Id": "ars-XXXXX",
+            "Weight": 5,
+            "Enabled": false,
+            "IsBackup": true
+        }
+    ]
+}'
 ```
 
 ### 响应示例
