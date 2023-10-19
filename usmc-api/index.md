@@ -10,6 +10,7 @@
 |[DeleteUSMCPlan](api/usmc-api/delete_usmc_plan)|删除USMC迁移计划|
 |[DeleteUSMCTask](api/usmc-api/delete_usmc_task)|删除USMC任务|
 |[GetUSMCTaskStatus](api/usmc-api/get_usmc_task_status)|查看任务状态|
+|[ListUSMCAgent](api/usmc-api/list_usmc_agent)|获取当前用户 Agent 列表|
 |[ListUSMCPlan](api/usmc-api/list_usmc_plan)|获取USMC迁移计划|
 |[ListUSMCTask](api/usmc-api/list_usmc_task)|获取USMC任务列表|
 |[StartUSMCTask](api/usmc-api/start_usmc_task)|启动USMC任务|
