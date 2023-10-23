@@ -36,4 +36,5 @@
     - [获取直播加速带宽 - GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)
     - [获取直播域名下的日志 - GetUliveDomainLog](api/ulive-api/get_ulive_domain_log)
     - [按省份运营商获取域名带宽数据 - GetUliveProIspBandwidth](api/ulive-api/get_ulive_pro_isp_bandwidth)
+    - [配置黑白名单 - SetULiveLinkControlList](api/ulive-api/set_u_live_link_control_list)
     - [对一个直播流实施解禁 - UnforbidLiveStream](api/ulive-api/unforbid_live_stream)
