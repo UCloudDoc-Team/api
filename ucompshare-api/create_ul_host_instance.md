@@ -38,6 +38,9 @@
 | **Name** | string | 轻量应用主机名称。默认：套餐ID。请遵照[字段规范](api/uhost-api/specification)设定实例名称。 |No|
 | **ChargeType** | string | 计费模式。枚举值： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；默认：Month |No|
 | **Quantity** | int | 购买时长。默认：1。不支持购买到月末 |No|
+| **VPCId** | string | VPC ID。默认为当前地域的默认VPC。 |No|
+| **SubnetId** | string | 子网 ID。默认为当前地域的默认子网。 |No|
+| **SecurityGroupId** | string | 防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](api/unet-api/describe_firewall.html)。 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -73,6 +76,9 @@ https://api.ucloud.cn/?Action=CreateULHostInstance
 &BillActivityId=8
 &BillActivityRuleId=6
 &Name=dtIbqVbo
+&VPCId=rWsGXPTF
+&SubnetId=MZdVRtph
+&SecurityGroupId=CsyANPJL
 ```
 
 ### 响应示例
