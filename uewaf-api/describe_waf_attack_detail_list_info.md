@@ -30,9 +30,9 @@
 | **Offset** | int | 页面偏移 |**Yes**|
 | **Limit** | int | 每页数量限制 |**Yes**|
 | **TimeType** | string | 时间单位；可选项：Hour\|Day\|Week\|Month\|Custom；默认Hour |No|
-| **AttackType** | string | 攻击类型["scan", "loopholes", "xss", "cc", "sql", "exec", "webshell", "infoleak", "eaa", "protocol", "other"] |No|
-| **RiskRank** | string | 风险级别 |No|
-| **ActionType** | string | 匹配动作，拦截、放行、告警 |No|
+| **AttackType.N** | string | 攻击类型["scan", "loopholes", "xss", "cc", "sql", "exec", "webshell", "infoleak", "eaa", "protocol", "other"] |No|
+| **RiskRank.N** | string | 风险级别 |No|
+| **ActionType.N** | string | 匹配动作，拦截、放行、告警 |No|
 | **BeginTime** | int | 自定义开始时间戳 |No|
 | **EndTime** | int | 自定义结束时间戳 |No|
 | **FullDomain** | string | 要查询的域名，为空时查询所有 |No|

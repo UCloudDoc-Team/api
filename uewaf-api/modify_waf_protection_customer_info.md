@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **RuleSetID** | int | 规则ID |**Yes**|
 | **RuleName** | string | 规则名称 |**Yes**|
 | **RiskRank** | string | 规则风险等级 |**Yes**|
@@ -34,7 +34,7 @@
 | **RuleNum** | int | 规则匹配条件个数 |**Yes**|
 | **RiskType** | string | 风险种类，scan,loopholes,xss,cc,sql,exec,webshell,infoleak,eaa,protocol,other |**Yes**|
 | **FullDomain** | string | 域名， 域名与域名ID 必须选填一项 |**Yes**|
-| **Rule** | string | 规则匹配条件 |No|
+| **Rule.N** | string | 规则匹配条件 |No|
 
 ### 响应字段
 
@@ -62,6 +62,7 @@ https://api.ucloud.cn/?Action=ModifyWafProtectionCustomerInfo
 &RuleNum=1
 &Rule.0=Field:SrcIp,Operator:Contain,Content:2.2.2.3
 &RiskType=scan
+&Location=ymHsDEzr
 ```
 
 ### 响应示例
