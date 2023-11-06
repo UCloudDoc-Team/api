@@ -38,6 +38,7 @@
 | **HTTPBack** | string | 是否使用HTTPS卸载，YES/NO |No|
 | **SourceIndicate** | string | 流量标记，格式为key:value |No|
 | **Http2** | string | 是否开启HTTP2， YES开启，其他关闭 |No|
+| **SrcLBMode** | string | 源站负载策略，默认为轮询RR，可填：IpHash、RR |No|
 
 ### 响应字段
 
@@ -67,6 +68,7 @@ https://api.ucloud.cn/?Action=AddWafDomainHostInfo
 &HTTPBack=jQqKWgcf
 &SourceIndicate=VyxSQeOP
 &HTTP2=pUmPZWTR
+&SrcLBMode=sPEOjSVl
 ```
 
 ### 响应示例

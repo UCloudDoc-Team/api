@@ -31,7 +31,7 @@
 | **Limit** | int | 每页数量限制(等效page size) |**Yes**|
 | **Offset** | int | 页面偏移(等效page number) |**Yes**|
 | **Filter** | string | 想要查找的IP、网段或者IP段，传递数组（CIDRS） |No|
-| **Sort** | string | 排序参数，支持"ExpireTime", "-ExpireTime", "CreateTime", "-CreateTime" |No|
+| **Sort.N** | string | 排序参数，支持"ExpireTime", "-ExpireTime", "CreateTime", "-CreateTime" |No|
 
 ### 响应字段
 
