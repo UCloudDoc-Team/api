@@ -4,7 +4,13 @@
 
 调用Copy接口拷贝同一地域下相同或不同存储空间（Bucket）之间的文件（Object）。
 
-# 定义
+### 使用限制
+* Object大小限制
+    * 建议通过Copy拷贝小于 100MB 的Object。当您需要拷贝大于 100MB 的Object时，需使用[UploadPartCopy](https://docs.ucloud.cn/api/ufile-api/upload_part_copy)接口。
+* 权限说明
+    * 使用Copy或UploadPartCopy接口均要求对源Object有读权限。
+
+## 定义
 
 ### 句法（Syntax）:
 
