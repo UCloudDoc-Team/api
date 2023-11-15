@@ -74,6 +74,9 @@
 | **TotalDuration** | int | 估算总耗时间（单位秒） |No|
 | **CurDuration** | int | 已耗时间（单位秒） |No|
 | **Percentage** | float | 完成进度 |No|
+| **RedisOffsetSize** | int | Redis偏移量 |No|
+| **RedisDelayTime** | int | Redis延迟时间  单位为秒   |No|
+| **MongoDelayTime** | int | Mongo延迟时间，单位为秒  |No|
 
 ## 示例
 
