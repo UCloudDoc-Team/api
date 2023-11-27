@@ -9,7 +9,12 @@
 
 
 
+## 使用方法
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=CreateUGN)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
@@ -27,9 +32,9 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **Name** | string | 云联网名称，如果没有传入，默认值为“UGN” |No|
-| **Remark** | string | 云联网备注，如果没有传入的话，默认为“” |No|
-| **Tag** | string | 业务组Id，如果没有传入，默认值为“Default” |No|
+| **Name** | string |  |No|
+| **Remark** | string |  |No|
+| **Networks.N** | string | 数组，数组内每个元素的字段如下：<br />NetworkID：string，网络实例 ID，如 uvnet-xxxx；<br />Type：string，网络实例类型，枚举值：VPC/HybridGW/...；<br />Region：string，网络实例所属地域，如 cn-sh2；<br />OrgName：string，网络实例所属项目名，如 org-xxx |No|
 
 ### 响应字段
 
@@ -38,7 +43,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **UGNId** | string | 云联网Id |**Yes**|
+| **UGNID** | string |  |No|
 
 
 
@@ -49,18 +54,19 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUGN
-&ProjectId=iTPxNnOG
-&Remark=RIdpGYZc
-&BusinessId=mrTmLSYH
-&Name=BxDHMRdj
-&InstanceId=rcBxXjyl
-&InstanceType=RGleoLXh
-&InstanceRegion=wEoAagdv
-&InstanceProjectId=XqHJFqnF
-&InstanceId=VxEbYLtW
-&InstanceType=ZVLXzuwk
-&InstanceRegion=BfKJBZLL
-&InstanceProjectId=uJcoJzFk
+&Region=cn-zj
+&Zone=cn-zj-01
+&Name=y
+&Description=YkZbgQqx
+&NetworkID=cKOOwPGM
+&VNI=3
+&Type=VPC
+&RegionID=7
+&Name=CBrkRfjs
+&Remark=RdoCHKoq
+&Name=BOBPZXka
+&Remark=ssDwOShx
+&ProjectId=topsywLe
 ```
 
 ### 响应示例
@@ -68,9 +74,9 @@ https://api.ucloud.cn/?Action=CreateUGN
 ```json
 {
   "Action": "CreateUGNResponse",
-  "Message": "success",
+  "Message": "rzwvFWVQ",
   "RetCode": 0,
-  "UGNId": "ugn-nqqqKrvb"
+  "UGNID": "ETCQCRsB"
 }
 ```
 
