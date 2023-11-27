@@ -17,6 +17,9 @@
 接下来浏览 [UGN API 索引](api/ugn-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
-
+您可以选择以下方式中的任意一种，发起 API 请求：
+- UGN SDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
+- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
