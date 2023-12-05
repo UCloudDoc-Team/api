@@ -4,6 +4,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[AddBackfill](api/usms-api/add_backfill)|添加回填|
 |[CreateUSMSSignature](api/usms-api/create_usms_signature)|申请短信签名|
 |[CreateUSMSTemplate](api/usms-api/create_usms_template)|申请短信模板|
 |[DeleteUSMSSignature](api/usms-api/delete_usms_signature)|删除短信签名|
