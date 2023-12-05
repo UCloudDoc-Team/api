@@ -3,6 +3,7 @@
 - [概览](api/usms-api/README.md)
 - [索引](api/usms-api/index.md)
 - **API**
+    - [添加回填 - AddBackfill](api/usms-api/add_backfill)
     - [申请短信签名 - CreateUSMSSignature](api/usms-api/create_usms_signature)
     - [申请短信模板 - CreateUSMSTemplate](api/usms-api/create_usms_template)
     - [删除短信签名 - DeleteUSMSSignature](api/usms-api/delete_usms_signature)
