@@ -1,8 +1,8 @@
-# 获取直播域名下的日志 - GetUliveDomainLog
+# 获取时移域名日志 - GetULiveUshiftDomainLog
 
 ## 简介
 
-获取直播域名日志信息
+获取时移域名日志
 
 
 
@@ -12,7 +12,7 @@
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetUliveDomainLog)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetULiveUshiftDomainLog)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -22,7 +22,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetUliveDomainLog`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetULiveUshiftDomainLog`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -34,8 +34,8 @@
 | **BeginTime** | int | 起始时间，需使用时间戳 |**Yes**|
 | **EndTime** | int | 结束时间，需使用时间戳，结束时间需大于起始时间 |**Yes**|
 | **Domain.N** | string | 域名列表，n正整数，从0递增 |**Yes**|
-| **Type** | string | 时间粒度 day=按天日志  hour=小时日志  fivemin=5分钟日志，默认day |No|
-| **Area** | string | 日志区域：cn=国内  abroad=国外，默认cn |No|
+| **Type** | string | 时间粒度 day=按天日志 hour=小时日志 fivemin=5分钟日志，默认day |No|
+| **Area** | string | 日志区域：cn=国内 abroad=国外，默认cn |No|
 
 ### 响应字段
 
@@ -68,29 +68,29 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=GetUliveDomainLog
-&ProjectId=QfniyEtt
-&BeginTime=2
+https://api.ucloud.cn/?Action=GetULiveUshiftDomainLog
+&ProjectId=ExzzCbDQ
+&BeginTime=6
 &EndTime=9
-&Domain.n=AVbxAwxv
-&Type=JbptTWXJ
-&Area=bURWGFPu
+&Domain.n=nttScUhJ
+&Type=ziwqAEZS
+&Area=wyBlaiIv
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "GetUliveDomainLogResponse",
+  "Action": "GetULiveUshiftDomainLogResponse",
   "LogInfoSet": [
     {
-      "Domain": "mvlrPgRe",
+      "Domain": "ELOiBVmm",
       "LogInfoList": [
         {
           "LogUrlList": [
-            "TmBSuDHw"
+            "coJMXNdL"
           ],
-          "Time": 7
+          "Time": 8
         }
       ]
     }

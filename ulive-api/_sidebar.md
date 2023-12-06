@@ -34,6 +34,7 @@
     - [获取转码并发总数 - GetULiveTranscodeCnt](api/ulive-api/get_u_live_transcode_cnt)
     - [获取转码配置 - GetULiveTranscodeConfigInfo](api/ulive-api/get_u_live_transcode_config_info)
     - [获取直播转码计费统计信息 - GetULiveTranscodeStatistic](api/ulive-api/get_u_live_transcode_statistic)
+    - [获取时移域名日志 - GetULiveUshiftDomainLog](api/ulive-api/get_u_live_ushift_domain_log)
     - [获取直播加速带宽 - GetUliveBandwidth](api/ulive-api/get_ulive_bandwidth)
     - [获取直播域名下的日志 - GetUliveDomainLog](api/ulive-api/get_ulive_domain_log)
     - [按省份运营商获取域名带宽数据 - GetUliveProIspBandwidth](api/ulive-api/get_ulive_pro_isp_bandwidth)
