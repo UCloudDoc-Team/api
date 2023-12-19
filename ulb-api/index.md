@@ -56,3 +56,11 @@
 |[DeleteSecurityPolicy](api/ulb-api/delete_security_policy)|删除安全策略|
 |[UnBindSecurityPolicy](api/ulb-api/un_bind_security_policy)|解绑安全策略|
 |[DescribeSecurityPoliciesV2](api/ulb-api/describe_security_policies_v2)|获取安全策略的信息|
+
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[CreateRule](api/ulb-api/create_rule)|创建应用型负载均衡的转发规则|
+|[DescribeListeners](api/ulb-api/describe_listeners)|描述应用型负载均衡监听器|
+|[DescribeLoadBalancers](api/ulb-api/describe_load_balancers)|描述应用型负载均衡实例|
