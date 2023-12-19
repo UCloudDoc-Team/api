@@ -70,17 +70,22 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Storage** | float | 标准存储量；单位GB |No|
-| **IaStorage** | float | 低频存储量；单位GB |No|
-| **AcStorage** | float | 冷存（归档）存储量；单位GB |No|
-| **IaGetSize** | float | 低频数据取回量；单位GB |No|
-| **AcRestore** | float | 冷存激活量，即归档数据取回量；单位GB |No|
+| **Storage** | float | 标准-存储总容量；单位GB |No|
+| **IaStorage** | float | 低频-存储总容量；单位GB |No|
+| **AcStorage** | float | 归档-存储总容量；单位GB |No|
+| **IaGetSize** | float | 低频-数据取回量，即低频文件的数据取回量；单位GB |No|
+| **AcRestore** | float | 归档-标准解冻量，即归档文件的解冻类型为标准（Strandard）的解冻量；单位GB |No|
+| **AcExpeditedRetrieval** | float | 归档-高优先级解冻量，即归档文件的解冻类型为高优先级（Expedited）的解冻量；单位GB |No|
+| **IaShortStorage** | float | 低频-短期存储量，即补足未满最短存储期限的剩余天数的存储量；单位GB |No|
+| **AcShortStorage** | float | 归档-短期存储量，即补足未满最短存储期限的剩余天数的存储量；单位GB |No|
+| **ImageHandleFlow** | float | 基础图片处理量；单位GB |No|
+| **ImageCompressCount** | float | 图片高级压缩次数；单位千次 |No|
 | **BusyFlow** | float | 忙时流量；单位GB；海外无此字段 |No|
 | **IdleFlow** | float | 闲时流量；单位GB；海外无此字段 |No|
 | **CdnFlow** | float | cdn回源流量;单位GB |No|
 | **Flow** | float | 下载流量：单位GB；国内无此字段 |No|
-| **Date** | int | 配额消费时间，unix时间戳（单位s），精确到日期 |No|
-| **ApiTimes** | float | API请求次数（万次） |No|
+| **Date** | int | 配额消费时间，unix时间戳；单位s，精确到日期 |No|
+| **ApiTimes** | float | 请求次数；单位万次 |No|
 
 ## 示例
 

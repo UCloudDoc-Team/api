@@ -1,4 +1,4 @@
-# 创建转发规则 - CreateRule
+# 创建应用型负载均衡的转发规则 - CreateRule
 
 ## 简介
 
@@ -35,53 +35,14 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
 | **ListenerId** | string | 监听器的ID |**Yes**|
-| **RuleConditions** | array[[*RuleCondition*](#RuleCondition)] | 转发规则匹配条件。数组长度至少为1，目前最多支持一个域名和一个路径类型的 RuleCondition，即数组长度最多为2且不同类型。 具体结构见下方 RuleCondition|**Yes**|
-| **RuleActions** | array[[*RuleAction*](#RuleAction)] | 转发动作。 数组长度只能为1。具体结构见下方 RuleAction|**Yes**|
-| **Pass** | bool | 当转发的服务节点为空时，规则是否忽略。默认值true； 默认转发规则不可更改 |No|
-
-#### 数据模型
-
-
-#### RuleCondition
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Type** | string | 匹配条件类型。限定枚举值：Host，Path |**Yes**|
-| **HostConfig** | [*HostConfigSet*](#HostConfigSet) | 域名相关配置。Type为Host时必填。具体结构详见 HostConfigSet |No|
-| **PathConfig** | [*PathConfigSet*](#PathConfigSet) | 路径相关配置。Type为Path时必填。具体结构详见 PathConfigSet |No|
-
-#### HostConfigSet
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **MatchMode** | string | 匹配方式。限定枚举值：Regular-正则，Wildcard-泛域名； 默认值：Regular |No|
-| **Values** | array[string] | 取值。暂时只支持数组长度为1； 取值需符合相关匹配方式的条件 |**Yes**|
-
-#### PathConfigSet
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Values** | array[string] | 取值。暂时只支持数组长度为1； 取值需符合相关匹配方式的条件 |**Yes**|
-
-#### RuleAction
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Type** | string | 动作类型。限定枚举值：Forward |**Yes**|
-| **ForwardConfig** | [*ForwardConfigSet*](#ForwardConfigSet) | 转发服务节点相关配置。 具体结构详见 ForwardConfigSet |No|
-
-#### ForwardConfigSet
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Targets** | array[[*ForwardTargetSet*](#ForwardTargetSet)] | 转发的后端服务节点。限定在监听器的服务节点池里；数组长度可以为0。具体结构详见 ForwardTargetSet |**Yes**|
-
-#### ForwardTargetSet
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Id** | string | 服务节点的标识ID |**Yes**|
-| **Weight** | int | 权重。仅监听器负载均衡算法是加权轮询是有效；取值范围[1-100]，默认值为1 |No|
+| **RuleConditions.N.Type** | string | 匹配条件类型。限定枚举值："Host"/"Path" |**Yes**|
+| **RuleConditions.N.HostConfig.MatchMode** | string | 匹配方式。限定枚举值："Regular"/"Wildcard"，默认值："Regular" |No|
+| **Values.N** | string | 取值。暂时只支持数组长度为1；取值需符合相关匹配方式的条件；域名匹配时必填 |No|
+| **Values.N** | string | 取值。暂时只支持数组长度为1；取值需符合相关条件；路径匹配时必填 |No|
+| **RuleActions.N.Type** | string | 动作类型。限定枚举值："Forward"；RuleActions暂支持长度为1 |**Yes**|
+| **Targets.N.Id** | string | 转发的后端服务节点的标识ID。限定在监听器的服务节点池里；数组长度可以是0；转发服务节点配置的数组长度不为0时，Id必填 |No|
+| **Targets.N.Weight** | int | 转发的后端服务节点的权重。仅监听器负载均衡算法是加权轮询是有效 |No|
+| **Pass** | boolean | 当转发的服务节点为空时，规则是否忽略。默认值true |No|
 
 ### 响应字段
 
@@ -90,7 +51,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **RuleId** | int | 转发规则的ID |No|
+| **RuleId** | string | 转发规则的ID |**Yes**|
 
 
 
@@ -99,44 +60,20 @@
 
 ### 请求示例
     
-```json
-curl 'https://api.ucloud.cn' \
---header 'Content-Type: application/json' \
---data '{
-  "Action": "CreateRule",
-  "Region": "cn-bj2",
-  "ProjectId": "org-XXXXX",
-  "LoadBalancerId": "alb-XXXXX",
-  "ListenerId": "als-XXXXX",
-  "RuleConditions": [
-    {
-      "Type": "Host",
-      "HostConfig": {
-        "MatchMode": "Regular",
-        "Values": ["www.test.com"]
-      }
-    },
-    {
-      "Type": "Path",
-      "PathConfig": {
-        "Values": ["/abc"]
-      }
-    }
-  ],
-  "RuleActions": [
-    {
-      "Type": "Forward",
-      "ForwardConfig": {
-        "Targets": [
-          {
-            "Id": "ars-XXXXX",
-            "Weight": 1
-          }
-        ]
-      }
-    }
-  ]
-}'
+```
+https://api.ucloud.cn/?Action=CreateRule
+&Region=cn-zj
+&ProjectId=KkLjsPqn
+&LoadBalancerId=TpQFMTyp
+&ListenerId=TBLRaFqM
+&RuleConditions.n.Type=OwQlzYTk
+&RuleActions.n.Type=CdXoaIEM
+&RuleConditions.n.HostConfig.MatchMode=PVAsSDML
+&RuleConditions.n.HostConfig.Values.n=leqEAWWl
+&RuleConditions.n.PathConfig.Values.n=PwuAChmC
+&RuleActions.n.ForwardConfig.Targets.n.Id=kJkvikIW
+&RuleActions.n.ForwardConfig.Targets.n.Weight=2
+&Pass=true
 ```
 
 ### 响应示例
@@ -145,7 +82,7 @@ curl 'https://api.ucloud.cn' \
 {
   "Action": "CreateRuleResponse",
   "RetCode": 0,
-  "ruleId": "rule-XXXXX"
+  "RuleId": "qZjWGzsa"
 }
 ```
 
