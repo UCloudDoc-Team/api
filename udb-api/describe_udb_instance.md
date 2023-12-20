@@ -82,7 +82,7 @@
 | **BackupBeginTime** | int | 备份策略，不可修改，开始时间，单位小时计，默认3点 |No|
 | **BackupDuration** | int | 备份策略，一天内备份时间间隔，单位小时，默认24小时 |No|
 | **BackupBlacklist** | string | 备份策略，备份黑名单，mongodb则不适用 |No|
-| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败, Remakeing:重做中,RemakeFail:重做失败，VersionUpgrading:小版本升级中，VersionUpgradeWaitForSwitch:高可用等待切换，VersionUpgradeFail：小版本升级失败 |No|
+| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败, Remakeing:重做中,RemakeFail:重做失败，VersionUpgrading:小版本升级中，VersionUpgradeWaitForSwitch:高可用等待切换，VersionUpgradeFail：小版本升级失败，UpdatingSSL：修改SSL中，UpdateSSLFail：修改SSL失败 |No|
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|
@@ -103,6 +103,9 @@
 | **IPv6Address** | string | 该实例的ipv6地址 |No|
 | **UserUFileData** | [*UFileDataSet*](#UFileDataSet) | 用户转存备份到自己的UFILE配置, 结构参考UFileDataSet |No|
 | **DBSubVersion** | string | mysql实例提供具体小版本信息 |No|
+| **EnableSSL** | int | mysql是否开启了SSL；1->未开启  2->开启 |No|
+| **SSLExpirationTime** | int | SSL到期时间 |No|
+| **BackupMethod** | string | 默认的备份方式，nobackup表示不备份， snapshot 表示使用快照备份，logic 表示使用逻辑备份，xtrabackup表示使用物理备份。 |No|
 
 #### UDBSlaveInstanceSet
 
@@ -145,7 +148,6 @@
 | **InstanceType** | string | UDB数据库机型 |No|
 | **InstanceTypeId** | int | UDB数据库机型ID |No|
 | **Tag** | string | 获取资源其他信息 |No|
-| **IPv6Address** | string | 获取该实例的IPv6地址 |No|
 | **CaseSensitivityParam** | int | 0 区分大小写, 1不区分, 只针对mysql8.0 |No|
 
 #### UFileDataSet
