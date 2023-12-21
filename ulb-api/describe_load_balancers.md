@@ -111,14 +111,14 @@
 | **ListenerId** | string | 监听器的ID |No|
 | **Name** | string | 监听器的名称 |No|
 | **Remark** | string | 监听器的备注信息 |No|
-| **ListenerPort** | string | 监听器的监听端口 |No|
+| **ListenerPort** | int | 监听器的监听端口 |No|
 | **ListenerProtocol** | string | 监听协议。应用型限定取值： HTTP、HTTPS  |No|
 | **Certificates** | array[[*Certificate*](#Certificate)] | （应用型专用）服务器默认证书ID。仅HTTPS监听支持。具体接口详见 Certificate |No|
 | **SecurityPolicyId** | string | （应用型专用）安全策略组ID。仅HTTPS监听支持绑定；Default -> 原生策略  |No|
 | **IdleTimeout** | int | 连接空闲超时时间。单位：秒 |No|
 | **Scheduler** | string | 负载均衡算法。应用型限定取值：Roundrobin -> 轮询;Source -> 源地址； WeightRoundrobin -> 加权轮询; Leastconn -> 最小连接数；Backup ->主备模式 |No|
-| **StickinessConfig** | array[[*StickinessConfigSet*](#StickinessConfigSet)] | 会话保持相关配置。具体结构详见 StickinessConfigSet |No|
-| **HealthCheckConfig** | array[[*HealthCheckConfigSet*](#HealthCheckConfigSet)] | 健康检查相关配置。具体结构详见 HealthCheckConfigSet |No|
+| **StickinessConfig** | [*StickinessConfigSet*](#StickinessConfigSet) | 会话保持相关配置。具体结构详见 StickinessConfigSet |No|
+| **HealthCheckConfig** | [*HealthCheckConfigSet*](#HealthCheckConfigSet) | 健康检查相关配置。具体结构详见 HealthCheckConfigSet |No|
 | **CompressionEnabled** | boolean | （应用型专用）是否开启数据压缩功能。目前只支持使用gzip对特定文件类型进行压缩 |No|
 | **HTTP2Enabled** | boolean | （应用型专用）是否开启HTTP/2特性。仅HTTPS监听支持开启 |No|
 | **RedirectEnabled** | boolean | （应用型专用）是否开启HTTP重定向到HTTPS。仅HTTP监听支持开启 |No|

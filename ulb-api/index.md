@@ -64,3 +64,4 @@
 |[CreateRule](api/ulb-api/create_rule)|创建应用型负载均衡的转发规则|
 |[DescribeListeners](api/ulb-api/describe_listeners)|描述应用型负载均衡监听器|
 |[DescribeLoadBalancers](api/ulb-api/describe_load_balancers)|描述应用型负载均衡实例|
+|[DescribeRules](api/ulb-api/describe_rules)|描述应用型负载均衡转发规则|
