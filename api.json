@@ -302,7 +302,7 @@
       "listname": "数据库",
       "listvalue": [
         {
-          "name": "云数据库 MySQL UDB",
+          "name": "云数据库 UDB MySQL",
           "img": "icon-product__udb",
           "sublinks": [
             {
@@ -313,7 +313,7 @@
           ]
         },
         {
-          "name": "云数据库 MongoDB UDB（NVMe）",
+          "name": "云数据库 UDB MongoDB（NVMe）",
           "img": "icon-product__mongodb",
           "sublinks": [
             {
@@ -324,7 +324,7 @@
           ]
         },
         {
-          "name": "云数据库 MongoDB UDB",
+          "name": "云数据库 UDB MongoDB",
           "img": "icon-product__mongodb",
           "sublinks": [
             {
@@ -335,7 +335,7 @@
           ]
         },
         {
-          "name": "云数据库 PostgreSQL UDB（NVMe）",
+          "name": "云数据库 UDB PostgreSQL（NVMe）",
           "img": "icon-product__postgresql",
           "sublinks": [
             {
