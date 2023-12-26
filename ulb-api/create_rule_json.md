@@ -1,4 +1,4 @@
-# 创建转发规则 - CreateRule
+# 创建应用型负载均衡的转发规则 - CreateRule
 
 ## 简介
 
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **LoadBalancerId** | string | 负载均衡实例的ID |**Yes**|
-| **ListenerId** | string | 监听器的ID |**Yes**|
+| **LoadBalancerId** | string | 应用型负载均衡实例的ID |**Yes**|
+| **ListenerId** | string | 应用型负载均衡监听器的ID |**Yes**|
 | **RuleConditions** | array[[*RuleCondition*](#RuleCondition)] | 转发规则匹配条件。数组长度至少为1，目前最多支持一个域名和一个路径类型的 RuleCondition，即数组长度最多为2且不同类型。 具体结构见下方 RuleCondition|**Yes**|
 | **RuleActions** | array[[*RuleAction*](#RuleAction)] | 转发动作。 数组长度只能为1。具体结构见下方 RuleAction|**Yes**|
 | **Pass** | bool | 当转发的服务节点为空时，规则是否忽略。默认值true； 默认转发规则不可更改 |No|
@@ -145,11 +145,6 @@ curl 'https://api.ucloud.cn' \
 {
   "Action": "CreateRuleResponse",
   "RetCode": 0,
-  "ruleId": "rule-XXXXX"
+  "RuleId": "rule-XXXXX"
 }
 ```
-
-
-
-
-

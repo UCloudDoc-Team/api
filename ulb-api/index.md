@@ -7,6 +7,7 @@
 |[CreateLoadBalancer](api/ulb-api/create_load_balancer)|创建应用型负载均衡实例|
 |[CreateListener](api/ulb-api/create_listener)|创建应用型负载均衡监听器|
 |[AddTargets](api/ulb-api/add_targets)|添加应用型负载均衡的后端服务节点|
+|[CreateRule](api/ulb-api/create_rule)|创建应用型负载均衡的转发规则|
 |[DeleteLoadBalancer](api/ulb-api/delete_load_balancer)|删除应用型负载均衡实例|
 |[DeleteListener](api/ulb-api/delete_listener)|删除应用型负载均衡监听器|
 |[RemoveTargets](api/ulb-api/remove_targets)|删除应用型负载均衡的后端服务节点|
@@ -15,6 +16,9 @@
 |[UpdateListenerAttribute](api/ulb-api/update_listener_attribute)|更新应用型负载均衡监听器属性|
 |[UpdateTargetsAttribute](api/ulb-api/update_targets_attribute)|更新应用型负载均衡的后端服务节点属性|
 |[UpdateRuleAttribute](api/ulb-api/update_rule_attribute)|更新应用型负载均衡的转发规则属性|
+|[DescribeLoadBalancers](api/ulb-api/describe_load_balancers)|描述应用型负载均衡实例|
+|[DescribeListeners](api/ulb-api/describe_listeners)|描述应用型负载均衡监听器|
+|[DescribeRules](api/ulb-api/describe_rules)|描述应用型负载均衡转发规则|
 
 ## CLB
 
@@ -56,12 +60,3 @@
 |[DeleteSecurityPolicy](api/ulb-api/delete_security_policy)|删除安全策略|
 |[UnBindSecurityPolicy](api/ulb-api/un_bind_security_policy)|解绑安全策略|
 |[DescribeSecurityPoliciesV2](api/ulb-api/describe_security_policies_v2)|获取安全策略的信息|
-
-## API
-
-| API | 描述信息 |
-|:---|:---|
-|[CreateRule](api/ulb-api/create_rule)|创建应用型负载均衡的转发规则|
-|[DescribeListeners](api/ulb-api/describe_listeners)|描述应用型负载均衡监听器|
-|[DescribeLoadBalancers](api/ulb-api/describe_load_balancers)|描述应用型负载均衡实例|
-|[DescribeRules](api/ulb-api/describe_rules)|描述应用型负载均衡转发规则|
