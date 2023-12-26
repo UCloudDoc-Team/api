@@ -15,6 +15,9 @@
             "api": "AddTargets"
           },
           {
+            "api": "CreateRule"
+          },
+          {
             "api": "DeleteLoadBalancer"
           },
           {
@@ -37,6 +40,15 @@
           },
           {
             "api": "UpdateRuleAttribute"
+          },
+          {
+            "api": "DescribeLoadBalancers"
+          },
+          {
+            "api": "DescribeListeners"
+          },
+          {
+            "api": "DescribeRules"
           }
         ]
       },
