@@ -5,6 +5,7 @@
     - [创建应用型负载均衡实例 - CreateLoadBalancer](api/ulb-api/create_load_balancer)
     - [创建监听器 - CreateListener](api/ulb-api/create_listener_json)
     - [添加后端服务节点 - AddTargets](api/ulb-api/add_targets_json)
+    - [创建应用型负载均衡的转发规则 - CreateRule](api/ulb-api/create_rule_json)
     - [删除应用型负载均衡实例 - DeleteLoadBalancer](api/ulb-api/delete_load_balancer)
     - [删除应用型负载均衡监听器 - DeleteListener](api/ulb-api/delete_listener)
     - [删除后端服务节点 - RemoveTargets](api/ulb-api/remove_targets_json)
@@ -13,6 +14,9 @@
     - [更新监听器属性 - UpdateListenerAttribute](api/ulb-api/update_listener_attribute_json)
     - [更新后端服务节点属性 - UpdateTargetsAttribute](api/ulb-api/update_targets_attribute_json)
     - [更新转发规则属性 - UpdateRuleAttribute](api/ulb-api/update_rule_attribute_json)
+    - [描述应用型负载均衡实例 - DescribeLoadBalancers](api/ulb-api/describe_load_balancers_json)
+    - [描述应用型负载均衡监听器 - DescribeListeners](api/ulb-api/describe_listeners)
+    - [描述应用型负载均衡转发规则 - DescribeRules](api/ulb-api/describe_rules)
 - **CLB**
     - [创建传统型负载均衡负载均衡 - CreateULB](api/ulb-api/create_ulb)
     - [创建CLB的VServer - CreateVServer](api/ulb-api/create_vserver)
