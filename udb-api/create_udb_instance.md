@@ -40,7 +40,7 @@
 | **Port** | int | 端口号，mysql默认3306，mongodb默认27017，postgresql默认5432 |**Yes**|
 | **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 32T |**Yes**|
 | **ParamGroupId** | int | DB实例使用的配置参数组id |**Yes**|
-| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |**Yes**|
+| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
 | **ChargeType** | string | Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **AdminUser** | string | 管理员帐户名，默认root |No|
@@ -57,9 +57,10 @@
 | **DisableSemisync** | boolean | 是否开启异步高可用，默认不填，可置为true |No|
 | **ClusterRole** | string | 当DB类型(DBTypeId)为mongodb时，需要指定mongo的角色，可选值为<br />configsrv (配置节点)，shardsrv (数据节点) |No|
 | **Tag** | string | 实例所在的业务组名称 |No|
-| **EnableIpV6** | boolean | 是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true |No|
 | **DBSubVersion** | string | mysql小版本号，支持指定小版本创建 |No|
 | **CaseSensitivityParam** | int | mysql大小写参数, 0 为大小写敏感, 1 为大小写不敏感, 目前只针对mysql8.0有效 |No|
+| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **MachineType** | string | 	<br />规格类型ID,当SpecificationType为1时有效 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -99,6 +100,8 @@ https://api.ucloud.cn/?Action=CreateUDBInstance
 &BackupUrl=ArIyIIyj
 &DBSubVersion=8.0.16
 &CaseSensitivityParam=5
+&SpecificationType=IWYpQrmi
+&MachineType=ZINkjHvV
 ```
 
 ### 响应示例

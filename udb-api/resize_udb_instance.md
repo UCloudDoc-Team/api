@@ -41,6 +41,8 @@
 | **InstanceType** | string | UDB数据库机型: "Normal": "标准机型" ,  "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" ,  "Normal_Volume": "标准大容量机型",  "SATA_SSD_Volume": "SSD大容量机型" ,  "PCIE_SSD_Volume": "SSD高性能大容量机型"，“NVMe_SSD”：“快杰机型” |No|
 | **InstanceMode** | string | UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal" |No|
 | **StartAfterUpgrade** | boolean | DB关闭状态下升降级，升降级后是否启动DB，默认为false |No|
+| **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
+| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -64,6 +66,8 @@ https://api.ucloud.cn/?Action=ResizeUDBInstance
 &DBId=udb-xxx
 &MemoryLimit=15000
 &DiskSpace=500
+&MachineType=ZFyPches
+&SpecificationType=cEsDNnjF
 ```
 
 ### 响应示例

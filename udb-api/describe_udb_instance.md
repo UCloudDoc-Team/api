@@ -106,6 +106,8 @@
 | **EnableSSL** | int | mysql是否开启了SSL；1->未开启  2->开启 |No|
 | **SSLExpirationTime** | int | SSL到期时间 |No|
 | **BackupMethod** | string | 默认的备份方式，nobackup表示不备份， snapshot 表示使用快照备份，logic 表示使用逻辑备份，xtrabackup表示使用物理备份。 |No|
+| **MachineType** | string | 数据库机型规格 |No|
+| **SpecificationType** | int | 是否使用可选cpu类型规格 |No|
 
 #### UDBSlaveInstanceSet
 
@@ -149,6 +151,8 @@
 | **InstanceTypeId** | int | UDB数据库机型ID |No|
 | **Tag** | string | 获取资源其他信息 |No|
 | **CaseSensitivityParam** | int | 0 区分大小写, 1不区分, 只针对mysql8.0 |No|
+| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 
 #### UFileDataSet
 
