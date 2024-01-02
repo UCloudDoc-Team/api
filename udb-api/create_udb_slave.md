@@ -48,6 +48,8 @@
 | **ParamGroupId** | int | DB实例使用的配置参数组id，默认和主库保持一致 |No|
 | **IsCreatePhysically** | boolean | 使用物理方式创建从库，目前仅限创建快杰从库，默认为false |No|
 | **DelaySeconds** | int | 设置从库的延时复制时长（单位秒） |No|
+| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -86,6 +88,8 @@ https://api.ucloud.cn/?Action=CreateUDBSlave
 &DelaySeconds=6
 &UseSSD=true
 &SSDType=GnsgKEyT
+&SpecificationType=cYBUpmpw
+&MachineType=EEMCUisF
 ```
 
 ### 响应示例
