@@ -82,7 +82,7 @@
 | **BackupBeginTime** | int | 备份策略，不可修改，开始时间，单位小时计，默认3点 |No|
 | **BackupDuration** | int | 备份策略，一天内备份时间间隔，单位小时，默认24小时 |No|
 | **BackupBlacklist** | string | 备份策略，备份黑名单，mongodb则不适用 |No|
-| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败, Remakeing:重做中,RemakeFail:重做失败，VersionUpgrading:小版本升级中，VersionUpgradeWaitForSwitch:高可用等待切换，VersionUpgradeFail：小版本升级失败，UpdatingSSL：修改SSL中，UpdateSSLFail：修改SSL失败 |No|
+| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败, Remakeing:重做中,RemakeFail:重做失败，VersionUpgrading:小版本升级中，VersionUpgradeWaitForSwitch:高可用等待切换，VersionUpgradeFail：小版本升级失败，UpdatingSSL：修改SSL中，UpdateSSLFail：修改SSL失败,MajorVersionUpgrading:小版本升级中，MajorVersionUpgradeWaitForSwitch:高可用等待切换，MajorVersionUpgradeFail |No|
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|
@@ -128,7 +128,7 @@
 | **BackupBeginTime** | int | 备份策略，不可修改，开始时间，单位小时计，默认3点 |No|
 | **BackupDuration** | int | 备份策略，一天内备份时间间隔，单位小时，默认24小时 |No|
 | **BackupBlacklist** | string | 备份策略，备份黑名单，mongodb则不适用 |No|
-| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败,Remakeing:重做中,RemakeFail:重做失败 |No|
+| **State** | string | DB状态标记 Init：初始化中，Fail：安装失败，Starting：启动中，Running：运行，Shutdown：关闭中，Shutoff：已关闭，Delete：已删除，Upgrading：升级中，Promoting：提升为独库进行中，Recovering：恢复中，Recover fail：恢复失败,Remakeing:重做中,RemakeFail:重做失败, MajorVersionUpgrading:小版本升级中，MajorVersionUpgradeWaitForSwitch:高可用等待切换，MajorVersionUpgradeFail |No|
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|

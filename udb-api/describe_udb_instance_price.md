@@ -43,7 +43,7 @@
 | **InstanceMode** | string | 实例的部署类型。可选值为：Normal: 普通单点实例，Slave: 从库实例，HA: 高可用部署实例，默认是Normal |No|
 | **CPU** | int | CPU个数，如果db类型为sqlserver，则为必填参数 |No|
 | **InstanceType** | string | UDB数据库机型: "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" , "Normal_Volume": "标准大容量机型", "SATA_SSD_Volume": "SSD大容量机型" , "PCIE_SSD_Volume": "SSD高性能大容量机型", "NVMe_SSD": "快杰机型" |No|
-| **SpecificationType** | string | 	<br />实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **SpecificationType** | int | 	<br />实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 
 ### 响应字段

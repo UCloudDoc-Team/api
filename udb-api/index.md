@@ -76,7 +76,9 @@
 |:---|:---|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
 |[GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)|获取连接实例客户端Ip和连接数|
+|[GetUDBInstanceSSLCertURL](api/udb-api/get_udb_instance_ssl_cert_url)|获取SSL证书下载地址|
 |[ModifyUDBInstanceRemarkName](api/udb-api/modify_udb_instance_remark_name)|修改云数据库备注|
+|[ModifyUDBInstanceSSL](api/udb-api/modify_udb_instance_ssl)|调整SSL的信息|
 |[RollbackUDBInstance](api/udb-api/rollback_udb_instance)|回档指定库表|
 |[UpgradeUDBInstanceToHA](api/udb-api/upgrade_udb_instance_to_ha)|快杰普通db升级为高可用|
 |[UpgradeUDBVersion](api/udb-api/upgrade_udb_version)|升级db实例版本|
