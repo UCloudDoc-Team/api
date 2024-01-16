@@ -46,7 +46,7 @@
 | **EnableIpV6** | boolean | 是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true |No|
 | **Tables** | string | 指定需要恢复的表, 如果指定该字段则回档实例只有指定的表数据，格式为(库名.表名)， 指定多个用逗号隔开，eg: [ udb.test, mysql_school.my_student] |No|
 | **AdminPassword** | string | 管理员密码 (指定库表回档到新实例时有效) |No|
-| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **SpecificationType** | int | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
