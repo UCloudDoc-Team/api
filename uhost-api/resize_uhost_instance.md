@@ -37,6 +37,7 @@
 | **UHostId** | string | UHost实例ID 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-240（可选范围与UHostType相关）。默认值为当前实例的CPU核数 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 1966080]，取值为1024的倍数（可选范围与UHostType相关）。默认值为当前实例的内存大小。 |No|
+| **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
 | **NetCapValue** | int | 网卡升降级（1，表示升级，2表示降级，0表示不变） |No|
 
 ### 响应字段
@@ -63,6 +64,8 @@ https://api.ucloud.cn/?Action=ResizeUHostInstance
 &UHostId=uhost-xxx
 &CPU=4
 &Memory=2048
+&GPU=5
+&GPU=6
 ```
 
 ### 响应示例
