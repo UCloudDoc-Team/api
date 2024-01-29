@@ -38,7 +38,7 @@
 | **Disks.N.IsBoot** | string | 是否是系统盘。枚举值：<br /><br /> > True，是系统盘 <br /><br /> > False，是数据盘（默认）。Disks数组中有且只能有一块盘是系统盘。 |**Yes**|
 | **Disks.N.Type** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
 | **Disks.N.Size** | int | 磁盘大小，单位GB。请参考[磁盘类型](api/uhost-api/disk_type)。 |**Yes**|
-| **Disks.N.BackupType** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br /> > SNAPSHOT，快照 <br /><br />当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type),默认值:NONE |No|
+| **Disks.N.BackupType** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟【已下线，不再支持】 <br /><br /> > SNAPSHOT，快照 <br /><br />当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type),默认值:NONE |No|
 | **Disks.N.Encrypted** | boolean | 【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false<br />加密必须传入对应的的KmsKeyId,默认值false |No|
 | **Disks.N.KmsKeyId** | string | 【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。 |No|
 | **Disks.N.CouponId** | string | 云盘代金券id。不适用于系统盘/本地盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
@@ -63,7 +63,7 @@
 | **AlarmTemplateId** | int | 告警模板id，如果传了告警模板id，且告警模板id正确，则绑定告警模板。绑定告警模板失败只会在后台有日志，不会影响创建主机流程，也不会在前端报错。 |No|
 | **MachineType** | string | 云主机机型（V2.0），在本字段和字段UHostType中，仅需要其中1个字段即可。枚举值["N", "C", "G", "O", "OS", "OM", "OPRO", "OMAX", "O.BM", "O.EPC"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake", "Intel/CascadelakeR", "Intel/IceLake", "Amd/Epyc2", "Amd/Auto","Ampere/Auto","Ampere/Altra"],默认值是"Intel/Auto"。 |No|
-| **MaxCount** | int | 本次最大创建主机数量，取值范围是[1,100]，默认值为1。 |No|
+| **MaxCount** | int | 本次最大创建主机数量，取值范围是[1,100]，默认值为1。<br />- 库存数量不足时，按库存数量创建。<br />- 配额不足时，返回错误。<br />- 使用隔离组时，以隔离组可用数量为准。 |No|
 | **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
 | **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
 | **NetworkInterface.N.EIP.ShareBandwidthId** | string | 绑定的共享带宽Id，仅当PayMode为ShareBandwidth时有效 |No|
@@ -74,6 +74,9 @@
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持“Cloud-init”Feature时可填写此字段。取值 >“On” 自动挂载（默认值）> “Off” 不自动挂载。 |No|
 | **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须。 |No|
 | **Features.UNI** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启，仅与 NetCapability Normal 兼容。 |No|
+| **SecGroupId.N.Id** | string | 安全组 ID。至多可以同时绑定5个安全组。 |No|
+| **SecGroupId.N.Priority** | int | 安全组优先级。取值范围[1, 5] |No|
+| **SecurityMode** | string | 主机安全模式。Firewall：防火墙；SecGroup：安全组；默认值：Firewall。 |No|
 | **UDSetId** | string | 【私有专区属性】专区id |No|
 | **UDHostId** | string | 【私有专区属性】专区宿主机id |No|
 | **HostBinding** | boolean | 【私有专区属性】专区云主机开启宿住关联属性 |No|
@@ -98,93 +101,89 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUHostInstance
-&Region=IrPRKVru
-&Zone=YxunehQG
-&ProjectId=SGGYxkiC
-&ImageId=WTrQVOVc
-&Disks.N.IsBoot=RprtMlkM
-&Disks.N.Type=cTNMVMgN
-&Disks.N.Size=4
-&LoginMode=ZDxcwBvI
-&Password=HjhrLmyV
-&Name=kWFfXPdF
-&Tag=mZmpwPll
-&ChargeType=SVUvekbj
+&Region=ybxkcmgH
+&Zone=cMZkATPf
+&ProjectId=ehTYojNP
+&ImageId=CHWlocIR
+&Disks.N.IsBoot=SqelzPyQ
+&Disks.N.Type=rqSALyZS
+&Disks.N.Size=1
+&LoginMode=eziJKyvi
+&Password=wrHVYuPy
+&Name=pPFrllkl
+&Tag=eTVDLtCi
+&ChargeType=dcWFEjRf
 &Quantity=7
-&UHostType=xESfaKXW
-&CPU=7
+&UHostType=uUZLzSkQ
+&CPU=5
 &Memory=9
-&GpuType=wcdlufLM
-&GPU=4
-&StorageType=hidVBsZq
-&BootDiskSpace=9
-&DiskSpace=9
-&NetCapability=UAaqyFEH
+&GpuType=UyTqehtV
+&GPU=8
+&StorageType=xjnNxxIr
+&BootDiskSpace=4
+&DiskSpace=3
+&NetCapability=WuweESSX
 &TimemachineFeature=yes
 &HotplugFeature=true
-&DiskPassword=ZhNHQpUa
-&NetworkId=CUvjmHLR
-&VPCId=INGnMbev
-&SubnetId=BzArPHsE
-&PrivateIp.N=kINtqkDh
-&PrivateMac=kpjksQBp
-&SecurityGroupId=jbPxuRXI
-&HostType=EMqnGIZZ
-&InstallAgent=mOfkpefj
-&ResourceType=KCqMZlIl
-&Disks.N.BackupType=LiQiEorj
-&IsolationGroup=MyYUcDKC
-&Disks.N.Encrypted=false
-&Disks.N.KmsKeyId=rwVpvLJi
-&Disks.N.CouponId=PvRWpaRb
-&AlarmTemplateId=2
-&MachineType=MJsjIQFC
-&MinimalCpuPlatform=VCokccwd
-&MaxCount=5
+&DiskPassword=jWVGcxBI
+&NetworkId=QgMHkVKB
+&VPCId=NiKZcdzp
+&SubnetId=PCrhwZPO
+&PrivateIp.N=ZCkTUpMg
+&PrivateMac=UfchnWOU
+&SecurityGroupId=mBiLqsON
+&HostType=KuIpUVnY
+&InstallAgent=wYIplHyT
+&ResourceType=QMlAGlJh
+&Disks.N.BackupType=ynlUsysX
+&IsolationGroup=zFjarlyJ
+&Disks.N.Encrypted=true
+&Disks.N.KmsKeyId=KnxSqvyV
+&Disks.N.CouponId=AnDNoKBS
+&AlarmTemplateId=1
+&MachineType=UZiFiiup
+&MinimalCpuPlatform=JEyLLGKk
+&MaxCount=4
 &NetworkInterface.N.EIP.Bandwidth=9
-&NetworkInterface.N.EIP.PayMode=JujSAqbO
-&NetworkInterface.N.EIP.ShareBandwidthId=kHfdnNWd
-&NetworkInterface.N.EIP.OperatorName=WNXiYXjc
-&NetworkInterface.N.EIP.CouponId=GFzoXEOo
-&SetId=1
-&HostIp=VxccviHh
-&NetworkInterface.N.IPv6.ShareBandwidthId=nYbcxXrf
-&UserData=wTkIjHzw
-&Disks.N.Id=YnyPnaOj
-&AutoDataDiskInit=MynHIYht
-&NetworkInterface.N.IPv6.Address=wzQVOnfd
-&CharacterName=rDPtrUlu
-&PromotionId=iIzhvRBn
-&ImageOsName=XojzwILg
-&PodId=qwVrfmTT
-&BillActivityId=5
-&BillActivityRuleId=3
-&RestrictMode=kRfUiaKA
-&Volumes.N.Type=FKimwmGX
-&Volumes.N.IsBoot=zjLJQmIe
-&Volumes.N.Size=5
-&Volumes.N.VolumeId=lYyhJqrV
-&Volumes.N.CouponId=oiISGCSv
-&HpcEnhanced=false
-&NetworkInterface.N.CreateCernetIp=true
-&KeyPairId=gYzfeRZI
-&SecGroupId.N=shbyPlMw
-&Features.UNI=PCaQdRus
-&CouponId=LIgqlYLP
-&GpuFsx=false
-&UfsMountId=owebqtsq
-&UFSMountId=zFLnxyoU
-&SecGroupId.N.Priority=DMnmhjIz
-&SecurityMode=ykuINtPs
-&Disks.N.BackupMode=rgqxGmlQ
-&Disks.N.CustomBackup.Journal=wHuWPXvg
-&Disks.N.CustomBackup.Hour=rrczngzO
-&Disks.N.CustomBackup.Day=sQHbfMoJ
-&UDSetId=fdlEmzzf
-&UDHostId=MuOlWCEV
+&NetworkInterface.N.EIP.PayMode=lAfYgVln
+&NetworkInterface.N.EIP.ShareBandwidthId=UBundIIj
+&NetworkInterface.N.EIP.OperatorName=cglBMIOQ
+&NetworkInterface.N.EIP.CouponId=DhbealvD
+&SetId=5
+&HostIp=gtaBlcUT
+&NetworkInterface.N.IPv6.ShareBandwidthId=wjqJnxBt
+&UserData=xxxLxHCi
+&Disks.N.Id=kezEAMkH
+&AutoDataDiskInit=cnjYJjwW
+&NetworkInterface.N.IPv6.Address=KudMCare
+&CharacterName=TQFIAsCO
+&PromotionId=YsPkxuTv
+&ImageOsName=iGCjLLAJ
+&PodId=YRZCbhxE
+&BillActivityId=7
+&BillActivityRuleId=8
+&RestrictMode=aETwMsDO
+&Volumes.N.Type=wmkzKvFL
+&Volumes.N.IsBoot=UfWFbPlC
+&Volumes.N.Size=4
+&Volumes.N.VolumeId=oFmWoxUW
+&Volumes.N.CouponId=JRAVIPJh
+&HpcEnhanced=true
+&NetworkInterface.N.CreateCernetIp=false
+&KeyPairId=UgaGKBsN
+&Features.UNI=false
+&Disks.N.BackupMode=fxpdxHtq
+&Disks.N.CustomBackup.Journal=muAfZjQM
+&Disks.N.CustomBackup.Hour=KWbSJhsv
+&Disks.N.CustomBackup.Day=sDMcKoMD
+&SecGroupId.N.Id=FCFnWiyv
+&SecGroupId.N.Priority=4
+&SecurityMode=MXObOjBq
+&UDSetId=ExUeRuel
+&UDHostId=ELjbOgbF
 &HostBinding=true
-&HostBinding=true
-&Disks.N.SnapshotId=YdYHTrPx
+&Disks.N.SnapshotId=VYuYBGoo
+&CouponId=UJvMdphR
 ```
 
 ### 响应示例
@@ -193,12 +192,12 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 {
   "Action": "CreateUHostInstanceResponse",
   "IPs": [
-    "iUkWSFjX"
+    "xMEMVeOh"
   ],
-  "MountedUFSId": "qfAGtiIv",
+  "MountedUFSId": "VzVDSUXx",
   "RetCode": 0,
   "UHostIds": [
-    "GLKEpaXW"
+    "cuQeraVH"
   ]
 }
 ```
