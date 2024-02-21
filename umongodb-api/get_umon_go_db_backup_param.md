@@ -32,6 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClusterId** | string | 实例ID |**Yes**|
 
 ### 响应字段
@@ -55,6 +56,7 @@
 | **AutoBackupToggleTime** | string | 自动备份预期时间范围 (24小时制，精确到分钟，00:00\~23:59) |No|
 | **AutoBackupCopies** | int | 自动备份保存份数 |No|
 | **ManualBackupCopies** | int | 手动备份保存份数 |No|
+| **Disabled** | boolean | 是否禁用(false:未禁用;true:禁用) |No|
 
 ## 示例
 
@@ -65,6 +67,7 @@ https://api.ucloud.cn/?Action=GetUMongoDBBackupParam
 &Region=cn-zj
 &Zone=cn-zj-01
 &ClusterId=DmBGvXyK
+&ProjectId=VGopVKMd
 ```
 
 ### 响应示例
