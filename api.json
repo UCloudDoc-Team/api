@@ -690,6 +690,22 @@
       ]
     },
     {
+      "listname": "资源管理",
+      "listvalue": [
+        {
+          "name": "标签 Label",
+          "img": "icon-product__label",
+          "sublinks": [
+            {
+              "links": "/api/label-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "listname": "购买与计费",
       "listvalue": [
         {
