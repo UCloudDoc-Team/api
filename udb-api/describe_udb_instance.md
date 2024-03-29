@@ -108,6 +108,7 @@
 | **BackupMethod** | string | 默认的备份方式，nobackup表示不备份， snapshot 表示使用快照备份，logic 表示使用逻辑备份，xtrabackup表示使用物理备份。 |No|
 | **MachineType** | string | 数据库机型规格 |No|
 | **SpecificationType** | int | 是否使用可选cpu类型规格 |No|
+| **CPU** | int | CPU核数 |No|
 
 #### UDBSlaveInstanceSet
 
