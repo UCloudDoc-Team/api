@@ -145,3 +145,8 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |:---|:---|
 |模型服务平台 UModelVerse|[文档](/api/uai-modelverse-api/)|
 
+### 资源管理
+| 产品 | 相关链接 |
+|:---|:---|
+|标签|[文档](/api/label-api/)|
+

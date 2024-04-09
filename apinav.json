@@ -326,6 +326,15 @@
         "name": "模型服务平台 UModelVerse"
       }
     ]
+  },
+  {
+    "listname": "资源管理",
+    "listvalue": [
+      {
+        "links": "/api/label-api/README",
+        "name": "标签"
+      }
+    ]
   }
 ],
   "hotprods": [
