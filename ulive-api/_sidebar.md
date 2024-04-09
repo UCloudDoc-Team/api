@@ -25,6 +25,7 @@
     - [禁推流列表 - GetULiveForbidStreamList](api/ulive-api/get_u_live_forbid_stream_list)
     - [获取历史推流列表 - GetULiveHistoryStreamList](api/ulive-api/get_u_live_history_stream_list)
     - [获取黑白名单配置列表 - GetULiveLinkControlList](api/ulive-api/get_u_live_link_control_list)
+    - [获取实时带宽 - GetULiveRealBandwidth](api/ulive-api/get_u_live_real_bandwidth)
     - [直播录制文件统计信息 - GetULiveRecordFileInfo](api/ulive-api/get_u_live_record_file_info)
     - [直播录制统计信息 - GetULiveRecordStatistic](api/ulive-api/get_u_live_record_statistic)
     - [直播时移统计信息(计费) - GetULiveShiftStatistic](api/ulive-api/get_u_live_shift_statistic)

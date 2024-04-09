@@ -259,17 +259,6 @@
           ]
         },
         {
-          "name": "媒体工厂 UMedia",
-          "img": "icon-product__umedia",
-          "sublinks": [
-            {
-              "links": "/api/umedia-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "实时音视频 URTC",
           "img": "icon-product__urtc",
           "sublinks": [
@@ -476,17 +465,6 @@
           "sublinks": [
             {
               "links": "/api/usa-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "密钥管理服务 UKMS",
-          "img": "icon-product__ukms",
-          "sublinks": [
-            {
-              "links": "/api/ukms-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
