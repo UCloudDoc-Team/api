@@ -4,7 +4,6 @@
 - [索引](api/ucdn-api/index.md)
 - **API**
     - [添加证书 - AddCertificate](api/ucdn-api/add_certificate)
-    - [封禁解封缓存访问 - ControlUcdnDomainCacheAccess](api/ucdn-api/control_ucdn_domain_cache_access)
     - [删除证书 - DeleteCertificate](api/ucdn-api/delete_certificate)
     - [获取预取任务状态 - DescribeNewUcdnPrefetchCacheTask](api/ucdn-api/describe_new_ucdn_prefetch_cache_task)
     - [获取域名刷新任务状态 - DescribeNewUcdnRefreshCacheTask](api/ucdn-api/describe_new_ucdn_refresh_cache_task)
