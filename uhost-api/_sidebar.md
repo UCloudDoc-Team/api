@@ -39,7 +39,6 @@
     - [关闭主机 - StopUHostInstance](api/uhost-api/stop_uhost_instance)
     - [删除自制镜像 - TerminateCustomImage](api/uhost-api/terminate_custom_image)
     - [删除云主机 - TerminateUHostInstance](api/uhost-api/terminate_uhost_instance)
-    - [普通升级为方舟机型 - UpgradeToArkUHostInstance](api/uhost-api/upgrade_to_ark_uhost_instance)
 - **附录**
   * [创建云主机(旧)-CreateUHostInstance](api/uhost-api/create_uhost_instance_old)
   * [[参考]云主机机型](api/uhost-api/uhost_type)
