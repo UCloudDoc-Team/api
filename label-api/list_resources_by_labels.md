@@ -45,9 +45,30 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **TotalCount** | int | 资源总数 |No|
+| **Resources** | array[[*ListResourcesByLabelsResource*](#ListResourcesByLabelsResource)] | 资源列表 |No|
+
+#### 数据模型
 
 
+#### ListResourcesByLabelsResource
 
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ProjectId** | string | 项目id |**Yes**|
+| **ResourceId** | string | 资源id |**Yes**|
+| **ResourceName** | string | 资源名称 |**Yes**|
+| **ProjectName** | string | 项目名称 |**Yes**|
+| **ResourceType** | string | 资源类型 |**Yes**|
+| **Labels** | array[[*ListResourcesByLabelsLabel*](#ListResourcesByLabelsLabel)] | 标签数组 |**Yes**|
+
+#### ListResourcesByLabelsLabel
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Key** | string | 标签键 |No|
+| **Value** | string | 标签值 |No|
+| **Category** | string | 标签类型，system：系统标签；custom：自定义标签 |No|
 
 ## 示例
 
@@ -68,7 +89,26 @@ https://api.ucloud.cn/?Action=ListResourcesByLabels
 ```json
 {
   "Action": "ListResourcesByLabelsResponse",
-  "RetCode": 0
+  "Resources": [
+    {
+      "Labels": [
+        {
+          "Category": "lKEsvGZE",
+          "Key": "ZIUFsoXl",
+          "Value": "JWILJdgN"
+        }
+      ],
+      "ProjectId": "ndAdjmsF",
+      "ProjectName": "aNXZWXmR",
+      "Region": "fsAJwsSj",
+      "ResourceId": "NAVCNQVl",
+      "ResourceName": "zQRrbpKU",
+      "ResourceType": "iWNdsqXo",
+      "Zone": "NcjklQqz"
+    }
+  ],
+  "RetCode": 0,
+  "TotalCount": 8
 }
 ```
 
