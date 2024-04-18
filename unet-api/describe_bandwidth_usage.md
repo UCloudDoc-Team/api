@@ -31,11 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Limit** | int | 返回数据分页值, 取值范围为 [0,10000000] 之间的整数, 默认为20 |No|
 | **OffSet** | int | 返回数据偏移量, 默认为0 |No|
 | **EIPIds.N** | string | 弹性IP的资源Id. 如果为空, 则返回当前 Region中符合条件的所有EIP的带宽用量, n为自然数 |No|
+| **BeginTime** | int | 统计开始时间 |No|
+| **EndTime** | int | 统计结束时间 |No|
 
 ### 响应字段
 
@@ -64,24 +66,24 @@
 ```
 https://api.ucloud.cn/?Action=DescribeBandwidthUsage
 &Region=cn-bj2
+&EIP.0=eip-XXX
+&BeginTime=7
+&EndTime=1
 ```
 
 ### 响应示例
     
 ```json
 {
-  " EIPSet": [
+  "Action": "DescribeBandwidthUsageResponse",
+  "EIPSet": [
     {
-      "CurBandwidth": 0.0000457763671875,
-      "EIPId": "eip-vuxqym"
-    },
-    {
-      "CurBandwidth": 0,
-      "EIPId": "eip-weiyse"
+      "CurBandwidth": 0.0000629425048828125,
+      "EIPId": "eip-XXXX"
     }
   ],
-  "Action": "DescribeBandwidthUsageResponse",
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 1
 }
 ```
 
