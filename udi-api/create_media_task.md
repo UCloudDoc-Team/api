@@ -34,11 +34,11 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **StorageBackend** | string | 存储源 |**Yes**|
+| **StorageBackend** | string | 存储源。当前仅支持填写“US3” |**Yes**|
 | **Bucket** | string | Bucket名称 |**Yes**|
 | **SrcKey** | string | 源文件 |**Yes**|
 | **DstKey** | string | 目标生成文件 |**Yes**|
-| **Function** | string | 功能名称：例VideoTranscode |**Yes**|
+| **Function** | string | 功能名称：<br />- VideoTranscode，视频转码<br />- VideoCapture，视频截帧 |**Yes**|
 | **FunctionParamTemplateId** | string | 功能的参数模板ID，需要事先创建模板才可用，也可以使用预设模板，详细可通过DescribeFunctionTemplate接口查询 |**Yes**|
 
 ### 响应字段
