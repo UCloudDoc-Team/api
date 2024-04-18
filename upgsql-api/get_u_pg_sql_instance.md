@@ -52,7 +52,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | DB实例所在可用区 |No|
-| **BackupZone** | string | 跨可用区高可用备库所在可用区 |No|
+| **BackupZone** | string | 备份所在可用区 |No|
 | **InstanceID** | string | DB实例id |No|
 | **Name** | string | 实例名称 |No|
 | **DBVersion** | string | DB 版本 |No|
@@ -71,6 +71,7 @@
 | **CreateTime** | int | DB实例创建时间，采用UTC计时时间戳 |No|
 | **ModifyTime** | int | DB实例修改时间，采用UTC计时时间戳 |No|
 | **ExpiredTime** | int | DB实例过期时间，采用UTC计时时间戳 |No|
+| **Cpu** | int | CPU限制(核)，默认根据配置机型 |No|
 | **MemoryLimit** | int | 内存限制(MB)，默认根据配置机型 |No|
 | **DiskSpace** | int | 磁盘空间(GB), 默认根据配置机型 |No|
 | **DiskUsedSize** | float | DB实例磁盘已使用空间，单位GB |No|
@@ -78,6 +79,7 @@
 | **SystemFileSize** | float | DB实例系统文件大小，单位GB |No|
 | **LogFileSize** | float | DB实例日志文件大小，单位GB |No|
 | **InstanceMode** | string | Normal/HA,普通/高可用 |No|
+| **MachineType** | string | 配置机型名称 |No|
 
 ## 示例
 
