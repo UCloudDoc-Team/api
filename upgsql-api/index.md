@@ -30,6 +30,6 @@
 |[StopUPgSQLInstance](api/upgsql-api/stop_u_pg_sql_instance)|关闭PG实例|
 |[UpdateUPgSQLAttribute](api/upgsql-api/update_u_pg_sql_attribute)|更新数据库属性|
 |[UpdateUPgSQLBackupStrategy](api/upgsql-api/update_u_pg_sql_backup_strategy)|修改备份策略|
-|[UpdateUPgSQLPassword](api/upgsql-api/update_u_pg_sql_password)|更新数据库密码|
+|[UpdateUPgSQLPassword](api/upgsql-api/update_u_pg_sql_password)|更新数据库用户密码|
 |[UpgradeUPgSQLInstance](api/upgsql-api/upgrade_u_pg_sql_instance)|硬件规格升降级|
 |[UploadUPgSQLParamTemplate](api/upgsql-api/upload_u_pg_sql_param_template)|上传参数模板|

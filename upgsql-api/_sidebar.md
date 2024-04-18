@@ -30,6 +30,6 @@
     - [关闭PG实例 - StopUPgSQLInstance](api/upgsql-api/stop_u_pg_sql_instance)
     - [更新数据库属性 - UpdateUPgSQLAttribute](api/upgsql-api/update_u_pg_sql_attribute)
     - [修改备份策略 - UpdateUPgSQLBackupStrategy](api/upgsql-api/update_u_pg_sql_backup_strategy)
-    - [更新数据库密码 - UpdateUPgSQLPassword](api/upgsql-api/update_u_pg_sql_password)
+    - [更新数据库用户密码 - UpdateUPgSQLPassword](api/upgsql-api/update_u_pg_sql_password)
     - [硬件规格升降级 - UpgradeUPgSQLInstance](api/upgsql-api/upgrade_u_pg_sql_instance)
     - [上传参数模板 - UploadUPgSQLParamTemplate](api/upgsql-api/upload_u_pg_sql_param_template)

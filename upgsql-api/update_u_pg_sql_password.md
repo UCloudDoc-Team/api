@@ -1,8 +1,8 @@
-# 更新数据库密码 - UpdateUPgSQLPassword
+# 更新数据库用户密码 - UpdateUPgSQLPassword
 
 ## 简介
 
-更新数据库密码
+更新数据库用户密码
 
 
 
