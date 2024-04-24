@@ -63,9 +63,10 @@
 | **Relations** | array[[*SSLRelation*](#SSLRelation)] | SSL绑定ULB和ALB的关系 |No|
 | **SSLSource** | int | SSL证书来源，SSL证书来源，0代表证书来自于ULB平台，1代表证书来自于USSL平台 |No|
 | **USSLId** | string | USSL证书平台的编号,只有当SSLSource为1时才出现 |No|
-| **Domains** | string | USSL证书平台的域名,只有当SSLSource为1时才出现 |No|
-| **NotBefore** | int | 证书颁发时间,只有当SSLSource为1时才出现 |No|
-| **NotAfter** | int | 证书过期时间,只有当SSLSource为1时才出现 |No|
+| **Domains** | string | SSL证书的域名 |No|
+| **DNSNames** | string | SSL证书的扩展域名 |No|
+| **NotBefore** | int | 证书颁发时间 |No|
+| **NotAfter** | int | 证书过期时间 |No|
 
 #### SSLRelation
 
