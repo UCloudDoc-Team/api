@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写 |No|
-| **Rule.N** | string | 防火墙规则，例如：TCP\|22\|192.168.1.1/22\|DROP\|LOW\|禁用22端口，第一个参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DROP（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该条规则的自定义备注,bj1不支持添加备注 |**Yes**|
+| **Rule.N** | string | 防火墙规则，例如：TCP\|22\|192.168.1.1/22\|DROP\|LOW\|禁用22端口，第一个参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DROP（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该条规则的自定义备注，备注最大长度64 |**Yes**|
 | **Name** | string | 防火墙名称 |**Yes**|
 | **Tag** | string | 防火墙业务组，默认为Default |No|
 | **Remark** | string | 防火墙描述，默认为空 |No|
@@ -60,9 +60,9 @@ https://api.ucloud.cn/?Action=CreateFirewall
 &Region=cn-north
 &Name=NewFirewall
 &Tag=Default
-&Rule.0=UDP|53|0.0.0.0/0|ACCEPT|HIGH|备注
-&Rule.1=TCP|0-56636|0.0.0.0/0|ACCEPT|HIGH|备注
-&Rule.2=TCP|3306|0.0.0.0/0|DROP|HIGH|备注
+&Rule.0=UDP|53|0.0.0.0/0|ACCEPT|HIGH|Notes
+&Rule.1=TCP|0-56636|0.0.0.0/0|ACCEPT|HIGH|Notes
+&Rule.2=TCP|3306|0.0.0.0/0|DROP|HIGH|Notes
 ```
 
 ### 响应示例
