@@ -6,7 +6,7 @@
 
 
 
-!> note<br />在更新防火墙规则时，新的规则会覆盖掉原有规则。所以若需要更改或加入新的规则，需要将原所有规则与新规则一起提交。
+!> 在更新防火墙规则时，新的规则会覆盖掉原有规则。所以若需要更改或加入新的规则，需要将原所有规则与新规则一起提交。
 
 
 ## 使用方法
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FWId** | string | 防火墙资源ID |**Yes**|
-| **Rule.N** | string | 防火墙规则，例如：TCP\|22\|192.168.1.1/22\|DROP\|LOW\|禁用22端口，第一个参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DROP（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该条规则的自定义备注 |**Yes**|
+| **Rule.N** | string | 防火墙规则，例如：TCP\|22\|192.168.1.1/22\|DROP\|LOW\|禁用22端口，第一个参数代表协议：第二个参数代表端口号，第三个参数为ip，第四个参数为ACCEPT（接受）和DROP（拒绝），第五个参数优先级：HIGH（高），MEDIUM（中），LOW（低），第六个参数为该条规则的自定义备注, 备注最大长度64 |**Yes**|
 
 ### 响应字段
 
@@ -57,8 +57,8 @@ https://api.ucloud.cn/?Action=UpdateFirewall
 &ProjectId=org-xxx
 &Region=xxxx
 &FWId=fw-xxxx
-&Rule.1=UDP|53|0.0.0.0/0|ACCEPT|HIGH|备注
-&Rule.0=TCP|3306|0.0.0.0/0|DROP|HIGH|备注
+&Rule.1=UDP|53|0.0.0.0/0|ACCEPT|HIGH|Notes
+&Rule.0=TCP|3306|0.0.0.0/0|DROP|HIGH|Notes
 ```
 
 ### 响应示例

@@ -96,8 +96,8 @@ https://api.ucloud.cn/?Action=DescribeFirewall
       "CreateTime": 1508472648,
       "FWId": "firewall-XXXX",
       "GroupId": "25575",
-      "Name": "非Web服务器推荐(22，3389)",
-      "Remark": "开放22，3389端口和ICMP",
+      "Name": "non web service recommendation:tcp 22,3389",
+      "Remark": "open tcp port:22,3389 and icmp",
       "ResourceCount": 0,
       "Rule": [
         {
