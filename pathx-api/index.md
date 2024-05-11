@@ -22,8 +22,10 @@
 |[DescribeUPath](api/pathx-api/describe_upath)|获取加速线路信息|
 |[DescribeUPathTemplate](api/pathx-api/describe_upath_template)|查询UPath的监控模板|
 |[GetGlobalSSHPrice](api/pathx-api/get_global_ssh_price)|获取GlobalSSH价格|
+|[GetGlobalSSHTraffic](api/pathx-api/get_global_ssh_traffic)|获取GlobalSSH流量统计数据|
 |[GetGlobalSSHUpdatePrice](api/pathx-api/get_global_ssh_update_price)|获取GlobalSSH升级价格|
 |[GetPathXMetric](api/pathx-api/get_path_x_metric)|获取全球加速监控信息|
+|[ModifyGlobalSSHOriginInfo](api/pathx-api/modify_global_ssh_origin_info)|修改GlobalSSH 源站信息|
 |[ModifyGlobalSSHPort](api/pathx-api/modify_global_ssh_port)|修改GlobalSSH端口|
 |[ModifyGlobalSSHRemark](api/pathx-api/modify_global_ssh_remark)|修改GlobalSSH备注|
 |[ModifyGlobalSSHType](api/pathx-api/modify_global_ssh_type)|修改GlobalSSH实例类型|
