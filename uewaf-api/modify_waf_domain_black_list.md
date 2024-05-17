@@ -34,7 +34,9 @@
 | **ExpireTime** | int | 过期时间,即有效时长，单位为秒,永不过期传0 |**Yes**|
 | **FullDomain** | string | 该条记录所属的域名 |**Yes**|
 | **CIDRS.N** | string | IP、网段或者IP段，传递数组；类型为custom时必填 |No|
+| **RecordId** | int | 域名记录ID |No|
 | **Remark** | string | 备注信息 |No|
+| **Name** | string | 本策略的名字 |No|
 
 ### 响应字段
 
@@ -62,6 +64,7 @@ ActionType=forbidden
 &ExpireTime=0
 &Remark=test
 &Source=gstrulLO
+&Name=VAuukXKz
 ```
 
 ### 响应示例
