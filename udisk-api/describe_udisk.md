@@ -48,6 +48,7 @@
 | **HostId** | string | 根据传入的HostId，返回与该主机关联的云盘信息。 |No|
 | **HostProduct** | string | 宿主产品类型，可筛选挂载在该类型宿主上的云盘。可选值：uhost, uphost。为空拉取所有。（当HostIdForAttachment字段不为空时，该字段可以不填，若HostIdForAttachment与该字段宿主类型冲突，则以HostIdForAttachment字段为准。） |No|
 | **Status** | string | 云盘状态。All(所有状态)，Available(可用)，Attaching(挂载中)，InUse(已挂载)， Detaching(卸载中)， Initializating(分配中)，Failed(创建失败)，Cloning(克隆中)，Restoring(恢复中)，RestoreFailed(恢复失败)。默认值：All |No|
+| **Tag** | string | 业务组名称 |No|
 
 ### 响应字段
 
@@ -129,6 +130,7 @@ https://api.ucloud.cn/?Action=DescribeUDisk
 &UDiskBasicInfo=XJaFNkfA
 &HostId=bsRfMMHc
 &Status=ZFCNKvKR
+&Tag=YotklvEn
 ```
 
 ### 响应示例
