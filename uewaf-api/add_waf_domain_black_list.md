@@ -32,8 +32,11 @@
 | **Type** | string | 类型：境内(internal)、境外(oversea)，自定义(custom) |**Yes**|
 | **ActionType** | string | 执行动作: 可选值:拦截请求(forbidden) ，验证码(captcha) |**Yes**|
 | **ExpireTime** | int | 过期时间,即有效时长，单位为秒,永不过期传0 |**Yes**|
+| **RecordId** | int | 域名记录ID |No|
+| **DestIp** | string | 目标IP; Source为bot时需传递 |No|
 | **CIDRS.N** | string | IP、网段或者IP段，传递数组；类型为custom时必填 |No|
 | **Remark** | string | 备注信息 |No|
+| **Name** | string | 名称 |No|
 
 ### 响应字段
 
@@ -61,6 +64,7 @@ https://api.ucloud.cn/?Action=AddWafDomainBlackList
 &CIDRS.0=2.2.2.2
 &ExpireTime=10
 &Remark=test
+&Name=DqXFAQfT
 ```
 
 ### 响应示例

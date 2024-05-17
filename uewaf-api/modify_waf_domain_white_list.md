@@ -29,7 +29,9 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ID** | int | 要编辑的白名单记录ID |**Yes**|
 | **FullDomain** | string | 该条记录所属的域名 |**Yes**|
+| **RecordId** | int | 域名记录ID |No|
 | **CIDRS.N** | string | IP、网段或者IP段，传递数组 |No|
+| **Name** | string | 规则名称 |No|
 | **Remark** | string | 备注信息 |No|
 
 ### 响应字段
