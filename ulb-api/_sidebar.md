@@ -39,6 +39,9 @@
     - [获取SSL证书信息 - DescribeSSL](api/ulb-api/describe_ssl)
     - [获取安全策略的信息 - DescribeSecurityPolicies](api/ulb-api/describe_security_policies)
 - **公共 API**
+    - [新增监听器扩展证书 - AddSSLBinding](api/ulb-api/add_ssl_binding_json)
+    - [删除监听器绑定的扩展证书 - DeleteSSLBinding](api/ulb-api/delete_ssl_binding_json)
+    - [删除SSL证书 - DeleteSSL](api/ulb-api/delete_ssl)
     - [创建SSL证书 - CreateSSL](api/ulb-api/create_ssl)
     - [删除SSL证书 - DeleteSSL](api/ulb-api/delete_ssl)
     - [更新SSL属性 - UpdateSSLAttribute](api/ulb-api/update_ssl_attribute)
