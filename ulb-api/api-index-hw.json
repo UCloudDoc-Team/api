@@ -92,7 +92,9 @@
           {"api": "CreateSecurityPolicy"},
           {"api": "DeleteSecurityPolicy"},
           {"api": "UnBindSecurityPolicy"},
-          {"api": "DescribeSecurityPoliciesV2"}
+          {"api": "DescribeSecurityPoliciesV2"},
+          {"api": "AddSSLBinding"},
+          {"api": "DeleteSSLBinding"}
         ]
       }
     ]
