@@ -60,3 +60,10 @@
 |[DeleteSecurityPolicy](api/ulb-api/delete_security_policy)|删除安全策略|
 |[UnBindSecurityPolicy](api/ulb-api/un_bind_security_policy)|解绑安全策略|
 |[DescribeSecurityPoliciesV2](api/ulb-api/describe_security_policies_v2)|获取安全策略的信息|
+
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[AddSSLBinding](api/ulb-api/add_ssl_binding)|新增监听器绑定证书|
+|[DeleteSSLBinding](api/ulb-api/delete_ssl_binding)|删除监听器绑定的扩展证书|
