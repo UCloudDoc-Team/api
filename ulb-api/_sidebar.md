@@ -17,6 +17,8 @@
     - [描述应用型负载均衡实例 - DescribeLoadBalancers](api/ulb-api/describe_load_balancers_json)
     - [描述应用型负载均衡监听器 - DescribeListeners](api/ulb-api/describe_listeners)
     - [描述应用型负载均衡转发规则 - DescribeRules](api/ulb-api/describe_rules)
+    - [新增监听器扩展证书 - AddSSLBinding](api/ulb-api/add_ssl_binding_json)
+    - [删除监听器绑定的扩展证书 - DeleteSSLBinding](api/ulb-api/delete_ssl_binding_json)
 - **CLB**
     - [创建传统型负载均衡负载均衡 - CreateULB](api/ulb-api/create_ulb)
     - [创建CLB的VServer - CreateVServer](api/ulb-api/create_vserver)
@@ -39,8 +41,6 @@
     - [获取SSL证书信息 - DescribeSSL](api/ulb-api/describe_ssl)
     - [获取安全策略的信息 - DescribeSecurityPolicies](api/ulb-api/describe_security_policies)
 - **公共 API**
-    - [新增监听器扩展证书 - AddSSLBinding](api/ulb-api/add_ssl_binding_json)
-    - [删除监听器绑定的扩展证书 - DeleteSSLBinding](api/ulb-api/delete_ssl_binding_json)
     - [删除SSL证书 - DeleteSSL](api/ulb-api/delete_ssl)
     - [创建SSL证书 - CreateSSL](api/ulb-api/create_ssl)
     - [删除SSL证书 - DeleteSSL](api/ulb-api/delete_ssl)
