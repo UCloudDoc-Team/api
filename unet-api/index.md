@@ -17,6 +17,7 @@
 |[DescribeEIP](api/unet-api/describe_eip)|获取弹性IP信息|
 |[DescribeFirewall](api/unet-api/describe_firewall)|获取防火墙信息|
 |[DescribeFirewallResource](api/unet-api/describe_firewall_resource)|获取防火墙绑定资源|
+|[DescribePrivateIP](api/unet-api/describe_private_ip)|获取辅助IP信息|
 |[DescribeShareBandwidth](api/unet-api/describe_share_bandwidth)|获取共享带宽信息|
 |[DescribeShareBandwidthPrice](api/unet-api/describe_share_bandwidth_price)|获取共享带宽价格|
 |[DescribeShareBandwidthUpdatePrice](api/unet-api/describe_share_bandwidth_update_price)|获取共享带宽升级价格|
