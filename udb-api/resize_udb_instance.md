@@ -43,6 +43,7 @@
 | **StartAfterUpgrade** | boolean | DB关闭状态下升降级，升降级后是否启动DB，默认为false |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 | **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **CPU** | int | 数据库的CPU核数（只对普通版的SQLServer有用） |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -68,6 +69,7 @@ https://api.ucloud.cn/?Action=ResizeUDBInstance
 &DiskSpace=500
 &MachineType=ZFyPches
 &SpecificationType=cEsDNnjF
+&CPU=3
 ```
 
 ### 响应示例
