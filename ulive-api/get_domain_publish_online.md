@@ -33,7 +33,8 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 查询流量的起始时间，格式：时间戳 |**Yes**|
 | **EndTime** | int | 查询流量的结束时间，格式：时间戳 |**Yes**|
-| **DomainId.N** | string | 域名ID，创建域名时生成的ID，不传则获取所有域名ID |No|
+| **DomainId.N** | string | 推流域名ID，创建域名时生成的ID，不传则获取所有域名ID |No|
+| **Domain.N** | string | 推流域名，如传DomainId参数则以DomainId为准，不传则Domain参数为准，都不传则获取所有域名 |No|
 
 ### 响应字段
 
@@ -66,6 +67,8 @@ https://api.ucloud.cn/?Action=GetDomainPublishOnline
 &BeginTime=1
 &EndTime=8
 &PlayDomain=yaNVzHWS
+&Domain.n=cffZQsgT
+&Domain.n=cpbNmdzb
 ```
 
 ### 响应示例
