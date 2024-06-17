@@ -31,13 +31,15 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组ID |**Yes**|
 | **Size** | int | 内存大小, 单位:GB (需要大于原size,且小于等于32) 目前仅支持1/2/4/8/16/32 G 六种容量规格 |**Yes**|
-| **ChargeType** | string |  |No|
+| **ChargeType** | string | 计费类型 |No|
 | **Type** | string | 空间类型:single(无热备),double(热备)(默认: double) |No|
+| **StartTime** | int | 任务执行时间戳，默认为0或者不传时，为立即执行，传入时间需满足未来一天范围 |No|
+| **HighPerformance** | boolean | 高性能Redis， 默认为false， 或者不填， 高性能为true |No|
 | **CouponId** | int | 代金券ID 请参考DescribeCoupon接口 |No|
 
 ### 响应字段
@@ -63,6 +65,8 @@ https://api.ucloud.cn/?Action=ResizeURedisGroup
 &Zone=InTEynQN
 &ChargeType=bUEUNBFI
 &Type=zbbRIPIP
+&OnRewriteTime=true
+&HighPerformance=false
 ```
 
 ### 响应示例
