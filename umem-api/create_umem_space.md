@@ -42,14 +42,17 @@
 | **Quantity** | int | 购买时长 默认: 1 |No|
 | **VPCId** | string | VPC的ID |No|
 | **SubnetId** | string | 子网ID |No|
-| **Tag** | string |  |No|
+| **Tag** | string | 业务组名称 |No|
 | **Password** | string | URedis密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64UGFzc3dvcmQx。 |No|
 | **SlaveZone** | string | 跨机房UDRedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
 | **BlockCnt** | int | 分片个数 |No|
-| **ClusterMode** | string | 是否是cluster模式（参数为cluster创建redis cluster，其他参数或者不传该参数仍然创建老版本分布式） |No|
+| **ClusterMode** | string | 【待废弃】是否是cluster模式（参数为cluster创建redis cluster，其他参数或者不传该参数仍然创建老版本分布式） |No|
 | **Version** | string | 分布式分片版本（默认版本是4.0，其他版本见DescribeUDRedisBlockVersion） |No|
 | **HighPerformance** | boolean | 是否创建性能增强性。默认为false，或者不填，填true为性能增强型。 |No|
-| **ProxySize** | int | 分布式代理CPU核数 |No|
+| **ProxySize** | int | 分布式代理CPU核数，不填或者传0时默认不创建代理 |No|
+| **UlbMode** | boolean | 是否创建负载均衡型分布式代理，true时表示创建负载均衡型代理 |No|
+| **Port** | int | 分片端口, 默认为 6379 |No|
+| **ProxyPort** | int | 代理端口, 默认为 6379 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -85,6 +88,10 @@ https://api.ucloud.cn/?Action=CreateUMemSpace
 &Version=WWTSLAYj
 &HighPerformance=false
 &ProxySize=5
+&Port=9
+&ProxyPort=9
+&UlbMode=true
+&SpaceId=bvfrJZyE
 ```
 
 ### 响应示例
