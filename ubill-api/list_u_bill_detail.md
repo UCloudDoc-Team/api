@@ -36,7 +36,7 @@
 | **OrderType** | string | 订单类型 (筛选项, 默认全部) 。枚举值：<br /><br /> > OT_BUY:新购 <br /><br /> > OT_RENEW:续费 <br /><br /> > OT_UPGRADE:升级 <br /><br /> > OT_DOWNGRADE:降级 <br /><br /> > OT_SUSPEND:结算 <br /><br /> > OT_ADDITIONAL:补单 <br /><br /> > OT_REFUND:删除 <br /><br /> > OT_POSTPAID_RENEW:过期 <br /><br /> > OT_POSTPAID_PAYMENT:后付费 <br /><br /> > OT_RECOVER:删除恢复  |No|
 | **ChargeType** | string | 计费方式 (筛选项, 默认全部)。枚举值：<br /><br /> > Year:按年<br /><br /> > Month:按月 <br /><br /> > Day:按天 <br /><br /> > Dynamic:按时  <br /><br /> > Used:按量 <br /><br /> > Donate:赠送 <br /><br /> > Trial:试用  <br /><br /> > Post:后付费  <br /><br /> > Spot:抢占式 |No|
 | **ShowZero** | int | 是否显示0元订单 (0 不显示, 1 显示, 默认0) |No|
-| **PaidState** | int | 支付状态 (筛选项, 1:仅显示未支付订单; 2:仅显示已支付订单; 0:两者都显示)	 |No|
+| **PaidState** | int | 支付状态 (筛选项, 1:仅显示未支付订单; 2:仅显示已支付订单; 0:两者都显示)	    当前月份 传递1或者0，会返回历史所有未支付账单；历史月份不支持查询未支付，请勿传递1 |No|
 | **UserEmail** | string | 用户邮箱，可以根据用户邮箱来进行筛选 |No|
 | **Limit** | int | 每页数量，默认值25，最大值：100。 |No|
 | **Offset** | int | 数据偏移量 (默认0)	 |No|
@@ -59,6 +59,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **ProjectId** | string | 项目id |**Yes**|
 | **Amount** | string | 订单总金额 |**Yes**|
 | **AmountReal** | string | 现金账户支付 |**Yes**|
 | **AmountFree** | string | 赠送金额抵扣 |**Yes**|
@@ -77,6 +78,7 @@
 | **ResourceTypeCode** | int | 产品类型代码 |**Yes**|
 | **ItemDetails** | array[[*ItemDetail*](#ItemDetail)] | 产品配置 |**Yes**|
 | **ResourceExtendInfo** | array[[*ResourceExtendInfo*](#ResourceExtendInfo)] | 资源标识 |**Yes**|
+| **ResourceLabel** | object | 资源标签。字符串键值对的map：{"cs_label": "cs_label_value"} |**Yes**|
 | **ShowHover** | int | 订单支付状态。枚举值：<br /><br />> 0:未支付 <br /><br /> > 1:已支付 |**Yes**|
 | **UserEmail** | string | 账户邮箱 |**Yes**|
 | **UserName** | string | 账户名 |**Yes**|
