@@ -37,6 +37,12 @@
 | **Size** | int | 购买UMem大小,单位:GB |**Yes**|
 | **Type** | string | 空间类型:single(无热备),double(热备)(默认: double) |**Yes**|
 | **SpaceId** | string | 需要升级的空间的SpaceId |**Yes**|
+| **HighPerformance** | string | 是否为性能增强型。默认为false，或者不填，true为性能增强型。 |No|
+| **IsSplit** | string | 如果是拆分按钮查询价格就填 true, 否则就填 false,默认为 false |No|
+| **BlockIds.N** | string | 进行容量调整分片的分片ID(性能增强型不需要传入) |No|
+| **BlockSize.N** | int | 进行容量调整的分片的目标容量,单位 GB<br />(性能增强型不需要传入) |No|
+| **ProxyId** | string |  代理id |No|
+| **NewCPU** | int | 代理升级后CPU核数 |No|
 
 ### 响应字段
 
@@ -57,11 +63,18 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUMemUpgradePrice
-&Region=cn-bj2
-&Zone=
-&Size=16
-&Type=double
-&SpaceId=umem-mXXXX
+&Region=OYdDMZXj
+&Zone=eOtEEIHT
+&ProjectId=xaZfeoNa
+&Size=6
+&Type=bmNycqFN
+&SpaceId=AmSgNavR
+&HighPerformance=gPcaNcLQ
+&IsSplit=AjafPGzg
+&BlockIds.n=WJNZdGqo
+&BlockSize.n=4
+&ProxyId=SPUoFZMN
+&NewCPU=1
 ```
 
 ### 响应示例
@@ -69,8 +82,8 @@ https://api.ucloud.cn/?Action=DescribeUMemUpgradePrice
 ```json
 {
   "Action": "DescribeUMemUpgradePriceResponse",
-  "OriginalPrice": 4,
-  "Price": 4,
+  "OriginalPrice": 9,
+  "Price": 9,
   "RetCode": 0
 }
 ```

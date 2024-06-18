@@ -41,6 +41,7 @@
 | **HighPerformance** | boolean | 实例类型是否为性能增强型。默认为false，或者不填，true为性能增强型。 |No|
 | **BlockCnt** | int | umem 分片个数 |No|
 | **ProxySize** | int | umem 代理CPU核心数 |No|
+| **UlbMode** | string | umem分布式代理类型，默认false，true为负载均衡型代理 |No|
 
 ### 响应字段
 
@@ -76,6 +77,7 @@ https://api.ucloud.cn/?Action=DescribeUMemPrice
 &HighPerformance=true
 &BlockCnt=4
 &ProxySize=7
+&UlbMode=DDlgHEnz
 ```
 
 ### 响应示例
