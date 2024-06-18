@@ -52,6 +52,10 @@
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
 | **HighPerformance** | boolean | 是否创建高性能Redis， 默认为false， 或者不填， 创建高性能为true |No|
+| **Port** | int | 端口 |No|
+| **RollbackGroupId** | string | 如果是通过回档创建实例，需要传回档实例的GroupId |No|
+| **AOFID** | string | 回档的AOF文件ID |No|
+| **RollbackTime** | int | 回档时间点 |No|
 | **CouponId** | string | 代金券ID |No|
 
 ### 响应字段
@@ -81,6 +85,10 @@ https://api.ucloud.cn/?Action=CreateURedisGroup
 &SubnetId=BvhMJWKe
 &VPCId=OECssiom
 &HighPerformance=true
+&RollbackGroupId=zDbLFMSd
+&AOFID=fEWypwnR
+&RollbackTime=2
+&Port=8
 ```
 
 ### 响应示例
