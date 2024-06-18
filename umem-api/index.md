@@ -45,6 +45,7 @@
 |:---|:---|
 |[CheckUDredisSpaceAllowance](api/umem-api/check_udredis_space_allowance)|检查高性能UMem剩余资源|
 |[CheckURedisAllowance](api/umem-api/check_uredis_allowance)|检查URedis资源是否足够|
+|[CreateScanHotBigKeys](api/umem-api/create_scan_hot_big_keys)|创建扫大key和热key的任务|
 |[CreateURedisBackup](api/umem-api/create_uredis_backup)|创建主备Redis备份|
 |[DescribeUDRedisProxyInfo](api/umem-api/describe_ud_redis_proxy_info)|拉取udredis代理信息|
 |[DescribeUDRedisSlowlog](api/umem-api/describe_ud_redis_slowlog)|查询UDRedis慢日志|

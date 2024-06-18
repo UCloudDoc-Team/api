@@ -1,8 +1,8 @@
-# 获取uredis升级价格信息 - DescribeURedisUpgradePrice
+# 创建扫大key和热key的任务 - CreateScanHotBigKeys
 
 ## 简介
 
-获取uredis升级价格信息
+创建执行扫大key和热key的任务
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeURedisUpgradePrice)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=CreateScanHotBigKeys)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeURedisUpgradePrice`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `CreateScanHotBigKeys`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -32,11 +32,12 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Size** | int | 购买uredis大小,单位:GB,范围是[1-32] |**Yes**|
-| **GroupId** | string | 要升级的空间的GroupId,请参考DescribeURedisGroup接口 |**Yes**|
-| **HighPerformance** | boolean | 查询高性能Redis， 默认为false， 或者不填， 查询高性能为true |No|
+| **GroupId** | string | 资源id |**Yes**|
+| **Type** | string | 任务类型。"ScanBigKeys"：扫大key，"ScanHotKeys"：扫热key |**Yes**|
+| **IsRetry** | boolean | 是否要重试任务，如果是的话，TaskId必填 |No|
+| **TaskId** | string | 要重试的任务id |No|
 
 ### 响应字段
 
@@ -45,8 +46,6 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Price** | float | 价格 |No|
-| **OriginalPrice** | int | 原价 |No|
 
 
 
@@ -56,24 +55,23 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=DescribeURedisUpgradePrice
-&Region=cn-bj2
-&Size=16
-&GroupId=uredis-grxxxxx
-&ProjectId=ePbWLFiU
-&Type=QeoRUuSZ
-&ProjectId=HOQJvXVm
-&Type=hHdYSEwJ
-&HighPerformance=false
+https://api.ucloud.cn/?Action=CreateScanHotBigKeys
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=rNIVBcMu
+&GroupId=zMwxHlVM
+&Type=1
+&IsRetry=true
+&TaskId=HKgbjDjF
+&IsRetry=false
+&TaskId=tJfEjIiX
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "DescribeURedisUpgradePriceResponse",
-  "OriginalPrice": 16865,
-  "Price": 16965,
+  "Action": "CreateScanHotBigKeysResponse",
   "RetCode": 0
 }
 ```
