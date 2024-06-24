@@ -35,6 +35,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ImageType** | string | 镜像类型。标准镜像：Base，镜像市场：Business， 自定义镜像：Custom，默认返回所有类型 |No|
+| **FuncType** | string | 镜像归属,枚举值:["gpu","app","uhost"]。"gpu": 对gpu进行处理过的行业镜像；"app"：轻量云主机专用的镜像；"uhost"：云主机镜像市场的行业镜像。FuncType传参错误会被忽略 |No|
 | **OsType** | string | 操作系统类型：Linux， Windows 默认返回所有类型 |No|
 | **ImageId** | string | 镜像Id |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
@@ -65,7 +66,7 @@
 | **OsName** | string | 操作系统名称 |No|
 | **ImageType** | string | 镜像类型 标准镜像：Base， 行业镜像：Business，自定义镜像：Custom |No|
 | **Features** | array[string] | 特殊状态标识，目前包含NetEnhnced（网络增强1.0）, NetEnhanced_Ultra（网络增强2.0）, NetEnhanced_Extreme（网络增强3.0）, HotPlug(热升级), GPU（GPU镜像）,CloudInit, IPv6（支持IPv6网络）,RssdAttachable（支持RSSD云盘）,Vgpu_AMD（支持AMD的vgpu）,Vgpu_NVIDIA（支持NVIDIA的vgpu）,Aarch64_Type（支持arm64架构） |No|
-| **FuncType** | string | 行业镜像类型（仅行业镜像将返回这个值） |No|
+| **FuncType** | string | 镜像归属,枚举值:["gpu","app","uhost"]。"gpu": 对gpu进行处理过的行业镜像；"app"：轻量云主机专用的镜像；"uhost"：云主机镜像市场的行业镜像 |No|
 | **IntegratedSoftware** | string | 集成软件名称（仅行业镜像将返回这个值） |No|
 | **Vendor** | string | 供应商（仅行业镜像将返回这个值） |No|
 | **Links** | string | 介绍链接（仅行业镜像将返回这个值） |No|
