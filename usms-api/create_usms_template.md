@@ -37,7 +37,7 @@
 | **Template** | string | 短信模板内容，说明如下：字数不超过500，每个中文、符号、英文、数组等都计为一个字；模板中的变量填写格式：{N}，其中N为大于1的整数，有多个参数时，建议N从1开始顺次，例如：{1}、{2}等；短信模板禁止仅包括变量的情况； |**Yes**|
 | **International** | boolean | 标记是否为国际短信。true:国际短信，false:国内短信，若不传值则默认该值为false |No|
 | **Remark** | string | 短信模板申请原因说明，字数不超过128，每个中文、符号、英文、数字等都计为1个字。 |No|
-| **UnsubscribeInfo** | string | 当Purpose为3时，也即会员推广类短信模板，该项必填。枚举值：TD退订、回T退订、回N退订、回TD退订、退订回T、退订回D、退订回TD、退订回复T、退订回复D、退订回复N、退订回复TD、拒收回T |No|
+| **UnsubscribeInfo** | string | 当Purpose=3并且International=false时，也即国内会员推广类短信模板，该项必填。枚举值：【拒收请回复R】 |No|
 | **Instruction** | string | 模板变量属性说明 |No|
 
 ### 响应字段
@@ -58,16 +58,16 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUSMSTemplate
-&PublicKey=AMxzvfXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-&Signature=cba5cf5XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-&ProjectId=org-geg1zh
-&Purpose=2
-&TemplateName=ucloud-alert
-&Template=alertXXXXXXXXXXXXXXXXXXXXXXXX
-&Remark=XXXXXXXXXXXXXXXX
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=nwkzSZQY
+&Purpose=1
+&TemplateName=vnSDFAjK
+&Template=ulaAspXU
 &International=true
-&Instruction=nkhgFrIo
-&Instruction=TwnkHrCj
+&Remark=eGfxoirr
+&UnsubscribeInfo=LJlQORyc
+&Instruction=fotdmkKB
 ```
 
 ### 响应示例
@@ -75,9 +75,9 @@ https://api.ucloud.cn/?Action=CreateUSMSTemplate
 ```json
 {
   "Action": "CreateUSMSTemplateResponse",
-  "Message": "",
+  "Message": "iUdpztgk",
   "RetCode": 0,
-  "TemplateId": "UTA190816758B3F"
+  "TemplateId": "edcONjeS"
 }
 ```
 
