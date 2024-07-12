@@ -152,7 +152,7 @@
 | **InstanceTypeId** | int | UDB数据库机型ID |No|
 | **Tag** | string | 获取资源其他信息 |No|
 | **CaseSensitivityParam** | int | 0 区分大小写, 1不区分, 只针对mysql8.0 |No|
-| **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
+| **SpecificationType** | int | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
 
 #### UFileDataSet
