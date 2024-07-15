@@ -63,6 +63,10 @@
         "name": "负载均衡 ULB 公共 API"
       },
       {
+        "links": "/api/nlb-api/README",
+        "name": "网路负载均衡 ULB"
+      },
+      {
         "links": "/api/vpc2.0-api/README",
         "name": "私有网络 UVPC"
       },
