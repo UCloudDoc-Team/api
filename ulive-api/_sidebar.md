@@ -32,6 +32,7 @@
     - [获取直播截图计费统计信息 - GetULiveSnapshotStatistic](api/ulive-api/get_u_live_snapshot_statistic)
     - [获取直播流诊断信息 - GetULiveStreamDiagnosisInfo](api/ulive-api/get_u_live_stream_diagnosis_info)
     - [获取流监控 - GetULiveStreamMonitor](api/ulive-api/get_u_live_stream_monitor)
+    - [查询单路流流量 - GetULiveStreamTrafficData](api/ulive-api/get_u_live_stream_traffic_data)
     - [获取转码并发总数 - GetULiveTranscodeCnt](api/ulive-api/get_u_live_transcode_cnt)
     - [获取转码配置 - GetULiveTranscodeConfigInfo](api/ulive-api/get_u_live_transcode_config_info)
     - [获取直播转码计费统计信息 - GetULiveTranscodeStatistic](api/ulive-api/get_u_live_transcode_statistic)
