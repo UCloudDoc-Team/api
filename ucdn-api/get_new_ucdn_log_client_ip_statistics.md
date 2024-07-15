@@ -33,11 +33,10 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DomainId** | string | 域名id，创建域名时生成的id |**Yes**|
-| **Areacode** | string | 流量统计区域 cn代表国内 abroad代表海外 ；目前只支持国内 |No|
-| **BeginTime** | int | 查询的开始时间，如果有EndTime，BeginTime必须赋值。如果没有EndTime，BeginTime也可以不赋值，EndTime默认当天，BeginTime 默认前一天。 |No|
-| **EndTime** | int | 查询的结束时间，格式：时间戳。EndTime默认为当天，BeginTime默认为前一天；最大支持30天 |No|
+| **BeginTime** | int | 查询的日期，单位：Unix时间戳。只支持按天查询 |No|
 | **OrderBy** | int | 0表示按照下载次数降序排列，1表示按流量降序排列，默认为0 |No|
-| **Limit** | string | 返回结果数量限制，默认1000 |No|
+| **Limit** | string | 返回结果数量限制，返回最多100条 |No|
+| **Type** | int | 1表示按照1小时粒度，2表示按照一天的粒度 默认是天 |No|
 
 ### 响应字段
 
@@ -55,16 +54,11 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ClientIpList** | array[[*ClientIpList*](#ClientIpList)] | 客户端ip数据集合。 |No|
-| **Date** | string | 按日期返回格式如：2017-02-13 |No|
-
-#### ClientIpList
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **IP** | string | 客户端ip |No|
-| **RequestNum** | int | 访问次数 |No|
-| **Flow** | float | 访问流量，单位G |No|
+| **Flow** | int | 流量单位字节 |No|
+| **IP** | string | 客户端IP |No|
+| **Requst** | int | 请求数 |No|
+| **FlowPercent** | float | 流量占比 |No|
+| **RequestPercent** | float | 请求数占比 |No|
 
 ## 示例
 
@@ -72,11 +66,14 @@
     
 ```
 https://api.ucloud.cn/?Action=GetNewUcdnLogClientIpStatistics
-&DomainId=test.com
-&Areacode=cn
-&BeginTime=1620057600
-&EndTime=1620077600
-&Limit=100
+&ProjectId=SIDfHYdh
+&DomainId=wsIHivpj
+&Areacode=dAFzdmyj
+&BeginTime=2
+&EndTime=4
+&OrderBy=3
+&Limit=xNEJXPBv
+&Type=4
 ```
 
 ### 响应示例
@@ -86,69 +83,11 @@ https://api.ucloud.cn/?Action=GetNewUcdnLogClientIpStatistics
   "Action": "GetNewUcdnLogClientIpStatisticsResponse",
   "ClientIpStatisticsList": [
     {
-      "ClientIpList": [
-        {
-          "Flow": 1.15554,
-          "IP": "grOHkIEF",
-          "RequestNum": 7
-        },
-        {
-          "Flow": 8.24256,
-          "IP": "urnbAaOv",
-          "RequestNum": 5
-        },
-        {
-          "Flow": 7.45337,
-          "IP": "jgFUfMNd",
-          "RequestNum": 5
-        },
-        {
-          "Flow": 2.82426,
-          "IP": "IYubMPot",
-          "RequestNum": 7
-        },
-        {
-          "Flow": 4.93751,
-          "IP": "PehEGkoA",
-          "RequestNum": 8
-        },
-        {
-          "Flow": 7.88547,
-          "IP": "USEEixMx",
-          "RequestNum": 7
-        },
-        {
-          "Flow": 2.88897,
-          "IP": "znxZmsEn",
-          "RequestNum": 8
-        },
-        {
-          "Flow": 6.98333,
-          "IP": "qhzPpLeg",
-          "RequestNum": 9
-        },
-        {
-          "Flow": 6.71646,
-          "IP": "skRWEREI",
-          "RequestNum": 6
-        }
-      ],
-      "Date": "QZDeBGkp"
-    },
-    {
-      "ClientIpList": [
-        {
-          "Flow": 6.83778,
-          "IP": "zZhpZfiq",
-          "RequestNum": 6
-        },
-        {
-          "Flow": 7.68661,
-          "IP": "TZTHXYIr",
-          "RequestNum": 1
-        }
-      ],
-      "Date": "UocEGyNC"
+      "Flow": 6,
+      "FlowPercent": 2.21938,
+      "IP": "hByeMlQr",
+      "RequestPercent": 8.52443,
+      "Requst": 7
     }
   ],
   "RetCode": 0

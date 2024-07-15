@@ -10,6 +10,7 @@
     - [接口获取鉴权信息(非标使用) - GetAuthConfig](api/ucdn-api/get_auth_config)
     - [获取证书 - GetCertificateV2](api/ucdn-api/get_certificate_v2)
     - [获取域名命中率 - GetNewUcdnDomainHitRate](api/ucdn-api/get_new_ucdn_domain_hit_rate)
+    - [获取日志客户端ip统计 - GetNewUcdnLogClientIpStatistics](api/ucdn-api/get_new_ucdn_log_client_ip_statistics)
     - [获取热点referer统计 - GetNewUcdnLogRefererStatistics](api/ucdn-api/get_new_ucdn_log_referer_statistics)
     - [获取日志url统计 - GetNewUcdnLogUrlStatistics](api/ucdn-api/get_new_ucdn_log_url_statistics)
     - [获取域名九五峰值带宽数据【新】 - GetUcdnDomain95BandwidthV2](api/ucdn-api/get_ucdn_domain95_bandwidth_v2)
@@ -31,6 +32,7 @@
     - [查询IP信息 - QueryIpLocation](api/ucdn-api/query_ip_location)
     - [刷新缓存 - RefreshNewUcdnDomainCache](api/ucdn-api/refresh_new_ucdn_domain_cache)
     - [切换账号计费方式 - SwitchUcdnChargeType](api/ucdn-api/switch_ucdn_charge_type)
+    - [https加速配置 - UpdateUcdnDomainHttpsConfigV2](api/ucdn-api/update_ucdn_domain_https_config_v2)
     - [更新加速域名状态 - UpdateUcdnDomainStatus](api/ucdn-api/update_ucdn_domain_status)
 - **附录**
   - [省份和运营商列表](api/ucdn-api/province)
