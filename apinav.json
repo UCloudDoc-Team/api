@@ -64,7 +64,7 @@
       },
       {
         "links": "/api/nlb-api/README",
-        "name": "网路负载均衡 ULB"
+        "name": "网路负载均衡 NLB"
       },
       {
         "links": "/api/vpc2.0-api/README",

@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__nlb">网路负载均衡 ULB</div>
+<div class="sidebar_title icon__nlb">网路负载均衡 NLB</div>
 
 
 - [概览](api/nlb-api/README.md)
