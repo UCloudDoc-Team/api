@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Labels.N.Key** | string | 标签键 |No|
-| **Labels.N.Value** | string | 标签值 |No|
-| **ResourceTypes.N** | string | 资源类型数组 |No|
-| **ProjectIds.N** | string | 项目id数组 |No|
+| **Labels.N.Key** | string | 标签键 |**Yes**|
+| **Labels.N.Value** | string | 标签值 |**Yes**|
+| **ResourceTypes.N** | string | 资源类型数组 |**Yes**|
+| **ProjectIds.N** | string | 项目id数组 |**Yes**|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为10，最大100 |No|
 
