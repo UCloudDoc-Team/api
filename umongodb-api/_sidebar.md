@@ -5,6 +5,7 @@
 - [索引](api/umongodb-api/index.md)
 - **API**
     - [备份集群数据库 - BackupUMongoDBCluster](api/umongodb-api/backup_umon_go_db_cluster)
+    - [集群日志打包  - BackupUMongoDBLog](api/umongodb-api/backup_umon_go_db_log)
     - [创建配置模板 - CreateUMongoDBConfigTemplate](api/umongodb-api/create_umon_go_db_config_template)
     - [创建副本集 - CreateUMongoDBReplSet](api/umongodb-api/create_umon_go_db_repl_set)
     - [创建分片集群 - CreateUMongoDBShardedCluster](api/umongodb-api/create_umon_go_db_sharded_cluster)
