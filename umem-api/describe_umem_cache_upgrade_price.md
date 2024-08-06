@@ -31,6 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Size** | int | 购买umemcache大小,单位:GB |**Yes**|
 | **GroupId** | string | 需要升级的空间的GroupId,请参考DescribeUMemcacheGroup接口 |**Yes**|
 
@@ -41,7 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Price** | float | 价格，单位：元 |No|
+| **Price** | int | 价格 |No|
+| **OriginalPrice** | int | 原价 |No|
+| **ListPrice** | int | 列表价格 |No|
 
 
 
@@ -52,10 +57,11 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUMemcacheUpgradePrice
-&Region=cn-north-02
 &Size=2
-&GroupId=umemcache-abdc2
-&ProjectId=org-quk5zs
+&GroupId=umem-m3xXXXXX
+&ProjectId=irEOdfvi
+&Zone=HGIOIePm
+&Region=oIDYlQTE
 ```
 
 ### 响应示例
@@ -63,7 +69,9 @@ https://api.ucloud.cn/?Action=DescribeUMemcacheUpgradePrice
 ```json
 {
   "Action": "DescribeUMemcacheUpgradePriceResponse",
-  "Price": 136000,
+  "ListPrice": 8,
+  "OriginalPrice": 1937,
+  "Price": 1937,
   "RetCode": 0
 }
 ```
