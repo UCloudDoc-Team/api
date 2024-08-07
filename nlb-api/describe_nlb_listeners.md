@@ -44,8 +44,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TotalCount** | int |  |**Yes**|
-| **Listeners** | array[[*Listener*](#Listener)] |  |**Yes**|
+| **TotalCount** | int | 全部个数 |**Yes**|
+| **Listeners** | array[[*Listener*](#Listener)] | 返回的监听器列表 |**Yes**|
 
 #### 数据模型
 
@@ -62,6 +62,7 @@
 | **Protocol** | string | 监听协议，限定取值："TCP"/"UDP" |No|
 | **Scheduler** | string | 负载均衡算法，限定取值："RoundRobin"/"SourceHash"/"LeastConn"/"WeightLeastConn "/"WeightRoundRobin " |No|
 | **StickinessTimeout** | int | 会话保持超时时间。单位：秒，0表示不开启会话保持 |No|
+| **ForwardSrcIPMethod** | string | 传递源 IP 方法。限定取值："" / "None" / "Toa"，空字符串和 None 代表关闭。 |No|
 | **HealthCheckConfig** | [*HealthCheckConfig*](#HealthCheckConfig) | 健康检查相关配置	 |No|
 | **Targets** | array[[*Target*](#Target)] | 服务节点信息 |No|
 | **State** | string | listener 健康状态，"Healthy"/"Unhealthy"/"PartialHealth"/"None" |No|
