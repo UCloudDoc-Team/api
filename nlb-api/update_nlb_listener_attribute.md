@@ -40,6 +40,7 @@
 | **EndPort** | int | 端口范围的结束端口 限定取值：[1-65535] 取值不小于起始端口 默认值 65535，只有全端口模式支持修改 |No|
 | **Scheduler** | string | 负载均衡算法 <br />限定取值："RoundRobin"/"SourceHash"/"LeastConn"/"WeightLeastConn "/"WeightRoundRobin" 默认值 "RoundRobin" |No|
 | **StickinessTimeout** | int | 会话保持超时时间。单位：秒<br />说明：<br />限定取值：[60-900]，0 表示不开启会话保持<br />默认值60 |No|
+| **ForwardSrcIPMethod** | string | 传递源 IP 方法。限定取值："" / "None" / "Toa"，空字符串和 None 代表关闭。 |No|
 | **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭，默认 true |No|
 | **HealthCheckConfig.Port** | int | 健康检查探测端口 说明： 限定取值：[1-65535]<br /> |No|
 | **HealthCheckConfig.Type** | string | 健康检查方式 限定取值："Port"/"UDP"/"Ping" 默认值：“Port” |No|
@@ -82,6 +83,7 @@ https://api.ucloud.cn/?Action=UpdateNLBListenerAttribute
 &HealthCheckConfig.MaxFail=3
 &HealthCheckConfig.ReqMsg=tEjwkHxq
 &HealthCheckConfig.ResMsg=AJXQCEfb
+&ForwardSrcIPMethod=ZigBubeF
 ```
 
 ### 响应示例

@@ -45,6 +45,7 @@
 | **HealthCheckConfig.Type** | string | 健康检查方式 限定取值："Port"/"UDP"/"Ping" 默认值：“Port” |No|
 | **HealthCheckConfig.ReqMsg** | string | UDP" 检查模式的请求字符串 |No|
 | **HealthCheckConfig.ResMsg** | string | "UDP" 检查模式的预期响应字符串 |No|
+| **ForwardSrcIPMethod** | string | 传递源 IP 方法。<br />限定取值："" / "None" / "Toa"，空字符串和 None 代表关闭。 |No|
 
 ### 响应字段
 
@@ -83,6 +84,7 @@ https://api.ucloud.cn/?Action=CreateNLBListener
 &HealthCheckConfig.MaxFail=5
 &HealthCheckConfig.ReqMsg=AQIXJQZS
 &HealthCheckConfig.ResMsg=bBBpmaEy
+&ForwardSrcIPMethod=aRYJWQFx
 ```
 
 ### 响应示例
