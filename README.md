@@ -40,6 +40,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |基础网络 UNet|[文档](/api/unet-api/)|
 |负载均衡 ULB|[文档](/api/ulb-api/)|
 |网路负载均衡 NLB|[文档](/api/nlb-api/)|
+|域名解析 UDNS|[文档](/api/udns-api/)|
 |私有网络 UVPC|[文档](/api/vpc2.0-api/)|
 |VPN网关 IPSec VPN|[文档](/api/ipsecvpn-api/)|
 |全球动态加速 PathX|[文档](/api/pathx-api/)|

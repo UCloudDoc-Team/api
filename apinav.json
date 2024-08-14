@@ -67,6 +67,10 @@
         "name": "网路负载均衡 NLB"
       },
       {
+        "links": "/api/udns-api/README",
+        "name": "域名解析 UDNS"
+      },
+      {
         "links": "/api/vpc2.0-api/README",
         "name": "私有网络 UVPC"
       },
