@@ -135,6 +135,17 @@
           ]
         },
         {
+          "name": "云解析 UDNS",
+          "img": "icon-product__udns",
+          "sublinks": [
+            {
+              "links": "/api/udns-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "云联网 UGN",
           "img": "icon-product__ugn",
           "sublinks": [
