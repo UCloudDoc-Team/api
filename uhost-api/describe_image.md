@@ -76,6 +76,7 @@
 | **ImageSize** | int | 镜像大小 |No|
 | **MinimalCPU** | string | 默认值为空'''。当CentOS 7.3/7.4/7.5等镜像会标记为“Broadwell” |No|
 | **MaintainEol** | string | 系统EOL的时间，格式：YYYY/MM/DD |No|
+| **DataSnapshotIds** | array[string] | 关联的云盘数据盘快照Id列表 |No|
 | **SupportedGPUTypes** | array[string] | 支持的GPU机型 |No|
 | **SceneCategories** | array[string] | 场景分类，目前包含Featured（精选），PreInstalledDrivers（预装驱动），AIPainting（AI绘画），AIModels（AI模型），HPC（高性能计算）  |No|
 | **PrimarySoftware** | string | 主要安装软件 |No|

@@ -37,6 +37,7 @@
 | **UHostId** | string | UHost实例ID 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
 | **ImageName** | string | 镜像名称 |**Yes**|
 | **ImageDescription** | string | 镜像描述 |No|
+| **DataUDiskIds.N** | string | 【数组】关联的云盘数据盘id列表。注意: 云盘数据盘需要开启快照服务 |No|
 
 ### 响应字段
 
@@ -46,6 +47,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **ImageId** | string | 镜像Id |No|
+| **DataSnapshotIds** | array[string] | 云盘数据盘快照id列表 |No|
 
 
 
@@ -60,6 +62,7 @@ https://api.ucloud.cn/?Action=CreateCustomImage
 &ProjectId=org-xxx
 &UHostId=uhost-xxx
 &ImageName=Test
+&DataUDiskIds.N=TtzKXtvV
 ```
 
 ### 响应示例
@@ -67,6 +70,9 @@ https://api.ucloud.cn/?Action=CreateCustomImage
 ```json
 {
   "Action": "CreateCustomImageResponse",
+  "DataSnapshotIds": [
+    "hoSgBxwr"
+  ],
   "ImageId": "uimage-xxx",
   "RetCode": 0
 }
