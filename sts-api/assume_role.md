@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **RoleUrn** | string | 要扮演的RAM角色URN。 |**Yes**|
+| **RoleUrn** | string | 要扮演的 IAM 角色URN。 |**Yes**|
 | **RoleSessionName** | string | 角色会话名称。格式允许 字母、数字、下划线（_）、连字符（-）、英文（.）组成的 1-64 位字符。 |**Yes**|
 | **DurationSeconds** | int | Token有效期，单位：秒。最小值 900，最大值受限于角色配置的最大会话时间。 |No|
 | **Policy** | string | 为STS Token额外添加的一个权限策略，进一步限制STS Token的权限。 |No|
