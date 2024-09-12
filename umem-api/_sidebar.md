@@ -46,6 +46,7 @@
     - [清除主备redis数据 - FlushallURedisGroup](api/umem-api/flushall_uredis_group)
     - [打开/关闭URedis - ISolationURedisGroup](api/umem-api/i_solation_uredis_group)
     - [修改主备Redis配置文件参数 - ModifyURedisConfig](api/umem-api/modify_uredis_config)
+    - [动态开关redis碎片整理选项 - RegisterUMemDefrag](api/umem-api/register_umem_defrag)
     - [清除udredis实例数据 - RemoveUDRedisData](api/umem-api/remove_ud_redis_data)
     - [重启主备实例 - RestartURedisGroup](api/umem-api/restart_uredis_group)
     - [更改主备Redis备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
