@@ -43,6 +43,7 @@
 | **BlockSize.N** | int | 进行容量调整的分片的目标容量,单位 GB<br />(性能增强型不需要传入) |No|
 | **ProxyId** | string |  代理id |No|
 | **NewCPU** | int | 代理升级后CPU核数 |No|
+| **ReplicaSize** | int | 新增读写分离节点容量大小 |No|
 
 ### 响应字段
 
@@ -75,6 +76,7 @@ https://api.ucloud.cn/?Action=DescribeUMemUpgradePrice
 &BlockSize.n=4
 &ProxyId=SPUoFZMN
 &NewCPU=1
+&NewSize=9
 ```
 
 ### 响应示例
