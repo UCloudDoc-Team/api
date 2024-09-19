@@ -27,15 +27,15 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Page** | int | 页码 |No|
-| **NumPerPage** | int | 每页数量 |No|
+| **Page** | int | 页码，默认0 |No|
+| **NumPerPage** | int | 每页数量，默认10 |No|
 | **OrderBy** | string | call_start_time(拨打时间)/receive_time（回执时间） |No|
 | **OrderType** | string | asc<br />desc |No|
 | **StartTime** | int | 开始时间-拨打时间，默认最近7天 |No|
 | **EndTime** | int | 结束时间-拨打时间，默认当前 |No|
 | **FuzzySearch** | string | 模糊搜索，支持 主叫号码和被叫号码 |No|
 | **TaskNo** | string | 任务编号 |No|
-| **BrevityCode** | string | 国际码 |No|
+| **BrevityCode** | string | 国际码，国内CN |No|
 | **ExcludeBrevityCode** | string | 排除国际码 |No|
 | **Purpose** | int | 目标1验证码2通知3营销 |No|
 | **PhoneNumber** | string | 被叫号码，精确查询 |No|
