@@ -66,6 +66,7 @@
 | **ChargeType** | string | 计费模式。枚举值：Month/Year |No|
 | **IPSet** | array[[*UHostIPSet*](#UHostIPSet)] | IP信息 |No|
 | **DiskSet** | array[[*ULHostDiskSet*](#ULHostDiskSet)] | 磁盘信息 |No|
+| **ExclusiveUTPInfo** | [*ExclusiveUTPInfo*](#ExclusiveUTPInfo) | 流量包详情信息 |No|
 | **AutoRenew** | string | 是否自动续费。枚举值：Yes/No |No|
 | **IsExpire** | string | 是否过期。枚举值：Yes/No |No|
 | **ExpireTime** | int | 过期时间。Unix时间戳 |No|
@@ -97,6 +98,18 @@
 | **Size** | int | 磁盘大小。单位：GB |No|
 | **IsBoot** | string | 是否为系统盘。是："True"；否："False" |No|
 | **Drive** | string | 磁盘盘符。系统盘："vda" |No|
+
+#### ExclusiveUTPInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **TotalSize** | int | 当前周期总流量 |No|
+| **AvailableSize** | int | 当前周期剩余流量 |No|
+| **UsedSize** | int | 当前周期已使用流量 |No|
+| **ExcessSize** | int | 当前周期超出限额的流量 |No|
+| **LastResetTime** | int | 上次重置时间 |No|
+| **NextResetTime** | int | 下次重置时间 |No|
+| **CreateTime** | int | 创建时间 |No|
 
 ## 示例
 
