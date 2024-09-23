@@ -46,6 +46,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*UMemBlockInfo*](#UMemBlockInfo)] | 分布式redis 分片信息 |No|
+| **ReadMode** | string | 集群读写分离策略。 枚举值[ "Custom": 用户自定义节点权重， "Uniform": 包括主节点在内的所有节点平均读请求， "ReadOnly": 读请求均分至只读节点] |No|
 
 #### 数据模型
 
@@ -57,11 +58,14 @@
 | **BlockId** | string | 分片id |**Yes**|
 | **BlockPort** | int | 分片端口 |**Yes**|
 | **BlockSize** | int | 容量单位GB |**Yes**|
-| **BlockState** | string | 实例状态 Starting // 创建中 Creating // 初始化中 CreateFail // 创建失败 Fail // 创建失败 Deleting // 删除中 DeleteFail // 删除失败 Running // 运行 Resizing // 容量调整中 ResizeFail // 容量调整失败 Configing // 配置中 ConfigFail // 配置失败Restarting // 重启中 SetPasswordFail //设置密码失败 |**Yes**|
+| **BlockState** | string | 实例状态 Starting // 创建中 Creating // 初始化中 CreateFail // 创建失败 Fail // 创建失败 Deleting // 删除中 DeleteFail // 删除失败 Running // 运行 Resizing // 容量调整中 ResizeFail // 容量调整失败 Configing // 配置中 ConfigFail // 配置失败Restarting // 重启中 SetPasswordFail //设置密码失败<br />UpgradeMemInit  //任务初始化 |**Yes**|
 | **BlockSlotBegin** | int | 分片维护的键槽起始值 |**Yes**|
 | **BlockSlotEnd** | int | 分片维护的键槽结束值 |**Yes**|
 | **BlockVip** | string | 分片ip |No|
 | **BlockUsedSize** | int | 使用量单位MB |No|
+| **BlockType** | string | 分片类型，master 或者 slave |No|
+| **BlockReadWeight** | int | 分片读权重 |No|
+| **BlockName** | string | 分片名称 |No|
 
 ## 示例
 
@@ -94,6 +98,7 @@ https://api.ucloud.cn/?Action=DescribeUMemBlockInfo
       "BlockVip": "ggWsZHay"
     }
   ],
+  "ReadMode": "zrIdNFWx",
   "RetCode": 0
 }
 ```
