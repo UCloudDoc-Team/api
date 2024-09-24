@@ -31,8 +31,8 @@
 | **NumPerPage** | int | 每页数量，默认10 |No|
 | **OrderBy** | string | call_start_time(拨打时间)/receive_time（回执时间） |No|
 | **OrderType** | string | asc<br />desc |No|
-| **StartTime** | int | 开始时间-拨打时间，默认最近7天 |No|
-| **EndTime** | int | 结束时间-拨打时间，默认当前 |No|
+| **StartTime** | float | 开始时间-拨打时间，时间戳（秒），默认最近7天 |No|
+| **EndTime** | float | 结束时间-拨打时间，时间戳（秒），默认当前 |No|
 | **FuzzySearch** | string | 模糊搜索，支持 主叫号码和被叫号码 |No|
 | **TaskNo** | string | 任务编号 |No|
 | **BrevityCode** | string | 国际码，国内CN |No|
@@ -69,17 +69,17 @@
 | **BrevityCode** | string | 国际码 |No|
 | **CountryCode** | string | 国家码 |No|
 | **TemplateId** | string | 模板ID |No|
-| **CallStartTime** | int | 呼叫开始时间(毫秒时间戳) |No|
-| **CallEndTime** | int | 呼叫结束时间(毫秒时间戳) |No|
+| **CallStartTime** | float | 呼叫开始时间(毫秒时间戳) |No|
+| **CallEndTime** | float | 呼叫结束时间(毫秒时间戳) |No|
 | **Duration** | int | 呼叫持续时间 |No|
 | **ChannelId** | string | 通道ID |No|
 | **ReceiptResult** | int | 回执结果1成功2失败3未知 |No|
 | **ReceiptDesc** | string | 回执描述 |No|
-| **ReceiveTime** | int | 回执时间 |No|
+| **ReceiveTime** | float | 回执时间 |No|
 | **CallingCityCode** | string | 主叫所属城市码 |No|
 | **CalledCityCode** | string | 被叫所属城市码 |No|
 | **CalledOperatorCode** | string | 被叫供应商码 cmcc中国移动，cucc中国联通,ctcc中国电信 |No|
-| **SubmitTime** | int | 客户提交时间 |No|
+| **SubmitTime** | float | 客户提交时间 |No|
 | **GroupType** | int | 1随机号码组2专属号码组 |No|
 | **BillSecond** | int | 计费时长（秒） |No|
 | **BillPeriod** | int | 计费周期（秒） |No|
