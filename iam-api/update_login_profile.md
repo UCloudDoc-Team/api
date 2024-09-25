@@ -54,18 +54,18 @@
     
 ```
 https://api.ucloud.cn/?Action=UpdateLoginProfile
-&UserName=pTPpZhWh
+&UserName=Alice
 &MFABindRequired=true
-&MaxPasswordAge=2
+&MaxPasswordAge=90
 &Status=Active
-&UserEmail=CpsKJonF
+&UserEmail=alice@ucloud.cn
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "UpdateLoginProfileResponse",
+  "Message": "Success",
   "RetCode": 0
 }
 ```
