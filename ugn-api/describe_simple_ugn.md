@@ -103,6 +103,13 @@
 | **NextHopRegion** | string | 下一跳网络实例所属地域 |No|
 | **NextHopRegionID** | int | 下一跳网络实例所属地域 id |No|
 | **Priority** | int | 路由优先级 |No|
+| **Deny** | boolean | true: 由于命中路由策略而失效 |No|
+| **Restrict** | boolean | true: 由于优先级比其他前缀相同的路由低而失效 |No|
+| **Conflict** | boolean | true: 由于优先级相同但插入数据库的时间比其他前缀相同的路由晚而失效 |No|
+| **InPolicyId** | string | 匹配中的入向路由策略id |No|
+| **InPolicyName** | string | 匹配中的入向路由策略名称 |No|
+| **OutPolicyId** | string | 匹配中的出向路由策略id |No|
+| **OutPolicyName** | string | 匹配中的出向路由策略名称 |No|
 
 ## 示例
 
