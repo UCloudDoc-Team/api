@@ -36,7 +36,7 @@
 | **ResourceTypes.N** | string | 资源类型数组 |**Yes**|
 | **ProjectIds.N** | string | 项目id数组 |**Yes**|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
-| **Limit** | int | 返回数据长度，默认为10，最大100 |No|
+| **Limit** | int | 返回数据长度，默认为 0，最大100 |No|
 
 ### 响应字段
 
