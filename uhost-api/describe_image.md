@@ -80,6 +80,15 @@
 | **SupportedGPUTypes** | array[string] | 支持的GPU机型 |No|
 | **SceneCategories** | array[string] | 场景分类，目前包含Featured（精选），PreInstalledDrivers（预装驱动），AIPainting（AI绘画），AIModels（AI模型），HPC（高性能计算）  |No|
 | **PrimarySoftware** | string | 主要安装软件 |No|
+| **PriceSet** | array[[*BasePriceSet*](#BasePriceSet)] | 镜像的价格信息 |No|
+
+#### BasePriceSet
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ChargeType** | string | 计费类型 |No|
+| **Price** | float | 价格，单位: 元，保留小数点后两位有效数字<br /> |No|
+| **OriginalPrice** | float | 限时优惠的折前原价（即列表价乘以商务折扣后的单价）。<br /> |No|
 
 ## 示例
 
