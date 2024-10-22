@@ -36,11 +36,11 @@
 | **Mem** | int | 内存大小。单位：MB。范围 ：[4096, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |**Yes**|
 | **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> 默认为月付 |**Yes**|
 | **BootDiskType** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。默认为SSD云盘 |No|
+| **BootDiskSize** | int | 系统盘大小，单位GB。默认40。范围：[40, 500]。注意SSD本地盘无法调整。 |No|
 | **DataDiskType** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。默认为SSD云盘 |No|
 | **DataDiskSize** | int | 数据磁盘大小，单位GB。默认0。范围 ：[20, 1000] |No|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表了购买至月末。 |No|
 | **MachineType** | string | 云主机机型。枚举值["N", "C", "G", "O", "OS"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **MinmalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake"；"Intel/CascadelakeR"; “Amd/Epyc2”,"Amd/Auto"],默认值是"Intel/Auto" |No|
 | **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100",]，MachineType为G时必填 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
 | **Labels** | string | Node节点标签。key=value形式,多组用”,“隔开，最多5组。 如env=pro,type=game |No|
@@ -51,6 +51,10 @@
 | **DisableSchedule** | boolean | 用于标示添加完节点后是否将节点临时禁用. 传入 "true" 表示禁用,传入其它或不传表示不禁用 |No|
 | **UserData** | string | 用户自定义数据。当镜像支持Cloud-init Feature时可填写此字段。注意：1、总数据量大小不超过 16K；2、使用base64编码。 |No|
 | **InitScript** | string | 用户自定义Shell脚本。与UserData的区别在于InitScript在节点初始化完毕后才执行，UserData则是云主机初始化时执行。 |No|
+| **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake"；"Intel/CascadelakeR"; “Amd/Epyc2”,"Amd/Auto"],默认值是"Intel/Auto" |No|
+| **Taints** | string | Node节点污点，形式为key=value:effect，多组taints用”,“隔开,最多支持五组。 |No|
+| **Tag** | string | 业务组 |No|
+| **NodeGroupId** | string | 节点池id |No|
 
 ### 响应字段
 
@@ -98,6 +102,10 @@ https://api.ucloud.cn/?Action=AddUK8SUHostNode
 &DisableSchedule=CYWxsWrP
 &UserData=hOaOlcSE
 &InitScript=QqwXgCtj
+&Taints=AySpTyWA
+&Tag=madApXSs
+&NodeGroupId=ypaIEiSw
+&BootDiskSize=9
 ```
 
 ### 响应示例
