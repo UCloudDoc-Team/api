@@ -48,7 +48,7 @@
 | **BackupId** | string | 有此项代表从备份中创建，无代表正常创建 |No|
 | **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
 | **MasterGroupId** | string | Master Redis Group的ID，创建只读Slave时，必须填写 |No|
-| **EnableIpV6** | boolean | 是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true |No|
+| **EnableIpV6** | boolean | 【即将下线,请勿使用】是否创建使用ipv6 资源， 默认为false， 或者不填， 创建ipv6为true |No|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
 | **HighPerformance** | boolean | 是否创建高性能Redis， 默认为false， 或者不填， 创建高性能为true |No|
