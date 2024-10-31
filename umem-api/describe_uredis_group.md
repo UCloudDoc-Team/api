@@ -64,8 +64,8 @@
 | **Name** | string | 组名称 |No|
 | **Type** | string | 空间类型:single(无热备),double(热备) |No|
 | **Protocol** | string | 协议 |No|
-| **MemorySize** | int | 容量单位GB |No|
-| **GroupName** | string | 组名称 |No|
+| **MemorySize** | int | [即将下线,请使用Size] 容量单位GB |No|
+| **GroupName** | string | [即将下线,请使用Name] 组名称 |No|
 | **ConfigId** | string | 节点的配置ID |No|
 | **VirtualIP** | string | 节点的虚拟IP地址 |No|
 | **Port** | int | 节点分配的服务端口 |No|
@@ -82,6 +82,7 @@
 | **ModifyTime** | int | 修改时间 (UNIX时间戳) |No|
 | **Tag** | string | 业务组名称 |No|
 | **SlaveZone** | string | 跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
+| **IsHighPerformance** | boolean | 是否是高性能Redis， true表示是； false表示否 |No|
 
 ## 示例
 
