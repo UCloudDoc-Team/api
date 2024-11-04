@@ -43,6 +43,8 @@
 | **DataDiskType** | string | 磁盘类型 |No|
 | **Tag** | string | 业务组 |No|
 | **ChargeType** | string | 计费模式 |No|
+| **BootDiskSize** | int | 系统盘大小，单位GB。默认40。范围：[40, 500]。注意SSD本地盘无法调整。 |No|
+| **SubnetId** | string | 子网 ID。默认为集群创建时填写的子网ID，也可以填写集群同VPC内的子网ID。 |No|
 
 ### 响应字段
 
@@ -82,6 +84,8 @@ https://api.ucloud.cn/?Action=AddUK8SNodeGroup
 &OrgId=8
 &TopOrgId=2
 &AzGroupId=6
+&BootDiskSize=8
+&SubnetId=ZASbmHVG
 ```
 
 ### 响应示例
