@@ -574,6 +574,17 @@
       "listname": "监控与运维",
       "listvalue": [
         {
+          "name": "云监控 CloudWatch",
+          "img": "icon-product__cloudwatch",
+          "sublinks": [
+            {
+              "links": "/api/cloudwatch-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "资源监控 UMon",
           "img": "icon-product__umon",
           "sublinks": [
