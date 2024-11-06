@@ -122,6 +122,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 | 产品 | 相关链接 |
 |:---|:---|
 |云监控 UMon|[文档](/api/umon-api/)|
+|云监控 CloudWatch|[文档](/api/cloudwatch-api/)|
 
 ### 多云与迁移
 | 产品 | 相关链接 |
