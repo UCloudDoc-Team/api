@@ -56,6 +56,7 @@
 | **GpuType** | string | GPU类型 |No|
 | **GPU** | int | GPU卡核心数 |No|
 | **BootDiskType** | string | 系统盘类型 |No|
+| **BootDiskSize** | int | 系统盘大小 |No|
 | **DataDiskSize** | int | 数据盘大小 |No|
 | **DataDiskType** | string | 数据盘类型 |No|
 | **Tag** | string | 业务组 |No|
