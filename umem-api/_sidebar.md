@@ -33,7 +33,6 @@
     - [创建分布式redis备份 - CreateUMemBackup](api/umem-api/create_umem_backup)
     - [查询分布式redis备份 - DescribeUMemBackup](api/umem-api/describe_umem_backup)
     - [获取分布式redis 备份下载链接 - DescribeUMemBackupURL](api/umem-api/describe_umem_backup_url)
-- **API**
     - [检查高性能UMem剩余资源 - CheckUDredisSpaceAllowance](api/umem-api/check_udredis_space_allowance)
     - [检查URedis资源是否足够 - CheckURedisAllowance](api/umem-api/check_uredis_allowance)
     - [创建扫大key和热key的任务 - CreateScanHotBigKeys](api/umem-api/create_scan_hot_big_keys)
