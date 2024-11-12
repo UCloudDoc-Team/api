@@ -41,7 +41,24 @@
         {"api": "ModifyURedisGroupPassword"},
         {"api": "CreateUMemBackup"},
         {"api": "DescribeUMemBackup"},
-        {"api": "DescribeUMemBackupURL"}
+        {"api": "DescribeUMemBackupURL"},
+        {"api": "CheckUDredisSpaceAllowance"},
+        {"api": "CheckURedisAllowance"},
+        {"api": "CreateScanHotBigKeys"},
+        {"api": "CreateURedisBackup"},
+        {"api": "DescribeUDRedisProxyInfo"},
+        {"api": "DescribeUDRedisSlowlog"},
+        {"api": "DescribeUMem"},
+        {"api": "DescribeUMemBlockInfo"},
+        {"api": "DescribeURedisVersion"},
+        {"api": "FlushallURedisGroup"},
+        {"api": "ISolationURedisGroup"},
+        {"api": "ModifyURedisConfig"},
+        {"api": "RegisterUMemDefrag"},
+        {"api": "RemoveUDRedisData"},
+        {"api": "RestartURedisGroup"},
+        {"api": "UpdateURedisBackupStrategy"},
+        {"api": "UpdateURedisRewriteTime"}
       ]
     }
   ]
