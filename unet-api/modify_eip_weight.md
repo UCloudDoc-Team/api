@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **EIPId** | string | 弹性IP的资源ID |**Yes**|
-| **Weight** | int | 外网出口权重, 范围[0-100] ；该权重值只在EIP绑定资源为主机/网卡(非直通模式)时有效；同一个主机/网卡主动访问外网时, 将使用权重最高的EIP作为源IP；权重相同时, 行为不确定 |**Yes**|
+| **Weight** | int | 外网出口权重，范围[0-100]；该权重值只在EIP绑定资源为主机/网卡(非直通模式)时有效；同一个主机/网卡主动访问外网时，将使用权重最高的EIP作为源IP；权重相同时，行为不确定 |**Yes**|
 
 ### 响应字段
 
