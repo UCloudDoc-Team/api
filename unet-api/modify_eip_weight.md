@@ -4,7 +4,7 @@
 
 修改弹性IP的外网出口权重
 
-
+?> 本接口只针对EIP绑定主机或网卡(非直通模式下)资源时有效
 
 
 
@@ -31,10 +31,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **EIPId** | string | 弹性IP的资源ID |**Yes**|
-| **Weight** | int | 外网出口权重, 范围[0-100] 取值为0时, 该弹性IP不会被使用. 取值为100时, 同主机下只会使用这个弹性IP，其他弹性IP不会被使用 请勿将多个绑定在同一资源的弹性IP设置为相同权重 |**Yes**|
+| **Weight** | int | 外网出口权重, 范围[0-100] ；该权重值只在EIP绑定资源为主机/网卡(非直通模式)时有效；同一个主机/网卡主动访问外网时, 将使用权重最高的EIP作为源IP；权重相同时, 行为不确定 |**Yes**|
 
 ### 响应字段
 
@@ -54,7 +54,7 @@
 ```
 https://api.ucloud.cn/?Action=ModifyEIPWeight
 &Region=cn-bj2
-&EIPId=eip-dr1e2n
+&EIPId=eip-XXXXX
 &Weight=4
 ```
 
@@ -63,6 +63,7 @@ https://api.ucloud.cn/?Action=ModifyEIPWeight
 ```json
 {
   "Action": "ModifyEIPWeightResponse",
+  "Request_uuid": "aad2bbf8-b12e-4057-83dd-XXXXXX",
   "RetCode": 0
 }
 ```
