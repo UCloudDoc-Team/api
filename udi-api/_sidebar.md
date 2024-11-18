@@ -4,7 +4,6 @@
 - [概览](api/udi-api/README.md)
 - [索引](api/udi-api/index.md)
 - **API**
-    - [创建功能模板 - CreateFunctionTemplate](api/udi-api/create_function_template)
     - [创建媒体任务 - CreateMediaTask](api/udi-api/create_media_task)
     - [删除功能模板 - DeleteFunctionTemplate](api/udi-api/delete_function_template)
     - [获取功能模板 - DescribeFunctionTemplate](api/udi-api/describe_function_template)
