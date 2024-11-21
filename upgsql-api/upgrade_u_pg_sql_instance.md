@@ -36,6 +36,7 @@
 | **InstanceID** | string | 资源ID |**Yes**|
 | **DiskSpace** | int | 磁盘空间(GB) |**Yes**|
 | **MachineType** | string | 机器配置类型 |**Yes**|
+| **InstanceMode** | string | 数据库类型（ha:高可用类型，normal：普通类型，readonly：从库） |**Yes**|
 
 ### 响应字段
 
@@ -60,6 +61,7 @@ https://api.ucloud.cn/?Action=UpgradeUPgSQLInstance
 &InstanceID=DjLVkJik
 &DiskSpace=3
 &MachineType=UfYxvrBx
+&InstanceMode=tMmaanan
 ```
 
 ### 响应示例
