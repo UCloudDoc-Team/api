@@ -40,10 +40,10 @@
 | **Name** | string | 物理机名称，默认为phost |No|
 | **Remark** | string | 物理机备注，默认为空 |No|
 | **Tag** | string | 业务组，默认为default |No|
-| **ChargeType** | string | 计费模式，枚举值为：year, 按年付费； month,按月付费；默认为按月付费 |No|
+| **ChargeType** | string | 计费模式，枚举值为：Year, 按年付费； Month,按月付费；默认按月付费 |No|
 | **Quantity** | string | 购买时长，1-10个月或1-10年；默认值为1。月付时，此参数传0，代表购买至月末，1代表整月。 |No|
 | **SecurityGroupId** | string | 防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](api/unet-api/describe_firewall.html)。 |No|
-| **Raid** | string | Raid配置，默认Raid10  支持:Raid0、Raid1、Raid5、Raid10，NoRaid |No|
+| **Raid** | string | 本地盘和裸金属1.0需要的参数。Raid配置，默认Raid10  支持:Raid0、Raid1、Raid5、Raid10，NoRaid |No|
 | **VPCId** | string | VPC ID，不填为默认，VPC2.0下需要填写此字段。 |No|
 | **SubnetId** | string | 子网ID，不填为默认，VPC2.0下需要填写此字段。 |No|
 | **Cluster** | string | 网络环境，可选千兆：1G ，万兆：10G， 默认1G。智能网卡可以选择25G。 |No|
@@ -52,6 +52,13 @@
 | **Disks.N.Size** | int | 裸金属机型参数->磁盘大小，单位GB，必须是10GB的整数倍。系统盘20-500GB，数据盘单块盘20-32000GB。 |No|
 | **Disks.N.CouponId** | string | 裸金属机型参数->云盘代金券id。不适用于系统盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 | **VpcIp** | string | 指定内网ip创建 |No|
+| **ActivityId** | int | 短期促销活动时所需参数 |No|
+| **RuleId** | int | 短期促销活动时所需参数 |No|
+| **NetworkInterface.N.EIP.Bandwidth** | string | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
+| **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
+| **NetworkInterface.N.EIP.ShareBandwidthId** | string | 绑定的共享带宽Id，仅当PayMode为ShareBandwidth时有效 |No|
+| **NetworkInterface.N.EIP.OperatorName** | string | 【若绑定EIP，此参数必填】弹性IP的线路。枚举值: 国际: International BGP: Bgp 各地域允许的线路参数如下: cn-sh1: Bgp cn-sh2: Bgp cn-gd: Bgp cn-bj1: Bgp cn-bj2: Bgp hk: International us-ca: International th-bkk: International kr-seoul:International us-ws:International ge-fra:International sg:International tw-kh:International.其他海外线路均为 International |No|
+| **NetworkInterface.N.EIP.CouponId** | string | 当前EIP代金券id。请通过DescribeCoupon接口查询，或登录用户中心查看。 |No|
 | **CouponId** | string | 代金券 |No|
 
 ### 响应字段
@@ -95,6 +102,19 @@ https://api.ucloud.cn/?Action=CreatePHost
 &Disks.N.CouponId=NKehxKWX
 &CouponId=nDNLOYMb
 &VpcIp=UZNQMwbL
+&ActivityId=7
+&RuleId=5
+&CharacterName=rBuhSnga
+&NetworkInterface.N.EIP.Bandwidth=BsEioBBJ
+&NetworkInterface.N.EIP.PayMode=HKUSPfdn
+&NetworkInterface.N.EIP.ShareBandwidthId=ORapYtXt
+&NetworkInterface.N.EIP.OperatorName=Ipkulqrt
+&NetworkInterface.N.EIP.CouponId=jqGeqYvH
+&NetworkInterface.N.EIP.Bandwidth=XIOVRpWP
+&NetworkInterface.N.EIP.PayMode=akQZEiQl
+&NetworkInterface.N.EIP.ShareBandwidthId=OFPiSwyR
+&NetworkInterface.N.EIP.OperatorName=wwKNXlZu
+&NetworkInterface.N.EIP.CouponId=yfCllFRn
 ```
 
 ### 响应示例

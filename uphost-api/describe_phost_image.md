@@ -39,6 +39,7 @@
 | **Offset** | int | 数据偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
 | **MachineType** | string | 机器型号，只支持当前zone的展示机型 |No|
+| **Cluster** | string | 机器的网络集群，MachineType传是必须传，默认25G |No|
 
 ### 响应字段
 
@@ -64,7 +65,7 @@
 | **Support** | array[string] | 支持的机型 |No|
 | **Version** | string | 当前版本 |No|
 | **ImageType** | string | 枚举值：Base=>基础镜像，Custom=>自制镜像。 |No|
-| **CreateTime** | int | 裸金属2.0参数。镜像创建时间。 |No|
+| **CreateTime** | string | 裸金属2.0参数。镜像创建时间。 |No|
 | **State** | string | 裸金属2.0参数。镜像当前状态。 |No|
 | **ImageSize** | int | 裸金属2.0参数。镜像大小。 |No|
 | **ImageDescription** | string | 镜像描述 |No|
@@ -83,6 +84,7 @@ https://api.ucloud.cn/?Action=DescribePHostImage
 &Offset=7
 &Limit=1
 &MachineType=QxVNPRCH
+&Cluster=DkUhdXDD
 ```
 
 ### 响应示例
