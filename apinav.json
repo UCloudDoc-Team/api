@@ -126,6 +126,10 @@
       {
         "links": "/api/ues-api/README",
         "name": "ES服务 ElasticSearch"
+      },
+      {
+        "links": "/api/udac-api/README",
+        "name": "数据库自治中心 UDAC"
       }
     ]
   },
