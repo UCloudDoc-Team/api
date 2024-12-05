@@ -32,6 +32,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **CdnDomain** | string | 根据加速域名筛选对应的证书 |No|
 | **Offset** | int | 偏移，默认为0，非负整数 |No|
 | **Limit** | int | 长度，默认为全部，非负整数 |No|
 
@@ -71,6 +72,7 @@ https://api.ucloud.cn/?Action=GetCertificateV2
 &ProjectId=GfZloUyO
 &Offset=8
 &Limit=6
+&CdnDomain=oKNiSllO
 ```
 
 ### 响应示例
