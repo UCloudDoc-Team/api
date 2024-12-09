@@ -86,6 +86,7 @@
 | **Flow** | float | 下载流量：单位GB；国内无此字段 |No|
 | **Date** | int | 配额消费时间，unix时间戳；单位s，精确到日期 |No|
 | **ApiTimes** | float | 请求次数；单位万次 |No|
+| **ObjectTagCount** | float | 对象标签个数; 单位万个 |No|
 
 ## 示例
 
