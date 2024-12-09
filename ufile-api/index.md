@@ -16,6 +16,7 @@
 |[DescribeCORSRule](api/ufile-api/describe_cors_rule)|获取跨域规则信息|
 |[DescribeUFileLifeCycle](api/ufile-api/describe_ufile_life_cycle)|获取生命周期信息|
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
+|[GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)|获取bucket每日账单|
 |[GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)|查看日消费报表|
 |[GetUFileQuota](api/ufile-api/get_ufile_quota)|查看配额状态|
 |[GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)|获取配额信息|
