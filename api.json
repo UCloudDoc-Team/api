@@ -157,7 +157,7 @@
           ]
         },
         {
-          "name": "NLB 网路负载均衡",
+          "name": "NLB 网络负载均衡",
           "img": "icon-product__ulb",
           "sublinks": [
             {
