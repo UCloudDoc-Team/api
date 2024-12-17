@@ -30,13 +30,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 全局产品可不传，其他类型必传。 |No|
-| **ProjectId** | string | 项目ID。 |No|
-| **ProductKey** | string | 资源类型 |No|
-| **StartTime** | int | 开始时间 |No|
-| **EndTime** | int | 截止时间 |No|
-| **MetricInfos.N.Metric** | string | 指标名 |No|
-| **MetricInfos.N.ResourceId** | string | 指标所属资源id |No|
+| **Region** | string | 地域。 全局产品可不传，其他类型必传。 |**Yes**|
+| **ProjectId** | string | 项目ID。 |**Yes**|
+| **ProductKey** | string | 资源类型 |**Yes**|
+| **StartTime** | int | 开始时间 |**Yes**|
+| **EndTime** | int | 截止时间 |**Yes**|
+| **MetricInfos.N.Metric** | string | 指标名 |**Yes**|
+| **MetricInfos.N.ResourceId** | string | 指标所属资源id |**Yes**|
 | **TagList.N.TagKey** | string | 要查询指标的Tag的key |No|
 | **TagValues.N** | string | 要查询指标的Tag的Value |No|
 

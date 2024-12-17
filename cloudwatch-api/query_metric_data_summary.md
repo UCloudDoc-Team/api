@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域，全局产品可以不传，其他必传 |No|
+| **Region** | string | 地域，全局产品可以不传，其他必传 |**Yes**|
 | **ProjectId** | string | 项目ID。 |**Yes**|
 | **ProductKey** | string | 产品类型 |**Yes**|
 | **Offset** | int | 跳过的数量 |**Yes**|
