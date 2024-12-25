@@ -298,6 +298,15 @@
     ]
   },
   {
+    "listname": "混合云",
+    "listvalue": [
+      {
+        "links": "/api/uhybrid-api/README",
+        "name": "混合云 UHybrid"
+      }
+    ]
+  },
+  {
     "listname": "监控与运维",
     "listvalue": [
       {
