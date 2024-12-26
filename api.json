@@ -346,7 +346,7 @@
           ]
         },
         {
-          "name": "云数据库 UDB PostgreSQL（NVMe）",
+          "name": "云数据库 UDB PostgreSQL",
           "img": "icon-product__postgresql",
           "sublinks": [
             {
