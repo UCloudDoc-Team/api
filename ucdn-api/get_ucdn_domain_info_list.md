@@ -33,7 +33,8 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **PageSize** | int | 分页的大小，不填默认每页20个 |No|
-| **PageIndex** | int | 返回第几页，不填默认是第1页 |No|
+| **PageIndex** | int | 返回第几页，序号从1开始，不填默认是第1页，填0表示不用分页直接返回所有数据 |No|
+| **QueryByProject** | boolean | 是否按项目查询，true  或 false  <br />默认为false |No|
 
 ### 响应字段
 
@@ -64,6 +65,7 @@ https://api.ucloud.cn/?Action=GetUcdnDomainInfoList
 &ProjectId=FbIiIwSw
 &PageSize=2
 &PageIndex=1
+&QueryByProject=false
 ```
 
 ### 响应示例
