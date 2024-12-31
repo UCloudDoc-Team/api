@@ -37,6 +37,7 @@
 | **BackupId** | string | 文件备份ID |No|
 | **PackageId** | int | 打包ID |No|
 | **ValidTime** | int | 备份链接过期时间（单位秒） |No|
+| **Category** | string | 类型:如 oplog |No|
 
 ### 响应字段
 
@@ -64,6 +65,7 @@ https://api.ucloud.cn/?Action=DescribeUMongoDBBackupURL
 &BackupId=reAlkmik
 &ValidTime=1
 &PackageId=3
+&Category=NmFaVOQi
 ```
 
 ### 响应示例
