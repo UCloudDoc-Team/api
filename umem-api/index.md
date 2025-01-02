@@ -94,3 +94,9 @@
 |[CreateUMemBackup](api/umem-api/create_umem_backup)|创建分布式redis备份|
 |[DescribeUMemBackup](api/umem-api/describe_umem_backup)|查询分布式redis备份|
 |[DescribeUMemBackupURL](api/umem-api/describe_umem_backup_url)|获取分布式redis 备份下载链接|
+
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[ResizeUDRedisBlockSize](api/umem-api/resize_ud_redis_block_size)|更改udredis分片容量|
