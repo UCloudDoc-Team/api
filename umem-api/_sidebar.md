@@ -50,6 +50,7 @@
     - [重启主备实例 - RestartURedisGroup](api/umem-api/restart_uredis_group)
     - [更改主备Redis备份策略 - UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)
     - [修改主备redis重写时间 - UpdateURedisRewriteTime](api/umem-api/update_uredis_rewrite_time)
+    - [更改udredis分片容量 - ResizeUDRedisBlockSize](api/umem-api/resize_ud_redis_block_size)
 - **Memcached**
     - [重启单机Memcache - RestartUMemcacheGroup](api/umem-api/restart_umem_cache_group)
     - [显示Memcache - DescribeUMemcacheGroup](api/umem-api/describe_umem_cache_group)
@@ -81,7 +82,5 @@
     - [创建分布式redis备份 - CreateUMemBackup](api/umem-api/create_umem_backup)
     - [查询分布式redis备份 - DescribeUMemBackup](api/umem-api/describe_umem_backup)
     - [获取分布式redis 备份下载链接 - DescribeUMemBackupURL](api/umem-api/describe_umem_backup_url)
-- **API**
-    - [更改udredis分片容量 - ResizeUDRedisBlockSize](api/umem-api/resize_ud_redis_block_size)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)

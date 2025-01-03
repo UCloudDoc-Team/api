@@ -58,7 +58,8 @@
         {"api": "RemoveUDRedisData"},
         {"api": "RestartURedisGroup"},
         {"api": "UpdateURedisBackupStrategy"},
-        {"api": "UpdateURedisRewriteTime"}
+        {"api": "UpdateURedisRewriteTime"},
+        {"api": "ResizeUDRedisBlockSize"}
       ]
     }
   ]
