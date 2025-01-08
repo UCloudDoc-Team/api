@@ -40,7 +40,7 @@
 | **Remark** | string | 负载均衡实例的备注信息<br />限定字符长度：[0-255] |No|
 | **IPVersion** | string | 负载均衡实例的IP协议，限定取值："IPv4"/"IPv6"/"DualStack"，默认值："IPv4" |No|
 | **ChargeType** | string | 付费模式，限定取值："Dynamic"/"Month"/"Year" |No|
-| **Quantity** | int | 购买的时长 |No|
+| **Quantity** | int | 购买的时长，ChargeType = "Month"，Quantity = 0 代表购买到月底，其余情况必须赋值 |No|
 | **CouponId** | string | 代金券code	 |No|
 
 ### 响应字段
@@ -50,7 +50,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **NLBId** | string |  |**Yes**|
+| **NLBId** | string | 返回的NLBId |**Yes**|
 
 
 
