@@ -83,6 +83,10 @@
         "name": "全球动态加速 PathX"
       },
       {
+        "links": "/api/uaaa-api/README",
+        "name": "应用仓库加速 UAAA"
+      },
+      {
         "links": "/api/ugn-api/README",
         "name": "云联网"
       }
