@@ -95,7 +95,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Timestamp** | float | 时间戳 |No|
+| **Timestamp** | int | 时间戳 |No|
 | **Value** | float | 样本值 |No|
 
 ## 示例
