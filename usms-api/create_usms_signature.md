@@ -37,9 +37,10 @@
 | **SigPurpose** | int | 签名用途，0-自用，1-他用； |**Yes**|
 | **CertificateType** | int | 签名的资质证明文件类型，需与签名类型保持一致，说明如下：0-三证合一/企业营业执照/组织机构代码证书/社会信用代码证书；1-应用商店后台开发者管理截图；2-备案服务商的备案成功截图(含域名，网站名称，备案号)；3-公众号或小程序的管理界面截图；4-商标注册证书；5-组织机构代码证书、社会信用代码证书； |**Yes**|
 | **Description** | string | 短信签名申请原因 |**Yes**|
-| **File** | string | 短信签名的资质证明文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB |**Yes**|
+| **File** | string | 短信签名的资质证明文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB |No|
 | **International** | boolean | 国内/国际短信。true:国际短信，false:国内短信，若不传值则默认该值为false |No|
 | **ProxyFile** | string | 短信签名授权委托文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB；当您是代理并使用第三方的签名时（也即SigPurpose为1-他用），该项为必填项； |No|
+| **QualificationId** | string | 资质ID |No|
 
 ### 响应字段
 
@@ -68,6 +69,7 @@ https://api.ucloud.cn/?Action=CreateUSMSSignature
 &File=ICMXVWmw
 &International=false
 &ProxyFile=IaCnaxJg
+&QualificationId=NGKkDXvv
 ```
 
 ### 响应示例
