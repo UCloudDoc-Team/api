@@ -19,6 +19,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - UAI-Modelverse SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
