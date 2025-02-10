@@ -34,7 +34,7 @@
 | **UminferID** | string | 推理服务id |No|
 | **Offset** | string | offset |No|
 | **Limit** | string | limit |No|
-| **UminferType** | string | private: 私有部署；<br />preDeploy: 预置模型/体验中心。<br />使用 ',' 英文逗号分隔的字符串，默认 private |No|
+| **UminferType** | string | 默认preDeploy,可获取DeepSeek Key |No|
 
 ### 响应字段
 
