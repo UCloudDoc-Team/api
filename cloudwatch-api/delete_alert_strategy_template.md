@@ -57,11 +57,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DeleteAlertStrategyTemplate
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=JLKQjBbX
-&TemplateID.N.X=6
-&TemplateID.N.X=8
+&ProjectId=XFHLObBP
+&TemplateID.N=8
 ```
 
 ### 响应示例
@@ -69,10 +66,8 @@ https://api.ucloud.cn/?Action=DeleteAlertStrategyTemplate
 ```json
 {
   "Action": "DeleteAlertStrategyTemplateResponse",
-  "RetCode": 0,
-  "TemplateID": [
-    "LOVINplC"
-  ]
+  "Data": {},
+  "RetCode": 0
 }
 ```
 
