@@ -5,6 +5,8 @@
 - [索引](api/cloudwatch-api/index.md)
 - **API**
     - [绑定告警策略 - BindAlertStrategy](api/cloudwatch-api/bind_alert_strategy)
+    - [新建条件模板 - CreateAlertStrategyTemplate](api/cloudwatch-api/create_alert_strategy_template)
+    - [删除告警策略模板 - DeleteAlertStrategyTemplate](api/cloudwatch-api/delete_alert_strategy_template)
     - [获取云产品关联的指标列表 - GetProductMetrics](api/cloudwatch-api/get_product_metrics)
     - [告警记录 - ListAlertRecord](api/cloudwatch-api/list_alert_record)
     - [获取告警策略列表 - ListAlertStrategy](api/cloudwatch-api/list_alert_strategy)
