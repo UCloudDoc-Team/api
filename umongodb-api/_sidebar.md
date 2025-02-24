@@ -23,6 +23,7 @@
     - [修改MongoDB集群root密码 - ModifyUMongoDBAdminPassword](api/umongodb-api/modify_umon_go_db_admin_password)
     - [修改umongodb集群名称 - ModifyUMongoDBAttribute](api/umongodb-api/modify_umon_go_db_attribute)
     - [修改实例备份策略 - ModifyUMongoDBBackupParam](api/umongodb-api/modify_umon_go_db_backup_param)
+    - [集群配置升降级 - ResizeUMongoDBInstance](api/umongodb-api/resize_umon_go_db_instance)
     - [重启集群 - RestartUMongoDBCluster](api/umongodb-api/restart_umon_go_db_cluster)
     - [启动集群 - StartUMongoDBCluster](api/umongodb-api/start_umon_go_db_cluster)
     - [停止集群 - StopUMongoDBCluster](api/umongodb-api/stop_umon_go_db_cluster)
