@@ -13,6 +13,7 @@
 |[ModifyULHostAttribute](api/ucompshare-api/modify_ul_host_attribute)|修改轻量应用主机属性信息|
 |[PoweroffULHostInstance](api/ucompshare-api/poweroff_ul_host_instance)|模拟主机掉电|
 |[RebootULHostInstance](api/ucompshare-api/reboot_ul_host_instance)|重启轻量应用云主机|
+|[ReinstallCompShareInstance](api/ucompshare-api/reinstall_comp_share_instance)|重装算力平台实例|
 |[ReinstallULHostInstance](api/ucompshare-api/reinstall_ul_host_instance)|重装轻量应用云主机|
 |[ResetULHostInstancePassword](api/ucompshare-api/reset_ul_host_instance_password)|重置轻量应用云主机密码|
 |[StartCompShareInstance](api/ucompshare-api/start_comp_share_instance)|启动算力平台实例|
