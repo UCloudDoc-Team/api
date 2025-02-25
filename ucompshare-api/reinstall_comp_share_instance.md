@@ -35,7 +35,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **UHostId** | string | 实例Id |**Yes**|
 | **CompShareImageId** | string | 镜像Id |**Yes**|
-| **Password** | string | 实例的新密码 |**Yes**|
+| **Password** | string | 实例的新密码 |No|
 
 ### 响应字段
 
