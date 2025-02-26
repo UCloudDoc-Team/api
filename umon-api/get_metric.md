@@ -1132,7 +1132,6 @@
 
 | 参数                    |描述信息|单位|
 |:----------------------|:---|:---|
-| **HaikangNetOutcoming** |海康网络出向流量|Byte|
 | **BucketDownloadFlow** |下载流量|Byte|
 | **BucketUploadFlow** |上传流量|Byte|
 | **BucketTotalStorage** |标准存储量|Byte|
@@ -1149,16 +1148,7 @@
 | **BucketArchiveMinStorage** |冷存最短存储量|Byte|
 | **BucketIaStorages** |低频存储量|Byte|
 | **BucketArchiveStorages** |归档存储量|Byte|
-| **Bucket2xxStatus** |2xx请求发生次数|次|
 | **Bucket4xxStatus** |4xx请求发生次数|次|
-| **BucketDownLoadSuccess** |下载成功数|次|
-| **BucketUploadSuccess** |上传成功数|次|
-| **BucketDownLoadError** |下载超时错误数|次|
-| **BucketUploadError** |上传超时错误数|次|
-| **BucketRequestTotal** |总请求数|次|
-| **HaikangNetIncoming** |海康网络入向流量|Byte|
-| **HaikangIcmpLoss** |海康icmp丢包率|%|
-| **HaikangNetErrors** |海康网卡错误数|个|
 | **image_handle_flow** |图片处理流量|Byte|
 | **image_compress_count** |图片高级压缩次数|次|
 | **BucketArchiveExpeditedRetrieval** |归档紧急解冻量|Byte|
