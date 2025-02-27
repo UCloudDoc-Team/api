@@ -553,17 +553,6 @@
           ]
         },
         {
-          "name": "号码认证 UNVS",
-          "img": "icon-product__unvs",
-          "sublinks": [
-            {
-              "links": "/api/unvs-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "短链工具 USLK",
           "img": "icon-product__uslk",
           "sublinks": [
