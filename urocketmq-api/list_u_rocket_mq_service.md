@@ -68,6 +68,7 @@
 | **Tag** | string | 业务组。Default：未分组 |**Yes**|
 | **Edition** | string | 版本类别。枚举值为：Unknown：未知；Beta：测试版；Enterprise：企业版。 |**Yes**|
 | **FileReservedTime** | int | 消息存储时长，单位：天 |**Yes**|
+| **Quantity** | int | 购买时长 |**Yes**|
 
 ## 示例
 
