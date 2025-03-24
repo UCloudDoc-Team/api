@@ -34,10 +34,10 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **InstanceID** | string | 数据库实例ID |**Yes**|
-| **StartTime** | int | 开始时间 |**Yes**|
-| **EndTime** | int | 结束时间 |**Yes**|
-| **Offset** | int | 分页数 |**Yes**|
-| **Limit** | int | 每页数量 |**Yes**|
+| **StartTime** | int | 开始时间，unix时间戳 |**Yes**|
+| **EndTime** | int | 结束时间，unix时间戳 |**Yes**|
+| **Offset** | int | 页数，从1开始 |**Yes**|
+| **Limit** | int | 每页条目数量 |**Yes**|
 | **Database** | string | 库名 |No|
 
 ### 响应字段
@@ -47,7 +47,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TotalCount** | int | 数据条目数 |**Yes**|
+| **TotalCount** | int | StartTime到EndTime时间范围内的数据总条目数 |**Yes**|
 | **SlowLogDataSet** | array[[*SlowLogData*](#SlowLogData)] | 慢日志数据 |**Yes**|
 | **MaxDownloadCount** | int | 慢日志数据下载数上限 |No|
 
@@ -58,7 +58,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ExecutedTime** | float | 执行完成时间 |No|
+| **ExecutedTime** | int | 执行完成时间 |No|
 | **QuerySQL** | string | 执行SQL  |No|
 | **Database** | string | 库名 |No|
 | **Host** | string | 连接Host地址 |No|
