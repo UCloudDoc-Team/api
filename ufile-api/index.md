@@ -20,6 +20,7 @@
 |[DescribeUFileLifeCycle](api/ufile-api/describe_ufile_life_cycle)|获取生命周期信息|
 |[DescribeUFileSSLCert](api/ufile-api/describe_ufile_ssl_cert)|查询SSL证书|
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
+|[GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)|获取bucket静态网页配置|
 |[GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)|获取bucket每日账单|
 |[GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)|查看日消费报表|
 |[GetUFileQuota](api/ufile-api/get_ufile_quota)|查看配额状态|
@@ -28,6 +29,7 @@
 |[GetUFileReport](api/ufile-api/get_ufile_report)|查看配额使用报表|
 |[SetUFileReferer](api/ufile-api/set_ufile_referer)|设置对象存储防盗链|
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
+|[UpdateBucketStaticPageRule](api/ufile-api/update_bucket_static_page_rule)|修改bucket静态网页配置|
 |[UpdateCORSRule](api/ufile-api/update_cors_rule)|更新跨域规则|
 |[UpdateUFileLifeCycle](api/ufile-api/update_ufile_life_cycle)|更新生命周期管理|
 |[UpdateUFileSSLCert](api/ufile-api/update_ufile_ssl_cert)|更新SSL证书|
