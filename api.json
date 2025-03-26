@@ -99,14 +99,14 @@
       ]
     },
     {
-      "listname": "网络",
+      "listname": "云上网络",
       "listvalue": [
         {
-          "name": "基础网络 UNet",
-          "img": "icon-product__unet",
+          "name": "私有网络 UVPC",
+          "img": "icon-product__vpc",
           "sublinks": [
             {
-              "links": "/api/unet-api/README",
+              "links": "/api/vpc2.0-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -124,11 +124,11 @@
           ]
         },
         {
-          "name": "私有网络 UVPC",
-          "img": "icon-product__vpc",
+          "name": "NLB 网络负载均衡",
+          "img": "icon-product__ulb",
           "sublinks": [
             {
-              "links": "/api/vpc2.0-api/README",
+              "links": "/api/nlb-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -144,7 +144,28 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "listname": "接入网",
+      "listvalue": [
+        {
+          "name": "外网弹性IP EIP",
+          "img": "icon-product__unet",
+          "sublinks": [
+            {
+              "links": "/api/unet-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "混合组网",
+      "listvalue": [
         {
           "name": "云联网 UGN",
           "img": "icon-product__ugn",
@@ -157,11 +178,11 @@
           ]
         },
         {
-          "name": "NLB 网络负载均衡",
-          "img": "icon-product__ulb",
+          "name": "VPN网关 IPSecVPN",
+          "img": "icon-product__ipsecvpn",
           "sublinks": [
             {
-              "links": "/api/nlb-api/README",
+              "links": "/api/ipsecvpn-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -170,14 +191,25 @@
       ]
     },
     {
-      "listname": "私有网络",
+      "listname": "网络加速",
       "listvalue": [
         {
-          "name": "VPN网关 IPSecVPN",
-          "img": "icon-product__ipsecvpn",
+          "name": "全球动态加速 PathX",
+          "img": "icon-product__ugaa",
           "sublinks": [
             {
-              "links": "/api/ipsecvpn-api/README",
+              "links": "/api/pathx-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "应用仓库加速 UAAA",
+          "img": "icon-product__uaaa",
+          "sublinks": [
+            {
+              "links": "/api/uaaa-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -227,33 +259,6 @@
           "sublinks": [
             {
               "links": "/api/usnap-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "网络加速",
-      "listvalue": [
-        {
-          "name": "全球动态加速 PathX",
-          "img": "icon-product__ugaa",
-          "sublinks": [
-            {
-              "links": "/api/pathx-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
-          "name": "应用仓库加速 UAAA",
-          "img": "icon-product__uaaa",
-          "sublinks": [
-            {
-              "links": "/api/uaaa-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
