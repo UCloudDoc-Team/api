@@ -1,6 +1,5 @@
 # 获取跨域规则信息 - DescribeCORSRule
 
-
 ## 简介
 
 获取跨域规则信息
