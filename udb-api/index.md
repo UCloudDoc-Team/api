@@ -74,6 +74,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[DescribeUDBBinlogBackup](api/udb-api/describe_udb_binlog_backup)|列表UDB实例Binlog自动备份信息|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
 |[GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)|获取连接实例客户端Ip和连接数|
 |[GetUDBInstanceSSLCertURL](api/udb-api/get_udb_instance_ssl_cert_url)|获取SSL证书下载地址|
