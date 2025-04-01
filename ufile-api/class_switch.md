@@ -2,7 +2,7 @@
 
 ## 简介
 
-用于转换文件的存储类型，可以任意转换文件为标准、低频、冷存三种存储类型，注意：冷存文件如果想转换为其他两种类型必须在解冻期内。
+用于转换文件的存储类型，可以由热转冷。如标准->低频/归档, 低频->归档
 
 ## 定义
 
@@ -25,7 +25,7 @@ Authorization: <token>
 
 |Name    |Type  |Description          |Required|
 |---|---|---|---|
-|storageClass    |String|目标存储类型，三种：STANDARD（标准）、IA（低频）、ARCHIVE（冷存）|Yes     |
+|storageClass    |String|目标存储类型，三种：IA（低频）、ARCHIVE（冷存）|Yes     |
 
 ### 响应（Responses）
 
@@ -50,7 +50,7 @@ Authorization: <token>
 ### 请求示例（Example Request）:
 
 ```
-PUT /archive_file.txt?storageClass=IA HTTP/1.1
+PUT /standard_file.txt?storageClass=IA HTTP/1.1
 Host: <bucket_name>.cn-bj.ufileos.com
 Authorization: UCloud demouser@ucloud.cn13424346821929713944:S5FVD2w613MKb/hisjaqHdjvn9U=
 ```
@@ -69,7 +69,7 @@ Content-Type: applicaton/json
 Content-Length: 62
 X-SessionId: e2f4fc84-3936-4a2d-85b5-ef8f2e79933c
 {
-    "RetCode": -148671,
-    "ErrMsg": "file has not been restored"
+    "RetCode": -148660,
+    "ErrMsg": "switch class not allowed"
 }
 ```

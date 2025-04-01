@@ -28,7 +28,7 @@ Authorization: <token>
 |---|---|---|---|
 |Prefix|string|返回以Prefix作为前缀的目录文件<br>当delimiter为("")时，返回的列表包含prefix内的所有子文件及子文件夹<br>当delimiter为("/")时，返回prefix下的所有文件和子文件夹,但不显示子文件夹下递归的目录和文件。<br>ps：当delimiter为("/")时，且prefix以("/")结尾时，列表返回不会包含与prefix相同的文件/目录名的对象|No|
 |Marker|string|返回以字母排序后，大于Marker的目录文件列表<br>默认值:无|No|
-|Limit|int|指定返回目录文件列表的最大数量<br>范围:[0,1000]<br>默认值:100|No|
+|MaxKeys|int|指定返回目录文件列表的最大数量<br>范围:[0,1000]<br>默认值:100|No|
 |Delimiter|string|目录分隔符，当前只支持"/"和"".<br>当Delimiter设置为"/"时，返回目录形式的文件列表.<br>当Delimiter设置为""时，返回非目录层级文件列表|No|
 
 ### 响应（Responses）
