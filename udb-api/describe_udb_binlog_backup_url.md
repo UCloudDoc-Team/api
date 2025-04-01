@@ -35,6 +35,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **DBId** | string | DB实例Id |**Yes**|
 | **BackupId** | int | DB实例日志备份ID，可以从DescribeUDBLogPackage结果当中获得 |**Yes**|
+| **BinlogType** | string | binlog备份类型 Manual:手动备份 ,Auto:自动备份 |**Yes**|
 
 ### 响应字段
 
@@ -58,6 +59,7 @@ https://api.ucloud.cn/?Action=DescribeUDBBinlogBackupURL
 &Region=cn-bj2
 &DBId=udb-xxxxxx
 &BackupId=1234
+&BinlogType=vqVtwBwj
 ```
 
 ### 响应示例
