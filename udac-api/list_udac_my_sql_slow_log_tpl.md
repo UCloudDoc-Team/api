@@ -67,6 +67,9 @@
 | **AvgRowsSent** | int | 平均返回行 |No|
 | **MaxRowsSent** | int | 最大返回行 |No|
 | **SQLFingerprint** | string | SQL模板指纹 |No|
+| **SumQueryExecTime** | float | 执行时间总和 |No|
+| **SumRowsExamined** | int | 扫描行数总和 |No|
+| **SumRowsSent** | int | 返回行数总和 |No|
 
 ## 示例
 
