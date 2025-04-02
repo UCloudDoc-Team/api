@@ -67,6 +67,7 @@
 | **LockTime** | float | 锁等待时间 |No|
 | **RowsExamined** | int | 扫描行数 |No|
 | **RowsSent** | int | 返回行数 |No|
+| **StartExecutionTime** | int | 开始执行时间 |No|
 
 ## 示例
 
