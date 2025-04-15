@@ -55,6 +55,8 @@
 | **ProxyPort** | int | 代理端口, 默认为 6379 |No|
 | **BackupId** | string | 备份ID，选择从该备份新建集群 |No|
 | **SpaceId** | string | 集群ID，选择某个备份创建时，需要填写源集群ID |No|
+| **RollbackSpaceId** | string | 如果是通过回档创建，该实例ID不为空 |No|
+| **RollbackTime** | int | 要回档的时间戳 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -96,6 +98,8 @@ https://api.ucloud.cn/?Action=CreateUMemSpace
 &SpaceId=bvfrJZyE
 &BackupId=XIvJdFGm
 &SpaceId=BDxakGCB
+&RollbackSpaceId=lOuLyfWD
+&RollbackTime=3
 ```
 
 ### 响应示例

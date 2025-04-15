@@ -37,6 +37,7 @@
 | **UHostId** | string | UHost实例ID 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
 | **ImageName** | string | 镜像名称 |**Yes**|
 | **ImageDescription** | string | 镜像描述 |No|
+| **Tag** | string | 镜像业务组。默认：Default |No|
 | **DataUDiskIds.N** | string | 【数组】关联的云盘数据盘id列表。注意: 云盘数据盘需要开启快照服务 |No|
 
 ### 响应字段
@@ -63,6 +64,7 @@ https://api.ucloud.cn/?Action=CreateCustomImage
 &UHostId=uhost-xxx
 &ImageName=Test
 &DataUDiskIds.N=TtzKXtvV
+&Tag=bSyBHVKz
 ```
 
 ### 响应示例

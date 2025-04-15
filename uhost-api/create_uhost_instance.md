@@ -51,7 +51,7 @@
 | **Quantity** | int | 购买时长。默认:值 1。按小时购买（Dynamic/Postpay）时无需此参数。 月付时，此参数传0，代表购买至月末。 |No|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "V100S",2080","2080TiS","2080TiPro","3090","4090","A100"]。MachineType为G时必填 |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","A100","A800"]。MachineType为G时必填 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
 | **NetCapability** | string | 网络增强特性。枚举值：Normal，不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0；Extreme，开启网络增强3.0（详情参考官网文档） |No|
 | **HotplugFeature** | boolean | 热升级特性。True为开启，False为未开启，默认False。 |No|
@@ -64,7 +64,7 @@
 | **MachineType** | string | 云主机机型（V2.0），在本字段和字段UHostType中，仅需要其中1个字段即可。枚举值["N", "C", "G", "O", "OM", "OMEM"， "OPRO", "OPROG"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake", "Intel/CascadelakeR", "Intel/IceLake", "Intel/SapphireRapids", "Amd/Epyc2", "Amd/Auto","Ampere/Auto","Ampere/Altra"],默认值是"Intel/Auto"。 |No|
 | **MaxCount** | int | 本次最大创建主机数量，取值范围是[1,100]，默认值为1。<br />- 库存数量不足时，按库存数量创建。<br />- 配额不足时，返回错误。<br />- 使用隔离组时，以隔离组可用数量为准。 |No|
-| **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
+| **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式下非必传, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
 | **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
 | **NetworkInterface.N.EIP.ShareBandwidthId** | string | 绑定的共享带宽Id，仅当PayMode为ShareBandwidth时有效 |No|
 | **NetworkInterface.N.EIP.OperatorName** | string | 【若绑定EIP，此参数必填】弹性IP的线路。枚举值: 国际: International BGP: Bgp 各地域允许的线路参数如下: cn-sh1: Bgp cn-sh2: Bgp cn-gd: Bgp cn-bj1: Bgp cn-bj2: Bgp hk: International us-ca: International th-bkk: International kr-seoul:International us-ws:International ge-fra:International sg:International tw-kh:International.其他海外线路均为 International |No|
@@ -80,6 +80,7 @@
 | **UDSetId** | string | 【私有专区属性】专区id |No|
 | **UDHostId** | string | 【私有专区属性】专区宿主机id |No|
 | **HostBinding** | boolean | 【私有专区属性】专区云主机开启宿住关联属性 |No|
+| **MinCount** | int | 本次最小创建主机数量，取值范围是[1,100]，默认值为1。<br />- 配额不足时，返回错误。 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -190,6 +191,7 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 &NetworkInterface.N.IPv6.ShareBandwidthId=aoHzuvNS
 &NetworkInterface.N.IPv6.Address=ztvbtlTL
 &Disks.N.SnapshotId=xOfUFQge
+&MinCount=4
 ```
 
 ### 响应示例

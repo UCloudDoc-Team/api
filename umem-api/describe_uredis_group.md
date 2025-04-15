@@ -2,7 +2,7 @@
 
 ## 简介
 
-查询主备Redis
+查询主备Redis(已废弃，建议使用DescribeUMem)
 
 
 
@@ -77,12 +77,16 @@
 | **Version** | string | Redis版本信息 |No|
 | **ExpireTime** | int | 过期时间 (UNIX时间戳) |No|
 | **ChargeType** | string | 计费类型:Year,Month,Dynamic 默认Dynamic |No|
-| **State** | string | 状态标记 Creating // 初始化中 CreateFail // 创建失败 Deleting // 删除中 DeleteFail // 删除失败 Running // 运行 Resizing // 容量调整中 ResizeFail // 容量调整失败 Configing // 配置中 ConfigFail // 配置失败 |No|
+| **State** | string | 状态标记 Creating // 初始化中 CreateFail // 创建失败 Deleting // 删除中 DeleteFail // 删除失败 Running // 运行 Resizing // 容量调整中 ResizeFail // 容量调整失败 Configing // 配置中 ConfigFail // 配置失败<br />// 修改SSL中<br />SSLSwitching <br />//SSLSwitchFail<br />修改SSL失败 |No|
 | **CreateTime** | int | 创建时间 (UNIX时间戳) |No|
 | **ModifyTime** | int | 修改时间 (UNIX时间戳) |No|
 | **Tag** | string | 业务组名称 |No|
 | **SlaveZone** | string | 跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
 | **IsHighPerformance** | boolean | 是否是高性能Redis， true表示是； false表示否 |No|
+| **SSLVersion** | string | SSL版本 |No|
+| **SSLEnable** | boolean | 实例是否开启SSL |No|
+| **SSLCertExpireTime** | int | 证书过期时间 |No|
+| **SecPolicy** | int | 安全策略。1:内网隔离，2:加密通信，3:内网隔离+加密通信 |No|
 
 ## 示例
 
