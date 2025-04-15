@@ -38,6 +38,8 @@
 | **FuncType** | string | 镜像归属,枚举值:["gpu","app","uhost"]。"gpu": 对gpu进行处理过的行业镜像；"app"：轻量云主机专用的镜像；"uhost"：云主机镜像市场的行业镜像。FuncType传参错误会被忽略 |No|
 | **OsType** | string | 操作系统类型：Linux， Windows 默认返回所有类型 |No|
 | **ImageId** | string | 镜像Id |No|
+| **ImageIds.N** | string | 镜像Id列表 |No|
+| **Tag** | string | 业务组Id。默认：Default |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20 |No|
 | **PriceSet** | int | 是否返回价格：1返回，0不返回；默认不返回 |No|
@@ -62,6 +64,7 @@
 | **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist)  |No|
 | **ImageId** | string | 镜像ID |No|
 | **ImageName** | string | 镜像名称 |No|
+| **Tag** | string | 业务组 |No|
 | **OsType** | string | 操作系统类型：Linux，Windows |No|
 | **OsName** | string | 操作系统名称 |No|
 | **ImageType** | string | 镜像类型 标准镜像：Base， 行业镜像：Business，自定义镜像：Custom |No|
@@ -108,6 +111,8 @@ https://api.ucloud.cn/?Action=DescribeImage
 &FuncType=VQKlDpNp
 &FuncType=SKKAirKJ
 &FuncType=VSVNRRqM
+&ImageIds.N=mHLyFgVK
+&Tag=RfBkaesv
 ```
 
 ### 响应示例

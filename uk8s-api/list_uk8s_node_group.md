@@ -46,6 +46,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **NodeGroupId** | string | 节点池ID |No|
 | **NodeGroupName** | string | 节点池名字 |No|
 | **ImageId** | string | 镜像ID |No|
@@ -62,6 +63,13 @@
 | **Tag** | string | 业务组 |No|
 | **ChargeType** | string | 付费方式 |No|
 | **NodeList** | array[string] | 节点id列表 |No|
+| **SubnetId** | string | 子网 ID。默认为集群创建时填写的子网ID，也可以填写集群同VPC内的子网ID。 |No|
+| **IsolationGroupId** | string | 硬件隔离组id。可通过DescribeIsolationGroup获取。 |No|
+| **MaxPods** | string | int<br />默认110，生产环境建议小于等于110。 |No|
+| **UserData** | string | 用户自定义数据。当镜像支持Cloud-init Feature时可填写此字段。注意：1、总数据量大小不超过 16K；2、使用base64编码。 |No|
+| **InitScript** | string | 用户自定义Shell脚本。与UserData的区别在于InitScript在节点初始化完毕后才执行，UserData则是云主机初始化时执行。 |No|
+| **Taints** | string | Node节点污点，形式为key=value:effect，多组taints用”,“隔开,最多支持五组。 |No|
+| **Labels** | string | Node节点标签。key=value形式,多组用”,“隔开，最多5组。 如env=pro,type=game |No|
 
 ## 示例
 

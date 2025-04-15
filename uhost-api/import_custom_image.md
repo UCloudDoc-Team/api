@@ -39,6 +39,7 @@
 | **OsName** | string | 操作系统详细版本，请参考控制台的镜像版本；OsType为Other时，输入参数为Other |**Yes**|
 | **Format** | string | 镜像格式，可选RAW、VHD、VMDK、qcow2 |**Yes**|
 | **Auth** | boolean | 是否授权。必须填true |**Yes**|
+| **Tag** | string | 业务组 |No|
 | **ImageDescription** | string | 镜像描述 |No|
 
 ### 响应字段
@@ -67,6 +68,7 @@ https://api.ucloud.cn/?Action=ImportCustomImage
 &OsName=CentOS 6.5 32位
 &Format=VMDK
 &Auth=1
+&Tag=yWPurzFo
 ```
 
 ### 响应示例
