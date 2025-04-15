@@ -57,6 +57,8 @@
 |[DescribeVPCIntercom](api/vpc2.0-api/describe_vpc_intercom)|获取VPC互通信息|
 |[DescribeWhiteListResource](api/vpc2.0-api/describe_white_list_resource)|展示NAT网关白名单资源列表|
 |[DetachNetworkInterface](api/vpc2.0-api/detach_network_interface)|解绑云主机关联网卡|
+|[DisableUniEipDirectMode](api/vpc2.0-api/disable_uni_eip_direct_mode)|关闭虚拟网卡EIP直通功能|
+|[EnableUniEipDirectMode](api/vpc2.0-api/enable_uni_eip_direct_mode)|开启虚拟网卡EIP直通功能|
 |[EnableWhiteList](api/vpc2.0-api/enable_white_list)|修改NAT网关白名单开关|
 |[GetAvailableResourceForPolicy](api/vpc2.0-api/get_available_resource_for_policy)|获取NAT网关可配置端口转发规则的资源信息|
 |[GetAvailableResourceForSnatRule](api/vpc2.0-api/get_available_resource_for_snat_rule)|获得可添加snat规则（出口规则）的资源列表|
@@ -71,6 +73,7 @@
 |[UpdateNATGWSubnet](api/vpc2.0-api/update_natgw_subnet)|更新NAT网关绑定的子网|
 |[UpdateNetworkAcl](api/vpc2.0-api/update_network_acl)|更改ACL|
 |[UpdateNetworkAclEntry](api/vpc2.0-api/update_network_acl_entry)|更新ACL的规则|
+|[UpdateNetworkInterfaceDefaultOutput](api/vpc2.0-api/update_network_interface_default_output)|更新虚拟网卡默认出口|
 |[UpdateRouteTableAttribute](api/vpc2.0-api/update_route_table_attribute)|更新路由表基本信息|
 |[UpdateSnatRule](api/vpc2.0-api/update_snat_rule)|更新出口规则（SNAT规则）|
 |[UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)|更新子网信息|

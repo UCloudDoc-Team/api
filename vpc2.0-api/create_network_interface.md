@@ -41,7 +41,7 @@
 | **Tag** | string | 业务组 |No|
 | **Remark** | string | 备注 |No|
 | **SecurityMode** | int | 指定使用 安全组还是防火墙。为 0 时绑定防火墙，为1时绑定安全组 |No|
-| **PrioritySecGroup.N.Pripority** | int | 安全组优先级 |No|
+| **PrioritySecGroup.N.Priority** | int | 安全组优先级 |No|
 | **PrioritySecGroup.N.SecGroupId** | string | 安全组 ID |No|
 | **EipDirectMode** | boolean | 是否开启EIP直通，默认false |No|
 
