@@ -70,6 +70,7 @@
 | **SumQueryExecTime** | float | 执行时间总和 |No|
 | **SumRowsExamined** | int | 扫描行数总和 |No|
 | **SumRowsSent** | int | 返回行数总和 |No|
+| **SQLFingerprintMd5** | string | SQL指纹的md5 |No|
 
 ## 示例
 

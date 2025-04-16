@@ -68,6 +68,7 @@
 | **RowsExamined** | int | 扫描行数 |No|
 | **RowsSent** | int | 返回行数 |No|
 | **StartExecutionTime** | int | 开始执行时间 |No|
+| **SQLFingerprintMd5** | string | SQL指纹的md5 |No|
 
 ## 示例
 
