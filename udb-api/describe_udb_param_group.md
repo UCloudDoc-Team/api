@@ -58,6 +58,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **GroupType** | int | 参数组类型：1：稳定版参数组，2:高性能版参数组。默认是稳定版参数组 |No|
 | **GroupId** | int | 参数组id |No|
 | **GroupName** | string | 参数组名称 |No|
 | **DBTypeId** | string | DB类型id，mysql/mongodb按版本细分各有一个id 目前id的取值范围为[1,7],数值对应的版本如下 1：mysql-5.5，2：mysql-5.1，3：percona-5.5 4：mongodb-2.4，5：mongodb-2.6，6：mysql-5.6 7：percona-5.6 |No|
