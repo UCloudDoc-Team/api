@@ -41,6 +41,7 @@
 | **International** | boolean | 国内/国际短信。true:国际短信，false:国内短信，若不传值则默认该值为false |No|
 | **ProxyFile** | string | 短信签名授权委托文件，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB；当您是代理并使用第三方的签名时（也即SigPurpose为1-他用），该项为必填项； |No|
 | **QualificationId** | string | 资质ID |No|
+| **SceneDesc** | string | 短信签名对应的场景说明 |No|
 
 ### 响应字段
 
@@ -70,6 +71,7 @@ https://api.ucloud.cn/?Action=CreateUSMSSignature
 &International=false
 &ProxyFile=IaCnaxJg
 &QualificationId=NGKkDXvv
+&SceneDesc=WwbYncpP
 ```
 
 ### 响应示例
