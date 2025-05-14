@@ -41,6 +41,7 @@
 | **ProxyFile** | string | 短信签名授权委托文件内容，需先进行base64编码格式转换，此处填写转换后的字符串。文件大小不超过4 MB；当您是代理并使用第三方的签名时（也即SigPurpose为1-他用），该项为必填项；格式和File类似。 |No|
 | **Document** | string | 短信签名的资质证明文件URL，若未更改审核材料，则该处使用已上传审核材料的URL链接，否则使用File参数 |No|
 | **ProxyDoc** | string | 短信签名授权委托文件URL，若未更改授权委托文件，则该处填写已上传的授权委托文件的URL链接，否则使用ProxyFile参数 |No|
+| **SceneDesc** | string | 短信签名对应的场景说明 |No|
 
 ### 响应字段
 
@@ -68,6 +69,7 @@ https://api.ucloud.cn/?Action=UpdateUSMSSignature
 &File=iVBORw0KGgoXXXXXXXXXXXXXXXXXXNSUhEU
 &Document=hJJRaVwT
 &ProxyDoc=iGNJVNlH
+&SceneDesc=LXLCsLks
 ```
 
 ### 响应示例
