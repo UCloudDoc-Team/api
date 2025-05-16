@@ -11,6 +11,8 @@
 |[AllocateSecondaryIp](api/vpc2.0-api/allocate_secondary_ip)|分配ip|
 |[AllocateVIP](api/vpc2.0-api/allocate_vip)|申请内网虚拟IP|
 |[AssociateRouteTable](api/vpc2.0-api/associate_route_table)|绑定子网的路由表|
+|[AssociateSecGroup](api/vpc2.0-api/associate_sec_group)|绑定资源到安全组|
+|[AssociateSecGroupDynamic](api/vpc2.0-api/associate_sec_group_dynamic)|动态绑定安全组|
 |[AttachNetworkInterface](api/vpc2.0-api/attach_network_interface)|绑定网卡到云主机|
 |[CloneRouteTable](api/vpc2.0-api/clone_route_table)|克隆路由表|
 |[CreateNATGW](api/vpc2.0-api/create_natgw)|创建NAT网关|
@@ -20,6 +22,8 @@
 |[CreateNetworkAclEntry](api/vpc2.0-api/create_network_acl_entry)|创建ACL的规则|
 |[CreateNetworkInterface](api/vpc2.0-api/create_network_interface)|创建虚拟网卡|
 |[CreateRouteTable](api/vpc2.0-api/create_route_table)|创建路由表|
+|[CreateSecGroup](api/vpc2.0-api/create_sec_group)|创建安全组|
+|[CreateSecGroupRule](api/vpc2.0-api/create_sec_group_rule)|创建安全组规则|
 |[CreateSnatDnatRule](api/vpc2.0-api/create_snat_dnat_rule)|使用NAT创建内外网IP映射|
 |[CreateSubnet](api/vpc2.0-api/create_subnet)|创建子网|
 |[CreateVPC](api/vpc2.0-api/create_vpc)|创建VPC|
@@ -31,6 +35,8 @@
 |[DeleteNetworkAclEntry](api/vpc2.0-api/delete_network_acl_entry)|删除ACL的规则|
 |[DeleteNetworkInterface](api/vpc2.0-api/delete_network_interface)|删除网卡|
 |[DeleteRouteTable](api/vpc2.0-api/delete_route_table)|删除自定义路由表|
+|[DeleteSecGroup](api/vpc2.0-api/delete_sec_group)|删除安全组|
+|[DeleteSecGroupRule](api/vpc2.0-api/delete_sec_group_rule)|删除安全组规则|
 |[DeleteSecondaryIp](api/vpc2.0-api/delete_secondary_ip)|删除Ip|
 |[DeleteSnatDnatRule](api/vpc2.0-api/delete_snat_dnat_rule)|删除NAT创建内外网IP映射规则|
 |[DeleteSnatRule](api/vpc2.0-api/delete_snat_rule)|删除出口规则（SNAT规则）|
@@ -46,7 +52,10 @@
 |[DescribeNetworkAclAssociationBySubnet](api/vpc2.0-api/describe_network_acl_association_by_subnet)|获取子网的ACL绑定信息|
 |[DescribeNetworkAclEntry](api/vpc2.0-api/describe_network_acl_entry)|获取ACL的规则信息|
 |[DescribeNetworkInterface](api/vpc2.0-api/describe_network_interface)|展示虚拟网卡信息|
+|[DescribeResourceSecGroup](api/vpc2.0-api/describe_resource_sec_group)|查询资源绑定的安全组信息|
 |[DescribeRouteTable](api/vpc2.0-api/describe_route_table)|获取路由表详细信息(包括路由策略)|
+|[DescribeSecGroup](api/vpc2.0-api/describe_sec_group)|获取安全组信息|
+|[DescribeSecGroupResource](api/vpc2.0-api/describe_sec_group_resource)|获取安全组绑定资源|
 |[DescribeSecondaryIp](api/vpc2.0-api/describe_secondary_ip)|查询SecondaryIp|
 |[DescribeSnatDnatRule](api/vpc2.0-api/describe_snat_dnat_rule)|获取基于NAT创建的内外网IP映射规则信息|
 |[DescribeSnatRule](api/vpc2.0-api/describe_snat_rule)|获取Nat网关的出口规则（SNAT规则）|
@@ -58,6 +67,7 @@
 |[DescribeWhiteListResource](api/vpc2.0-api/describe_white_list_resource)|展示NAT网关白名单资源列表|
 |[DetachNetworkInterface](api/vpc2.0-api/detach_network_interface)|解绑云主机关联网卡|
 |[DisableUniEipDirectMode](api/vpc2.0-api/disable_uni_eip_direct_mode)|关闭虚拟网卡EIP直通功能|
+|[DisassociateSecGroup](api/vpc2.0-api/disassociate_sec_group)|将资源从安全组解绑|
 |[EnableUniEipDirectMode](api/vpc2.0-api/enable_uni_eip_direct_mode)|开启虚拟网卡EIP直通功能|
 |[EnableWhiteList](api/vpc2.0-api/enable_white_list)|修改NAT网关白名单开关|
 |[GetAvailableResourceForPolicy](api/vpc2.0-api/get_available_resource_for_policy)|获取NAT网关可配置端口转发规则的资源信息|
@@ -75,6 +85,9 @@
 |[UpdateNetworkAclEntry](api/vpc2.0-api/update_network_acl_entry)|更新ACL的规则|
 |[UpdateNetworkInterfaceDefaultOutput](api/vpc2.0-api/update_network_interface_default_output)|更新虚拟网卡默认出口|
 |[UpdateRouteTableAttribute](api/vpc2.0-api/update_route_table_attribute)|更新路由表基本信息|
+|[UpdateSecGroup](api/vpc2.0-api/update_sec_group)|更新安全组基本信息|
+|[UpdateSecGroupAssociation](api/vpc2.0-api/update_sec_group_association)|更换安全组绑定关系|
+|[UpdateSecGroupRule](api/vpc2.0-api/update_sec_group_rule)|更新安全组规则|
 |[UpdateSnatRule](api/vpc2.0-api/update_snat_rule)|更新出口规则（SNAT规则）|
 |[UpdateSubnetAttribute](api/vpc2.0-api/update_subnet_attribute)|更新子网信息|
 |[UpdateVIPAttribute](api/vpc2.0-api/update_vip_attribute)|更新VIP信息|
