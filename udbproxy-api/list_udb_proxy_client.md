@@ -4,7 +4,7 @@
 
 查询代理客户端连接IP信息(实时）
 
-
+?> 当前接口仅仅支持与2023年3月10日后创建的代理支持
 
 
 
@@ -60,17 +60,17 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ID** | int | 当前连接DB进程ID |**Yes**|
-| **User** | string | 启动这个线程的用户 |**Yes**|
-| **Host** | string | 代理连接DB地址 |**Yes**|
-| **DB** | string | 当前执行的命令是在哪一个数据库上。如果没有指定数据库，则该值为 NULL |**Yes**|
-| **Command** | string | 显示当前连接的执行的命令 |**Yes**|
-| **Time** | int | 表示该线程处于当前状态的时间 |**Yes**|
-| **State** | string | 线程的状态，和 Command 对应 |**Yes**|
-| **Info** | string | 一般记录的是线程执行的语句 |**Yes**|
-| **ClientHost** | string | 代理连接DB地址 |**Yes**|
-| **DBID** | string | 数据库资源ID |**Yes**|
-| **Role** | string | 数据库角色(主库/从库) |**Yes**|
+| **ID** | int | 当前连接DB进程ID |No|
+| **User** | string | 启动这个线程的用户 |No|
+| **Host** | string | 代理连接DB地址 |No|
+| **DB** | string | 当前执行的命令是在哪一个数据库上。如果没有指定数据库，则该值为 NULL |No|
+| **Command** | string | 显示当前连接的执行的命令 |No|
+| **Time** | int | 表示该线程处于当前状态的时间 |No|
+| **State** | string | 线程的状态，和 Command 对应 |No|
+| **Info** | string | 一般记录的是线程执行的语句 |No|
+| **ClientHost** | string | 客户端来源IP地址 |No|
+| **DBID** | string | 数据库资源ID |No|
+| **Role** | string | 数据库角色(主库/从库) |No|
 
 ## 示例
 
