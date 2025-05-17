@@ -44,23 +44,23 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TotalCount** | int | 数据集合数量 |**Yes**|
-| **Policies** | array[[*Policy*](#Policy)] | 策略信息 |**Yes**|
+| **TotalCount** | int | 权限策略问数 |**Yes**|
+| **Policies** | array[[*AttachedPolicy*](#AttachedPolicy)] | 权限策略列表 |**Yes**|
 
 #### 数据模型
 
 
-#### Policy
+#### AttachedPolicy
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **PolicyName** | string | 权限策略名称 |**Yes**|
 | **PolicyURN** | string | 策略URN |**Yes**|
+| **Scope** | string | 应用范围（ScopeRequired:项目级, ScopeEmpty:全局级, ScopeUnrestricted:项目级/全局级） |**Yes**|
+| **AttachedAt** | int | 策略被绑定时的 Unix 时间戳 |**Yes**|
 | **Description** | string | 描述 |No|
-| **CreatedAt** | int | 创建时间 |No|
-| **Scope** | string | 应用范围（ScopeRequired:项目级, ScopeEmpty:全局级, ScopeUnrestricted:项目级/全局级） |No|
+| **ProjectName** | string | 项目名称 |No|
 | **ProjectID** | string | 项目ID |No|
-| **AttachedAt** | int | 策略被添加到用户组时的时间戳 |No|
 
 ## 示例
 

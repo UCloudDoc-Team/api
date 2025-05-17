@@ -49,8 +49,6 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **MFABindRequired** | boolean | 是否必需绑定MFA |**Yes**|
-| **MaxPasswordAge** | int | 密码最长有效期，单位：天 |**Yes**|
 | **Status** | string | 登录资料状态 |**Yes**|
 
 ## 示例
