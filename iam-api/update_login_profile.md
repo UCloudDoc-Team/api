@@ -32,8 +32,6 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **UserName** | string | 用户名 |**Yes**|
-| **MFABindRequired** | boolean | 是否必需绑定MFA |No|
-| **MaxPasswordAge** | int | 密码最长有效期，单位：天 |No|
 | **Status** | string | 登录资料状态 |No|
 | **UserEmail** | string | 用户真实邮箱 |No|
 
