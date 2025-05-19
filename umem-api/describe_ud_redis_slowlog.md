@@ -59,6 +59,7 @@
 | **SpendTime** | int | 查询消耗的时间 |No|
 | **Command** | string | 查询命令 |No|
 | **BlockId** | string | 分片id |No|
+| **Client** | string | 慢日志的的客户信息 |No|
 
 ## 示例
 

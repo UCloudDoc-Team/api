@@ -31,11 +31,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **GroupId** | string | 组的ID |**Yes**|
 | **Offset** | int | 分页显示的起始偏移, 默认值为0 |No|
 | **Limit** | int | 分页显示的条目数, 默认值为10 |No|
-| **GroupId** | string | 组的ID |No|
+| **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
 
 ### 响应字段
 
@@ -70,9 +71,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeURedisBackup
-&Region=cn-east-01
-&Offset=0
-&Limit=20
+&Region=cn-bj2
+&SlaveZone=IRVyPYOd
 ```
 
 ### 响应示例
@@ -82,28 +82,19 @@ https://api.ucloud.cn/?Action=DescribeURedisBackup
   "Action": "DescribeURedisBackupResponse",
   "DataSet": [
     {
-      "BackupId": "24149c99-4df6-4b5a-99b4-8ab1ca2d7aaa",
-      "BackupName": "backup-test",
-      "BackupSize": 1024,
-      "BackupTime": 1403249482,
-      "BackupType": 1,
-      "GroupId": "uredis-2cwmyb",
-      "GroupName": "uredis-one",
-      "State": "Success"
-    },
-    {
-      "BackupId": "24149c99-4df6-4b5a-99b4-8ab1ca2d7aab",
-      "BackupName": "backup-test2",
-      "BackupSize": 1024,
-      "BackupTime": 1403249482,
-      "BackupType": 1,
-      "GroupId": "uredis-0vcq2a",
-      "GroupName": "uredis-two",
-      "State": "Error"
+      "BackupId": "a75XXXa9-d9e1-4d38-9XX1-aecad464XXX5",
+      "BackupName": "sgbf_XXXXXX",
+      "BackupSize": 18,
+      "BackupTime": 1529912363,
+      "BackupType": "Manual",
+      "GroupId": "uredis-grXXXz",
+      "GroupName": "zbredia_XXXXX",
+      "State": "Success",
+      "Zone": "cn-bj2-04"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 2
+  "TotalCount": 1
 }
 ```
 
