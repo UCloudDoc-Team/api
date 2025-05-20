@@ -32,7 +32,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
-| **ProjectId** | int | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Limit** | int | 分页查询数据长度。默认为20 |No|
 | **Offset** | int | 分页查询起始位置偏移量。默认为0 |No|
 | **VPCId** | string | 资源ID所属的 VPC ID |No|
