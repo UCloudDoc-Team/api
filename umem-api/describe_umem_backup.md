@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SpaceId** | string | 资源id |**Yes**|
 | **Offset** | int | 分页显示的起始偏移, 默认值为0 |No|
 | **Limit** | int | 分页显示的条目数, 默认值为10 |No|
@@ -46,6 +46,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*UMemBackupSet*](#UMemBackupSet)] | 分布式redis 备份，数组的每个元素为每个分片的备份 |No|
+| **TotalCount** | int | 备份总数 |No|
 
 #### 数据模型
 
@@ -60,6 +61,7 @@
 | **BackupId** | string | 空间的备份ID |**Yes**|
 | **BackupType** | string | 备份类型: auto(自动) ,manual(手动) |**Yes**|
 | **BlockCount** | int | 本次备份，分片的数量 |**Yes**|
+| **BlockSize** | int | 备份大小 |No|
 
 ## 示例
 
@@ -92,7 +94,7 @@ https://api.ucloud.cn/?Action=DescribeUMemBackup
     }
   ],
   "RetCode": 0,
-  "TotalCount": 9
+  "TotalCount": 5
 }
 ```
 
