@@ -33,8 +33,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **ResourceId** | string | 资源短 ID 数组，安全组参赛和该字段只支持一个批量。不支持 .n 格式。Type 为 string 数组。 |**Yes**|
-| **PrioritySecGroup** | string | 包含安全组 ID 和优先级的 PrioritySecGroup 数组，该字段和资源 ID 只支持一个批量。不支持 .n 格式。Type 为 PrioritySecGroup JSON 格式数组。 |**Yes**|
+| **ResourceId.N** | string | 资源短 ID，安全组参赛和该字段只支持一个批量。支持 string 数组。 |**Yes**|
+| **PrioritySecGroup.N.Priority** | int | 绑定优先级。该字段和资源 ID 只支持一个批量。支持 PrioritySecGroup 的 JSON 格式数组。 |**Yes**|
+| **PrioritySecGroup.N.SecGroupId** | string | 安全组 ID。该字段和资源 ID 只支持一个批量。支持 PrioritySecGroup 的 JSON 格式数组。 |**Yes**|
 
 ### 响应字段
 
@@ -58,6 +59,7 @@ https://api.ucloud.cn/?Action=AssociateSecGroup
 &FWId=MwGpFQZd
 &ResourceType=IJUSubKV
 &ResourceId=fworMOuc
+&PrioritySecGroup.N.SecGroupId=wSALafiE
 ```
 
 ### 响应示例

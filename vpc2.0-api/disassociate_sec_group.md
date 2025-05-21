@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **SecGroupId** | string | 安全组ID数组，为空表示解绑安全组绑定的所以资源，安全组ID和资源ID至少传一个,且只能有一个批量。不支持 .n 格式。Type 为 string 数组。 |No|
-| **ResourceId** | string | 资源ID数组，为空表示解绑资源上所有安全组，安全组ID和资源ID至少传一个，且只能有一个批量。不支持 .n 格式。Type 为 string 数组。 |No|
+| **SecGroupId.N** | string | 安全组ID，不传表示解绑安全组绑定的所以资源，安全组ID和资源ID至少传一个,且只能有一个批量。支持 string 数组格式。 |No|
+| **ResourceId.N** | string | 资源ID，不传表示解绑资源上所有安全组，安全组ID和资源ID至少传一个，且只能有一个批量。支持 string 数组格式。 |No|
 | **Force** | boolean | 是否强制解绑。默认为 false。为 true 表示强制解绑，用于删除资源前的解绑，因为开启安全组特性的资源至少绑定一个安全组，正常情况下是不允许解绑所有安全组。 |No|
 
 ### 响应字段

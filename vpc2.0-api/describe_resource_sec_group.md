@@ -37,7 +37,7 @@
 | **Offset** | int | 分页查询时的偏移量。传入了 ResourceId 则不分页。 |No|
 | **Limit** | int | 分页查询时的最大返回资源数量。 |No|
 | **VPCId** | string | VPC ID。非必须，分页使用（分页时，也可不传）；ResourceId 非空时，忽略 |No|
-| **ResourceId** | string | 资源 ID 数组，如果指定则不分页；否则分页获取该账号下的指定类型的资源。不支持 .n 格式。Type 为 string 数组。 |No|
+| **ResourceId.N** | string | 资源 ID 数组，如果指定则不分页；否则分页获取该账号下的指定类型的资源。支持  string 数组格式。 |No|
 
 ### 响应字段
 
