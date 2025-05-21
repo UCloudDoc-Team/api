@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SecGroupId** | string | 所属安全组 ID。 |**Yes**|
-| **RuleId** | string | 安全组规则 ID 数组。不支持 .n 格式。Type 为 string 数组。 |**Yes**|
+| **RuleId.N** | string | 安全组规则 ID。支持 string 数组格式。 |**Yes**|
 
 ### 响应字段
 
