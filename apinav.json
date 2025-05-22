@@ -192,10 +192,6 @@
     "listname": "视频服务",
     "listvalue": [
       {
-        "links": "/api/umedia-api/README",
-        "name": "媒体工厂 UMedia"
-      },
-      {
         "links": "/api/ulive-api/README",
         "name": "云直播 ULive"
       },
