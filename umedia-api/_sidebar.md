@@ -22,4 +22,3 @@
     - [获取截图使用量统计 - GetSnapTotalStat](api/umedia-api/get_snap_total_stat)
     - [获取水印模版列表 - GetWaterMarkPattenList](api/umedia-api/get_water_mark_patten_list)
     - [更新转码模版 - UpdateCodecPatten](api/umedia-api/update_codec_patten)
-    - [更新水印模版 - UpdateWatermarkPatten](api/umedia-api/update_watermark_patten)
