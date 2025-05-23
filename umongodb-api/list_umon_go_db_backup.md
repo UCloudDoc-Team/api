@@ -51,6 +51,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Zone** | string | 可用区 |No|
 | **BackupId** | string | 备份ID |**Yes**|
 | **BackupName** | string | 备份名称 |No|
 | **ClusterId** | string | 实例ID |No|
