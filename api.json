@@ -648,7 +648,7 @@
           "img": "icon-product__uhybrid",
           "sublinks": [
             {
-              "links": "/api/uhybridv3-api/README",
+              "links": "/api/uhybrid-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
