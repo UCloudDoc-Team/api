@@ -5,7 +5,7 @@
     * [云主机 UHost](api/uhost-api/README)
     * [物理云主机 UPhost](api/uphost-api/README)
     * [私有专区 UDHost](api/udhost-api/README)
-    * [混合云 UHYBRID](api/uhybridv3-api/README)
+    * [混合云 UHYBRID](api/uhybrid-api/README)
 
 * 网络
     * [网络 UNet](api/unet-api/README)
@@ -42,7 +42,6 @@
     * [Kafka消息队列 UKafka](api/ukafka-api/README)
 
 * 视频服务 
-    * [媒体工厂 UMedia](api/umedia-api/README)
     * [云直播 ULive](api/ulive-api/README)
     * [实时音视频 URTC](api/urtc-api/README)
 
