@@ -45,6 +45,7 @@
 | **Tag** | string | 实例所在的业务组名称 |No|
 | **ChargeType** | string | 付费方式：Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
+| **CrossZones.N** | string | 跨可用区列表 |No|
 
 ### 响应字段
 
@@ -78,6 +79,8 @@ https://api.ucloud.cn/?Action=CreateUMongoDBReplSet
 &ChargeType=Year
 &Quantity=6
 &ListenPort=3
+&EnableIPv6=false
+&CrossZones=RmwqFfiy
 ```
 
 ### 响应示例

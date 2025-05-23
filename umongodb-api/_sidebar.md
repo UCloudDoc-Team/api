@@ -13,6 +13,7 @@
     - [描述MongoDB实例 - DescribeUMongoDBInstance](api/umongodb-api/describe_umon_go_db_instance)
     - [获取实例备份策略 - GetUMongoDBBackupParam](api/umongodb-api/get_umon_go_db_backup_param)
     - [获取配置模板内容 - GetUMongoDBCfgTempItem](api/umongodb-api/get_umon_go_db_cfg_temp_item)
+    - [获取集群节点日志 - GetUMongoDBLog](api/umongodb-api/get_umon_go_db_log)
     - [获取UMongoDB可回档时间范围 - GetUMongoDBRecoverTimeRange](api/umongodb-api/get_umon_go_db_recover_time_range)
     - [实例备份列表 - ListUMongoDBBackup](api/umongodb-api/list_umon_go_db_backup)
     - [拉取配置模板 - ListUMongoDBConfigTemplate](api/umongodb-api/list_umon_go_db_config_template)
