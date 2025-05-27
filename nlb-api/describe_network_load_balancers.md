@@ -32,7 +32,6 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **ForwardingMode** | string | 负载均衡实例的转发类型 |No|
 | **ShowDetail** | boolean | 是否获取监听器和后端服务节点的详细信息 |No|
 | **NLBIds.N** | string | 负载均衡实例的ID，数组 |No|
 | **VPCId** | string | 限定所在的VPC |No|
@@ -98,7 +97,7 @@
 | **Protocol** | string | 监听协议，限定取值："TCP"/"UDP" |No|
 | **Scheduler** | string | 负载均衡算法，限定取值："RoundRobin"/"SourceHash"/"LeastConn"/"WeightLeastConn "/"WeightRoundRobin " |No|
 | **StickinessTimeout** | int | 会话保持超时时间。单位：秒，0表示不开启会话保持 |No|
-| **ForwardSrcIPMethod** | string | 传递源 IP 方法。限定取值："" / "None" / "Toa"，空字符串和 None 代表关闭。 |No|
+| **ForwardSrcIPMethod** | string | 传递源 IP 方法。限定取值："" / "None" / "Toa"/"ProxyProto"，空字符串和 None 代表关闭。 |No|
 | **HealthCheckConfig** | [*HealthCheckConfig*](#HealthCheckConfig) | 健康检查相关配置	 |No|
 | **Targets** | array[[*Target*](#Target)] | 服务节点信息 |No|
 | **State** | string | listener 健康状态，"Healthy"/"Unhealthy"/"PartialHealth"/"None" |No|
