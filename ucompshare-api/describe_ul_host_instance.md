@@ -66,7 +66,7 @@
 | **ChargeType** | string | 计费模式。枚举值：Month/Year |No|
 | **IPSet** | array[[*UHostIPSet*](#UHostIPSet)] | IP信息 |No|
 | **DiskSet** | array[[*ULHostDiskSet*](#ULHostDiskSet)] | 磁盘信息 |No|
-| **ExclusiveUTPInfo** | [*ExclusiveUTPInfo*](#ExclusiveUTPInfo) | 流量包详情信息 |No|
+| **EIPExclusiveUTPInfo** | [*ExclusiveUTPInfo*](#ExclusiveUTPInfo) | 流量包详情信息 |No|
 | **AutoRenew** | string | 是否自动续费。枚举值：Yes/No |No|
 | **IsExpire** | string | 是否过期。枚举值：Yes/No |No|
 | **ExpireTime** | int | 过期时间。Unix时间戳 |No|
