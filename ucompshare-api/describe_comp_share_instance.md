@@ -34,6 +34,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **UHostIds.N** | string | 【数组】UHost主机的资源ID，例如UHostIds.0代表希望获取信息 的主机1，UHostIds.1代表主机2。 如果不传入，则返回当前Region 所有符合条件的UHost实例。 |No|
+| **WithoutGpu** | boolean | 无卡GPU |No|
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
 
@@ -66,13 +67,14 @@
 | **CompShareImageType** | string | 镜像类型<br />- System 系统镜像<br />- App 应用镜像<br />- Custom 自制镜像<br />- Community 社区镜像 |No|
 | **InstanceType** | string | 实例类型。"UHost": 普通主机；"Container": 容器主机 |No|
 | **Password** | string | 主机密码。由Base64编码 |No|
+| **SshLoginCommand** | string | SSH登录命令 |No|
 | **Name** | string | 实例名称 |No|
 | **Tag** | string | 实例业务组 |No|
 | **Remark** | string | 实例备注 |No|
 | **State** | string | 实例状态，枚举值：<br /><br /> >初始化: Initializing; <br /><br /> >启动中: Starting; <br /><br />> 运行中: Running; <br /><br />> 关机中: Stopping; <br /><br /> >关机: Stopped <br /><br /> >安装失败: Install Fail; <br /><br /> >重启中: Rebooting; <br /><br /> >升级改配中: Resizing; <br /><br /> > 未知(空字符串，获取状态超时或出错)： |No|
 | **ChargeType** | string | 计费模式，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按时付费；Postpay，按需付费 |No|
 | **CPU** | int | 虚拟CPU核数，单位: 个 |No|
-| **Memory** | string | 内存大小，单位：MB |No|
+| **Memory** | int | 内存大小，单位：MB |No|
 | **GpuType** | string | GPU类型。如: "4090" |No|
 | **GPU** | int | GPU个数 |No|
 | **GraphicsMemory** | [*GraphicsMemory*](#GraphicsMemory) | GPU显存信息 |No|
@@ -87,16 +89,10 @@
 | **Softwares** | array[[*SoftwareAddr*](#SoftwareAddr)] | 软件地址 |No|
 | **InstancePrice** | float | 主机价格 |No|
 | **CompShareImagePrice** | float | 镜像价格 |No|
-| **ExpireTime** | string | 过期时间 |No|
-| **CreateTime** | string | 创建时间 |No|
-| **SetId** | int | 【内部API返回】宿主所在Set Id |No|
-| **HostIp** | string | 【内部API返回】宿主IP |No|
-| **PodId** | string | 【内部API返回】udisk podId |No|
-| **HugepageCfg** | string | 【内部API返回】大页内存 |No|
-| **QemuVersion** | string | 【内部API返回】Qemu版本号 |No|
-| **QemuFullVersion** | string | 【内部API返回】Qemu完整版本号 |No|
-| **UUID** | string | 【内部API返回】资源长Id |No|
-| **PostPayShutdown** | boolean | 【内部API返回】后付费关机 |No|
+| **ExpireTime** | int | 过期时间 |No|
+| **CreateTime** | int | 创建时间 |No|
+| **SupportWithoutGpuStart** | boolean | 此实例是否支持无卡开机 |No|
+| **WithoutGpuSpec** | [*WithoutGpuSpec*](#WithoutGpuSpec) | 无卡配置规格，详情见：WithoutGpuSpecInfo |No|
 
 #### GraphicsMemory
 
@@ -117,7 +113,6 @@
 | **Name** | string | UDisk名字（仅当磁盘是UDisk时返回） |No|
 | **Drive** | string | 磁盘盘符 |No|
 | **Size** | int | 磁盘大小，单位: GB |No|
-| **BackupType** | string | 备份方案。若开通了数据方舟，则为DATAARK |No|
 
 #### UHostIPSet
 
@@ -142,6 +137,14 @@
 | **Name** | string | 软件名称 |No|
 | **URL** | string | 软件地址 |No|
 
+#### WithoutGpuSpec
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Cpu** | int | cpu |No|
+| **Memory** | int | 内存 |No|
+| **Gpu** | int | gpu |No|
+
 ## 示例
 
 ### 请求示例
@@ -160,6 +163,7 @@ https://api.ucloud.cn/?Action=DescribeCompShareInstance
 &NoEIP=false
 &ResourceType=zFIXncgL
 &UDiskIdForAttachment=true
+&WithoutGpu=false
 ```
 
 ### 响应示例
