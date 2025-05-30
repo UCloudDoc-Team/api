@@ -30,6 +30,7 @@
 | **FullDomain** | string | 源域名 |**Yes**|
 | **DestDomain.N** | string | 目的域名 |**Yes**|
 | **RuleType** | string | 规则类型,CCRule:CC规则； ProtectionRule：防护规则； AutoBlacklistRule：自动拦截规则； HTTPDisguiseRule：信息防护规则； RegionBlockRule：区域封堵规则；WhiteList：白名单规则；BlackList：黑名单规则 |**Yes**|
+| **RuleID.N** | string | 需要复制的源规则ID |No|
 
 ### 响应字段
 
@@ -54,6 +55,7 @@ https://api.ucloud.cn/?Action=CopyWafDomainRules
 &DestDomain.1=www.test2.com
 &RuleType=CCRule
 &Append=false
+&RuleID.n=mxfzhHpS
 ```
 
 ### 响应示例

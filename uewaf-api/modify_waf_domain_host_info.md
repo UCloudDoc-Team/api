@@ -34,6 +34,12 @@
 | **CertificateID** | int | HTTPS证书编号 |No|
 | **RealIPHeader** | string | 获取真实客户端地址字段，如对接CDN等其他代理时使用 |No|
 | **WorkMode** | string | 工作模式，Defence:启用防护规则,Alarm:记录不拦截,Inactive:放行 |No|
+| **SrcLBMode** | string | 源站负载策略，默认为轮询RR，可填：IpHash、RR |No|
+| **HTTPBack** | string | 是否使用HTTPS卸载，YES/NO |No|
+| **SourceIndicate** | string | 流量标记，格式为key:value |No|
+| **Http2** | string | 是否开启HTTP2， YES开启，其他关闭 |No|
+| **ResponseCacheSwitch** | string | 响应缓存开关 |No|
+| **MultipartSwitch** | string | Multipart开关 |No|
 
 ### 响应字段
 
@@ -58,6 +64,21 @@ https://api.ucloud.cn/?Action=ModifyWafDomainHostInfo
 &HTTPRedirection=NO
 &WorkRegions=cn-gd
 &CertificateID=901
+&SrcLBMode=DfNrprLO
+&ExclusiveIP=xkvjMcYC
+&HTTPBack=BaGctxQr
+&SourceIndicate=ujgtWtgv
+&Http2=GflwpFWX
+&SrcLBMode=PyEXCDhq
+&ExclusiveIP=qULJKwfz
+&HTTPBack=nwZwcGph
+&SourceIndicate=iQFxvibV
+&Http2=UoBLDSDW
+&HTTPBack=wmknwfoB
+&SourceIndicate=eACxSxPo
+&Http2=gPuUkRlP
+&ResponseCacheSwitch=DRzFrCji
+&MultipartSwitch=vRZzrJQp
 ```
 
 ### 响应示例

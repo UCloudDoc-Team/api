@@ -26,7 +26,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ID** | int | 要修改的规则ID |**Yes**|
 | **FullDomain** | string | 要操作的域名 |**Yes**|
 | **Name** | string | 规则名称 |**Yes**|
@@ -34,6 +34,7 @@
 | **RuleAction** | string | 丢弃响应或伪装内容；可选项：DROP（丢弃响应），DISGUISE（伪装内容） |**Yes**|
 | **Content** | string | 过滤内容。当过滤类型为Sensitive时为可选项，可选值：Identity（身份证号），TelNum（手机号），Email（邮件），BankNum（银行卡号） |No|
 | **DisguiseFile** | string | 伪装响应内容 |No|
+| **Operator** | string | 操作人 |No|
 
 ### 响应字段
 
@@ -59,6 +60,7 @@ https://api.ucloud.cn/?Action=ModifyWafResponseFilter
 &Type=Status
 &RuleAction=DROP
 &Content=404
+&Operator=AUDDwBlo
 ```
 
 ### 响应示例

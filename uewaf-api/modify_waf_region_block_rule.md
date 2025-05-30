@@ -31,7 +31,9 @@
 | **Name** | string | 规则名称 |**Yes**|
 | **ActionType** | string | 匹配Action，Accept or Deny（默认） |**Yes**|
 | **BlockRegion** | string | 封堵地域编码，定义与添加的api相同 |**Yes**|
+| **FullDomain** | string | 域名 |**Yes**|
 | **Description** | string | 备注信息 |No|
+| **Type** | string | 区域封堵规则类型，不填为旧的区域IP封堵，填写内容支持(china_admin_code\|country_code\|industry)等等 |No|
 
 ### 响应字段
 
@@ -56,6 +58,8 @@ https://api.ucloud.cn/?Action=ModifyWafRegionBlockRule
 &ActionType=Deny
 &BlockRegion=US
 &Description=美国
+&FullDomain=rlTlsxag
+&Type=vOejWGmF
 ```
 
 ### 响应示例

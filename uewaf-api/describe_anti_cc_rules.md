@@ -26,8 +26,9 @@ CC防御规则列表
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Domain** | string | 要查询防护规则的域名 |**Yes**|
+| **FullDomain** | string | 域名 |No|
 
 ### 响应字段
 
@@ -61,6 +62,16 @@ CC防御规则列表
 | **Reqs** | int | 请求次数 |**Yes**|
 | **Action** | string | 执行动作 |**Yes**|
 | **Validity** | int | 动作有效期,单位:分钟 |**Yes**|
+| **Name** | string | 规则名称 |No|
+| **ExtendsRule** | array[[*RuleInfo*](#RuleInfo)] | 扩展规则 |No|
+
+#### RuleInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Field** | string | 匹配字段 |No|
+| **Content** | string | 匹配内容 |No|
+| **Operator** | string | 匹配操作 |No|
 
 ## 示例
 
@@ -70,6 +81,7 @@ CC防御规则列表
 https://api.ucloud.cn/?Action=DescribeAntiCCRules
 &ProjectId=org-xxx
 &Domain=www.test.com
+&FullDomain=OGdQttGC
 ```
 
 ### 响应示例

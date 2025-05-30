@@ -49,6 +49,11 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 区域 |No|
+| **RequestHeaders** | string | 请求头部 |**Yes**|
+| **RequestBody** | string | 请求body |**Yes**|
+| **ClientPort** | string | 客户端端口 |**Yes**|
+| **RequestID** | string | 请求uid |**Yes**|
+| **ClientIPInfo** | [*CityInfo*](#CityInfo) | 源IP信息 |**Yes**|
 | **Protocol** | string | 协议 |No|
 | **ServerName** | string | 服务器名称 |No|
 | **DestIp** | string | 目标IP地址 |No|
@@ -68,11 +73,25 @@
 | **Action** | string | 匹配动作 |No|
 | **UA** | string | 用户代理 |No|
 | **Args** | string | 参数 |No|
+| **Id** | string |  |No|
+
+#### CityInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **CountryName** | string | 国家 |No|
+| **RegionName** | string | 区域 |No|
+| **CityName** | string | 城市 |No|
+| **OwnerDomain** | string | 所属域名 |No|
+| **Latitude** | string | 纬度 |No|
+| **Longitude** | string | 经度 |No|
+| **Timezone** | string | 时区 |No|
 
 #### WafAlert
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Match** | string | 命中内容 |**Yes**|
 | **Description** | string | 规则描述 |No|
 | **Id** | int | 匹配规则ID |No|
 
