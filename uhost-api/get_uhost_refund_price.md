@@ -53,8 +53,8 @@
 |:---|:---|:---|:---|
 | **UHostId** | string | UHost实例ID |**Yes**|
 | **Code** | int | 实例操作结果的错误码。0为成功 |**Yes**|
-| **Message** | string | 当 Code 非 0 时提供详细的描述信息 |**Yes**|
-| **RefundPrice** | float | 实例的删除退费金额 |**Yes**|
+| **Message** | string | 当 Code 非 0 时提供详细的描述信息 |No|
+| **RefundPrice** | float | 实例的删除退费金额 |No|
 
 ## 示例
 
