@@ -57,8 +57,10 @@
 | **CompanyCreditCode** | string | 统一社会信用代码 |No|
 | **CompanyCertificateFile** | string | 公司证件文件链接 |No|
 | **ManagerName** | string | 负责人姓名 |No|
+| **ManagerPhone** | string | 负责人手机号 |No|
 | **ManagerIDNumber** | string | 负责人证件号码 |No|
 | **HandlerName** | string | 经办人姓名 |No|
+| **HandlerPhone** | string | 经办人手机号 |No|
 | **HandlerIDNumber** | string | 经办人证件号码 |No|
 | **HandlerIDCardFrontImage** | string | 经办人身份证人像面图片链接 |No|
 | **HandlerIDCardBackImage** | string | 经办人身份证国徽面图片链接 |No|

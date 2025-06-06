@@ -35,6 +35,7 @@
 | **Name** | string | 资质名称 |**Yes**|
 | **Attr** | int | 资质属性，0-自用 1-他用 |**Yes**|
 | **Status** | int | 状态：0-草稿，1-提交审核 |**Yes**|
+| **HandlerPhone** | string | 经办人手机号 |**Yes**|
 | **CompanyName** | string | 公司名称，长度限制100 |No|
 | **CompanyCreditCode** | string | 公司统一社会信用代码 |No|
 | **CompanyCertificateFileId** | string | 公司证件文件FileId |No|
@@ -45,6 +46,7 @@
 | **HandlerIDCardBackImageFileId** | string | 经办人身份证国徽面图片FileId |No|
 | **HandlerHandHeldImageFileId** | string | 经办人手持身份证图片FileId |No|
 | **ManagerName** | string | 法人姓名 |No|
+| **ManagerPhone** | string | 法人手机号 |No|
 | **ManagerIDNumber** | string | 法人身份证号码 |No|
 
 ### 响应字段
@@ -87,6 +89,8 @@ https://api.ucloud.cn/?Action=AddUSMSSignatureQualification
 &HandlerIDCardBackImageFileId=kKXaojft
 &HandlerHandHeldImageFileId=IRSHOfWA
 &PowerOfAttorneyFileId=FXGYjKwb
+&HandlerPhone=vvToegyc
+&ManagerPhone=OKhIhMzD
 ```
 
 ### 响应示例
