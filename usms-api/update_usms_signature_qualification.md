@@ -41,11 +41,13 @@
 | **CompanyCertificateFileId** | string | 公司证件文件FileId |No|
 | **CompanyWorkScenePhotosFileId** | string | 公司工作现场照片FileId |No|
 | **HandlerName** | string | 经办人姓名 |No|
+| **HandlerPhone** | string | 经办人手机号 |No|
 | **HandlerIDNumber** | string | 经办人身份证号码 |No|
 | **HandlerIDCardFrontImageFileId** | string | 经办人身份证人像面图片FileId |No|
 | **HandlerIDCardBackImageFileId** | string | 经办人身份证国徽面图片FileId |No|
 | **HandlerHandHeldImageFileId** | string | 经办人手持身份证图片FileId |No|
 | **ManagerName** | string | 法人姓名 |No|
+| **ManagerPhone** | string | 法人手机号 |No|
 | **ManagerIDNumber** | string | 法人身份证号码 |No|
 
 ### 响应字段
@@ -89,6 +91,8 @@ https://api.ucloud.cn/?Action=UpdateUSMSSignatureQualification
 &HandlerIDCardBackImageFileId=ZJPkjAfN
 &HandlerHandHeldImageFileId=wgKvtGwQ
 &PowerOfAttorneyFileId=VlAqEmFd
+&HandlerPhone=nifkwYag
+&ManagerPhone=PrLzrLqx
 ```
 
 ### 响应示例
