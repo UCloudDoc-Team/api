@@ -44,6 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **UserEmail** | string | 用户邮箱 |No|
+| **AccessKeyID** | string | 密钥ID |No|
+| **AccessKeySecret** | string | 密钥凭证 |No|
 
 
 
@@ -66,9 +69,12 @@ https://api.ucloud.cn/?Action=CreateUser
     
 ```json
 {
+  "AccessKeyID": "ACOgeKDN",
+  "AccessKeySecret": "mNEyDWfT",
   "Action": "CreateUserResponse",
   "Message": "yyKMMKyR",
-  "RetCode": 0
+  "RetCode": 0,
+  "UserEmail": "ewLZVcgB"
 }
 ```
 
