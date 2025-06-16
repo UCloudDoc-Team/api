@@ -34,15 +34,15 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘：范围[1\~8000]；普通系统盘：范围[1\~8000]；SSD系统盘：范围[1\~4000]；RSSD数据盘：范围[1\~32000]；RSSD系统盘：范围[1\~4000]；高效数据盘：范围[1\~32000]；高效系统盘：范围[1\~500]。 |**Yes**|
+| **Size** | int | 购买UDisk大小,单位:GB,普通数据盘：范围[1\~8000]；SSD数据盘、经济型SSD数据盘：范围[1\~8000]；普通系统盘：范围[1\~8000]；SSD系统盘、经济型SSD系统盘：范围[1\~4000]；RSSD数据盘、经济型RSSD数据盘：范围[1\~32000]；RSSD系统盘、经济型RSSD系统盘：范围[1\~4000]；高效数据盘：范围[1\~32000]；高效系统盘：范围[1\~500]。 |**Yes**|
 | **ChargeType** | string | Year , Month, Dynamic，Postpay，Trial 默认: Month |No|
 | **Quantity** | int | 购买UDisk的时长，默认值为1 |No|
 | **UDataArkMode** | string | 【开启数据方舟入口已关闭】是否开启数据方舟。Yes：开启，No：不开启，默认值：No |No|
 | **SnapshotService** | string | 是否开启快照服务（开启快照服务，可免费开启数据方舟）。Yes：开启，No：不开启，默认值：No |No|
-| **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），RSSDDataDisk(RSSD数据盘)，EfficiencyDataDisk（高效数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），RSSDSystemDisk(RSSD系统盘)，EfficiencySystemDisk（高效系统盘），默认值（DataDisk） |No|
+| **DiskType** | string | UDisk 类型: DataDisk（普通数据盘），SSDDataDisk（SSD数据盘），ESSDDataDisk（经济型SSD数据盘），RSSDDataDisk(RSSD数据盘)，ERSSDDataDisk(经济型RSSD数据盘)，EfficiencyDataDisk（高效数据盘），SystemDisk（普通系统盘），SSDSystemDisk（SSD系统盘），ESSDSystemDisk（经济型SSD系统盘），RSSDSystemDisk(RSSD系统盘)，ERSSDSystemDisk(经济型RSSD系统盘)，EfficiencySystemDisk（高效系统盘），默认值（DataDisk） |No|
 | **IsTotalPrice** | string | 是否将快照服务(数据方舟)，云硬盘放入一张订单, 是："Yes",否："No"，默认是"No" |No|
 | **MachineType** | string | 云主机机型（V2.0），枚举值["N", "C", "G", "O", "OM"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **BackupMode** | string | 快照服务备份策略。默认采用基础版套餐开通，“Base”：基础版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链 |No|
+| **BackupMode** | string | 快照服务备份策略。普通云盘，SSD云盘，RSSD云盘套餐选择：“Base”：基础版，“ Ultimate”：旗舰版，“ Custom”：自定义备份链，默认采用基础版套餐开通；ESSD云盘，ERSSD云盘套餐：“Lite”：精简版，默认采用精简版套餐开通。 |No|
 | **Journal** | int | BackupMode为Custom时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48 |No|
 | **Hour** | int | BackupMode为Custom时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96 |No|
 | **Day** | int | BackupMode为Custom时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30 |No|
