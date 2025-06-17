@@ -47,6 +47,8 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **BandwidthSet** | array[[*ProIspBandwidthSet*](#ProIspBandwidthSet)] | 按省份的带宽流量实例表。具体参考下面BandwidthSet |**Yes**|
+| **RadixCn** | int | 国内流量进制 取值 1000 或者 1024 |No|
+| **RadixAbroad** | int | 国外流量进制 取值 1000 或者 1024<br /> |No|
 
 #### 数据模型
 
@@ -97,6 +99,8 @@ https://api.ucloud.cn/?Action=GetUcdnProIspBandwidthV2
       "Province": "xIjRHOXf"
     }
   ],
+  "RadixAbroad": 9,
+  "RadixCn": 4,
   "RetCode": 0
 }
 ```
