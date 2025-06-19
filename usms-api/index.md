@@ -14,6 +14,7 @@
 |[GetUSMSSendReceipt](api/usms-api/get_usms_send_receipt)|获取短信发送状态|
 |[GetUSMSSendStatistics](api/usms-api/get_usms_send_statistics)|获取发送统计数据|
 |[GetUSMSSignatureQualification](api/usms-api/get_usms_signature_qualification)|获取短信签名资质申请记录列表|
+|[GetUSMSTemplateSendStatistics](api/usms-api/get_usms_template_send_statistics)|获取模板发送统计数据|
 |[QueryUSMSSignature](api/usms-api/query_usms_signature)|查询短信签名申请状态|
 |[QueryUSMSSignatureQualification](api/usms-api/query_usms_signature_qualification)|获取短信签名资质申请记录详情|
 |[QueryUSMSTemplate](api/usms-api/query_usms_template)|查询短信模板申请状态|
