@@ -13,6 +13,7 @@
     - [获取短信发送状态 - GetUSMSSendReceipt](api/usms-api/get_usms_send_receipt)
     - [获取发送统计数据 - GetUSMSSendStatistics](api/usms-api/get_usms_send_statistics)
     - [获取短信签名资质申请记录列表 - GetUSMSSignatureQualification](api/usms-api/get_usms_signature_qualification)
+    - [获取模板发送统计数据 - GetUSMSTemplateSendStatistics](api/usms-api/get_usms_template_send_statistics)
     - [查询短信签名申请状态 - QueryUSMSSignature](api/usms-api/query_usms_signature)
     - [获取短信签名资质申请记录详情 - QueryUSMSSignatureQualification](api/usms-api/query_usms_signature_qualification)
     - [查询短信模板申请状态 - QueryUSMSTemplate](api/usms-api/query_usms_template)
