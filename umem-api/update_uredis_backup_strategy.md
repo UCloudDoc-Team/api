@@ -35,9 +35,12 @@ URedisBackupStrategy
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组的ID |**Yes**|
-| **BackupTime** | string | 备份时间，默认为0 |**Yes**|
+| **BackupTime** | string | 备份时间，默认为0 |No|
 | **AutoBackup** | string | 是否打开默认备份功能。enable(打开)，disable(关闭)，默认enable |No|
 | **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
+| **OperationType** | string | 操作类型，不传默认为normal(即操控自动备份打开以及时间)，modify（修改跨地域备份策略）,close(关闭跨地域备份策略) |No|
+| **DstRegion** | string | 跨可用备份目标地域（当Operation为modify时必选） |No|
+| **SaveDays** | int | 保存天数（当Operation为modify时必选） |No|
 
 ### 响应字段
 
@@ -64,6 +67,11 @@ https://api.ucloud.cn/?Action=UpdateURedisBackupStrategy
 &AutoBackup=dWyotcjn
 &BackupTime=Sdchjvlm
 &SlaveZone=DHihOSqO
+&Operation=kBNHHpHu
+&TargetRegionId=6
+&SaveDays=3
+&SrcRegion=dfueMRGC
+&OperationType=wJxZJSff
 ```
 
 ### 响应示例

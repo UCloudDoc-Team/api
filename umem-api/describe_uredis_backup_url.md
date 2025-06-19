@@ -38,6 +38,7 @@
 | **RegionFlag** | boolean | 是否是跨机房URedis(默认false) |No|
 | **GroupId** | string | 实例ID |No|
 | **SlaveZone** | string | 跨机房URedis，slave所在可用区（必须和Zone在同一Region，且不可相同） |No|
+| **IsCrossRegion** | boolean | 默认为false,true时代表查询跨地域备份URL |No|
 
 ### 响应字段
 
@@ -63,6 +64,7 @@ https://api.ucloud.cn/?Action=DescribeURedisBackupURL
 &BackupId=00XXX68c-c7f5-XX52-9eac-dXXXXXXX8f0e1
 &GroupId=mfweUQnQ
 &SlaveZone=VlwscEJR
+&IsCrossRegion=false
 ```
 
 ### 响应示例
