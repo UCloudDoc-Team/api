@@ -37,12 +37,13 @@
 | **UHostId** | string | UHost实例资源ID 参见 [DescribeUHostInstance](api/uhost-api/describe_uhost_instance) |**Yes**|
 | **Password** | string | 如果重装UHost实例时LoginMode为Password，则必须填写，如果LoginMode为KeyPair，不需要填写 （密码格式使用BASE64编码；举例如下：# echo -n Password1 \| base64UGFzc3dvcmQx。） |No|
 | **ImageId** | string | 镜像Id，默认使用原镜像 参见 [DescribeImage](api/uhost-api/describe_image) |No|
-| **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不报留：No， 默认：Yes；如果是从Windows重装为Linux或反之，则无法保留数据盘（该参数目前仅对本地数据盘起作用） |No|
-| **BootDiskSpace** | int | 系统盘大小。 单位：GB， 范围[20,100]， 步长：10 |No|
+| **ReserveDisk** | string | 是否保留数据盘，保留：Yes，不保留：No， 默认：Yes；如果是从Windows重装为Linux或反之，则无法保留数据盘（该参数目前仅对本地数据盘起作用） |No|
+| **BootDiskSpace** | int | 系统盘大小。 单位：GB， 范围[20,100]。 |No|
 | **UserData** | string | cloudinit初始化使用。注意：1、总数据量大小不超多16K 2、使用base64编码 |No|
 | **AutoDataDiskInit** | string | 数据盘是否需要自动分区挂载。当镜像支持Cloud-init Feature时可填写此字段。取值“On”（默认值）， “Off” |No|
-| **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password，密钥 KeyPair。 |No|
+| **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password，密钥 KeyPair，自制镜像密码: ImagePasswd。 |No|
 | **KeyPairId** | string | KeypairId 密钥对ID，LoginMode为KeyPair时此项必须。 |No|
+| **HostName** | string | 操作系统主机名 |No|
 
 ### 响应字段
 
@@ -73,6 +74,7 @@ https://api.ucloud.cn/?Action=ReinstallUHostInstance
 &LoginMode=yOknHzpM
 &KeyPairId=KfXBMRLJ
 &KeyPairId=qqNpnbqV
+&HostName=LQWDgkPa
 ```
 
 ### 响应示例

@@ -90,7 +90,7 @@
 | **HostType** | string | 【建议不再使用】主机系列：N2，表示系列2；N1，表示系列1 |No|
 | **LifeCycle** | string | 主机的生命周期类型。目前仅支持Normal：普通； |No|
 | **GPU** | int | GPU个数 |No|
-| **GpuType** | string | GPU类型;枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","A100","A800"] |No|
+| **GpuType** | string | GPU类型;枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","A100","A800","H20"] |No|
 | **HotPlugMaxCpu** | int | 热升级支持的最大CPU个数 |No|
 | **BootDiskState** | string | 系统盘状态 Normal表示初始化完成；Initializing表示在初始化。仍在初始化的系统盘无法制作镜像。 |No|
 | **TotalDiskSpace** | int | 总的数据盘存储空间。 |No|
