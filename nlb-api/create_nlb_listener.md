@@ -33,19 +33,19 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **NLBId** | string | 负载均衡实例的ID |**Yes**|
+| **Protocol** | string | 监听协议<br />限定取值："TCP"/"UDP" |**Yes**|
+| **HealthCheckConfig.Port** | int | 健康检查探测端口 说明： 限定取值：[1-65535]，Ping 探测下，端口可填 0 |**Yes**|
+| **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭，默认 true |No|
+| **HealthCheckConfig.Type** | string | 健康检查方式 限定取值："Port"/"UDP"/"Ping" 默认值：“Port”，Ping 只允许 UDP 协议监听器设置 |No|
+| **HealthCheckConfig.ReqMsg** | string | UDP" 检查模式的请求字符串 |No|
+| **HealthCheckConfig.ResMsg** | string | "UDP" 检查模式的预期响应字符串 |No|
 | **Name** | string | 监听器的名称<br />限定字符长度：[1-255]<br />限定特殊字符，仅支持：-_.<br />默认值：listener |No|
 | **Remark** | string | 监听器的备注信息<br />限定字符长度：[0-255] |No|
 | **StartPort** | int | 端口范围的起始端口<br />限定取值：[1-65535]<br />默认值 1 |No|
 | **EndPort** | int | 端口范围的结束端口<br />限定取值：[1-65535]<br />取值不小于起始端口<br />默认值 65535 |No|
-| **Protocol** | string | 监听协议<br />限定取值："TCP"/"UDP" |No|
 | **Scheduler** | string | 负载均衡算法<br />限定取值："RoundRobin"/"SourceHash"/"LeastConn"/"WeightLeastConn "/"WeightRoundRobin"<br />默认值 "RoundRobin"  |No|
 | **StickinessTimeout** | int | 会话保持超时时间。单位：秒<br />限定取值：[60-900]，0 表示不开启会话保持<br />默认值60 |No|
-| **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭，默认 true |No|
-| **HealthCheckConfig.Port** | int | 健康检查探测端口 说明： 限定取值：[1-65535] |No|
-| **HealthCheckConfig.Type** | string | 健康检查方式 限定取值："Port"/"UDP"/"Ping" 默认值：“Port” |No|
-| **HealthCheckConfig.ReqMsg** | string | UDP" 检查模式的请求字符串 |No|
-| **HealthCheckConfig.ResMsg** | string | "UDP" 检查模式的预期响应字符串 |No|
-| **ForwardSrcIPMethod** | string | 传递源 IP 方法。<br />限定取值："" / "None" / "Toa"，空字符串和 None 代表关闭。 |No|
+| **ForwardSrcIPMethod** | string | 传递源 IP 方法。<br />限定取值："" / "None" / "Toa"/"ProxyProto"，空字符串和 None 代表关闭。 |No|
 
 ### 响应字段
 
