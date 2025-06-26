@@ -35,7 +35,7 @@
 | **NLBId** | string | 负载均衡实例的ID。未指定 ListenerId ，则描述指定的 LoadBalancerId 下的所有监听器 |**Yes**|
 | **ListenerId** | string | 监听器的ID |No|
 | **Limit** | int | 限制返回的监听器数量 |No|
-| **Offset** | string | 设置监听器的偏移量 |No|
+| **Offset** | int | 设置监听器的偏移量 |No|
 
 ### 响应字段
 
@@ -66,6 +66,7 @@
 | **HealthCheckConfig** | [*HealthCheckConfig*](#HealthCheckConfig) | 健康检查相关配置	 |No|
 | **Targets** | array[[*Target*](#Target)] | 服务节点信息 |No|
 | **State** | string | listener 健康状态，"Healthy"/"Unhealthy"/"PartialHealth"/"None" |No|
+| **DeletionProtection** | boolean | 是否开启删除保护 |No|
 
 #### HealthCheckConfig
 

@@ -101,6 +101,7 @@
 | **HealthCheckConfig** | [*HealthCheckConfig*](#HealthCheckConfig) | 健康检查相关配置	 |No|
 | **Targets** | array[[*Target*](#Target)] | 服务节点信息 |No|
 | **State** | string | listener 健康状态，"Healthy"/"Unhealthy"/"PartialHealth"/"None" |No|
+| **DeletionProtection** | boolean | 是否开启删除保护 |No|
 
 #### HealthCheckConfig
 
