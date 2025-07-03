@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProductKey** | string | 云产品key 例如 UHOST-uhost |**Yes**|
+| **ProductKey** | string | 云产品key 例如 uhost |**Yes**|
 
 ### 响应字段
 
