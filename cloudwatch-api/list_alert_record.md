@@ -33,7 +33,7 @@
 | **ProjectId** | string | 项目ID。 |**Yes**|
 | **StartAt** | int | 开始时间，查询告警记录开始时间(不支持查询距当前时间一年前的数据) |**Yes**|
 | **EndAt** | int | 结束时间，查询告警记录结束时间(查询开始时间和结束时间不能超过一个月) |**Yes**|
-| **Fuzzy** | string | 模糊查询(支持资源id和告警内容模糊搜索) |No|
+| **Fuzzy** | string | 模糊查询(支持资源id模糊搜索) |No|
 | **ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警记录 |No|
 | **Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录 |No|
 | **Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录 |No|
@@ -58,6 +58,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Region** | string | 可用区 |No|
 | **RecordID** | int | 告警记录RecordID |No|
 | **ProjectID** | int | 项目ProjectID |No|
 | **StrategyName** | string | 告警记录触发告警策略名称 |No|
@@ -66,10 +67,14 @@
 | **ResourceID** | string | 资源id |No|
 | **MetricID** | int | 指标id |No|
 | **MetricName** | string | 指标名称 |No|
+| **UnitName** | string | 指标单位名称 |No|
 | **StrategyID** | int | 告警记录触发告警策略Id |No|
 | **RuleID** | int | 告警记录触发告警规则Id |No|
+| **Tag** | array[string] | 告警点tag信息 |No|
+| **Value** | int | 告警当前值 |No|
+| **ThresholdCompare** | string | 比较符 |No|
+| **ThresholdValue** | string | 告警阈值 |No|
 | **ShieldRuleID** | int | 告警屏蔽规则id(如果配置了屏蔽规则，并且满足条件) |No|
-| **Content** | string | 告警内容 |No|
 | **Level** | string | 告警等级 |No|
 | **Status** | string | 告警状态 |No|
 | **StartAt** | int | 告警触发时间 |No|
