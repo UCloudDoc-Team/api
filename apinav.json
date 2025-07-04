@@ -185,10 +185,6 @@
       {
         "links": "/api/usql-api/README",
         "name": "数据湖分析 USQL"
-      },
-      {
-        "links": "/api/ulogservice-api/README",
-        "name": "日志服务 ULogService"
       }
     ]
   },
