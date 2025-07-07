@@ -34,6 +34,10 @@
 | **UserName** | string | 用户名 |**Yes**|
 | **Status** | string | 登录资料状态 |No|
 | **UserEmail** | string | 用户真实邮箱 |No|
+| **Password** | string | 设置子账号密码 |No|
+| **MaxPasswordAge** | int | 设置子账号密码有效时间 |No|
+| **MFABindRequired** | boolean | 设置子账号登录必须绑定MFA验证 |No|
+| **PasswordResetRequired** | boolean | 设置子账号下次登录必须重置密码 |No|
 
 ### 响应字段
 
@@ -57,6 +61,10 @@ https://api.ucloud.cn/?Action=UpdateLoginProfile
 &MaxPasswordAge=90
 &Status=Active
 &UserEmail=alice@ucloud.cn
+&MFABindRequired=false
+&MaxPasswordAge=4
+&Password=qgAcTpbT
+&PasswordResetRequired=false
 ```
 
 ### 响应示例
