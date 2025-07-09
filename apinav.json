@@ -326,6 +326,15 @@
     ]
   },
   {
+    "listname": "购买与计费",
+    "listvalue": [
+      {
+        "links": "/api/ubill-api/README",
+        "name": "账单管理 UBill"
+      }
+    ]
+  },
+  {
     "listname": "通用人工智能",
     "listvalue": [
       {

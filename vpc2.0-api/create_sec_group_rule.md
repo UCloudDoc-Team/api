@@ -41,6 +41,7 @@
 | **Rule.N.DstPort** | string | 目的端口。逗号分隔，如 "80,443"、"443,2000-10000" |**Yes**|
 | **Rule.N.RuleAction** | string | 规则行为。"Accept" 或 "Drop" |**Yes**|
 | **Rule.N.Remark** | string |  规则备注  |**Yes**|
+| **Rule.N.IPVersion** | string | IP 版本，如 “IPv4”。支持 IPv6 后废弃 |No|
 
 ### 响应字段
 
@@ -70,6 +71,7 @@ https://api.ucloud.cn/?Action=CreateSecGroupRule
 &Rule.n.DstPort=ziuMdiRW
 &Rule.n.RuleAction=HMYwyODF
 &Rule.n.Remark=QPIwNwmO
+&Rule.N.IPVersion=ApHhfJSH
 ```
 
 ### 响应示例
