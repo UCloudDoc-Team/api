@@ -76,6 +76,7 @@
 | **DstPort** | string | 目标端口 |No|
 | **RuleAction** | string | 匹配策略 |No|
 | **Remark** | string | 安全组规则备注 |No|
+| **IPVersion** | string | IP 版本，如 "IPv4"。支持 IPv6 后废弃 |No|
 
 ## 示例
 
