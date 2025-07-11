@@ -31,7 +31,7 @@
 | **EndTime** | int | 过期时间戳，传 3376656000 表示生成永久生效短链接 |**Yes**|
 | **Type** | int | 链接类型-预留：普通跳转、随机跳转，当前默认普通跳转 1: 普通跳转 |**Yes**|
 | **Proto** | string | 协议名称：http/https |**Yes**|
-| **ShortLinkDomain** | string | 短链接域名，默认：uslk.net |No|
+| **ShortLinkDomain** | string | 短链接域名，默认：uuslk.cn |No|
 
 ### 响应字段
 
