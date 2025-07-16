@@ -56,6 +56,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区 |No|
+| **StopSchedulerTime** | int | 计划关机时间 |**Yes**|
 | **UHostId** | string | 实例Id |No|
 | **MachineType** | string | 机型信息 |No|
 | **CpuPlatform** | string | CPU平台。如"Intel/Auto"、"Amd/Auto"等等 |No|
@@ -93,6 +94,12 @@
 | **CreateTime** | int | 创建时间 |No|
 | **SupportWithoutGpuStart** | boolean | 此实例是否支持无卡开机 |No|
 | **WithoutGpuSpec** | [*WithoutGpuSpec*](#WithoutGpuSpec) | 无卡配置规格，详情见：WithoutGpuSpecInfo |No|
+| **StopTime** | int | 定时关机时间 |No|
+| **UpdateTime** | int | 虚机状态更新时间 |No|
+| **ReleaseTime** | int | 释放时间（关机时候返回） |No|
+| **DiskPriceInfo** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 磁盘价格信息，详见:DiskPriceInfo |No|
+| **PostPayPowerOffBillingResource** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 后付费关机计费信息列表，详见：详见:DiskPriceInfo |No|
+| **MonitorMessages** | array[[*MonitorMessage*](#MonitorMessage)] | 监控信息，详见：MonitorMessage |No|
 
 #### GraphicsMemory
 
@@ -144,6 +151,30 @@
 | **Cpu** | int | cpu |No|
 | **Memory** | int | 内存 |No|
 | **Gpu** | int | gpu |No|
+
+#### DiskPriceInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ChargeType** | string | 计费类型 |No|
+| **Price** | float | 磁盘价格 |No|
+| **IsBoot** | boolean | 是否为系统盘 |No|
+
+#### MonitorMessage
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **CpuUsageRate** | string | CPU使用率 |No|
+| **MemUsageRate** | string | 内存使用率 |No|
+| **GpuInfo** | array[[*GpuMonitorInfo*](#GpuMonitorInfo)] | GPU卡监控信息 |No|
+
+#### GpuMonitorInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **GpuUsageRate** | string | GPU卡使用率 |No|
+| **MemoryUsageRate** | string | GPU显存使用率 |No|
+| **GPU** | string | GPU卡名称 |No|
 
 ## 示例
 
