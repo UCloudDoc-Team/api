@@ -6,6 +6,9 @@
 - **API**
     - [创建轻量级算力平台主机资源 - CreateCompShareInstance](api/ucompshare-api/create_comp_share_instance)
     - [创建轻量应用云主机 - CreateULHostInstance](api/ucompshare-api/create_ul_host_instance)
+    - [获取社区镜像列表 - DescribeCommunityImages](api/ucompshare-api/describe_community_images)
+    - [获取自制镜像列表 - DescribeCompShareCustomImages](api/ucompshare-api/describe_comp_share_custom_images)
+    - [获取算力平台镜像信息 - DescribeCompShareImages](api/ucompshare-api/describe_comp_share_images)
     - [获取用户所有地域的主机资源列表 - DescribeCompShareInstance](api/ucompshare-api/describe_comp_share_instance)
     - [获取轻量应用云主机套餐列表 - DescribeULHostBundles](api/ucompshare-api/describe_ul_host_bundles)
     - [获取轻量应用云主机列表 - DescribeULHostInstance](api/ucompshare-api/describe_ul_host_instance)

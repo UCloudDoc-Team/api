@@ -56,7 +56,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区 |No|
-| **StopSchedulerTime** | int | 计划关机时间 |**Yes**|
+| **StopSchedulerTime** | int | 计划关机时间 |No|
 | **UHostId** | string | 实例Id |No|
 | **MachineType** | string | 机型信息 |No|
 | **CpuPlatform** | string | CPU平台。如"Intel/Auto"、"Amd/Auto"等等 |No|
@@ -99,7 +99,7 @@
 | **ReleaseTime** | int | 释放时间（关机时候返回） |No|
 | **DiskPriceInfo** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 磁盘价格信息，详见:DiskPriceInfo |No|
 | **PostPayPowerOffBillingResource** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 后付费关机计费信息列表，详见：详见:DiskPriceInfo |No|
-| **MonitorMessages** | array[[*MonitorMessage*](#MonitorMessage)] | 监控信息，详见：MonitorMessage |No|
+| **MonitorMessages** | [*MonitorMessage*](#MonitorMessage) | 监控信息，详见：MonitorMessage |No|
 
 #### GraphicsMemory
 
