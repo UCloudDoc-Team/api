@@ -82,15 +82,15 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **RuleID** | int | 规则ID |No|
-| **MetricID** | int | 指标ID |No|
+| **MetricID** | int | 规则指标ID。参考该类型产品下返回的指标列表GetProductMetrics |No|
 | **MetricName** | string | 指标名称 |No|
-| **ThresholdCompare** | int | 阈值比较方式 |No|
-| **ThresholdValue** | float | 阈值 |No|
+| **ThresholdCompare** | int | 阈值比较方式<br />枚举值比较方式:<br />1->=<br />2-<=<br />3-><br />4-<<br />5-==<br />6-!= |No|
+| **ThresholdValue** | float | 触发阈值 |No|
 | **TriggerCount** | int | 触发次数 |No|
-| **SendPeriodType** | string | 触发周期 |No|
+| **SendPeriodType** | string | 触发周期。枚举值：continuous连续 exponent 指数 single 不重复 |No|
 | **SendInterval** | int | 发送间隔 |No|
-| **Level** | string | 告警等级 |No|
-| **Status** | int | 告警状态(状态：0-关闭 1-开启) |No|
+| **Level** | string | 告警等级。枚举值：P0,P1,P2,P3 |No|
+| **Status** | int | 告警状态。枚举值：0-关闭 1-开启 |No|
 | **UnitID** | int | 单位id |No|
 | **UnitName** | string | 单位名称 |No|
 
