@@ -72,8 +72,8 @@
 | **RuleID** | int | 告警记录触发告警规则Id |No|
 | **Tag** | array[string] | 告警点tag信息 |No|
 | **Value** | int | 告警当前值 |No|
-| **ThresholdCompare** | string | 比较符 |No|
-| **ThresholdValue** | string | 告警阈值 |No|
+| **ThresholdCompare** | int | 比较符 |No|
+| **ThresholdValue** | int | 告警阈值 |No|
 | **ShieldRuleID** | int | 告警屏蔽规则id(如果配置了屏蔽规则，并且满足条件) |No|
 | **Level** | string | 告警等级 |No|
 | **Status** | string | 告警状态 |No|
