@@ -37,9 +37,6 @@
 | **ConfigMode** | int | 条件设置方式<br />1. 手动配置 2.选择模版 |**Yes**|
 | **Resources.N** | string | 绑定资源，对应绑定资源类型ObjectType=2 |No|
 | **ResourceGroupIDs.N** | int | 绑定资源组，对应绑定资源类型ObjectType=1 |No|
-| **Tags.N.Key** | string | 数据点tag key |No|
-| **Tags.N.Operator** | string | 数据点tag operator<br />包含= 不包含!= |No|
-| **Values.N** | string | 数据点tag value |No|
 | **TemplateId** | int | 模板id.对应TemplateId=2 |No|
 | **RuleSet.N.MetricID** | int | 规则指标ID。参考该类型产品下返回的指标列表GetProductMetrics |No|
 | **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。 枚举值比较方式: 1->= 2-<= 3-> 4-< 5-== 6-!= |No|
