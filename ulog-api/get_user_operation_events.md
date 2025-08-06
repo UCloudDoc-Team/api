@@ -33,7 +33,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BeginTime** | int | 开始时间（UNIX时间戳） |No|
 | **EndTime** | int | 结束时间（UNIX时间戳） |No|
-| **MaxResults** | int | 一次查询的最大记录数 |No|
+| **MaxResults** | int | 一次查询的最大记录数，最大值是50 |No|
 | **NextToken** | string | 用于于请求下一页查询结果。请求参数必须与上次请求一致 |No|
 | **ResourceID** | string | 资源 ID，用于搜索某个资源关联的操作日志 |No|
 
