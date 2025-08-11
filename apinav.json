@@ -153,6 +153,10 @@
         "name": "文件存储 UFS"
       },
       {
+        "links": "/api/upfs-api/README",
+        "name": "文件存储 UPFS"
+      },
+      {
         "links": "/api/udisk-api/README",
         "name": "云硬盘 UDisk"
       },

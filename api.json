@@ -243,6 +243,17 @@
           ]
         },
         {
+          "name": "文件存储 UPFS",
+          "img": "icon-product__upfs",
+          "sublinks": [
+            {
+              "links": "/api/upfs-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "对象存储 US3",
           "img": "icon-product__ufile",
           "sublinks": [
