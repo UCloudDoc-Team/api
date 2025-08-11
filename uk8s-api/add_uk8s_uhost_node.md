@@ -55,6 +55,20 @@
 | **Taints** | string | Node节点污点，形式为key=value:effect，多组taints用”,“隔开,最多支持五组。 |No|
 | **Tag** | string | 业务组 |No|
 | **NodeGroupId** | string | 节点池id |No|
+| **SecurityMode** | string | 主机安全模式。Firewall：防火墙；SecGroup：安全组；默认值：Firewall。 |No|
+| **NamePrefix** | string | 自定义主机名前缀。完整的自定义主机名为{NamePrefix}-{NodeIP}。 |No|
+| **NetCapability** | string | 网络增强特性。枚举值：Normal，不开启; Super，开启网络增强1.0； Ultra，开启网络增强2.0；Extreme，开启网络增强3.0; Infiniband, 开启网络增强4.0（详情参考主机官网文档） |No|
+| **UNIFeature** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启。 |No|
+| **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式下非必传, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
+| **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
+| **NetworkInterface.N.EIP.ShareBandwidthId** | string | 绑定的共享带宽Id，仅当PayMode为ShareBandwidth时有效 |No|
+| **NetworkInterface.N.EIP.OperatorName** | string | 【若绑定EIP，此参数必填】弹性IP的线路。枚举值: 国际: International BGP: Bgp 各地域允许的线路参数如下: cn-sh1: Bgp cn-sh2: Bgp cn-gd: Bgp cn-bj1: Bgp cn-bj2: Bgp hk: International us-ca: International th-bkk: International kr-seoul:International us-ws:International ge-fra:International sg:International tw-kh:International.其他海外线路均为 International |No|
+| **NetworkInterface.N.EIP.CouponId** | string | 当前EIP代金券id。请通过DescribeCoupon接口查询，或登录用户中心查看。 |No|
+| **SecurityGroupId** | string | 防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](api/unet-api/describe_firewall.html)。 |No|
+| **SecGroupId.N.Id** | string | 安全组 ID。至多可以同时绑定5个安全组。 |No|
+| **SecGroupId.N.Priority** | string | 安全组优先级。取值范围[1, 5] |No|
+| **SecGroupId.N.Name** | string | 安全组名称。 |No|
+| **UserLabels** | string | UK8S用户标签，key=value形式,多组用”,“隔开，最多5组。 如env=pro,type=game |No|
 
 ### 响应字段
 
@@ -106,6 +120,29 @@ https://api.ucloud.cn/?Action=AddUK8SUHostNode
 &Tag=madApXSs
 &NodeGroupId=ypaIEiSw
 &BootDiskSize=9
+&NetCapability=vqWxJNNz
+&UNIFeature=true
+&Nodes.N.NamePrefix=gGxvUuZh
+&NamePrefix=HXHdwHmb
+&NamePrefix=DWHYqWCV
+&NetworkInterface.N.EIP.Bandwidth=nHVuZUEC
+&NetworkInterface.N.EIP.PayMode=YYvPUasx
+&NetworkInterface.N.EIP.ShareBandwidthId=sISnDiFM
+&NetworkInterface.N.EIP.OperatorName=XhfxkrsL
+&NetworkInterface.N.EIP.CouponId=sWzBPskc
+&SecurityMode=nFkozyNX
+&SecGroupId=wQcwsKKA
+&NetworkInterface.N.EIP.Bandwidth=hUXdpRbD
+&NetworkInterface.N.EIP.PayMode=hYanNvck
+&NetworkInterface.N.EIP.ShareBandwidthId=yMwdCowa
+&NetworkInterface.N.EIP.OperatorName=SRPAwVoG
+&NetworkInterface.N.EIP.CouponId=fqhevYCM
+&SecurityMode=paRgxihP
+&SecurityGroupId=mrbzSJpX
+&SecGroupId.N.Id=CtLNZxND
+&SecGroupId.N.Priority=ViZOqzHD
+&SecGroupId.N.Name=nxNSncqY
+&UserLabels=YOZdrUzx
 ```
 
 ### 响应示例
