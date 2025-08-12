@@ -85,6 +85,10 @@
 | **GroupId** | string | 镜像组id |No|
 | **VersionName** | string | 版本名称 |No|
 | **VersionDesc** | string | 版本描述 |No|
+| **SourceGpuType** | string | 自制镜像来源机型 |No|
+| **AutoStart** | boolean | 是否支持自启动 default:false |No|
+| **ImageCharge** | boolean | 是否镜像收费  default: false |No|
+| **ImageUseTime** | int | 镜像使用时长 |No|
 
 #### Software
 
