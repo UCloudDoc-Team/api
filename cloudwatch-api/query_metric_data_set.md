@@ -39,8 +39,8 @@
 | **Period** | int | 周期即：数据查询时，后端上报数据点的频率，选择不同的自定义时间范围，对应的周期不同：<br />0<时间范围<=1h——周期：1分钟/5分钟<br />1h<时间范围<=3h——周期：1分钟/5分钟/1小时<br />3h<时间范围<=24h——周期：5分钟/1小时<br />1天<时间范围<=30天——周期：1小时/6小时/24小时<br />需将周期转化为单位为秒的数值，传入参数 |**Yes**|
 | **MetricInfos.N.Metric** | string | 指标名 |**Yes**|
 | **MetricInfos.N.ResourceId** | string | 指标所属资源id |**Yes**|
-| **TagList.N.TagKey** | string | 要查询指标的Tag的key |No|
-| **TagValues.N** | string | 要查询指标的Tag的Value |No|
+| **MetricInfos.N.TagList.N.TagKey** | string | 要查询指标的Tag的key |No|
+| **MetricInfos.N.TagList.N.TagValues.N** | string | 要查询指标的Tag的Value |No|
 
 ### 响应字段
 

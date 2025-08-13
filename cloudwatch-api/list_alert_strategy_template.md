@@ -31,7 +31,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考GetProjectList接口	 |**Yes**|
-| **TemplateIDs.N** | int | 模板id集合，根据模板id获取告警条件模板列表 |No|
+| **Filter.TemplateIDs.N** | int | 模板id集合，根据模板id获取告警条件模板列表 |No|
 | **Limit** | int | 查询返回数量，默认值300，最大值：300。 |No|
 | **Offset** | int | 数据偏移量 (默认0) |No|
 
