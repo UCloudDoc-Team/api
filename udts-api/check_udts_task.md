@@ -51,8 +51,8 @@
 | **Source.N.MySQLNode.SyncData.BinlogPos** | int | 增量时需要指定的 binlog pos，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
 | **Source.N.MySQLNode.SyncData.ServerID** | int | 增量时需要指定的 serverID，不能和现有的 slave 重复，预检查时会检查该值 |No|
 | **Source.N.MySQLNode.SyncData.BinlogGTID** | string | 增量时需要指定的 binlog gtid，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
-| **QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
-| **QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
+| **Source.N.MySQLNode.QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
+| **Source.N.MySQLNode.QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
 | **Query** | string | 废弃 |No|
 | **Target.DataType** | string | 目标数据库类型，比如 mysql |No|
 | **Target.NWType** | string | 目标 db 网络类型，目前进支持 user |No|

@@ -51,12 +51,12 @@
 | **Source.N.MySQLNode.SyncData.BinlogPos** | int | 增量时需要指定的 binlog pos，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
 | **Source.N.MySQLNode.SyncData.ServerID** | int | 增量时需要指定的 serverID，不能和现有的 slave 重复，预检查时会检查该值 |No|
 | **Source.N.MySQLNode.SyncData.BinlogGTID** | string | 增量时需要指定的 binlog gtid，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
-| **QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
-| **QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
-| **QueryData.N.TableData.TableNames** | string | 暂时未使用该字段 |No|
-| **QueryData.N.TableData.ExcludeTables** | boolean | 暂时未使用该字段 |No|
-| **TableMaps.N.TableName** | string | 数据集成时需要迁移的 Table 名 |No|
-| **TableMaps.N.NewTableName** | string | 数据集成时迁移后的 Table 名 |No|
+| **Source.N.MySQLNode.QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
+| **Source.N.MySQLNode.QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
+| **Source.N.MySQLNode.QueryData.N.TableData.TableNames** | string | 暂时未使用该字段 |No|
+| **Source.N.MySQLNode.QueryData.N.TableData.ExcludeTables** | boolean | 暂时未使用该字段 |No|
+| **Source.N.MySQLNode.QueryData.N.TableMaps.N.TableName** | string | 数据集成时需要迁移的 Table 名 |No|
+| **Source.N.MySQLNode.QueryData.N.TableMaps.N.NewTableName** | string | 数据集成时迁移后的 Table 名 |No|
 | **Source.N.MySQLNode.KeepExistData** | boolean | 是否保留原有数据，只有数据集成时该参数才有效 |No|
 | **Source.N.MySQLNode.DupAction** | string | 重复数据处理规则，数据集成时该参数才有效，值为 ignore或者replace |No|
 | **Source.N.MySQLNode.SSLSecurity.SSLCA** | string | ca 证书，目前仅支持 pem 格式; 需要将文件内容 base64 |No|

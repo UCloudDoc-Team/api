@@ -34,9 +34,9 @@
 | **StartAt** | int | 开始时间，查询告警记录开始时间(不支持查询距当前时间一年前的数据) |**Yes**|
 | **EndAt** | int | 结束时间，查询告警记录结束时间(查询开始时间和结束时间不能超过一个月) |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持资源id模糊搜索) |No|
-| **ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警记录 |No|
-| **Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录 |No|
-| **Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录 |No|
+| **Filter.ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警记录 |No|
+| **Filter.Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录 |No|
+| **Filter.Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录 |No|
 | **OrderType** | string | 排序(默认根据告警发生时间倒序) |No|
 | **Limit** | int | 查询返回数量，默认值300，最大值：300。<br /> |No|
 | **Offset** | int | 数据偏移量 (默认0)<br /> |No|

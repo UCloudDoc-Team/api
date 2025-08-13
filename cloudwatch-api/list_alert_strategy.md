@@ -32,9 +32,9 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持告警策略名称模糊搜索)<br /> |No|
-| **ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警策略<br /> |No|
-| **AlertStrategyIDs.N** | int | 告警策略id，根据策略id获取告警策略列表 |No|
-| **Status.N** | int | 告警策略状态，根据告警策略状态精确搜索对应的告警策略<br /> |No|
+| **Filter.ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警策略<br /> |No|
+| **Filter.AlertStrategyIDs.N** | int | 告警策略id，根据策略id获取告警策略列表 |No|
+| **Filter.Status.N** | int | 告警策略状态，根据告警策略状态精确搜索对应的告警策略<br /> |No|
 | **Resources.N** | string | 资源id集合,根据资源id返回绑定的告警策略列表 |No|
 | **Limit** | int | 查询返回数量，默认值300，最大值：300。<br /> |No|
 | **Offset** | int | 数据偏移量 (默认0)<br /> |No|
