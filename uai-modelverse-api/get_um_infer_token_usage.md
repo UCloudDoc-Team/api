@@ -56,9 +56,9 @@
 | **Total** | int | 总token量 |No|
 | **InTotal** | int | 输出总token |No|
 | **OutTotal** | int | 输出总token |No|
-| **ImageGenerationNum** | string | 生图总张数 |No|
-| **RequestTotal** | string | 请求总次数 |No|
-| **Usages** | [*TokenUsageTimestamp*](#TokenUsageTimestamp) | 每个时间戳的token使用量 |No|
+| **ImageGenerationNum** | int | 生图总张数 |No|
+| **RequestTotal** | int | 请求总次数 |No|
+| **Usages** | array[[*TokenUsageTimestamp*](#TokenUsageTimestamp)] | 每个时间戳的token使用量 |No|
 
 #### TokenUsageTimestamp
 

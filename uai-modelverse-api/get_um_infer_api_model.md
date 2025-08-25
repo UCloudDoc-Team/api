@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list)   |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list)   |**Yes**|
 | **KeyId** | string | apikey 的id |No|
-| **ModelType** | int | 模型类型，1: 文本生成，2: 图片生成。默认 1 |No|
+| **ModelType** | int | 模型类型，1: 文本生成，2: 图片生成。 |No|
 | **SquareId** | string | 模型广场的id，用来跳转体验中心 |No|
 
 ### 响应字段
@@ -52,34 +52,24 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **PublicModel** | [*PublicModel*](#PublicModel) | 类型引用PublicModel，在此基础上增加一些字段 |No|
 | **ServedModelName** | string | 使用OpenAI接口调用时，填入的 model值 |No|
-
-#### PublicModel
-
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **Id** | string | 模型id |No|
-| **Name** | string | 模型名称 |No|
-| **ChineseName** | string | 模型中文名 |No|
-| **Describe** | string | 模型描述 |No|
-| **Us3Config** | [*Us3Config*](#Us3Config) | us3配置 |No|
-| **ModelType** | string | 模型类型 |No|
-| **ModelTags** | string | 模型标签 |No|
-| **ModelStatus** | string | 模型状态 |No|
-| **TrainPrice** | float | 训练定价 |No|
+| **Id** | string | id |No|
+| **Name** | string | 名称 |No|
+| **SimpleDescribe** | string | 描述 |No|
+| **Language** | array[string] | 语言 |No|
+| **Icon** | string | 图标链接 |No|
+| **Pricing** | [*Pricing*](#Pricing) | 模型价格 |No|
 | **CreateAt** | int | 创建时间 |No|
 | **UpdateAt** | int | 更新时间 |No|
 
-#### Us3Config
+#### Pricing
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AccessKeyID** | string | us3公钥 |No|
-| **SecretAccessKey** | string | us3私钥 |No|
-| **S3Uri** | string | us3bucket地址 |No|
-| **S3Bucket** | string | us3 bucket 名称 |No|
-| **S3Path** | string | 文件夹路径 |No|
+| **Completion** | float | 输出定价 |No|
+| **Prompt** | float | 提示词定价 |No|
+| **Image** | float | 生图定价 |No|
+| **Currency** | string | 币种 |No|
 
 ## 示例
 

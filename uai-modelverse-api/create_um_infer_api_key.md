@@ -50,13 +50,13 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **KeyId** | string | 资源ID |**Yes**|
+| **KeyId** | string | 资源ID |No|
 | **Name** | string | 名称 |No|
-| **ChannelId** | string | 渠道id |No|
-| **TopOrganizationId** | string | 公司id |No|
-| **OrganizationId** | string | 项目id |No|
-| **Status** | string | 状态，1 正常 |No|
-| **CreateTime** | string | 创建时间 |No|
+| **ChannelId** | int | 渠道id |No|
+| **TopOrganizationId** | int | 公司id |No|
+| **OrganizationId** | int | 项目id |No|
+| **Status** | int | 状态，1 正常 |No|
+| **CreateTime** | int | 创建时间 |No|
 | **Key** | string | 密钥值 |No|
 | **ExpireTime** | int | 过期时间的unix时间戳，-1 用不过期 |No|
 | **GrantedModels** | string | 授权的模型，英文逗号分隔，all表示所有模型都有权限 |No|
