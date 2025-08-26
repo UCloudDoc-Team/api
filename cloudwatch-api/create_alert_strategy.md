@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Name** | string | 告警策略名称。最大长度255个字符 |**Yes**|
-| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 | **ObjectType** | int | 绑定资源类型<br />1 - 资源组 <br />2 - 资源 |**Yes**|
 | **ConfigMode** | int | 条件设置方式<br />1 - 手动配置 <br />2 - 选择模版 |**Yes**|
 | **Resources.N** | string | 绑定资源，对应绑定资源类型ObjectType=2 |No|

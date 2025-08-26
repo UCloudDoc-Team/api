@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 | **StartTime** | int | 开始时间，值为10位数时间戳 |**Yes**|
 | **EndTime** | int | 截止时间，值为10位数时间戳 |**Yes**|
 | **CalcMethod** | string | 计算方式，枚举值如下：<br />raw:原始值,<br />max:最大值,<br />min:最小值,<br />avg:平均值,<br />sum:求和 |**Yes**|
