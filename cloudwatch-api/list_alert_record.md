@@ -30,14 +30,14 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。 |**Yes**|
-| **StartAt** | int | 开始时间，查询告警记录开始时间(不支持查询距当前时间一年前的数据) |**Yes**|
-| **EndAt** | int | 结束时间，查询告警记录结束时间(查询开始时间和结束时间不能超过一个月) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **StartAt** | int | 开始时间，查询告警记录开始时间，不支持查询距当前时间一年前的数据)，值为10位数时间戳 |**Yes**|
+| **EndAt** | int | 结束时间，查询告警记录结束时间(查询开始时间和结束时间不能超过一个月)，值为10位数时间戳 |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持资源id模糊搜索) |No|
-| **Filter.ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警记录 |No|
-| **Filter.Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录 |No|
-| **Filter.Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录 |No|
-| **OrderType** | string | 排序(默认根据告警发生时间倒序) |No|
+| **Filter.ProductTypes.N** | int | 产品ID，根据产品类型精确搜索对应的告警记录，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |No|
+| **Filter.Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录，枚举值:P0,P1,P2,P3 |No|
+| **Filter.Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录，枚举值：firing-告警中，resolved-已恢复 |No|
+| **OrderType** | string | 排序(默认根据告警发生时间倒序)，枚举值：asc-升序，desc-降序 |No|
 | **Limit** | int | 查询返回数量，默认值300，最大值：300。<br /> |No|
 | **Offset** | int | 数据偏移量 (默认0)<br /> |No|
 
@@ -112,10 +112,34 @@ https://api.ucloud.cn/?Action=ListAlertRecord
 {
   "Action": "ListAlertRecordResponse",
   "Data": [
-    "pnYwysIe"
+    {
+      "IsShield": false,
+      "Level": "P2",
+      "MetricID": 13333,
+      "MetricName": "CPU使用率",
+      "ProductName": "云主机",
+      "ProductType": 1,
+      "ProjectID": 23332,
+      "RecordID": 1111,
+      "Region": "cn-bj2",
+      "ResourceID": "uhost-xxx",
+      "RuleID": 1234,
+      "ShieldRuleID": 0,
+      "StartAt": 1755104487,
+      "Status": "firing",
+      "StrategyID": 3333,
+      "StrategyName": "资源组告警",
+      "Tag": [],
+      "ThresholdCompare": 1,
+      "ThresholdValue": 0,
+      "UnitName": "%",
+      "Value": 0,
+      "Zone": "cn-bj2-05"
+    }
   ],
   "RetCode": 0,
-  "TotalCount": 6
+  "TotalCount": 1,
+  "TraceId": "217e6c67-9c34-4c48-8c0e-c4ab7380e51c"
 }
 ```
 

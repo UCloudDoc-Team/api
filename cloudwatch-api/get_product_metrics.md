@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProductKey** | string | 云产品key 例如 uhost |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
 
 ### 响应字段
 
@@ -120,27 +120,83 @@ https://api.ucloud.cn/?Action=GetProductMetrics
 ```json
 {
   "Action": "GetProductMetricsResponse",
-  "List": [
-    {
-      "CreatedAt": 1,
-      "CreatedBy": "tLhKOVLD",
-      "FrequencyMs": 9,
-      "Id": 1,
-      "Metric": "ugUWVHdH",
-      "MetricChDesc": "qVkXFHAM",
-      "MetricChName": "LNuoYvdb",
-      "MetricEnDesc": "TSlSuWGC",
-      "MetricEnName": "CLhJOIQh",
-      "MetricGroup": "YdeQeLBt",
-      "MetricID": 6,
-      "ProductType": 3,
-      "UnitID": 2,
-      "UpdateAt": 8,
-      "UpdateBy": "fchAAjJb"
-    }
-  ],
+  "Data": {
+    "List": [
+      {
+        "ChartLabel": "",
+        "CreatedAt": "2024-09-27T16:37:40+08:00",
+        "CreatedBy": "admin",
+        "DeletedAt": 0,
+        "FrequencyMs": 60000,
+        "Groups": [
+          "GPU 卡数量监控"
+        ],
+        "ID": 781,
+        "Metric": "cloudwatch_available_gpu_num_by_driver",
+        "MetricChDesc": "",
+        "MetricChName": "驱动识别的GPU卡数量",
+        "MetricDesc": "",
+        "MetricEnDesc": "",
+        "MetricEnName": "cloudwatch_available_gpu_num_by_driver",
+        "MetricGroup": "",
+        "MetricID": 224968131907200,
+        "MetricName": "驱动识别的GPU卡数量",
+        "ProductType": 1,
+        "Remark": "",
+        "Unit": {
+          "ConversionFactor": 1000,
+          "CreatedAt": "2025-05-21T19:52:38+08:00",
+          "CreatedBy": "admin",
+          "DeletedAt": 0,
+          "GroupId": 37,
+          "UnitChName": "个",
+          "UnitDesc": "counts",
+          "UnitEnName": "counts",
+          "UnitID": 26,
+          "UnitName": "个",
+          "UpdatedAt": "2025-05-28T15:45:48+08:00",
+          "UpdatedBy": "admin"
+        },
+        "UnitID": 26,
+        "UpdatedAt": "2025-03-03T23:11:58+08:00",
+        "UpdatedBy": "admin"
+      }
+    ],
+    "Total": 1,
+    "UnitConfigs": [
+      {
+        "ConversionFactor": 1000,
+        "ConversionRules": [
+          {
+            "ConversionFactor": 10,
+            "From": "千个/s",
+            "To": "万个/s"
+          }
+        ],
+        "UnitCnNames": [
+          "个/s",
+          "千个/s",
+          "万个/s",
+          "千万个/s"
+        ],
+        "UnitEnNames": [
+          "counts/s",
+          "Thousand counts/s",
+          "Ten thousand counts/s",
+          "Ten Million counts/s"
+        ],
+        "UnitNames": [
+          "个/s",
+          "千个/s",
+          "万个/s",
+          "千万个/s"
+        ]
+      }
+    ]
+  },
   "RetCode": 0,
-  "Total": 9
+  "TotalCount": 1,
+  "TraceId": "0ee3394b-c8d9-453c-b8a6-1b09f2fe5ad6"
 }
 ```
 

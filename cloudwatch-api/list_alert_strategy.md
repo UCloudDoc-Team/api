@@ -30,11 +30,11 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持告警策略名称模糊搜索)<br /> |No|
-| **Filter.ProductTypes.N** | int | 产品类型，根据产品类型精确搜索对应的告警策略<br /> |No|
+| **Filter.ProductTypes.N** | int | 产品ID，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |No|
 | **Filter.AlertStrategyIDs.N** | int | 告警策略id，根据策略id获取告警策略列表 |No|
-| **Filter.Status.N** | int | 告警策略状态，根据告警策略状态精确搜索对应的告警策略<br /> |No|
+| **Filter.Status.N** | int | 告警策略状态，根据告警策略状态精确搜索对应的告警策略，枚举值：0-停用，1-启用<br /> |No|
 | **Resources.N** | string | 资源id集合,根据资源id返回绑定的告警策略列表 |No|
 | **Limit** | int | 查询返回数量，默认值300，最大值：300。<br /> |No|
 | **Offset** | int | 数据偏移量 (默认0)<br /> |No|
@@ -119,17 +119,56 @@ https://api.ucloud.cn/?Action=ListAlertStrategy
   "Action": "ListAlertStrategyResponse",
   "Data": [
     {
-      "AlertStrategyID": 2,
-      "Name": "WrrLsCAx",
-      "ProductKey": "LItkrkrT",
-      "Remark": "fahqZEBZ",
-      "Status": 5
+      "AlertStrategyID": 111,
+      "CallbackLanguage": "cn",
+      "CallbackUrls": [
+        "https://www.test.com/callback"
+      ],
+      "CompanyID": 111,
+      "ConfigMode": 1,
+      "CreatedAt": 1755104421,
+      "CreatedBy": "creator@test.com",
+      "Name": "资源组告警",
+      "NotifyChannelDs": [
+        "webhook"
+      ],
+      "NotifyGroupIDs": [],
+      "NotifyType": "group",
+      "NotifyUserIDs": [],
+      "ObjectType": 2,
+      "ProductKey": "uhost",
+      "ProductType": 1,
+      "ProjectID": 12333,
+      "Remark": "",
+      "ResourceGroupIDs": [],
+      "Resources": [],
+      "RuleSet": [
+        {
+          "Level": "P2",
+          "MetricID": 123312,
+          "MetricName": "CPU使用率",
+          "RuleID": 2223,
+          "SendInterval": 2,
+          "SendPeriodType": "continuous",
+          "Status": 1,
+          "ThresholdCompare": 1,
+          "ThresholdValue": 0,
+          "TriggerCount": 1,
+          "UnitID": 32,
+          "UnitName": "%"
+        }
+      ],
+      "Status": 0,
+      "StrategyType": 1,
+      "Tags": [],
+      "TemplateId": 0,
+      "UpdatedAt": 1755142910,
+      "UpdatedBy": "creator@test.com"
     }
   ],
-  "Message": "CqypVzgP",
   "RetCode": 0,
   "TotalCount": 1,
-  "TraceId": "GpMNsXck"
+  "TraceId": "a1c26582-571a-49db-a841-d4b738472008"
 }
 ```
 
