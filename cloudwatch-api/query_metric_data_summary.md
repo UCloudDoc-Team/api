@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 | **Offset** | int | 跳过的数量 |**Yes**|
 | **Limit** | int | 当前页数据尺寸 |**Yes**|
 | **Metrics.N** | string | 指定要查询的指标列表，不指定则使用默认的指标集合 |No|

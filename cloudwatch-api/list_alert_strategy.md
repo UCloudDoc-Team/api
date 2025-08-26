@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持告警策略名称模糊搜索)<br /> |No|
-| **Filter.ProductTypes.N** | int | 产品ID，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |No|
+| **Filter.ProductTypes.N** | int | 产品ID，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |No|
 | **Filter.AlertStrategyIDs.N** | int | 告警策略id，根据策略id获取告警策略列表 |No|
 | **Filter.Status.N** | int | 告警策略状态，根据告警策略状态精确搜索对应的告警策略，枚举值：0-停用，1-启用<br /> |No|
 | **Resources.N** | string | 资源id集合,根据资源id返回绑定的告警策略列表 |No|

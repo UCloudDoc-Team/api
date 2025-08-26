@@ -34,7 +34,7 @@
 | **StartAt** | int | 开始时间，查询告警记录开始时间，不支持查询距当前时间一年前的数据)，值为10位数时间戳 |**Yes**|
 | **EndAt** | int | 结束时间，查询告警记录结束时间(查询开始时间和结束时间不能超过一个月)，值为10位数时间戳 |**Yes**|
 | **Fuzzy** | string | 模糊查询(支持资源id模糊搜索) |No|
-| **Filter.ProductTypes.N** | int | 产品ID，根据产品类型精确搜索对应的告警记录，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |No|
+| **Filter.ProductTypes.N** | int | 产品ID，根据产品类型精确搜索对应的告警记录，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |No|
 | **Filter.Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录，枚举值:P0,P1,P2,P3 |No|
 | **Filter.Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录，枚举值：firing-告警中，resolved-已恢复 |No|
 | **OrderType** | string | 排序(默认根据告警发生时间倒序)，枚举值：asc-升序，desc-降序 |No|
