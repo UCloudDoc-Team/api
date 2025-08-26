@@ -32,12 +32,12 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **Name** | string | 告警模板名称。最大长度64个字符 |**Yes**|
-| **ProductKey** | string | 产品类型。参考ListMonitorProduct获取监控对象类型列表 |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
 | **RuleSet.N.MetricID** | int | 规则指标ID。参考该类型产品下返回的指标列表GetProductMetrics |**Yes**|
-| **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。<br />枚举值比较方式: <br />1->=<br />2-<= <br />3-> <br />4-< <br />5-== <br />6-!= |**Yes**|
+| **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。<br />枚举值: <br />1：>= <br />2：<= <br />3：> <br />4：< <br />5：== <br />6：!= |**Yes**|
 | **RuleSet.N.ThresholdValue** | int | 触发阈值 |**Yes**|
 | **RuleSet.N.TriggerCount** | int | 触发次数 |**Yes**|
-| **RuleSet.N.SendPeriodType** | string | 触发周期。枚举值：continuous连续 exponent 指数 single 不重复 |**Yes**|
+| **RuleSet.N.SendPeriodType** | string | 触发周期。枚举值：continuous连续 <br />exponent 指数 <br />single 不重复 |**Yes**|
 | **RuleSet.N.Level** | string | 告警等级。枚举值：P0,P1,P2,P3 |**Yes**|
 | **RuleSet.N.Status** | int | 告警状态。枚举值：0-关闭 1-开启 |**Yes**|
 | **RuleSet.N.SendInterval** | int | 沉默周期(告警周期选择为连续时必填) |No|
@@ -67,30 +67,18 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateAlertStrategyTemplate
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=LUqXxWzo
-&Name=toClNjME
-&ProductKey=QvuqQPnH
-&RuleSet=uhaPcSIK
-&Remark=rvprBErx
-&ProductKey=flfeYwfB
-&RuleSet.N.=qNTKPTWM
-&Remark=TWPNwENU
-&RuleSet.N.ThresholdCompare=4
-&RuleSet.N.ThresholdValue=1
-&RuleSet.N.TriggerCount=2
-&RuleSet.N.SendPeriodType=YVXzlvUP
-&RuleSet.N.SendInterval=9
-&RuleSet.N.Level=sIRbdnIl
-&RuleSet.N.Status=6
+&ProjectId=pTKUYkHe
+&Name=IFqEXhrk
+&ProductKey=tIEzPRln
+&RuleSet.N.MetricID=8
 &RuleSet.N.ThresholdCompare=1
-&RuleSet.N.ThresholdValue=9
-&RuleSet.N.TriggerCount=3
-&RuleSet.N.SendPeriodType=PlxxGEcG
-&RuleSet.N.SendInterval=1
-&RuleSet.N.Level=BvjvWNQm
-&RuleSet.N.Status=5
+&RuleSet.N.ThresholdValue=1
+&RuleSet.N.TriggerCount=6
+&RuleSet.N.SendPeriodType=rQFwFYOx
+&RuleSet.N.Level=zPfiXYdy
+&RuleSet.N.Status=4
+&RuleSet.N.SendInterval=8
+&Remark=KvhtYeRp
 ```
 
 ### 响应示例
@@ -98,8 +86,8 @@ https://api.ucloud.cn/?Action=CreateAlertStrategyTemplate
 ```json
 {
   "Action": "CreateAlertStrategyTemplateResponse",
-  "RetCode": 0,
-  "TemplateID": 8
+  "Data": {},
+  "RetCode": 0
 }
 ```
 

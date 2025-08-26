@@ -30,9 +30,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域，全局产品可以不传，其他必传 |**Yes**|
-| **ProjectId** | string | 项目ID。 |**Yes**|
-| **ProductKey** | string | 产品类型 |**Yes**|
+| **Region** | string | 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
 | **Offset** | int | 跳过的数量 |**Yes**|
 | **Limit** | int | 当前页数据尺寸 |**Yes**|
 | **Metrics.N** | string | 指定要查询的指标列表，不指定则使用默认的指标集合 |No|
@@ -118,11 +118,70 @@ https://api.ucloud.cn/?Action=QueryMetricDataSummary
 ```json
 {
   "Action": "QueryMetricDataSummaryResponse",
-  "Data": {},
-  "Message": "XNlHoNgi",
+  "Data": {
+    "List": [
+      {
+        "CompanyId": 11,
+        "MonitorAttr": {
+          "cloudwatch_loadavg5m": [],
+          "cloudwatch_memory_actualused_space": [],
+          "uhost_cpu_used": [
+            {
+              "Metric": "uhost_cpu_used",
+              "Tags": {},
+              "Value": {
+                "Timestamp": 1755597442,
+                "Value": 3
+              }
+            }
+          ],
+          "uhost_disk_read": [
+            {
+              "Metric": "uhost_disk_read",
+              "Tags": {},
+              "Value": {
+                "Timestamp": 1755597442,
+                "Value": 546
+              }
+            }
+          ],
+          "uhost_net_in_flow": [
+            {
+              "Metric": "uhost_net_in_flow",
+              "Tags": {},
+              "Value": {
+                "Timestamp": 1755597442,
+                "Value": 13494
+              }
+            }
+          ]
+        },
+        "Name": "测试主机",
+        "OrganizationId": 33,
+        "ProductKey": "uhost",
+        "ProjectId": 22,
+        "Region": "cn-wlcb",
+        "RegionCN": "乌兰察布",
+        "ResourceAttr": {},
+        "ResourceExtendAttr": {
+          "name": "测试主机",
+          "private_ip": "127.0.0.1",
+          "remark": "ttt",
+          "secondary_ip": "",
+          "tag": "Default",
+          "user_id": "151238458"
+        },
+        "ResourceId": "uhost-xxx",
+        "Status": 0,
+        "Zone": "cn-wlcb-01",
+        "ZoneCN": "乌兰察布可用区A"
+      }
+    ],
+    "Total": 1
+  },
   "RetCode": 0,
-  "TotalCount": 7,
-  "TraceId": "vSFARHxW"
+  "TotalCount": 1,
+  "TraceId": "4f6b2a4a-fdfb-4e87-aa38-38dd71248c09"
 }
 ```
 

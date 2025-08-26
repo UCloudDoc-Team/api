@@ -30,13 +30,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 全局产品可不传，其他类型必传。 |**Yes**|
-| **ProjectId** | string | 项目ID。 |**Yes**|
-| **ProductKey** | string | 资源类型 |**Yes**|
-| **StartTime** | int | 开始时间 |**Yes**|
-| **EndTime** | int | 截止时间 |**Yes**|
+| **Region** | string | 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览]<br />（https://docs.ucloud.cn/cloudwatch/metric/intro） |**Yes**|
+| **StartTime** | int | 开始时间，值为10位数时间戳 |**Yes**|
+| **EndTime** | int | 截止时间，值为10位数时间戳 |**Yes**|
 | **CalcMethod** | string | 计算方式，枚举值如下：<br />raw:原始值,<br />max:最大值,<br />min:最小值,<br />avg:平均值,<br />sum:求和 |**Yes**|
-| **Period** | int | 周期即：数据查询时，后端上报数据点的频率，选择不同的自定义时间范围，对应的周期不同：<br />0<时间范围<=1h——周期：1分钟/5分钟<br />1h<时间范围<=3h——周期：1分钟/5分钟/1小时<br />3h<时间范围<=24h——周期：5分钟/1小时<br />1天<时间范围<=30天——周期：1小时/6小时/24小时<br />需将周期转化为单位为秒的数值，传入参数 |**Yes**|
+| **Period** | int | 周期，单位为秒，即：数据查询时，返回数据点的时间间隔。<br />不同的查询时间范围，对应的周期不同：<br />0<时间范围<=1h——周期：1分钟/5分钟；<br />1h<时间范围<=3h——周期：1分钟/5分钟/1小时；<br />3h<时间范围<=24h——周期：5分钟/1小时<br />1天<时间范围<=30天——周期：1小时/6小时/24小时<br />传值时需将周期转化为单位为秒的数值 |**Yes**|
 | **MetricInfos.N.Metric** | string | 指标名 |**Yes**|
 | **MetricInfos.N.ResourceId** | string | 指标所属资源id |**Yes**|
 | **MetricInfos.N.TagList.N.TagKey** | string | 要查询指标的Tag的key |No|
@@ -109,10 +109,34 @@ https://api.ucloud.cn/?Action=QueryMetricDataSet
 ```json
 {
   "Action": "QueryMetricDataSetResponse",
-  "Data": {},
-  "Message": "nPOVsgEJ",
+  "Data": {
+    "InvalidResourceIds": [],
+    "List": [
+      {
+        "Metric": "uhost_cpu_used",
+        "Results": [
+          {
+            "ResourceId": "uhost-xxx",
+            "ResourceName": "测试主机",
+            "TagMap": {},
+            "Values": [
+              {
+                "Timestamp": 1755593820,
+                "Value": 3
+              },
+              {
+                "Timestamp": 1755593880,
+                "Value": 4
+              }
+            ]
+          }
+        ],
+        "Tags": {}
+      }
+    ]
+  },
   "RetCode": 0,
-  "TraceId": "wbgFGCpd"
+  "TraceId": "6b51655d-4c06-4da2-bd17-a5e6fff7ad0a"
 }
 ```
 
