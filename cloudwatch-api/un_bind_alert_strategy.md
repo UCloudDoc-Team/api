@@ -33,7 +33,7 @@
 | **ProjectId** | string | 项目ID |**Yes**|
 | **AlertStrategyIDs.N** | int | 告警策略数组 |**Yes**|
 | **Resources.N** | string | 资源数组 |**Yes**|
-| **ProductKey** | string | 产品类型名称<br /> |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 
 ### 响应字段
 

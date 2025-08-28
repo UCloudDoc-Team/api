@@ -30,7 +30,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProductKey** | string | ProductKey， See[Product Introduce](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 
 ### 响应字段
 
