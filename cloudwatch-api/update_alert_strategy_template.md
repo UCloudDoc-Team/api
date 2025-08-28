@@ -33,7 +33,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **TemplateID** | int | 条件模板ID |**Yes**|
 | **Name** | string | 告警模板名称。最大长度64个字符 |**Yes**|
-| **ProductKey** | string | 产品类型。参考ListMonitorProduct获取监控对象类型列表 |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 | **RuleSet.N.MetricID** | int | 规则指标ID。参考该类型产品下返回的指标列表GetProductMetrics |**Yes**|
 | **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。<br />枚举值比较方式: <br />1->=<br />2-<= <br />3-> <br />4-< <br />5-== <br />6-!= |**Yes**|
 | **RuleSet.N.ThresholdValue** | int | 触发阈值 |**Yes**|

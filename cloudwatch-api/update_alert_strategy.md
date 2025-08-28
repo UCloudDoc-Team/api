@@ -33,14 +33,14 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **AlertStrategyID** | string | 告警策略id |**Yes**|
 | **Name** | string | 告警策略名称。最大长度255个字符 |**Yes**|
-| **ProductKey** | string | 产品类型。参考ListMonitorProduct获取监控对象类型列表 |**Yes**|
+| **ProductKey** | string | 产品唯一标识，参见 [产品概览](https://docs.ucloud.cn/cloudwatch/metric/intro) |**Yes**|
 | **ObjectType** | int | 绑定资源类型 1 资源组 2 资源 |**Yes**|
 | **ConfigMode** | int | 条件设置方式 1. 手动配置 2.选择模版 |**Yes**|
 | **Resources.N** | string | 绑定资源，对应绑定资源类型ObjectType=2 |No|
 | **ResourceGroupIDs.N** | int | 绑定资源组，对应绑定资源类型ObjectType=1 |No|
 | **TemplateId** | int | 模板id.对应ConfigMode=2 |No|
 | **RuleSet.N.MetricID** | int | 规则指标ID。参考该类型产品下返回的指标列表GetProductMetrics |No|
-| **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。 枚举值比较方式: 1->= 2-<= 3-> 4-< 5-== 6-!= |No|
+| **RuleSet.N.ThresholdCompare** | int | 阈值比较方式。 枚举值：<br />1：>= <br />2：<= <br />3：> <br />4：< <br />5：== <br />6：!= |No|
 | **RuleSet.N.ThresholdValue** | int | 触发阈值 |No|
 | **RuleSet.N.TriggerCount** | int | 触发次数<br /> |No|
 | **RuleSet.N.SendPeriodType** | string | 触发周期。枚举值：continuous连续 exponent 指数 single 不重复 |No|
