@@ -6,6 +6,7 @@
 |:---|:---|
 |[AddBackfill](api/usms-api/add_backfill)|添加回填|
 |[AddUSMSSignatureQualification](api/usms-api/add_usms_signature_qualification)|添加短信签名资质申请记录|
+|[BatchCreateUSMSBlacklistPhone](api/usms-api/batch_create_usms_blacklist_phone)|批量创建手机号黑名单|
 |[CreateUSMSSignature](api/usms-api/create_usms_signature)|申请短信签名|
 |[CreateUSMSTemplate](api/usms-api/create_usms_template)|申请短信模板|
 |[DeleteUSMSSignature](api/usms-api/delete_usms_signature)|删除短信签名|

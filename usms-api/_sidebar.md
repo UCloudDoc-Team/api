@@ -5,6 +5,7 @@
 - **API**
     - [添加回填 - AddBackfill](api/usms-api/add_backfill)
     - [添加短信签名资质申请记录 - AddUSMSSignatureQualification](api/usms-api/add_usms_signature_qualification)
+    - [批量创建手机号黑名单 - BatchCreateUSMSBlacklistPhone](api/usms-api/batch_create_usms_blacklist_phone)
     - [申请短信签名 - CreateUSMSSignature](api/usms-api/create_usms_signature)
     - [申请短信模板 - CreateUSMSTemplate](api/usms-api/create_usms_template)
     - [删除短信签名 - DeleteUSMSSignature](api/usms-api/delete_usms_signature)
