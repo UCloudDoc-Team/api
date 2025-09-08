@@ -33,6 +33,8 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID，如org-xxxx。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **InstanceId** | string | 实例ID，资源唯一标识 |No|
+| **Limit** | string | 分页参数, 最大值 |No|
+| **Offset** | string | 分页参数，偏移值 |No|
 
 ### 响应字段
 
@@ -42,6 +44,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **InstanceSet** | array[[*GlobalSSHInfo*](#GlobalSSHInfo)] | GlobalSSH实例列表，实例的属性参考GlobalSSHInfo模型 |No|
+| **TotalCount** | int | 总数 |No|
 
 #### 数据模型
 
@@ -67,6 +70,14 @@
 | **BandwidthPackage** | int | globalssh Ultimate带宽包大小 |No|
 | **ForwardRegion** | string | InstanceType为Basic版本时，需要展示具体分配的转发机房 |No|
 | **DomainStatus** | object | 加速域名当前可用性检测结果 HashMap 结构 0表示可用, 1 表示有污染  |No|
+| **OutPublicIpList** | array[[*OutPublicIpInfo*](#OutPublicIpInfo)] | 线路出口IP地址 |No|
+
+#### OutPublicIpInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **IP** | string |  线路回源节点EIP |No|
+| **Area** | string | 线路回源节点机房代号 |No|
 
 ## 示例
 
@@ -76,6 +87,8 @@
 https://api.ucloud.cn/?Action=DescribeGlobalSSHInstance
 &ProjectId=UjsPseDf
 &InstanceId=djsjuLQU
+&Limit=1
+&Offset=5
 ```
 
 ### 响应示例
@@ -106,7 +119,8 @@ https://api.ucloud.cn/?Action=DescribeGlobalSSHInstance
       "TargetIP": "OhMnFNvq"
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 2
 }
 ```
 
