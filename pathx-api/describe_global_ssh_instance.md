@@ -69,7 +69,6 @@
 | **ExtraDomain** | array[string] | GlobalSSH分配的其他可用加速域名列表 |No|
 | **BandwidthPackage** | int | globalssh Ultimate带宽包大小 |No|
 | **ForwardRegion** | string | InstanceType为Basic版本时，需要展示具体分配的转发机房 |No|
-| **DomainStatus** | object | 加速域名当前可用性检测结果 HashMap 结构 0表示可用, 1 表示有污染  |No|
 | **OutPublicIpList** | array[[*OutPublicIpInfo*](#OutPublicIpInfo)] | 线路出口IP地址 |No|
 
 #### OutPublicIpInfo
