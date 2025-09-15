@@ -71,10 +71,6 @@
         "name": "域名解析 UDNS"
       },
       {
-        "links": "/api/vpc2.0-api/README",
-        "name": "私有网络 UVPC"
-      },
-      {
         "links": "/api/ipsecvpn-api/README",
         "name": "VPN网关 IPSec VPN"
       },
