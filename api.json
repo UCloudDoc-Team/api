@@ -106,7 +106,7 @@
           "img": "icon-product__vpc",
           "sublinks": [
             {
-              "links": "/api/vpc2.0-api/README",
+              "links": "/api/vpc-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
