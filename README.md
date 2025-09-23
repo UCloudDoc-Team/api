@@ -110,7 +110,6 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 ### 企业应用
 | 产品 | 相关链接 |
 |:---|:---|
-|域名服务 UDNR|[文档](/api/udnrv2-api/)|
 |RMQ消息队列 URocketMQ|[文档](/api/urocketmq-api/)|
 
 ### 混合云
