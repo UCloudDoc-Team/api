@@ -17,6 +17,7 @@
     - [获取Bucket信息 - DescribeBucket](api/ufile-api/describe_bucket)
     - [获取跨域规则信息 - DescribeCORSRule](api/ufile-api/describe_cors_rule)
     - [获取生命周期信息 - DescribeUFileLifeCycle](api/ufile-api/describe_ufile_life_cycle)
+    - [对象存储防盗链列表 - DescribeUFileReferer](api/ufile-api/describe_ufile_referer)
     - [查询SSL证书 - DescribeUFileSSLCert](api/ufile-api/describe_ufile_ssl_cert)
     - [获取令牌信息 - DescribeUFileToken](api/ufile-api/describe_ufile_token)
     - [获取bucket静态网页配置 - GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)
