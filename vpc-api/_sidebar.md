@@ -79,6 +79,8 @@
     - [迁移SecondaryIP - MoveSecondaryIPMac](api/vpc-api/move_secondary_ip_mac)
     - [释放内网虚拟IP - ReleaseVIP](api/vpc-api/release_vip)
     - [设置NAT网关的默认出口 - SetGwDefaultExport](api/vpc-api/set_gw_default_export)
+    - [切换至防火墙模式 - SwitchToFirewall](api/vpc-api/switch_to_firewall)
+    - [切换至安全组模式 - SwitchToSecGroup](api/vpc-api/switch_to_sec_group)
     - [更新Nat网关基本信息 - UpdateNATGW](api/vpc-api/update_natgw)
     - [更新NAT网关端口转发规则 - UpdateNATGWPolicy](api/vpc-api/update_natgw_policy)
     - [更新NAT网关的Snatpool状态 - UpdateNATGWSnatpool](api/vpc-api/update_natgw_snatpool)
