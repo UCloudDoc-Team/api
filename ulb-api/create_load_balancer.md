@@ -42,6 +42,8 @@
 | **IPVersion** | string | 负载均衡实例的IP协议。限定枚举值："IPv4" / "IPv6"/"DualStack"，默认值为：“IPv4” |No|
 | **ChargeType** | string | 付费模式。限定枚举值："Year" / "Month"/"Day"/"Dynamic"，默认值为：“Month” |No|
 | **Quantity** | int | 购买的时长, 默认: 1; 0-> 购买至月末(0只在月付费有效，其余付费模式传0，实际收费按一个周期计费) |No|
+| **SecGroups.N.SecGroupId** | string | 安全组id |No|
+| **SecGroups.N.Priority** | int | 安全组优先级 |No|
 | **CouponId** | string | 代金券code |No|
 
 ### 响应字段
@@ -74,6 +76,8 @@ https://api.ucloud.cn/?Action=CreateLoadBalancer
 &ChargeType=Month
 &CouponId=KAxnpXFB
 &Quantity=3
+&SecGroups.n.SecGroupId=BnaEMYDa
+&SecGroups.n.Priority=5
 ```
 
 ### 响应示例
