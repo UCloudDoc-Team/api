@@ -36,10 +36,6 @@
       {
         "links": "/api/ugame-api/README",
         "name": "云游戏 UGame"
-      },
-      {
-        "links": "/api/ucompshare-api/README",
-        "name": "轻量云主机 ULHost"
       }
     ]
   },
