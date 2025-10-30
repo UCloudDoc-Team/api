@@ -76,7 +76,7 @@
 | **Listeners** | array[[*Listener*](#Listener)] | 监听器信息。当ShowDetail为false时，为空 |No|
 | **Status** | string | lb状态：Normal-正常；Arrears-欠费停服 |No|
 | **AutoRenewEnabled** | boolean | 是否开启自动续费 |No|
-| **SecGroup** | [*SecGroupInfo*](#SecGroupInfo) | 安全组信息 |No|
+| **SecGroup** | array[[*SecGroupInfo*](#SecGroupInfo)] | 安全组信息 |No|
 
 #### IPInfo
 
