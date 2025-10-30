@@ -76,6 +76,7 @@
 | **Listeners** | array[[*Listener*](#Listener)] | 监听器信息。当ShowDetail为false时，为空 |No|
 | **Status** | string | lb状态：Normal-正常；Arrears-欠费停服 |No|
 | **AutoRenewEnabled** | boolean | 是否开启自动续费 |No|
+| **SecGroup** | [*SecGroupInfo*](#SecGroupInfo) | 安全组信息 |No|
 
 #### IPInfo
 
@@ -126,6 +127,15 @@
 | **Targets** | array[[*Target*](#Target)] | 添加的服务节点信息。具体结构详见 Target |No|
 | **Rules** | array[[*Rule*](#Rule)] | （应用型专用）转发规则信息 |No|
 | **State** | string | listener健康状态。限定枚举值：Healthy -> 健康，Unhealthy -> 不健康，PartialHealth -> 部分健康，None -> 无节点状态 |No|
+
+#### SecGroupInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **SecgroupId** | string | 安全组id |No|
+| **Name** | string | 安全组名称 |No|
+| **VPCId** | string | 安全组所属vpc id |No|
+| **Priority** | int | 优先级 |No|
 
 #### Certificate
 
