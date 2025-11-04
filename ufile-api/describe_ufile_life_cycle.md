@@ -43,7 +43,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **DateSet** | array[[*LifeCycleItem*](#LifeCycleItem)] | 生命周期信息 |**Yes**|
+| **DataSet** | array[[*LifeCycleItem*](#LifeCycleItem)] | 生命周期信息 |**Yes**|
 
 #### 数据模型
 
@@ -52,6 +52,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **MinSize** | string | 文件的最小size |**Yes**|
+| **MaxSize** | string | 文件的最大size |**Yes**|
 | **LifeCycleId** | string | 生命周期Id |No|
 | **LifeCycleName** | string | 生命周期名称 |No|
 | **Prefix** | string | 生命周期所适用的前缀；*为整个存储空间文件； |No|
