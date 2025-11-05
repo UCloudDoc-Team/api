@@ -234,6 +234,10 @@
     "listname": "安全防护",
     "listvalue": [
       {
+        "links": "/api/uddos-api/README",
+        "name": "DDoS攻击防护 UDDos"
+      },
+      {
         "links": "/api/uewaf-api/README",
         "name": "WEB应用防火墙 UEWAF"
       }
