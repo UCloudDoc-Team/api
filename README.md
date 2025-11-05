@@ -99,6 +99,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 ### 安全防护
 | 产品 | 相关链接 |
 |:---|:---|
+|DDoS攻击防护 UDDos|[文档](/api/uddos-api/)|
 |WEB应用防火墙 UEWAF|[文档](/api/uewaf-api/)|
 
 ### 安全合规
