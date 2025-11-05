@@ -240,6 +240,10 @@
       {
         "links": "/api/uewaf-api/README",
         "name": "WEB应用防火墙 UEWAF"
+      },
+      {
+        "links": "/api/ussl-api/README",
+        "name": "SSL证书管理"
       }
     ]
   },
