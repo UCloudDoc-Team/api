@@ -36,6 +36,9 @@
 | **RecordIds.N** | string | 域名记录资源ID |No|
 | **Limit** | int | 数据分页值, 默认为20 |No|
 | **Offset** | int | 数据偏移量, 默认为0 |No|
+| **Query** | string | 模糊查询记录 |No|
+| **SortKey** | string | 排序字段，只支持host update_time |No|
+| **SortDir** | string | 排序方式，支持asc desc |No|
 
 ### 响应字段
 
@@ -77,11 +80,14 @@
 ```
 https://api.ucloud.cn/?Action=DescribeUDNSRecord
 &Region=cn-zj
-&ProjectId=hbcIFhDc
-&DNSZoneId=SHubgeuz
-&RecordIds.s=cHfTqeOC
-&Limit=8
-&Offset=9
+&ProjectId=torSzOaN
+&DNSZoneId=fiKbocKl
+&RecordIds.n=uOTGqytm
+&Limit=4
+&Offset=2
+&Query=EfESmWxu
+&SortKey=cDsGuJpe
+&SortDir=bQEtRYsz
 ```
 
 ### 响应示例
@@ -91,19 +97,23 @@ https://api.ucloud.cn/?Action=DescribeUDNSRecord
   "Action": "DescribeUDNSRecordResponse",
   "RecordInfos": [
     {
-      "Name": "qRNIFVAr",
-      "RecordId": "EAkvNLdQ",
-      "Remark": "lZxxzUmv",
-      "TTL": "dGYBEjms",
-      "Type": "sLnhthtd",
+      "Name": "TYnDJcuL",
+      "RecordId": "PguQqgHJ",
+      "Remark": "lfvTkeVr",
+      "TTL": 2,
+      "Type": "UntNZFYV",
       "ValueSet": [
-        "uapJsklr"
+        {
+          "Data": "brLlcbYu",
+          "IsEnabled": 4,
+          "Weight": 7
+        }
       ],
-      "ValueType": "PJReKGSp"
+      "ValueType": "OcQtDdXd"
     }
   ],
   "RetCode": 0,
-  "TotalCount": 6
+  "TotalCount": 3
 }
 ```
 
