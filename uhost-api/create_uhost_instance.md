@@ -42,8 +42,12 @@
 | **Disks.N.Encrypted** | boolean | 【功能仅部分可用区开放，详询技术支持】磁盘是否加密。加密：true, 不加密: false<br />加密必须传入对应的的KmsKeyId,默认值false |No|
 | **Disks.N.KmsKeyId** | string | 【功能仅部分可用区开放，详询技术支持】kms key id。选择加密盘时必填。 |No|
 | **Disks.N.CouponId** | string | 云盘代金券id。不适用于系统盘/本地盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
+| **Disks.N.BackupMode** | string | 指定快照备份策略。当Disks.N.BackupType为"SNAPSHOT"时此参数生效。枚举值："Base"：标准版，"Ultimate"：旗舰版，"Custom"：自定义备份链；默认值："Base"。 |No|
+| **Disks.N.CustomBackup.Journal** | string | Disks.N.BackupMode为"Custom"时，进行设置, 以12小时秒级为基础进行倍数扩增，如12、24、36、48。 |No|
+| **Disks.N.CustomBackup.Hour** | string | Disks.N.BackupMode为"Custom"时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96。 |No|
+| **Disks.N.CustomBackup.Day** | string | Disks.N.BackupMode为"Custom"时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30。 |No|
 | **Disks.N.SnapshotId** | string | 从快照创建盘时所用快照id，目前仅支持数据盘 |No|
-| **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password，密钥：KeyPair。 |**Yes**|
+| **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password，密钥：KeyPair，Password，自制镜像密码：ImagePasswd。 |**Yes**|
 | **Password** | string | UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64 UGFzc3dvcmQx。 |No|
 | **Name** | string | UHost实例名称。默认：UHost。请遵照[字段规范](api/uhost-api/specification)设定实例名称。 |No|
 | **Tag** | string | 业务组。默认：Default（Default即为未分组）。请遵照[字段规范](api/uhost-api/specification)设定业务组。 |No|
@@ -51,7 +55,7 @@
 | **Quantity** | int | 购买时长。默认:值 1。按小时购买（Dynamic/Postpay）时无需此参数。 月付时，此参数传0，代表购买至月末。 |No|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","A100","A800"]。MachineType为G时必填 |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","4090_48G","A100","A800","H20"]。MachineType为G时必填 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段（可选范围与MachineType+GpuType相关） |No|
 | **NetCapability** | string | 网络增强特性。枚举值：Normal，不开启;  Super，开启网络增强1.0； Ultra，开启网络增强2.0；Extreme，开启网络增强3.0（详情参考官网文档） |No|
 | **HotplugFeature** | boolean | 热升级特性。True为开启，False为未开启，默认False。 |No|
@@ -81,6 +85,8 @@
 | **UDHostId** | string | 【私有专区属性】专区宿主机id |No|
 | **HostBinding** | boolean | 【私有专区属性】专区云主机开启宿住关联属性 |No|
 | **MinCount** | int | 本次最小创建主机数量，取值范围是[1,100]，默认值为1。<br />- 配额不足时，返回错误。 |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签的值 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
@@ -192,6 +198,13 @@ https://api.ucloud.cn/?Action=CreateUHostInstance
 &NetworkInterface.N.IPv6.Address=ztvbtlTL
 &Disks.N.SnapshotId=xOfUFQge
 &MinCount=4
+&UserResourceLabels.N.Key=AqZLNEdx
+&UserResourceLabels.N.Value=FcBmkdIk
+&UserResourceLabels.N.Key=CpvoKZEI
+&UserResourceLabels.N.Value=hxGiOpfG
+&Labels.N.Key=tsxOtpZg
+&Labels.N.Value=qXBlvHRv
+&DeletionProtection=true
 ```
 
 ### 响应示例
