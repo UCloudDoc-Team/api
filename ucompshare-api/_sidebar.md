@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ulhost">轻量云主机 ULHost</div>
+<div class="sidebar_title icon__ucompshare">算力共享平台 UCompShare</div>
 
 
 - [概览](api/ucompshare-api/README.md)
