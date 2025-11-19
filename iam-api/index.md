@@ -23,6 +23,7 @@
 |[GetIAMPolicy](api/iam-api/get_iam_policy)|获取策略详情|
 |[GetLoginProfile](api/iam-api/get_login_profile)|获取用户登录资料|
 |[GetUser](api/iam-api/get_user)|获取用户信息|
+|[GetUserMFAInfo](api/iam-api/get_user_mfa_info)|查询用户多因素认证设备信息|
 |[ListAccessKeys](api/iam-api/list_access_keys)|获取指定用户密钥列表|
 |[ListEntitiesForPolicy](api/iam-api/list_entities_for_policy)|列出引用权限策略的实体|
 |[ListEntitiesForProject](api/iam-api/list_entities_for_project)|列出拥有指定项目权限的实体|
