@@ -32,6 +32,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |容器实例 Cube|[文档](/api/cube-api/)|
 |云手机 UPhone|[文档](/api/uphone-api/)|
 |云游戏 UGame|[文档](/api/ugame-api/)|
+|轻量应用云主机 ULightHost|[文档](/api/ulighthost-api/)|
 |算力共享平台 UCompShare|[文档](/api/ucompshare-api/)|
 
 ### 网络
