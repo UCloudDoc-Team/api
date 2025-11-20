@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ulhost">轻量应用云主机 ULightHost</div>
+<div class="sidebar_title icon__ulighthost">轻量应用云主机 ULightHost</div>
 
 
 - [概览](api/ulighthost-api/README.md)
