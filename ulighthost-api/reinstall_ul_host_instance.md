@@ -34,7 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ImageId** | string | 镜像Id。暂不支持使用自定义镜像重装 |**Yes**|
 | **ULHostId** | string | 实例Id |**Yes**|
-| **Password** | string | 登陆密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64UGFzc3dvcmQx |**Yes**|
+| **Password** | string | 登陆密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64 UGFzc3dvcmQx |**Yes**|
 
 ### 响应字段
 
