@@ -36,7 +36,7 @@
 | **BundleId** | string | 套餐ID。如："ulh.c1m1s40b30t800" |**Yes**|
 | **Password** | string | ULHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64 |**Yes**|
 | **Name** | string | 轻量应用主机名称。默认：套餐ID。请遵照[字段规范](api/uhost-api/specification)设定实例名称。 |No|
-| **ChargeType** | string | 计费模式。枚举值： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；默认：Month |No|
+| **ChargeType** | string | 计费模式。枚举值： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > ThirtyDay，30天期付费，跨境电商相关套餐使用此计费方式；默认：Month |No|
 | **Quantity** | int | 购买时长。默认：1。不支持购买到月末 |No|
 | **VPCId** | string | VPC ID。默认为当前地域的默认VPC。 |No|
 | **SubnetId** | string | 子网 ID。默认为当前地域的默认子网。 |No|
