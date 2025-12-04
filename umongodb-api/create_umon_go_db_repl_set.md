@@ -46,6 +46,10 @@
 | **ChargeType** | string | 付费方式：Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **CrossZones.N** | string | 跨可用区列表 |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签值 |No|
+| **SecGroupId.N.Id** | string | 安全组 ID。至多可以同时绑定5个安全组。 |No|
+| **SecGroupId.N.Priority** | int | 安全组优先级。取值范围[1, 5] |No|
 
 ### 响应字段
 
@@ -81,6 +85,10 @@ https://api.ucloud.cn/?Action=CreateUMongoDBReplSet
 &ListenPort=3
 &EnableIPv6=false
 &CrossZones=RmwqFfiy
+&Labels.N.Key=gpVqLtGp
+&Labels.N.Value=yyBLOUkZ
+&SecGroupId.N.Id=gpVasnJN
+&SecGroupId.N.Priority=6
 ```
 
 ### 响应示例
