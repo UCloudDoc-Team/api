@@ -34,7 +34,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 副本集实例名称，至少6位 |**Yes**|
-| **DBVersion** | string | 副本集的Mongodb的版本，例如MongoDB-3.6, MongoDB-4.2 |**Yes**|
+| **DBVersion** | string | 副本集的Mongodb的版本，例如MongoDB 3.6, MongoDB 4.2 |**Yes**|
 | **AdminPassword** | string | 管理员密码 |**Yes**|
 | **MongosNodeCount** | int | Mongos节点数量 |**Yes**|
 | **ShardCount** | int | 分片数量 |**Yes**|
@@ -49,6 +49,8 @@
 | **ListenPort** | int | mongo服务端口 |No|
 | **TemplateId** | string | 参数配置模版id |No|
 | **MongosMachineTypeId** | string | Mongos节点机型配置 |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签值 |No|
 
 ### 响应字段
 
@@ -90,6 +92,9 @@ https://api.ucloud.cn/?Action=CreateUMongoDBShardedCluster
 &ListenPort=6
 &TemplateId=QqyhaTzZ
 &MongosMachineTypeId=jSdeeQvn
+&EnableIPv6=true
+&Labels.N.Key=MOEsTWGK
+&Labels.N.Value=ybAxuRvN
 ```
 
 ### 响应示例
