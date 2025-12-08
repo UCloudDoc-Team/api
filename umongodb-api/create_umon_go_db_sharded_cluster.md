@@ -51,6 +51,8 @@
 | **MongosMachineTypeId** | string | Mongos节点机型配置 |No|
 | **Labels.N.Key** | string | 用户资源标签的键值 |No|
 | **Labels.N.Value** | string | 用户资源标签值 |No|
+| **SecGroupId.N.Id** | string | 安全组 ID。至多可以同时绑定5个安全组。 |No|
+| **SecGroupId.N.Priority** | int | 安全组优先级。取值范围[1, 5] |No|
 
 ### 响应字段
 
@@ -95,6 +97,8 @@ https://api.ucloud.cn/?Action=CreateUMongoDBShardedCluster
 &EnableIPv6=true
 &Labels.N.Key=MOEsTWGK
 &Labels.N.Value=ybAxuRvN
+&SecGroupId.N.Id=OEqihEoU
+&SecGroupId.N.Priority=4
 ```
 
 ### 响应示例
