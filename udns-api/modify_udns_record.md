@@ -38,6 +38,7 @@
 | **ValueType** | string | 值类型。枚举值，“Normal”，标准；“Multivalue”，多值返回。仅在值为“Multivalue”时，Value的权重生效。 |No|
 | **TTL** | int | TTL值，单位为秒 |No|
 | **Remark** | string | 记录的备注信息 |No|
+| **Type** | string | 记录类型。枚举值，“A”,"CNAME","MX","AAAA","SRV","PTR","TXT"。 |No|
 
 ### 响应字段
 
@@ -57,13 +58,14 @@
 ```
 https://api.ucloud.cn/?Action=ModifyUDNSRecord
 &Region=cn-zj
-&ProjectId=teXeSaUt
-&DNSZoneId=cvLdWCdp
-&RecordId=CxjedxOe
-&Value=xsdLLQQI
-&ValueType=kGfIQhgb
-&TTL=TuTsIyiJ
-&Remark=eEijOaip
+&ProjectId=ZogWNVNK
+&DNSZoneId=XnUYoCQj
+&RecordId=ZgUVCGjB
+&Value=uuURpPBI
+&ValueType=xFbCcBwd
+&TTL=2
+&Remark=tLgVkCkD
+&Type=YPAUcANF
 ```
 
 ### 响应示例
