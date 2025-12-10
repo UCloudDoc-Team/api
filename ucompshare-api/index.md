@@ -16,4 +16,5 @@
 |[ResetCompShareInstancePassword](api/ucompshare-api/reset_comp_share_instance_password)|重置算力平台实例密码|
 |[StartCompShareInstance](api/ucompshare-api/start_comp_share_instance)|启动算力平台实例|
 |[StopCompShareInstance](api/ucompshare-api/stop_comp_share_instance)|关闭算力平台实例|
+|[TerminateCompShareCustomImage](api/ucompshare-api/terminate_comp_share_custom_image)|删除算力平台自制镜像|
 |[TerminateCompShareInstance](api/ucompshare-api/terminate_comp_share_instance)|删除轻量算力共享平台虚机实例|
