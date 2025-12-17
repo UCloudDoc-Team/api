@@ -4,8 +4,10 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[CheckULHostResourceCapacity](api/ulighthost-api/check_ul_host_resource_capacity)|检查轻量应用云主机资源余量|
 |[CreateULHostInstance](api/ulighthost-api/create_ul_host_instance)|创建轻量应用云主机|
 |[DescribeULHostBundles](api/ulighthost-api/describe_ul_host_bundles)|获取轻量应用云主机套餐列表|
+|[DescribeULHostImage](api/ulighthost-api/describe_ul_host_image)|获取轻量应用主机镜像列表|
 |[DescribeULHostInstance](api/ulighthost-api/describe_ul_host_instance)|获取轻量应用云主机列表|
 |[GetULHostInstancePrice](api/ulighthost-api/get_ul_host_instance_price)|获取轻量应用云主机套餐价格|
 |[GetULHostRenewPrice](api/ulighthost-api/get_ul_host_renew_price)|获取主机续费价格|
