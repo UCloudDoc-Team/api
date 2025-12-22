@@ -58,6 +58,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist) |No|
+| **GPU** | int | GPU数量 |No|
+| **GPUType** | string | GPU类型 |No|
 | **PHostId** | string | PHost资源ID |No|
 | **SN** | string | 物理机序列号 |No|
 | **PMStatus** | string | 物理云主机状态。枚举值：<br /><br /> > 初始化:Initializing; <br /><br /> > 启动中：Starting； <br /><br /> > 运行中：Running；<br /><br /> > 关机中：Stopping； <br /><br /> > 安装失败：InstallFailed； <br /><br /> > 重启中：Rebooting；<br /><br /> > 关机：Stopped； <br /><br /> > 迁移中(裸金属云盘)：Migrating |No|
@@ -84,6 +86,7 @@
 | **PhostClass** | string | 物理云产品类型，枚举值：LocalDisk=>代表传统本地盘机型， CloudDisk=>云盘裸金属机型 |No|
 | **BootDiskState** | string | 裸金属机型字段。枚举值：Normal=>正常、ImageMaking=>镜像制作中。 |No|
 | **RdmaClusterId** | string | RDMA集群id，仅云盘裸金属返回该值；其他类型物理云主机返回""。当物理机的此值与RSSD云盘的RdmaClusterId相同时，RSSD可以挂载到这台物理机。 |No|
+| **Nics** | array[[*NicInfo*](#NicInfo)] | 计算网卡信息 |No|
 
 #### PHostCPUSet
 
@@ -118,6 +121,18 @@
 | **Bandwidth** | int | IP对应带宽，单位Mb，内网IP不显示带宽信息 |No|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC ID |No|
+
+#### NicInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 网卡名称 |No|
+| **Mac** | string | Mac地址 |No|
+| **Cluster** | string | 网卡带宽 |No|
+| **NicIp** | string | 网卡IP |No|
+| **NicType** | string | 网卡类型 |No|
+| **VPCId** | string | 绑定的Vpc ID |No|
+| **SubnetId** | string | 绑定的子网ID |No|
 
 ## 示例
 
