@@ -46,7 +46,7 @@
     
 ```
 https://api.ucloud.cn/?Action=DownloadCertificate
-&CertificateID=1
+&CertificateID=4
 ```
 
 ### 响应示例
@@ -54,15 +54,7 @@ https://api.ucloud.cn/?Action=DownloadCertificate
 ```json
 {
   "Action": "DownloadCertificateResponse",
-  "CertCA": {
-    "FileData": "-----BEGIN CERTIFICATE----------END CERTIFICATE-----",
-    "FileName": "CertificateCA.pem"
-  },
-  "Certificate": {
-    "FileData": "-----BEGIN CERTIFICATE----------END CERTIFICATE-----",
-    "FileName": "Certificate.pem"
-  },
-  "CsrOnline": 0,
+  "CertificateUrl": "mXDzUQXz",
   "RetCode": 0
 }
 ```
