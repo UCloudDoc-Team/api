@@ -188,7 +188,7 @@ https://api.ucloud.cn/?Action=DescribeUGAInstance
           "LineFromName": "中国(多地)",
           "LineId": "line_cn-us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶",
+          "LineToName": "美国（洛杉矶）",
           "UPathId": "upath-xcacoz",
           "UPathName": "中美加速"
         }

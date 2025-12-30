@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。  |No|
-| **OperatorName** | string | 弹性IP线路，枚举值：国际线路， International；BGP线路：Bgp；精品BGP：BGPPro。<br /><br />使用BGP线路的地域：北京二、上海金融云、上海二、广州等，其他地域均使用国际线路。<br />使用BGPPro线路的地域：香港 |**Yes**|
+| **OperatorName** | string | 弹性IP线路，枚举值：国际线路， International；BGP线路：Bgp；精品BGP：BGPPro。<br /><br />使用BGP线路的地域：北京二、金融云-华东（上海）、华东（上海2）、华南（广州）等，其他地域均使用国际线路。<br />使用BGPPro线路的地域：香港 |**Yes**|
 | **Bandwidth** | int | 弹性IP的外网带宽, 单位为Mbps. 共享带宽模式必须指定0M带宽, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-10000] |**Yes**|
 | **Tag** | string | 业务组名称, 默认为 "Default" |No|
 | **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费; Dynamic, 按时付费，默认为按月付费。 |No|

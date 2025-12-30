@@ -4,7 +4,7 @@
 
 | 省份名称     |API名称            |
 |---|---|
-| 福建省     |fujian        |
+| 华南（泉州）省     |fujian        |
 |广东省      |guangdong|
 |北京市       |beijing |
 |香港          |xianggang |

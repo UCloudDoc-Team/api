@@ -51,8 +51,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **LocalRegion** | string | 支持UDPN的地域之一，北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg, 华盛顿：us-ws, 洛杉矶：us-la， 东京：jpn-tky |**Yes**|
-| **RemoteRegion** | string | 支持UDPN的地域之一，北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg, 华盛顿：us-ws, 洛杉矶：us-la， 东京：jpn-tky |**Yes**|
+| **LocalRegion** | string | 支持UDPN的地域之一，北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg, 美国（华盛顿）：us-ws, 美国（洛杉矶）：us-la， 日本（东京）：jpn-tky |**Yes**|
+| **RemoteRegion** | string | 支持UDPN的地域之一，北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg, 美国（华盛顿）：us-ws, 美国（洛杉矶）：us-la， 日本（东京）：jpn-tky |**Yes**|
 | **BandwidthUpperLimit** | int | 线路带宽上限,单位 M |**Yes**|
 
 ## 示例

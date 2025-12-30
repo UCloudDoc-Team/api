@@ -46,7 +46,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **CityId** | string | 城市Id，eg: cn-shanghai, cn-jinan |No|
-| **CityName** | string | 城市名称，eg:上海二、济南市 |No|
+| **CityName** | string | 城市名称，eg:华东（上海2）、济南市 |No|
 | **IsSoldOut** | boolean | 表示该城市资源是否售罄 |No|
 | **CityType** | string | 城市类型。枚举值：CENTER，中心城市，EDGE，边缘计算城市 |No|
 | **CityAlias** | string | 城市别名。如cn-sh2 |No|

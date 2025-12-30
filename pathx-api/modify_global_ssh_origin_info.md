@@ -35,7 +35,7 @@
 | **InstanceType** | string | Free,Basic,Enterprise,Ultimate |**Yes**|
 | **RsIP** | string | 被SSH访问的源站IP |**Yes**|
 | **InstanceId** | string | 资源ID:ugaa-xxxxxxx |**Yes**|
-| **Area** | string | 填写支持SSH访问IP的地区名称，如“洛杉矶”，“新加坡”，“香港”，“东京”，“华盛顿”，“法兰克福”。Area和AreaCode两者必填一个 |No|
+| **Area** | string | 填写支持SSH访问IP的地区名称，如“美国（洛杉矶）”，“新加坡”，“香港”，“日本（东京）”，“美国（华盛顿）”，“德国（法兰克福）”。Area和AreaCode两者必填一个 |No|
 | **AreaCode** | string | AreaCode, 区域航空港国际通用代码。Area和AreaCode两者必填一个 |No|
 
 ### 响应字段

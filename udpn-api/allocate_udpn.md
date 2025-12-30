@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Peer1** | string | 专线可用区1，支持地域：北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg,  洛杉矶：us-ca， 华盛顿：us-ws， 东京：jpn-tky |**Yes**|
-| **Peer2** | string | 专线可用区2，支持地域：北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg,  洛杉矶：us-ca， 华盛顿：us-ws， 东京：jpn-tky |**Yes**|
+| **Peer1** | string | 专线可用区1，支持地域：北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg,  美国（洛杉矶）：us-ca， 美国（华盛顿）：us-ws， 日本（东京）：jpn-tky |**Yes**|
+| **Peer2** | string | 专线可用区2，支持地域：北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg,  美国（洛杉矶）：us-ca， 美国（华盛顿）：us-ws， 日本（东京）：jpn-tky |**Yes**|
 | **Bandwidth** | int | 带宽 |**Yes**|
 | **ChargeType** | string | 计费类型，枚举值为： Year，按年付费； Month，按月付费； Dynamic，按需付费 |No|
 | **Quantity** | int | 计费时长，默认 1 |No|

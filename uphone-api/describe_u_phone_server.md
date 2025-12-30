@@ -58,7 +58,7 @@
 | **ExpireTime** | int | 到期时间，格式为Unix时间戳。 |**Yes**|
 | **ChargeType** | string | 计费模式。枚举值为：<br />  *Year，按年付费；<br />*  Month，按月付费；<br />默认为月付 |**Yes**|
 | **CityId** | string | 城市Id，eg: cn-shanghai, cn-jinan |**Yes**|
-| **CityName** | string | 城市名称，eg:上海二、济南市 |**Yes**|
+| **CityName** | string | 城市名称，eg:华东（上海2）、济南市 |**Yes**|
 | **Remark** | string | 云服务器备注。 |No|
 | **UPhoneCount** | int | 云手机开数。 |No|
 | **State** | string | 实例状态，枚举值： <br />* 初始化: Initializing; <br />* 云手机创建中: UPhoneCreating;<br />* 运行中: Running; <br />* 删除中: Deleting; <br />* 创建失败: CreateFailed <br />* 未知(空字符串，获取状态超时或出错)："" |No|

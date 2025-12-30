@@ -63,7 +63,7 @@
 | **OsType** | string | 云手机镜像系统，如"Android armv8"<br /> |No|
 | **State** | string | 云手机状态<br />* 启动中: STARTING; <br />* 运行中: RUNNING; <br />* 关机中: STOPPING; <br />* 关机: STOPPED <br />* 重启中: REBOOTING; <br />* 重置中: RESETTING; <br />* 启动失败: START_FAILED; <br />* 关机失败: STOP_FAILED; <br />* 重启失败: REBOOT_FAILED; <br />* 重置失败: RESET_FAILED; <br />* 未知状态：UNDEFINED或""<br /> |No|
 | **CityId** | string | 城市Id，eg: cn-shanghai, cn-jinan<br /> |No|
-| **CityName** | string | 城市名称，eg:上海二、济南市<br /> |No|
+| **CityName** | string | 城市名称，eg:华东（上海2）、济南市<br /> |No|
 | **CreateTime** | int | 创建时间，格式为Unix时间戳。<br /> |No|
 | **Remark** | string | 备注<br /> |No|
 | **AppVersion** | [*AppVersionInstance*](#AppVersionInstance) | 应用版本实例，每项参数可见数据模型 [AppVersionInstance](#AppVersionInstance)<br /> |No|

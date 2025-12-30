@@ -31,7 +31,7 @@
 |**CPU**|int|虚拟CPU核数。可选参数：1-32（可选范围与UHostType相关）。默认值: 4|No|
 |**Memory**|int|内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围与UHostType相关）。默认值：8192|No|
 |**GPU**|int|GPU卡核心数。仅GPU机型支持此字段（可选范围与UHostType相关）。|No|
-|**StorageType**|string|磁盘类型，同时设定系统盘和数据盘的磁盘类型。枚举值为：<br> > LocalDisk，本地磁盘（机型为N1,N2,N3,D1时，此值代表创建普通本地盘；机型为G1,G2,G3,C1时，此值代表SSD本地盘）; <br>> UDisk，普通云盘；<br> 默认值：LocalDisk。仅北京二B/C/D/上海二A/B/广州可用区支持云硬盘方式的主机存储方式。无法通过此字段设置SSD云盘，若您希望更丰富的调用，建议您改用[新版创建云主机API](api/uhost-api/create_uhost_instance)|No|
+|**StorageType**|string|磁盘类型，同时设定系统盘和数据盘的磁盘类型。枚举值为：<br> > LocalDisk，本地磁盘（机型为N1,N2,N3,D1时，此值代表创建普通本地盘；机型为G1,G2,G3,C1时，此值代表SSD本地盘）; <br>> UDisk，普通云盘；<br> 默认值：LocalDisk。仅北京二B/C/D/华东（上海2）A/B/华南（广州）可用区支持云硬盘方式的主机存储方式。无法通过此字段设置SSD云盘，若您希望更丰富的调用，建议您改用[新版创建云主机API](api/uhost-api/create_uhost_instance)|No|
 |**DiskSpace**|int|数据盘大小。请参考[磁盘类型](api/uhost-api/disk_type)|No|
 |**TimemachineFeature**|string|是否开启方舟特性。Yes为开启方舟，No为关闭方舟。仅普通本地盘情况下此处可以传Yes。默认为No。|No|
 |**NetCapability**|string|网络增强。枚举值：<br> > Normal，不开启 <br> > Super，开启 <br> 默认值未为Normal。|No|

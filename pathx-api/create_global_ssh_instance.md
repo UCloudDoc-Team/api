@@ -32,7 +32,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID,如org-xxxx。请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **Area** | string | 填写支持SSH访问IP的地区名称，如“洛杉矶”，“新加坡”，“香港”，“东京”，“华盛顿”，“法兰克福”，“首尔”。Area和AreaCode两者必填一个 |**Yes**|
+| **Area** | string | 填写支持SSH访问IP的地区名称，如“美国（洛杉矶）”，“新加坡”，“香港”，“日本（东京）”，“美国（华盛顿）”，“德国（法兰克福）”，“韩国（首尔）”。Area和AreaCode两者必填一个 |**Yes**|
 | **TargetIP** | string | 被SSH访问的源站IP，仅支持IPv4地址。 |**Yes**|
 | **Port** | int | 源站服务器监听的SSH端口，可取范围[1-65535]，不能使用80，443,  65123端口。如果InstanceType=Free，取值范围缩小为[22,3389],linux系统选择22，windows系统自动选3389。 |**Yes**|
 | **AreaCode** | string | AreaCode, 区域航空港国际通用代码。Area和AreaCode两者必填一个 |**Yes**|
@@ -65,7 +65,7 @@
 https://api.ucloud.cn/?Action=CreateGlobalSSHInstance
 &ProjectId=org-xxxx
 &Remark=备注
-&Area=洛杉矶
+&Area=美国（洛杉矶）
 &TargetIP=1.1.2.2
 &Port=22
 &CouponId=coupon-123

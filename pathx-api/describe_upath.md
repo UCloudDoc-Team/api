@@ -103,8 +103,8 @@ https://api.ucloud.cn/?Action=DescribeUPath
       "ExpireTime": 1569859200,
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_afr-nigeria",
-      "LineToName": "拉各斯",
-      "Name": "中国多地到拉各斯_0",
+      "LineToName": "尼日利亚（拉各斯）",
+      "Name": "中国多地到尼日利亚（拉各斯）_0",
       "OutPublicIpList": [
         {
           "Area": "afr-nigeria",

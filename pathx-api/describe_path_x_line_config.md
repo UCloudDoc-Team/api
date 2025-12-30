@@ -93,14 +93,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "afr-nigeria",
-          "LineFromName": "拉各斯",
+          "LineFromName": "尼日利亚（拉各斯）",
           "LineId": "line_afr-nigeria_cn-bj2",
           "LineTo": "cn-bj2",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "afr-nigeria",
-      "LineFromName": "拉各斯",
+      "LineFromName": "尼日利亚（拉各斯）",
       "LineId": "line_afr-nigeria_cn-bj2",
       "LineTo": "cn-bj2",
       "LineToName": "中国"
@@ -109,33 +109,33 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "afr-nigeria",
-          "LineFromName": "拉各斯",
+          "LineFromName": "尼日利亚（拉各斯）",
           "LineId": "line_afr-nigeria_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "afr-nigeria",
-      "LineFromName": "拉各斯",
+      "LineFromName": "尼日利亚（拉各斯）",
       "LineId": "line_afr-nigeria_ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "bra-saopaulo",
-          "LineFromName": "圣保罗",
+          "LineFromName": "巴西（圣保罗）",
           "LineId": "line_bra-saopaulo_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "bra-saopaulo",
-      "LineFromName": "圣保罗",
+      "LineFromName": "巴西（圣保罗）",
       "LineId": "line_bra-saopaulo_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
@@ -144,14 +144,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国",
           "LineId": "line_cn-bj2_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "cn-bj2",
       "LineFromName": "中国",
       "LineId": "line_cn-bj2_ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
@@ -160,14 +160,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国",
           "LineId": "line_cn-bj2_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "cn-bj2",
       "LineFromName": "中国",
       "LineId": "line_cn-bj2_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
@@ -192,28 +192,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn-ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
@@ -252,28 +252,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn-us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
@@ -282,28 +282,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_afr-nigeria",
           "LineTo": "afr-nigeria",
-          "LineToName": "拉各斯"
+          "LineToName": "尼日利亚（拉各斯）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_afr-nigeria",
           "LineTo": "afr-nigeria",
-          "LineToName": "拉各斯"
+          "LineToName": "尼日利亚（拉各斯）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_afr-nigeria",
           "LineTo": "afr-nigeria",
-          "LineToName": "拉各斯"
+          "LineToName": "尼日利亚（拉各斯）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_afr-nigeria",
       "LineTo": "afr-nigeria",
-      "LineToName": "拉各斯"
+      "LineToName": "尼日利亚（拉各斯）"
     },
     {
       "LineDetail": [
@@ -312,28 +312,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_idn-jakarta",
           "LineTo": "idn-jakarta",
-          "LineToName": "雅加达"
+          "LineToName": "印度尼西亚（雅加达）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_idn-jakarta",
           "LineTo": "idn-jakarta",
-          "LineToName": "雅加达"
+          "LineToName": "印度尼西亚（雅加达）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_idn-jakarta",
           "LineTo": "idn-jakarta",
-          "LineToName": "雅加达"
+          "LineToName": "印度尼西亚（雅加达）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_idn-jakarta",
       "LineTo": "idn-jakarta",
-      "LineToName": "雅加达"
+      "LineToName": "印度尼西亚（雅加达）"
     },
     {
       "LineDetail": [
@@ -342,28 +342,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_ind-mumbai",
       "LineTo": "ind-mumbai",
-      "LineToName": "孟买"
+      "LineToName": "印度（孟买）"
     },
     {
       "LineDetail": [
@@ -372,28 +372,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_jpn-tky",
       "LineTo": "jpn-tky",
-      "LineToName": "东京"
+      "LineToName": "日本（东京）"
     },
     {
       "LineDetail": [
@@ -432,28 +432,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_th-bkk",
           "LineTo": "th-bkk",
-          "LineToName": "曼谷"
+          "LineToName": "泰国（曼谷）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_th-bkk",
           "LineTo": "th-bkk",
-          "LineToName": "曼谷"
+          "LineToName": "泰国（曼谷）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_th-bkk",
           "LineTo": "th-bkk",
-          "LineToName": "曼谷"
+          "LineToName": "泰国（曼谷）"
         }
       ],
       "LineFrom": "cn-bj2",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_th-bkk",
       "LineTo": "th-bkk",
-      "LineToName": "曼谷"
+      "LineToName": "泰国（曼谷）"
     },
     {
       "LineDetail": [
@@ -462,28 +462,28 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_tw-tp",
           "LineTo": "tw-tp",
-          "LineToName": "中国台北"
+          "LineToName": "中国台湾（台北）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_tw-tp",
           "LineTo": "tw-tp",
-          "LineToName": "中国台北"
+          "LineToName": "中国台湾（台北）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_tw-tp",
           "LineTo": "tw-tp",
-          "LineToName": "中国台北"
+          "LineToName": "中国台湾（台北）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_tw-tp",
       "LineTo": "tw-tp",
-      "LineToName": "中国台北"
+      "LineToName": "中国台湾（台北）"
     },
     {
       "LineDetail": [
@@ -492,41 +492,41 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "中国华北",
           "LineId": "line_cn-bj2_us-ws",
           "LineTo": "us-ws",
-          "LineToName": "华盛顿"
+          "LineToName": "美国（华盛顿）"
         },
         {
           "LineFrom": "cn-gd",
           "LineFromName": "中国华南",
           "LineId": "line_cn-gd_us-ws",
           "LineTo": "us-ws",
-          "LineToName": "华盛顿"
+          "LineToName": "美国（华盛顿）"
         },
         {
           "LineFrom": "cn-sh2",
           "LineFromName": "中国华东",
           "LineId": "line_cn-sh2_us-ws",
           "LineTo": "us-ws",
-          "LineToName": "华盛顿"
+          "LineToName": "美国（华盛顿）"
         }
       ],
       "LineFrom": "cn-gd",
       "LineFromName": "中国(多地)",
       "LineId": "line_cn_us-ws",
       "LineTo": "us-ws",
-      "LineToName": "华盛顿"
+      "LineToName": "美国（华盛顿）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_cn-bj2",
           "LineTo": "cn-bj2",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_cn-bj2",
       "LineTo": "cn-bj2",
       "LineToName": "中国"
@@ -535,14 +535,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -551,30 +551,30 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_jpn-tky",
       "LineTo": "jpn-tky",
-      "LineToName": "东京"
+      "LineToName": "日本（东京）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -583,33 +583,33 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "ge-fra",
-          "LineFromName": "法兰克福",
+          "LineFromName": "德国（法兰克福）",
           "LineId": "line_ge-fra_us-ws",
           "LineTo": "us-ws",
-          "LineToName": "华盛顿"
+          "LineToName": "美国（华盛顿）"
         }
       ],
       "LineFrom": "ge-fra",
-      "LineFromName": "法兰克福",
+      "LineFromName": "德国（法兰克福）",
       "LineId": "line_ge-fra_us-ws",
       "LineTo": "us-ws",
-      "LineToName": "华盛顿"
+      "LineToName": "美国（华盛顿）"
     },
     {
       "LineDetail": [
@@ -634,14 +634,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
@@ -650,14 +650,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_idn-jakarta",
           "LineTo": "idn-jakarta",
-          "LineToName": "雅加达"
+          "LineToName": "印度尼西亚（雅加达）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_idn-jakarta",
       "LineTo": "idn-jakarta",
-      "LineToName": "雅加达"
+      "LineToName": "印度尼西亚（雅加达）"
     },
     {
       "LineDetail": [
@@ -666,14 +666,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_ind-mumbai",
       "LineTo": "ind-mumbai",
-      "LineToName": "孟买"
+      "LineToName": "印度（孟买）"
     },
     {
       "LineDetail": [
@@ -682,14 +682,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_jpn-tky",
       "LineTo": "jpn-tky",
-      "LineToName": "东京"
+      "LineToName": "日本（东京）"
     },
     {
       "LineDetail": [
@@ -714,14 +714,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_th-bkk",
           "LineTo": "th-bkk",
-          "LineToName": "曼谷"
+          "LineToName": "泰国（曼谷）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_th-bkk",
       "LineTo": "th-bkk",
-      "LineToName": "曼谷"
+      "LineToName": "泰国（曼谷）"
     },
     {
       "LineDetail": [
@@ -730,14 +730,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_tw-tp",
           "LineTo": "tw-tp",
-          "LineToName": "中国台北"
+          "LineToName": "中国台湾（台北）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_tw-tp",
       "LineTo": "tw-tp",
-      "LineToName": "中国台北"
+      "LineToName": "中国台湾（台北）"
     },
     {
       "LineDetail": [
@@ -746,27 +746,27 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "亚太",
           "LineId": "line_hk_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "hk",
       "LineFromName": "中国香港",
       "LineId": "line_hk_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "idn-jakarta",
-          "LineFromName": "雅加达",
+          "LineFromName": "印度尼西亚（雅加达）",
           "LineId": "line_idn-jakarta_cn-gd",
           "LineTo": "cn-gd",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "idn-jakarta",
-      "LineFromName": "雅加达",
+      "LineFromName": "印度尼西亚（雅加达）",
       "LineId": "line_idn-jakarta_cn-gd",
       "LineTo": "cn-gd",
       "LineToName": "中国"
@@ -775,14 +775,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "idn-jakarta",
-          "LineFromName": "雅加达",
+          "LineFromName": "印度尼西亚（雅加达）",
           "LineId": "line_idn-jakarta_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "idn-jakarta",
-      "LineFromName": "雅加达",
+      "LineFromName": "印度尼西亚（雅加达）",
       "LineId": "line_idn-jakarta_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -798,7 +798,7 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
         }
       ],
       "LineFrom": "idn-jakarta",
-      "LineFromName": "雅加达",
+      "LineFromName": "印度尼西亚（雅加达）",
       "LineId": "line_idn-jakarta_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -807,14 +807,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ind-mumbai",
-          "LineFromName": "孟买",
+          "LineFromName": "印度（孟买）",
           "LineId": "line_ind-mumbai_cn-gd",
           "LineTo": "cn-gd",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "ind-mumbai",
-      "LineFromName": "孟买",
+      "LineFromName": "印度（孟买）",
       "LineId": "line_ind-mumbai_cn-gd",
       "LineTo": "cn-gd",
       "LineToName": "中国"
@@ -823,14 +823,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ind-mumbai",
-          "LineFromName": "孟买",
+          "LineFromName": "印度（孟买）",
           "LineId": "line_ind-mumbai_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "ind-mumbai",
-      "LineFromName": "孟买",
+      "LineFromName": "印度（孟买）",
       "LineId": "line_ind-mumbai_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -839,14 +839,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ind-mumbai",
-          "LineFromName": "孟买",
+          "LineFromName": "印度（孟买）",
           "LineId": "line_ind-mumbai_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
         }
       ],
       "LineFrom": "ind-mumbai",
-      "LineFromName": "孟买",
+      "LineFromName": "印度（孟买）",
       "LineId": "line_ind-mumbai_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -855,30 +855,30 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "ind-mumbai",
-          "LineFromName": "孟买",
+          "LineFromName": "印度（孟买）",
           "LineId": "line_ind-mumbai_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "ind-mumbai",
-      "LineFromName": "孟买",
+      "LineFromName": "印度（孟买）",
       "LineId": "line_ind-mumbai_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "jpn-tky",
-          "LineFromName": "东京",
+          "LineFromName": "日本（东京）",
           "LineId": "line_jpn-tky_cn-sh2",
           "LineTo": "cn-sh2",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "jpn-tky",
-      "LineFromName": "东京",
+      "LineFromName": "日本（东京）",
       "LineId": "line_jpn-tky_cn-sh2",
       "LineTo": "cn-sh2",
       "LineToName": "中国"
@@ -887,14 +887,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "jpn-tky",
-          "LineFromName": "东京",
+          "LineFromName": "日本（东京）",
           "LineId": "line_jpn-tky_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "jpn-tky",
-      "LineFromName": "东京",
+      "LineFromName": "日本（东京）",
       "LineId": "line_jpn-tky_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -903,49 +903,49 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "jpn-tky",
-          "LineFromName": "东京",
+          "LineFromName": "日本（东京）",
           "LineId": "line_jpn-tky_kr-seoul",
           "LineTo": "kr-seoul",
-          "LineToName": "首尔"
+          "LineToName": "韩国（首尔）"
         }
       ],
       "LineFrom": "jpn-tky",
-      "LineFromName": "东京",
+      "LineFromName": "日本（东京）",
       "LineId": "line_jpn-tky_kr-seoul",
       "LineTo": "kr-seoul",
-      "LineToName": "首尔"
+      "LineToName": "韩国（首尔）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "jpn-tky",
-          "LineFromName": "东京",
+          "LineFromName": "日本（东京）",
           "LineId": "line_jpn-tky_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "jpn-tky",
-      "LineFromName": "东京",
+      "LineFromName": "日本（东京）",
       "LineId": "line_jpn-tky_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "kr-seoul",
-          "LineFromName": "首尔",
+          "LineFromName": "韩国（首尔）",
           "LineId": "line_kr-seoul_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "kr-seoul",
-      "LineFromName": "首尔",
+      "LineFromName": "韩国（首尔）",
       "LineId": "line_kr-seoul_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
@@ -970,14 +970,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "U新加坡",
           "LineId": "line_sg_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "sg",
       "LineFromName": "新加坡",
       "LineId": "line_sg_ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
@@ -1002,14 +1002,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "U新加坡",
           "LineId": "line_sg_idn-jakarta",
           "LineTo": "idn-jakarta",
-          "LineToName": "雅加达"
+          "LineToName": "印度尼西亚（雅加达）"
         }
       ],
       "LineFrom": "sg",
       "LineFromName": "新加坡",
       "LineId": "line_sg_idn-jakarta",
       "LineTo": "idn-jakarta",
-      "LineToName": "雅加达"
+      "LineToName": "印度尼西亚（雅加达）"
     },
     {
       "LineDetail": [
@@ -1018,14 +1018,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "U新加坡",
           "LineId": "line_sg_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         }
       ],
       "LineFrom": "sg",
       "LineFromName": "新加坡",
       "LineId": "line_sg_ind-mumbai",
       "LineTo": "ind-mumbai",
-      "LineToName": "孟买"
+      "LineToName": "印度（孟买）"
     },
     {
       "LineDetail": [
@@ -1034,14 +1034,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "U新加坡",
           "LineId": "line_sg_th-bkk",
           "LineTo": "th-bkk",
-          "LineToName": "曼谷"
+          "LineToName": "泰国（曼谷）"
         }
       ],
       "LineFrom": "sg",
       "LineFromName": "新加坡",
       "LineId": "line_sg_th-bkk",
       "LineTo": "th-bkk",
-      "LineToName": "曼谷"
+      "LineToName": "泰国（曼谷）"
     },
     {
       "LineDetail": [
@@ -1050,27 +1050,27 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
           "LineFromName": "U新加坡",
           "LineId": "line_sg_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "sg",
       "LineFromName": "新加坡",
       "LineId": "line_sg_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "th-bkk",
-          "LineFromName": "曼谷",
+          "LineFromName": "泰国（曼谷）",
           "LineId": "line_th-bkk_cn-gd",
           "LineTo": "cn-gd",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "th-bkk",
-      "LineFromName": "曼谷",
+      "LineFromName": "泰国（曼谷）",
       "LineId": "line_th-bkk_cn-gd",
       "LineTo": "cn-gd",
       "LineToName": "中国"
@@ -1079,14 +1079,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "th-bkk",
-          "LineFromName": "曼谷",
+          "LineFromName": "泰国（曼谷）",
           "LineId": "line_th-bkk_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "th-bkk",
-      "LineFromName": "曼谷",
+      "LineFromName": "泰国（曼谷）",
       "LineId": "line_th-bkk_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -1095,14 +1095,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "th-bkk",
-          "LineFromName": "曼谷",
+          "LineFromName": "泰国（曼谷）",
           "LineId": "line_th-bkk_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
         }
       ],
       "LineFrom": "th-bkk",
-      "LineFromName": "曼谷",
+      "LineFromName": "泰国（曼谷）",
       "LineId": "line_th-bkk_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -1111,14 +1111,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "tw-tp",
-          "LineFromName": "中国台北",
+          "LineFromName": "中国台湾（台北）",
           "LineId": "line_tw-tp_cn-gd",
           "LineTo": "cn-gd",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "tw-tp",
-      "LineFromName": "中国台北",
+      "LineFromName": "中国台湾（台北）",
       "LineId": "line_tw-tp_cn-gd",
       "LineTo": "cn-gd",
       "LineToName": "中国"
@@ -1127,14 +1127,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "tw-tp",
-          "LineFromName": "中国台北",
+          "LineFromName": "中国台湾（台北）",
           "LineId": "line_tw-tp_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "tw-tp",
-      "LineFromName": "中国台北",
+      "LineFromName": "中国台湾（台北）",
       "LineId": "line_tw-tp_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -1143,14 +1143,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "tw-tp",
-          "LineFromName": "中国台北",
+          "LineFromName": "中国台湾（台北）",
           "LineId": "line_tw-tp_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
         }
       ],
       "LineFrom": "tw-tp",
-      "LineFromName": "中国台北",
+      "LineFromName": "中国台湾（台北）",
       "LineId": "line_tw-tp_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -1159,30 +1159,30 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "tw-tp",
-          "LineFromName": "中国台北",
+          "LineFromName": "中国台湾（台北）",
           "LineId": "line_tw-tp_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "tw-tp",
-      "LineFromName": "中国台北",
+      "LineFromName": "中国台湾（台北）",
       "LineId": "line_tw-tp_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_cn-bj2",
           "LineTo": "cn-bj2",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_cn-bj2",
       "LineTo": "cn-bj2",
       "LineToName": "中国"
@@ -1191,14 +1191,14 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_hk",
           "LineTo": "hk",
           "LineToName": "中国香港"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_hk",
       "LineTo": "hk",
       "LineToName": "中国香港"
@@ -1207,46 +1207,46 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_ind-mumbai",
           "LineTo": "ind-mumbai",
-          "LineToName": "孟买"
+          "LineToName": "印度（孟买）"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_ind-mumbai",
       "LineTo": "ind-mumbai",
-      "LineToName": "孟买"
+      "LineToName": "印度（孟买）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_jpn-tky",
           "LineTo": "jpn-tky",
-          "LineToName": "东京"
+          "LineToName": "日本（东京）"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_jpn-tky",
       "LineTo": "jpn-tky",
-      "LineToName": "东京"
+      "LineToName": "日本（东京）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_sg",
           "LineTo": "sg",
           "LineToName": "新加坡"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_sg",
       "LineTo": "sg",
       "LineToName": "新加坡"
@@ -1255,30 +1255,30 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "us-ca",
-          "LineFromName": "洛杉矶",
+          "LineFromName": "美国（洛杉矶）",
           "LineId": "line_us-ca_us-ws",
           "LineTo": "us-ws",
-          "LineToName": "华盛顿"
+          "LineToName": "美国（华盛顿）"
         }
       ],
       "LineFrom": "us-ca",
-      "LineFromName": "洛杉矶",
+      "LineFromName": "美国（洛杉矶）",
       "LineId": "line_us-ca_us-ws",
       "LineTo": "us-ws",
-      "LineToName": "华盛顿"
+      "LineToName": "美国（华盛顿）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "us-ws",
-          "LineFromName": "华盛顿",
+          "LineFromName": "美国（华盛顿）",
           "LineId": "line_us-ws_cn-bj2",
           "LineTo": "cn-bj2",
           "LineToName": "中国"
         }
       ],
       "LineFrom": "us-ws",
-      "LineFromName": "华盛顿",
+      "LineFromName": "美国（华盛顿）",
       "LineId": "line_us-ws_cn-bj2",
       "LineTo": "cn-bj2",
       "LineToName": "中国"
@@ -1287,33 +1287,33 @@ https://api.ucloud.cn/?Action=DescribePathXLineConfig
       "LineDetail": [
         {
           "LineFrom": "us-ws",
-          "LineFromName": "华盛顿",
+          "LineFromName": "美国（华盛顿）",
           "LineId": "line_us-ws_ge-fra",
           "LineTo": "ge-fra",
-          "LineToName": "法兰克福"
+          "LineToName": "德国（法兰克福）"
         }
       ],
       "LineFrom": "us-ws",
-      "LineFromName": "华盛顿",
+      "LineFromName": "美国（华盛顿）",
       "LineId": "line_us-ws_ge-fra",
       "LineTo": "ge-fra",
-      "LineToName": "法兰克福"
+      "LineToName": "德国（法兰克福）"
     },
     {
       "LineDetail": [
         {
           "LineFrom": "us-ws",
-          "LineFromName": "华盛顿",
+          "LineFromName": "美国（华盛顿）",
           "LineId": "line_us-ws_us-ca",
           "LineTo": "us-ca",
-          "LineToName": "洛杉矶"
+          "LineToName": "美国（洛杉矶）"
         }
       ],
       "LineFrom": "us-ws",
-      "LineFromName": "华盛顿",
+      "LineFromName": "美国（华盛顿）",
       "LineId": "line_us-ws_us-ca",
       "LineTo": "us-ca",
-      "LineToName": "洛杉矶"
+      "LineToName": "美国（洛杉矶）"
     }
   ],
   "Message": "",

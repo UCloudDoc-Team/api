@@ -32,8 +32,8 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **Peer1** | string | 专线可用区1，支持地域：北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg, 洛杉矶：us-la， 华盛顿：us-ws， 东京：jpn-tky |**Yes**|
-| **Peer2** | string | 专线可用区2，支持地域：北京二：cn-bj2, 上海二：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 法兰克福：ge-fra, 新加坡：sg, 洛杉矶：us-la， 华盛顿：us-ws， 东京：jpn-tky |**Yes**|
+| **Peer1** | string | 专线可用区1，支持地域：北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg, 美国（洛杉矶）：us-la， 美国（华盛顿）：us-ws， 日本（东京）：jpn-tky |**Yes**|
+| **Peer2** | string | 专线可用区2，支持地域：北京二：cn-bj2, 华东（上海2）：cn-sh2, 广东：cn-gd, 亚太： hk, 上海一：cn-sh1, 德国（法兰克福）：ge-fra, 新加坡：sg, 美国（洛杉矶）：us-la， 美国（华盛顿）：us-ws， 日本（东京）：jpn-tky |**Yes**|
 | **Bandwidth** | int | 带宽信息 |**Yes**|
 | **ChargeType** | string | 计费类型 |No|
 | **Quantity** | int | 购买时长 |No|

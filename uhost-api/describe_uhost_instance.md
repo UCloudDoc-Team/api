@@ -39,8 +39,8 @@
 | **Offset** | int | 列表起始位置偏移量，默认为0 |No|
 | **Limit** | int | 返回数据长度，默认为20，最大100 |No|
 | **IsolationGroup** | string | 硬件隔离组id。通过硬件隔离组筛选主机。 |No|
-| **VPCId** | string | vpc id。通过VPC筛选主机。北京一地域无效。 |No|
-| **SubnetId** | string | 子网id。通过子网筛选主机。北京一地域无效。 |No|
+| **VPCId** | string | vpc id。通过VPC筛选主机。华北（北京）地域无效。 |No|
+| **SubnetId** | string | 子网id。通过子网筛选主机。华北（北京）地域无效。 |No|
 | **UDiskIdForAttachment** | string | 要挂载的云盘id，过滤返回能被UDiskId挂载的云主机。目前主要针对rssd云盘使用 |No|
 
 ### 响应字段
@@ -135,8 +135,8 @@
 | **IPId** | string | 外网IP资源ID 。(内网IP无对应的资源ID) |No|
 | **IP** | string | IP地址 |No|
 | **Bandwidth** | int | IP对应的带宽, 单位: Mb  (内网IP不显示带宽信息) |No|
-| **VPCId** | string | IP地址对应的VPC ID。（北京一不支持，字段返回为空） |No|
-| **SubnetId** | string | IP地址对应的子网 ID。（北京一不支持，字段返回为空） |No|
+| **VPCId** | string | IP地址对应的VPC ID。（华北（北京）不支持，字段返回为空） |No|
+| **SubnetId** | string | IP地址对应的子网 ID。（华北（北京）不支持，字段返回为空） |No|
 | **NetworkInterfaceId** | string | 弹性网卡为默认网卡时，返回对应的 ID 值 |No|
 
 #### UHostKeyPair

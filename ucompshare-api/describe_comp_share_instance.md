@@ -133,8 +133,8 @@
 | **IPId** | string | 外网IP资源ID 。(内网IP无对应的资源ID) |No|
 | **IP** | string | IP地址 |No|
 | **Bandwidth** | int | IP对应的带宽, 单位: Mb  (内网IP不显示带宽信息) |No|
-| **VPCId** | string | IP地址对应的VPC ID。（北京一不支持，字段返回为空） |No|
-| **SubnetId** | string | IP地址对应的子网 ID。（北京一不支持，字段返回为空） |No|
+| **VPCId** | string | IP地址对应的VPC ID。（华北（北京）不支持，字段返回为空） |No|
+| **SubnetId** | string | IP地址对应的子网 ID。（华北（北京）不支持，字段返回为空） |No|
 | **NetworkInterfaceId** | string | 弹性网卡为默认网卡时，返回对应的 ID 值 |No|
 
 #### SoftwareAddr
