@@ -79,6 +79,7 @@
 | **Status** | string | 告警状态 |No|
 | **StartAt** | int | 告警触发时间 |No|
 | **EndAt** | int | 告警恢复时间 |No|
+| **ContentAttr** | object | 产品相关的额外属性 |No|
 
 ## 示例
 
