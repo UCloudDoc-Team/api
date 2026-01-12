@@ -15,7 +15,18 @@ curl -X POST \
 https://api.ucloud.cn \
 -H 'Content-Type: application/json' \
 -d '{
-"Action":"GetRegion",
+"Action":"ListRegions",
+"PublicKey":"...",
+"Signature":"..."
+}'
+```
+
+```bash
+curl -X POST \
+https://api.ucloud.cn \
+-H 'Content-Type: application/json' \
+-d '{
+"Action":"ListZones",
 "PublicKey":"...",
 "Signature":"..."
 }'
@@ -37,11 +48,14 @@ ucloud region list
 
 UAPI 是 UCloud API 的在线浏览器，可以在线发起请求以及生成 SDK 样例。
 
-访问 [UAPI](https://console.ucloud.cn/uapi/detail?id=GetRegion) 查询
+访问 [UAPI](https://console.ucloud.cn/uapi/detail?id=ListRegions) 查询
 
 <!-- tabs:end -->
 
-API 文档可参考 [获取地域和可用区列表 - GetRegion](https://docs.ucloud.cn/api/uaccount-api/get_region) 页面。
+API 文档可参考
+
+- [获取地域列表 - ListRegions](https://docs.ucloud.cn/api/uaccount-api/list_regions) 页面。
+- [获取可用区列表 - ListZones](https://docs.ucloud.cn/api/uaccount-api/list_zones) 页面。
 
 ## 地域和可用区列表
 
@@ -49,70 +63,93 @@ API 文档可参考 [获取地域和可用区列表 - GetRegion](https://docs.uc
 
 
 
-共计 **22** 个地域
+
+
+共计 **31** 个地域
 
 | 地域短 ID | 地域名称 |
 | --- | --- |
-| cn-bj2 | 华北一 |
-| cn-gd | 广州 |
-| cn-qz | 福建 |
-| cn-sh2 | 上海二 |
-| cn-wlcb | 华北二 |
-| afr-nigeria | 拉各斯 |
-| bra-saopaulo | 圣保罗 |
-| ge-fra | 法兰克福 |
+| cn-bj1 | 华北（北京） |
+| cn-bj2 | 华北（北京2） |
+| cn-wlcb | 华北（乌兰察布） |
+| cn-wlcb2 | 华北（乌兰察布2） |
+| cn-sh2 | 华东（上海2） |
+| cn-jx | 华东（嘉兴） |
+| cn-sh | 金融云-华东（上海） |
+| cn-hn1 | 华中（濮阳） |
+| cn-gd2 | 华南（广州2） |
+| cn-gd | 华南（广州） |
+| cn-guiyang1 | 西南（贵阳） |
 | hk | 香港 |
-| idn-jakarta | 雅加达 |
-| ind-mumbai | 孟买 |
-| jpn-tky | 东京 |
-| kr-seoul | 首尔 |
-| ph-mnl | 马尼拉 |
+| tw-tp | 台湾（台北） |
 | sg | 新加坡 |
-| th-bkk | 曼谷 |
-| tw-tp | 台北 |
-| uae-dubai | 迪拜 |
-| uk-london | 伦敦 |
-| us-ca | 洛杉矶 |
-| us-ws | 华盛顿 |
-| vn-sng | 胡志明市 |
+| jpn-tky | 日本（东京） |
+| kr-seoul | 韩国（首尔） |
+| th-bkk | 泰国（曼谷） |
+| idn-jakarta | 印度尼西亚（雅加达） |
+| vn-sng | 越南（胡志明） |
+| ph-mnl | 菲律宾（马尼拉） |
+| ind-mumbai | 印度（孟买） |
+| pk-khi | 巴基斯坦（卡拉奇） |
+| us-den | 美国（丹佛） |
+| us-ca | 美国（洛杉矶） |
+| us-ws | 美国（华盛顿） |
+| bra-saopaulo | 巴西（圣保罗） |
+| rus-mosc | 俄罗斯（莫斯科） |
+| ge-fra | 德国（法兰克福） |
+| uk-london | 英国（伦敦） |
+| uae-dubai | 阿联酋（迪拜） |
+| afr-nigeria | 尼日利亚（拉各斯） |
 
 
 ### 各可用区 (Zone) 名称列表
 
 
 
-共计 **30** 个可用区
 
-| 地域名称 | 可用区短 ID | 可用区名称 |
-| --- | --- | --- |
-| 华北一 | cn-bj2-02 | 华北一可用区B |
-| 华北一 | cn-bj2-03 | 华北一可用区C |
-| 华北一 | cn-bj2-04 | 华北一可用区D |
-| 华北一 | cn-bj2-05 | 华北一可用区E |
-| 广州 | cn-gd-02 | 广州可用区B |
-| 福建 | cn-qz-01 | 福建GPU可用区A |
-| 上海二 | cn-sh2-01 | 上海二可用区A |
-| 上海二 | cn-sh2-02 | 上海二可用区B |
-| 上海二 | cn-sh2-03 | 上海二可用区C |
-| 华北二 | cn-wlcb-01 | 华北二可用区A |
-| 拉各斯 | afr-nigeria-01 | 拉各斯可用区A |
-| 圣保罗 | bra-saopaulo-01 | 圣保罗可用区A |
-| 法兰克福 | ge-fra-01 | 法兰克福可用区A |
-| 香港 | hk-01 | 香港可用区A |
-| 香港 | hk-02 | 香港可用区B |
-| 雅加达 | idn-jakarta-01 | 雅加达可用区A |
-| 孟买 | ind-mumbai-01 | 孟买可用区A |
-| 东京 | jpn-tky-01 | 东京可用区A |
-| 首尔 | kr-seoul-01 | 首尔可用区A |
-| 马尼拉 | ph-mnl-01 | 马尼拉可用区A |
-| 新加坡 | sg-01 | 新加坡可用区A |
-| 新加坡 | sg-02 | 新加坡可用区B |
-| 曼谷 | th-bkk-01 | 曼谷可用区A |
-| 曼谷 | th-bkk-02 | 曼谷可用区B |
-| 台北 | tw-tp-01 | 台北可用区A |
-| 迪拜 | uae-dubai-01 | 迪拜可用区A |
-| 伦敦 | uk-london-01 | 伦敦可用区A |
-| 洛杉矶 | us-ca-01 | 洛杉矶可用区A |
-| 华盛顿 | us-ws-01 | 华盛顿可用区A |
-| 胡志明市 | vn-sng-01 | 胡志明市可用区A |
+
+共计 **40** 个可用区
+
+| 可用区短 ID | 可用区名称 |
+| --- | --- |
+| cn-bj1-01 | 华北（北京）可用区A |
+| hk-02 | 香港可用区B |
+| cn-bj2-02 | 华北（北京2）可用区B |
+| cn-bj2-03 | 华北（北京2）可用区C |
+| us-ca-01 | 美国（洛杉矶）可用区A |
+| cn-gd-02 | 华南（广州）可用区B |
+| cn-gd2-01 | 华南（广州2）可用区A |
+| cn-sh-01 | 金融云-华东（上海）可用区A |
+| cn-sh-02 | 金融云-华东（上海）可用区B |
+| cn-sh-03 | 金融云-华东（上海）可用区C |
+| cn-sh2-01 | 华东（上海2）可用区A |
+| cn-sh2-02 | 华东（上海2）可用区B |
+| cn-sh2-03 | 华东（上海2）可用区C |
+| cn-bj2-05 | 华北（北京2）可用区E |
+| us-ws-01 | 美国（华盛顿）可用区A |
+| ge-fra-01 | 德国（法兰克福）可用区A |
+| kr-seoul-01 | 韩国（首尔）可用区A |
+| sg-01 | 新加坡可用区A |
+| rus-mosc-01 | 俄罗斯（莫斯科）可用区A |
+| jpn-tky-01 | 日本（东京）可用区A |
+| tw-tp-01 | 台湾（台北）可用区A |
+| uae-dubai-01 | 阿联酋（迪拜）可用区A |
+| idn-jakarta-01 | 印度尼西亚（雅加达）可用区A |
+| ind-mumbai-01 | 印度（孟买）可用区A |
+| bra-saopaulo-01 | 巴西（圣保罗）可用区A |
+| uk-london-01 | 英国（伦敦）可用区A |
+| afr-nigeria-01 | 尼日利亚（拉各斯）可用区A |
+| vn-sng-01 | 越南（胡志明）可用区A |
+| cn-jx-01 | 华东（嘉兴）可用区A |
+| ph-mnl-01 | 菲律宾（马尼拉）可用区A |
+| th-bkk-02 | 泰国（曼谷）可用区B |
+| cn-wlcb-01 | 华北（乌兰察布）可用区A |
+| sg-02 | 新加坡可用区B |
+| cn-wlcb2-01 | 华北（乌兰察布2）可用区A |
+| cn-wlcb-03 | 华北（乌兰察布）可用区C |
+| cn-hn1-01 | 华中（濮阳）可用区A |
+| cn-guiyang1-01 | 西南（贵阳）可用区A |
+| us-den-01 | 美国（丹佛）可用区A |
+| pk-khi-01 | 巴基斯坦（卡拉奇）可用区A |
+| rus-mosc-02 | 俄罗斯（莫斯科）可用区B |
 
