@@ -52,6 +52,7 @@
 | **NotifyChannelDs.N** | string | 通知渠道。<br />枚举值：<br />sms - 短信<br />email - 邮件<br />webhook - 回调 |No|
 | **CallbackLanguage** | string | 当通知渠道=回调webhook时，需要设置回调语言。<br />枚举值：<br />cn - 中文<br />en - 英文 |No|
 | **CallbackUrls.N** | string | 回调URL地址 |No|
+| **NotifyTemplateId** | string | 通知模板id |No|
 
 ### 响应字段
 
@@ -107,6 +108,7 @@ https://api.ucloud.cn/?Action=CreateAlertStrategy
 &RuleSet.N.Level=jFTScowr
 &RuleSet.N.Status=8
 &RuleSet.N.SendInterval=2
+&NotifyTemplateId=qQmXuJaB
 ```
 
 ### 响应示例
