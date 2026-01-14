@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **ShareBandwidthIds.N** | string | 需要返回的共享带宽Id |No|
 
 ### 响应字段
@@ -55,11 +55,15 @@
 | **IPVersion** | string | 共享带宽类型 |**Yes**|
 | **ShareBandwidth** | int | 共享带宽值(预付费)/共享带宽峰值(后付费), 单位Mbps |No|
 | **ShareBandwidthId** | string | 共享带宽的资源ID |No|
-| **ChargeType** | string | 付费方式, 预付费:Year 按年,Month 按月,Dynamic 按需;后付费:PostPay(按月) |No|
+| **ChargeType** | string | 付费方式, 预付费:Year 按年,Month 按月,Dynamic 按时;后付费:PostPay(按月) |No|
 | **CreateTime** | int | 创建时间, 格式为Unix Timestamp |No|
 | **ExpireTime** | int | 过期时间, 格式为Unix Timestamp |No|
 | **EIPSet** | array[[*EIPSetData*](#EIPSetData)] | EIP信息,详情见 EIPSetData |No|
 | **Name** | string | 共享带宽名称 |No|
+| **Tag** | string | 共享带宽的业务组标识, 缺省值为 "Default" |No|
+| **LimitType** | string | 共享带宽限速类型; 枚举值: "Normal", "SpeedLimit" |No|
+| **AutoRenew** | string | 共享带宽是否开启自动续费；是否开启自动续费；枚举值:"Yes","No" |No|
+| **OperatorName** | string | 共享带宽的线路名称 |No|
 
 #### EIPSetData
 
@@ -68,6 +72,7 @@
 | **Bandwidth** | int | EIP带宽值 |No|
 | **EIPAddr** | array[[*EIPAddrSet*](#EIPAddrSet)] | EIP的IP信息，详情见EIPAddrSet |No|
 | **EIPId** | string | EIP资源Id |No|
+| **FollowShareBandwidth** | boolean | 是否开启EIP跟随共享带宽模式；绑定普通共享带宽和限速开启跟随的场景，FollowShareBandwidth为true，其余场景为false |No|
 
 #### EIPAddrSet
 
