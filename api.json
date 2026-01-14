@@ -589,7 +589,7 @@
           "img": "icon-product__ussl",
           "sublinks": [
             {
-              "links": "/api/usslcertificate-api/README",
+              "links": "/api/ussl-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
