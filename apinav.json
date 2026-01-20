@@ -93,6 +93,10 @@
       {
         "links": "/api/ugn-api/README",
         "name": "云联网"
+      },
+      {
+        "links": "/api/ipv6gw-api/README",
+        "name": "IPV6公网网关"
       }
     ]
   },
