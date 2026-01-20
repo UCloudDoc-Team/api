@@ -47,6 +47,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |全球动态加速 PathX|[文档](/api/pathx-api/)|
 |应用仓库加速 UAAA|[文档](/api/uaaa-api/)|
 |云联网|[文档](/api/ugn-api/)|
+|IPV6公网网关|[文档](/api/ipv6gw-api/)|
 
 ### 数据库
 | 产品 | 相关链接 |
