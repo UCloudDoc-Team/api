@@ -46,9 +46,11 @@
 | **StickinessConfig.Type** | string | （应用型专用）Cookie处理方式。限定枚举值："ServerInsert" / "UserDefined"；默认值为：“ServerInsert” |No|
 | **StickinessConfig.CookieName** | string | （应用型专用）自定义Cookie。当StickinessType取值"UserDefined"时有效；限定字符长度：[0-255] |No|
 | **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭。默认值为：true |No|
-| **HealthCheckConfig.Type** | string | 健康检查方式。应用型限定取值：“Port”/"HTTP"，默认值：“Port” |No|
+| **HealthCheckConfig.Type** | string | 健康检查方式。应用型限定取值：“Port”/"HTTP/GRPC"，默认值：“Port” |No|
 | **HealthCheckConfig.Domain** | string | （应用型专用）HTTP检查域名 |No|
 | **HealthCheckConfig.Path** | string | （应用型专用）HTTP检查路径 |No|
+| **HealthCheckConfig.Method** | string | （应用型专用）HTTP检查方法。只支持GET和HEAD。 |No|
+| **HealthCheckConfig.ResponseCode** | string | （应用型专用）GRPC检查响应码 |No|
 | **CompressionEnabled** | boolean | （应用型专用）是否开启数据压缩功能。目前只支持使用gzip对特定文件类型进行压缩。默认值为：false |No|
 | **HTTP2Enabled** | boolean | （应用型专用）是否开启HTTP/2特性。仅HTTPS监听支持开启；默认值为：false |No|
 | **RedirectEnabled** | boolean | （应用型专用）是否开启HTTP重定向到HTTPS。仅HTTP监听支持开启；默认值为：false |No|
@@ -95,6 +97,8 @@ https://api.ucloud.cn/?Action=CreateListener
 &HTTP2Enabled=false
 &RedirectEnabled=false
 &RedirectPort=1
+&HealthCheckConfig.Method=jGeXqSDV
+&HealthCheckConfig.ResponseCode=qDsVpfRH
 ```
 
 ### 响应示例
