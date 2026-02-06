@@ -44,6 +44,8 @@
 | **Quantity** | int | 购买的时长, 默认: 1; 0-> 购买至月末(0只在月付费有效，其余付费模式传0，实际收费按一个周期计费) |No|
 | **SecGroups.N.SecGroupId** | string | 安全组id |No|
 | **SecGroups.N.Priority** | int | 安全组优先级 |No|
+| **LabelInfos.N.Key** | string | 标签键 |No|
+| **LabelInfos.N.Value** | string | 标签值 |No|
 | **CouponId** | string | 代金券code |No|
 
 ### 响应字段
@@ -78,6 +80,8 @@ https://api.ucloud.cn/?Action=CreateLoadBalancer
 &Quantity=3
 &SecGroups.n.SecGroupId=BnaEMYDa
 &SecGroups.n.Priority=5
+&LabelInfos.n.Key=klFzkSdb
+&LabelInfos.n.Value=JYYmlWYL
 ```
 
 ### 响应示例
