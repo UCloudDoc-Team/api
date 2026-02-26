@@ -10,6 +10,7 @@
     - [批量申请虚拟网卡辅助IP - AllocateBatchSecondaryIp](api/vpc-api/allocate_batch_secondary_ip)
     - [分配ip - AllocateSecondaryIp](api/vpc-api/allocate_secondary_ip)
     - [申请内网虚拟IP - AllocateVIP](api/vpc-api/allocate_vip)
+    - [申请IPv6地址 - AssignIPv6](api/vpc-api/assign_ip_v6)
     - [绑定子网的路由表 - AssociateRouteTable](api/vpc-api/associate_route_table)
     - [绑定资源到安全组 - AssociateSecGroup](api/vpc-api/associate_sec_group)
     - [动态绑定安全组 - AssociateSecGroupDynamic](api/vpc-api/associate_sec_group_dynamic)
