@@ -21,6 +21,7 @@
 |[DescribeUFileReferer](api/ufile-api/describe_ufile_referer)|对象存储防盗链列表|
 |[DescribeUFileSSLCert](api/ufile-api/describe_ufile_ssl_cert)|查询SSL证书|
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
+|[GetBucketQuota](api/ufile-api/get_bucket_quota)|获取bucket配额|
 |[GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)|获取bucket静态网页配置|
 |[GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)|获取bucket每日账单|
 |[GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)|查看日消费报表|
@@ -28,6 +29,7 @@
 |[GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)|获取配额信息|
 |[GetUFileQuotaPrice](api/ufile-api/get_ufile_quota_price)|查询配额支付价格|
 |[GetUFileReport](api/ufile-api/get_ufile_report)|查看配额使用报表|
+|[SetBucketQuota](api/ufile-api/set_bucket_quota)|设置bucket配额|
 |[SetUFileReferer](api/ufile-api/set_ufile_referer)|设置对象存储防盗链|
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
 |[UpdateBucketStaticPageRule](api/ufile-api/update_bucket_static_page_rule)|修改bucket静态网页配置|
