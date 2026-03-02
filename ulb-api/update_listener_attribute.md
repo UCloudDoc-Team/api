@@ -42,12 +42,14 @@
 | **IdleTimeout** | int | 连接空闲超时时间。单位：秒。应用型限定取值：[1-86400] |No|
 | **Scheduler** | string | 负载均衡算法。应用型限定取值："Roundrobin"/"Source"/"WeightRoundrobin"/" Leastconn"/"Backup" |No|
 | **StickinessConfig.Enabled** | boolean | 是否开启会话保持功能。应用型负载均衡实例基于Cookie实现，网络型负载均衡则基于源IP，保证在对应的空闲超时时间内，同一个源IP送到同一个服务节点。默认值为：false |No|
-| **StickinessConfig.Type** | string | （应用型专用）Cookie处理方式。限定枚举值："ServerInsert" / "UserDefined"，默认值为：“ServerInsert” |No|
+| **StickinessConfig.Type** | string | （应用型专用）Cookie处理方式。限定枚举值："ServerInsert" / "UserDefined"，不传值则不修改 |No|
 | **StickinessConfig.CookieName** | string | （应用型专用）自定义Cookie。当StickinessType取值"UserDefined"时有效；限定字符长度：[0-255] |No|
 | **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭；默认值为：true |No|
 | **HealthCheckConfig.Type** | string | 健康检查方式。应用型限定取值：“Port”/"HTTP"；默认值：“Port” |No|
 | **HealthCheckConfig.Domain** | string | （应用型专用）HTTP检查域名	 |No|
 | **HealthCheckConfig.Path** | string | （应用型专用）HTTP检查路径	 |No|
+| **HealthCheckConfig.Method** | string | （应用型专用）HTTP检查方法。只支持GET和HEAD。 |No|
+| **HealthCheckConfig.ResponseCode** | string | （应用型专用）GRPC检查响应码 |No|
 | **CompressionEnabled** | boolean | （应用型专用）是否开启数据压缩功能。目前只支持使用gzip对特定文件类型进行压缩 |No|
 | **HTTP2Enabled** | boolean | （应用型专用）是否开启HTTP/2特性。仅HTTPS监听支持开启 |No|
 | **RedirectEnabled** | boolean | （应用型专用）是否开启HTTP重定向到HTTPS。仅HTTP监听支持开启 |No|
@@ -92,6 +94,8 @@ https://api.ucloud.cn/?Action=UpdateListenerAttribute
 &HTTP2Enabled=true
 &RedirectEnabled=false
 &RedirectPort=5
+&HealthCheckConfig.Method=WRrwHGiX
+&HealthCheckConfig.ResponseCode=jvKXXoHy
 ```
 
 ### 响应示例
