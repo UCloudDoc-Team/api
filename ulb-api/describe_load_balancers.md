@@ -160,6 +160,8 @@
 | **Type** | string | 健康检查方式。应用型限定取值： Port -> 端口检查；HTTP -> HTTP检查； 默认值：Port |No|
 | **Domain** | string | （应用型专用）HTTP检查域名。 当Type为HTTP时，此字段有意义，代表HTTP检查域名 |No|
 | **Path** | string | （应用型专用）HTTP检查路径。当Type为HTTP时，此字段有意义，代表HTTP检查路径 |No|
+| **Method** | string | （应用型专用）HTTP检查方法。当Type为HTTP时，此字段有意义，代表HTTP检查方法 |No|
+| **ResponseCode** | string | （应用型专用）GRPC检查响应码。当Type为GRPC时，此字段有意义，代表GRPC检查响应码 |No|
 
 #### Target
 
