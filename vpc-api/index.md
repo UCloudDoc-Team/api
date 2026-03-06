@@ -5,6 +5,8 @@
 | API | 描述信息 |
 |:---|:---|
 |[AddSnatRule](api/vpc-api/add_snat_rule)|添加出口规则（SNAT规则）|
+|[AddSubnetIPv6](api/vpc-api/add_subnet_ip_v6)|子网关联IPv6|
+|[AddVPCIPv6](api/vpc-api/add_vpc_ip_v6)|VPC关联IPv6网段|
 |[AddVPCNetwork](api/vpc-api/add_vpc_network)|添加VPC网段|
 |[AddWhiteListResource](api/vpc-api/add_white_list_resource)|添加NAT网关白名单|
 |[AllocateBatchSecondaryIp](api/vpc-api/allocate_batch_secondary_ip)|批量申请虚拟网卡辅助IP|
@@ -82,6 +84,7 @@
 |[SetGwDefaultExport](api/vpc-api/set_gw_default_export)|设置NAT网关的默认出口|
 |[SwitchToFirewall](api/vpc-api/switch_to_firewall)|切换至防火墙模式|
 |[SwitchToSecGroup](api/vpc-api/switch_to_sec_group)|切换至安全组模式|
+|[UnassignIPv6](api/vpc-api/unassign_ip_v6)|释放IPv6地址|
 |[UpdateNATGW](api/vpc-api/update_natgw)|更新Nat网关基本信息|
 |[UpdateNATGWPolicy](api/vpc-api/update_natgw_policy)|更新NAT网关端口转发规则|
 |[UpdateNATGWSnatpool](api/vpc-api/update_natgw_snatpool)|更新NAT网关的Snatpool状态|
@@ -96,4 +99,5 @@
 |[UpdateSnatRule](api/vpc-api/update_snat_rule)|更新出口规则（SNAT规则）|
 |[UpdateSubnetAttribute](api/vpc-api/update_subnet_attribute)|更新子网信息|
 |[UpdateVIPAttribute](api/vpc-api/update_vip_attribute)|更新VIP信息|
+|[UpdateVPCIPv6](api/vpc-api/update_vpc_ip_v6)|更新VPC IPv6网段|
 |[UpdateVPCNetwork](api/vpc-api/update_vpc_network)|更新VPC网段|
