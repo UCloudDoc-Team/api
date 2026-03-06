@@ -100,6 +100,8 @@
 | **DiskPriceInfo** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 磁盘价格信息，详见:DiskPriceInfo |No|
 | **PostPayPowerOffBillingResource** | array[[*DiskPriceInfo*](#DiskPriceInfo)] | 后付费关机计费信息列表，详见：详见:DiskPriceInfo |No|
 | **MonitorMessages** | [*MonitorMessage*](#MonitorMessage) | 监控信息，详见：MonitorMessage |No|
+| **DiscountType** | int | 主机折扣类型  1:夜间折扣 2:节日折扣 |No|
+| **StartTime** | int | 主机启动时间 |No|
 
 #### GraphicsMemory
 
