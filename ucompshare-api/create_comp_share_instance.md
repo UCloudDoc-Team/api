@@ -45,10 +45,11 @@
 | **LoginMode** | string | 主机登陆模式。密码（默认选项）: Password |No|
 | **ChargeType** | string | 计费模式。枚举值为: <br /><br /> > Month，按月付费；<br /><br /> > Day，按天付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> > Spot计费为抢占式实例(内测阶段) <br /><br /> 默认为月付 |No|
 | **Quantity** | int | 购买时长。默认:值 1。按小时购买（Dynamic/Postpay）时无需此参数。 月付时，此参数传0，代表购买至月末。 |No|
-| **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake", "Intel/CascadelakeR", "Intel/IceLake", "Amd/Epyc2", "Amd/Auto","Ampere/Auto","Ampere/Altra"],默认值是"Intel/Auto"。 |No|
+| **MinimalCpuPlatform** | string | 最低cpu平台，枚举值["Intel/Auto", "Intel/IvyBridge", "Intel/Haswell", "Intel/Broadwell", "Intel/Skylake", "Intel/Cascadelake", "Intel/CascadelakeR", "Intel/IceLake", "Amd/Epyc2", "Amd/Auto","Ampere/Auto","Ampere/Altra", "Auto"],默认值是"Intel/Auto", "Auto" 自动分配Amd或者Intel cpu平台。 |No|
 | **Password** | string | UHost密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，举例如下：# echo -n Password1 \| base64UGFzc3dvcmQx。 |No|
 | **Name** | string | 实例名称 |No|
 | **SecurityGroupId** | string | 防火墙Id |No|
+| **EnableUS3** | boolean | 是否挂载云存储（仅容器实例支持此操作） |No|
 
 ### 响应字段
 
@@ -88,6 +89,7 @@ https://api.ucloud.cn/?Action=CreateCompShareInstance
 &CPU=1
 &Name=ACsfjhFW
 &SecurityGroupId=DhXQhVSq
+&EnableUS3=true
 ```
 
 ### 响应示例
