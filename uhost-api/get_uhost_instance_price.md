@@ -43,15 +43,16 @@
 | **Disks.N.BackupType** | string | 磁盘备份方案。枚举值：<br /><br /> > NONE，无备份 <br /><br /> > DATAARK，数据方舟 <br /><br /> > SNAPSHOT，快照<br /><br /> 当前磁盘支持的备份模式参考 [磁盘类型](api/uhost-api/disk_type) |No|
 | **ImageId** | string | 镜像Id，可通过 [DescribeImage](api/uhost-api/describe_image) 获取镜像ID， 如果镜像ID不传，系统盘大小必传 |No|
 | **GPU** | int | GPU卡核心数。仅GPU机型支持此字段。 |No|
-| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时付费 // >Preemptive 抢占式实例 <br /><br /> 如果不传某个枚举值，默认返回年付、月付、时付的价格组合集。 |No|
+| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时付费 // >Spot 抢占式实例 <br /><br /> 如果不传某个枚举值，默认返回年付、月付、时付的价格组合集。 |No|
 | **NetCapability** | string | 网络增强。枚举值：Normal，不开启; Super，开启网络增强1.0。 默认值为Normal。 |No|
 | **UHostType** | string | 【待废弃】云主机机型（V1版本概念）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（V2版本概念）。枚举值["N", "C", "G", "O", "OS", "OPRO", "OMAX", "O.BM", "O.EPC"]。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
-| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4","MI100","V100S"] |No|
+| **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S",2080","2080TiS","2080TiPro","3090","4090","4090Pro","A100","A800"] |No|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传0，代表了购买至月末。 |No|
 | **CpuPlatform** | string | 取值"Intel" "Amd"，默认值“Intel” |No|
 | **UDSetUHostInstance** | boolean | 专区云主机。如果要在专区宿主机上创建云主机，该参数可以填写为true |No|
 | **ShowPriceDetails** | boolean | 返回价格详细信息 |No|
+| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。<br />当 MachineType 为 "O"（快杰型）时，支持以下取值： <br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o2i：快杰型 O2 代，Intel 平台 默认值：o1i 或 o1a或o1r（系统将根据资源情况自动选择） <br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
 
 ### 响应字段
 
@@ -113,6 +114,7 @@ https://api.ucloud.cn/?Action=GetUHostInstancePrice
 &GPU=1
 &UDSetUHostInstance=true
 &ShowPriceDetails=true
+&UHostFamily=cFaXhzxa
 ```
 
 ### 响应示例

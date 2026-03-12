@@ -58,6 +58,7 @@ DescribeAvailableInstanceTypes
 | **Name** | string | 机型名称：快杰O型\|O 、快杰共享型\|OM 、快杰内存型\|OMEM 、 快杰PRO型\|OPRO、通用N型\|N、高主频C型\|C和GPU G型\|G等 |No|
 | **Status** | string | 机型状态：可售\|Normal 、 公测\|Beta、售罄\|Soldout、隐藏\|Hidden |No|
 | **CpuPlatforms** | [*CpuPlatforms*](#CpuPlatforms) | 支持的CPU平台，并且按照Intel、AMD和Ampere分类返回 |No|
+| **UHostFamilies** | array[[*UHostFamily*](#UHostFamily)] | 规格族信息 |No|
 | **Disks** | array[[*Disks*](#Disks)] | 磁盘信息。磁盘主要分类如下：云盘\|cloudDisk、普通本地盘\|normalLocalDisk和SSD本地盘\|ssdLocalDisk。<br /><br />其中云盘主要包含普通云盘\|CLOUD_NORMAL、SSD云盘\|CLOUD_SSD和RSSD云盘\|CLOUD_RSSD。普通本地盘只包含普通本地盘\|LOCAL_NORMAL一种。SSD本地盘只包含SSD本地盘\|LOCAL_SSD一种。<br /><br />MinimalSize为磁盘最小值，如果没有该字段，最小值取基础镜像Size值即可（linux为20G，windows为40G）。MaximalSize为磁盘最大值。<br /><br />InstantResize表示系统盘是否允许扩容，如果是本地盘，则不允许扩容，InstantResize为false。<br /><br />Features为磁盘可支持的服务：数据方舟\|DATAARK，快照服务\|SNAPSHOT，加密盘\|Encrypted。 |No|
 | **MachineSizes** | array[[*MachineSizes*](#MachineSizes)] | GPU、CPU和内存信息。Gpu为GPU可支持的规格，Cpu和Memory分别为CPU和内存可支持的规格。如果非GPU机型，GPU为0。<br /><br />MinimalCpuPlatform代表含义这个CPU和内存规格只能在列出来的CPU平台支持。 |No|
 | **Features** | array[[*Features*](#Features)] | 	<br />虚机可支持的特性。目前支持的特性网络增强\|NetCapability、热升级\|Hotplug。<br /><br />网络增强分为关闭\|Normal、网络增强1.0\|Super和网络增强2.0\|Ultra。<br /><br />Name为可支持的特性名称，Modes为可以提供的模式类别等，RelatedToImageFeature为镜像上支持这个特性的标签。例如DescribeImage返回的字段Features包含HotPlug，说明该镜像支持热升级。<br /><br />MinimalCpuPlatform表示这个特性必须是列出来的CPU平台及以上的CPU才支持。 |No|
@@ -74,6 +75,14 @@ DescribeAvailableInstanceTypes
 | **Intel** | array[string] | 返回Intel的CPU平台信息，例如：Intel: ['Intel/CascadeLake','Intel/CascadelakeR','Intel/IceLake']<br /> |No|
 | **Amd** | array[string] | 返回AMD的CPU平台信息，例如：AMD: ['Amd/Epyc2']<br /> |No|
 | **Ampere** | array[string] | 返回Arm的CPU平台信息，例如：Ampere: ['Ampere/Altra'] |No|
+
+#### UHostFamily
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 规格族 |No|
+| **CpuFrequency** | string | CPU频率信息 |No|
+| **CpuPlatforms** | array[[*CpuPlatformWithModels*](#CpuPlatformWithModels)] | CPU平台信息 |No|
 
 #### Disks
 
@@ -144,6 +153,14 @@ DescribeAvailableInstanceTypes
 | **Name** | string | 数据盘类别，包含普通云盘\|CLOUD_NORMAL、SSD云盘\|CLOUD_SSD和RSSD云盘\|CLOUD_RSSD。普通本地盘只包含普通本地盘\|LOCAL_NORMAL一种。SSD本地盘只包含SSD本地盘\|LOCAL_SSD一种。 |No|
 | **MaximalSize** | int | MaximalSize为磁盘最大值 |No|
 | **Features** | array[string] | 数据盘可支持的服务 |No|
+
+#### CpuPlatformWithModels
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | CPU平台 |No|
+| **CpuModels** | array[string] | CPU Model列表 |No|
+| **CpuFrequency** | string | CPU频率 |No|
 
 ## 示例
 
