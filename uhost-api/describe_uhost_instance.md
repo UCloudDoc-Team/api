@@ -65,6 +65,7 @@
 | **UHostType** | string | 【建议不再使用】云主机机型（旧）。参考[云主机机型说明](api/uhost-api/uhost_type)。 |No|
 | **MachineType** | string | 云主机机型（新）。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
 | **CpuPlatform** | string | 云主机CPU平台。参考[云主机机型说明](api/uhost-api/uhost_type#主机概念20版本)。 |No|
+| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。 当 MachineType 为 "O"（快杰型）时，支持以下取值： - o1i：快杰型 O1 代，Intel 平台 - o1a：快杰型 O1 代，AMD 平台 - o1r：快杰型 O1 代，ARM 平台 - o2i：快杰型 O2 代，Intel 平台 默认值：o1i 或 o1a或o1r（系统将根据资源情况自动选择） 当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： - om1i：快杰内存增强型 OM1 代，Intel 平台 - om2i：快杰内存增强型 OM2 代，Intel 平台  |No|
 | **StorageType** | string | 【建议不再使用】主机磁盘类型。 枚举值为：<br /><br /> > LocalDisk，本地磁盘; <br /><br /> > UDisk 云盘。<br /><br />只要有一块磁盘为本地盘，即返回LocalDisk。 |No|
 | **ImageId** | string | 【建议不再使用】主机的系统盘ID。 |No|
 | **BasicImageId** | string | 基础镜像ID（指当前自定义镜像的来源镜像） |No|
