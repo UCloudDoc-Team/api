@@ -54,6 +54,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **DNSZoneName** | string | 域名名称 |**Yes**|
+| **DNSZoneId** | string | UDNS私有域名 Zone ID |**Yes**|
 | **Tag** | string | 业务组 |**Yes**|
 | **Remark** | string | 备注 |**Yes**|
 | **IsRecursionEnabled** | string | 是否支持迭代。枚举值,"enable",支持迭代; "disable",不支持迭代 |**Yes**|
@@ -81,10 +82,10 @@
 ```
 https://api.ucloud.cn/?Action=DescribeUDNSZone
 &Region=cn-zj
-&ProjectId=pjyxtfGa
-&DNSZoneIds.n=fNWcjBlJ
-&Limit=7
-&Offset=4
+&ProjectId=ZTJsiwYH
+&DNSZoneIds.n=ZquihhVy
+&Limit=8
+&Offset=2
 ```
 
 ### 响应示例
@@ -94,24 +95,26 @@ https://api.ucloud.cn/?Action=DescribeUDNSZone
   "Action": "DescribeUDNSZoneResponse",
   "DNSZoneInfos": [
     {
-      "ChargeType": "rLvVRRkH",
+      "ChargeType": "oURoNXte",
       "CreateTime": 2,
-      "DNSZoneName": "aQlOZCUk",
-      "ExpireTime": 2,
-      "IsAutoRenew": "GtbNDZZp",
-      "IsRecursionEnabled": "PapLNxnE",
-      "RecordInfos": "RIPPjBYL",
-      "Remark": "MdLLBszW",
-      "Tag": "FIjdolyS",
+      "DNSZoneName": "uOEUdzku",
+      "ExpireTime": 5,
+      "IsAutoRenew": "VhFoLqxZ",
+      "IsRecursionEnabled": "yhBRgEYF",
+      "RecordInfos": [
+        "KFJzEyvd"
+      ],
+      "Remark": "pKmgGIuE",
+      "Tag": "EukQTqZJ",
       "VPCInfos": [
         {
-          "Name": "bUWguZkb",
+          "Name": "cRAQsXAx",
           "Network": [
-            "MvWnAlnS"
+            "bISdvCpi"
           ],
-          "VPCId": "NOmAbXZm",
-          "VPCProjectId": "klzERHqX",
-          "VPCType": "bFrWctwm"
+          "VPCId": "NQaNNAyK",
+          "VPCProjectId": "eITXvWzB",
+          "VPCType": "YRTvvfEZ"
         }
       ]
     }
