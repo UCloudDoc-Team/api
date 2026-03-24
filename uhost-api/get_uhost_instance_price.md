@@ -72,11 +72,9 @@
 |:---|:---|:---|:---|
 | **ChargeType** | string | 计费类型。Year，Month，Dynamic |**Yes**|
 | **Price** | float | 价格，单位: 元，保留小数点后两位有效数字 |**Yes**|
-| **OriginalPrice** | float | 限时优惠的折前原价（即列表价乘以商务折扣后的单价）。 |**Yes**|
-| **ListPrice** | float | 产品列表价。 |No|
+| **OriginalPrice** | float | 限时优惠的折前原价。 |**Yes**|
 | **PriceDetail** | [*PriceDetail*](#PriceDetail) | 价格详细信息（只有询价接口返回）。 |No|
 | **OriginalPriceDetail** | [*PriceDetail*](#PriceDetail) | 原价详细信息（只有询价接口返回）。 |No|
-| **ListPriceDetail** | [*PriceDetail*](#PriceDetail) | 列表价详细信息（只有询价接口返回）。 |No|
 
 #### PriceDetail
 
