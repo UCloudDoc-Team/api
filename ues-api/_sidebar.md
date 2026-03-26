@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ues">ES服务 ElasticSearch</div>
+<div class="sidebar_title icon__ues">云搜索服务 Cloud Search Service</div>
 
 
 - [概览](api/ues-api/README.md)
