@@ -57,7 +57,7 @@
 | **ClusterType** | string | 集群类型，ReplicaSet :副本集，SharedCluster：分片集 |No|
 | **ClusterId** | string | 集群ID |No|
 | **InstanceName** | string | 实例名称 |No|
-| **State** | string | 副本集/分片集群状态标记 Initing：初始化中，InitFailed：安装失败，Starting：启动中，StartFailed：启动失败，Running：运行，Stopping：关闭中，Stopped：已关闭, StopFailed：关闭失败，Deleting：删除中，Deleted：已删除，DeleteFailed：删除失败，Restarting：重启中，RestartFailed：重启失败,Upgrading: 升降级中，UpgradeFailed: 升降级失败,Switching:主备切换中 |No|
+| **State** | string | 副本集/分片集群状态标记 Initing：初始化中，InitFailed：安装失败，Starting：启动中，StartFailed：启动失败，Running：运行，Stopping：关闭中，Stopped：已关闭, StopFailed：关闭失败，Deleting：删除中，Deleted：已删除，DeleteFailed：删除失败，Restarting：重启中，RestartFailed：重启失败,Upgrading: 升降级中，UpgradeFailed: 升降级失败,Switching:主备切换中，UpdatingSSL：修改SSL中，UpdateSSLFail：修改SSL失败 |No|
 | **DBVersion** | string | 副本集的Mongodb的版本 |No|
 | **DiskSpace** | int | 磁盘空间(GB), 默认根据配置机型 |No|
 | **MachineTypeId** | string | 计算规格 |No|
@@ -79,6 +79,8 @@
 | **ConfigComputeType** | [*MongodbMachineType*](#MongodbMachineType) | 配置节点计算规格 |No|
 | **MongosComputeType** | [*MongodbMachineType*](#MongodbMachineType) | 路由节点计算规格 |No|
 | **CrossZones** | array[string] | 跨用区列表 |No|
+| **EnableSSL** | int | 是否开启了SSL；1->未开启 2->开启 |No|
+| **SSLExpirationTime** | int | SSL到期时间 |No|
 
 #### ReplicaInfo
 
