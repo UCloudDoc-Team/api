@@ -33,6 +33,13 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list)   |**Yes**|
 | **Name** | string | apikey名称 |**Yes**|
+| **ModelverseDisabled** | int | 是否modelverse可用 0: 启用 1: 禁用 |No|
+| **SandBoxDisabled** | int | 是否沙盒可用 0: 启用 1: 禁用(astraflow 沙盒控制未上线，暂时无效) |No|
+| **DailyLimitAmount** | string | 日限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **MonthlyLimitAmount** | string | 月限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **GrantAllModels** | boolean | 全部模型访问开关，开启不受 GrantedModels 参数控制，关闭只能访问 GrantedModels 中添加模型 |No|
+| **GrantedModels** | string | 授权模型，内容为数组格式。当 GrantAllModels 为false时 当前key只可访问数组中模型。例：["deepseek-ai/DeepSeek-V3.2-Think"] |No|
+| **IPWhitelist** | string | ip白名单，换行分割的多组ip。支持IPv4和网段,输入后回车生效,最多100个, 示例:<br />﻿<br />192.168.1.1<br />192.168.1.10-192.168.1.100<br />192.168.1.10/24 |No|
 
 ### 响应字段
 
@@ -42,6 +49,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Data** | [*APIKey*](#APIKey) | apikey |No|
+| **TotalCount** | int | 总条数 |No|
 
 #### 数据模型
 
@@ -50,6 +58,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **IPWhitelist** | string | ip白名单，换行分割的多组ip。支持IPv4和网段,输入后回车生效,最多100个, 示例: ﻿ 192.168.1.1 192.168.1.10-192.168.1.100 192.168.1.10/24 |**Yes**|
 | **KeyId** | string | 资源ID |No|
 | **Name** | string | 名称 |No|
 | **ChannelId** | int | 渠道id |No|
@@ -59,7 +68,12 @@
 | **CreateTime** | int | 创建时间 |No|
 | **Key** | string | 密钥值 |No|
 | **ExpireTime** | int | 过期时间的unix时间戳，-1 用不过期 |No|
-| **GrantedModels** | string | 授权的模型，英文逗号分隔，all表示所有模型都有权限 |No|
+| **ModelverseDisabled** | int | 是否modelverse可用 0: 启用 1: 禁用 |No|
+| **SandBoxDisabled** | int | 是否沙盒可用 0: 启用 1: 禁用(astraflow 沙盒控制未上线，暂时无效) |No|
+| **DailyLimitAmount** | string | 日限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **MonthlyLimitAmount** | string | 月限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **GrantAllModels** | boolean | 全部模型访问开关，开启不受 GrantedModels 参数控制，关闭只能访问 GrantedModels 中添加模型 |No|
+| **GrantedModels** | array[string] | 授权的模型，英文逗号分隔，all表示所有模型都有权限 |No|
 
 ## 示例
 
@@ -69,6 +83,13 @@
 https://api.ucloud.cn/?Action=CreateUMInferAPIKey
 &Name=ZBipIhpf
 &ProjectId=ljHegiFu
+&ModelverseDisabled=SnDXIFbJ
+&SandBoxDisabled=XzXxkYAV
+&DailyLimitAmount=PpNpafNH
+&MonthlyLimitAmount=zEOmxHqX
+&GrantAllModels=NfSGzRqO
+&GrantedModels=dexajLHC
+&IPWhitelist=MNehDXUN
 ```
 
 ### 响应示例
@@ -77,7 +98,8 @@ https://api.ucloud.cn/?Action=CreateUMInferAPIKey
 {
   "Action": "CreateUMInferAPIKeyResponse",
   "Data": "SaaAxTCi",
-  "RetCode": 0
+  "RetCode": 0,
+  "TotalCount": 1
 }
 ```
 
