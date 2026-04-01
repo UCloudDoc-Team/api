@@ -33,7 +33,14 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list)   |**Yes**|
 | **KeyId** | string | apikey的id |**Yes**|
-| **Name** | string | 更新的名称 |**Yes**|
+| **Name** | string | 更新的名称 |No|
+| **ModelverseDisabled** | int | 是否modelverse可用 0: 启用 1: 禁用 |No|
+| **SandBoxDisabled** | int | 是否沙盒可用 0: 启用 1: 禁用 |No|
+| **DailyLimitAmount** | string | 日限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **MonthlyLimitAmount** | string | 月限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **GrantAllModels** | boolean | 全部模型访问开关，开启不受 GrantedModels 参数控制，关闭只能访问 GrantedModels 中添加模型 |No|
+| **GrantedModels** | string | 授权模型，内容为数组格式。当 GrantAllModels 为false时 当前key只可访问数组中模型。例：["deepseek-ai/DeepSeek-V3.2-Think"] |No|
+| **IPWhitelist** | string | ip白名单，换行分割的多组ip。支持IPv4和网段,输入后回车生效,最多100个, 示例: ﻿ 192.168.1.1 192.168.1.10-192.168.1.100 192.168.1.10/24 |No|
 
 ### 响应字段
 
@@ -56,6 +63,13 @@ https://api.ucloud.cn/?Action=UpdateUMInferAPIKey
 &KeyId=RpSGgoRp
 &Name=BcePnSjI
 &ProjectId=pAyypIxy
+&ModelverseDisabled=XRkPwdKe
+&SandBoxDisabled=asNBIzNq
+&DailyLimitAmount=vWvOaWEK
+&MonthlyLimitAmount=ldtrmGHL
+&GrantAllModels=true
+&GrantedModels=XtnFKsgy
+&IPWhitelist=iBTshYVE
 ```
 
 ### 响应示例
