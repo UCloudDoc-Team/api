@@ -4,8 +4,14 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[AttachCompshareDisk](api/ucompshare-api/attach_compshare_disk)|挂载云硬盘|
+|[AttachUS3](api/ucompshare-api/attach_us3)|挂载us3|
+|[CheckCompShareNetOptimizer](api/ucompshare-api/check_comp_share_net_optimizer)|检查算力平台账号是否开通访问加速|
+|[CopyCompShareCustomImage](api/ucompshare-api/copy_comp_share_custom_image)|复制算力平台镜像|
 |[CreateCompShareCustomImage](api/ucompshare-api/create_comp_share_custom_image)|制作算力平台实例自制镜像|
 |[CreateCompShareInstance](api/ucompshare-api/create_comp_share_instance)|创建轻量级算力平台主机资源|
+|[CreateCompShareTeam](api/ucompshare-api/create_comp_share_team)|创建团队|
+|[CreateCompShareTeamRelation](api/ucompshare-api/create_comp_share_team_relation)|发送团队邀请|
 |[DescribeAvailableCompShareInstanceTypes](api/ucompshare-api/describe_available_comp_share_instance_types)|获取某个地域下可售/售罄的所有机型信息|
 |[DescribeCommunityImages](api/ucompshare-api/describe_community_images)|获取社区镜像列表|
 |[DescribeCompShareCustomImages](api/ucompshare-api/describe_comp_share_custom_images)|获取自制镜像列表|
