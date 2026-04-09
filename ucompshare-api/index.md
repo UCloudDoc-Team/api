@@ -12,10 +12,15 @@
 |[CreateCompShareInstance](api/ucompshare-api/create_comp_share_instance)|创建轻量级算力平台主机资源|
 |[CreateCompShareTeam](api/ucompshare-api/create_comp_share_team)|创建团队|
 |[CreateCompShareTeamRelation](api/ucompshare-api/create_comp_share_team_relation)|发送团队邀请|
+|[DeleteCompShareStopScheduler](api/ucompshare-api/delete_comp_share_stop_scheduler)|删除实例定时关机任务|
+|[DeleteCompShareTeam](api/ucompshare-api/delete_comp_share_team)|删除团队|
+|[DeleteCompshareDisk](api/ucompshare-api/delete_compshare_disk)|删除算力磁盘|
 |[DescribeAvailableCompShareInstanceTypes](api/ucompshare-api/describe_available_comp_share_instance_types)|获取某个地域下可售/售罄的所有机型信息|
 |[DescribeCommunityImages](api/ucompshare-api/describe_community_images)|获取社区镜像列表|
 |[DescribeCompShareCustomImages](api/ucompshare-api/describe_comp_share_custom_images)|获取自制镜像列表|
 |[DescribeCompShareGpuInventory](api/ucompshare-api/describe_comp_share_gpu_inventory)|查询GPU卡余量库存|
+|[DescribeCompShareImageShareAccounts](api/ucompshare-api/describe_comp_share_image_share_accounts)|获取镜像共享的账号列表|
+|[DescribeCompShareImageTags](api/ucompshare-api/describe_comp_share_image_tags)|获取镜像标签列表|
 |[DescribeCompShareImages](api/ucompshare-api/describe_comp_share_images)|获取算力平台镜像信息|
 |[DescribeCompShareInstance](api/ucompshare-api/describe_comp_share_instance)|获取用户所有地域的主机资源列表|
 |[DescribeCompShareSupportZone](api/ucompshare-api/describe_comp_share_support_zone)|获取支持的可用区信息列表|
