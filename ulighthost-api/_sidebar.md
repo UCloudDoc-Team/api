@@ -10,6 +10,7 @@
     - [获取轻量应用主机镜像列表 - DescribeULHostImage](api/ulighthost-api/describe_ul_host_image)
     - [获取轻量应用云主机列表 - DescribeULHostInstance](api/ulighthost-api/describe_ul_host_instance)
     - [获取轻量应用云主机套餐价格 - GetULHostInstancePrice](api/ulighthost-api/get_ul_host_instance_price)
+    - [获取轻量云主机OpenClaw渠道二维码 - GetULHostOpenClawChannelQRCode](api/ulighthost-api/get_ul_host_open_claw_channel_qr_code)
     - [获取主机续费价格 - GetULHostRenewPrice](api/ulighthost-api/get_ul_host_renew_price)
     - [修改轻量应用主机属性信息 - ModifyULHostAttribute](api/ulighthost-api/modify_ul_host_attribute)
     - [模拟主机掉电 - PoweroffULHostInstance](api/ulighthost-api/poweroff_ul_host_instance)
@@ -19,3 +20,4 @@
     - [启动轻量应用主机 - StartULHostInstance](api/ulighthost-api/start_ul_host_instance)
     - [关闭轻量应用云主机 - StopULHostInstance](api/ulighthost-api/stop_ul_host_instance)
     - [删除轻量应用云主机 - TerminateULHostInstance](api/ulighthost-api/terminate_ul_host_instance)
+    - [更新轻量云主机OpenClaw网关 - UpdateULHostOpenClawGateway](api/ulighthost-api/update_ul_host_open_claw_gateway)
