@@ -36,6 +36,7 @@
 | **MaxResults** | int | 一次查询的最大记录数，最大值是50 |No|
 | **NextToken** | string | 用于于请求下一页查询结果。请求参数必须与上次请求一致 |No|
 | **ResourceID** | string | 资源 ID，用于搜索某个资源关联的操作日志 |No|
+| **AccessKeyIDs.N** | string | Api Key，最大值是50 |No|
 
 ### 响应字段
 
@@ -61,6 +62,8 @@
 | **UserName** | string | 用户名 |No|
 | **UserEmail** | string | 用户邮箱 |No|
 | **RelatedResource** | array[[*RelatedResource*](#RelatedResource)] | 操作事件关联的资源 |No|
+| **RemoteIP** | string | 请求源IP |No|
+| **AccessKeyID** | string | Api Key |No|
 
 #### RelatedResource
 
@@ -81,6 +84,7 @@ https://api.ucloud.cn/?Action=GetUserOperationEvents
 &MaxResults=7
 &NextToken=nLgQPnKo
 &ResourceID=CfrwODDl
+&AccessKeyIDs=XkYCKzZG
 ```
 
 ### 响应示例
