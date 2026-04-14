@@ -3,7 +3,6 @@
 - [概览](api/udts-api/README.md)
 - [索引](api/udts-api/index.md)
 - **API**
-    - [检查任务 - CheckUDTSTask](api/udts-api/check_udts_task)
     - [创建UDTS任务 - CreateUDTSTask](api/udts-api/create_udts_task)
     - [获取任务历史状态 - GetUDTSTaskHistory](api/udts-api/get_udts_task_history)
     - [查看服务状态 - GetUDTSTaskStatus](api/udts-api/get_udts_task_status)

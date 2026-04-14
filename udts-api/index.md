@@ -4,7 +4,6 @@
 
 | API | 描述信息 |
 |:---|:---|
-|[CheckUDTSTask](api/udts-api/check_udts_task)|检查任务|
 |[CreateUDTSTask](api/udts-api/create_udts_task)|创建UDTS任务|
 |[GetUDTSTaskHistory](api/udts-api/get_udts_task_history)|获取任务历史状态|
 |[GetUDTSTaskStatus](api/udts-api/get_udts_task_status)|查看服务状态|

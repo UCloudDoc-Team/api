@@ -32,11 +32,11 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 任务名称，长度不能超过 128 |**Yes**|
-| **Type** | string | 任务类型，transfer(数据传输) 或 integration(数据集成) |**Yes**|
+| **Type** | string | 任务类型，唯一值：transfer(数据传输)  |**Yes**|
 | **Source.N.Mode** | string | 任务模式，值可以是 full, incremental, full+incremental, bidirectional |**Yes**|
 | **Source.N.DataType** | string | 数据库类型，比如 mysql |**Yes**|
 | **Source.N.NWType** | string | 源网络类型，可以是 public,user,dedicated_line |**Yes**|
-| **Source.N.ServiceType** | string | 服务类型，值可以是small、medium、large，分别对应“基础版”、“轻量版”和“旗舰版” |**Yes**|
+| **Source.N.ServiceType** | string | 服务类型，值可以是small/medium/large/2xlarge/4xlarge |**Yes**|
 | **Source.N.BandwidthLimit** | int | 源端限速值，单位为  MB/s |No|
 | **Source.N.MySQLNode.Host** | string | 源数据库地址 |No|
 | **Source.N.MySQLNode.Port** | int | 源数据库端口 |No|
@@ -49,20 +49,10 @@
 | **Source.N.MySQLNode.Table** | string | 需要迁移的 table 名 |No|
 | **Source.N.MySQLNode.SyncData.BinlogName** | string | 增量时需要指定的 binlog name，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
 | **Source.N.MySQLNode.SyncData.BinlogPos** | int | 增量时需要指定的 binlog pos，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
-| **Source.N.MySQLNode.SyncData.ServerID** | int | 增量时需要指定的 serverID，不能和现有的 slave 重复，预检查时会检查该值 |No|
 | **Source.N.MySQLNode.SyncData.BinlogGTID** | string | 增量时需要指定的 binlog gtid，可以通过 show master status 获取，或者全量+增量任务会自动设置 |No|
-| **Source.N.MySQLNode.QueryData.N.DBName** | string | 数据集成时需要迁移的 DB 名 |No|
-| **Source.N.MySQLNode.QueryData.N.NewDBName** | string | 数据集成时迁移后的 DB 名 |No|
-| **Source.N.MySQLNode.QueryData.N.TableData.TableNames** | string | 暂时未使用该字段 |No|
-| **Source.N.MySQLNode.QueryData.N.TableData.ExcludeTables** | boolean | 暂时未使用该字段 |No|
-| **Source.N.MySQLNode.QueryData.N.TableMaps.N.TableName** | string | 数据集成时需要迁移的 Table 名 |No|
-| **Source.N.MySQLNode.QueryData.N.TableMaps.N.NewTableName** | string | 数据集成时迁移后的 Table 名 |No|
-| **Source.N.MySQLNode.KeepExistData** | boolean | 是否保留原有数据，只有数据集成时该参数才有效 |No|
-| **Source.N.MySQLNode.DupAction** | string | 重复数据处理规则，数据集成时该参数才有效，值为 ignore或者replace |No|
 | **Source.N.MySQLNode.SSLSecurity.SSLCA** | string | ca 证书，目前仅支持 pem 格式; 需要将文件内容 base64 |No|
 | **Source.N.MySQLNode.SSLSecurity.SSLCert** | string | 客户端证书; 需要将文件内容 base64   |No|
 | **Source.N.MySQLNode.SSLSecurity.SSLKey** | string | 客户端私钥， 需要将文件内容 base64   |No|
-| **Target.Mode** | string |  |**Yes**|
 | **Target.DataType** | string | 目标数据库类型，比如 mysql |**Yes**|
 | **Target.NWType** | string | 目标 db 网络类型，目前仅支持 user |**Yes**|
 | **Target.BandwidthLimit** | string | 目标端限速，单位为 MB/s |No|
@@ -74,12 +64,10 @@
 | **Target.MySQLNode.SubnetId** | string | 目标数据库子网 ID ,比如 subnet-zl44fktq |No|
 | **Target.MySQLNode.DataRegion** | string | 目标数据库地域，比如 cn-bj2 |No|
 | **Target.MySQLNode.NoBinlog** | boolean | 是否在全量过程中，临时禁用目标 MySQL 产生 binlog，在目标磁盘空间不足，或者需要获取更快的迁移速度时可以使用，该参数会破坏目标 MySQL 的高可用 |No|
+| **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费；Dynamic, 按需付费(需开启权限)；默认为按月付费 |**Yes**|
 | **MaxRetryCount** | string | 重试次数，最大为 5。 默认为0 |No|
-| **Query** | string | 暂时未使用该字段 |No|
-| **IsUnidirection** | string | 暂时未使用该字段 |No|
 | **Remark** | string | 备注信息，长度不能大于 255 |No|
 | **Quantity** | int | 购买时长, 默认: 1 |No|
-| **ChargeType** | string | 付费方式, 枚举值为: Year, 按年付费; Month, 按月付费；Dynamic, 按需付费(需开启权限)；默认为按月付费 |No|
 | **CouponId** | string | 代金券ID, 默认不使用 |No|
 
 ### 响应字段
@@ -89,11 +77,17 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Data** | object |  |**Yes**|
-| **TaskId** | string | 任务ID，目前用于控制台操作日志 |No|
+| **Data** | [*CreateUDTSTaskResData*](#CreateUDTSTaskResData) | 创建任务返回信息 |**Yes**|
+| **TaskId** | array[string] | 任务ID，目前用于控制台操作日志 |No|
+
+#### 数据模型
 
 
+#### CreateUDTSTaskResData
 
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **TaskId** | string | 任务ID |No|
 
 ## 示例
 
@@ -150,7 +144,6 @@ https://api.ucloud.cn/?Action=CreateUDTSTask
 &Source.N.MySQLNode.QueryData.N.TableMaps.N.NewTableName=Rkpkgosy
 &Source.N.MySQLNode.KeepExistData=false
 &Source.N.MySQLNode.DupAction=kNJFnpEk
-&Source.N.MySQLNode.NoBinlog=lBRXNtLr
 &Remark=EdjTSZqb
 &Source.N.Mode=GCHwvAzt
 &Source.N.DataType=KgnzrHgW
@@ -175,7 +168,6 @@ https://api.ucloud.cn/?Action=CreateUDTSTask
 &Source.N.MySQLNode.QueryData.N.TableMaps.N.NewTableName=bpOzaOOY
 &Source.N.MySQLNode.KeepExistData=true
 &Source.N.MySQLNode.DupAction=qpKOxddJ
-&Source.N.MySQLNode.NoBinlog=ZmIFChsZ
 &Target.Mode=RboYuTfl
 &Target.DataType=lGvNkvQC
 &Target.MySQLNode.Host=WHsxlqhF
@@ -209,7 +201,6 @@ https://api.ucloud.cn/?Action=CreateUDTSTask
 &Source.N.MySQLNode.QueryData.N.TableMaps.N.NewTableName=tNKMGxTU
 &Source.N.MySQLNode.KeepExistData=true
 &Source.N.MySQLNode.DupAction=QjlOgJIR
-&Source.N.MySQLNode.NoBinlog=UNQtIBlq
 &Target.Mode=bxjaBkue
 &Target.DataType=rxOuZsXz
 &Target.MySQLNode.Host=uCNhKVcq
