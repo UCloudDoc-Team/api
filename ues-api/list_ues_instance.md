@@ -64,9 +64,13 @@
 | **State** | string | 服务集群状态 |**Yes**|
 | **UESInstanceId** | string | 服务集群ID标识 |**Yes**|
 | **UESInstanceName** | string | 服务集群名称 |**Yes**|
+| **AppName** | string | 应用名称 |No|
 | **SubnetId** | string | 子网ID标识 |No|
 | **Tag** | string | 业务组 |No|
 | **VPCId** | string | VPCID标识 |No|
+| **Vip** | string | VIP地址信息 |No|
+| **IsSecGroup** | boolean | 是否开启安全组 |No|
+| **MultiZones** | array[string] | 多可用区 |No|
 
 ## 示例
 
