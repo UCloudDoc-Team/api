@@ -34,11 +34,11 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 副本集实例名称，至少6位 |**Yes**|
-| **DBVersion** | string | 副本集的Mongodb的版本，例如MongoDB_3_6, MongoDB_4_2 |**Yes**|
+| **DBVersion** | string | 副本集的Mongodb的版本，例如MongoDB 3.6, MongoDB 4.2 |**Yes**|
 | **AdminPassword** | string | 管理员密码 |**Yes**|
-| **DiskSpace** | int | 磁盘空间(GB) |**Yes**|
-| **MachineTypeId** | string | 机型配置 |**Yes**|
-| **NodeCount** | int | 副本集节点数量 |**Yes**|
+| **DiskSpace** | int | 磁盘空间 (GB)：取值范围 20\~32000，仅支持 10 的整数倍 |**Yes**|
+| **MachineTypeId** | string | 机型配置,如 o.mongo2m.medium |**Yes**|
+| **NodeCount** | int | 副本集节点数量：仅支持 3、5、7 奇数节点 |**Yes**|
 | **ListenPort** | int | mongo服务端口 |No|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
