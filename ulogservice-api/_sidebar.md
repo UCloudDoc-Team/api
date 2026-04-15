@@ -6,5 +6,8 @@
 - **API**
     - [创建日志集 - CreateULogServiceLogSet](api/ulogservice-api/create_u_log_service_log_set)
     - [创建ULogService主题 - CreateULogServiceTopic](api/ulogservice-api/create_u_log_service_topic)
+    - [删除日志集 - DeleteULogServiceLogSet](api/ulogservice-api/delete_u_log_service_log_set)
+    - [删除ULogService主题 - DeleteULogServiceTopic](api/ulogservice-api/delete_u_log_service_topic)
     - [查询日志集列表 - ListULogServiceLogSet](api/ulogservice-api/list_u_log_service_log_set)
+    - [获取ULogService主题 - ListULogServiceTopic](api/ulogservice-api/list_u_log_service_topic)
     - [查询ULogService日志 - QueryULogServiceLog](api/ulogservice-api/query_u_log_service_log)

@@ -39,8 +39,8 @@
 | **MongosNodeCount** | int | Mongos节点数量 |**Yes**|
 | **ShardCount** | int | 分片数量 |**Yes**|
 | **NodeCount** | int | 每个分片中节点数量 |**Yes**|
-| **DiskSpace** | int | 数据节点磁盘空间(GB) |**Yes**|
-| **MachineTypeId** | string | 数据节点机型配置 |**Yes**|
+| **DiskSpace** | int | 数据节点磁盘空间(GB):取值范围 20\~32000，仅支持 10 的整数倍 |**Yes**|
+| **MachineTypeId** | string | 数据节点机型配置,如 o.mongo2m.medium |**Yes**|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
 | **Tag** | string | 实例所在的业务组名称 |No|
