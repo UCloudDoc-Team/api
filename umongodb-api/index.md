@@ -19,6 +19,7 @@
 |[ListUMongoDBConfigTemplate](api/umongodb-api/list_umon_go_db_config_template)|拉取配置模板|
 |[ListUMongoDBInstances](api/umongodb-api/list_umon_go_db_instances)|获取副本集/分片集群列表|
 |[ListUMongoDBLogPackage](api/umongodb-api/list_umon_go_db_log_package)|日志打包列表|
+|[ListUMongoDBMachineSpec](api/umongodb-api/list_umon_go_db_machine_spec)|获取UMongoDB支持机器类型列表|
 |[ListUMongoDBMachineType](api/umongodb-api/list_umon_go_db_machine_type)|获取UmongDB支持机器类型列表|
 |[ListUMongoDBVersion](api/umongodb-api/list_umon_go_db_version)|获取UMongoDB支持版本列表|
 |[ModifyUMongoDBAdminPassword](api/umongodb-api/modify_umon_go_db_admin_password)|修改MongoDB集群root密码|
