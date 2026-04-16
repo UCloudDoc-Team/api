@@ -4,6 +4,7 @@
 - [索引](api/udts-api/index.md)
 - **API**
     - [创建UDTS任务 - CreateUDTSTask](api/udts-api/create_udts_task)
+    - [删除UDTS任务 - DeleteUDTSTask](api/udts-api/delete_udts_task)
     - [获取任务历史状态 - GetUDTSTaskHistory](api/udts-api/get_udts_task_history)
     - [查看服务状态 - GetUDTSTaskStatus](api/udts-api/get_udts_task_status)
     - [获取 Task 列表信息 - ListUDTSTask](api/udts-api/list_udts_task)
