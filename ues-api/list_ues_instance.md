@@ -1,8 +1,8 @@
-# 服务集群列表 - ListUESInstance
+# 实例列表 - ListUESInstance
 
 ## 简介
 
-获取服务集群列表
+获取实例列表
 
 
 
@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 数据偏移量, 默认为0 |No|
 | **Limit** | int | 返回数据长度, 默认为30 |No|
 
@@ -43,8 +43,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ClusterSet** | array[[*ClusterInfo*](#ClusterInfo)] | 服务集群信息列表 |**Yes**|
-| **TotalCount** | int | 服务集群个数 |**Yes**|
+| **ClusterSet** | array[[*ClusterInfo*](#ClusterInfo)] | 实例信息列表 |**Yes**|
+| **TotalCount** | int | 实例个数 |**Yes**|
 
 #### 数据模型
 
@@ -59,18 +59,22 @@
 | **CreateTime** | int | 创建时间 |**Yes**|
 | **ExpireTime** | int | 失效时间 |**Yes**|
 | **NodeCount** | int | 节点个数，默认为集群大小 |**Yes**|
-| **RunTime** | int | 服务集群运行时长 |**Yes**|
-| **ServiceVersion** | string | 服务版本号 |**Yes**|
-| **State** | string | 服务集群状态 |**Yes**|
-| **UESInstanceId** | string | 服务集群ID标识 |**Yes**|
-| **UESInstanceName** | string | 服务集群名称 |**Yes**|
-| **AppName** | string | 应用名称 |No|
+| **RunTime** | int | 实例运行时长 |**Yes**|
+| **AppVersion** | string | 应用服务版本号 |**Yes**|
+| **State** | string | 实例状态 |**Yes**|
+| **InstanceId** | string | 实例资源ID |**Yes**|
+| **InstanceName** | string | 实例名称 |**Yes**|
+| **AppName** | string | 应用名称 |**Yes**|
+| **UESInstanceId** | string | 服务集群ID标识（弃用） |No|
+| **UESInstanceName** | string | 服务集群名称（弃用） |No|
+| **ServiceVersion** | string | 服务版本号（弃用） |No|
 | **SubnetId** | string | 子网ID标识 |No|
 | **Tag** | string | 业务组 |No|
 | **VPCId** | string | VPCID标识 |No|
 | **Vip** | string | VIP地址信息 |No|
 | **IsSecGroup** | boolean | 是否开启安全组 |No|
 | **MultiZones** | array[string] | 多可用区 |No|
+| **Resizable** | boolean | 是否支持改配 |No|
 
 ## 示例
 
@@ -211,6 +215,7 @@ https://api.ucloud.cn/?Action=ListUESInstance
       "Zone": "EcfVBAaM"
     }
   ],
+  "Message": "ePkiOQwQ",
   "RetCode": 0,
   "TotalCount": 1
 }
