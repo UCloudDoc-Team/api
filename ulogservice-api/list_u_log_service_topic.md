@@ -33,6 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **LogSetId** | string | 日志集ID |**Yes**|
 | **Offset** | int | 分页起始条目数, 默认为0 |No|
 | **Limit** | int | 分页限制数,默认为30 |No|
 
@@ -67,11 +68,10 @@
 ```
 https://api.ucloud.cn/?Action=ListULogServiceTopic
 &Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=NRXJwQMB
-&InstanceId=pcKZldps
-&Offset=6
-&Limit=2
+&ProjectId=raNQPRoW
+&Offset=9
+&Limit=8
+&LogSetId=PBDqjvGP
 ```
 
 ### 响应示例
@@ -80,10 +80,17 @@ https://api.ucloud.cn/?Action=ListULogServiceTopic
 {
   "Action": "ListULogServiceTopicResponse",
   "Data": [
-    "VAUNeUyJ"
+    {
+      "IsReserved": 9,
+      "ReserveAge": 7,
+      "TopicDesc": "UUKSTZpE",
+      "TopicId": "VqYedVYH",
+      "TopicName": "RuCyZzyq",
+      "TopicShardNum": 5
+    }
   ],
   "RetCode": 0,
-  "TotalCount": 4
+  "TotalCount": 9
 }
 ```
 

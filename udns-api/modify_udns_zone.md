@@ -34,7 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DNSZoneId** | string | 域名资源ID |**Yes**|
 | **Remark** | string | 备注 |No|
-| **IsRecursionEnabled** | string | 是否支持迭代。枚举值,"enable",支持迭代; "disable",不支持迭代 |No|
+| **IsRecursionEnabled** | string | 是否支持递归。枚举值,"enable",支持; "disable",不支持 |No|
 
 ### 响应字段
 
