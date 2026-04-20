@@ -1,19 +1,18 @@
-# 创建ULogService主题 - CreateULogServiceTopic
+# 获取域名转发配置 - DescribeUDNSZoneForward
 
 ## 简介
 
-创建ULogService主题
+获取域名转发配置
 
+?> 获取域名转发配置成功则返回转发地址，否则转发特殊错误码
 
-
-
+!> 获取域名转发配置
 
 
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- 多语言 OpenSDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=CreateULogServiceTopic)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeUDNSZoneForward)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +22,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `CreateULogServiceTopic`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `DescribeUDNSZoneForward`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -31,12 +30,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **TopicName** | string | 主题名称，校验规则<br />"^[<br />w]{1,23}$" |**Yes**|
-| **ReserveAge** | int | 保存时间 1\~360 天，-1表示永久保存 |**Yes**|
-| **LogSetId** | string | 日志集ID |**Yes**|
-| **TopicShardNum** | int | 分区数量 数字1\~20 |No|
+| **DNSZoneId** | string | 域名ID |**Yes**|
 
 ### 响应字段
 
@@ -45,7 +40,10 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **TopicId** | string | 主题ID |No|
+| **VPCProjectId** | string | 转发目标VPC所属VPC |No|
+| **VPCRegion** | string | 转发目标VPC所属地域 |No|
+| **VPCId** | string | 转发目标VPC的ID |No|
+| **Servers** | array[string] | 转发目标DNS 服务器地址 |No|
 
 
 
@@ -55,26 +53,23 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=CreateULogServiceTopic
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=aMmfdUUe
-&InstanceId=wiHPicwv
-&Name=HXqJgIPc
-&ShardSize=5
-&ReserveAge=4
-&Description=WhBxwaMR
-&LogSetId=YJcqArNU
+https://api.ucloud.cn/?Action=DescribeUDNSZoneForward
+&ProjectId=MMUKPbPW
+&DNSZoneId=OPFyZHSJ
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "CreateULogServiceTopicResponse",
-  "Data": {},
+  "Action": "DescribeUDNSZoneForwardResponse",
   "RetCode": 0,
-  "TopicId": "ITyErFZn"
+  "Servers": [
+    "BZbTRSIA"
+  ],
+  "VPCId": "NhEGXPBY",
+  "VPCProjectId": "IQpczMpa",
+  "VPCRegion": "LAPrVFJV"
 }
 ```
 

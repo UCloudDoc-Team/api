@@ -38,7 +38,7 @@
 | **ShareBandwidth** | int | 共享带宽值 |**Yes**|
 | **Quantity** | int | 购买时长 |No|
 | **IPVersion** | string | 共享带宽类型，IPv4或者IPv6，不传默认IPv4 |No|
-| **OperatorName** | string | 共享带宽线路：BGP 国内多线,International 国际多线,ChinaMobile 移动单线,Unicom 联通单线,Telecom 电信单线,BGPPro 精品BGP（仅香港支持精品BGP） |No|
+| **OperatorName** | string | 共享带宽线路：BGP: BGP线路; International: 国际线路; 原生IP: Native; 精品原生IP: Resident; BGPPro: 精品BGP 线路（仅香港支持精品BGP） |No|
 | **Tag** | string | 业务组名称, 默认为 "Default" |No|
 
 ### 响应字段
