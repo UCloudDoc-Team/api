@@ -64,9 +64,11 @@
 | **MachineType** | string | 	<br />规格类型ID,当SpecificationType为1时有效 |No|
 | **AlarmTemplateId** | string | 告警模版id |No|
 | **BackupURL** | string | 备份文件的US3内网下载地址 |No|
-| **StorageClass** | string | 存储类型 CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合优先级比InstanceType字段高<br />该字段和SpecificationClass组合优先级比InstanceType字段高， |No|
+| **StorageClass** | string | 存储类型 CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合优先级比InstanceType字段高<br /> |No|
 | **SpecificationClass** | string | 规格类型 O: NVMe型, OM: 共享型，N: 通用型 |No|
 | **SemisyncFlag** | int | 半同步开启开关 1：表示开启半同步，2：表示关闭半同步，0：表示默认值，默认也是开启半同步 |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签值 |No|
 | **CouponId** | string | 使用的代金券id |No|
 
 ### 响应字段
@@ -113,6 +115,8 @@ https://api.ucloud.cn/?Action=CreateUDBInstance
 &StorageClass=EdRLHUsN
 &SpecificationClass=ZFvDzuMA
 &SemisyncFlag=6
+&Labels.N.Key=HFdaujOo
+&Labels.N.Value=JlcpTDgc
 ```
 
 ### 响应示例
