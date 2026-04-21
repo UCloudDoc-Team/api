@@ -30,11 +30,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **ClusterInstanceId** | string | 集群ID |**Yes**|
-| **Filter** | string | 是否过滤掉已删除节点，默认为‘true’ |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ClusterInstanceId** | string | 实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取 |**Yes**|
 
 ### 响应字段
 
@@ -53,40 +52,40 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 所属可用区 |No|
-| **AppConfigCount** | string | 集群App 配置数量 |No|
-| **AppConfigSet** | array[string] | 集群App配置 |No|
-| **BusinessId** | string | business id |No|
+| **AutoRenew** | string | 是否开启自动续费 |No|
+| **BusinessId** | string | 业务组 ID |No|
 | **ChargeType** | string | 付费类型 |No|
-| **ClusterInstanceId** | string | 集群id |No|
-| **ClusterInstanceName** | string | 集群名称 |No|
-| **CreateTime** | int | 集群创建时间 |No|
-| **DataSyncInfo** | string | flume 数据同步信息 |No|
-| **ExpireTime** | string | 集群过期时间 |No|
-| **Framework** | string | 集群框架 |No|
-| **FrameworkVersion** | string | 集群框架版本 |No|
-| **NetworkId** | string | 网络 id |No|
-| **Remark** | string | 集群备注 |No|
-| **RunningTime** | string | 集群运行时间 |No|
-| **State** | string | 集群当前状态,集群状态："Running"\| "Abnormal"\| "Creating"\| "Deleting"\| "CreateFailed"\| "DeleteFailed"\| "Unavailable"\| "Deleted"\| "Updating"\| "Deploying"\| "Migrating"\| "ExpandFailed" |No|
+| **ClusterInstanceId** | string | 实例id |No|
+| **ClusterInstanceName** | string | 实例名称 |No|
+| **CreateTime** | int | 实例创建时间 |No|
+| **ExpireTime** | int | 实例过期时间 |No|
+| **Framework** | string | 实例框架 |No|
+| **FrameworkVersion** | string | 实例框架版本 |No|
+| **NetworkId** | string | 网络 id（已废弃） |No|
+| **Remark** | string | 实例备注 |No|
+| **RunningTime** | int | 实例运行时间 |No|
+| **State** | string | 实例当前状态,实例状态："Running"\| "Abnormal"\| "Creating"\| "Deleting"\| "CreateFailed"\| "DeleteFailed"\| "Unavailable"\| "Deleted"\| "Updating"\| "Deploying"\| "Migrating"\| "ExpandFailed" |No|
 | **SubnetId** | string | 所属子网 id |No|
-| **Tag** | string | 集群标记 |No|
-| **UHostCount** | string | 集群节点个数 |No|
+| **Tag** | string | 实例标记 |No|
+| **UHostCount** | int | 实例节点个数 |No|
 | **UHostSet** | array[[*Broker*](#Broker)] | 节点信息列表 |No|
 | **VPCId** | string | 所属 VPC id |No|
-| **ValidBrokerNum** | string | 可用节点个数 |No|
+| **ValidBrokerNum** | int | 可用节点个数 |No|
+| **IsOpenSecgroup** | string | 是否开启安全组 |No|
 
 #### Broker
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Endpoints** | [*Endpoints*](#Endpoints) | broker 访问端点 |**Yes**|
 | **BrokerId** | string | broker id |No|
-| **BrokerInfo** | string | broker 关联topic 信息 |No|
+| **BrokerInfo** | array[[*BrokerOfTopicInfo*](#BrokerOfTopicInfo)] | broker 关联topic 信息 |No|
 | **CreateTime** | string | broker 创建信息 |No|
 | **DomainName** | string | broker 域名 |No|
 | **ExpireTime** | int | broker 过期时间 |No|
 | **IPSet** | array[[*IP*](#IP)] | broker IP 信息 |No|
 | **InstanceGroupType** | string | broker 机型信息 |No|
-| **KafkaPort** | string | kafka 服务端口 |No|
+| **KafkaPort** | int | kafka 服务端口 |No|
 | **Remark** | string | broker 备注信息 |No|
 | **ResourceId** | string | broker 注册资源信息 |No|
 | **SecurityGroupId** | string | 安全组 id |No|
@@ -96,7 +95,24 @@
 | **UHostName** | string | 节点名称 |No|
 | **UHostRole** | string | 节点类型 |No|
 | **ZooKeeper** | string | 节点是否部署 zookeeper |No|
-| **ZooKeeperPort** | string | zookeeper 服务端口 |No|
+| **ZooKeeperPort** | int | zookeeper 服务端口 |No|
+
+#### Endpoints
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **PlainText** | [*Url*](#Url) | PLAINTEXT 协议访问信息 |**Yes**|
+| **SaslPlainText** | [*Url*](#Url) | SASL_PLAINTEXT 协议访问信息 |No|
+
+#### BrokerOfTopicInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **PartitionOnBroker** | string | topic 在 broker 上分布的 partition 数量 |No|
+| **Partitions** | string | topic 在 broker上 partition 列表 |No|
+| **Replication** | int | Topic 副本数 |No|
+| **TopicName** | string | topic 名称 |No|
+| **TotalPartitions** | int | partition 数量 |No|
 
 #### IP
 
@@ -109,11 +125,19 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **BootDiskSize** | int | 节点系统盘大小（单位G) |No|
+| **DiskType** | string | 节点数据盘类型 |No|
+| **BootDiskSize** | int | 节点系统盘大小（单位G)【删除】 |No|
 | **CPU** | int | 节点 CPU 核心数 |No|
 | **DataDiskSize** | int | 节点数据盘大小（单位G) |No|
 | **Memory** | int | 节点内存(单位MB) |No|
-| **OS** | string | 节点内部系统名称 |No|
+| **OS** | string | 节点内部系统名称【删除】 |No|
+
+#### Url
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Protocal** | string | 访问协议 |No|
+| **Addr** | string | 访问地址 |No|
 
 ## 示例
 

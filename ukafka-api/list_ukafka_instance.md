@@ -30,16 +30,16 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Limit** | string | 默认为60 |No|
 | **Offset** | string | 默认为0 |No|
 | **Filter** | string | 是否过滤删除了的节点，默认为‘true’ |No|
 | **VPCId** | string | VPCId |No|
 | **SubnetId** | string | SubnetId |No|
-| **BusinessId** | string | BusinessId |No|
-| **ClusterInstanceId** | string | 集群ID |No|
+| **BusinessId** | string | 业务组 ID |No|
+| **ClusterInstanceId** | string | 实例ID |No|
 
 ### 响应字段
 
@@ -100,6 +100,7 @@ https://api.ucloud.cn/?Action=ListUKafkaInstance
       "Zone": "cn-bj2-02"
     }
   ],
+  "Message": "hopVQzzB",
   "RetCode": 0,
   "TotalCount": 1
 }
