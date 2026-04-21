@@ -4,6 +4,7 @@
 - [概览](api/ues-api/README.md)
 - [索引](api/ues-api/index.md)
 - **API**
+    - [创建实例 - CreateUESInstance](api/ues-api/create_ues_instance)
     - [删除实例 - DeleteUESInstance](api/ues-api/delete_ues_instance)
     - [查询指定实例详细信息 - DescribeUESInstanceV2](api/ues-api/describe_ues_instance_v2)
     - [扩容实例节点 - ExpandUESInstance](api/ues-api/expand_ues_instance)
