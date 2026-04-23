@@ -10,7 +10,6 @@
 |[DescribeUKafkaConsumer](api/ukafka-api/describe_ukafka_consumer)|获取 Kafka 消费组信息|
 |[DescribeUKafkaInstance](api/ukafka-api/describe_ukafka_instance)|获取整个集群的信息|
 |[GetUKafkaNodeType](api/ukafka-api/get_ukafka_node_type)|获取节点机型配置|
-|[GetUKafkaTopicInfo](api/ukafka-api/get_ukafka_topic_info)|获取 topic 详细信息|
 |[IsUKafkaTopicNameExist](api/ukafka-api/is_ukafka_topic_name_exist)|检查topic名称是否已存在|
 |[ListUKafkaConsumers](api/ukafka-api/list_ukafka_consumers)|列出 Kafka 消费组|
 |[ListUKafkaFrameworkVersion](api/ukafka-api/list_ukafka_framework_version)|列举ukafka框架版本|
