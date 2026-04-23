@@ -61,7 +61,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Case** | string | 集群种类 |No|
+| **ClusterCase** | string | 集群种类 |No|
 | **MustHas** | string | 依赖的组件 |No|
 | **AppVersion** | string | 组件版本 |No|
 
