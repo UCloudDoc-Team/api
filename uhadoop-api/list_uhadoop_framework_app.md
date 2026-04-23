@@ -44,12 +44,12 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **AppConfigSet** | array[[*AppConfigSet*](#AppConfigSet)] | 应用配置详情 |No|
+| **AppConfigSet** | array[[*AppConfig*](#AppConfig)] | 应用配置详情 |No|
 
 #### 数据模型
 
 
-#### AppConfigSet
+#### AppConfig
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|

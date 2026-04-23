@@ -33,9 +33,10 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **NodeRole** | string | 节点的角色，值为task\|core\|client之一 |**Yes**|
 | **NodeType** | string | 机型，如：o.hadoop2m.medium，<br />可从GetUHadoopNodeType接口获取 |**Yes**|
-| **InstanceId** | string | 集群ID |**Yes**|
+| **InstanceId** | string | 实例ID |**Yes**|
 | **DataDiskNum** | string | 数据盘数量，非裸金属机型时必填 |No|
 | **Password** | string | 密码,NodeRole为client时必填 |No|
 | **BootDiskSize** | string | 系统盘容量,非裸金属机型必填 |No|
@@ -78,6 +79,8 @@ https://api.ucloud.cn/?Action=AddUHadoopInstanceNode
 &DataDiskSize=NbVOzUhe
 &DataDiskType=UnZzdJcw
 &DataDiskNum=DZRIauiM
+&Zone=pYnaZGBu
+&Zone=tpIqFCwW
 ```
 
 ### 响应示例
