@@ -120,6 +120,10 @@
         "name": "云内存 UMem Redis"
       },
       {
+        "links": "/api/tidb-api/README",
+        "name": "分布式NewSQL数据库 TiDB"
+      },
+      {
         "links": "/api/umongodb-api/README",
         "name": "云数据库 MongoDB UDB（NVMe）"
       },
