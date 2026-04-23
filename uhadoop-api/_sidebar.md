@@ -10,6 +10,7 @@
     - [描述集群 - DescribeUHadoopInstance](api/uhadoop-api/describe_uhadoop_instance)
     - [获取节点类型信息 - GetUHadoopNodeType](api/uhadoop-api/get_uhadoop_node_type)
     - [列举可选app - ListUHadoopFrameworkApp](api/uhadoop-api/list_uhadoop_framework_app)
+    - [按使用场景列出框架和应用 - ListUHadoopFrameworkAppByUseCase](api/uhadoop-api/list_uhadoop_framework_app_by_use_case)
     - [列出用户所有的集群 - ListUHadoopInstance](api/uhadoop-api/list_uhadoop_instance)
     - [重启集群服务（包含start|stop|restart） - RestartUHadoopService](api/uhadoop-api/restart_uhadoop_service)
     - [升级uhadoop节点 - UpgradeUHadoopNode](api/uhadoop-api/upgrade_uhadoop_node)

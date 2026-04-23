@@ -40,7 +40,7 @@
 | **VPCId** | string | VPCId |**Yes**|
 | **SubnetId** | string | 子网ID |**Yes**|
 | **AppConfig.N** | string | 集群需要安装的组件，格式：组件#版本<br />通过ListUHadoopFrameworkApp接口获取，例如：Spark#3.3.0<br /> |**Yes**|
-| **Framework** | string | 框架名称，‘Hadoop’ \| ‘HDFS’ \| ‘MR‘\|'‘StarRocks’，<br />Hadoop框架包含存储与计算服务，MR集群包含计算服务 ，HDFS只包含存储服务 |**Yes**|
+| **Framework** | string | 框架，值为'Hadoop'\|'HDFS'\|'MR'\|'StarRocks'之一,框架，例如Hadoop\|MR\|HDFS\|StarRocks Hadoop框架包含存储与计算服务 MR集群包含计算服务 HDFS只包含存储服务,StarRocks为StarRocks集群 |**Yes**|
 | **ChargeType** | string | 支付类别，默认：Month |No|
 | **Quantity** | int | 数量，默认1 |No|
 | **BusinessId** | string | 工作组ID，默认Default |No|
