@@ -57,7 +57,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 实例所在可用区，或者master redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
-| **OwnSlave** | string | 是否拥有只读Slave<br />“Yes” 包含<br />“No” 不包含 |**Yes**|
+| **OwnSlave** | string | 是否拥有只读Slave<br />“Yes” 包含<br />“No” 不包含 |No|
 | **DataSet** | array[[*UMemSlaveDataSet*](#UMemSlaveDataSet)] | UMEM实例列表 UMemSlaveDataSet 如果没有slave，则没有该字段 |No|
 | **Role** | string | 表示实例是主库还是从库,master,slave<br />仅主备redis返回该项参数 |No|
 | **RewriteTime** | int | 主备redis和分布式redis运维时间<br />0  //0点<br />1  //1点<br />以此类推<br />单机版memcache不返回该项 |No|
@@ -71,7 +71,7 @@
 | **Protocol** | string | 协议类型: memcache, redis |No|
 | **Size** | int | 容量单位GB |No|
 | **UsedSize** | int | 使用量单位MB |No|
-| **State** | string | 实例状态                                  Starting                  // 创建中       Creating                  // 初始化中     CreateFail                // 创建失败     Fail                      // 创建失败     Deleting                  // 删除中       DeleteFail                // 删除失败     Running                   // 运行         Resizing                  // 容量调整中   ResizeFail                // 容量调整失败 Configing                 // 配置中       ConfigFail                // 配置失败Restarting                // 重启中<br />SetPasswordFail    //设置密码失败 |No|
+| **State** | string | 实例状态<br />Starting                     // 创建中<br />Creating                    // 初始化中<br />Deleting                    // 删除中<br />CreateFail                 // 创建失败<br />DeleteFail                 // 删除失败<br />Resizing                   // 容量调整中<br />ResizeFail                // 容量调整失败<br />Disasting                 // 容灾中<br />Running                   // 运行<br />SetPassword           // 设置密码<br />SetPasswordFail     // 设置密码失败<br />ISolation                  // 关闭<br />Replicating              // 同步中<br />ReplicateDone        //  数据同步完成<br />ExecTimeout           // 待重试<br />SlaveRecovering     // 备库恢复中<br />ReplicateFail           // 同步失败<br />DelayUpgrade         // 待扩容迁移 <br />VersionUpgrading   // 升级中<br />VersionUpgradeFail // 升级失败<br />UpgradeMemInit     // 任务初始化<br />ClusterUpgrading    // 规格调整中<br />SSLSwitching         // 修改TLS中<br />SSLSwitchFail        // 修改TLS失败 |No|
 | **ChargeType** | string | 计费模式，Year, Month, Dynamic, Trial |No|
 | **Address** | array[[*UMemSpaceAddressSet*](#UMemSpaceAddressSet)] | IP端口信息请，参见UMemSpaceAddressSet |No|
 | **Tag** | string | 业务组名称 |No|
@@ -82,6 +82,19 @@
 | **HighAvailability** | string | 是否开启高可用,enable,disable |No|
 | **Version** | string | Redis版本信息 |No|
 | **SlaveZone** | string | 跨机房URedis，slave redis所在可用区，参见 [可用区列表](api/summary/regionlist) |No|
+| **ProxyName** | string | URedis是否开启读写分离 |No|
+| **ProductType** | int | 判断后端是否快杰资源（非快杰: <br /> 0或者1   快杰:  2或者3） |No|
+| **DefaultConfigId** | string | 是否是默认配置文件，<br />true表示默认；<br />false表示非默认 |No|
+| **IsHighPerformance** | boolean | 是否是高性能Redis，<br />true表示是；<br />false表示否 |No|
+| **SupportAofRollback** | boolean | 实例是否支持回档 |No|
+| **AofRollbackEnable** | boolean | 实例是否开启了回档 |No|
+| **IsRWMode** | boolean | 是否是读写分离 |No|
+| **SSLVersion** | string | SSL版本 |No|
+| **SSLEnable** | boolean | 实例是否开启SSL |No|
+| **SSLCertExpireTime** | int | 证书过期时间 |No|
+| **SecPolicy** | int | 安全策略。1:内网隔离，2:加密通信，3:内网隔离+加密通信 |No|
+| **HasPassword** | boolean | 实例是否设置密码 |No|
+| **UDACEnable** | boolean | 实例是否有加入到自治中心 |No|
 
 #### UMemSlaveDataSet
 
@@ -110,12 +123,17 @@
 | **ResourceType** | string | distributed: 分布式版Redis,或者分布式Memcache；single：主备版Redis,或者单机Memcache；performance：高性能版 |No|
 | **ConfigId** | string | 节点的配置ID |No|
 | **Version** | string | Redis版本信息 |No|
+| **DefaultConfigId** | string | 是否是默认配置文件；<br />true表示默认；<br />false表示非默认 |No|
+| **HasPassword** | boolean | 实例是否设置密码 |No|
+| **UDACEnable** | boolean | 实例是否有加入到自治中心 |No|
 
 #### UMemSpaceAddressSet
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **IP** | string | UMem实例访问IP |No|
+| **IP** | string | UMem实例内网访问IP |No|
+| **PrivateDomain** | string | UMem实例内网访问域名地址，未开启状态下返回为空 |No|
+| **PublicIp** | string | 开启外网状态下外网IP，否则为空 |No|
 | **Port** | int | UMem实例访问Port |No|
 
 ## 示例

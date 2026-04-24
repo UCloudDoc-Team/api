@@ -31,8 +31,8 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组ID |**Yes**|
 
 ### 响应字段
@@ -52,8 +52,10 @@
     
 ```
 https://api.ucloud.cn/?Action=DeleteURedisGroup
-&Region=cn-east-01
-&GroupId=uredis-00f98D
+&Region=cn-bj2
+&GroupId=uredis-t3uXXXXX
+&IPv6AddressId=kBmgqyKh
+&IPv6AddressId=uUddlyko
 ```
 
 ### 响应示例

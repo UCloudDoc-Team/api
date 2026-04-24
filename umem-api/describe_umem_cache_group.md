@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 组的ID,如果指定则获取描述，否则为列表操 作,需指定Offset/Limit |No|
 | **Offset** | int | 分页显示的起始偏移, 默认值为0 |No|
 | **Limit** | int | 分页显示的条目数, 默认值为20 |No|
@@ -76,11 +76,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUMemcacheGroup
-&Region=cn-east-01
-&GroupId=umemcache-00f986
-&Offset=0
-&Limit=20
-&Tag=Default
+&Region=cn-bj2
+
 ```
 
 ### 响应示例
@@ -91,19 +88,19 @@ https://api.ucloud.cn/?Action=DescribeUMemcacheGroup
   "DataSet": [
     {
       "ChargeType": "Month",
-      "ConfigId": "9a891891-c245-4b66-bcexxxxxxxxx",
-      "CreateTime": 1522222,
-      "ExpireTime": 12345,
-      "GroupId": "umemcache-xxxxx",
-      "ModifyTime": 1522222,
-      "Name": "test1233",
+      "ConfigId": "9a891891-c24XXX-4b66-bce8-67e5XXXd67c",
+      "CreateTime": 1529563005,
+      "ExpireTime": 1530374400,
+      "GroupId": "umemcache-XXX5sc",
+      "ModifyTime": 1529563010,
+      "Name": "djdj_XXXXX",
       "Port": 11211,
       "Size": 2,
       "State": "Running",
       "Tag": "Default",
-      "UsedSize": 0,
+      "UsedSize": 2,
       "Version": "1.4.33",
-      "VirtualIP": "x.xx.x.x"
+      "VirtualIP": "1X.X9.XX1.1XX"
     }
   ],
   "RetCode": 0

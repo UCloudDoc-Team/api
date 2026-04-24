@@ -43,6 +43,7 @@
 | **ProxySize** | int | umem 代理CPU核心数 |No|
 | **UlbMode** | string | umem分布式代理类型，默认false，true为负载均衡型代理 |No|
 | **ClusterMode** | string | 数据库类型，RWMode为读写分离 |No|
+| **ProxyCnt** | int | umem 代理个数 |No|
 
 ### 响应字段
 
@@ -80,6 +81,7 @@ https://api.ucloud.cn/?Action=DescribeUMemPrice
 &ProxySize=7
 &UlbMode=DDlgHEnz
 &ClusterMode=OkmSpOnn
+&ProxyCnt=5
 ```
 
 ### 响应示例

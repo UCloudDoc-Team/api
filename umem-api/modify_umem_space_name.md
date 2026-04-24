@@ -31,9 +31,9 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SpaceId** | string | UMem内存空间ID |**Yes**|
 | **Name** | string | 新的名称,长度(6<=size<=63) |**Yes**|
 
@@ -54,10 +54,9 @@
     
 ```
 https://api.ucloud.cn/?Action=ModifyUMemSpaceName
-&Region=cn-north-02
-&Zone=cn-bj2-04
-&SpaceId=umem-opqm12
-&Name=NewName
+&Region=cn-bj2
+&SpaceId=umem-0bu5mo
+&Name=redis_FBS
 ```
 
 ### 响应示例

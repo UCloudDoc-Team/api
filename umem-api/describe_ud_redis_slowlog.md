@@ -37,6 +37,7 @@
 | **InstanceId** | string |  实例id |**Yes**|
 | **ProxyId** | string | 代理Id |No|
 | **Limit** | int | 分页显示的条目数，默认为10 |No|
+| **SpaceId** | string | 分布式资源Id |No|
 
 ### 响应字段
 
@@ -73,6 +74,7 @@ https://api.ucloud.cn/?Action=DescribeUDRedisSlowlog
 &InstanceId=mCDCJzFN
 &Limit=5
 &ProxyId=Dddfzlbj
+&SpaceId=mXtAcivH
 ```
 
 ### 响应示例

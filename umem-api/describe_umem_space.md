@@ -79,7 +79,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **IP** | string | UMem实例访问IP |No|
+| **IP** | string | UMem实例内网访问IP |No|
+| **PrivateDomain** | string | UMem实例内网访问域名地址，未开启状态下返回为空 |No|
+| **PublicIp** | string | 开启外网状态下外网IP，否则为空 |No|
 | **Port** | int | UMem实例访问Port |No|
 
 ## 示例

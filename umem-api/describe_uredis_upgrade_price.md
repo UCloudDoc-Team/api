@@ -37,6 +37,7 @@
 | **Size** | int | 购买uredis大小,单位:GB,范围是[1-32] |**Yes**|
 | **GroupId** | string | 要升级的空间的GroupId,请参考DescribeURedisGroup接口 |**Yes**|
 | **HighPerformance** | boolean | 查询高性能Redis， 默认为false， 或者不填， 查询高性能为true |No|
+| **ConvertType** | string | 切换类型，执行类型切换时询价需要传入的参数。<br />“HighPerformance”： 表示转换为性能加强型，“Normal”： 表示转换为普通主备版类型 |No|
 
 ### 响应字段
 
@@ -65,6 +66,7 @@ https://api.ucloud.cn/?Action=DescribeURedisUpgradePrice
 &ProjectId=HOQJvXVm
 &Type=hHdYSEwJ
 &HighPerformance=false
+&ConvertType=GALVfJWp
 ```
 
 ### 响应示例
