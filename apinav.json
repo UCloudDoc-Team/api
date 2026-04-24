@@ -264,6 +264,10 @@
       {
         "links": "/api/ussl-api/README",
         "name": "SSL证书管理"
+      },
+      {
+        "links": "/api/uhids-api/README",
+        "name": "主机入侵检测系统"
       }
     ]
   },
