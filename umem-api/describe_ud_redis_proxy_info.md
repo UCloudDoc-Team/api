@@ -55,7 +55,13 @@
 | **ResourceId** | string | 代理资源id |**Yes**|
 | **ProxyId** | string | 代理id |**Yes**|
 | **Vip** | string | 代理ip |**Yes**|
-| **State** | string | 代理状态 |**Yes**|
+| **State** | string | 代理状态 [PROXY_CREATING:创建中, PROXY_NORMAL:正常运行, PROXY_FAILED:创建失败, PROXY_CLOSED:关闭, PROXY_INIT_RESIZE:初始化核数调整, PROXY_WAIT_RESIZE:等待核数调整, PROXY_RESIZING:核数调整中, PROXY_RESIZE_ERROR:核数调整失败] |**Yes**|
+| **CPU** | int | 代理CPU核数 |**Yes**|
+| **ProxyType** | int | 0 : 物理机版分布式代理, 1: NVME(或SSD)版分布式代理 |**Yes**|
+| **PublicIp** | string | 开启外网状态下的外网IP，否则为空 |No|
+| **SupportReadOnly** | boolean | 代理是否支持设置为只读 |No|
+| **ReadOnly** | boolean | 代理是否为只读 |No|
+| **ReadMode** | string | 读写分离策略, "Custom": 用户自定义节点权重， "Uniform": 包括主节点在内的所有节点平均读请求， "ReadOnly": 读请求均分至只读节点 |No|
 
 ## 示例
 
@@ -65,8 +71,8 @@
 https://api.ucloud.cn/?Action=DescribeUDRedisProxyInfo
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=SnTuFTYS
-&SpaceId=AyGhZPJL
+&ProjectId=TjgvEJaX
+&SpaceId=WACSTNZf
 ```
 
 ### 响应示例
@@ -74,7 +80,16 @@ https://api.ucloud.cn/?Action=DescribeUDRedisProxyInfo
 ```json
 {
   "Action": "DescribeUDRedisProxyInfoResponse",
-  "DataSet": "eEoRMcPk",
+  "DataSet": [
+    {
+      "CPU": 6,
+      "ProxyId": "wjhBFGjw",
+      "ProxyType": 4,
+      "ResourceId": "gVaugysY",
+      "State": "HnRVTTox",
+      "Vip": "XbBCnxli"
+    }
+  ],
   "RetCode": 0
 }
 ```

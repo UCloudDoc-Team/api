@@ -87,6 +87,7 @@
 | **SSLEnable** | boolean | 实例是否开启SSL |No|
 | **SSLCertExpireTime** | int | 证书过期时间 |No|
 | **SecPolicy** | int | 安全策略。1:内网隔离，2:加密通信，3:内网隔离+加密通信 |No|
+| **UDACEnable** | boolean | 实例是否有加入到自治中心 |No|
 
 ## 示例
 
