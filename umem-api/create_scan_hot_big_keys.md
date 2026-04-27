@@ -36,6 +36,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **GroupId** | string | 资源id |**Yes**|
 | **Type** | string | 任务类型。"ScanBigKeys"：扫大key，"ScanHotKeys"：扫热key |**Yes**|
+| **SpaceId** | string | 分布式资源ID |No|
 | **IsRetry** | boolean | 是否要重试任务，如果是的话，TaskId必填 |No|
 | **TaskId** | string | 要重试的任务id |No|
 
@@ -65,6 +66,7 @@ https://api.ucloud.cn/?Action=CreateScanHotBigKeys
 &TaskId=HKgbjDjF
 &IsRetry=false
 &TaskId=tJfEjIiX
+&SpaceId=tGovfodc
 ```
 
 ### 响应示例
