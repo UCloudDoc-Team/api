@@ -1,8 +1,8 @@
-# 获取整个集群的信息 - DescribeUKafkaInstance
+# 获取整个实例的信息 - DescribeUKafkaInstance
 
 ## 简介
 
-获取整个集群的信息
+获取整个实例的信息
 
 
 
@@ -42,7 +42,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ClusterSet** | array[[*ClusterInfo*](#ClusterInfo)] | 集群信息列表 |**Yes**|
+| **ClusterSet** | array[[*ClusterInfo*](#ClusterInfo)] | 实例信息列表 |**Yes**|
 
 #### 数据模型
 

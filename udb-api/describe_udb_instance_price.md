@@ -39,12 +39,14 @@
 | **Count** | int | 购买DB实例数量,最大数量为10台, 默认为1台 |No|
 | **ChargeType** | string | Year，按年付费； <br />Month，按月付费 <br />Dynamic，按需付费（需开启权限) <br />Trial，试用（需开启权限）<br />默认为月付 |No|
 | **Quantity** | int | DB购买多少个"计费时间单位"，默认值为1。比如：买2个月，Quantity就是2。如果计费单位是“按月”，并且Quantity为0，表示“购买到月底” |No|
-| **SSDType** | string | SSD类型，可选值为"SATA"、“NVMe”. 默认为“SATA” |No|
+| **SSDType** | string | 该字段已废弃。 |No|
 | **InstanceMode** | string | 实例的部署类型。可选值为：Normal: 普通单点实例，Slave: 从库实例，HA: 高可用部署实例，默认是Normal |No|
 | **CPU** | int | CPU个数，如果db类型为sqlserver，则为必填参数 |No|
-| **InstanceType** | string | UDB数据库机型: "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" , "Normal_Volume": "标准大容量机型", "SATA_SSD_Volume": "SSD大容量机型" , "PCIE_SSD_Volume": "SSD高性能大容量机型", "NVMe_SSD": "快杰机型" |No|
+| **InstanceType** | string | 对于快杰机型，请使用最新的 SpecificationClass 和 StorageClass 字段进行创建。<br />目前仅有少量地域支持 SATA_SSD 存储类型；若创建的是 SATA_SSD 机型，可通过该字段指定。<br /><br />字段说明：<br /><br />SATA_SSD：SATA SSD 机型（仅部分地域支持）<br />NVMe_SSD：快杰机型 |No|
 | **SpecificationType** | int | 	<br />实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
+| **StorageClass** | string | 存储类型 CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合优先级比InstanceType字段高 |No|
+| **SpecificationClass** | string | 规格类型 O: NVME, OM: 共享型，N: 通用型 |No|
 
 ### 响应字段
 
@@ -84,6 +86,8 @@ https://api.ucloud.cn/?Action=DescribeUDBInstancePrice
 &InstanceType=QOajbSxZ
 &SpecificationType=uaqGNDue
 &MachineType=ENbIvUer
+&StorageClass=cinLFUIr
+&SpecificationClass=XyDTTLNH
 ```
 
 ### 响应示例

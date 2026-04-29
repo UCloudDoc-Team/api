@@ -1,8 +1,8 @@
-# 列出 kafka 集群 topic   - ListUKafkaTopics
+# 获取 kafka 实例 topic  列表信息 - ListUKafkaTopics
 
 ## 简介
 
-展示kafka集群上所有topic
+获取 kafka 实例 topic  列表信息
 
 
 
@@ -30,10 +30,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目 ID。不填写为默认项目，子帐号必须填写。 请参考 [GetProjectList 接口](api/summary/get_project_list) |No|
-| **ClusterInstanceId** | string | 集群资源id |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目 ID。不填写为默认项目，子帐号必须填写。 请参考 [GetProjectList 接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ClusterInstanceId** | string | 实例资源id |**Yes**|
 
 ### 响应字段
 
@@ -43,7 +43,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TopicList** | array[[*TopicInfo*](#TopicInfo)] | topic 信息列表 |**Yes**|
-| **Length** | int | 列表长度 |No|
+| **Length** | int | topic 列表长度 |No|
 
 #### 数据模型
 
