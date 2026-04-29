@@ -44,7 +44,7 @@
 | **NodeSize** | int | 节点个数，默认数目为3 |No|
 | **NodeDiskSize** | int | 节点磁盘大小，默认为100G |No|
 | **ServiceUserName** | string | elasticsearch 服务用户名称，默认为elastic；OpenSearch 服务用户名称，固定为admin |No|
-| **ServicePasswd** | string | 服务用户密码，默认为changeme |No|
+| **ServicePasswd** | string | 服务用户密码，默认为changeme.密码长度限8-30个字符，<br />必须同时包含⼤写字⺟，⼩写字⺟和数字。⽆特殊字符。用户密码Base64加密。 |No|
 | **AppName** | string | 应用名称，支持的类型通过GetUESAppVersion AppVersionList[].AppName, <br />默认为elasticsearch |No|
 | **Remark** | string | 备注，默认为空 |No|
 | **ChargeType** | string | 计费类型，默认为Month |No|
