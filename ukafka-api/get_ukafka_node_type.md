@@ -56,6 +56,9 @@
 | **DiskType** | string | 磁盘类型。RSSD 表示固态云盘，SSD 表示本地固态盘，COMMON 表示本地 SATA 盘 |No|
 | **NodeTypeName** | string | 机型名称 |No|
 | **Memory** | string | 内存大小（单位 MB） |No|
+| **MaxDiskSize** | int | 机型最大支持磁盘大小 |No|
+| **MinDiskSize** | int | 机型最小支持磁盘大小 |No|
+| **IsOpenSecGroup** | boolean | 该机型是否支持安全组 |No|
 
 #### DiskSet
 
@@ -72,8 +75,8 @@
 https://api.ucloud.cn/?Action=GetUKafkaNodeType
 &Region=cn-zj
 &Zone=cn-zj-01
-&InstanceGroupType=PUjASMlY
-&ProjectId=iKJxgdAc
+&ProjectId=CrmgBjme
+&NodeType=jASkYiTV
 ```
 
 ### 响应示例
@@ -81,7 +84,8 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
 ```json
 {
   "Action": "GetUKafkaNodeTypeResponse",
-  "InstanceTypeSet": [
+  "Message": "",
+  "NodeTypeSet": [
     {
       "CPU": 2,
       "DiskSet": [
@@ -90,21 +94,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 200,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD",
-      "InstanceTypeName": "J1-large",
-      "IsUseable": "Yes",
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
       "Memory": 4096,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 200,
+      "NodeTypeName": "o.kafka2m.medium"
     },
     {
       "CPU": 4,
@@ -114,21 +113,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 400,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD",
-      "InstanceTypeName": "J1-xlarge",
-      "IsUseable": "Yes",
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
       "Memory": 8192,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 400,
+      "NodeTypeName": "o.kafka2m.xlarge"
     },
     {
       "CPU": 8,
@@ -138,21 +132,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 800,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD",
-      "InstanceTypeName": "J1-2xlarge",
-      "IsUseable": "Yes",
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
       "Memory": 16384,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 800,
+      "NodeTypeName": "o.kafka2m.2xlarge"
     },
     {
       "CPU": 16,
@@ -162,45 +151,54 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 1500,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD",
-      "InstanceTypeName": "J1-3xlarge",
-      "IsUseable": "Yes",
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
       "Memory": 32768,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 1600,
+      "NodeTypeName": "o.kafka2m.4xlarge"
     },
     {
-      "CPU": 16,
+      "CPU": 32,
       "DiskSet": [
         {
           "Size": 20,
           "Type": "Boot"
         },
         {
-          "Size": 2000,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD",
-      "InstanceTypeName": "J1-4xlarge",
-      "IsUseable": "Yes",
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
       "Memory": 65536,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 3200,
+      "NodeTypeName": "o.kafka2m.8xlarge"
+    },
+    {
+      "CPU": 64,
+      "DiskSet": [
+        {
+          "Size": 20,
+          "Type": "Boot"
+        },
+        {
+          "Size": 0,
+          "Type": "Data"
+        }
+      ],
+      "DiskType": "RSSD",
+      "IsOpenSecGroup": true,
+      "MaxDiskSize": 8000,
+      "Memory": 131072,
+      "MinDiskSize": 6400,
+      "NodeTypeName": "o.kafka2m.16xlarge"
     },
     {
       "CPU": 2,
@@ -210,21 +208,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 500,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "COMMON",
-      "InstanceTypeName": "N1-large",
-      "IsUseable": "Yes",
-      "Memory": 8192,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
+      "Memory": 4096,
+      "MinDiskSize": 200,
+      "NodeTypeName": "n.kafka2m.medium"
     },
     {
       "CPU": 4,
@@ -234,21 +227,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 1000,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "COMMON",
-      "InstanceTypeName": "N1-xlarge",
-      "IsUseable": "Yes",
-      "Memory": 16384,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
+      "Memory": 8192,
+      "MinDiskSize": 400,
+      "NodeTypeName": "n.kafka2m.xlarge"
     },
     {
       "CPU": 8,
@@ -258,21 +246,16 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 2000,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "COMMON",
-      "InstanceTypeName": "N1-2xlarge",
-      "IsUseable": "Yes",
-      "Memory": 32768,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
+      "Memory": 16384,
+      "MinDiskSize": 800,
+      "NodeTypeName": "n.kafka2m.2xlarge"
     },
     {
       "CPU": 16,
@@ -282,96 +265,56 @@ https://api.ucloud.cn/?Action=GetUKafkaNodeType
           "Type": "Boot"
         },
         {
-          "Size": 2000,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "COMMON",
-      "InstanceTypeName": "N1-4xlarge",
-      "IsUseable": "Yes",
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
+      "Memory": 32768,
+      "MinDiskSize": 1600,
+      "NodeTypeName": "n.kafka2m.4xlarge"
+    },
+    {
+      "CPU": 32,
+      "DiskSet": [
+        {
+          "Size": 20,
+          "Type": "Boot"
+        },
+        {
+          "Size": 0,
+          "Type": "Data"
+        }
+      ],
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
       "Memory": 65536,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "MinDiskSize": 3200,
+      "NodeTypeName": "n.kafka2m.8xlarge"
     },
     {
-      "CPU": 4,
+      "CPU": 64,
       "DiskSet": [
         {
           "Size": 20,
           "Type": "Boot"
         },
         {
-          "Size": 800,
+          "Size": 0,
           "Type": "Data"
         }
       ],
-      "DiskType": "SSD_LARGE_DATA",
-      "InstanceTypeName": "Q1-large",
-      "IsUseable": "No",
-      "Memory": 8192,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
-    },
-    {
-      "CPU": 8,
-      "DiskSet": [
-        {
-          "Size": 20,
-          "Type": "Boot"
-        },
-        {
-          "Size": 1600,
-          "Type": "Data"
-        }
-      ],
-      "DiskType": "SSD_LARGE_DATA",
-      "InstanceTypeName": "Q1-xlarge",
-      "IsUseable": "No",
-      "Memory": 16384,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
-    },
-    {
-      "CPU": 16,
-      "DiskSet": [
-        {
-          "Size": 20,
-          "Type": "Boot"
-        },
-        {
-          "Size": 3700,
-          "Type": "Data"
-        }
-      ],
-      "DiskType": "SSD_LARGE_DATA",
-      "InstanceTypeName": "Q1-2xlarge",
-      "IsUseable": "No",
-      "Memory": 32768,
-      "SuitableRole": [
-        "k",
-        "a",
-        "f",
-        "k",
-        "a"
-      ]
+      "DiskType": "CLOUD_SSD",
+      "IsOpenSecGroup": false,
+      "MaxDiskSize": 8000,
+      "Memory": 131072,
+      "MinDiskSize": 6400,
+      "NodeTypeName": "n.kafka2m.16xlarge"
     }
   ],
-  "Message": "pXAPKgfv",
   "RetCode": 0,
   "TotalCount": 12
 }

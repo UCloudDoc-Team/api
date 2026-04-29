@@ -31,7 +31,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Limit** | string | 默认为60 |No|
 | **Offset** | string | 默认为0 |No|
@@ -85,49 +85,17 @@
 https://api.ucloud.cn/?Action=ListUKafkaInstance
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=psLewFbM
-&Limit=LidCsVTz
-&Offset=Rtvvkzbo
-&Filter=xaSWuIxd
-&VPCId=JiyiuaGj
-&SubnetId=lpUAUCTy
-&BusinessId=HttFFiEn
-&ClusterInstanceId=bfibtMTE
+&ProjectId=lrthkcCU
+&Limit=UrYjkKTm
+&Offset=nORcPySS
+&VPCId=ooZXMZYr
+&SubnetId=aICLRzKS
+&BusinessId=gdOiLduj
 ```
 
 ### 响应示例
     
-```json
-{
-  "Action": "ListUKafkaInstanceResponse",
-  "ClusterSet": [
-    {
-      "AutoRenew": "Yes",
-      "BusinessId": "",
-      "ChargeType": "Month",
-      "ClusterInstanceId": "ukafka-5xagjz",
-      "ClusterInstanceName": "test",
-      "CreateTime": 1550476133,
-      "ExpireTime": 1551369600,
-      "Framework": "Kafka",
-      "FrameworkVersion": "1.1.1",
-      "NewMessage": "Yes",
-      "RedundantCount": 0,
-      "Remark": "",
-      "RunningTime": 5623,
-      "State": "Running",
-      "SubnetId": "subnet-ah4q5l",
-      "Tag": "Default",
-      "UHostCount": 3,
-      "VPCId": "uvnet-rgi3ym",
-      "Zone": "cn-bj2-02"
-    }
-  ],
-  "Message": "hopVQzzB",
-  "RetCode": 0,
-  "TotalCount": 1
-}
-```
+暂无
 
 
 

@@ -1,8 +1,8 @@
-# 创建一个实例 - CreateUKafkaInstance
+# 创建实例 - CreateUKafkaInstance
 
 ## 简介
 
-创建一个ukafka实例
+创建实例接口。<br /><br /> 创建实例前需要按以下步骤准备必要参数：<br /><br /> 1.获取Region（地域）和 Zone（可用区），访问链接：https://docs.ucloud.cn/api/summary/regionlist 可以获取所有支持的地域和可用区；<br /><br /> 2.获取FrameworkVersion，访问链接：https://docs.ucloud.cn/api/ukafka-api/list_ukafka_framework_version，响应字段的FrameworkVersions[N].Version是支持的 Kafka 版本；<br /><br /> 3.ChargeType付费类型，可用值：Dynamic为按小时付费，Month为按月付费，Year为按年付费；<br /><br /> 4.获取NodeType机型详情，访问链接：https://docs.ucloud.cn/api/ukafka-api/get_ukafka_node_type，响应字段的NodeTypeSet[N].NodeTypeName是支持的所有机型；<br /><br /> 5.获取DiskSize磁盘大小范围 ，访问链接：https://docs.ucloud.cn/api/ukafka-api/get_ukafka_node_type，该接口响应字段的NodeTypeSet[N].MinDiskSize和NodeTypeSet[N].MaxDiskSize是磁盘大小的取值范围；6.InstanceName，自定义输入实例名称，只能包含中英文、数字以及- _ .
 
 
 
@@ -39,10 +39,10 @@
 | **ChargeType** | string | 付费方式 |**Yes**|
 | **NodeType** | string | 机型，支持的机型可通过GetUKafkaNodeType 接口返回的InstanceTypeSet[].InstanceTypeName |**Yes**|
 | **DiskSize** | int | 数据盘大小。支持范围根据GetUKafkaNodeType 接口返回的InstanceTypeSet[].MaxDiskSize 和MinDiskSize获取 |**Yes**|
-| **InstanceName** | string | 实例名，可自定义 |**Yes**|
+| **InstanceName** | string | 实例名，可自定义。只能包含中英文、数字以及- _ . |**Yes**|
 | **BusinessId** | string | 业务组，默认Default |No|
 | **Quantity** | string | 实例数量，默认 1 |No|
-| **NodeCount** | int | 集群节点数量。默认 3 节点 |No|
+| **NodeCount** | int | 实例节点数量。默认 3 节点 |No|
 | **LogRetentionHours** | string | kafka 日志保存时间，支持范围[1,240]。默认 72 小时 |No|
 | **DiskControllerType** | string | 磁盘管理方式,支持值：NONE、CLEAN。默认值：NONE |No|
 | **DiskThreshold** | string | 磁盘清理阈值，支持范围[70,90]。DiskControllerType 为CLEAN 时必填。默认值 90 |No|
@@ -66,39 +66,23 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUKafkaInstance
-&ProjectId=org-xts2j0
-&Zone=cn-bj2-05
-&Region=cn-bj2
-&ClusterInstanceName=barfoo
-&LoginMode=Password
-&Framework=Kafka
-&Password=dW5kZWZpbmVk
-&FrameworkVersion=1.1.1
-&ChargeType=Dynamic
-&Quantity=1
-&InstanceGroupConfig=N1-large#3
-&Tag=Default
-&SubnetId=subnet-xo4nvk
-&VPCId=uvnet-erxgwh
-&Concurrency=30
-&ClusterConfigs.0=log.retention.hours#72
-&ClusterConfigs.1=DiskThreshold#80
-&ClusterConfigs.2=DiskControllerType#CLEAN
-&Action=CreateUKafkaInstance
-&_user=pan.ma%40ucloud.cn
-&_timestamp=1545630237660
-&ClusterInstanceName=JazwZJAT
-&Quantity=RtALqSOr
-&ChargeType=xoPAsVKz
-&NodeType=BuJplpPu
-&NodeNum=szuCxYyA
-&SubnetId2=tYpxLNMB
-&VPCID2=WUEuEXCe
-&LogRetentionHours=lMlcaGNx
-&DiskControllerType=POJjFcOU
-&DiskSize=AdTgjJLD
-&DiskThreshold=NZHiwKFm
-&IsSecurityEnabled=qsHobWJf
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=UTnNmyFz
+&FrameworkVersion=NCaSSrbA
+&VPCId=Xersagmc
+&SubnetId=EbTTLPWW
+&ChargeType=jHScnWTI
+&NodeType=cjEAuPWT
+&DiskSize=3
+&InstanceName=VFRMQMkS
+&BusinessId=ySLTzIEl
+&Quantity=CIZwhKZG
+&NodeCount=3
+&LogRetentionHours=ZkwzUota
+&DiskControllerType=pJPWwZjQ
+&DiskThreshold=FTegxrIv
+&IsSecurityEnabled=ZijHghwt
 ```
 
 ### 响应示例
@@ -106,8 +90,8 @@ https://api.ucloud.cn/?Action=CreateUKafkaInstance
 ```json
 {
   "Action": "CreateUKafkaInstanceResponse",
-  "ClusterInstanceId": "ukafka-g5s1nd",
-  "Message": "exoIIFmP",
+  "InstanceId": "VtVVhchC",
+  "Message": "jvKmwNEU",
   "RetCode": 0
 }
 ```

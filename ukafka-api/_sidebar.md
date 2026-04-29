@@ -4,7 +4,7 @@
 - [索引](api/ukafka-api/index.md)
 - **API**
     - [给实例添加节点 - AddUKafkaInstanceNode](api/ukafka-api/add_ukafka_instance_node)
-    - [创建一个实例 - CreateUKafkaInstance](api/ukafka-api/create_ukafka_instance)
+    - [创建实例 - CreateUKafkaInstance](api/ukafka-api/create_ukafka_instance)
     - [删除实例 - DeleteUKafkaInstance](api/ukafka-api/delete_ukafka_instance)
     - [获取 Kafka 消费组信息 - DescribeUKafkaConsumer](api/ukafka-api/describe_ukafka_consumer)
     - [获取整个实例的信息 - DescribeUKafkaInstance](api/ukafka-api/describe_ukafka_instance)

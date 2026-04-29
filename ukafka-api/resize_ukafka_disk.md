@@ -55,9 +55,9 @@
 https://api.ucloud.cn/?Action=ResizeUKafkaDisk
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=DRNLlsGn
-&ClusterInstanceId=wretQyTp
-&DiskSize=5
+&ProjectId=BBABGCci
+&InstanceId=nksqgSOc
+&DiskSize=1
 ```
 
 ### 响应示例
@@ -65,7 +65,7 @@ https://api.ucloud.cn/?Action=ResizeUKafkaDisk
 ```json
 {
   "Action": "ResizeUKafkaDiskResponse",
-  "Message": "fewYtqJQ",
+  "Message": "hyHSOKls",
   "RetCode": 0
 }
 ```

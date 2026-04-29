@@ -2,7 +2,7 @@
 
 ## 简介
 
-检查一个topic名称是否已经在集群中了
+检查一个topic名称是否已经在集群中了。实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取
 
 
 
@@ -30,10 +30,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **ClusterInstanceId** | string | 集群ID |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ClusterInstanceId** | string | 实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取 |**Yes**|
 | **TopicName** | string | 待检查的topic名称 |**Yes**|
 
 ### 响应字段

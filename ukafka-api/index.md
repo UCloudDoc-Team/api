@@ -5,7 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[AddUKafkaInstanceNode](api/ukafka-api/add_ukafka_instance_node)|给实例添加节点|
-|[CreateUKafkaInstance](api/ukafka-api/create_ukafka_instance)|创建一个实例|
+|[CreateUKafkaInstance](api/ukafka-api/create_ukafka_instance)|创建实例|
 |[DeleteUKafkaInstance](api/ukafka-api/delete_ukafka_instance)|删除实例|
 |[DescribeUKafkaConsumer](api/ukafka-api/describe_ukafka_consumer)|获取 Kafka 消费组信息|
 |[DescribeUKafkaInstance](api/ukafka-api/describe_ukafka_instance)|获取整个实例的信息|

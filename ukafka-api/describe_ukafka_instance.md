@@ -2,7 +2,7 @@
 
 ## 简介
 
-获取整个实例的信息
+获取整个实例的信息。实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取
 
 
 
@@ -147,9 +147,8 @@
 https://api.ucloud.cn/?Action=DescribeUKafkaInstance
 &Region=cn-zj
 &Zone=cn-zj-01
-&ClusterInstanceId=ukafka-wpdsk5
-&Filter=true
-&Zone=cn-zj-01
+&ProjectId=FbOBQofF
+&ClusterInstanceId=qZgFPcaD
 ```
 
 ### 响应示例
@@ -159,225 +158,62 @@ https://api.ucloud.cn/?Action=DescribeUKafkaInstance
   "Action": "DescribeUKafkaInstanceResponse",
   "ClusterSet": [
     {
-      "AppConfigCount": 0,
-      "AppConfigSet": [],
-      "BusinessId": "",
-      "ChargeType": "Month",
-      "ClusterInstanceId": "ukafka-wpdsk5",
-      "ClusterInstanceName": "barfoo",
-      "CreateTime": 1543299784,
-      "DataSyncInfo": {
-        "Status": "Off"
-      },
-      "ExpireTime": 1546272000,
-      "Framework": "Kafka",
-      "FrameworkVersion": "1.1.1",
-      "NetworkId": "",
-      "Remark": "",
-      "RunningTime": 517495,
-      "State": "Running",
-      "SubnetId": "subnet-5ofcuz",
-      "Tag": "Default",
-      "UHostCount": 4,
+      "AutoRenew": "oaeMbAlQ",
+      "BusinessId": "bUaOnzSz",
+      "ChargeType": "dpdVIjPS",
+      "ClusterInstanceId": "mGgpRJje",
+      "ClusterInstanceName": "lWkLPxzN",
+      "CreateTime": 3,
+      "ExpireTime": 8,
+      "Framework": "bkBGvTgo",
+      "FrameworkVersion": "jDpbxEbm",
+      "IsOpenSecgroup": "tkSvpRaW",
+      "NetworkId": "xiEZIdEo",
+      "Remark": "bsNMyxWb",
+      "RunningTime": 2,
+      "State": "npdpSnAa",
+      "SubnetId": "UFSRbxGW",
+      "Tag": "BOGxzixi",
+      "UHostCount": 3,
       "UHostSet": [
         {
-          "BrokerId": "1",
+          "BrokerId": "tTuYVypA",
           "BrokerInfo": [
             {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "foo",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "bar",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "nil",
-              "TotalPartitions": 3
+              "PartitionOnBroker": "bMVJcVOh",
+              "Partitions": "GQACzFhA",
+              "Replication": 9,
+              "TopicName": "tybylfNO",
+              "TotalPartitions": 7
             }
           ],
-          "CreateTime": 1543299784,
-          "DomainName": "",
-          "ExpireTime": 1546272000,
+          "CreateTime": "ltbxoQZG",
+          "DomainName": "NRRkGRhQ",
+          "Endpoints": {},
+          "ExpireTime": 1,
           "IPSet": [
             {
-              "IP": "10.9.167.48",
-              "Type": "Private"
+              "IP": "LUOVVTsE",
+              "Type": "bIuEYKkq"
             }
           ],
-          "InstanceGroupType": "J1-large",
-          "KafkaPort": 9092,
-          "Remark": "",
-          "ResourceId": "kafkadocker-s2fpui",
-          "SecurityGroupId": "",
-          "State": "Running",
-          "UHostConfig": {
-            "BootDiskSize": 20,
-            "CPU": 2,
-            "DataDiskSize": 200,
-            "Memory": 4096,
-            "OS": "Kafka"
-          },
-          "UHostId": "node-jzahyy",
-          "UHostName": "ukafka-wpdsk5-kafka1",
-          "UHostRole": "KafkaMaster",
+          "InstanceGroupType": "bQiIMxiS",
+          "KafkaPort": 9,
+          "Remark": "gLYFLUvq",
+          "ResourceId": "AcVtFzGE",
+          "SecurityGroupId": "RvciZZLd",
+          "State": "TAxoEgpT",
+          "UHostConfig": {},
+          "UHostId": "SSfPoXSC",
+          "UHostName": "XlZCsnaK",
+          "UHostRole": "oNAHPtVL",
           "ZooKeeper": "Yes",
-          "ZooKeeperPort": 2181,
-          "Zookeeper": "Yes"
-        },
-        {
-          "BrokerId": "2",
-          "BrokerInfo": [
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "foo",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "bar",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "nil",
-              "TotalPartitions": 3
-            }
-          ],
-          "CreateTime": 1543299784,
-          "DomainName": "",
-          "ExpireTime": 1546272000,
-          "IPSet": [
-            {
-              "IP": "10.9.83.108",
-              "Type": "Private"
-            }
-          ],
-          "InstanceGroupType": "J1-large",
-          "KafkaPort": 9092,
-          "Remark": "",
-          "ResourceId": "kafkadocker-lhq3dv",
-          "SecurityGroupId": "",
-          "State": "Running",
-          "UHostConfig": {
-            "BootDiskSize": 20,
-            "CPU": 2,
-            "DataDiskSize": 200,
-            "Memory": 4096,
-            "OS": "Kafka"
-          },
-          "UHostId": "node-05znvw",
-          "UHostName": "ukafka-wpdsk5-kafka2",
-          "UHostRole": "KafkaMaster",
-          "ZooKeeper": "Yes",
-          "ZooKeeperPort": 2181,
-          "Zookeeper": "Yes"
-        },
-        {
-          "BrokerId": "3",
-          "BrokerInfo": [
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "foo",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "bar",
-              "TotalPartitions": 3
-            },
-            {
-              "PartitionOnBroker": "3",
-              "Partitions": "0,1,2",
-              "Replication": 3,
-              "TopicName": "nil",
-              "TotalPartitions": 3
-            }
-          ],
-          "CreateTime": 1543299784,
-          "DomainName": "",
-          "ExpireTime": 1546272000,
-          "IPSet": [
-            {
-              "IP": "10.9.5.109",
-              "Type": "Private"
-            }
-          ],
-          "InstanceGroupType": "J1-large",
-          "KafkaPort": 9092,
-          "Remark": "",
-          "ResourceId": "kafkadocker-ithmgf",
-          "SecurityGroupId": "",
-          "State": "Running",
-          "UHostConfig": {
-            "BootDiskSize": 20,
-            "CPU": 2,
-            "DataDiskSize": 200,
-            "Memory": 4096,
-            "OS": "Kafka"
-          },
-          "UHostId": "node-0qqn0k",
-          "UHostName": "ukafka-wpdsk5-kafka3",
-          "UHostRole": "KafkaMaster",
-          "ZooKeeper": "Yes",
-          "ZooKeeperPort": 2181,
-          "Zookeeper": "Yes"
-        },
-        {
-          "BrokerId": "4",
-          "BrokerInfo": [],
-          "CreateTime": 1543814808,
-          "DomainName": "",
-          "ExpireTime": 1546272000,
-          "IPSet": [
-            {
-              "IP": "10.9.4.88",
-              "Type": "Private"
-            }
-          ],
-          "InstanceGroupType": "J1-large",
-          "KafkaPort": 9092,
-          "Remark": "",
-          "ResourceId": "kafkadocker-bsvlbi",
-          "SecurityGroupId": "",
-          "State": "Running",
-          "UHostConfig": {
-            "BootDiskSize": 20,
-            "CPU": 2,
-            "DataDiskSize": 200,
-            "Memory": 4096,
-            "OS": "Kafka"
-          },
-          "UHostId": "node-scqtkk",
-          "UHostName": "ukafka-wpdsk5-kafka4",
-          "UHostRole": "Kafka",
-          "ZooKeeper": "No",
-          "ZooKeeperPort": 2181,
-          "Zookeeper": "No"
+          "ZooKeeperPort": 3
         }
       ],
-      "VPCId": "uvnet-n10cep",
-      "ValidBrokerNum": 4,
-      "Zone": "cn-bj2-02"
+      "VPCId": "tMsfTwsC",
+      "ValidBrokerNum": 7,
+      "Zone": "wFznMujt"
     }
   ],
   "RetCode": 0
