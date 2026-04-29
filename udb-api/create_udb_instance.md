@@ -36,11 +36,11 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Name** | string | 实例名称，至少6位 |**Yes**|
 | **AdminPassword** | string | 管理员密码 |**Yes**|
-| **DBTypeId** | string | DB类型，mysql/mongodb/postgesql/sqlserver按版本细分 mysql-8.0, mysql-5.5, percona-5.5, mysql-5.6, percona-5.6, mysql-5.7, percona-5.7, mariadb-10.0, postgresql-9.6, postgresql-10.4, postgresql-12.8, postgresql-13.4，mongodb-2.6, mongodb-3.0, mongodb-3.6, mongodb-4.0, sqlserver-2017 |**Yes**|
-| **Port** | int | 端口号，mysql默认3306，mongodb默认27017，postgresql默认5432 |**Yes**|
+| **DBTypeId** | string | DB类型，mysql/sqlserver按版本细分 mysql-8.0, mysql-5.6, percona-5.6, mysql-5.7, percona-5.7,  sqlserver-2017 |**Yes**|
+| **Port** | int | 端口号，mysql默认3306，sqlserver默认1433 |**Yes**|
 | **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 32T |**Yes**|
 | **ParamGroupId** | int | DB实例使用的配置参数组id |**Yes**|
-| **MemoryLimit** | int | 内存限制(MB)，目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
+| **MemoryLimit** | int | 内存限制(MB)（待废弃，请通过指定SpecificationType和SpecificationType创建），目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
 | **ChargeType** | string | Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **AdminUser** | string | 管理员帐户名，默认root |No|
