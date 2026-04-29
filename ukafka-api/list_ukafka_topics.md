@@ -2,7 +2,7 @@
 
 ## 简介
 
-获取 kafka 实例 topic  列表信息
+获取 kafka 实例 topic  列表信息。实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取
 
 
 
@@ -33,7 +33,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目 ID。不填写为默认项目，子帐号必须填写。 请参考 [GetProjectList 接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **ClusterInstanceId** | string | 实例资源id |**Yes**|
+| **ClusterInstanceId** | string | 实例ID，可以通过ListUKafkaInstance 接口的ClusterSet. ClusterInstanceId 获取 |**Yes**|
 
 ### 响应字段
 
@@ -65,46 +65,27 @@
     
 ```
 https://api.ucloud.cn/?Action=ListUKafkaTopics
-&Zone=cn-zj-02
-&ClusterInstanceId=ukafka-asje3q
 &Region=cn-zj
-&ProjectId=qVHhqxTv
+&Zone=cn-zj-01
+&ProjectId=CYpWEvIo
+&ClusterInstanceId=TKmEvKSR
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "ListTopicsResponse",
-  "Length": 3,
+  "Action": "ListUKafkaTopicsResponse",
+  "Length": 5,
   "RetCode": 0,
   "TopicList": [
     {
-      "allIsr": 9,
-      "allReplicas": 9,
-      "numOfOccupyBroker": 3,
-      "numOfPartition": 3,
-      "numOfReplica": 3,
-      "topic": "nil",
-      "underReplicasPer": 0
-    },
-    {
-      "allIsr": 9,
-      "allReplicas": 9,
-      "numOfOccupyBroker": 3,
-      "numOfPartition": 3,
-      "numOfReplica": 3,
-      "topic": "foo",
-      "underReplicasPer": 0
-    },
-    {
-      "allIsr": 3,
-      "allReplicas": 3,
-      "numOfOccupyBroker": 3,
-      "numOfPartition": 1,
-      "numOfReplica": 3,
-      "topic": "bar",
-      "underReplicasPer": 0
+      "NumOfOccupyBroker": 2,
+      "NumOfPartition": 1,
+      "NumOfReplica": 4,
+      "Status": "NONE|INIT|DOING",
+      "Topic": "xlqURVbE",
+      "UnderReplicasPer": 5.63136
     }
   ]
 }

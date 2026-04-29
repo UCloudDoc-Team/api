@@ -54,22 +54,12 @@
     
 ```
 https://api.ucloud.cn/?Action=AddUKafkaInstanceNode
-&ProjectId=org-xts2j0
-&Zone=cn-bj2-05
-&Region=cn-bj2
-&ClusterInstanceId=ukafka-pz23wm
-&LoginMode=Password
-&ChargeType=Dynamic
-&InstanceGroupType=J1-large
-&IsLoadBalance=Yes, No
-&UHostCount=1
-&currentNodeInstanceType=J1-large
-&currentNodeInstanceCPU=2
-&currentNodeInstanceMemory=4
-&currentNodeInstanceDisk=200
-&Action=AddUKafkaInstanceNode
-&_user=pan.ma@ucloud.cn
-&_timestamp=1545637945548
+&Region=cn-zj
+&Zone=cn-zj-01
+&ProjectId=wSdijTOB
+&InstanceId=PvqEmOGx
+&NodeType=RBEhGRzm
+&NodeCount=4
 ```
 
 ### 响应示例
@@ -77,6 +67,7 @@ https://api.ucloud.cn/?Action=AddUKafkaInstanceNode
 ```json
 {
   "Action": "AddUKafkaInstanceNodeResponse",
+  "Message": "FSXAHXto",
   "RetCode": 0
 }
 ```

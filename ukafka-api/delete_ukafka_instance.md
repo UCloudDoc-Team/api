@@ -52,9 +52,10 @@
     
 ```
 https://api.ucloud.cn/?Action=DeleteUKafkaInstance
-&Region=xPyzciEU
-&Zone=pTFLfJYF
-&ClusterInstanceId=sJKlRuIx
+&Region=mBYfscqt
+&Zone=IJOFFcHA
+&ProjectId=vFHVDVtD
+&InstanceId=dqSWGmUK
 ```
 
 ### 响应示例
@@ -62,7 +63,7 @@ https://api.ucloud.cn/?Action=DeleteUKafkaInstance
 ```json
 {
   "Action": "DeleteUKafkaInstanceResponse",
-  "Message": "yfoAAlaq",
+  "Message": "JYiCQAYv",
   "RetCode": 0
 }
 ```

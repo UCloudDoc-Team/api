@@ -55,9 +55,9 @@
 https://api.ucloud.cn/?Action=ModifyUKafkaInstanceType
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=MLibgkmf
-&ClusterInstanceId=whJiBxdr
-&InstanceGroupType=EbpXRFmh
+&ProjectId=kLNoWQKU
+&InstanceId=HcpaPuwk
+&NodeType=FWOWkjBU
 ```
 
 ### 响应示例
@@ -65,7 +65,7 @@ https://api.ucloud.cn/?Action=ModifyUKafkaInstanceType
 ```json
 {
   "Action": "ModifyUKafkaInstanceTypeResponse",
-  "Message": "RUBqDtTM",
+  "Message": "AGBJPStY",
   "RetCode": 0
 }
 ```

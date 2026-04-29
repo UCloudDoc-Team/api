@@ -61,8 +61,7 @@
 https://api.ucloud.cn/?Action=ListUKafkaFrameworkVersion
 &Region=cn-zj
 &Zone=cn-zj-01
-&Framework=tiXWIAgc
-&ProjectId=WgSFBIqh
+&ProjectId=vPiTKnoo
 ```
 
 ### 响应示例
@@ -70,11 +69,13 @@ https://api.ucloud.cn/?Action=ListUKafkaFrameworkVersion
 ```json
 {
   "Action": "ListUKafkaFrameworkVersionResponse",
-  "FrameworkVersions": "POiOiuHE",
-  "FrameworkVersionsDetail": [
-    "LmnlUDSq"
+  "FrameworkVersions": [
+    {
+      "Label": "hiFUHBAC",
+      "Version": "lctCGDpN"
+    }
   ],
-  "Message": "PaNuCamH",
+  "Message": "xJVxUara",
   "RetCode": 0
 }
 ```
