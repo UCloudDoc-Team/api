@@ -433,6 +433,17 @@
       "listname": "大数据与中间件",
       "listvalue": [
         {
+          "name": "托管Hadoop集群 UHadoop",
+          "img": "icon-product__uhadoop",
+          "sublinks": [
+            {
+              "links": "/api/uhadoop-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "云搜索服务 CSS",
           "img": "icon-product__ues",
           "sublinks": [
@@ -482,6 +493,22 @@
           "sublinks": [
             {
               "links": "/api/ulogservice-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "数据仓库",
+      "listvalue": [
+        {
+          "name": "数据仓库 UDW Clickhouse",
+          "img": "icon-product__uclickhouse",
+          "sublinks": [
+            {
+              "links": "/api/uclickhouse-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
