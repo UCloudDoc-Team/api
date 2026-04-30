@@ -2,7 +2,7 @@
 
 ## 简介
 
-规格升降级
+规格升降级，仅升级CPU 和内存
 
 
 
@@ -34,7 +34,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **InstanceId** | string | 实例ID |**Yes**|
-| **NodeType** | string | 目标机型，支持的机型可通过GetUKafkaNodeType 接口返回的InstanceTypeSet[].InstanceTypeName |**Yes**|
+| **NodeType** | string | 目标机型，支持的机型可通过GetUKafkaNodeType 接口返回的InstanceTypeSet[].InstanceTypeName。仅升级CPU 和内存 |**Yes**|
 
 ### 响应字段
 
