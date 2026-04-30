@@ -36,9 +36,9 @@
 | **ClickhouseMachineTypeId** | string | 集群机型，可通过GetUClickhouseClusterCreateOption接口获取具体值 |**Yes**|
 | **DataDiskType** | string | 数据盘类型，可通过GetUClickhouseClusterCreateOption接口获取具体值 |**Yes**|
 | **ClickhouseVersion** | string | Clickhouse版本，可通过GetUClickhouseClusterCreateOption接口获取具体版本 |**Yes**|
-| **VPCId** | string | VPC ID |**Yes**|
+| **VPCId** | string | VPCID |**Yes**|
 | **SubnetId** | string | 子网ID |**Yes**|
-| **AdminPassword** | string | 集群管理员密码，密码规则：<br />1.密码长度限8-32个字符<br />2.不能包含[A-Z],[a-z],[0-9]和[@#%^*+=_;:,?!&()-]之外的字符<br />3.需要同时包含两项或以上（大写字母/小写字母/数字/特殊符号） |**Yes**|
+| **AdminPassword** | string | 集群管理员密码（格式为base64），密码规则：<br />1.密码长度限8-32个字符<br />2.不能包含[A-Z],[a-z],[0-9]和[@#%^*+=_;:,?!&()-]之外的字符<br />3.需要同时包含两项或以上（大写字母/小写字母/数字/特殊符号） |**Yes**|
 | **ShardCount** | int | 分片数量，若传递，则至少1个分片,默认值为1 |No|
 | **ReplicateCount** | int | 副本数量，取值为1或2，1为单副本（非高可用），2为双副本（高可用），默认值为高可用（即为2） |No|
 | **DataDiskSize** | int | 数据盘大小，最小100，步长为50，默认值为100，单位GB |No|
