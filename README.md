@@ -58,7 +58,6 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |云数据库 MongoDB UDB（NVMe）|[文档](/api/umongodb-api/)|
 |云数据库读写分离中间件 UDBProxy|[文档](/api/udbproxy-api/)|
 |云数据库 PostgreSQL UDB（NVMe）|[文档](/api/upgsql-api/)|
-|云搜索服务 CSS|[文档](/api/ues-api/)|
 |数据库自治中心 UDAC|[文档](/api/udac-api/)|
 
 ### 存储
@@ -83,6 +82,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 |Kafka消息队列 UKafka|[文档](/api/ukafka-api/)|
 |数据湖分析 USQL|[文档](/api/usql-api/)|
 |日志服务 ULogService|[文档](/api/ulogservice-api/)|
+|云搜索服务 CSS|[文档](/api/ues-api/)|
 |数据仓库 ClickHouse|[文档](/api/uclickhouse-api/)|
 |托管Hadoop集群 UHadoop|[文档](/api/uhadoop-api/)|
 
