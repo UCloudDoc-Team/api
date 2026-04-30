@@ -136,10 +136,6 @@
         "name": "云数据库 PostgreSQL UDB（NVMe）"
       },
       {
-        "links": "/api/ues-api/README",
-        "name": "云搜索服务 CSS"
-      },
-      {
         "links": "/api/udac-api/README",
         "name": "数据库自治中心 UDAC"
       }
@@ -201,6 +197,10 @@
       {
         "links": "/api/ulogservice-api/README",
         "name": "日志服务 ULogService"
+      },
+      {
+        "links": "/api/ues-api/README",
+        "name": "云搜索服务 CSS"
       },
       {
         "links": "/api/uclickhouse-api/README",
