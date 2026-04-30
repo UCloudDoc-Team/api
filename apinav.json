@@ -142,14 +142,6 @@
       {
         "links": "/api/udac-api/README",
         "name": "数据库自治中心 UDAC"
-      },
-      {
-        "links": "/api/uclickhouse-api/README",
-        "name": "数据仓库 ClickHouse"
-      },
-      {
-        "links": "/api/uhadoop-api/README",
-        "name": "托管Hadoop集群 UHadoop"
       }
     ]
   },
@@ -209,6 +201,14 @@
       {
         "links": "/api/ulogservice-api/README",
         "name": "日志服务 ULogService"
+      },
+      {
+        "links": "/api/uclickhouse-api/README",
+        "name": "数据仓库 ClickHouse"
+      },
+      {
+        "links": "/api/uhadoop-api/README",
+        "name": "托管Hadoop集群 UHadoop"
       }
     ]
   },
