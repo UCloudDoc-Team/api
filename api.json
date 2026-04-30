@@ -489,7 +489,7 @@
         },
         {
           "name": "日志服务 ULogService",
-          "img": "icon-product__",
+          "img": "icon-product__ulogservice",
           "sublinks": [
             {
               "links": "/api/ulogservice-api/README",
