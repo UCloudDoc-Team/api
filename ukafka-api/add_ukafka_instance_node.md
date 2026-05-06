@@ -35,7 +35,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **InstanceId** | string | 实例ID |**Yes**|
 | **NodeType** | string | 机型，支持的机型可通过GetUKafkaNodeType 接口返回的InstanceTypeSet[].InstanceTypeName |**Yes**|
-| **NodeCount** | int | 新添加节点数量 |**Yes**|
+| **NodeCount** | string | 新添加节点数量 |**Yes**|
 
 ### 响应字段
 
@@ -56,10 +56,10 @@
 https://api.ucloud.cn/?Action=AddUKafkaInstanceNode
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=wSdijTOB
-&InstanceId=PvqEmOGx
-&NodeType=RBEhGRzm
-&NodeCount=4
+&ProjectId=DInOpbYX
+&InstanceId=bIwtjuBQ
+&NodeType=eCuqWHqj
+&NodeCount=JeUgzIeg
 ```
 
 ### 响应示例
@@ -67,7 +67,7 @@ https://api.ucloud.cn/?Action=AddUKafkaInstanceNode
 ```json
 {
   "Action": "AddUKafkaInstanceNodeResponse",
-  "Message": "FSXAHXto",
+  "Message": "aAIbqNCf",
   "RetCode": 0
 }
 ```
