@@ -40,7 +40,7 @@
 | **Port** | int | 端口号，mysql默认3306，sqlserver默认1433 |**Yes**|
 | **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 32T |**Yes**|
 | **ParamGroupId** | int | DB实例使用的配置参数组id |**Yes**|
-| **MemoryLimit** | int | 内存限制(MB)（待废弃，请通过指定SpecificationType和SpecificationType创建），目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
+| **MemoryLimit** | int | 内存限制(MB)（待废弃，请通过指定MachineType和SpecificationType创建），目前支持以下几档 2000M/4000M/ 6000M/8000M/12000M/16000M/ 24000M/32000M/48000M/ 64000M/96000M/128000M/192000M/256000M/320000M |No|
 | **ChargeType** | string | Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **AdminUser** | string | 管理员帐户名，默认root |No|
@@ -48,20 +48,20 @@
 | **BackupTime** | int | 备份策略，备份开始时间，单位小时计，默认1点 |No|
 | **BackupDuration** | int | 备份策略，备份时间间隔，单位小时计，默认24小时 |No|
 | **BackupId** | int | 备份id，如果指定，则表明从备份恢复实例 |No|
-| **InstanceType** | string | UDB数据库机型: "SATA_SSD": "SSD机型" , "PCIE_SSD": "SSD高性能机型" , "Normal_Volume": "标准大容量机型", "SATA_SSD_Volume": "SSD大容量机型" , "PCIE_SSD_Volume": "SSD高性能大容量机型", "NVMe_SSD": "快杰机型" |No|
-| **SSDType** | string | SSD类型，可选值为"SATA"、“NVMe”，默认为“SATA” |No|
+| **InstanceType** | string | 对于快杰机型，请使用最新的 SpecificationClass 和 StorageClass 字段进行创建。<br />目前仅有少量地域支持 SATA_SSD 存储类型；若创建的是 SATA_SSD 机型，可通过该字段指定。<br /><br />字段说明：<br /><br />SATA_SSD：SATA SSD 机型（仅部分地域支持）<br />NVMe_SSD：快杰机型 |No|
+| **SSDType** | string | 已废弃 |No|
 | **InstanceMode** | string | UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal" |No|
 | **CPU** | int | cpu核数，如果db类型为sqlserver，必传参数 |No|
 | **BackupZone** | string | 跨可用区高可用备库所在可用区，参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **SubnetId** | string | 子网ID |No|
 | **VPCId** | string | VPC的ID |No|
 | **DisableSemisync** | boolean | 是否开启异步高可用，默认不填，可置为true |No|
-| **ClusterRole** | string | 当DB类型(DBTypeId)为mongodb时，需要指定mongo的角色，可选值为<br />configsrv (配置节点)，shardsrv (数据节点) |No|
+| **ClusterRole** | string | 已废弃 |No|
 | **Tag** | string | 实例所在的业务组名称 |No|
-| **DBSubVersion** | string | mysql小版本号，支持指定小版本创建 |No|
+| **DBSubVersion** | string | MySQL 小版本号，支持指定小版本进行创建，请通过 DescribeUDBType 接口获取可用版本。 |No|
 | **CaseSensitivityParam** | int | mysql大小写参数, 0 为大小写敏感, 1 为大小写不敏感, 目前只针对mysql8.0有效 |No|
 | **SpecificationType** | string | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
-| **MachineType** | string | 	<br />规格类型ID,当SpecificationType为1时有效 |No|
+| **MachineType** | string | 规格类型 ID，当 SpecificationType = 1 时生效，请通过 ListUDBMachineType 接口获取。 |No|
 | **AlarmTemplateId** | string | 告警模版id |No|
 | **BackupURL** | string | 备份文件的US3内网下载地址 |No|
 | **StorageClass** | string | 存储类型 CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合优先级比InstanceType字段高<br /> |No|
