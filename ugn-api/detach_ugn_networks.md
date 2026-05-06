@@ -56,6 +56,7 @@
 | **Name** | string | 网络实例名称 |**Yes**|
 | **Type** | string | 网络实例类型：VPC/UCVR/... |**Yes**|
 | **OrgName** | string | 网络实例所在项目名 |**Yes**|
+| **CompanyID** | int | 网络实例所属公司ID |**Yes**|
 | **RegionID** | int | 网络实例所在地域ID |No|
 | **OrgID** | int | 网络实例所在项目的ID |No|
 | **VNI** | int | 网络实例的唯一标识，如 vpc 的 tunnel_id |No|

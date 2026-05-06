@@ -3,6 +3,7 @@
 - [概览](api/uhost-api/README.md)
 - [索引](api/uhost-api/index.md)
 - **API**
+    - [主机创建资源余量检查 - CheckUHostResourceCapacity](api/uhost-api/check_uhost_resource_capacity)
     - [复制自制镜像 - CopyCustomImage](api/uhost-api/copy_custom_image)
     - [创建自制镜像 - CreateCustomImage](api/uhost-api/create_custom_image)
     - [创建硬件隔离组 - CreateIsolationGroup](api/uhost-api/create_isolation_group)

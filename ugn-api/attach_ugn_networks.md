@@ -33,7 +33,10 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **UGNID** | string | UGN ID |**Yes**|
-| **Networks.N** | string | 数组，数组内每个元素的字段如下： NetworkID：string，网络实例 ID，如 uvnet-xxxx； Type：string，网络实例类型，枚举值：VPC/UCVR/...； Region：string，网络实例所属地域，如 cn-sh2； OrgName：string，网络实例所属项目名，如 org-xxx |**Yes**|
+| **Networks.N.NetworkID** | string | 网络实例 ID，如 uvnet-xxxx |**Yes**|
+| **Networks.N.Type** | string | 网络实例类型，枚举值：VPC/UCVR/... |**Yes**|
+| **Networks.N.Region** | string | 网络实例所属地域，如 cn-sh2 |**Yes**|
+| **Networks.N.OrgName** | string | 网络实例所属项目名，如 org-xxx |**Yes**|
 
 ### 响应字段
 
@@ -56,6 +59,7 @@
 | **Name** | string | 网络实例名称 |**Yes**|
 | **Type** | string | 网络实例类型：VPC/UCVR/... |**Yes**|
 | **OrgName** | string | 网络实例所在项目名 |**Yes**|
+| **CompanyID** | int | 网络实例所属公司ID |**Yes**|
 | **RegionID** | int | 网络实例所在地域ID |No|
 | **OrgID** | int | 网络实例所在项目的ID |No|
 | **VNI** | int | 网络实例的唯一标识，如 vpc 的 tunnel_id |No|
@@ -73,6 +77,9 @@ https://api.ucloud.cn/?Action=AttachUGNNetworks
 &UGNID=hEUWUHZz
 &Networks.N=FOqETOhP
 &ProjectId=EoFSIcPY
+&Networks.N.Type=gcifhYYR
+&Networks.N.Region=fOrhjoMb
+&Networks.N.OrgName=iqRxHPLI
 ```
 
 ### 响应示例
