@@ -4,6 +4,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[CheckUHostResourceCapacity](api/uhost-api/check_uhost_resource_capacity)|主机创建资源余量检查|
 |[CopyCustomImage](api/uhost-api/copy_custom_image)|复制自制镜像|
 |[CreateCustomImage](api/uhost-api/create_custom_image)|创建自制镜像|
 |[CreateIsolationGroup](api/uhost-api/create_isolation_group)|创建硬件隔离组|
