@@ -34,8 +34,8 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **EIPId** | string | EIP的资源ID |**Yes**|
-| **StartTime** | int | 查询开始时间时间戳 |**Yes**|
-| **EndTime** | int | 查询结束时间时间戳 |**Yes**|
+| **StartTime** | int | 查询开始时间时间戳；StartTime需大于等于资源创建时间 |**Yes**|
+| **EndTime** | int | 查询结束时间时间戳；查询时间范围最大支持365天 |**Yes**|
 
 ### 响应字段
 
