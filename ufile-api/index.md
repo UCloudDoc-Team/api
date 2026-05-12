@@ -21,6 +21,8 @@
 |[DescribeCORSRule](api/ufile-api/describe_cors_rule)|获取跨域规则信息|
 |[DescribeUFileAvailablePkg](api/ufile-api/describe_ufile_available_pkg)|查询可购买的资源包列表|
 |[DescribeUFileLifeCycle](api/ufile-api/describe_ufile_life_cycle)|获取生命周期信息|
+|[DescribeUFilePkg](api/ufile-api/describe_ufile_pkg)|查询已购买的资源包列表|
+|[DescribeUFilePkgUsage](api/ufile-api/describe_ufile_pkg_usage)|查询资源包使用明细|
 |[DescribeUFileReferer](api/ufile-api/describe_ufile_referer)|对象存储防盗链列表|
 |[DescribeUFileSSLCert](api/ufile-api/describe_ufile_ssl_cert)|查询SSL证书|
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
@@ -28,10 +30,12 @@
 |[GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)|获取bucket静态网页配置|
 |[GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)|获取bucket每日账单|
 |[GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)|查看日消费报表|
+|[GetUFilePkgPrice](api/ufile-api/get_ufile_pkg_price)|获取对资源进行新购、续费、升级等操作的价格|
 |[GetUFileQuota](api/ufile-api/get_ufile_quota)|查看配额状态|
 |[GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)|获取配额信息|
 |[GetUFileQuotaPrice](api/ufile-api/get_ufile_quota_price)|查询配额支付价格|
 |[GetUFileReport](api/ufile-api/get_ufile_report)|查看配额使用报表|
+|[RenewUFilePkg](api/ufile-api/renew_ufile_pkg)|资源包续费|
 |[SetBucketQuota](api/ufile-api/set_bucket_quota)|设置bucket配额|
 |[SetUFileReferer](api/ufile-api/set_ufile_referer)|设置对象存储防盗链|
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
