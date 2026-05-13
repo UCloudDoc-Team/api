@@ -74,6 +74,8 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[CreateUDBMySQLInstance](api/udb-api/create_udb_my_sql_instance)|创建MySQL数据库|
+|[CreateUDBSQLServerInstance](api/udb-api/create_udb_sql_server_instance)|创建SQLServer数据库|
 |[DescribeUDBBinlogBackup](api/udb-api/describe_udb_binlog_backup)|列表UDB实例Binlog自动备份信息|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
 |[GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)|获取连接实例客户端Ip和连接数|
