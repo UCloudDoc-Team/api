@@ -61,6 +61,8 @@
     - [更新配置 - UpdateUDBParamGroup](api/udb-api/update_udb_param_group)
     - [获取UDB实例升降级价格信息 - DescribeUDBInstanceUpgradePrice](api/udb-api/describe_udb_instance_upgrade_price)
 - **API**
+    - [创建MySQL数据库 - CreateUDBMySQLInstance](api/udb-api/create_udb_my_sql_instance)
+    - [创建SQLServer数据库 - CreateUDBSQLServerInstance](api/udb-api/create_udb_sql_server_instance)
     - [列表UDB实例Binlog自动备份信息 - DescribeUDBBinlogBackup](api/udb-api/describe_udb_binlog_backup)
     - [描述读写分离功能 - DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)
     - [获取连接实例客户端Ip和连接数 - GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)
