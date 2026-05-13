@@ -2,7 +2,7 @@
 
 ## 简介
 
-查询已完成（已支付）的订单明细列表
+查询已完成（已支付）的订单明细列表，StartTime/EndTime 必填；取数范围是 [StartTime, EndTime)，即取开始计费时间大于等于StartTime且小于EndTime的数据
 
 
 
