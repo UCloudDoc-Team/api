@@ -63,10 +63,11 @@
     
 ```
 https://api.ucloud.cn/?Action=ListUHadoopFrameworkApp
-&Region=lhAZpABz
-&Zone=nybZjuSm
-&UDDPFramework=EcjAkZUH
-&ClusterInstanceId=iJSkZtvD
+&Region=IJhKePVK
+&Zone=NPVLFbUc
+&ProjectId=CDYOqSqk
+&Framework=zMZhGeJM
+&InstanceId=xUojdZUt
 ```
 
 ### 响应示例
@@ -76,47 +77,12 @@ https://api.ucloud.cn/?Action=ListUHadoopFrameworkApp
   "Action": "ListUHadoopFrameworkAppResponse",
   "AppConfigSet": [
     {
-      "AppName": "IpixxDeX",
-      "AppType": "Basic",
-      "AppVersion": "JPpbVbNI"
-    },
-    {
-      "AppName": "QwGuLRQX",
-      "AppType": "Basic",
-      "AppVersion": "AsAfeSau"
-    },
-    {
-      "AppName": "BCrvwnfu",
-      "AppType": "Basic",
-      "AppVersion": "PEHJIBGP"
-    },
-    {
-      "AppName": "bpNSfBbp",
-      "AppType": "Basic",
-      "AppVersion": "MvavmKUA"
-    },
-    {
-      "AppName": "pQFXQkre",
-      "AppType": "Basic",
-      "AppVersion": "WRsseBXG"
-    },
-    {
-      "AppName": "JajLdFcM",
-      "AppType": "Basic",
-      "AppVersion": "VuWcLzjS"
-    },
-    {
-      "AppName": "kEvBHwwD",
-      "AppType": "Basic",
-      "AppVersion": "dVSPONku"
-    },
-    {
-      "AppName": "BKaMVneS",
-      "AppType": "Basic",
-      "AppVersion": "BmwkCopg"
+      "AppName": "LwcgeKqs",
+      "AppStatus": "wjJQCvkl",
+      "AppVersion": "TdYtTtmp"
     }
   ],
-  "Message": "JdjIHnVz",
+  "Message": "nbnZHGzx",
   "RetCode": 0
 }
 ```

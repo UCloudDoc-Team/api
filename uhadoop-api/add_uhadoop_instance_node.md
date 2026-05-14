@@ -62,25 +62,19 @@
     
 ```
 https://api.ucloud.cn/?Action=AddUHadoopInstanceNode
-&ClusterInstanceId=BMZswchw
-&InstanceGroupRole=Core
-&LoginMode=Password
-&Password=quSNyFJi
-&ChargeType=WVTIhZXv
-&UHostCount=9
-&InstanceGroupType=xoFYEGnA
-&BootDiskSize=YktrsZUl
-&BootDiskType=PzYHCjXD
-&DataDiskSize=TZCjfsjN
-&DataDiskType=qoMxZDqz
-&DataDiskNum=tQFbJpPG
-&BootDiskSize=yfTVaTWl
-&BootDiskType=pIwNGHWx
-&DataDiskSize=NbVOzUhe
-&DataDiskType=UnZzdJcw
-&DataDiskNum=DZRIauiM
-&Zone=pYnaZGBu
-&Zone=tpIqFCwW
+&Region=lrXyVEZL
+&ProjectId=NIzQfuOV
+&Zone=phzZvaSA
+&NodeRole=Core
+&NodeType=KUpfQzLe
+&InstanceId=KNmCuKlf
+&DataDiskNum=JBfAVGZv
+&Password=PMSxtJvM
+&BootDiskSize=hippfMEv
+&BootDiskType=BKyagwCS
+&DataDiskSize=GOSqKJmK
+&DataDiskType=rjVGpvLR
+&NodeCount=8
 ```
 
 ### 响应示例
@@ -88,7 +82,7 @@ https://api.ucloud.cn/?Action=AddUHadoopInstanceNode
 ```json
 {
   "Action": "AddUHadoopInstanceNodeResponse",
-  "Message": "oZruwVHW",
+  "Message": "ycNXaPAG",
   "RetCode": 0
 }
 ```

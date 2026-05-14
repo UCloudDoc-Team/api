@@ -90,10 +90,10 @@
 https://api.ucloud.cn/?Action=GetUHadoopNodeType
 &Region=cn-zj
 &Zone=cn-zj-01
-&InstanceRole=EZCbCeuC
-&InstanceType=tBAGIrVG
-&UDDPFramework=OTKERJhX
-&FrameworkVersion=QdaJHPdO
+&FrameworkVersion=uOSDvEvW
+&NodeRole=bWermpnZ
+&NodeType=qLmIvLrt
+&Framework=ZDBCiiLp
 ```
 
 ### 响应示例
@@ -101,22 +101,41 @@ https://api.ucloud.cn/?Action=GetUHadoopNodeType
 ```json
 {
   "Action": "GetUHadoopNodeTypeResponse",
-  "HostTypeSupportDiskType": {},
+  "HostTypeSupportNodeType": "bEaakFfX",
   "InstanceTypeSet": [
-    "yUPLaHEL",
-    "oShfPgxP",
-    "jDqKpRMJ",
-    "qIusilLv",
-    "MZfvDmjX",
-    "rLZIzIOa",
-    "oNdctVSR"
+    {
+      "CPU": "ELeXVxAp",
+      "CPUToMemoryRatio": "YEVMaiDo",
+      "DiskSet": [
+        {
+          "DiskMaxNum": "jVrljWGN",
+          "DiskMaxSize": "QxzIWUhH",
+          "DiskMinNum": "cqrmGmeb",
+          "DiskMinSize": "DhlBzola",
+          "DiskNum": 6,
+          "DiskType": [
+            "yjHHoMAC"
+          ],
+          "SingleDiskSize": 1,
+          "Size": 4,
+          "Type": "okugrNpo"
+        }
+      ],
+      "GpuCount": 9,
+      "GpuType": "NeyKRydw",
+      "HostType": "NdVgbQHx",
+      "IsOpenSecgroup": "vAUIrBxC",
+      "IsUsable": "tqhWTnLv",
+      "Memory": "onCIqvLA",
+      "NodeType": "chsvTHPS",
+      "SuitableRole": [
+        "ppqNUZmc"
+      ]
+    }
   ],
-  "Message": "bQJiBLVR",
+  "Message": "YGzMVUjr",
   "MetaDataUDBUsable": true,
-  "RetCode": 0,
-  "SupportDiskType": [
-    "bGdIGhlo"
-  ]
+  "RetCode": 0
 }
 ```
 

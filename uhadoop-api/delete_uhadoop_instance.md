@@ -54,7 +54,10 @@
     
 ```
 https://api.ucloud.cn/?Action=DeleteUHadoopInstance
-&ClusterInstanceId=LbqPNRRI
+&Region=xRJEdXnF
+&Zone=mCGNEXro
+&ProjectId=apaWyFZo
+&InstanceId=SgAZLkmp
 &ReleaseEIP=true
 ```
 
@@ -63,7 +66,7 @@ https://api.ucloud.cn/?Action=DeleteUHadoopInstance
 ```json
 {
   "Action": "DeleteUHadoopInstanceResponse",
-  "Message": "HFXOLtgo",
+  "Message": "edIfQLfK",
   "RetCode": 0
 }
 ```

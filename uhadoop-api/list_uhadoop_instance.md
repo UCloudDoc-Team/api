@@ -44,7 +44,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ClusterSet** | array[[*ListClusterInfo*](#ListClusterInfo)] | 集群信息集合 |**Yes**|
+| **ClusterSet** | array[[*ListClusterInfo*](#ListClusterInfo)] | 集群信息 |**Yes**|
 | **TotalCount** | int | 总数 |**Yes**|
 
 #### 数据模型
@@ -72,11 +72,11 @@
     
 ```
 https://api.ucloud.cn/?Action=ListUHadoopInstance
-&Region=aWqKLPuu
-&Zone=RzZPKPOd
-&Filter=NTwPWPYB
-&Limit=9
-&Offset=5
+&Region=jZZzLqOB
+&Zone=gpygQxNb
+&ProjectId=PiscSmdF
+&Limit=6
+&Offset=7
 ```
 
 ### 响应示例
@@ -85,11 +85,21 @@ https://api.ucloud.cn/?Action=ListUHadoopInstance
 {
   "Action": "ListUHadoopInstanceResponse",
   "ClusterSet": [
-    "wjQSjXla",
-    "rojtDqUM",
-    "PQGNFoJv"
+    {
+      "BusinessId": "QtAVKOcb",
+      "CreateTime": "bbOfduMQ",
+      "Framework": "adcElRUL",
+      "HadoopVersion": "eGiEeQwB",
+      "InstanceId": "pzJeXhoS",
+      "InstanceName": "OYBYERAI",
+      "ReleaseVersion": "djfacgBx",
+      "State": "miKjXOWJ",
+      "SubnetId": "xUZgegQx",
+      "VPCId": "lIaimFcU",
+      "Zone": "crvRqchO"
+    }
   ],
-  "Message": "krqWNdLM",
+  "Message": "FhbbAsCx",
   "RetCode": 0,
   "TotalCount": 1
 }

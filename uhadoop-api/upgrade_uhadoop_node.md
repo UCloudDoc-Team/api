@@ -58,11 +58,11 @@
 https://api.ucloud.cn/?Action=UpgradeUHadoopNode
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=aycmGIvL
-&ClusterInstanceId=gHGTYQdd
-&NodeRole=WWIxaVWZ
-&NodeNames.n=TfuMVDxf
-&NodeType=MNvPHRHB
+&ProjectId=WVdvzEjY
+&NodeRole=tWYOPmLo
+&NodeType=ylsunPjB
+&InstanceId=yFvvUeUE
+&NodeNames.N=RrouhKyo
 ```
 
 ### 响应示例
@@ -70,7 +70,7 @@ https://api.ucloud.cn/?Action=UpgradeUHadoopNode
 ```json
 {
   "Action": "UpgradeUHadoopNodeResponse",
-  "Message": "hvLspOSG",
+  "Message": "iMfAJJZY",
   "RetCode": 0
 }
 ```
