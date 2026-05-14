@@ -60,16 +60,16 @@
     
 ```
 https://api.ucloud.cn/?Action=RestartUHadoopService
-&Region=YAnCBcjk
-&Zone=GvehZWYc
-&ClusterInstanceId=bbUCSBRs
-&ServiceName=TDsLdPVn
-&OnlyStart=2
-&OnlyStop=5
-&NodeId.n=UOtEpVtZ
-&NodeRole.n=FhCFvHhj
-&ApplicationVersion=fLUiqzev
-&ApplicationVersion=TYSoXwIp
+&Region=dXStNThs
+&Zone=bZAgDygR
+&ProjectId=soQTLNIH
+&ServiceName=aPvBFeXx
+&InstanceId=TAPbjlSD
+&ApplicationVersion=eQJRiDRG
+&OnlyStart=true
+&OnlyStop=false
+&NodeId.N=XOBIEfpx
+&NodeRole.N=WEgIghJN
 ```
 
 ### 响应示例
@@ -77,8 +77,9 @@ https://api.ucloud.cn/?Action=RestartUHadoopService
 ```json
 {
   "Action": "RestartUHadoopServiceResponse",
-  "Message": "hZnmwFKc",
-  "RetCode": 0
+  "Message": "HtAqqNid",
+  "RetCode": 0,
+  "State": "YXmWLsYQ"
 }
 ```
 

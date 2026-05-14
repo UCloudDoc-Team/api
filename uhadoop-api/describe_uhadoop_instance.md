@@ -84,15 +84,12 @@
     
 ```
 https://api.ucloud.cn/?Action=DescribeUHadoopInstance
-&Region=BHonXvDa
-&Zone=ZZlNWWIm
-&ClusterInstanceId=imKoMuvb
-&Filter=true
-&VPCId=UcZGbrAN
-&SubnetId=Mawigokz
-&Tag=hpDhLpkn
-&公共参数＝
-&Zone=DXHSImnP
+&Region=TXuPYHyQ
+&ProjectId=NHeVJnrG
+&Zone=KtexcPsr
+&InstanceId=CYvGuUJb
+&VPCId=itgHxAiU
+&SubnetId=RiNKnbPQ
 ```
 
 ### 响应示例
@@ -100,7 +97,76 @@ https://api.ucloud.cn/?Action=DescribeUHadoopInstance
 ```json
 {
   "Action": "DescribeUHadoopInstanceResponse",
-  "Message": "SketGMjw",
+  "ClusterSet": [
+    {
+      "AppConfigCount": 1,
+      "AppConfigSet": [
+        "ghlwKuyH"
+      ],
+      "BusinessId": "svtKHVNH",
+      "ChargeType": "XbvAecgA",
+      "ClusterInstanceId": "LkVLPTaH",
+      "ClusterInstanceName": "kGUqVuvp",
+      "CoreCount": 9,
+      "CreateTime": 7,
+      "ExpireTime": 5,
+      "FrameworkVersion": "WxJiTlIz",
+      "MasterCount": 6,
+      "NetworkId": "mSJoXIrV",
+      "RedundantCount": "qUhFHNOj",
+      "Remark": "CMisvbBF",
+      "RunningTime": "QsmhrbuJ",
+      "StartScript": "hZlvwNmr",
+      "State": "WwuAMaby",
+      "SubnetId": "mWcCEvwo",
+      "Tag": "GHSFvGXN",
+      "TaskCount": "BKCkfBIb",
+      "UDDPFramework": "ZMqFtSvc",
+      "UFileState": "FxOSKEwU",
+      "UHostCount": 2,
+      "UHostSet": [
+        {
+          "CPU": 6,
+          "CreateTime": 6,
+          "DiskSet": [
+            {
+              "DiskNum": 3,
+              "DiskRole": "xsoTuAKc",
+              "DiskSize": 4,
+              "DiskType": "hOQcIKfi"
+            }
+          ],
+          "ExpireTime": 7,
+          "FirewallGroupConfig": [
+            {
+              "CreateTime": 1,
+              "GroupId": "buGmpRIR",
+              "GroupName": "TpbFRmoV",
+              "Type": "CYUaqnDD"
+            }
+          ],
+          "HostType": "eNqsLpGM",
+          "IPSet": [
+            {
+              "IP": "LxbDauMQ",
+              "Type": "fKDcVkoX"
+            }
+          ],
+          "InstanceId": "vAdeIoji",
+          "IsNewType": true,
+          "Memory": 3,
+          "NodeId": "kHzICeJF",
+          "NodeName": "QPJyCyau",
+          "NodeRole": "TOhHvKuO",
+          "NodeType": "LhNfhLqU",
+          "Remark": "QejYhqCT",
+          "ResourceId": "yrdUhyqZ",
+          "State": "SJDXcPXC"
+        }
+      ]
+    }
+  ],
+  "Message": "EQdOncZu",
   "RetCode": 0
 }
 ```

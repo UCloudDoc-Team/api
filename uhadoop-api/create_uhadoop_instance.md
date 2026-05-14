@@ -2,7 +2,7 @@
 
 ## 简介
 
-创建实例接口。<br /><br /> 创建实例前需要按以下步骤准备必要参数：<br /><br /> 1.获取Region（地域）和 Zone（可用区），访问链接：https://docs.ucloud.cn/api/summary/regionlist 可以获取所有支持的地域和可用区；<br /><br /> 2.FrameworkVersion，访问链接：https://docs.ucloud.cn/api/uhadoop-api/list_uhadoop_framework_app_by_use_case，响应字段的AppConfigSet[N].FrameworkVersion是框架版本是支持的 UHadoop 版本；<br /><br /> 3.ChargeType付费类型，可用值：Dynamic为按小时付费，Month为按月付费，Year为按年付费；<br /><br /> 4.InstanceGroupConfigs需要获取NodeType机型详情，访问链接：https://docs.ucloud.cn/api/uhadoop-api/get_uhadoop_node_type，响应字段的InstanceTypeSet[N].NodeType是机型名称，响应字段的InstanceTypeSet[N].SuitableRole是机型可用的节点类型；<br /><br /> 5.获取DiskSize磁盘大小范围 ，访问链接：https://docs.ucloud.cn/api/uhadoop-api/get_uhadoop_node_type，该接口响应字段的InstanceTypeSet[N].DiskSet[N].DiskMinSize和InstanceTypeSet[N].DiskSet[N].DiskMaxSize是磁盘大小的取值范围；<br /><br /> 6.InstanceName，自定义输入实例名称，只能包含中英文、数字以及- _ ;<br /><br />7.Password,集群机器的登录密码,需要输入base64编码后的内容;<br /><br />8.AppConfigs 集群需要安装的组件，访问链接，https://docs.ucloud.cn/api/uhadoop-api/list_uhadoop_framework_app ，AppConfigSet[N].AppName是组件名称，AppConfigSet[N].AppVersion是组件版本
+创建实例接口。<br /><br /> 创建实例前需要按以下步骤准备必要参数：<br /><br /> 1.获取Region（地域）和 Zone（可用区），访问链接：https://docs.ucloud.cn/api/summary/regionlist 可以获取所有支持的地域和可用区；<br /><br /> 2.FrameworkVersion，访问链接：https://docs.ucloud.cn/api/uhadoop-api/list_uhadoop_framework_app_by_use_case，响应字段的AppConfigSet[N].FrameworkVersion是框架版本是支持的 UHadoop 版本；<br /><br /> 3.ChargeType付费类型，可用值：Dynamic为按小时付费，Month为按月付费，Year为按年付费；<br /><br /> 4.InstanceGroupConfigs需要获取NodeType机型详情，访问链接：https://docs.ucloud.cn/api/uhadoop-api/get_uhadoop_node_type，响应字段的InstanceTypeSet[N].NodeType是机型名称，响应字段的InstanceTypeSet[N].SuitableRole是机型可用的节点类型；<br /><br /> 5.获取DiskSize磁盘大小范围 ，访问链接：https://docs.ucloud.cn/api/uhadoop-api/get_uhadoop_node_type，该接口响应字段的InstanceTypeSet[N].DiskSet[N].DiskMinSize和InstanceTypeSet[N].DiskSet[N].DiskMaxSize是磁盘大小的取值范围；<br /><br /> 6.InstanceName，自定义输入实例名称，只能包含中英文、数字以及- _ ;<br /><br />7.Password,集群机器的登录密码,需要输入base64编码后的内容;<br /><br />8.AppConfigs 集群需要安装的组件，访问链接，https://docs.ucloud.cn/api/uhadoop-api/list_uhadoop_framework_app ，返回字段中的AppConfigSet[N].AppName是组件名称，返回字段中的AppConfigSet[N].AppVersion是组件版本
 
 
 
@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Password** | string | 集群机器的登录密码,需要输入base64编码后的内容 |**Yes**|
+| **Password** | string | 集群机器的登录密码,需要Base64加密。 |**Yes**|
 | **FrameworkVersion** | string | 版本,例如：3.2.1-udh3.0,通过ListUHadoopFrameworkApp接口获取 |**Yes**|
 | **InstanceGroupConfigs.N** | string | 节点配置，里面包括NodeType（机型），NodeRole（节点类别，值为其中之一：master\|core\|task），Count（数量），DataDiskType（数据盘类别），DataDiskSize（数据盘大小），DataDiskNum（数据盘数量），BootDiskType（系统盘类型），BootDiskSize（系统盘大小），通过GetUHadoopNodeType接口获取，示例为：<br />InstanceGroupConfigs.0.NodeType=o.hadoop2m.xlarge<br />InstanceGroupConfigs.0.NodeRole=master<br />InstanceGroupConfigs.0.Count=2<br />InstanceGroupConfigs.0.DataDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.0.DataDiskSize=100<br />InstanceGroupConfigs.0.DataDiskNum=1<br />InstanceGroupConfigs.0.BootDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.0.BootDiskSize=50<br />InstanceGroupConfigs.1.NodeType=o.hadoop2m.xlarge<br />InstanceGroupConfigs.1.NodeRole=core<br />InstanceGroupConfigs.1.Count=3<br />InstanceGroupConfigs.1.DataDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.1.DataDiskSize=200<br />InstanceGroupConfigs.1.DataDiskNum=1<br />InstanceGroupConfigs.1.BootDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.1.BootDiskSize=50 |**Yes**|
 | **VPCId** | string | VPCId |**Yes**|
@@ -72,30 +72,28 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUHadoopInstance
-&ClusterInstanceName=SCAZOhhf
-&LoginMode=ClgBNXvF
-&Password=DShVPErx
-&UDDPFramework=tBqteOcF
-&FrameworkVersion=PVKgDBmu
+&Region=kKtIOwCd
+&Zone=bOwuKzQG
+&ProjectId=glCmzRlD
+&Password=tRnBSNtj
+&FrameworkVersion=qXXWBBhs
+&InstanceGroupConfigs.N=hKZOPgkT
+&VPCId=SFbRXINQ
+&SubnetId=wQoOkDiA
+&AppConfigs.N=WgvxyduZ
+&Framework=ykJwpqxv
+&ChargeType=lDAAUqch
 &Quantity=5
-&ChargeType=SfKYKQEp
-&SecurityGroupId=brvpDbmr
-&Tag=OZlRuwXa
-&StartScript=ZJCNlgKC
-&UFile=BKtptDlx
-&UFilePath=ZchvsBQs
-&InstanceGroupConfigs.n=bDvnwfSF
-&StorgeClusterId=WBFaOhBe
-&StorgeClusterId=UNNcwWVM
-&StandAloneMetaStore=tseScAOA
-&IsSecGroup=snixnSRV
-&SecGroupIds=SuSRyLCI
-&US3Bucket=bJkkhHgq
-&US3AccessKey=NNpkVgSM
-&US3SecretKey=aLvFEmtp
-&US3TokenName=eyJNObKK
-&AppConfig.n=xSiBKqdu
-&AppConfig.n=DKRIJHXG
+&BusinessId=dvSxnEgN
+&StorgeClusterId=GgSEmJML
+&StandAloneMetaStore=dzwPXrmW
+&IsSecurityEnabled=kgltcGCX
+&SecGroupIds=KqfJmnzi
+&US3Bucket=SGRPUSME
+&US3AccessKey=JmxoPXug
+&US3SecretKey=DfYoUWgf
+&US3TokenName=zRbMVOAx
+&InstanceName=IlTqXhjY
 ```
 
 ### 响应示例
@@ -103,8 +101,8 @@ https://api.ucloud.cn/?Action=CreateUHadoopInstance
 ```json
 {
   "Action": "CreateUHadoopInstanceResponse",
-  "InstanceId": "PEqPVGfk",
-  "Message": "ThrsaApT",
+  "InstanceId": "sLVHzTtr",
+  "Message": "cmAOnmHG",
   "RetCode": 0
 }
 ```

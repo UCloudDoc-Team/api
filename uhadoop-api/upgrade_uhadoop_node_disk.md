@@ -59,13 +59,12 @@
 https://api.ucloud.cn/?Action=UpgradeUHadoopNodeDisk
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=MeygKDbC
-&ClusterInstanceId=QFiXmrsT
-&NodeRole=GcYLXWQp
-&NodeNames.n=VAtKCAoU
-&DataDiskSize=3
-&ChargeType=Year
-&BootDiskSize=7
+&ProjectId=xDRxsFBb
+&NodeRole=oAAoqtvl
+&DataDiskSize=7
+&InstanceId=DwNBMBMN
+&NodeNames.N=Zrfrzqbm
+&BootDiskSize=9
 ```
 
 ### 响应示例
@@ -73,7 +72,7 @@ https://api.ucloud.cn/?Action=UpgradeUHadoopNodeDisk
 ```json
 {
   "Action": "UpgradeUHadoopNodeDiskResponse",
-  "Message": "JGpSwjEc",
+  "Message": "kAZKHNjh",
   "RetCode": 0
 }
 ```

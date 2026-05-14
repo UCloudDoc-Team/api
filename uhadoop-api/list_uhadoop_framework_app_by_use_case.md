@@ -73,8 +73,7 @@
 https://api.ucloud.cn/?Action=ListUHadoopFrameworkAppByUseCase
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=DiNeHnVU
-&UDDPFramework=kPowpBNb
+&ProjectId=JflMvtOh
 ```
 
 ### 响应示例
@@ -83,12 +82,21 @@ https://api.ucloud.cn/?Action=ListUHadoopFrameworkAppByUseCase
 {
   "Action": "ListUHadoopFrameworkAppByUseCaseResponse",
   "AppConfigSet": [
-    "VwmMcZHY",
-    "WYFBVhLP",
-    "gsacbJyM",
-    "JvBrgtyR"
+    {
+      "Framework": "euJMSSjd",
+      "FrameworkVersion": "XzolPTiA",
+      "HadoopVersion": "LItFvAHt",
+      "ReleaseVersion": "KJAOduPI",
+      "UseCases": [
+        {
+          "AppVersion": "SGUyPUhh",
+          "ClusterCase": "hIZqwrTM",
+          "MustHas": "shzzKCnv"
+        }
+      ]
+    }
   ],
-  "Message": "EhOqvoCy",
+  "Message": "CUvPaWmE",
   "RetCode": 0
 }
 ```
