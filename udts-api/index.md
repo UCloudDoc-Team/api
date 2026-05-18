@@ -4,8 +4,10 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[CreateUDTSPrecheckTask](api/udts-api/create_udts_precheck_task)|创建预检查任务|
 |[CreateUDTSTask](api/udts-api/create_udts_task)|创建UDTS任务|
 |[DeleteUDTSTask](api/udts-api/delete_udts_task)|删除UDTS任务|
+|[GetUDTSPrecheckTask](api/udts-api/get_udts_precheck_task)|获取 precheck 结果|
 |[GetUDTSTaskHistory](api/udts-api/get_udts_task_history)|获取任务历史状态|
 |[GetUDTSTaskStatus](api/udts-api/get_udts_task_status)|查看服务状态|
 |[ListUDTSTask](api/udts-api/list_udts_task)|获取 Task 列表信息|
