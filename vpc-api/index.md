@@ -44,7 +44,9 @@
 |[DeleteSnatDnatRule](api/vpc-api/delete_snat_dnat_rule)|删除NAT创建内外网IP映射规则|
 |[DeleteSnatRule](api/vpc-api/delete_snat_rule)|删除出口规则（SNAT规则）|
 |[DeleteSubnet](api/vpc-api/delete_subnet)|删除子网|
+|[DeleteSubnetIPv6](api/vpc-api/delete_subnet_ip_v6)|子网取消关联IPv6|
 |[DeleteVPC](api/vpc-api/delete_vpc)|删除VPC|
+|[DeleteVPCIPv6](api/vpc-api/delete_vpc_ip_v6)|VPC取消关联IPv6网段|
 |[DeleteVPCIntercom](api/vpc-api/delete_vpc_intercom)|删除VPC互通|
 |[DeleteWhiteListResource](api/vpc-api/delete_white_list_resource)|删除NAT网关白名单列表|
 |[DescribeInstanceNetworkInterface](api/vpc-api/describe_instance_network_interface)|展示云主机绑定的网卡信息|
@@ -70,6 +72,7 @@
 |[DescribeWhiteListResource](api/vpc-api/describe_white_list_resource)|展示NAT网关白名单资源列表|
 |[DetachNetworkInterface](api/vpc-api/detach_network_interface)|解绑云主机关联网卡|
 |[DisableUniEipDirectMode](api/vpc-api/disable_uni_eip_direct_mode)|关闭虚拟网卡EIP直通功能|
+|[DisableVPCIPv6](api/vpc-api/disable_vpc_ip_v6)|VPC关闭IPv6|
 |[DisassociateSecGroup](api/vpc-api/disassociate_sec_group)|将资源从安全组解绑|
 |[EnableUniEipDirectMode](api/vpc-api/enable_uni_eip_direct_mode)|开启虚拟网卡EIP直通功能|
 |[EnableWhiteList](api/vpc-api/enable_white_list)|修改NAT网关白名单开关|
