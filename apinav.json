@@ -97,6 +97,10 @@
       {
         "links": "/api/ipv6gw-api/README",
         "name": "IPV6公网网关"
+      },
+      {
+        "links": "/api/uwsc-api/README",
+        "name": "智联 UWAN"
       }
     ]
   },
