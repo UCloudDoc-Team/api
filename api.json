@@ -1,6 +1,22 @@
 {
   "api": [
     {
+      "listname": "通用人工智能",
+      "listvalue": [
+        {
+          "name": "模型服务平台 UModelVerse",
+          "img": "icon-product__modelverse",
+          "sublinks": [
+            {
+              "links": "/api/uai-modelverse-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "listname": "计算",
       "listvalue": [
         {
