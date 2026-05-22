@@ -9,6 +9,7 @@
     - [新建条件模板 - CreateAlertStrategyTemplate](api/cloudwatch-api/create_alert_strategy_template)
     - [删除告警条件模板 - DeleteAlertStrategyTemplate](api/cloudwatch-api/delete_alert_strategy_template)
     - [是否启用告警策略 - EnableAlertStrategy](api/cloudwatch-api/enable_alert_strategy)
+    - [获取指标数据聚合方式 - GetMetricDataAggregationMethod](api/cloudwatch-api/get_metric_data_aggregation_method)
     - [获取云产品关联的指标列表 - GetProductMetrics](api/cloudwatch-api/get_product_metrics)
     - [告警记录 - ListAlertRecord](api/cloudwatch-api/list_alert_record)
     - [获取告警策略列表 - ListAlertStrategy](api/cloudwatch-api/list_alert_strategy)
