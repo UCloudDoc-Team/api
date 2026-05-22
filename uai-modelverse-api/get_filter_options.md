@@ -48,6 +48,7 @@
 | **ProductCodes** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 产品类型选项列表 |No|
 | **Projects** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 项目选项列表 |No|
 | **PricingSKUs** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 计费 SKU 选项列表 |No|
+| **OrderTypes** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 订单类型选项列表 |No|
 
 #### 数据模型
 
@@ -87,6 +88,12 @@ https://api.ucloud.cn/?Action=GetFilterOptions
     {
       "Name": "kqJMJdxD",
       "Value": "gxiRtfIw"
+    }
+  ],
+  "OrderTypes": [
+    {
+      "Name": "WftpPgnQ",
+      "Value": {}
     }
   ],
   "PricingSKUs": "qgNjqply",
