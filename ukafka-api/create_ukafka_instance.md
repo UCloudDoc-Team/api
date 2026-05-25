@@ -34,12 +34,12 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **FrameworkVersion** | string | kafka版本，支持的版本可通过ListUKafkaFrameworkVersion 接口返回字段的FrameworkVersions获取 |**Yes**|
-| **VPCId** | string | VPCID |**Yes**|
-| **SubnetId** | string | 子网 ID |**Yes**|
 | **ChargeType** | string | 付费方式 |**Yes**|
 | **NodeType** | string | 机型，支持的机型可通过GetUKafkaNodeType 接口返回的InstanceTypeSet[].InstanceTypeName |**Yes**|
 | **DiskSize** | int | 数据盘大小。支持范围根据GetUKafkaNodeType 接口返回的InstanceTypeSet[].MaxDiskSize 和MinDiskSize获取 |**Yes**|
 | **InstanceName** | string | 实例名，可自定义。只能包含中英文、数字以及- _ . |**Yes**|
+| **VPCId** | string | VPCID，不填时为默认VPCID |No|
+| **SubnetId** | string | 子网 ID，不填时为默认子网 ID |No|
 | **BusinessId** | string | 业务组，默认Default |No|
 | **Quantity** | string | 实例数量，默认 1 |No|
 | **NodeCount** | int | 实例节点数量。默认 3 节点 |No|
