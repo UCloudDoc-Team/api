@@ -80,6 +80,7 @@
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
 |[GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)|获取连接实例客户端Ip和连接数|
 |[GetUDBInstanceSSLCertURL](api/udb-api/get_udb_instance_ssl_cert_url)|获取SSL证书下载地址|
+|[ListUDBInstanceFailoverRecord](api/udb-api/list_udb_instance_failover_record)|获取实例容灾记录列表|
 |[ListUDBMachineType](api/udb-api/list_udb_machine_type)|获取UDB云数据库计算规格列表|
 |[ListUDBUserTables](api/udb-api/list_udb_user_tables)|查看udb实例的用户表集合|
 |[ModifyUDBInstanceRemarkName](api/udb-api/modify_udb_instance_remark_name)|修改云数据库备注|
