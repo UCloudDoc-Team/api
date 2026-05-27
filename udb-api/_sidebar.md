@@ -63,7 +63,9 @@
 - **API**
     - [创建MySQL数据库 - CreateUDBMySQLInstance](api/udb-api/create_udb_my_sql_instance)
     - [创建SQLServer数据库 - CreateUDBSQLServerInstance](api/udb-api/create_udb_sql_server_instance)
+    - [获取实例备份策略 - DescribeUDBBackupStrategy](api/udb-api/describe_udb_backup_strategy)
     - [列表UDB实例Binlog自动备份信息 - DescribeUDBBinlogBackup](api/udb-api/describe_udb_binlog_backup)
+    - [获取UDB实例binlog自动备份策略 - DescribeUDBBinlogBackupStrategy](api/udb-api/describe_udb_binlog_backup_strategy)
     - [描述读写分离功能 - DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)
     - [获取连接实例客户端Ip和连接数 - GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)
     - [获取SSL证书下载地址 - GetUDBInstanceSSLCertURL](api/udb-api/get_udb_instance_ssl_cert_url)
