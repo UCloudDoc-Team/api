@@ -10,9 +10,11 @@
 |[CreateCPE](api/uwsc-api/create_cpe)|创建 CPE|
 |[CreateExportLine](api/uwsc-api/create_export_line)|创建加速线路|
 |[CreatePOPGW](api/uwsc-api/create_popgw)|创建UWAN虚拟路由器|
+|[DeleteCEGateway](api/uwsc-api/delete_ce_gateway)|删除CE网关|
 |[DeleteExportLine](api/uwsc-api/delete_export_line)|删除加速线路|
 |[DeleteExportLineRules](api/uwsc-api/delete_export_line_rules)|删除加速规则|
 |[DeletePOPGW](api/uwsc-api/delete_popgw)|删除UWAN虚拟路由器|
+|[DescribeCEGateway](api/uwsc-api/describe_ce_gateway)|查询CE网关|
 |[DescribeCPE](api/uwsc-api/describe_cpe)|查询 CPE 信息|
 |[DescribeExportLine](api/uwsc-api/describe_export_line)|查询CPE绑定的加速线路信息|
 |[DescribeExportLineRules](api/uwsc-api/describe_export_line_rules)|查询白名单|
