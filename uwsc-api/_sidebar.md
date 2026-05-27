@@ -7,6 +7,7 @@
     - [添加加速规则 - AddExportLineRules](api/uwsc-api/add_export_line_rules)
     - [绑定 CPE - BindCPE](api/uwsc-api/bind_cpe)
     - [创建CE客户网关 - CreateCEGateway](api/uwsc-api/create_ce_gateway)
+    - [创建隧道 - CreateCETunnel](api/uwsc-api/create_ce_tunnel)
     - [创建 CPE - CreateCPE](api/uwsc-api/create_cpe)
     - [创建加速线路 - CreateExportLine](api/uwsc-api/create_export_line)
     - [创建UWAN虚拟路由器 - CreatePOPGW](api/uwsc-api/create_popgw)
