@@ -2,7 +2,7 @@
 
 ## 简介
 
-一键创建DB副本集
+一键创建DB副本集,本接口适用于物理机MongoDB，该架构即将下线, 若要使用快杰MongoDB，请参考https://docs.ucloud.cn/api/umongodb-api/index
 
 
 

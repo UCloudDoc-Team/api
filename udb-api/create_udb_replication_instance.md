@@ -2,7 +2,7 @@
 
 ## 简介
 
-创建MongoDB的副本节点（包括仲裁）
+创建MongoDB的副本节点（包括仲裁）, 本接口适用于物理机MongoDB，该架构即将下线, 若要使用快杰MongoDB，请参考https://docs.ucloud.cn/api/umongodb-api/index
 
 
 
