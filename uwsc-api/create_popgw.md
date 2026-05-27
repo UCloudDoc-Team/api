@@ -36,7 +36,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BWConf.Name** | string | 带宽的名称 |**Yes**|
 | **BWConf.PayMode** | string | 带宽的计费方式，取值：<br />- fixed-bw：固定带宽计费；<br />- traffic：流量计费。 |**Yes**|
-| **BWConf.BwMax** | int | UWAN 网关的带宽规格。取值：1-100。单位：Mbps。 |**Yes**|
+| **BWConf.BwMax** | float | UWAN 网关的带宽规格。取值：1-100。单位：Mbps。 |**Yes**|
 | **BWConf.ChargeType** | string | 付费方式，枚举值：<br />- Month：月付；<br />- Year：年付；<br />- Postpadi：后付费（仅支持流量计费方式） |**Yes**|
 | **BWConf.Quantity** | float | 带宽购买时长，默认为 0，代表有效期至月底 |No|
 | **BWConf.ProductId** | int | 产品 ID |No|
