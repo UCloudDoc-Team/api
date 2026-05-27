@@ -17,6 +17,7 @@
     - [删除加速规则 - DeleteExportLineRules](api/uwsc-api/delete_export_line_rules)
     - [删除UWAN虚拟路由器 - DeletePOPGW](api/uwsc-api/delete_popgw)
     - [查询CE网关 - DescribeCEGateway](api/uwsc-api/describe_ce_gateway)
+    - [查询隧道 - DescribeCETunnel](api/uwsc-api/describe_ce_tunnel)
     - [查询 CPE 信息 - DescribeCPE](api/uwsc-api/describe_cpe)
     - [查询CPE绑定的加速线路信息 - DescribeExportLine](api/uwsc-api/describe_export_line)
     - [查询白名单 - DescribeExportLineRules](api/uwsc-api/describe_export_line_rules)
