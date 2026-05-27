@@ -7,6 +7,7 @@
 |[AddExportLineRules](api/uwsc-api/add_export_line_rules)|添加加速规则|
 |[BindCPE](api/uwsc-api/bind_cpe)|绑定 CPE|
 |[CreateCEGateway](api/uwsc-api/create_ce_gateway)|创建CE客户网关|
+|[CreateCETunnel](api/uwsc-api/create_ce_tunnel)|创建隧道|
 |[CreateCPE](api/uwsc-api/create_cpe)|创建 CPE|
 |[CreateExportLine](api/uwsc-api/create_export_line)|创建加速线路|
 |[CreatePOPGW](api/uwsc-api/create_popgw)|创建UWAN虚拟路由器|
