@@ -2,7 +2,7 @@
 
 欢迎您使用 UCloud OpenAPI，API 适合通过编写程序，自动化管理和编排云上资源的场景。
 
-?> 使用前请先阅读 [API 综览](/api/summary/README)
+?> 使用前请先阅读 [API 综览](/api/summary/README)。
 
 ## 调用方式
 
@@ -14,6 +14,7 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 并在 API 之上，构建了拆箱即用的 API 产品，通过调用 API 快速实现定制化需求，包括：
 - [命令行工具 CLI](https://github.com/ucloud/ucloud-cli)
 - [资源编排工具 Terraform Provider](https://docs.ucloud.cn/terraform/)
+
 
 
 
