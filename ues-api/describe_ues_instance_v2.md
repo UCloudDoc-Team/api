@@ -69,6 +69,8 @@
 | **BusinessId** | string | 项目组ID标识 |No|
 | **SubnetId** | string | 子网ID标识 |No|
 | **Vip** | string | Vip |No|
+| **CreateTime** | int | 服务集群创建时间 |No|
+| **RunTime** | int | 服务集群运行时间 |No|
 
 #### NodeV2Info
 
@@ -93,8 +95,8 @@
 https://api.ucloud.cn/?Action=DescribeUESInstanceV2
 &Region=cn-zj
 &Zone=cn-zj-01
-&ProjectId=wnuwqoNk
-&InstanceId=jpcpqjYJ
+&ProjectId=gFiMGVVd
+&InstanceId=GNevKiLp
 ```
 
 ### 响应示例
@@ -102,7 +104,7 @@ https://api.ucloud.cn/?Action=DescribeUESInstanceV2
 ```json
 {
   "Action": "DescribeUESInstanceV2Response",
-  "Response": {},
+  "Result": {},
   "RetCode": 0
 }
 ```

@@ -79,45 +79,32 @@
 https://api.ucloud.cn/?Action=CreateUESInstance
 &Region=cn-zj
 &Zone=cn-zj-01
-&InstanceName=ZeXQVxiP
-&ServiceVersion=sgdENTDQ
-&CreateType=LomCaSWX
-&NodeConf=TPIwHduf
-&ClusterSize=6
-&ServiceType=BWhUHwNN
-&ServiceName=OiCfqTTH
-&ServiceUserName=zyOujNDP
-&ServicePasswd=KuwVvDMs
-&ServicePort=qXuXFuAH
-&AppName=iHPFpCTJ
-&Remark=yODtVBpO
-&VPCId=qMxhRAtC
-&SubnetId=BqzYsBTv
-&ChargeType=ahlebtPH
-&NetworkType=iUKNrXRf
-&Quantity=3
-&MasterConf=FtaYLYer
-&MasterSize=7
-&NodeSize=5
-&BusinessId=wCjULXTr
-&MasterDiskSize=8
-&NodeDiskSize=7
-&DiskConf=WDjnBpSi
-&Secured=true
-&KibanaNodeConf=QUdMopQJ
-&KibanaNodeSize=5
-&KibanaNodeDiskConf=XctXOZsp
-&KibanaNodeDiskSize=4
-&CoordinatingNodeConf=NUMTBWfx
-&CoordinatingNodeSize=2
-&CoordinatingNodeDiskConf=sOIFIrFU
-&CoordinatingNodeDiskSize=8
-&BackendVersion=4
-&IsSecGroup=false
-&SecGroupIds.N=OQMmqlAu
+&ProjectId=rMowKbIa
+&InstanceName=nKyFNiSI
+&NodeConf=SeffTnAB
+&VPCId=vnBWBtMW
+&SubnetId=BKdMebsu
+&KibanaNodeConf=ZakEGFwD
+&KibanaNodeDiskConf=UxqoUVSz
+&AppVersion=BSrRfnsd
+&NodeDiskConf=xlyvHwDt
+&NodeSize=7
+&NodeDiskSize=1
+&ServiceUserName=ZSlapVOy
+&ServicePasswd=DscziRXM
+&AppName=PALOkVie
+&Remark=GUrddgsn
+&ChargeType=bEAkowtW
+&Quantity=9
+&MasterConf=WjwCBmYk
+&BusinessId=RZqhover
+&CoordinatingNodeConf=lBJWpWrt
+&CoordinatingNodeSize=1
+&CoordinatingNodeDiskConf=dysSYAvt
+&IsSecGroup=true
+&SecGroupIds.N=eIoDWqyX
 &IsMultiZone=false
-&MultiZones.N=PRtJAfpm
-&AppVersion=DQVhpgCu
+&MultiZones.N=cYPBeLmo
 ```
 
 ### 响应示例
@@ -125,9 +112,9 @@ https://api.ucloud.cn/?Action=CreateUESInstance
 ```json
 {
   "Action": "CreateUESInstanceResponse",
-  "Message": "eTVIGrHX",
-  "RetCode": 0,
-  "UESInstanceId": "ues-gyyckt"
+  "InstanceId": "mzRgimvO",
+  "Message": "cnCEzDLZ",
+  "RetCode": 0
 }
 ```
 

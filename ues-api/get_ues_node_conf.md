@@ -58,6 +58,8 @@
 | **DiskType** | string | 磁盘类型[RSSD\|SSD] |**Yes**|
 | **DiskSize** | int | 磁盘大小，单位为GB |**Yes**|
 | **IsSecGroup** | boolean | 是否支持安全组[true\|false] |**Yes**|
+| **HostFamilyLabel** | string | 节点系列标识 |No|
+| **Version** | string | 节点配置版本 |No|
 
 ## 示例
 
@@ -67,8 +69,8 @@
 https://api.ucloud.cn/?Action=GetUESNodeConf
 &Region=cn-zj
 &Zone=cn-zj-01
-&InUsed=0
-&AppVersion=XqPtgmRw
+&ProjectId=OvNKcfyc
+&AppVersion=wbutcsqL
 ```
 
 ### 响应示例
@@ -76,38 +78,21 @@ https://api.ucloud.cn/?Action=GetUESNodeConf
 ```json
 {
   "Action": "GetUESNodeConfResponse",
-  "Message": "iKHTcoAa",
-  "RetCode": 0,
-  "TotalCount": 12,
-  "UESNodeConfList": [
+  "Message": "yATZkCTL",
+  "NodeConfList": [
     {
-      "CPU": 2,
-      "DiskSize": 200,
+      "CPU": 3,
+      "DiskSize": 9,
       "DiskType": "SATA",
-      "InUsed": 1,
-      "Memory": 6,
-      "NodeConf": "ds1.large",
-      "NodeType": "compute"
-    },
-    {
-      "CPU": 1,
-      "DiskSize": 100,
-      "DiskType": "SATA",
-      "InUsed": 1,
-      "Memory": 4,
-      "NodeConf": "ms1.large",
-      "NodeType": "master"
-    },
-    {
-      "CPU": 2,
-      "DiskSize": 100,
-      "DiskType": "SATA",
-      "InUsed": 1,
-      "Memory": 8,
-      "NodeConf": "ms1.xlarge",
-      "NodeType": "master"
+      "HostFamilyLabel": "saNgeSpM",
+      "IsSecGroup": true,
+      "Memory": 1,
+      "NodeConf": "cxwWzFMU",
+      "Version": "fFGLhjtI"
     }
-  ]
+  ],
+  "RetCode": 0,
+  "TotalCount": 5
 }
 ```
 
