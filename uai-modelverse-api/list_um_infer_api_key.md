@@ -66,7 +66,9 @@
 | **ModelverseDisabled** | int | 是否modelverse可用 0: 启用 1: 禁用 |No|
 | **SandBoxDisabled** | int | 是否沙盒可用 0: 启用 1: 禁用(astraflow 沙盒控制未上线，暂时无效) |No|
 | **DailyLimitAmount** | string | 日限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **DailyUsedAmount** | string | 日已使用额，单位随用户所在渠道。126渠道单位为美元 |No|
 | **MonthlyLimitAmount** | string | 月限额，单位随用户所在渠道。126渠道单位为美元 |No|
+| **MonthlyUsedAmount** | string | 月已使用额，单位随用户所在渠道。126渠道单位为美元 |No|
 | **GrantAllModels** | boolean | 全部模型访问开关，开启不受 GrantedModels 参数控制，关闭只能访问 GrantedModels 中添加模型 |No|
 | **GrantedModels** | array[string] | 授权的模型，英文逗号分隔，all表示所有模型都有权限 |No|
 
