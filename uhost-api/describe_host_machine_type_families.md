@@ -53,7 +53,7 @@
 | **Description** | string | 机型中文名称 |No|
 | **OperationStatus** | string | 机型ComponentCode |No|
 | **CpuPlatforms** | array[[*CpuPlatformStatus*](#CpuPlatformStatus)] | CPU平台列表 |No|
-| **Disks** | array[[*Disks*](#Disks)] | 磁盘信息 |No|
+| **Disks** | array[[*FamiliesDisks*](#FamiliesDisks)] | 磁盘信息 |No|
 | **MachineSizes** | array[[*MachineSizes*](#MachineSizes)] | 规格信息 |No|
 | **Features** | array[[*Features*](#Features)] | 特性信息 |No|
 | **ParentType** | string | 父类型。如GPU机型的父类型为"G" |No|
@@ -71,13 +71,13 @@
 | **Name** | string | CPU平台 |No|
 | **OperationStatus** | string | 运营Commpont Code |No|
 
-#### Disks
+#### FamiliesDisks
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Name** | string | 磁盘介质类别信息，磁盘主要分类如下：云盘\|cloudDisk、普通本地盘\|normalLocalDisk和SSD本地盘\|ssdLocalDisk。  |No|
-| **BootDisk** | array[[*BootDiskInfo*](#BootDiskInfo)] | 系统盘信息 |No|
-| **DataDisk** | array[[*DataDiskInfo*](#DataDiskInfo)] | 数据盘信息 |No|
+| **BootDisk** | array[[*FamiliesBootDiskInfo*](#FamiliesBootDiskInfo)] | 系统盘信息 |No|
+| **DataDisk** | array[[*FamiliesDataDiskInfo*](#FamiliesDataDiskInfo)] | 数据盘信息 |No|
 
 #### MachineSizes
 
@@ -147,24 +147,37 @@
 | **Memory** | array[int] | 内存规格 |No|
 | **MinimalCpuPlatform** | array[string] | CPU和内存规格只能在列出来的CPU平台支持 |No|
 
-#### BootDiskInfo
+#### FamiliesBootDiskInfo
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Name** | string | 系统盘类别，包含普通云盘\|CLOUD_NORMAL、SSD云盘\|CLOUD_SSD和RSSD云盘\|CLOUD_RSSD。普通本地盘只包含普通本地盘\|LOCAL_NORMAL一种。SSD本地盘只包含SSD本地盘\|LOCAL_SSD一种。 |No|
 | **InstantResize** | boolean | 系统盘是否允许扩容，如果是本地盘，则不允许扩容，InstantResize为false。 |No|
 | **MaximalSize** | int | MaximalSize为磁盘最大值 |No|
-| **Features** | array[string] | 磁盘可支持的服务 |No|
+| **Features** | array[[*DiskFeature*](#DiskFeature)] | 磁盘可支持的服务 |No|
 
-#### DataDiskInfo
+#### FamiliesDataDiskInfo
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **MinimalSize** | int | 磁盘最小值，如果没有该字段，最小值取基础镜像Size值即可（linux为20G，windows为40G）。 |No|
 | **Name** | string | 数据盘类别，包含普通云盘\|CLOUD_NORMAL、SSD云盘\|CLOUD_SSD和RSSD云盘\|CLOUD_RSSD。普通本地盘只包含普通本地盘\|LOCAL_NORMAL一种。SSD本地盘只包含SSD本地盘\|LOCAL_SSD一种。 |No|
 | **MaximalSize** | int | MaximalSize为磁盘最大值 |No|
-| **Features** | array[string] | 数据盘可支持的服务 |No|
-| **BackupMode** | array[string] | 支持的快照备份策略 |No|
+| **Features** | array[[*DiskFeature*](#DiskFeature)] | 数据盘可支持的服务 |No|
+
+#### DiskFeature
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 特性名称 |No|
+| **Modes** | array[[*NameOperationStatus*](#NameOperationStatus)] | 特性详情 |No|
+
+#### NameOperationStatus
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 名称 |No|
+| **OperationStatus** | string | 标记 |No|
 
 ## 示例
 
