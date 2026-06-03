@@ -62,7 +62,7 @@
 | **GpuSeries** | string | GPU系列 |No|
 | **UHostFamilies** | array[[*UHostFamily*](#UHostFamily)] | 规格族信息 |No|
 | **Virtual** | boolean | 是否为非真实机型 |No|
-| **ProType** | object | 仅OPROG<br />OPRO机型返回 |No|
+| **ProType** | [*NameFrequency*](#NameFrequency) | 仅OPROG<br />OPRO机型返回 |No|
 
 #### CpuPlatformStatus
 
@@ -78,6 +78,7 @@
 | **Name** | string | 磁盘介质类别信息，磁盘主要分类如下：云盘\|cloudDisk、普通本地盘\|normalLocalDisk和SSD本地盘\|ssdLocalDisk。  |No|
 | **BootDisk** | array[[*FamiliesBootDiskInfo*](#FamiliesBootDiskInfo)] | 系统盘信息 |No|
 | **DataDisk** | array[[*FamiliesDataDiskInfo*](#FamiliesDataDiskInfo)] | 数据盘信息 |No|
+| **OperationStatus** | string | 权限位 |No|
 
 #### MachineSizes
 
@@ -108,6 +109,19 @@
 | **Name** | string | 规格族 |No|
 | **CpuFrequency** | string | CPU频率信息 |No|
 | **CpuPlatforms** | array[[*CpuPlatformWithModels*](#CpuPlatformWithModels)] | CPU平台信息 |No|
+
+#### NameFrequency
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 机型名称 |No|
+| **Frequency** | [*Frequency*](#Frequency) | 频率 |No|
+
+#### Frequency
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Value** | float | 值 |No|
 
 #### CpuPlatformWithModels
 
