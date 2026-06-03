@@ -28,6 +28,7 @@
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
 |[GetBucketQuota](api/ufile-api/get_bucket_quota)|获取bucket配额|
 |[GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)|获取bucket静态网页配置|
+|[GetProjectRegionQuota](api/ufile-api/get_project_region_quota)|获取项目地域配额|
 |[GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)|获取bucket每日账单|
 |[GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)|查看日消费报表|
 |[GetUFilePkgPrice](api/ufile-api/get_ufile_pkg_price)|获取对资源进行新购、续费、升级等操作的价格|
@@ -37,6 +38,7 @@
 |[GetUFileReport](api/ufile-api/get_ufile_report)|查看配额使用报表|
 |[RenewUFilePkg](api/ufile-api/renew_ufile_pkg)|资源包续费|
 |[SetBucketQuota](api/ufile-api/set_bucket_quota)|设置bucket配额|
+|[SetProjectRegionQuota](api/ufile-api/set_project_region_quota)|设置项目地域配额|
 |[SetUFileReferer](api/ufile-api/set_ufile_referer)|设置对象存储防盗链|
 |[UpdateBucket](api/ufile-api/update_bucket)|更改Bucket属性|
 |[UpdateBucketStaticPageRule](api/ufile-api/update_bucket_static_page_rule)|修改bucket静态网页配置|
