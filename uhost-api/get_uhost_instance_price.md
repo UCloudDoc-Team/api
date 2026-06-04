@@ -52,7 +52,7 @@
 | **CpuPlatform** | string | 取值"Intel" "Amd"，默认值“Intel” |No|
 | **UDSetUHostInstance** | boolean | 专区云主机。如果要在专区宿主机上创建云主机，该参数可以填写为true |No|
 | **ShowPriceDetails** | boolean | 返回价格详细信息 |No|
-| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。<br />当 MachineType 为 "O"（快杰型）时，支持以下取值： <br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o2i：快杰型 O2 代，Intel 平台 默认值：o1i 或 o1a或o1r（系统将根据资源情况自动选择） <br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
+| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。<br />当 MachineType 为 "O"（快杰型）时，支持以下取值： <br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o2i：快杰型 O2 代，Intel 平台 默认值：o1i 或 o1a或o1r<br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
 
 ### 响应字段
 
