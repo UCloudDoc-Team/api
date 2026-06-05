@@ -35,7 +35,7 @@
 | **Domain** | string | 域名 |**Yes**|
 | **CertificateName** | string | SSL证书名称 |**Yes**|
 | **Certificate** | string | 填写SSL证书文件内容（PEM编码）。<br />证书文件内容填写格式：<br /><br />如果您的业务场景仅需确保服务端证书可信，则证书文件需要包含服务器证书（①）和中间证书（②）。如果您的中间证书和服务器证书是两个文件，您可以在证书链配置项填写中间证书内容即可。 |No|
-| **CertificateKey** | string | 填写SSL证书私钥内容（PEM编码）。 |No|
+| **CertificateKey** | string | 填写SSL证书私钥内容（PEM编码）。私钥内容填写格式 RSA |No|
 | **USSLId** | string | ussl证书的资源ID  |No|
 
 ### 响应字段

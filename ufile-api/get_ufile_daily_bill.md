@@ -59,6 +59,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Labels** | array[[*BucketLabels*](#BucketLabels)] | bucket对应的资源系统标签 |No|
 | **GetCountIaBill** | float | 下载低频存储次数费用；分 |No|
 | **GetCountBill** | float | 下载标准存储次数费用；分 |No|
 | **PutCountAcBill** | float | 上传归档存储次数费用；分 |No|
@@ -81,6 +82,13 @@
 | **FlowBill** | float | 下载流量费用：分；国内无此字段 |No|
 | **Date** | int | 配额消费时间，unix时间戳；单位s，精确到日期 |No|
 | **GetCountAcBill** | float | 下载归档存储次数费用；分 |No|
+
+#### BucketLabels
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Key** | string | 标签对应key |No|
+| **Value** | string | 标签对应value |No|
 
 ## 示例
 
