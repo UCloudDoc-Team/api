@@ -49,7 +49,10 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Status** | string | 登录资料状态 |**Yes**|
+| **Status** | string | 状态 |**Yes**|
+| **MaxPasswordAge** | int | 最大密码过期时间 |**Yes**|
+| **MFABindRequired** | boolean | 是否强制绑定MFA |**Yes**|
+| **PasswordResetRequired** | boolean | 下次登录是否重置密码 |**Yes**|
 
 ## 示例
 

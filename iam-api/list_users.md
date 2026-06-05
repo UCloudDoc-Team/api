@@ -53,6 +53,8 @@
 |:---|:---|:---|:---|
 | **Email** | string | 邮箱 |**Yes**|
 | **UserName** | string | 用户名 |**Yes**|
+| **ConsoleAccess** | boolean | 控制台访问权限 |**Yes**|
+| **APIAccess** | boolean | API访问权限 |**Yes**|
 | **DisplayName** | string | 昵称 |No|
 | **Status** | string | 状态(Active:正常，Inactive:未激活，Frozen:冻结，ConsoleInactive:控制台未激活) |No|
 | **CreatedAt** | int | 创建时间戳 |No|
