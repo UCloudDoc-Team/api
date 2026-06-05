@@ -32,7 +32,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 如果提供此参数，则获取相应地域下所有空间的空间名称(只返回空间名称信息) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BucketName** | string | 待获取Bucket的名称，若不提供，则获取所有Bucket |No|
 | **Offset** | int | 获取所有Bucket列表的偏移数目，默认为0 |No|
 | **Limit** | int | 获取所有Bucket列表的限制数目，默认为20 |No|
@@ -54,6 +54,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | Bucket所属地域 |No|
+| **StorageClass** | string | 默认存储类型 |No|
 | **BucketName** | string | Bucket名称 |No|
 | **BucketId** | string | Bucket的ID |No|
 | **Domain** | [*UFileDomainSet*](#UFileDomainSet) | Bucket的域名集合 参数见 UFileDomainSet |No|

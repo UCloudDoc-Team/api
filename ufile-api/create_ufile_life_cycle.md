@@ -40,7 +40,12 @@
 | **Days** | int | 指定一个过期天数N，文件会在其最近更新时间点的N天后过期，自动删除；参数范围：[7,36500]，0代表不启用 |No|
 | **ArchivalDays** | int | 指定一个过期天数N，文件会在其最近更新时间点的N天后，自动变为归档存储类型；参数范围：[7,36500]，0代表不启用 |No|
 | **IADays** | int | 指定一个过期天数N，文件会在其最近更新时间点的N天后，自动变为低频存储类型；参数范围：[7,36500]，0代表不启用 |No|
-| **Tags** | string | Tag，参数格式"k1=v1&k2=v2"，key的最大长度为128， value最大长度为256byte，单个object的tag的最大数量为10 |No|
+| **HistVerDeleteDays** | int | 指定一个历史文件过期天数N，文件会在其最近更新时间点的N天后过期,自动删除；范围： [7,36500] |No|
+| **HistVerArchivalDays** | int | 指定一个历史文件过期天数N，文件会在其最近更新时间点的N天后过期,自动删除；范围： [7,36500] |No|
+| **HistVerIADays** | int | 指定一个历史文件过期天数N，文件会在其最近更新时间点的N天后过期,自动删除；范围： [7,36500] |No|
+| **Tags** | string | Tag，参数格式"k1=v1&k2=v2"，key的最大长度为128， value最大长度为256byte，tag的最大数量为10 |No|
+| **MinSize** | int | 文件的最小size |No|
+| **MaxSize** | int | 文件的最大size |No|
 
 ### 响应字段
 
@@ -71,6 +76,11 @@ https://api.ucloud.cn/?Action=CreateUFileLifeCycle
 &ArchivalDays=6
 &IADays=2
 &Tags=wMsqQyzv
+&MinSize=2
+&MaxSize=5
+&HistVerDeleteDays=5
+&HistVerArchivalDays=6
+&HistVerIADays=2
 ```
 
 ### 响应示例

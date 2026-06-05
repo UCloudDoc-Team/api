@@ -11,6 +11,7 @@
 |[CreateBucket](api/ufile-api/create_bucket)|创建Bucket|
 |[CreateUFileLifeCycle](api/ufile-api/create_ufile_life_cycle)|创建生命周期管理|
 |[CreateUFileToken](api/ufile-api/create_ufile_token)|创建US3令牌|
+|[CreateUdsRule](api/ufile-api/create_uds_rule)|创建解压缩规则|
 |[DeleteBucket](api/ufile-api/delete_bucket)|删除Bucket|
 |[DeleteCORSRule](api/ufile-api/delete_cors_rule)|删除跨域规则|
 |[DeleteUFileLifeCycle](api/ufile-api/delete_ufile_life_cycle)|删除生命周期管理|
@@ -26,6 +27,7 @@
 |[DescribeUFileReferer](api/ufile-api/describe_ufile_referer)|对象存储防盗链列表|
 |[DescribeUFileSSLCert](api/ufile-api/describe_ufile_ssl_cert)|查询SSL证书|
 |[DescribeUFileToken](api/ufile-api/describe_ufile_token)|获取令牌信息|
+|[DescribeUdsRule](api/ufile-api/describe_uds_rule)|获取解压缩规则信息|
 |[GetBucketQuota](api/ufile-api/get_bucket_quota)|获取bucket配额|
 |[GetBucketStaticPageRule](api/ufile-api/get_bucket_static_page_rule)|获取bucket静态网页配置|
 |[GetProjectRegionQuota](api/ufile-api/get_project_region_quota)|获取项目地域配额|
