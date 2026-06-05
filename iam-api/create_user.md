@@ -34,8 +34,11 @@
 | **UserName** | string | 用户名 |**Yes**|
 | **AccessKeyStatus** | string | API密钥访问状态（LoginProfileStatus值为Inactive时，AccessKeyStatus不能为Inactive） |**Yes**|
 | **LoginProfileStatus** | string | 控制台登录访问状态（AccessKeyStatus值为Inactive时，LoginProfileStatus不能为Inactive） |**Yes**|
-| **Email** | string | 用户邮箱（LoginProfileStatus值等于Active必传，LoginProfileStatus值等于Inactive不传） |No|
 | **DisplayName** | string | 显示名称 |No|
+| **Password** | string | 用户密码（LoginProfileStatus值等于Active必传，LoginProfileStatus值等于Inactive不传） |No|
+| **GenerateRandomPassword** | boolean | 是否自动生成密码（默认false） |No|
+| **PasswordResetRequired** | boolean | 是否需要重置密码 |No|
+| **MFABindRequired** | boolean | 是否需要绑定MFA |No|
 
 ### 响应字段
 
@@ -44,9 +47,13 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **UserEmail** | string | 用户邮箱 |No|
 | **AccessKeyID** | string | 密钥ID |No|
 | **AccessKeySecret** | string | 密钥凭证 |No|
+| **CompanyID** | int | 公司ID |No|
+| **UserName** | string | 用户名 |No|
+| **DisplayName** | string | 昵称 |No|
+| **ConsoleAccess** | boolean | 控制台是否开启 |No|
+| **APIAccess** | boolean | API访问是否开启 |No|
 
 
 
@@ -63,18 +70,27 @@ https://api.ucloud.cn/?Action=CreateUser
 &MobilePhone=EBrJVWSk
 &AccessKeyStatus=Inactivate
 &LoginProfileStatus=Inactivate
+&PasswordResetRequired=true
+&MFABindRequired=false
+&Email=jcYiLNRq
+&GenerateRandomPassword=false
 ```
 
 ### 响应示例
     
 ```json
 {
+  "APIAccess": true,
   "AccessKeyID": "ACOgeKDN",
   "AccessKeySecret": "mNEyDWfT",
   "Action": "CreateUserResponse",
+  "CompanyID": 2,
+  "ConsoleAccess": false,
+  "DisplayName": "hdwRttpa",
   "Message": "yyKMMKyR",
   "RetCode": 0,
-  "UserEmail": "ewLZVcgB"
+  "UserEmail": "ewLZVcgB",
+  "UserName": "CtLjbhJc"
 }
 ```
 
