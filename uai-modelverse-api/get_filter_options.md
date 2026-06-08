@@ -40,25 +40,32 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ResourceIds** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 资源选项列表 |**Yes**|
-| **Models** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 模型选项列表 |No|
-| **Dimensions** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 账单维度选项列表 |No|
-| **PricingUnits** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 计费单位选项列表 |No|
-| **Regions** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 地域选项列表 |No|
-| **ProductCodes** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 产品类型选项列表 |No|
-| **Projects** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 项目选项列表 |No|
-| **PricingSKUs** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 计费 SKU 选项列表 |No|
-| **OrderTypes** | array[[*FilterOptionAiBill*](#FilterOptionAiBill)] | 订单类型选项列表 |No|
+| **ResourceIds** | array[[*FilterOptionString*](#FilterOptionString)] | 资源选项列表 |**Yes**|
+| **Models** | array[[*FilterOptionString*](#FilterOptionString)] | 模型选项列表 |No|
+| **Dimensions** | array[[*FilterOptionString*](#FilterOptionString)] | 账单维度选项列表 |No|
+| **PricingUnits** | array[[*FilterOptionInteger*](#FilterOptionInteger)] | 计费单位选项列表 |No|
+| **Regions** | array[[*FilterOptionString*](#FilterOptionString)] | 地域选项列表 |No|
+| **ProductCodes** | array[[*FilterOptionString*](#FilterOptionString)] | 产品类型选项列表 |No|
+| **Projects** | array[[*FilterOptionInteger*](#FilterOptionInteger)] | 项目选项列表 |No|
+| **PricingSKUs** | array[[*FilterOptionString*](#FilterOptionString)] | 计费 SKU 选项列表 |No|
+| **OrderTypes** | array[[*FilterOptionInteger*](#FilterOptionInteger)] | 订单类型选项列表 |No|
 
 #### 数据模型
 
 
-#### FilterOptionAiBill
+#### FilterOptionString
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Name** | string | 显示名称 |No|
-| **Value** | object | 值实际是interface |No|
+| **Value** | string | 值 |No|
+
+#### FilterOptionInteger
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 显示名称 |No|
+| **Value** | int | 值 |No|
 
 ## 示例
 
