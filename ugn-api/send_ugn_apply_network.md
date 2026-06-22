@@ -1,8 +1,8 @@
-# 获取云联网资源列表 - ListUGN
+# 跨账号网络实例申请加入 UGN - SendUGNApplyNetwork
 
 ## 简介
 
-获取当前项目下所有云联网资源
+跨账号网络实例申请加入 UGN
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=ListUGN)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=SendUGNApplyNetwork)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `ListUGN`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `SendUGNApplyNetwork`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -31,9 +31,15 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
-| **Limit** | int | 分页大小，默认20 |No|
-| **Offset** | int | 偏移量，默认0 |No|
+| **NetworkID** | string | 网络实例 ID，如 uvnet-xxxx |**Yes**|
+| **NetworkType** | string | 网络实例类型，枚举值：VPC/UWAN-VRouter/... |**Yes**|
+| **NetworkRegion** | string | 网络实例所属地域，如 cn-sh2 |**Yes**|
+| **NetworkOrgName** | string | 网络实例所属项目名，如 org-xxx |**Yes**|
+| **UGNID** | string | UGN id |**Yes**|
+| **UGNCompanyID** | int | UGN所属公司 id |**Yes**|
 
 ### 响应字段
 
@@ -42,41 +48,34 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **UGNs** | array[[*UGN*](#UGN)] | UGN 列表 |**Yes**|
-| **TotalCount** | int | UGN数量 |No|
-| **Offset** | int | 偏移量 |No|
-| **Limit** | int | 分页大小 |No|
-
-#### 数据模型
 
 
-#### UGN
 
-| 字段名 | 类型 | 描述信息 | 必填 |
-|:---|:---|:---|:---|
-| **UGNID** | string | 云联网资源 ID |**Yes**|
-| **Name** | string | 云联网名称 |**Yes**|
-| **Remark** | string | 云联网备注 |**Yes**|
-| **CreateTime** | int | 云联网创建时间 |**Yes**|
-| **NetworkCount** | int | 关联网络实例数量 |**Yes**|
-| **BwPackageCount** | int | 绑定带宽包数量 |**Yes**|
-| **PolicyCount** | int | 关联的路由策略数量 |**Yes**|
-| **ApplyNetworksCount** | int | 申请待加入的网络数量 |**Yes**|
 
 ## 示例
 
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=GetUGNLists
+https://api.ucloud.cn/?Action=SendUGNApplyNetwork
 &ProjectId=org-1jzytw
-&PageSize=20
-&Page=1
+&NetworkID=uvnet-1j2ej1xphekn
+&UGNID=ugn-1c61moash8b5
+&NetworkType=VPC
+&NetworkRegion=cn-sh2
+&NetworkOrgName=org-1jzytw
+&UGNCompany=14
 ```
 
 ### 响应示例
     
-暂无
+```json
+{
+  "Action": "SendUGNApplyNetworkResponse",
+  "Message": "ok",
+  "RetCode": 0
+}
+```
 
 
 

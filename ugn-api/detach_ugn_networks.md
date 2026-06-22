@@ -43,6 +43,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Networks** | array[[*Network*](#Network)] | 数组，数组内每个元素的字段如下： NetworkID：string，网络实例 ID，如 uvnet-xxxx； Type：string，网络实例类型，枚举值：VPC/UCVR/...； Region：string，网络实例所属地域，如 cn-sh2； OrgName：string，网络实例所属项目名，如 org-xxx |**Yes**|
+| **UGNID** | string | UGN ID |No|
 
 #### 数据模型
 
@@ -68,12 +69,9 @@
     
 ```
 https://api.ucloud.cn/?Action=DetachUGNNetworks
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=OYrJdefD
-&UGNID=PFsyuYNs
-&Networks.N=XYZqarpI
-&ProjectId=xAWefAzC
+&ProjectId=org-xxxx
+&UGNID=ugn-1nnk7s9fw238
+&Networks.N=uvnet-1fm42v4y5011
 ```
 
 ### 响应示例
@@ -81,18 +79,23 @@ https://api.ucloud.cn/?Action=DetachUGNNetworks
 ```json
 {
   "Action": "DetachUGNNetworksResponse",
-  "Message": "vwQGcwaD",
+  "Message": "ok",
   "Networks": [
     {
-      "CreateTime": "KSPTmeyt",
-      "Name": "RBmdyKKH",
-      "NetworkID": "MXqqOBna",
-      "RegionID": "cn-zj",
-      "Type": "CorznUMt",
-      "VNI": 3
+      "CompanyID": 31,
+      "InsertTime": 1779344461,
+      "Name": "test",
+      "NetworkID": "uvnet-1fm42v4y50mb",
+      "OrgID": 630018,
+      "OrgName": "org-1jzytw",
+      "Region": "test05",
+      "RegionID": 666006,
+      "Type": "VPC",
+      "VNI": 1677723564
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "UGNID": "ugn-1nnk7s9fw238"
 }
 ```
 
