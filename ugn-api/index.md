@@ -15,8 +15,11 @@
 |[EnableRoutePolicy](api/ugn-api/enable_route_policy)|启用\停用路由策略|
 |[GetSimpleBuyBwPrice](api/ugn-api/get_simple_buy_bw_price)|获取简洁版带宽包价格|
 |[GetSimpleUGNBwPackages](api/ugn-api/get_simple_ugn_bw_packages)|获取云联网内的简洁版带宽包|
+|[GetSwitchableBillingModes](api/ugn-api/get_switchable_billing_modes)|获取带宽包可以切换的计费类型|
 |[GetUGNRouteTable](api/ugn-api/get_ugn_route_table)|获取云联网路由表|
 |[ListSimpleBwPackage](api/ugn-api/list_simple_bw_package)|获取简洁版带宽包列表|
 |[ListUGN](api/ugn-api/list_ugn)|获取云联网资源列表|
+|[ListUGNRegions](api/ugn-api/list_ugn_regions)|获取UGN可加入地域|
 |[ModifyUGNBandwidth](api/ugn-api/modify_ugn_bandwidth)|修改云联网带宽大小|
+|[SendUGNApplyNetwork](api/ugn-api/send_ugn_apply_network)|跨账号网络实例申请加入 UGN|
 |[UpdateRoutePolicy](api/ugn-api/update_route_policy)|修改路由策略|

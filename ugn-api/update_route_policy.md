@@ -40,10 +40,10 @@
 | **Policy.Action** | string | 策略执行动作，限定取值："Permit"/"Deny" |No|
 | **Policy.RoutePriority** | int | 当执行动作为 "Permit" 时，给匹配中的路由设置路由优先级，范围：[1,255]，数值越小优先级越大 |No|
 | **Policy.SrcRegions.N** | string | 路由策略需要匹配的路由的所在地域数组 |No|
-| **Policy.SrcNetworkTypes.N** | string | 路由策略需要匹配的路由的网络实例类型数组，限定取值："VPC" |No|
+| **Policy.SrcNetworkTypes.N** | string | 路由策略需要匹配的路由的网络实例类型数组，限定取值："VPC" / "UWAN-VRouter" |No|
 | **Policy.SrcNetworks.N.NetworkId** | string | 路由策略需要匹配的路由的网络实例ID数组 |No|
 | **Policy.SrcNetworks.N.Prefixes.N** | string | 路由策略需要匹配的路由的网络实例下的网段数组 |No|
-| **Policy.DstNetworkTypes.N** | string | 路由策略需要作用的网络实例类型数组，限定取值："VPC" |No|
+| **Policy.DstNetworkTypes.N** | string | 路由策略需要作用的网络实例类型数组，限定取值："VPC" / "UWAN-VRouter" |No|
 | **Policy.DstNetworks.N.NetworkId** | string | 路由策略需要作用的网络实例ID数组 |No|
 
 ### 响应字段
@@ -63,20 +63,20 @@
     
 ```
 https://api.ucloud.cn/?Action=UpdateRoutePolicy
-&ProjectId=EQAZLuPL
-&UGNID=SKPFqLiQ
-&Policy.PolicyId=AVXBdPux
-&Policy.Direction=ylmeXuIv
-&Policy.Priority=2
-&Policy.Action=uuvJNtOH
-&Policy.RoutePriority=9
-&Policy.SrcRegions.n=7
-&Policy.SrcNetworkTypes.n=yuJrxWqH
-&Policy.SrcNetworks.n.NetworkId=ZaNqcstG
-&Policy.SrcNetworks.n.Prefixes.n=BNHNIAkv
-&Policy.DstNetworkTypes.n=nYLLCpvL
-&Policy.DstNetworks.n.NetworkId=FRfzTgwJ
-&Policy.Name=KCQlOqzq
+&ProjectId=org-1jzytw
+&UGNID=ugn-1nnk7s9fw238
+&Policy.PolicyId=policy-lsssp0x5j6
+&Policy.Direction=Out
+&Policy.Priority=100
+&Policy.Action=Deny
+&Policy.RoutePriority=90
+&Policy.SrcRegions.n=cn-bj2
+&Policy.SrcNetworkTypes.n=VPC
+&Policy.SrcNetworks.n.NetworkId=uvnet-1ohmq6nnapc2
+&Policy.SrcNetworks.n.Prefixes.n=192.168.30.0/24
+&Policy.DstNetworkTypes.n=VPC
+&Policy.DstNetworks.n.NetworkId=uvnet-1ohmq6nnapc1
+&Policy.Name=test
 ```
 
 ### 响应示例
@@ -84,42 +84,7 @@ https://api.ucloud.cn/?Action=UpdateRoutePolicy
 ```json
 {
   "Action": "UpdateRoutePolicyResponse",
-  "Policies": [
-    {
-      "Action": "AwZDVVAZ",
-      "Direction": "aBjehwSB",
-      "DstNetworkTypes": [
-        "RAEkuDrc"
-      ],
-      "DstNetworks": [
-        {
-          "NetworkId": "BemGsZrk",
-          "Prefixes": [
-            "xuWLesLI"
-          ]
-        }
-      ],
-      "Enabled": false,
-      "PolicyId": "CJnQwTDh",
-      "Priority": 3,
-      "Region": 3,
-      "RoutePriority": 8,
-      "SrcNetworkTypes": [
-        "ySwFhOIV"
-      ],
-      "SrcNetworks": [
-        {
-          "NetworkId": "KZOyuKxH",
-          "Prefixes": [
-            "zAYqRNUG"
-          ]
-        }
-      ],
-      "SrcRegions": [
-        5
-      ]
-    }
-  ],
+  "Message": "ok",
   "RetCode": 0
 }
 ```

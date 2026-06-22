@@ -46,6 +46,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Networks** | array[[*Network*](#Network)] | 数组，数组内每个元素的字段如下： NetworkID：string，网络实例 ID，如 uvnet-xxxx； Type：string，网络实例类型，枚举值：VPC/UCVR/...； Region：string，网络实例所属地域，如 cn-sh2； OrgName：string，网络实例所属项目名，如 org-xxx |**Yes**|
+| **UGNID** | string | UGN ID |No|
 
 #### 数据模型
 
@@ -71,15 +72,12 @@
     
 ```
 https://api.ucloud.cn/?Action=AttachUGNNetworks
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=OvrPyXtA
-&UGNID=hEUWUHZz
-&Networks.N=FOqETOhP
-&ProjectId=EoFSIcPY
-&Networks.N.Type=gcifhYYR
-&Networks.N.Region=fOrhjoMb
-&Networks.N.OrgName=iqRxHPLI
+&ProjectId=org-1jzytw
+&UGNID=ugn-1nnk7s9fw238
+&Networks.N.NetworkID=uvnet-1ohmq6nnapc2
+&Networks.N.Type=VPC
+&Networks.N.Region=cn-bj2
+&Networks.N.OrgName=org-1jzytw
 ```
 
 ### 响应示例
@@ -87,18 +85,23 @@ https://api.ucloud.cn/?Action=AttachUGNNetworks
 ```json
 {
   "Action": "AttachUGNNetworksResponse",
-  "Message": "NZDutucr",
+  "Message": "ok",
   "Networks": [
     {
-      "CreateTime": "nHkzkLLW",
-      "Name": "sXKmMQrv",
-      "NetworkID": "aTTLUmtn",
-      "RegionID": "cn-zj",
-      "Type": "LGChldgl",
-      "VNI": 7
+      "CompanyID": 31,
+      "InsertTime": 1781687857,
+      "Name": "VPC-1",
+      "NetworkID": "uvnet-1ohmq6nnapc2",
+      "OrgID": 630018,
+      "OrgName": "org-1jzytw",
+      "Region": "test03",
+      "RegionID": 666003,
+      "Type": "VPC",
+      "VNI": 2130733152
     }
   ],
-  "RetCode": 0
+  "RetCode": 0,
+  "UGNID": "ugn-1nnk7s9fw238"
 }
 ```
 
