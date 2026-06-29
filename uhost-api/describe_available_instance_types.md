@@ -153,7 +153,6 @@ DescribeAvailableInstanceTypes
 | **Name** | string | 数据盘类别，包含普通云盘\|CLOUD_NORMAL、SSD云盘\|CLOUD_SSD和RSSD云盘\|CLOUD_RSSD。普通本地盘只包含普通本地盘\|LOCAL_NORMAL一种。SSD本地盘只包含SSD本地盘\|LOCAL_SSD一种。 |No|
 | **MaximalSize** | int | MaximalSize为磁盘最大值 |No|
 | **Features** | array[string] | 数据盘可支持的服务 |No|
-| **BackupMode** | array[string] | 支持的快照备份策略 |No|
 
 #### CpuPlatformWithModels
 
