@@ -15,6 +15,7 @@
     - [获取实例规格族列表（所有机型的信息） - DescribeHostMachineTypeFamilies](api/uhost-api/describe_host_machine_type_families)
     - [获取镜像列表 - DescribeImage](api/uhost-api/describe_image)
     - [查询硬件隔离组 - DescribeIsolationGroup](api/uhost-api/describe_isolation_group)
+    - [获取主机可挂载的磁盘信息 - DescribeUHostAvailableDiskTypes](api/uhost-api/describe_uhost_available_disk_types)
     - [获取主机信息 - DescribeUHostInstance](api/uhost-api/describe_uhost_instance)
     - [查询主机密钥信息 - DescribeUHostKeyPairs](api/uhost-api/describe_uhost_key_pairs)
     - [获取主机业务组列表 - DescribeUHostTags](api/uhost-api/describe_uhost_tags)
