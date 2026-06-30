@@ -53,9 +53,9 @@
     
 ```
 https://api.ucloud.cn/?Action=EnableRoutePolicy
-&ProjectId=DGXEDfus
-&UGNID=zcCwkpLm
-&PolicyId=QgZotSrl
+&ProjectId=org-1jzytw
+&UGNID=ugn-1j2ekni38q2v
+&PolicyId=policy-htvicn9gr2
 &Enable=false
 ```
 
@@ -64,42 +64,6 @@ https://api.ucloud.cn/?Action=EnableRoutePolicy
 ```json
 {
   "Action": "EnableRoutePolicyResponse",
-  "Policies": [
-    {
-      "Action": "HSBLxvGJ",
-      "Direction": "kHYCHrxu",
-      "DstNetworkTypes": [
-        "RKzczRUR"
-      ],
-      "DstNetworks": [
-        {
-          "NetworkId": "znsPaZCE",
-          "Prefixes": [
-            "XIqfpOIR"
-          ]
-        }
-      ],
-      "Enabled": false,
-      "PolicyId": "ncgcLNwU",
-      "Priority": 3,
-      "Region": 1,
-      "RoutePriority": 4,
-      "SrcNetworkTypes": [
-        "bPBLKGzS"
-      ],
-      "SrcNetworks": [
-        {
-          "NetworkId": "IeQJkOlB",
-          "Prefixes": [
-            "KHASYtGK"
-          ]
-        }
-      ],
-      "SrcRegions": [
-        7
-      ]
-    }
-  ],
   "RetCode": 0
 }
 ```
