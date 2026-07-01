@@ -55,7 +55,7 @@
 | **RolePolicyDocument** | string | 角色信息策略文本 |No|
 | **MaxSessionDuration** | int | 角色最大会话时间 |No|
 | **CreatedAt** | int | 创建时间 |No|
-| **UpdatedAt** | string | 更新时间 |No|
+| **UpdatedAt** | int | 更新时间 |No|
 
 ## 示例
 
