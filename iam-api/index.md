@@ -18,8 +18,10 @@
 |[DeleteGroup](api/iam-api/delete_group)|删除用户组|
 |[DeleteIAMPolicy](api/iam-api/delete_iam_policy)|删除IAM策略|
 |[DeleteProject](api/iam-api/delete_project)|删除项目|
+|[DeleteRole](api/iam-api/delete_role)|删除角色信息|
 |[DeleteUser](api/iam-api/delete_user)|删除用户|
 |[DetachPoliciesFromGroup](api/iam-api/detach_policies_from_group)|移除用户组关联的IAM策略|
+|[DetachPoliciesFromRole](api/iam-api/detach_policies_from_role)|移除角色关联的IAM策略|
 |[DetachPoliciesFromUser](api/iam-api/detach_policies_from_user)|移除用户关联的IAM策略|
 |[GetGroup](api/iam-api/get_group)|查询用户组详情|
 |[GetIAMPolicy](api/iam-api/get_iam_policy)|获取策略详情|
@@ -33,8 +35,10 @@
 |[ListGroups](api/iam-api/list_groups)|列出用户组|
 |[ListPolicies](api/iam-api/list_policies)|获取IAM策略列表|
 |[ListPoliciesForGroup](api/iam-api/list_policies_for_group)|列出用户组关联的权限策略|
+|[ListPoliciesForRole](api/iam-api/list_policies_for_role)|列出角色关联的权限策略|
 |[ListPoliciesForUser](api/iam-api/list_policies_for_user)|列出用户关联的IAM策略|
 |[ListProjects](api/iam-api/list_projects)|列出所有项目|
+|[ListRoles](api/iam-api/list_roles)|查询角色信息列表|
 |[ListUsers](api/iam-api/list_users)|列出用户列表|
 |[ListUsersForGroup](api/iam-api/list_users_for_group)|列出用户组包含的用户|
 |[ModifyProject](api/iam-api/modify_project)|修改项目|
