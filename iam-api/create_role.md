@@ -34,7 +34,7 @@
 | **RoleName** | string | 角色名称 |**Yes**|
 | **RolePolicyDocument** | string | 角色信任策略文本 |**Yes**|
 | **Description** | string | 描述 |No|
-| **MaxSessionDuration** | string | 角色最大会话时间（单位：秒） |No|
+| **MaxSessionDuration** | int | 角色最大会话时间（单位：秒） |No|
 
 ### 响应字段
 
