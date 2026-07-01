@@ -6,11 +6,13 @@
 |:---|:---|
 |[AddUserToGroup](api/iam-api/add_user_to_group)|添加成员到用户组|
 |[AttachPoliciesToGroup](api/iam-api/attach_policies_to_group)|关联IAM策略到用户组|
+|[AttachPoliciesToRole](api/iam-api/attach_policies_to_role)|关联IAM策略到角色|
 |[AttachPoliciesToUser](api/iam-api/attach_policies_to_user)|关联IAM策略到用户|
 |[CreateAccessKey](api/iam-api/create_access_key)|创建用户密钥|
 |[CreateGroup](api/iam-api/create_group)|创建用户组|
 |[CreateIAMPolicy](api/iam-api/create_iam_policy)|创建IAM策略|
 |[CreateProject](api/iam-api/create_project)|创建项目|
+|[CreateRole](api/iam-api/create_role)|创建IAM角色信息|
 |[CreateUser](api/iam-api/create_user)|创建IAM用户|
 |[DeleteAccessKey](api/iam-api/delete_access_key)|删除用户密钥|
 |[DeleteGroup](api/iam-api/delete_group)|删除用户组|
@@ -22,6 +24,7 @@
 |[GetGroup](api/iam-api/get_group)|查询用户组详情|
 |[GetIAMPolicy](api/iam-api/get_iam_policy)|获取策略详情|
 |[GetLoginProfile](api/iam-api/get_login_profile)|获取用户登录资料|
+|[GetRole](api/iam-api/get_role)|查询角色信息|
 |[GetUser](api/iam-api/get_user)|获取用户信息|
 |[GetUserMFAInfo](api/iam-api/get_user_mfa_info)|查询用户多因素认证设备信息|
 |[ListAccessKeys](api/iam-api/list_access_keys)|获取指定用户密钥列表|
