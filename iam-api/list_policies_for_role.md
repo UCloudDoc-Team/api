@@ -34,7 +34,7 @@
 | **RoleName** | string | 角色名称 |**Yes**|
 | **Scope** | string | 范围 |No|
 | **ProjectID** | string | 项目标识 |No|
-| **Limit** | string | 返回数据长度，默认为20，最大100 |No|
+| **Limit** | string | 返回数据长度，默认为10，最大100 |No|
 | **Offset** | string | 列表起始位置偏移量，默认为0 |No|
 
 ### 响应字段
@@ -45,7 +45,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 权限策略总数 |No|
-| **Policies** | [*AttachedPolicy*](#AttachedPolicy) | 权限策略列表 |No|
+| **Policies** | array[[*AttachedPolicy*](#AttachedPolicy)] | 权限策略列表 |No|
 
 #### 数据模型
 
@@ -68,11 +68,11 @@
     
 ```
 https://api.ucloud.cn/?Action=ListPoliciesForRole
-&RoleName=HgJLOnBs
-&Scope=OUDoyJhb
-&ProjectID=QNHZRyhZ
-&Limit=3
-&Offset=2
+&RoleName=vfMDKOvP
+&Scope=YKYdzdOw
+&ProjectID=ZaDLZrri
+&Limit=SdMriPoz
+&Offset=dkSAIWox
 ```
 
 ### 响应示例
@@ -80,9 +80,19 @@ https://api.ucloud.cn/?Action=ListPoliciesForRole
 ```json
 {
   "Action": "ListPoliciesForRoleResponse",
-  "Policies": {},
+  "Policies": [
+    {
+      "AttachedAt": 3,
+      "Description": "WuKmNORY",
+      "PolicyName": "cvLeAbUx",
+      "PolicyURN": "uzroiZrD",
+      "ProjectID": "NfQcjUCw",
+      "ProjectName": "mItNvtEy",
+      "Scope": "All"
+    }
+  ],
   "RetCode": 0,
-  "TotalCount": 9
+  "TotalCount": 1
 }
 ```
 
