@@ -35,7 +35,8 @@
 | **ChargeType** | string | 计费模式。枚举值为： Year，按年付费； Month，按月付费；Dynamic，按小时预付费 |**Yes**|
 | **Tps** | string | 每秒事务处理量。支持20000、50000、100000、200000 |**Yes**|
 | **Mode** | string | 实例网络类型，唯一值：PrivateNet |**Yes**|
-| **Edition** | string | 版本，唯一值：Enterprise |**Yes**|
+| **Edition** | string | 套餐版本，唯一值：Enterprise |**Yes**|
+| **PublicVersion** | string | 集群版本，枚举值： v4、v5 |**Yes**|
 | **Quantity** | int | 购买时长。月付时quantity传0代表购买至月末，小时付只支持quantity传0或不传，年付quantity不支持传0 |No|
 | **Remark** | string | 备注 |No|
 | **Tag** | string | 业务组tag，默认值：Default |No|
@@ -75,6 +76,8 @@ https://api.ucloud.cn/?Action=CreateURocketMQService
 &Tag=idcfHQMY
 &Edition=cJUoTkTu
 &FileReservedTime=fhRWEiwS
+&PublicVersion=reQJEYfn
+&PublicVersion=JdbuuafS
 ```
 
 ### 响应示例
