@@ -33,6 +33,7 @@
 | **ChargeType** | string | 计费模式，枚举：Dynamic：按时付费，Month：按月付费，Year：按年付费 |**Yes**|
 | **Mode** | string | 实例网络类型，唯一值:PrivateNet |**Yes**|
 | **Edition** | string | 版本类别，唯一值:Enterprise |**Yes**|
+| **PublicVersion** | string | 集群版本，枚举值： v4、v5 |**Yes**|
 | **Quantity** | int | 购买时长。默认: 1。按小时购买(Dynamic)时无需此参数。 月付时，此参数传 0，代表了购买至月末。 |No|
 
 ### 响应字段
@@ -73,6 +74,7 @@ https://api.ucloud.cn/?Action=GetURocketMQServicePrice
 &Quantity=5
 &Mode=MFHZPoBl
 &Edition=TJGYKNBp
+&PublicVersion=dzCpfjkw
 ```
 
 ### 响应示例
