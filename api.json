@@ -361,17 +361,6 @@
           ]
         },
         {
-          "name": "云数据库 MongoDB",
-          "img": "icon-product__mongodb",
-          "sublinks": [
-            {
-              "links": "/api/udb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "云数据库 PostgreSQL",
           "img": "icon-product__postgresql",
           "sublinks": [
@@ -394,17 +383,6 @@
           ]
         },
         {
-          "name": "云数据库 UDB MongoDB（NVMe）",
-          "img": "icon-product__mongodb",
-          "sublinks": [
-            {
-              "links": "/api/umongodb-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "云数据库读写分离中间件 UDBProxy",
           "img": "icon-product__udbproxy",
           "sublinks": [
@@ -421,7 +399,29 @@
       "listname": "NoSQL 数据库",
       "listvalue": [
         {
-          "name": "云内存 Memcache",
+          "name": "云数据库 MongoDB",
+          "img": "icon-product__mongodb",
+          "sublinks": [
+            {
+              "links": "/api/udb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "云数据库 UDB MongoDB（NVMe）",
+          "img": "icon-product__mongodb",
+          "sublinks": [
+            {
+              "links": "/api/umongodb-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
+          "name": "云内存 Redis",
           "img": "icon-product__umem",
           "sublinks": [
             {
@@ -432,7 +432,7 @@
           ]
         },
         {
-          "name": "云内存 Redis",
+          "name": "云内存 Memcache",
           "img": "icon-product__umem",
           "sublinks": [
             {
