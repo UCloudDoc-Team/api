@@ -66,5 +66,6 @@
     - [删除算力平台自制镜像 - TerminateCompShareCustomImage](api/ucompshare-api/terminate_comp_share_custom_image)
     - [删除轻量算力共享平台虚机实例 - TerminateCompShareInstance](api/ucompshare-api/terminate_comp_share_instance)
     - [编辑算力平台自制镜像信息 - UpdateCompShareImage](api/ucompshare-api/update_comp_share_image)
+    - [更改Pod实例的端口信息 - UpdateCompShareInstancePorts](api/ucompshare-api/update_comp_share_instance_ports)
     - [更新实例定时关机时间 - UpdateCompShareStopScheduler](api/ucompshare-api/update_comp_share_stop_scheduler)
     - [更改团队信息 - UpdateCompShareTeam](api/ucompshare-api/update_comp_share_team)
