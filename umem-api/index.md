@@ -56,3 +56,9 @@
 |[UpdateURedisBackupStrategy](api/umem-api/update_uredis_backup_strategy)|更改主备Redis备份策略|
 |[UpdateURedisRewriteTime](api/umem-api/update_uredis_rewrite_time)|修改主备redis重写时间|
 |[ResizeUDRedisBlockSize](api/umem-api/resize_ud_redis_block_size)|更改udredis分片容量|
+
+## API
+
+| API | 描述信息 |
+|:---|:---|
+|[ResizeUMemcacheGroup](api/umem-api/resize_umem_cache_group)|调整memcache实例的容量|
