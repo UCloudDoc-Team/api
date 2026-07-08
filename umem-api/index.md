@@ -61,4 +61,5 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[ModifyUMemPassword](api/umem-api/modify_umem_password)|更改分布式redis密码|
 |[ResizeUMemcacheGroup](api/umem-api/resize_umem_cache_group)|调整memcache实例的容量|
