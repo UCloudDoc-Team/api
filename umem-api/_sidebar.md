@@ -52,6 +52,7 @@
     - [修改主备redis重写时间 - UpdateURedisRewriteTime](api/umem-api/update_uredis_rewrite_time)
     - [更改udredis分片容量 - ResizeUDRedisBlockSize](api/umem-api/resize_ud_redis_block_size)
 - **API**
+    - [更改分布式redis密码 - ModifyUMemPassword](api/umem-api/modify_umem_password)
     - [调整memcache实例的容量 - ResizeUMemcacheGroup](api/umem-api/resize_umem_cache_group)
 - **附录**
   - [UMem 错误码](api/umem-api/error_code)
