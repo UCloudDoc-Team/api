@@ -445,7 +445,7 @@
       ]
     },
     {
-      "listname": "数据开发与治理",
+      "listname": "数据库管理工具",
       "listvalue": [
         {
           "name": "数据库自治中心 UDAC",
@@ -529,22 +529,6 @@
           "sublinks": [
             {
               "links": "/api/uclickhouse-api/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "listname": "数据库管理工具",
-      "listvalue": [
-        {
-          "name": "数据传输服务 UDTS",
-          "img": "icon-product__udts",
-          "sublinks": [
-            {
-              "links": "/api/udts-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
@@ -769,7 +753,23 @@
       ]
     },
     {
-      "listname": "备份与迁移",
+      "listname": "云资源",
+      "listvalue": [
+        {
+          "name": "标签 Label",
+          "img": "icon-product__label",
+          "sublinks": [
+            {
+              "links": "/api/label-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "listname": "多云与迁移",
       "listvalue": [
         {
           "name": "服务器迁移中心 USMC",
@@ -781,18 +781,13 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
-        }
-      ]
-    },
-    {
-      "listname": "云资源",
-      "listvalue": [
+        },
         {
-          "name": "标签 Label",
-          "img": "icon-product__label",
+          "name": "数据传输服务 UDTS",
+          "img": "icon-product__udts",
           "sublinks": [
             {
-              "links": "/api/label-api/README",
+              "links": "/api/udts-api/README",
               "name": "查看文档",
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
