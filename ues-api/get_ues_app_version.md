@@ -63,8 +63,7 @@
 https://api.ucloud.cn/?Action=GetUESAppVersion
 &Region=cn-zj
 &Zone=cn-zj-01
-&AppName=pMcpWDVJ
-&ServiceType=TEXBCSel
+&ProjectId=bZmZmfNv
 ```
 
 ### 响应示例
@@ -72,25 +71,16 @@ https://api.ucloud.cn/?Action=GetUESAppVersion
 ```json
 {
   "Action": "GetUESAppVersionResponse",
-  "Message": "uraUHQwv",
-  "RetCode": 0,
-  "TotalCount": 3,
-  "UESAppVersionList": [
+  "AppVersionList": [
     {
-      "AppName": "zAlzqxAH",
-      "AppPort": "IxFzmOON",
-      "AppState": "0",
-      "AppVersion": "NHtmFBac",
-      "ServiceType": "RdRyjiIC"
-    },
-    {
-      "AppName": "QwszIdNN",
-      "AppPort": "GiSdUmIU",
-      "AppState": "0",
-      "AppVersion": "QHtoMnlg",
-      "ServiceType": "qdkiCGkh"
+      "AppName": "clyhmaOp",
+      "AppVersion": "zmpAMxdc",
+      "IsMultiZone": false
     }
-  ]
+  ],
+  "Message": "EHLImGBb",
+  "RetCode": 0,
+  "TotalCount": 7
 }
 ```
 
