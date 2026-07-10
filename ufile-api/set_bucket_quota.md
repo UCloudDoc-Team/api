@@ -34,7 +34,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **BucketName** | string | bucket名称 |**Yes**|
-| **QuotaLimit** | string | bucket配额 |**Yes**|
+| **QuotaLimit** | int | bucket配额 |**Yes**|
 
 ### 响应字段
 

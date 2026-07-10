@@ -44,7 +44,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Region** | string | 地域 |**Yes**|
 | **QuotaType** | string | 配额类型 |**Yes**|
-| **QuotaLimit** | string | 配额数目 |**Yes**|
+| **QuotaLimit** | int | 配额数目 |**Yes**|
 
 
 
