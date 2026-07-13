@@ -4,9 +4,9 @@
 
 获取用户操作日志
 
-?> 通过该 API 目前只能查询最近365天的日志
+?> 目前只能查询最近365 天的日志
 
-
+!> 接口限流，禁止并发调用
 
 
 ## 使用方法
@@ -78,13 +78,13 @@
     
 ```
 https://api.ucloud.cn/?Action=GetUserOperationEvents
-&ProjectId=DybfOwNo
-&BeginTime=2
+&ProjectId=CjGgXaPC
+&BeginTime=3
 &EndTime=4
-&MaxResults=7
-&NextToken=nLgQPnKo
-&ResourceID=CfrwODDl
-&AccessKeyIDs=XkYCKzZG
+&MaxResults=9
+&NextToken=YObjlvDM
+&ResourceID=ExXnLYdC
+&AccessKeyIDs.N=TOmMiNcf
 ```
 
 ### 响应示例
@@ -94,21 +94,23 @@ https://api.ucloud.cn/?Action=GetUserOperationEvents
   "Action": "GetUserOperationEventsResponse",
   "Events": [
     {
-      "Api": "kNELMpfb",
-      "IsSuccess": true,
+      "AccessKeyID": "hzEkUinD",
+      "Api": "UilcBYGb",
+      "IsSuccess": false,
       "OperateTime": 2,
-      "Region": "sLtsxECu",
+      "Region": "CoCKNwDp",
       "RelatedResource": [
         {
-          "ResourceId": "HcWkaBoa",
-          "ResourceName": "yVfCJcnu"
+          "ResourceId": "QkXnVEYM",
+          "ResourceName": "JWTSbYqC"
         }
       ],
-      "UserEmail": "oZHZSIVq",
-      "UserName": "MMmTomWP"
+      "RemoteIP": "GgTbCVNF",
+      "UserEmail": "uCWDOPXE",
+      "UserName": "VAfqMncF"
     }
   ],
-  "NextToken": "SpWAGVWQ",
+  "NextToken": "qKssbivd",
   "RetCode": 0
 }
 ```
