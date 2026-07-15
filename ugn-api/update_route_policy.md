@@ -37,7 +37,7 @@
 | **Policy.Name** | string | 策略名称，限定长度 255 |No|
 | **Policy.Direction** | string | 策略方向，限定取值："In"/"Out" |No|
 | **Policy.Priority** | int | 策略优先级，范围：[1,255]，数值越小优先级越大，同一方向，策略优先级不可重复 |No|
-| **Policy.Action** | string | 策略执行动作，限定取值："Permit"/"Deny" |No|
+| **Policy.RouteAction** | string | 策略执行动作，限定取值："Permit"/"Deny" |No|
 | **Policy.RoutePriority** | int | 当执行动作为 "Permit" 时，给匹配中的路由设置路由优先级，范围：[1,255]，数值越小优先级越大 |No|
 | **Policy.SrcRegions.N** | string | 路由策略需要匹配的路由的所在地域数组 |No|
 | **Policy.SrcNetworkTypes.N** | string | 路由策略需要匹配的路由的网络实例类型数组，限定取值："VPC" / "UWAN-VRouter" |No|

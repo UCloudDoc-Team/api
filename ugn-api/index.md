@@ -7,6 +7,7 @@
 |[AddRoutePolicy](api/ugn-api/add_route_policy)|新增路由策略|
 |[AttachUGNNetworks](api/ugn-api/attach_ugn_networks)|批量关联网络实例|
 |[CreateSimpleUGNBwPackage](api/ugn-api/create_simple_ugn_bw_package)|云联网简洁版创建带宽包|
+|[CreateUGN](api/ugn-api/create_ugn)|创建云联网|
 |[DelUGN](api/ugn-api/del_ugn)|删除云联网|
 |[DeleteRoutePolicy](api/ugn-api/delete_route_policy)|删除路由策略|
 |[DeleteUGNBwPackage](api/ugn-api/delete_ugn_bw_package)|删除带宽包|
