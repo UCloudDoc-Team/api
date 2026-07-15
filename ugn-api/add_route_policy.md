@@ -35,7 +35,7 @@
 | **UGNID** | string | 云联网实例ID |**Yes**|
 | **Policy.Direction** | string | 策略方向，限定取值："In"/"Out" |**Yes**|
 | **Policy.Priority** | int | 策略优先级，范围：[1,255]，数值越小优先级越大，同一方向，策略优先级不可重复 |**Yes**|
-| **Policy.Action** | string | 策略执行动作，限定取值："Permit"/"Deny" |**Yes**|
+| **Policy.RouteAction** | string | 策略执行动作，限定取值："Permit"/"Deny" |**Yes**|
 | **Policy.SrcNetworks.N.NetworkId** | string | 路由策略需要匹配的路由的网络实例ID数组 |**Yes**|
 | **Policy.SrcNetworks.N.Prefixes.N** | string | 路由策略需要匹配的路由的网络实例下的网段数组 |No|
 | **Policy.Name** | string | 策略名称，限定长度255 |No|
