@@ -32,9 +32,9 @@
 | **ClusterId** | string | UK8S集群ID。 可从UK8S控制台获取。 |**Yes**|
 | **CPU** | int | 虚拟CPU核数。可选参数：2-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |**Yes**|
 | **Count** | int | 创建Node节点数量，取值范围是[1,50]。 |**Yes**|
-| **Password** | string | Node节点密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，如下：# echo -n Password1 \| base64 |**Yes**|
 | **Mem** | int | 内存大小。单位：MB。范围 ：[4096, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |**Yes**|
 | **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> 默认为月付 |**Yes**|
+| **Password** | string | Node节点密码。请遵照[字段规范](api/uhost-api/specification)设定密码。密码需使用base64进行编码，如下：# echo -n Password1 \| base64 |No|
 | **BootDiskType** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。默认为SSD云盘 |No|
 | **BootDiskSize** | int | 系统盘大小，单位GB。默认40。范围：[40, 500]。注意SSD本地盘无法调整。 |No|
 | **DataDiskType** | string | 磁盘类型。请参考[磁盘类型](api/uhost-api/disk_type)。默认为SSD云盘 |No|
@@ -62,13 +62,16 @@
 | **NetworkInterface.N.EIP.Bandwidth** | int | 【若绑定EIP，此参数必填】弹性IP的外网带宽, 单位为Mbps. 共享带宽模式下非必传, 非共享带宽模式必须指定非0Mbps带宽. 各地域非共享带宽的带宽范围如下： 流量计费[1-300]，带宽计费[1-800] |No|
 | **NetworkInterface.N.EIP.PayMode** | string | 弹性IP的计费模式. 枚举值: "Traffic", 流量计费; "Bandwidth", 带宽计费; "ShareBandwidth",共享带宽模式. "Free":免费带宽模式,默认为 "Bandwidth" |No|
 | **NetworkInterface.N.EIP.ShareBandwidthId** | string | 绑定的共享带宽Id，仅当PayMode为ShareBandwidth时有效 |No|
-| **NetworkInterface.N.EIP.OperatorName** | string | 【若绑定EIP，此参数必填】弹性IP的线路。枚举值: 国际: International BGP: Bgp 各地域允许的线路参数如下: cn-sh1: Bgp cn-sh2: Bgp cn-gd: Bgp cn-bj1: Bgp cn-bj2: Bgp hk: International us-ca: International th-bkk: International kr-seoul:International us-ws:International ge-fra:International sg:International tw-kh:International.其他海外线路均为 International |No|
+| **NetworkInterface.N.EIP.OperatorName** | string | 【若绑定EIP，此参数必填】弹性IP的线路。枚举值: 国际: International，BGP: Bgp。<br />各地域允许的线路参数如下: cn-sh1: Bgp cn-sh2: Bgp cn-gd: Bgp cn-bj1: Bgp cn-bj2: Bgp hk: International us-ca: International th-bkk: International kr-seoul:International us-ws:International ge-fra:International sg:International tw-kh:International.其他海外线路均为 International |No|
 | **NetworkInterface.N.EIP.CouponId** | string | 当前EIP代金券id。请通过DescribeCoupon接口查询，或登录用户中心查看。 |No|
 | **SecurityGroupId** | string | 防火墙ID，默认：Web推荐防火墙。如何查询SecurityGroupId请参见 [DescribeFirewall](api/unet-api/describe_firewall.html)。 |No|
 | **SecGroupId.N.Id** | string | 安全组 ID。至多可以同时绑定5个安全组。 |No|
 | **SecGroupId.N.Priority** | string | 安全组优先级。取值范围[1, 5] |No|
 | **SecGroupId.N.Name** | string | 安全组名称。 |No|
-| **UserLabels** | string | UK8S用户标签，key=value形式,多组用”,“隔开，最多5组。 如env=pro,type=game |No|
+| **UHostFamily** | string | 主机规格族 |No|
+| **UserLabels.N.Key** | string | UK8S用户资源标签的键值 |No|
+| **UserLabels.N.Value** | string | UK8S用户资源标签的值 |No|
+| **KubeletConfiguration.ContainerLogMaxFiles** | string | 全量KubeletConfiguration.XXX定义参考AddUK8SNodeGroup接口: https://uxiao.ucloudadmin.com/#/api-manager/api/detail/UK8S/AddUK8SNodeGroup |No|
 
 ### 响应字段
 
@@ -77,7 +80,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **NodeIds** | array[string] | Node实例Id集合<br /> |No|
+| **NodeIds** | array[string] | Node实例Id集合 |No|
 
 
 
@@ -143,6 +146,12 @@ https://api.ucloud.cn/?Action=AddUK8SUHostNode
 &SecGroupId.N.Priority=ViZOqzHD
 &SecGroupId.N.Name=nxNSncqY
 &UserLabels=YOZdrUzx
+&UserLabels.N.Value=zIuQFzik
+&KubeletConfiguration=cnIRhrZb
+&KubeletConfiguration.ContainerLogMaxFiles=RToaEnnB
+&KubeletConfiguration.ContainerLogMaxFiles=QDThjbnX
+&UHostFamily=WMYTsMvg
+&UHostFamily=JUQwQRJF
 ```
 
 ### 响应示例

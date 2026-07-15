@@ -29,6 +29,7 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClusterId** | string | UK8S集群ID |**Yes**|
+| **NodeIds** | string | 可传一个或多个节点id  不传或为空则返回所有节点 |No|
 
 ### 响应字段
 
@@ -55,9 +56,11 @@
 | **InstanceName** | string | 资源名称，初始值等于NodeId，用户可在UHost或UPHost处修改。 |**Yes**|
 | **InstanceId** | string | 资源ID，如uhost-xxxx，或uphost-xxxxx。 |**Yes**|
 | **MachineType** | string | 机型类别，分别对应Uhost的MachineType或PHost的PHostType。 |**Yes**|
+| **CPUPlatform** | string | CPU平台 |**Yes**|
+| **UHostFamily** | string | 主机规格族 |**Yes**|
 | **OsType** | string | Node节点的操作系统类别，如Linux或Windows。 |**Yes**|
 | **OsName** | string | Node节点的镜像名称。 |**Yes**|
-| **CPU** | int | Node节点CPU核数，单位: 个。 |**Yes**|
+| **CPU** | int | Node节点CPU核数，单位: 核。 |**Yes**|
 | **Memory** | int | 内存大小，单位: MB。 |**Yes**|
 | **IPSet** | array[[*UHostIPSet*](#UHostIPSet)] | 节点IP信息，详细信息见 UHostIPSet。 |**Yes**|
 | **CreateTime** | int | 节点创建时间 |**Yes**|
@@ -66,7 +69,30 @@
 | **Unschedulable** | boolean | 是否允许Pod调度到该节点，枚举值为true或false。 |**Yes**|
 | **KubeProxy** | [*KubeProxy*](#KubeProxy) | kubeproxy信息，详细信息见KubeProxy。 |**Yes**|
 | **NodeLogInfo** | string | 加节点时判断是否没有资源，如果返回NORESOURCE则代表没有资源了 |**Yes**|
+| **Labels** | array[string] | 节点标签 |**Yes**|
+| **KubeletVersion** | string | Kubelet版本 |**Yes**|
+| **MaxPod** | int | pod最大可用 |**Yes**|
+| **MaxMemory** | int | 内存最大可用 |**Yes**|
+| **MaxCPU** | int | CPU最大可用 |**Yes**|
+| **RequestPod** | int | 已申请的pod |**Yes**|
+| **RequestMemory** | int | 已申请的Memory |**Yes**|
+| **RequestCPU** | int | 已申请的CPU |**Yes**|
+| **RuntimeVersion** | string | Runtime 版本 |**Yes**|
+| **RuntimeName** | string | Runtime 名字 |**Yes**|
+| **UsedCPU** | int | 已使用的CPU |**Yes**|
+| **UsedMemory** | int | 已使用的Memory |**Yes**|
+| **BootDiskSize** | int | 系统盘大小 |**Yes**|
+| **DataDiskSize** | int | 数据盘大小，如果有多块数据盘会汇总展示，不包括PVC |**Yes**|
 | **GPU** | int | 节点的GPU颗数。 |No|
+| **NodeGroupId** | string | 节点池id |No|
+| **IDCId** | string | 边缘机房id |No|
+| **IDCName** | string | 边缘机房 |No|
+| **Remark** | string | 节点主机备注信息 |No|
+| **GPUType** | string | 节点GPU型号(如果为GPU机型) |No|
+| **ImageAccelable** | boolean | 是否启用了容器镜像加速 |No|
+| **Tag** | string | 节点所属业务组 |No|
+| **PodCIDR** | string | Pod CIDR |No|
+| **NodeGroupName** | string | 节点所属节点池名称 |No|
 
 #### UHostIPSet
 
@@ -79,6 +105,8 @@
 | **VPCId** | string | IP地址对应的VPC ID |No|
 | **SubnetId** | string | IP地址对应的子网 ID |No|
 | **Mac** | string | Mac地址 |No|
+| **IPMode** | string | IP 协议类型 |No|
+| **NetworkInterfaceId** | string | 网络接口资源 ID |No|
 
 #### KubeProxy
 
@@ -95,6 +123,7 @@ https://api.ucloud.cn/?Action=ListUK8SClusterNodeV2
 &Region=cn-zj
 &ProjectId=tcpNeveH
 &ClusterId=UZFeTeQg
+&NodeIds=NqqsTTXO
 ```
 
 ### 响应示例

@@ -26,9 +26,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **ProductType** | string | 产品类型，可选值uhost、uphost，不填则返回所有 |No|
+| **MachineType** | string | 适用机型，如O、G、OPRO等，默认为O |No|
+| **GPUType** | string | 适用GPU类型，如1080Ti、4090、V100、A800等，MachineType为G时必须提供 |No|
+| **K8sVersion** | string | k8s集群版本，如1.28.15 |No|
 
 ### 响应字段
 
@@ -38,7 +42,9 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **ImageSet** | array[[*ImageInfo*](#ImageInfo)] | 虚拟机可用镜像集合, 详见ImageInfo 数组 |No|
-| **PHostImageSet** | array[[*ImageInfo*](#ImageInfo)] | 物理机可用镜像集合, 详见ImageInfo 数组 |No|
+| **PHostImageSet** | array[[*ImageInfo*](#ImageInfo)] | 裸金属可用镜像集合, 详见ImageInfo 数组 |No|
+| **CustomImageSet** | array[[*ImageInfo*](#ImageInfo)] | 虚拟机自制可用镜像集合, 详见ImageInfo 数组 |No|
+| **CustomPHostImageSet** | array[[*ImageInfo*](#ImageInfo)] | 裸金属自制可用镜像集合, 详见ImageInfo 数组 |No|
 
 #### 数据模型
 
@@ -51,6 +57,12 @@
 | **ImageId** | string | 镜像 Id |**Yes**|
 | **ImageName** | string | 镜像名称 |**Yes**|
 | **NotSupportGPU** | boolean | 该镜像是否支持GPU机型，枚举值[true:不支持，false:支持]。 |**Yes**|
+| **OsType** | string | OS 类型 |**Yes**|
+| **OsName** | string | OS 名称 |**Yes**|
+| **Features** | array[string] | 镜像支持的特性 |No|
+| **ImageSize** | int | 镜像大小 |No|
+| **IntegratedSoftware** | string | 集成软件名称, 如NV驱动版本、cuda版本 |No|
+| **SupportedGPUTypes** | array[string] | 支持的GPU机型 |No|
 
 ## 示例
 
@@ -61,6 +73,10 @@ https://api.ucloud.cn/?Action=DescribeUK8SImage
 &Region=cn-zj
 &Zone=cn-zj-01
 &ProjectId=sUDxutjf
+&ProductType=TzadjShf
+&MachineType=HfHJuJRC
+&GPUType=QDBWdeSh
+&K8SVersion=VYTIrewq
 ```
 
 ### 响应示例
@@ -68,6 +84,9 @@ https://api.ucloud.cn/?Action=DescribeUK8SImage
 ```json
 {
   "Action": "DescribeUK8SImageResponse",
+  "CustomIImageSet": [
+    "vcSXSoOo"
+  ],
   "ImageSet": [
     {
       "ImageId": "SOqcWTEJ",
@@ -85,6 +104,9 @@ https://api.ucloud.cn/?Action=DescribeUK8SImage
     }
   ],
   "Message": "RcXlEGbn",
+  "PHostCustomIImageSet": [
+    "jABaDaml"
+  ],
   "PHostImageSet": [
     {
       "ImageId": "yFeQPFUL",
