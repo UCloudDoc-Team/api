@@ -41,6 +41,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **ClusterCount** | int | 满足条件的集群数量 |**Yes**|
 | **ClusterSet** | array[[*ClusterSet*](#ClusterSet)] | 集群信息，具体参考ClusterSet |No|
+| **TotalCount** | int | 总数 |No|
 
 #### 数据模型
 
@@ -55,14 +56,27 @@
 | **SubnetId** | string | 所属子网 |**Yes**|
 | **PodCIDR** | string | Pod网段 |**Yes**|
 | **ServiceCIDR** | string | 服务网段 |**Yes**|
+| **CNIMode** | string | CNI网络模式 |**Yes**|
 | **MasterCount** | int | Master 节点数量 |**Yes**|
 | **ApiServer** | string | 集群apiserver地址 |**Yes**|
 | **K8sVersion** | string | 集群版本 |**Yes**|
+| **DeleteProtection** | int | 删除保护开关。0表示不开启，1表示开启。默认不开启 |**Yes**|
+| **RuntimeName** | string | 容器运行时名称 |**Yes**|
+| **RuntimeVersion** | string | 容器运行时版本号，docker 或 containerd 版本 |**Yes**|
+| **ClusterType** | string | 计费/管理形态，区分"专有版"和"托管版"两种售卖形态 |**Yes**|
+| **LoopbackClientCert** | [*LoopbackClientCert*](#LoopbackClientCert) | API Server 内部回环客户端证书 |**Yes**|
 | **ClusterLogInfo** | string | 创建集群时判断如果为NORESOURCE则为没资源，否则为空 |No|
 | **CreateTime** | int | 创建时间 |No|
 | **NodeCount** | int | Node节点数量 |No|
-| **ExternalApiServer** | string | 集群外部apiserver地址	 |No|
+| **ExternalApiServer** | string | 集群外部apiserver地址 |No|
 | **Status** | string | 集群状态，枚举值：初始化："INITIALIZING"；启动中："STARTING"；创建失败："CREATEFAILED"；正常运行："RUNNING"；添加节点："ADDNODE"；删除节点："DELNODE"；删除中："DELETING"；删除失败："DELETEFAILED"；错误："ERROR"；升级插件："UPDATE_PLUGIN"；更新插件信息："UPDATE_PLUGIN_INFO"；异常："ABNORMAL"；升级集群中："UPGRADING"；容器运行时切换："CONVERTING" |No|
+
+#### LoopbackClientCert
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **ExpireTime** | int | 证书到期时间 |No|
+| **Warn** | boolean | 证书是否进入过期告警状态 |No|
 
 ## 示例
 
@@ -76,6 +90,7 @@ https://api.ucloud.cn/?Action=ListUK8SClusterV2
 &Offset=5
 &Limit=4
 &ClusterId=DiFSEdqw
+&TotalCount=4
 ```
 
 ### 响应示例
