@@ -39,7 +39,7 @@
 | **TopicId** | string | 主题ID |**Yes**|
 | **StartTime** | int | 起始日志时间，秒级时间戳 |No|
 | **EndTime** | int | 终止日志时间，秒级时间戳 |No|
-| **Size** | int | 一次返回条数，默认20 |No|
+| **Size** | int | 一次返回条数，默认20。仅当检索分析语句不包含SQL时有效。<br />SQL结果条数方式可以在SQL里使用limit语法。 |No|
 | **ScrollId** | string | Deprecated. 滚动加载参数ScrollId |No|
 | **LastId** | string | 滚动加载参数,上一页最后一条数据的ID |No|
 | **LastTimestamp** | string | 滚动加载参数,上一页最后一条数据的timestamp |No|
@@ -67,14 +67,25 @@
 | **ScrollId** | string | 滚动检索Id Deprecated |No|
 | **LastId** | string | 滚动检索,当前页最后一条数据ID |No|
 | **LastTimestamp** | string | 滚动检索,当前页最后一条数据Timestamp |No|
+| **Columns** | array[[*AnalysisField*](#AnalysisField)] | 当使用SQL语句查询时，数据通过AnalysisRecords字段返回，Columns字段返回的是字段名和类型 |No|
+| **AnalysisRecords** | array[string] | 当使用SQL语句查询时，数据通过该字段返回 |No|
 
 #### LogContent
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **LogId** | string | 日志标识ID |**Yes**|
+| **HostName** | string | 日志来源主机 |**Yes**|
+| **FileName** | string | 日志文件路径 |**Yes**|
 | **Timestamp** | int | 日志时间 |**Yes**|
 | **LogJson** | string | JSON格式的日志内容 |**Yes**|
+
+#### AnalysisField
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Name** | string | 字段名 |**Yes**|
+| **Type** | string | 字段类型 |**Yes**|
 
 ## 示例
 
@@ -97,6 +108,7 @@ https://api.ucloud.cn/?Action=QueryULogServiceLog
 &EndTime=2
 &LastId=PnnScnrE
 &LastTimestamp=kiLBtvYo
+&QueryLimit=3
 ```
 
 ### 响应示例

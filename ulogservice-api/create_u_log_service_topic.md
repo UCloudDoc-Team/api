@@ -33,10 +33,10 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **TopicName** | string | 主题名称，校验规则<br />"^[<br />w]{1,23}$" |**Yes**|
-| **ReserveAge** | int | 保存时间 1\~360 天，-1表示永久保存 |**Yes**|
+| **TopicName** | string | 主题名称，校验规则<br />"^[<br />w]{1,64}$" |**Yes**|
+| **ReserveAge** | int | 保存时间 1\~730 天 |**Yes**|
 | **LogSetId** | string | 日志集ID |**Yes**|
-| **TopicShardNum** | int | 分区数量 数字1\~20 |No|
+| **TopicShardNum** | int | 分区数量，固定是2 |**Yes**|
 
 ### 响应字段
 
