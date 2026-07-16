@@ -56,8 +56,8 @@
 |:---|:---|:---|:---|
 | **TopicName** | string | 主题名称 |No|
 | **TopicId** | string | 主题ID |No|
-| **TopicShardNum** | int | 分区数量 数字1\~20 |No|
-| **ReserveAge** | int | 保存时间 1\~360 天，-1表示永久保存 |No|
+| **TopicShardNum** | int | 分区数量，固定是2 |No|
+| **ReserveAge** | int | 保存时间 1\~730 天 |No|
 | **IsReserved** | int | 是否保留：0 - NORMAL, 1 - RESERVED |No|
 | **TopicDesc** | string | 主题描述 |No|
 
