@@ -52,9 +52,9 @@
     
 ```
 https://api.ucloud.cn/?Action=DeleteUGNBwPackage
-&BwPackageID=QoUNxSzi
-&UGNID=toMPaDaw
-&ProjectId=sWilHnSQ
+&BwPackageID=bw-1rr07fd1f2bl
+&UGNID=ugn-1nnk7s9fw238
+&ProjectId=org-1jzytw
 ```
 
 ### 响应示例
@@ -62,7 +62,7 @@ https://api.ucloud.cn/?Action=DeleteUGNBwPackage
 ```json
 {
   "Action": "DeleteUGNBwPackageResponse",
-  "Message": "JUglwnaf",
+  "Message": "ok",
   "RetCode": 0
 }
 ```

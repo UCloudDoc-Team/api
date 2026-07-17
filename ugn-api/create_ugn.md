@@ -73,37 +73,37 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateUGN
-&ProjectId=org-1jzytw
-&Name=test
-&Remark=test
-&Networks.N.NetworkID=uvnet-1rigodty3n9d
-&Networks.N.Type=VPC
-&Networks.N.Region=cn-bj2
-&Networks.N.OrgName=org-1jzytw
+&ProjectId=HtkTGJAF
+&Name=HDgqVUkq
+&Remark=lrNklkCW
+&Networks.N.NetworkID=asaCbwIt
+&Networks.N.Type=wJNiJeMH
+&Networks.N.Region=DIvWCBGu
+&Networks.N.OrgName=zWscmBfN
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "AttachUGNNetworksResponse",
-  "Message": "ok",
+  "Action": "CreateUGNResponse",
+  "Message": "mSZbBqrW",
   "Networks": [
     {
-      "CompanyID": 31,
-      "InsertTime": 1784013346,
-      "Name": "test",
-      "NetworkID": "uvnet-1rigodty3n9d",
-      "OrgID": 630018,
-      "OrgName": "org-1jzytw",
-      "Region": "cn-sh2",
-      "RegionID": 10000001,
-      "Type": "VPC",
-      "VNI": 2130733553
+      "CompanyID": 4,
+      "InsertTime": 2,
+      "Name": "mrBaQbPr",
+      "NetworkID": "vBqMphpg",
+      "OrgID": 9,
+      "OrgName": "lhvuQWjE",
+      "Region": "PUOLsPuG",
+      "RegionID": 1,
+      "Type": "AOMdtzyw",
+      "VNI": 4
     }
   ],
   "RetCode": 0,
-  "UGNID": "ugn-1og4skva871z"
+  "UGNID": "RidmbTLC"
 }
 ```
 
