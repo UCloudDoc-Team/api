@@ -50,7 +50,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Region** | string | 地域名称 |**Yes**|
-| **RegIonId** | int | 地域ID |**Yes**|
+| **RegIonId** | string | 地域ID |**Yes**|
 | **IsOverseas** | boolean | 是否为海外地域 |**Yes**|
 | **IsOnline** | boolean | 是否上线 |**Yes**|
 | **Needs** | array[string] | 添加region需要做的校验 |No|

@@ -34,7 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |**Yes**|
 | **UGNID** | string | UGN ID |**Yes**|
 | **Offset** | int | 偏移量，默认0 |No|
-| **Limit** | int | 	<br />分页大小，默认20 |No|
+| **Limit** | int | 分页大小，默认20 |No|
 | **PackageIds.N** | string | 带宽包ID列表，不填查询UGN下全部带宽包 |No|
 
 ### 响应字段

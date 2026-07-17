@@ -62,19 +62,18 @@
     
 ```
 https://api.ucloud.cn/?Action=CreateSimpleUGNBwPackage
-&ProjectId=FJfvcwyc
-&UGNID=vLTjghrQ
-&RegionA=CXjpivSV
-&RegionB=tuzQKHjH
+&ProjectId=org-1jzytw
+&UGNID=ugn-1nnk7s9fw238
+&RegionA=cn-bj2
+&RegionB=cn-sh2
 &BandWidth=5
-&PayMode=hqBOeGLB
-&ChargeType=JaZsRxIP
-&Quantity=2.17933
-&Name=DycDxxlS
-&Remark=YSAeemnC
-&Qos=kSBlZKnX
-&Path=qNXFXBtV
-&CouponId=mnBiOvFL
+&PayMode=FixedBw
+&ChargeType=Month
+&Quantity=1
+&Name=test
+&Remark=test
+&Qos=Platinum
+&Path=IGP
 ```
 
 ### 响应示例

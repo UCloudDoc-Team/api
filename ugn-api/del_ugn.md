@@ -51,11 +51,8 @@
     
 ```
 https://api.ucloud.cn/?Action=DelUGN
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=LADzpFGs
-&UGNID=pPCfpBhN
-&ProjectId=GrcHYlaw
+&ProjectId=org-1jzytw
+&UGNID=ugn-1j2ekni38q2v
 ```
 
 ### 响应示例
@@ -63,7 +60,7 @@ https://api.ucloud.cn/?Action=DelUGN
 ```json
 {
   "Action": "DelUGNResponse",
-  "Message": "mEuTHshw",
+  "Message": "ok",
   "RetCode": 0
 }
 ```
