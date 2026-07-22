@@ -53,11 +53,13 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ID** | string | 计算规格id, 目前支持CPU和内存比1:2、1:4、1:8三类配比规格;<br /><br />规格的格式为："机型.配比.CPU核数规格"；<br /><br />机型支持o和n两种机型，分别代表快杰NVMe和SSD云盘机型；<br /><br />配比映射关系如下:<br />2m代表CPU内存配比1比2，<br />4m代表CPU内存配比1比4，<br />8m代表CPU内存配比1比8，<br /><br />CPU核数规格射关系如下：<br />small代表1C，<br />medium代表2C，<br />xlarge代表4C，<br />2xlarge代表8C，<br />4xlarge代表16C，<br />8xlarge代表32C，<br />16xlarge代表64C，<br /><br />例如 "o.mysql4m.medium"表示<br />创建快杰NVMe机型2C8G的实例，<br />"o.mysql8m.4xlarge"表示创建快杰NVMe机型16C128G的实例<br /> |No|
+| **StorageClass** | string | 存储类型 CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 |No|
+| **SpecificationClass** | string | 规格类型 O: NVMe型, OM: 共享型，N: 通用型 |No|
+| **ID** | string | 计算规格id, 目前支持CPU和内存比1:2、1:4、1:8三类配比规格;<br /><br />规格的格式为："机型.配比.CPU核数规格"；<br /><br />机型支持o和n两种机型，分别代表快杰NVMe和SSD云盘机型；<br /><br />配比映射关系如下:<br />2m代表CPU内存配比1比2，<br />4m代表CPU内存配比1比4，<br />8m代表CPU内存配比1比8，<br /><br />CPU核数规格射关系如下：<br />small代表1C，<br />medium代表2C，<br />xlarge代表4C，<br />2xlarge代表8C，<br />4xlarge代表16C，<br />8xlarge代表32C，<br />16xlarge代表64C，<br /><br />例如 "o.mysql4m.medium"表示<br />创建快杰NVMe机型2C8G的实例，<br />"o.mysql8m.4xlarge"表示创建快杰NVMe机型16C128G的实例 |No|
 | **Description** | string | 计算规格描述，格式为"nCmG"，表示n核mG内存实例 |No|
 | **Cpu** | int | 规格cpu核数 |No|
 | **Memory** | int | 规格内存大小，单位（GB） |No|
-| **Os** | string | 内部云主机机型，可选"o/n" |No|
+| **Os** | string | 内部云主机机型，可选"O/N/OM" |No|
 | **Group** | string | 内存/cpu配比 |No|
 
 ## 示例

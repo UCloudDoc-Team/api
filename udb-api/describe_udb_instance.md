@@ -62,11 +62,14 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | DB实例所在可用区 |No|
+| **AutoRenew** | int | 0 不自动续费， 1 自动续费 |**Yes**|
+| **StorageClass** | string | CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘，LOCAL_SSD: SSD本地盘 |**Yes**|
+| **SpecificationClass** | string | 规格类型 O: NVME, OM: 共享型，N: 通用型<br />空的话，显示为- |**Yes**|
 | **CaseSensitivityParam** | int | 0区分大小写, 1不分区 |No|
 | **ClusterRole** | string | 当DB类型为mongodb时，返回该实例所在集群中的角色，包括：mongos、configsrv_sccc、configsrv_csrs、shardsrv_datanode、shardsrv_arbiter，其中congfigsrv分为sccc和csrs两种模式，shardsrv分为datanode和arbiter两种模式 |No|
 | **DBId** | string | DB实例id |No|
 | **Name** | string | 实例名称，至少6位 |No|
-| **DBTypeId** | string | DB类型id，mysql/mongodb按版本细分各有一个id 目前id的取值范围为[1,7],数值对应的版本如下： 1：mysql-5.5，2：mysql-5.1，3：percona-5.5 4：mongodb-2.4，5：mongodb-2.6，6：mysql-5.6， 7：percona-5.6 |No|
+| **DBTypeId** | string | DB类型，mysql/mongodb 按版本细分 mysql-8.4, mysql-8.0, mysql-5.7, percona-5.7, mysql-5.6, percona-5.6、mysql-5.5、mongodb-2.4 、mongodb-2.6 等。可以通过 DescribeUDBType 查询 |No|
 | **ParamGroupId** | int | DB实例使用的配置参数组id |No|
 | **AdminUser** | string | 管理员帐户名，默认root |No|
 | **VirtualIP** | string | DB实例虚ip |No|
@@ -102,13 +105,14 @@
 | **BackupZone** | string | 跨可用区高可用备库所在可用区 |No|
 | **IPv6Address** | string | 该实例的ipv6地址 |No|
 | **UserUFileData** | [*UFileDataSet*](#UFileDataSet) | 用户转存备份到自己的UFILE配置, 结构参考UFileDataSet |No|
-| **DBSubVersion** | string | mysql实例提供具体小版本信息 |No|
+| **DBSubVersion** | string | 实例提供具体内核版本信息 |No|
 | **EnableSSL** | int | mysql是否开启了SSL；1->未开启  2->开启 |No|
 | **SSLExpirationTime** | int | SSL到期时间 |No|
 | **BackupMethod** | string | 默认的备份方式，nobackup表示不备份， snapshot 表示使用快照备份，logic 表示使用逻辑备份，xtrabackup表示使用物理备份。 |No|
 | **MachineType** | string | 数据库机型规格 |No|
 | **SpecificationType** | int | 是否使用可选cpu类型规格 |No|
 | **CPU** | int | CPU核数 |No|
+| **ForceEncryption** | int | 是否强制加密，1为强制加密，0是不强制加密 |No|
 
 #### UDBSlaveInstanceSet
 
@@ -154,6 +158,8 @@
 | **CaseSensitivityParam** | int | 0 区分大小写, 1不区分, 只针对mysql8.0 |No|
 | **SpecificationType** | int | 实例计算规格类型，0或不传代表使用内存方式购买，1代表使用内存-cpu可选配比方式购买，需要填写MachineType |No|
 | **MachineType** | string | 规格类型ID,当SpecificationType为1时有效 |No|
+| **StorageClass** | string | CLOUD_SSD: SSD云盘, CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘，LOCAL_SSD: SSD本地盘<br /> |No|
+| **SpecificationClass** | string | 规格类型 O: NVME, OM: 共享型，N: 通用型 空的话，显示为- |No|
 
 #### UFileDataSet
 

@@ -4,7 +4,7 @@
 
 获取参数组详细参数信息
 
-
+?> 获取参数组列表或详情。创建实例时必填的 `ParamGroupId` 取自本接口返回的 `GroupId`，且须与目标 `DBTypeId` 匹配。跨可用区 HA 创建前请用 `RegionFlag=true`（可不填 Zone）拉取跨可用区参数组。
 
 
 
