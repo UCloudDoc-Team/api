@@ -4,7 +4,7 @@
 
 创建UDB实例（包括创建mysql NVMe、共享型和O2实例以及从备份恢复实例）
 
-?> 创建跨可用区的高可用注意项:<br />1. 需要参数 BackupZone：值为高可用容灾的ZoneId<br />2. 参数ParamGroupId: 值为跨可用区的配置文件，可以通过DescribeUDBParamGroup获得
+?> 创建前建议先调用 DescribeUDBType 取 `DBTypeId`、ListUDBMachineType 取 `MachineType`/`StorageClass`/`SpecificationClass`、DescribeUDBParamGroup 取 `ParamGroupId`（跨可用区 HA 查询时须 `RegionFlag=true`）； 成功返回 `DBId` 后用 DescribeUDBInstance 或 DescribeUDBInstanceState 轮询至 Running。询价可先调 DescribeUDBInstancePrice。   创建跨可用区的高可用注意项: 1. 需要参数 BackupZone：值为高可用容灾的ZoneId;  2. 参数ParamGroupId: 值为跨可用区的配置文件，可以通过DescribeUDBParamGroup获得。
 
 
 
@@ -34,25 +34,25 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Name** | string | 实例名称，至少6位 |**Yes**|
-| **AdminPassword** | string | 管理员密码 |**Yes**|
-| **DBTypeId** | string | DB类型，mysql按版本细分 mysql-8.4, mysql-8.0,  mysql-5.7, percona-5.7, mysql-5.6, percona-5.6、mysql-5.5 |**Yes**|
+| **Name** | string | 实例名称，至少6位,最大63位 |**Yes**|
+| **AdminPassword** | string | 管理员密码。 8-36 位，支持大小写字母、数字、@#$%^*-+=_,?!&()\~.\|，须包含两类及以上字符 |**Yes**|
+| **DBTypeId** | string | DB类型，mysql按版本细分 mysql-8.4, mysql-8.0,  mysql-5.7, percona-5.7, mysql-5.6, percona-5.6、mysql-5.5。 可以通过 DescribeUDBType 查询 |**Yes**|
 | **Port** | int | 端口号，mysql默认3306 |**Yes**|
-| **DiskSpace** | int | 磁盘空间(GB), 暂时支持20G - 32T |**Yes**|
-| **ParamGroupId** | int | DB实例使用的配置参数组id |**Yes**|
+| **DiskSpace** | int | 磁盘空间(GB)，支持约 20G–32T，步长通常为 10； |**Yes**|
+| **ParamGroupId** | int | DB实例使用的配置参数组id，取值见 DescribeUDBParamGroup 返回的 `GroupId`，且须与 `DBTypeId` 匹配。 |**Yes**|
 | **MachineType** | string | 规格类型 ID，请通过 ListUDBMachineType 接口获取，返回体中的ID字段为MachineType的值。 |**Yes**|
-| **StorageClass** | string | 存储类型 CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合使用，CLOUD_RSSD对应O型，CLOUD_SSD_ESSENTIAL对应OM型(北京2、乌兰察布支持)，注：圣保罗、丹佛、哈萨克斯坦地域仅支持O2机型，CLOUD_RSSD对应O2型<br /> |**Yes**|
+| **StorageClass** | string | 存储类型 CLOUD_RSSD: RSSD 云盘， CLOUD_SSD_ESSENTIAL: SSD Essential云盘 ，该字段和SpecificationClass组合使用，CLOUD_RSSD对应O型，CLOUD_SSD_ESSENTIAL对应OM型(北京2、乌兰察布支持)，注：圣保罗、丹佛、哈萨克斯坦地域仅支持O2机型，CLOUD_RSSD对应O2型。 可从 ListUDBMachineType 同条规格读取 |**Yes**|
 | **SpecificationClass** | string | 规格类型 O: NVMe型, O2: O2 ,OM: 共享型 |**Yes**|
 | **ChargeType** | string | Year， Month， Dynamic，Trial，默认: Month |No|
 | **Quantity** | int | 购买时长，默认值1 |No|
 | **BackupCount** | int | 备份策略，每周备份数量，默认7次 |No|
 | **BackupTime** | int | 备份策略，备份开始时间，单位小时计，默认1点 |No|
 | **BackupDuration** | int | 备份策略，备份时间间隔，单位小时计，默认24小时 |No|
-| **BackupId** | int | 备份id，如果指定，则表明从备份恢复实例 |No|
+| **BackupId** | int | 备份 ID；指定则从备份恢复。取值见 DescribeUDBBackup。 |No|
 | **InstanceMode** | string | UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal" |No|
 | **BackupZone** | string | 跨可用区高可用备库所在可用区，参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
-| **SubnetId** | string | 子网ID |No|
-| **VPCId** | string | VPC的ID |No|
+| **SubnetId** | string | 子网 ID。与 `VPCId` 须同属一个 VPC |No|
+| **VPCId** | string | VPC ID。与 `SubnetId` 成对使用；取值见 UVPC 相关接口 |No|
 | **DisableSemisync** | boolean | 是否开启异步高可用，默认不填，可置为true |No|
 | **Tag** | string | 实例所在的业务组名称 |No|
 | **DBSubVersion** | string | MySQL 小版本号，支持指定小版本进行创建，请通过 DescribeUDBType 接口获取可用版本。 |No|

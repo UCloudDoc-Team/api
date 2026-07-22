@@ -35,7 +35,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **DBId** | string | 实例的ID,该值可以通过DescribeUDBInstance获取 |**Yes**|
-| **Password** | string | 实例的新密码 |**Yes**|
+| **Password** | string | 实例的新密码。 8-36 位，支持大小写字母、数字、@#$%^*-+=_,?!&()\~.\|，须包含两类及以上字符 |**Yes**|
 | **AccountName** | string | sqlserver帐号，仅在sqlserver的情况下填该参数 |No|
 
 ### 响应字段

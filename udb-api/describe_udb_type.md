@@ -35,8 +35,8 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **BackupZone** | string | 跨可用区高可用DB的备库所在区域，仅当该可用区支持跨可用区高可用时填入。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **DBClusterType** | string | DB实例类型，如mysql，sqlserver，mongo，postgresql |No|
-| **InstanceMode** | string | 返回支持某种实例类型的DB类型。如果没传，则表示任何实例类型均可。<br />normal:单点,ha:高可用,sharded_cluster:分片集群 |No|
-| **DiskType** | string | 返回支持某种磁盘类型的DB类型，如Normal、SSD、NVMe_SSD。如果没传，则表示任何磁盘类型均可。 |No|
+| **InstanceMode** | string | 返回支持某种实例类型的DB类型。如果没传，则表示任何实例类型均可。<br />Normal:单点,HA:高可用,sharded_cluster:分片集群。区分大小写 |No|
+| **DiskType** | string | 返回支持某种磁盘类型的DB类型，如Normal、SSD、NVMe_SSD,CLOUD_SSD_ESSENTIAL。如果没传，则表示任何磁盘类型均可。 |No|
 | **CompatibleWithDBType** | string | 返回从备份创建实例时，该版本号所支持的备份创建版本。如果没传，则表示不是从备份创建。 |No|
 | **DBSubVersion** | string | 返回从备份创建实例时，该小版本号所支持的备份创建小版本。如果没传，则表示不是从备份创建。 |No|
 
@@ -48,6 +48,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **DataSet** | array[[*UDBTypeSet*](#UDBTypeSet)] | DB类型列表 参数见 UDBTypeSet |No|
+| **DedaultType** | [*UDBTypeSet*](#UDBTypeSet) | 推荐DB版本 |No|
 
 #### 数据模型
 
@@ -95,6 +96,7 @@ https://api.ucloud.cn/?Action=DescribeUDBType
       "DBTypeId": "mongodb-2.4"
     }
   ],
+  "DedaultType": {},
   "RetCode": 0
 }
 ```
