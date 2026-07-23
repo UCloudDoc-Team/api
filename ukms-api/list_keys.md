@@ -2,7 +2,7 @@
 
 ## 简介
 
-查询用户的主密钥信息列表
+查询用户的主密钥信息列表。
 
 
 
@@ -30,10 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **Offset** | int | 输出列表起始位置，默认从0开始 |No|
-| **Limit** | int | 输出列表数量,默认返回200个 |No|
-| **OrderBy** | string | 列表排序方式, 可选项: "-created_time", "created_time", "type","-type"。默认按-type 密钥托管类型降序排列 |No|
+| **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
+| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
+| **Alias** | string | 按密钥 ID 或别名模糊过滤。 |No|
+| **Offset** | int | 列表起始位置偏移量。 |No|
+| **Limit** | int | 返回数据长度。 |No|
 
 ### 响应字段
 
@@ -42,26 +44,27 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **Objects** | array[[*CMK*](#CMK)] | 主密钥信息组成的数组,参考CMK定义的字段 |**Yes**|
-| **Status** | string | 操作结果 |No|
-| **RequestUuid** | string | 请求唯一标识符 |No|
-| **TotalCount** | int | 符合条件的总数, 不同于Limit |No|
+| **Data** | array[[*DEK*](#DEK)] | 密钥信息数组，每项为 DEK/ListKeys item。 |**Yes**|
+| **TotalCount** | int | 符合条件的总数，不同于 Limit。 |**Yes**|
 
 #### 数据模型
 
 
-#### CMK
+#### DEK
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **KeyId** | string | CMK 的唯一标识符 |**Yes**|
-| **Type** | string | 密钥类型，仅支持UCloudManagedKeys、CustomerManagedKeys。默认值CustomerManagedKeys |**Yes**|
-| **Description** | string | 对密钥的描述说明 |**Yes**|
-| **Enabled** | boolean | 是否启用 |**Yes**|
-| **CreatedTime** | int | 创建时间 时间戳 |**Yes**|
-| **LastModifiedTime** | int | 最后修改时间 时间戳 |**Yes**|
-| **Alias** | string | 别名，与CMK一一对应 |No|
-| **PlanDeleteTime** | int | 计划删除时间 时间戳 |No|
+| **KeyId** | string | 对外主密钥 ID（ukms_key_info.key_id）。 |**Yes**|
+| **KeySpec** | string | 密钥规格。取值：SYMMETRIC_DEFAULT、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |**Yes**|
+| **KeyUsage** | array[string] | 按 KeySpec 派生的密钥用途。取值：ENCRYPT_DECRYPT、SIGN_VERIFY、GENERATE_VERIFY_MAC、KEY_AGREEMENT。 |**Yes**|
+| **Origin** | string | 密钥来源，由 Origin 派生。取值：ucloud、import。当前 CreateKey 仅支持 ucloud。 |**Yes**|
+| **Status** | string | 数据库密钥状态。常见取值：Active、Deactivated。 |**Yes**|
+| **CreatedTime** | int | 创建时间，Unix 时间戳。 |**Yes**|
+| **UpdateTime** | int | 更新时间，Unix 时间戳。 |**Yes**|
+| **KeyRotationEnabled** | boolean | 是否已开启自动轮转；未配置或已关闭均为 false |**Yes**|
+| **RotationPeriodInDays** | int | 自动轮转周期(天)；未开启时为 0 |**Yes**|
+| **Description** | string | 密钥描述。 |No|
+| **PlanDeleteTime** | int | 计划删除时间，Unix 时间戳。 |No|
 
 ## 示例
 
