@@ -2,7 +2,7 @@
 
 ## 简介
 
-通过指定主密钥换取自动生成的数据密钥
+生成数据密钥，返回明文和密文。
 
 
 
@@ -30,9 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **KeyId** | string | 用于生成数据密钥的主密钥的 KeyId |**Yes**|
-| **EncryptionContext** | string | 生成数据密钥时传入的加密上下文, 长度不超过 1024 个字符 |No|
+| **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
+| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
+| **KeySpec** | string | 数据密钥规格。可选值：AES_256、AES_128；默认 AES_256。与 NumberOfBytes 二选一，同时填写时 NumberOfBytes 优先。 |No|
+| **NumberOfBytes** | int | 生成数据密钥的字节长度，取值范围 1\~1024。与 KeySpec 二选一，同时填写时本字段优先。 |No|
 
 ### 响应字段
 
@@ -41,10 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **CiphertextBlob** | string | 数据密钥的密文 |**Yes**|
-| **Plaintext** | string | 数据密钥的明文, 用于加密数据 |**Yes**|
-| **Status** | string | 操作结果 |No|
-| **RequestUuid** | string | 此次请求的唯一标识 |No|
+| **Plaintext** | string | 数据密钥明文，Base64 编码。 |No|
+| **CiphertextBlob** | string | 加密后的数据密钥。 |**Yes**|
+| **KeyId** | string | 加密该数据密钥的密钥资源长 ID。 |**Yes**|
 
 
 
@@ -58,6 +60,7 @@ https://api.ucloud.cn/?Action=GenerateDataKey
 &ProjectId=org-mjwvpk
 &KeyId=ukms-oep2f0
 &EncryptionContext=/Users/Documents/workspace
+&Region=NpAbsand
 ```
 
 ### 响应示例

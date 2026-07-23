@@ -2,7 +2,7 @@
 
 ## 简介
 
-用于加密最多为4KB任意数据，诸如RSA密钥，数据库密钥，或者其他敏感的客户信息。
+使用指定密钥加密明文数据。
 
 
 
@@ -30,10 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **KeyId** | string | 调用 CreateKey 接口返回的CMK全局唯一标识符 |**Yes**|
-| **Plaintext** | string | 被加密的明文数据，该字符串必须使用base64编码 |**Yes**|
-| **EncryptionContext** | string | 加密时传入的加密上下文, 长度不超过 1024 个字符 |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
+| **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
+| **Plaintext** | string | 待加密明文，Base64 编码。 |**Yes**|
+| **ResourceId** | string | UKMS 实例资源 ID。 |No|
+| **EncryptionAlgorithm** | string | 加密算法。可选值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256；对称密钥默认 SYMMETRIC_DEFAULT，RSA 默认 RSAES_OAEP_SHA_256。 |No|
 
 ### 响应字段
 
@@ -42,9 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **CiphertextBlob** | string | 加密后的密文 |**Yes**|
-| **Status** | string | 操作结果 |No|
-| **RequestUuid** | string | 此次请求唯一标识符 |No|
+| **CiphertextBlob** | string | 加密后的密文。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID。 |**Yes**|
+| **EncryptionAlgorithm** | string | 实际使用的加密算法。取值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256。 |**Yes**|
 
 
 
@@ -59,6 +61,7 @@ https://api.ucloud.cn/?Action=Encrypt
 &KeyId=ukms-oep2f0
 &Plaintext=QWxsIHRoaW5ncyBpbiB0aGVpciBiZWluZyBhcmUgZ29vZCBmb3Igc29tZXRoaW5nLgo=
 &EncryptionContext=/Users/Documents/workspace
+&Region=EIRxgNGI
 ```
 
 ### 响应示例

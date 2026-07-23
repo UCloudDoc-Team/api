@@ -2,7 +2,7 @@
 
 ## 简介
 
-用于解密密文数据，得到明文数据。（该密文数据必须是通过 GenerateDataKey 或 Encrypt 接口生成的。）
+您可以使用此操作解密使用对称加密 KMS 密钥或非对称加密 KMS 密钥加密的密文。当 KMS 密钥为非对称密钥时，您必须指定用于加密密文的 KMS 密钥和加密算法。
 
 
 
@@ -30,9 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **CiphertextBlob** | string | 由 GenerateDataKey 或 Encrypt 生成的加密后的数据密钥 |**Yes**|
-| **EncryptionContext** | string | 解密时传入的加密上下文，如果调用GenerateDataKey 或者 Encrypt 时传了该值，则与之前保持一致，长度不超过 1024 个字符 |No|
+| **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
+| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
+| **KeyId** | string | 主密钥 KeyId；对称密钥可空，从 CiphertextBlob 自动识别；非对称必填。 |No|
+| **CiphertextBlob** | string | 待解密密文。 |**Yes**|
+| **EncryptionAlgorithm** | string | 解密算法。可选值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256；非对称密钥解密时必填或使用默认 RSAES_OAEP_SHA_256。 |No|
 
 ### 响应字段
 
@@ -41,9 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **KeyId** | string | 加密该数据密钥的主密钥的 KeyId |**Yes**|
-| **Plaintext** | string | 解密后数据密钥的明文 |**Yes**|
-| **Status** | string | 操作结果 |No|
+| **Plaintext** | string | 解密后的明文，Base64 编码。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID。 |**Yes**|
+| **EncryptionAlgorithm** | string | 实际使用的解密算法。取值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256。 |**Yes**|
 
 
 
@@ -57,6 +60,8 @@ https://api.ucloud.cn/?Action=Decrypt
 &ProjectId=org-mjwvpk
 &CiphertextBlob=be0sNdakG9SmQu+dJc1mQgMMWPubCI3Wjp8S6/kg6PksBKrcV18j/uPtCRKjDeRhviBRs33yKmudXel6.KiQ4h/5NIk3mYj7//c5DmgUr8juQ2WwajYfZ7GJYU8vjk4N+32Em+dpn2VoOVAvFDjovmLUUn7wpXd4Z13mA35Cm.LxUAY5umOfawSgIKbMZtLQ==
 &EncryptionContext=/Users/Documents/workspace
+&Region=FKybkPcA
+&KeyId=WPLMXGjt
 ```
 
 ### 响应示例
