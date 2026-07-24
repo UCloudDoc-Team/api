@@ -12,6 +12,7 @@
 |[DescribeUDNSDomain](api/udns-api/describe_udns_domain)|zone下所有域名的rr记录|
 |[DescribeUDNSRecord](api/udns-api/describe_udns_record)|获取域名记录|
 |[DescribeUDNSZone](api/udns-api/describe_udns_zone)|获取域名信息|
+|[DescribeUDNSZoneByVPC](api/udns-api/describe_udns_zone_by_vpc)|根据VPC查询绑定的UDNSZone|
 |[DescribeUDNSZoneForward](api/udns-api/describe_udns_zone_forward)|获取域名转发配置|
 |[DisassociateUDNSZoneVPC](api/udns-api/disassociate_udns_zone_vpc)|解绑域名和VPC|
 |[ModifyUDNSRecord](api/udns-api/modify_udns_record)|修改域名记录|
