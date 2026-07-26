@@ -36,6 +36,7 @@
 | **Description** | string | 密钥描述，最多 8192 字符。 |No|
 | **Alias** | string | 可选密钥别名，格式为 alias/name。 |No|
 | **KeySpec** | string | 密钥规格，默认 SYMMETRIC_DEFAULT（AES_256）。可选值：SYMMETRIC_DEFAULT(AES_256)、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |No|
+| **KeyUsage** | string | 密钥用途 |No|
 | **Origin** | string | 密钥材料来源，默认 UCLOUD_KMS。当前仅支持 UCLOUD_KMS；EXTERNAL 为 BYOK 规划值，当前传入会返回 100660。 |No|
 | **DeletionProtection** | string | 是否开启删除保护。可选值：true、false；默认 false。 |No|
 
@@ -64,6 +65,7 @@ https://api.ucloud.cn/?Action=CreateKey
 &Description=tgpAssBD
 &KeyType=WFZwxWAu
 &Region=FToBNQdx
+&KeyUsage=fxnVavXM
 ```
 
 ### 响应示例
