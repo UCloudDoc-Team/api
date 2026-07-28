@@ -5,6 +5,7 @@
 | API | 描述信息 |
 |:---|:---|
 |[CancelKeyDeletion](api/ukms-api/cancel_key_deletion)|取消密钥计划删除|
+|[CancelScheduleKeyDeletion](api/ukms-api/cancel_schedule_key_deletion)|取消计划删除密钥|
 |[CreateAlias](api/ukms-api/create_alias)|创建别名|
 |[CreateKey](api/ukms-api/create_key)|创建密钥|
 |[Decrypt](api/ukms-api/decrypt)|解密|
