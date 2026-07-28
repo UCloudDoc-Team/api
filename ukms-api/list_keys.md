@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
+| **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **Alias** | string | 按密钥 ID 或别名模糊过滤。 |No|
 | **Offset** | int | 列表起始位置偏移量。 |No|
 | **Limit** | int | 返回数据长度。 |No|
