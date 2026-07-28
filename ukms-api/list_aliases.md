@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
+| **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **KeyId** | string | 可选：筛选指定密钥资源长 ID 的别名。 |No|
 | **Offset** | int | 列表起始位置偏移量。 |No|
 | **Limit** | int | 返回数据长度。 |No|

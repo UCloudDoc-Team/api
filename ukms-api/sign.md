@@ -32,10 +32,10 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
 | **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
 | **SigningMessage** | string | 待签名消息，Base64 编码，最大 4096 字节。 |**Yes**|
 | **SigningAlgorithm** | string | 签名算法。可选值：RSASSA_PSS_SHA_256、RSASSA_PSS_SHA_384、RSASSA_PSS_SHA_512、RSASSA_PKCS1_V1_5_SHA_256、RSASSA_PKCS1_V1_5_SHA_384、RSASSA_PKCS1_V1_5_SHA_512、ECDSA_SHA_256、ECDSA_SHA_384、ECDSA_SHA_512；须与密钥 KeySpec 匹配。 |**Yes**|
+| **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **MessageType** | string | 消息类型。可选值：RAW、DIGEST；默认 RAW。 |No|
 
 ### 响应字段

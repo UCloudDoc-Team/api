@@ -1,4 +1,4 @@
-# 取消密钥删除 - CancelKeyDeletion
+# 取消密钥计划删除 - CancelKeyDeletion
 
 ## 简介
 
@@ -32,8 +32,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
 | **KeyId** | string | 密钥  ID。 |**Yes**|
+| **ResourceId** | string | UKMS 实例资源 ID。 |No|
 
 ### 响应字段
 

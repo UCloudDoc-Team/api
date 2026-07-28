@@ -1,8 +1,8 @@
-# 更新别名 - UpdateAlias
+# 生成MAC - GenerateMac
 
 ## 简介
 
-将别名更新到另一个密钥。
+使用HMAC密钥管理服务（KMS）密钥和该密钥支持的MAC算法，为消息生成基于哈希的消息认证码（HMAC）。
 
 
 
@@ -12,7 +12,7 @@
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=UpdateAlias)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GenerateMac)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -22,7 +22,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `UpdateAlias`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GenerateMac`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -30,11 +30,10 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **AliasName** | string | 密钥别名，格式为 alias/name。 |**Yes**|
-| **KeyId** | string | 密钥 ID、ARN 或别名。 |**Yes**|
-| **ResourceId** | string | UKMS 实例资源 ID。 |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **KeyId** | string | 密钥ID |**Yes**|
+| **MacMessage** | string | 待哈希的消息。 |**Yes**|
 
 ### 响应字段
 
@@ -52,18 +51,18 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=UpdateAlias
-&ProjectId=wNoZsYLG
-&AliasName=KfUnygOB
-&KeyId=atKXhgui
-&Region=PmlNJRgt
+https://api.ucloud.cn/?Action=GenerateMac
+&Region=cn-zj
+&ProjectId=bDwrrfPB
+&KeyId=PYKoiAJJ
+&MacMessage=NeCdOpew
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "UpdateAliasResponse",
+  "Action": "GenerateMacResponse",
   "RetCode": 0
 }
 ```
