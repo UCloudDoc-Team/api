@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **KeyId** | string | 需要查看的主密钥对应的 KeyId |**Yes**|
-| **ResourceId** | string | 资源id |**Yes**|
+| **ResourceId** | string | 资源id |No|
 
 ### 响应字段
 
