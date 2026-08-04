@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **Key** | string | 密钥ID |**Yes**|
+| **KeyId** | string | 密钥ID |**Yes**|
 | **MacMessage** | string | 用于验证的消息。请输入与生成 HMAC 时所用消息相同的消息。 |**Yes**|
 | **Mac** | string | 要验证的 HMAC。请输入由 GenerateMac 操作生成的 HMAC，前提是您指定的消息、HMAC KMS 密钥和 MAC 算法与此请求中指定的值相同。 |**Yes**|
 | **MacAlgorithm** | string | 验证过程中将使用的 MAC 算法。请输入与计算 HMAC 时相同的 MAC 算法。<br />此算法必须受 KeyId 参数标识的 HMAC KMS 密钥支持。 |**Yes**|
