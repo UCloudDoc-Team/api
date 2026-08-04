@@ -40,7 +40,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **GpuInventoryByZone** | object | 返回为嵌套map：，key为池子名称 （Exclusive：独占，Spot ：抢占） value : 库存余量信息map {key 可用区ID，value：GPU卡余量map （key：GPU机型，value：余量GPU卡数量），举例：{"Exclusive":{10027:{"2080":10}}}} |**Yes**|
+| **GpuInventoryByZone** | string | 返回为嵌套map：，key为池子名称 （Exclusive：独占，Spot ：抢占） value : 库存余量信息map {key 可用区ID，value：GPU卡余量map （key：GPU机型，value：余量GPU卡数量），举例：{"Exclusive":{10027:{"2080":10}}}} |**Yes**|
 | **UpdateTime** | int | 缓存更新时间（5min更新一次） |No|
 | **SpotUnsupportedGpuTypes** | array[string] | 不支持抢占的GPU机型 |No|
 
