@@ -71,13 +71,15 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Type** | string | 动作类型。限定枚举值：Forward、"InsertHeader"、"Cors"、"FixedResponse"、"RemoveHeader"  |**Yes**|
+| **Type** | string | 动作类型。限定枚举值：Forward、"InsertHeader"、"Cors"、"FixedResponse"、"RemoveHeader" |**Yes**|
 | **ForwardConfig** | [*ForwardConfigSet*](#ForwardConfigSet) | 转发服务节点相关配置，对应 type 值: "Forward"。具体结构详见 ForwardConfigSet |No|
 | **FixedResponseConfig** | [*FixedResponseConfigSet*](#FixedResponseConfigSet) | 静态返回相关配置，对应 type 值: "FixedResponse"。具体结构详见 FixedResponseConfigSet |No|
 | **InsertHeaderConfig** | [*InsertHeaderConfigSet*](#InsertHeaderConfigSet) | 插入 header 相关配置，对应 type 值: "InsertHeader"。具体结构详见 InsertHeaderConfigSet |No|
 | **CorsConfig** | [*CorsConfigSet*](#CorsConfigSet) | 跨域相关配置，对应 type 值: "Cors"。具体结构详见 CorsConfigSet |No|
 | **RemoveHeaderConfig** | [*RemoveHeaderConfigSet*](#RemoveHeaderConfigSet) | 删除 header 相关配置，对应 type 值: "RemoveHeader"。具体结构详见 RemoveHeaderConfigSet |No|
 | **Order** | int | 转发规则动作执行的顺序，取值为1\~1000，按值从小到大执行动作。值不能为空，不能重复。<br /><br />Forward、FixedResponse 类型的动作不判断 Order，最后一个执行 |No|
+| **ProxyBufferingConfig** | [*ProxyBufferingConfig*](#ProxyBufferingConfig) | 关闭缓存 |No|
+| **BackendConnectionConfig** | [*BackendConnectionConfig*](#BackendConnectionConfig) | 开启长连接 |No|
 
 #### ForwardConfigSet
 
@@ -116,6 +118,18 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Key** | string | 	<br />删除的 header 字段名称，目前只能删除以下几个默认配置的字段: X-Real-IP、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-SrcPort |**Yes**|
+
+#### ProxyBufferingConfig
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **CloseProxyBuffering** | boolean | 关闭缓存 |No|
+
+#### BackendConnectionConfig
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **EnablePersistentConnection** | boolean | 是否开启长连接 |No|
 
 #### ForwardTargetSet
 
