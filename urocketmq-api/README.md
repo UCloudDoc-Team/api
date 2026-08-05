@@ -2,9 +2,9 @@
 
 
 
-# RocketMQ消息队列 API 简介
+# 云消息队列 RocketMQ API 简介
 
-欢迎您选择 RocketMQ消息队列（URocketMQ），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+欢迎您选择 云消息队列 RocketMQ（URocketMQ），API 适合通过编写程序，自动化管理和编排云上资源的场景。
 
 ## 使用限制
 
