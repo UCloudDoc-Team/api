@@ -113,9 +113,9 @@
 | **Name** | string | 监听器的名称 |No|
 | **Remark** | string | 监听器的备注信息 |No|
 | **ListenerPort** | int | 监听器的监听端口 |No|
-| **ListenerProtocol** | string | 监听协议。应用型限定取值： HTTP、HTTPS  |No|
+| **ListenerProtocol** | string | 监听协议。应用型限定取值： HTTP、HTTPS |No|
 | **Certificates** | array[[*Certificate*](#Certificate)] | （应用型专用）服务器默认证书ID。仅HTTPS监听支持。具体接口详见 Certificate |No|
-| **SecurityPolicyId** | string | （应用型专用）安全策略组ID。仅HTTPS监听支持绑定；Default -> 原生策略  |No|
+| **SecurityPolicyId** | string | （应用型专用）安全策略组ID。仅HTTPS监听支持绑定；Default -> 原生策略 |No|
 | **IdleTimeout** | int | 连接空闲超时时间。单位：秒 |No|
 | **Scheduler** | string | 负载均衡算法。应用型限定取值：Roundrobin -> 轮询;Source -> 源地址； WeightRoundrobin -> 加权轮询; Leastconn -> 最小连接数；Backup ->主备模式 |No|
 | **StickinessConfig** | [*StickinessConfigSet*](#StickinessConfigSet) | 会话保持相关配置。具体结构详见 StickinessConfigSet |No|
@@ -127,6 +127,7 @@
 | **Targets** | array[[*Target*](#Target)] | 添加的服务节点信息。具体结构详见 Target |No|
 | **Rules** | array[[*Rule*](#Rule)] | （应用型专用）转发规则信息 |No|
 | **State** | string | listener健康状态。限定枚举值：Healthy -> 健康，Unhealthy -> 不健康，PartialHealth -> 部分健康，None -> 无节点状态 |No|
+| **TargetProtocol** | string | 后端协议。应用型限定取值：“HTTP,HTTPS,GRPC"，默认值“HTTP” |No|
 
 #### SecGroupInfo
 
@@ -156,12 +157,18 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭。 默认值为：true |No|
-| **Type** | string | 健康检查方式。应用型限定取值： Port -> 端口检查；HTTP -> HTTP检查； 默认值：Port |No|
-| **Domain** | string | （应用型专用）HTTP检查域名。 当Type为HTTP时，此字段有意义，代表HTTP检查域名 |No|
-| **Path** | string | （应用型专用）HTTP检查路径。当Type为HTTP时，此字段有意义，代表HTTP检查路径 |No|
-| **Method** | string | （应用型专用）HTTP检查方法。当Type为HTTP时，此字段有意义，代表HTTP检查方法 |No|
-| **ResponseCode** | string | （应用型专用）GRPC检查响应码。当Type为GRPC时，此字段有意义，代表GRPC检查响应码 |No|
+| **Enabled** | boolean | 是否开启健康检查功能。 默认值为：true |No|
+| **Type** | string | 健康检查方式。应用型限定取值： Port -> 端口检查；HTTP -> HTTP检查；GRPC -> GRPC检测； 默认值：Port |No|
+| **Domain** | string | （应用型专用）HTTP检查域名。 当Type为HTTP/GRPC时，此字段有意义，代表HTTP检查域名 |No|
+| **Path** | string | （应用型专用）HTTP检查路径。当Type为HTTP/GRPC时，此字段有意义，代表HTTP检查路径 |No|
+| **Method** | string | （应用型专用）HTTP检查方法。当Type为HTTP/GRPC时，此字段有意义，代表HTTP检查方法 |No|
+| **ResponseCode** | string | （应用型专用）检查预期状态码。HTTP时为2xx,3xx格式(逗号分隔)，GRPC时为数字码(逗号分隔)。 |No|
+| **HTTPVersion** | string | （应用型专用）检查协议 |No|
+| **Port** | int | （应用型专用）端口 |No|
+| **TimeOut** | int | （应用型专用）超时时间，秒，必须小于Interval |No|
+| **Interval** | int | （应用型专用）间隔时间，秒，必须大于TimeOut |No|
+| **UpCounts** | int | （应用型专用）判定成功的连续次数 |No|
+| **DownCounts** | int | （应用型专用）判定失败的连续次数 |No|
 
 #### Target
 
@@ -202,13 +209,15 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Type** | string | 动作类型。限定枚举值：Forward、"InsertHeader"、"Cors"、"FixedResponse"、"RemoveHeader"  |**Yes**|
+| **Type** | string | 动作类型。限定枚举值：Forward、"InsertHeader"、"Cors"、"FixedResponse"、"RemoveHeader" |**Yes**|
 | **ForwardConfig** | [*ForwardConfigSet*](#ForwardConfigSet) | 转发服务节点相关配置，对应 type 值: "Forward"。具体结构详见 ForwardConfigSet |No|
 | **FixedResponseConfig** | [*FixedResponseConfigSet*](#FixedResponseConfigSet) | 静态返回相关配置，对应 type 值: "FixedResponse"。具体结构详见 FixedResponseConfigSet |No|
 | **InsertHeaderConfig** | [*InsertHeaderConfigSet*](#InsertHeaderConfigSet) | 插入 header 相关配置，对应 type 值: "InsertHeader"。具体结构详见 InsertHeaderConfigSet |No|
 | **CorsConfig** | [*CorsConfigSet*](#CorsConfigSet) | 跨域相关配置，对应 type 值: "Cors"。具体结构详见 CorsConfigSet |No|
 | **RemoveHeaderConfig** | [*RemoveHeaderConfigSet*](#RemoveHeaderConfigSet) | 删除 header 相关配置，对应 type 值: "RemoveHeader"。具体结构详见 RemoveHeaderConfigSet |No|
 | **Order** | int | 转发规则动作执行的顺序，取值为1\~1000，按值从小到大执行动作。值不能为空，不能重复。<br /><br />Forward、FixedResponse 类型的动作不判断 Order，最后一个执行 |No|
+| **ProxyBufferingConfig** | [*ProxyBufferingConfig*](#ProxyBufferingConfig) | 关闭缓存 |No|
+| **BackendConnectionConfig** | [*BackendConnectionConfig*](#BackendConnectionConfig) | 开启长连接 |No|
 
 #### ForwardConfigSet
 
@@ -247,6 +256,18 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Key** | string | 	<br />删除的 header 字段名称，目前只能删除以下几个默认配置的字段: X-Real-IP、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-SrcPort |**Yes**|
+
+#### ProxyBufferingConfig
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **CloseProxyBuffering** | boolean | 关闭缓存 |No|
+
+#### BackendConnectionConfig
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **EnablePersistentConnection** | boolean | 是否开启长连接 |No|
 
 #### ForwardTargetSet
 
