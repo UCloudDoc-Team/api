@@ -18,6 +18,7 @@
 |[AssociateSecGroupDynamic](api/vpc-api/associate_sec_group_dynamic)|动态绑定安全组|
 |[AttachNetworkInterface](api/vpc-api/attach_network_interface)|绑定网卡到云主机|
 |[CloneRouteTable](api/vpc-api/clone_route_table)|克隆路由表|
+|[CopySecGroup](api/vpc-api/copy_sec_group)|复制安全组|
 |[CreateNATGW](api/vpc-api/create_natgw)|创建NAT网关|
 |[CreateNATGWPolicy](api/vpc-api/create_natgw_policy)|添加NAT网关端口转发规则|
 |[CreateNetworkAcl](api/vpc-api/create_network_acl)|创建网络ACL|
