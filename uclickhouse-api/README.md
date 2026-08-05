@@ -2,9 +2,9 @@
 
 
 
-# 分布式数据仓库 API 简介
+# 数据仓库 ClickHouse API 简介
 
-欢迎您选择 分布式数据仓库（UClickhouse），API 适合通过编写程序，自动化管理和编排云上资源的场景。
+欢迎您选择 数据仓库 ClickHouse（UClickhouse），API 适合通过编写程序，自动化管理和编排云上资源的场景。
 
 ## 使用限制
 
