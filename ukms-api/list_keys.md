@@ -35,7 +35,7 @@
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **Alias** | string | 按密钥 ID 或别名模糊过滤。 |No|
 | **Offset** | int | 列表起始位置偏移量。 |No|
-| **Limit** | int | 返回数据长度。 |No|
+| **Limit** | int | 返回数据长度。最大1000 |No|
 
 ### 响应字段
 
