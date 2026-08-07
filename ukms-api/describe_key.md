@@ -54,14 +54,15 @@
 | **KeyId** | string | 密钥资源长 ID。 |**Yes**|
 | **CreationDate** | int | 创建时间，Unix 时间戳。 |**Yes**|
 | **Enabled** | string | 是否启用。取值：true、false。 |**Yes**|
-| **Description** | string | 密钥描述。 |No|
 | **KeyUsage** | array[string] | 密钥用途。取值：ENCRYPT_DECRYPT、SIGN_VERIFY、GENERATE_VERIFY_MAC、KEY_AGREEMENT。 |**Yes**|
 | **KeyState** | string | 密钥对外状态。取值：Enabled、Disabled、PendingDeletion、PendingImport、Unavailable。 |**Yes**|
-| **DeletionDate** | int | 计划删除时间，Unix 时间戳。 |No|
 | **Origin** | string | 密钥材料来源。取值：UCLOUD_KMS、EXTERNAL；当前 CreateKey 仅支持 UCLOUD_KMS。 |**Yes**|
 | **KeySpec** | string | 密钥规格。取值：SYMMETRIC_DEFAULT、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |**Yes**|
 | **DeletionProtection** | string | 是否开启删除保护。取值：true、false。 |**Yes**|
 | **KeyVersion** | int | 当前密钥版本。 |**Yes**|
+| **ResourceId** | string | 密钥所属的 UKMS 实例资源 ID。 |**Yes**|
+| **Description** | string | 密钥描述。 |No|
+| **DeletionDate** | int | 计划删除时间，Unix 时间戳。 |No|
 
 ## 示例
 

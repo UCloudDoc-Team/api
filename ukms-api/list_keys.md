@@ -58,13 +58,15 @@
 | **KeySpec** | string | 密钥规格。取值：SYMMETRIC_DEFAULT、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |**Yes**|
 | **KeyUsage** | array[string] | 按 KeySpec 派生的密钥用途。取值：ENCRYPT_DECRYPT、SIGN_VERIFY、GENERATE_VERIFY_MAC、KEY_AGREEMENT。 |**Yes**|
 | **Origin** | string | 密钥来源，由 Origin 派生。取值：ucloud、import。当前 CreateKey 仅支持 ucloud。 |**Yes**|
-| **Status** | string | 数据库密钥状态。常见取值：Active、Deactivated。 |**Yes**|
+| **Status** | string | 数据库密钥状态。常见取值：Active、Deactivated、PendingDeletion。 |**Yes**|
 | **CreatedTime** | int | 创建时间，Unix 时间戳。 |**Yes**|
 | **UpdateTime** | int | 更新时间，Unix 时间戳。 |**Yes**|
 | **KeyRotationEnabled** | boolean | 是否已开启自动轮转；未配置或已关闭均为 false |**Yes**|
 | **RotationPeriodInDays** | int | 自动轮转周期(天)；未开启时为 0 |**Yes**|
+| **ResourceId** | string | 密钥所属的 UKMS 实例资源 ID。 |**Yes**|
 | **Description** | string | 密钥描述。 |No|
 | **PlanDeleteTime** | int | 计划删除时间，Unix 时间戳。 |No|
+| **NextRotationDate** | int | 下次自动轮转时间（Unix 时间戳，秒）；仅在已开启自动轮转时返回。 |No|
 
 ## 示例
 
