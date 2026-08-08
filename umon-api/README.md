@@ -8,7 +8,7 @@
 
 ## 使用限制
 
-如果您的资源用量超过了配额限制，可以联系客户经理，或提交[工单申请](https://accountv2.ucloud.cn/work_ticket)。
+当前API做了一定的调用限制，如果您的调用超过了配额限制，可以联系客户经理，或提交[工单申请](https://accountv2.ucloud.cn/work_ticket)。
 
 ## 阅读指南
 
