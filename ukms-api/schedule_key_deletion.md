@@ -32,8 +32,9 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **KeyId** | int | 密钥 DB 数字 ID。 |**Yes**|
+| **KeyId** | string | 密钥 DB 数字 ID。 |**Yes**|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
+| **DeleteDay** | int | 删除等待天数，取值范围为 7\~30 天；未填写时默认为 30 天。 |No|
 
 ### 响应字段
 
@@ -56,6 +57,7 @@ https://api.ucloud.cn/?Action=ScheduleKeyDeletion
 &KeyId=ukms-xkxxse
 &ResourceId=nHiSzBYZ
 &ResourceId=qkGYaDQP
+&DeleteDay=BkuvsKsx
 ```
 
 ### 响应示例

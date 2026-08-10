@@ -34,6 +34,7 @@
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **KeyId** | string | 密钥ID |**Yes**|
 | **MacMessage** | string | 待哈希的消息。 |**Yes**|
+| **MacAlgorithm** | string | 用于生成消息认证码的 MAC 算法。 |**Yes**|
 
 ### 响应字段
 
@@ -56,6 +57,7 @@ https://api.ucloud.cn/?Action=GenerateMac
 &ProjectId=bDwrrfPB
 &KeyId=PYKoiAJJ
 &MacMessage=NeCdOpew
+&MacAlgorithm=pIKmIPDy
 ```
 
 ### 响应示例
