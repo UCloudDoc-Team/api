@@ -30,10 +30,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **Offset** | int | 输出列表起始位置，默认从0开始 |No|
 | **Limit** | int | 输出列表数量，默认返回200个 |No|
 | **OrderBy** | string | 列表排序方式, 可选项: "-created_time", "created_time","plan_delete_time","-plan_delete_time";默认按-plan_delete_time 计划删除时间升序返回 |No|
+| **Alias** | string | 按密钥 ID 或别名模糊过滤 |No|
+| **ResourceId** | string | UKMS 实例资源 ID |No|
+| **Sort** | string | 排序方向，默认 desc |No|
 
 ### 响应字段
 
@@ -55,12 +58,12 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **KeyId** | string | CMK 的唯一标识符 |**Yes**|
-| **Type** | string | 密钥类型，仅支持UCloudManagedKeys、CustomerManagedKeys。默认值CustomerManagedKeys |**Yes**|
-| **Description** | string | 对密钥的描述说明 |**Yes**|
-| **Enabled** | boolean | 是否启用 |**Yes**|
-| **CreatedTime** | int | 创建时间 时间戳 |**Yes**|
-| **LastModifiedTime** | int | 最后修改时间 时间戳 |**Yes**|
-| **Alias** | string | 别名，与CMK一一对应 |No|
+| **KeyType** | string | 密钥类型，如RSA、EC、DES |**Yes**|
+| **CreatedTime** | int | 创建时间 |**Yes**|
+| **Alias** | string | 别名，与CMK一一对应 |**Yes**|
+| **Status** | string | 密钥状态 "Pre-Active", "Active", "Deactivated", "Compromised", "Destroyed", "Destroyed Compromised" |**Yes**|
+| **UpdateTime** | int | 更新时间 |**Yes**|
+| **Description** | string | 对密钥的描述说明 |No|
 | **PlanDeleteTime** | int | 计划删除时间 时间戳 |No|
 
 ## 示例
@@ -73,6 +76,9 @@ https://api.ucloud.cn/?Action=ListScheduleDeletionKeys
 &Offset=2
 &Limit=1
 &OrderBy=fmNDDFOg
+&Alias=OEgfElNs
+&ResourceId=aBRjUzQh
+&Sort=lTnyfFnG
 ```
 
 ### 响应示例

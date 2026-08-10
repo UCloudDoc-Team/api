@@ -36,6 +36,9 @@
 | **Alias** | string | 按密钥 ID 或别名模糊过滤。 |No|
 | **Offset** | int | 列表起始位置偏移量。 |No|
 | **Limit** | int | 返回数据长度。最大1000 |No|
+| **Status** | string | 状态筛选：Active、Deactivated、PendingDeletion |No|
+| **OrderBy** | string | 排序字段 |No|
+| **Sort** | string | 排序方向，默认 desc |No|
 
 ### 响应字段
 
@@ -78,6 +81,9 @@ https://api.ucloud.cn/?Action=ListKeys
 &OrderBy=-created_time
 &Limit=10
 &Offset=1
+&Status=dMCzOKhl
+&OrderBy=pbVCDUtn
+&Sort=ANoKwzQD
 ```
 
 ### 响应示例

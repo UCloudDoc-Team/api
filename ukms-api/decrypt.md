@@ -35,6 +35,7 @@
 | **CiphertextBlob** | string | 待解密密文。 |**Yes**|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **KeyId** | string | 主密钥 KeyId；对称密钥可空，从 CiphertextBlob 自动识别；非对称必填。 |No|
+| **EncryptionContext** | string | 加密上下文，JSON Object。 |No|
 | **EncryptionAlgorithm** | string | 解密算法。可选值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256；非对称密钥解密时必填或使用默认 RSAES_OAEP_SHA_256。 |No|
 
 ### 响应字段

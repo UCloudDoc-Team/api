@@ -36,6 +36,9 @@
 | **KeyId** | string | 可选：筛选指定密钥资源长 ID 的别名。 |No|
 | **Offset** | int | 列表起始位置偏移量。 |No|
 | **Limit** | int | 返回数据长度。 |No|
+| **Alias** | string | 按完整别名（含 alias/ 前缀）进行子串模糊匹配 |No|
+| **OrderBy** | string | 排序字段 |No|
+| **Sort** | string | 排序方向，默认 desc |No|
 
 ### 响应字段
 
@@ -69,6 +72,9 @@ https://api.ucloud.cn/?Action=ListAliases
 &ProjectId=HSPXGYLe
 &Offset=3
 &Limit=ZGdGcZeh
+&Alias=LNbWhBET
+&OrderBy=VtNdSBhj
+&Sort=GFLUjvzE
 ```
 
 ### 响应示例

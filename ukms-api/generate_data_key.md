@@ -36,6 +36,7 @@
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **KeySpec** | string | 数据密钥规格。可选值：AES_256、AES_128；默认 AES_256。与 NumberOfBytes 二选一，同时填写时 NumberOfBytes 优先。 |No|
 | **NumberOfBytes** | int | 生成数据密钥的字节长度，取值范围 1\~1024。与 KeySpec 二选一，同时填写时本字段优先。 |No|
+| **EncryptionContext** | string | 加密上下文，JSON Object。 |No|
 
 ### 响应字段
 
