@@ -57,6 +57,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **ProjectId** | string | 密钥所属项目的对外别名，格式为 org-xxx。该值由项目数字 ID 解析得到，可能因项目别名查询失败而为空。 |No|
 | **KeyId** | string | 对外主密钥 ID（ukms_key_info.key_id）。 |**Yes**|
 | **KeySpec** | string | 密钥规格。取值：SYMMETRIC_DEFAULT、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |**Yes**|
 | **KeyUsage** | array[string] | 按 KeySpec 派生的密钥用途。取值：ENCRYPT_DECRYPT、SIGN_VERIFY、GENERATE_VERIFY_MAC、KEY_AGREEMENT。 |**Yes**|
@@ -70,6 +71,7 @@
 | **Description** | string | 密钥描述。 |No|
 | **PlanDeleteTime** | int | 计划删除时间，Unix 时间戳。 |No|
 | **NextRotationDate** | int | 下次自动轮转时间（Unix 时间戳，秒）；仅在已开启自动轮转时返回。 |No|
+| **OrganizationId** | int | 密钥所属组织的数字 ID，来源于密钥关联的资源交易记录。 |No|
 
 ## 示例
 
