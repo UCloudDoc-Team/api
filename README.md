@@ -81,7 +81,6 @@ UCloud API 提供多种不同的调用方式供您选择，包括：
 | 产品 | 相关链接 |
 |:---|:---|
 |Kafka消息队列 UKafka|[文档](/api/ukafka-api/)|
-|数据湖分析 USQL|[文档](/api/usql-api/)|
 |日志服务 ULogService|[文档](/api/ulogservice-api/)|
 |云搜索服务 CSS|[文档](/api/ues-api/)|
 |数据仓库 ClickHouse|[文档](/api/uclickhouse-api/)|
