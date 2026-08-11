@@ -51,6 +51,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
+| **ProjectId** | string | 密钥所属项目的对外别名，格式为 org-xxx。该值由项目数字 ID 解析得到，可能因项目别名查询失败而为空。 |No|
 | **KeyId** | string | 密钥资源长 ID。 |**Yes**|
 | **CreationDate** | int | 创建时间，Unix 时间戳。 |**Yes**|
 | **Enabled** | string | 是否启用。取值：true、false。 |**Yes**|
@@ -63,6 +64,7 @@
 | **ResourceId** | string | 密钥所属的 UKMS 实例资源 ID。 |**Yes**|
 | **Description** | string | 密钥描述。 |No|
 | **DeletionDate** | int | 计划删除时间，Unix 时间戳。 |No|
+| **OrganizationId** | int | 密钥所属组织的数字 ID，来源于密钥关联的资源交易记录。 |No|
 
 ## 示例
 
