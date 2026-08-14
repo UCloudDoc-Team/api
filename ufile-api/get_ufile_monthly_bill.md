@@ -1,8 +1,8 @@
-# 获取bucket每日账单 - GetUFileDailyBill
+# 获取bucket月度账单 - GetUFileMonthlyBill
 
 ## 简介
 
-获取bucket每日账单
+获取bucket月度账单
 
 
 
@@ -13,7 +13,7 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) /
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetUFileDailyBill)
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GetUFileMonthlyBill)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetUFileDailyBill`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GetUFileMonthlyBill`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -33,8 +33,8 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **StartTime** | int | 查询开始时间;unix时间戳，单位s |**Yes**|
-| **EndTime** | int | 查询结束时间;unix时间戳,单位s |**Yes**|
+| **StartMonth** | string | 查询开始月份;例如"1994-07" |**Yes**|
+| **EndMonth** | string | 查询结束时间;例如"1994-07" |**Yes**|
 | **BucketName** | string | 空间名称。此字段不为空，返回此Bucket日账单,否则，返回这个项目的日账单 |No|
 
 ### 响应字段
@@ -96,21 +96,55 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=GetUFileDailyBill
+https://api.ucloud.cn/?Action=GetUFileMonthlyBill
 &Region=cn-zj
-&ProjectId=UdlOdbuF
-&BucketName=HGrwkMQD
+&ProjectId=wwczmFmD
 &StartTime=7
-&EndTime=7
+&EndTime=8
+&BucketName=nkGlQMSE
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "GetUFileDailyBillResponse",
+  "Action": "GetUFileMonthlyBillResponse",
   "DataSet": [
-    "AALyFfHn"
+    {
+      "BucketBills": [
+        {
+          "AcExpeditedRetrievalBill": 9.96545,
+          "AcRestoreBill": 3.14862,
+          "AcShortStorageBill": 6.15971,
+          "AcStorageBill": 7.52229,
+          "BusyFlowBill": 8.55265,
+          "CdnFlowBill": 6.33826,
+          "Date": 1,
+          "FlowBill": 4.21449,
+          "GetCountAcBill": 1.68791,
+          "GetCountBill": 7.85645,
+          "GetCountIaBill": 2.97784,
+          "IaGetSizeBill": 6.13791,
+          "IaShortStorageBill": 8.98736,
+          "IaStorageBill": 1.68397,
+          "IdleFlowBill": 2.14974,
+          "ImageCompressCountBill": 3.95593,
+          "ImageHandleFlowBill": 9.57945,
+          "Labels": [
+            {
+              "Key": "pIydtLYh",
+              "Value": "NpGlhTNv"
+            }
+          ],
+          "ObjectTagCountBill": 8.89374,
+          "PutCountAcBill": 5.95617,
+          "PutCountBill": 4.61413,
+          "PutCountIaBill": 3.68122,
+          "StorageBill": 5.13637,
+          "TotalBill": 4.52664
+        }
+      ]
+    }
   ],
   "RetCode": 0
 }
