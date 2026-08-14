@@ -40,7 +40,7 @@
 | **KeepUS3Name** | boolean | 是否以压缩文件的前缀为最后一层目录 |**Yes**|
 | **Prefixes** | string | 解压缩触发的前缀 |**Yes**|
 | **Ops.N** | string | 操作的ops数组，"Ops.0":"unzip" |**Yes**|
-| **Events.** | string | 通知的事件数组 |No|
+| **Events.N** | string | 通知的事件数组 |No|
 | **ContactGroupId** | string | 联系的用户组ID |No|
 | **NotificationTypes.N** | string | 通知的类型数组 |No|
 

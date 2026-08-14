@@ -53,9 +53,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **BucketBills** | array[[*UFileMonthlyBillItem*](#UFileMonthlyBillItem)] | bucket账单 |No|
+| **BucketBills** | array[[*UFileDailyBillItem*](#UFileDailyBillItem)] | bucket账单 |No|
 
-#### UFileMonthlyBillItem
+#### UFileDailyBillItem
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
@@ -80,7 +80,7 @@
 | **IdleFlowBill** | float | 闲时流量费用；分；海外无此字段 |No|
 | **CdnFlowBill** | float | cdn回源流量费用;分 |No|
 | **FlowBill** | float | 下载流量费用：分；国内无此字段 |No|
-| **Month** | string | 配额消费月份 |No|
+| **Date** | int | 配额消费时间，unix时间戳；单位s，精确到日期 |No|
 | **GetCountAcBill** | float | 下载归档存储次数费用；分 |No|
 | **TotalBill** | float | 总费用;分 |No|
 
