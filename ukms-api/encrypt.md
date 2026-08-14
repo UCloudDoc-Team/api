@@ -34,7 +34,7 @@
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
 | **Plaintext** | string | 待加密明文，Base64 编码。 |**Yes**|
-| **EncryptionContext** | string | 加密上下文，JSON Object。 |No|
+| **EncryptionContext** | string | 加密上下文，JSON Object。该参数内容会记录在日志中，请勿传入密码、密钥、令牌等敏感信息。 |No|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **EncryptionAlgorithm** | string | 加密算法。可选值：SYMMETRIC_DEFAULT、RSAES_OAEP_SHA_1、RSAES_OAEP_SHA_256；对称密钥默认 SYMMETRIC_DEFAULT，RSA 默认 RSAES_OAEP_SHA_256。 |No|
 
