@@ -32,6 +32,7 @@
     - [获取项目地域配额 - GetProjectRegionQuota](api/ufile-api/get_project_region_quota)
     - [获取bucket每日账单 - GetUFileDailyBill](api/ufile-api/get_ufile_daily_bill)
     - [查看日消费报表 - GetUFileDailyReport](api/ufile-api/get_ufile_daily_report)
+    - [获取bucket月度账单 - GetUFileMonthlyBill](api/ufile-api/get_ufile_monthly_bill)
     - [获取对资源进行新购、续费、升级等操作的价格 - GetUFilePkgPrice](api/ufile-api/get_ufile_pkg_price)
     - [查看配额状态 - GetUFileQuota](api/ufile-api/get_ufile_quota)
     - [获取配额信息 - GetUFileQuotaInfo](api/ufile-api/get_ufile_quota_info)
