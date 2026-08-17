@@ -39,7 +39,7 @@
 | **InstanceGroupConfigs.N** | string | 节点配置，里面包括NodeType（机型），NodeRole（节点类别，值为其中之一：master\|core\|task），Count（数量），DataDiskType（数据盘类别），DataDiskSize（数据盘大小），DataDiskNum（数据盘数量），BootDiskType（系统盘类型），BootDiskSize（系统盘大小），通过GetUHadoopNodeType接口获取，示例为：<br />InstanceGroupConfigs.0.NodeType=o.hadoop2m.xlarge<br />InstanceGroupConfigs.0.NodeRole=master<br />InstanceGroupConfigs.0.Count=2<br />InstanceGroupConfigs.0.DataDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.0.DataDiskSize=100<br />InstanceGroupConfigs.0.DataDiskNum=1<br />InstanceGroupConfigs.0.BootDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.0.BootDiskSize=50<br />InstanceGroupConfigs.1.NodeType=o.hadoop2m.xlarge<br />InstanceGroupConfigs.1.NodeRole=core<br />InstanceGroupConfigs.1.Count=3<br />InstanceGroupConfigs.1.DataDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.1.DataDiskSize=200<br />InstanceGroupConfigs.1.DataDiskNum=1<br />InstanceGroupConfigs.1.BootDiskType=CLOUD_RSSD<br />InstanceGroupConfigs.1.BootDiskSize=50 |**Yes**|
 | **VPCId** | string | VPCId |**Yes**|
 | **SubnetId** | string | 子网ID |**Yes**|
-| **AppConfigs.N** | string | 集群需要安装的组件，格式：组件#版本<br />通过ListUHadoopFrameworkApp接口获取，例如：Spark#3.3.0<br /> |**Yes**|
+| **AppConfigs.N** | string | 集群需要安装的组件，格式：组件#版本<br />通过ListUHadoopFrameworkApp接口获取，例如：Spark#3.3.0 |**Yes**|
 | **Framework** | string | 框架，值为'Hadoop'\|'HDFS'\|'MR'\|'StarRocks'之一,框架，例如Hadoop\|MR\|HDFS\|StarRocks Hadoop框架包含存储与计算服务 MR集群包含计算服务 HDFS只包含存储服务,StarRocks为StarRocks集群 |**Yes**|
 | **ChargeType** | string | 支付类别，默认：Month |No|
 | **Quantity** | int | 数量，默认1 |No|
@@ -53,6 +53,7 @@
 | **US3SecretKey** | string | US3 配置私钥，仅支持框架为StarRocks存算分离时传入 |No|
 | **US3TokenName** | string | US3 Token名称，仅支持框架为StarRocks存算分离时传入 |No|
 | **InstanceName** | string | 实例名称，默认为实例ID |No|
+| **DataDiskKmsKeyId** | string | 集群加密磁盘密钥ID |No|
 
 ### 响应字段
 
@@ -94,6 +95,7 @@ https://api.ucloud.cn/?Action=CreateUHadoopInstance
 &US3SecretKey=DfYoUWgf
 &US3TokenName=zRbMVOAx
 &InstanceName=IlTqXhjY
+&DataDiskKmsKeyId=LmtpDVxP
 ```
 
 ### 响应示例
