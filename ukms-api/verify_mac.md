@@ -44,6 +44,9 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **KeyId** | string | 密钥ID |No|
+| **MacAlgorithm** | string | 验证中使用的 MAC 算法。 |No|
+| **MacValid** | boolean | 一个布尔值，表示 HMAC 是否已验证。 |No|
 
 
 
