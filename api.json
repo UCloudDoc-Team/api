@@ -167,6 +167,17 @@
           ]
         },
         {
+          "name": "智联 UWAN",
+          "img": "icon-product__sdwan",
+          "sublinks": [
+            {
+              "links": "/api/uwan-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "VPN网关 IPSecVPN",
           "img": "icon-product__ipsecvpn",
           "sublinks": [
