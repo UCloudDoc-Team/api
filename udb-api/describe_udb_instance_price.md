@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
-| **MemoryLimit** | int | 内存限制(MB)，单位为MB.目前支持：2000-96000 |**Yes**|
+| **MemoryLimit** | int | 内存限制(MB)，目前支持2000‑96000，按1000进制(1GB=1000MB)计算 |**Yes**|
 | **DiskSpace** | int | 磁盘空间(GB),暂时支持20(GB) - 3000(GB), 输入不带单位 |**Yes**|
 | **DBTypeId** | string | UDB实例的DB版本字符串 |**Yes**|
 | **Count** | int | 购买DB实例数量,最大数量为10台, 默认为1台 |No|
