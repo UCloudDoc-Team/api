@@ -70,21 +70,15 @@
 | **Metric** | string | 指标名 |No|
 | **ErrCode** | int | 该指标查询的处理状态码 |No|
 | **ErrMsg** | string | 该指标查询的状态说明 |No|
-| **TagEntries** | array[[*ObjectType*](#ObjectType)] | 标签列表。每项为 TagEntry：TagName（标签名）和 KeyList（该标签的全部候选值）。 |No|
+| **TagEntries** | array[[*TagEntry*](#TagEntry)] | 标签列表。每项为 TagEntry：TagName（标签名）和 KeyList（该标签的全部候选值）。 |No|
 | **Results** | array[[*MetricResult*](#MetricResult)] | 查询到的时间序列列表 |No|
 
-#### ObjectType
+#### TagEntry
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Id** | int | ID |No|
-| **ObjectType** | string | 资源类型ID |No|
-| **ObjectTypeKey** | string | 资源类型 |No|
-| **ProductName** | string | 产品名称 |No|
-| **ProductName1** | string | 产品子名称 |No|
-| **ProductCNName** | string | 产品中文名称 |No|
-| **ProductENName** | string | 产品英文名称 |No|
-| **Metas** | string | {type: spec\|basic, key:string, name: string}[] -> JSON字符串 |No|
+| **TagName** | string | 标签名称 |No|
+| **KeyList** | array[string] | 标签候选值列表 |No|
 
 #### MetricResult
 
@@ -92,8 +86,15 @@
 |:---|:---|:---|:---|
 | **ResourceId** | string | 资源的短id |No|
 | **ResourceName** | string | 资源名称 |No|
-| **TagList** | array[int] | 资源标签列表。每项为 TagListItem：Tag（标签名）和 TagValue（标签值）。 |No|
+| **TagList** | array[[*TagListItem*](#TagListItem)] | 资源标签列表。每项为 TagListItem：Tag（标签名）和 TagValue（标签值）。 |No|
 | **Values** | array[[*MetricSample*](#MetricSample)] | 指标数据点列表，元素为 MetricPoint |No|
+
+#### TagListItem
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Tag** | string | 标签名 |No|
+| **TagValue** | string | 标签值 |No|
 
 #### MetricSample
 
@@ -109,55 +110,22 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSet
 &Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=lBXDBARv
-&ProductKey=YoLcjjOJ
-&StartTime=2
-&EndTime=1
-&MetricInfos.N.Metric=wBhLvIzA
-&MetricInfos.N.ResourceId=pAlImMnm
-&MetricInfos.N.TagList.N.TagKey=bYSOyCNH
-&MetricInfos.N.TagList.N.TagValues.N=jNRAlNmm
-&CalcMethod=row
+&ProjectId=org-xxx
+&ProductKey=uhost
+&StartTime=1755590400
+&EndTime=1755594000
+&CalcMethod=avg
 &Period=60
-&MetricInfos.N.TagOperation=PtmspdsF
+&MetricInfos.0.Metric=uhost_cpu_used
+&MetricInfos.0.ResourceId=uhost-xxx
+&MetricInfos.0.TagOperation=and
+&MetricInfos.0.TagList.0.TagKey=disk
+&MetricInfos.0.TagList.0.TagValues.0=sda
 ```
 
 ### 响应示例
     
-```json
-{
-  "Action": "QueryMetricDataSetResponse",
-  "Data": {
-    "InvalidResourceIds": [],
-    "List": [
-      {
-        "Metric": "uhost_cpu_used",
-        "Results": [
-          {
-            "ResourceId": "uhost-xxx",
-            "ResourceName": "测试主机",
-            "TagMap": {},
-            "Values": [
-              {
-                "Timestamp": 1755593820,
-                "Value": 3
-              },
-              {
-                "Timestamp": 1755593880,
-                "Value": 4
-              }
-            ]
-          }
-        ],
-        "Tags": {}
-      }
-    ]
-  },
-  "RetCode": 0,
-  "TraceId": "6b51655d-4c06-4da2-bd17-a5e6fff7ad0a"
-}
-```
+暂无
 
 
 
