@@ -66,8 +66,8 @@
 | **Region** | string | 地域 |No|
 | **Zone** | string | 可用区 |No|
 | **ProjectId** | int | 项目id |No|
-| **ResourceExtendAttrList** | array[[*ResourceMonitorItem*](#ResourceMonitorItem)] | 资源扩展属性列表 |No|
-| **LabelAttrList** | array[[*ResourceMonitorItem*](#ResourceMonitorItem)] | 资源标签属性列表 |No|
+| **ResourceExtendAttrList** | array[[*ResourceExtendAttrItem*](#ResourceExtendAttrItem)] | 资源扩展属性列表 |No|
+| **LabelAttrList** | array[[*LabelAttrItem*](#LabelAttrItem)] | 资源标签属性列表 |No|
 | **CompanyId** | int | 公司id |No|
 | **ResourceId** | string | 资源id |No|
 | **Name** | string | 资源名称 |No|
@@ -77,6 +77,20 @@
 | **OrganizationId** | int | 项目id |No|
 | **Status** | int | 资源状态 |No|
 | **MonitorAttr** | array[[*ResourceMonitorItem*](#ResourceMonitorItem)] | 资源的各项指标当前值列表 |No|
+
+#### ResourceExtendAttrItem
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Key** | string | 键 |No|
+| **Value** | string | 值 |No|
+
+#### LabelAttrItem
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Key** | string | 键 |No|
+| **Value** | string | 值 |No|
 
 #### ResourceMonitorItem
 
@@ -90,22 +104,15 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Metric** | string | 指标名 |No|
-| **TagsList** | array[[*Product*](#Product)] | 指标标签列表 |No|
+| **TagsList** | array[[*TagListItem*](#TagListItem)] | 指标标签列表 |No|
 | **Value** | [*MetricSample*](#MetricSample) | 指标单个样本点对象 |No|
 
-#### Product
+#### TagListItem
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Id** | int | ID |No|
-| **ProductType** | int | 资源类型ID |No|
-| **ProductKey** | string | 资源类型唯一key |No|
-| **ProductName** | string | 产品名称 |No|
-| **ProductName1** | string | 产品子名称 |No|
-| **ProductChName** | string | 产品中文名称 |No|
-| **ProductEnName** | string | 产品英文名称 |No|
-| **Metas** | string | {Type: 1\|2, Key:string, Name: string}[] -> JSON字符串 |No|
-| **ProductGroup** | string | 产品分组 |No|
+| **Tag** | string | 标签名 |No|
+| **TagValue** | string | 标签值 |No|
 
 #### MetricSample
 

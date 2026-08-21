@@ -38,8 +38,8 @@
 | **Filter.Levels.N** | string | 告警级别，根据告警级别精确搜索对应的告警记录，枚举值:P0,P1,P2,P3 |No|
 | **Filter.Status.N** | string | 告警状态，根据告警状态精确搜索对应的告警记录，枚举值：firing-告警中，resolved-已恢复 |No|
 | **OrderType** | string | 排序(默认根据告警发生时间倒序)，枚举值：asc-升序，desc-降序 |No|
-| **Limit** | int | 查询返回数量，默认值300，最大值：300。<br /> |No|
-| **Offset** | int | 数据偏移量 (默认0)<br /> |No|
+| **Limit** | int | 查询返回数量，默认值300，最大值：300。 |No|
+| **Offset** | int | 数据偏移量 (默认0) |No|
 
 ### 响应字段
 
@@ -79,7 +79,14 @@
 | **Status** | string | 告警状态 |No|
 | **StartAt** | int | 告警触发时间 |No|
 | **EndAt** | int | 告警结束时间 |No|
-| **ContentAttrList** | array[string] | 产品相关的额外属性列表 |No|
+| **ContentAttrList** | array[[*ContentAttrItem*](#ContentAttrItem)] | 产品相关的额外属性列表 |No|
+
+#### ContentAttrItem
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Key** | string | 键 |No|
+| **Value** | string | 值 |No|
 
 ## 示例
 
@@ -105,6 +112,7 @@ https://api.ucloud.cn/?Action=ListAlertRecord
 &OrderType=JXKKXtZY
 &Limit=3
 &Offset=3
+&Filter.ResourceIDs.N=vrJIFBkH
 ```
 
 ### 响应示例
