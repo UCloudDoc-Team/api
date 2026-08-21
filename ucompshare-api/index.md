@@ -54,7 +54,6 @@
 |[ListMemberProductType](api/ucompshare-api/list_member_product_type)|获取成员订单产品类型|
 |[ModifyCompShareImageShareAccount](api/ucompshare-api/modify_comp_share_image_share_account)|管理镜像的共享账号列表|
 |[ModifyCompShareInstanceName](api/ucompshare-api/modify_comp_share_instance_name)|修改算力平台实例名称|
-|[PublishCompShareImage](api/ucompshare-api/publish_comp_share_image)|将自制镜像发布到镜像社区|
 |[RebootCompShareInstance](api/ucompshare-api/reboot_comp_share_instance)|重启轻量算力平台实例|
 |[ReinstallCompShareInstance](api/ucompshare-api/reinstall_comp_share_instance)|重装算力平台实例|
 |[ResetCompShareInstancePassword](api/ucompshare-api/reset_comp_share_instance_password)|重置算力平台实例密码|

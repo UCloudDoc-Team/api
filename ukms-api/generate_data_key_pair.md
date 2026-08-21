@@ -43,6 +43,11 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **KeyId** | string | 用于加密私钥的 KMS 密钥 |No|
+| **KeyPairSpec** | string | 生成的数据键对类型。 |No|
+| **PrivateKeyCiphertextBlob** | string | 私钥的加密副本。 |No|
+| **PrivateKeyPlaintext** | string | 私钥的明文副本。 |No|
+| **DataPublicKey** | string | 公钥（明文）。 |No|
 
 
 
