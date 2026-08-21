@@ -1,8 +1,8 @@
-# 创建数据密钥对（无明文返回） - GenerateDataKeyPairWithoutPlaintext
+# 更新CE网关 - UpdateCEGateway
 
 ## 简介
 
-创建数据密钥对（无明文返回）
+更新CE网关
 
 
 
@@ -12,7 +12,8 @@
 ## 使用方法
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=GenerateDataKeyPairWithoutPlaintext)
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [JavaScript](https://github.com/ucloud/ucloud-sdk-js) / [PHP](https://github.com/ucloud/ucloud-sdk-php) /
+- [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=UpdateCEGateway)
 - [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
@@ -22,7 +23,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `GenerateDataKeyPairWithoutPlaintext`                        | **Yes** |
+| **Action**     | string  | 对应的 API 指令名称，当前 API 为 `UpdateCEGateway`                        | **Yes** |
 | **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
@@ -30,11 +31,13 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **KeyId** | string | 密钥ID |**Yes**|
-| **KeyPairSpec** | string | 指定生成的数据密钥对类型。 |**Yes**|
-| **EncryptionContext** | string | 指定加密私钥时使用的加密上下文。 |No|
+| **VPNId** | string | CE网关资源ID |**Yes**|
+| **PublicIp** | string | 公网IP |No|
+| **Name** | string | 资源名称 |No|
+| **Remark** | string | 备注 |No|
 
 ### 响应字段
 
@@ -43,6 +46,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **RequestId** | string | 请求 ID |No|
 
 
 
@@ -52,19 +56,23 @@
 ### 请求示例
     
 ```
-https://api.ucloud.cn/?Action=GenerateDataKeyPairWithoutPlaintext
+https://api.ucloud.cn/?Action=UpdateCEGateway
 &Region=cn-zj
-&ProjectId=vkokLZkE
-&KeyId=mrpRDIxo
-&KeyPairSpec=MDxDLYfX
-&EncryptionContext=OsSGnFiE
+&Zone=cn-zj-01
+&ProjectId=DrdWkGLM
+&VPNId=Zvfdyjxv
+&PublicIp=adeQMTkH
+&Name=XIXIWAnW
+&Remark=gjYcmXZi
 ```
 
 ### 响应示例
     
 ```json
 {
-  "Action": "GenerateDataKeyPairWithoutPlaintextResponse",
+  "Action": "UpdateCEGatewayResponse",
+  "Message": "fQIzILdX",
+  "RequestId": "tUbPrHGk",
   "RetCode": 0
 }
 ```

@@ -78,8 +78,8 @@
 | **Level** | string | 告警等级 |No|
 | **Status** | string | 告警状态 |No|
 | **StartAt** | int | 告警触发时间 |No|
-| **EndAt** | int | 告警恢复时间 |No|
-| **ContentAttr** | object | 产品相关的额外属性 |No|
+| **EndAt** | int | 告警结束时间 |No|
+| **ContentAttrList** | array[string] | 产品相关的额外属性列表 |No|
 
 ## 示例
 

@@ -47,6 +47,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 总数 |**Yes**|
 | **POPGWInfos** | array[[*POPGWInfo*](#POPGWInfo)] | UWAN 实例信息 |**Yes**|
+| **RequestId** | string | 请求 ID |No|
 
 #### 数据模型
 
@@ -134,6 +135,7 @@ https://api.ucloud.cn/?Action=DescribePOPGW
       "VCPENum": 6
     }
   ],
+  "RequestId": "dFKHgXRn",
   "RetCode": 0,
   "TotalCount": 5
 }

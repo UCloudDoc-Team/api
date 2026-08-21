@@ -54,7 +54,6 @@
     - [获取成员订单产品类型 - ListMemberProductType](api/ucompshare-api/list_member_product_type)
     - [管理镜像的共享账号列表 - ModifyCompShareImageShareAccount](api/ucompshare-api/modify_comp_share_image_share_account)
     - [修改算力平台实例名称 - ModifyCompShareInstanceName](api/ucompshare-api/modify_comp_share_instance_name)
-    - [将自制镜像发布到镜像社区 - PublishCompShareImage](api/ucompshare-api/publish_comp_share_image)
     - [重启轻量算力平台实例 - RebootCompShareInstance](api/ucompshare-api/reboot_comp_share_instance)
     - [重装算力平台实例 - ReinstallCompShareInstance](api/ucompshare-api/reinstall_comp_share_instance)
     - [重置算力平台实例密码 - ResetCompShareInstancePassword](api/ucompshare-api/reset_comp_share_instance_password)

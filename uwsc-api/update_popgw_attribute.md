@@ -45,6 +45,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
+| **RequestId** | string | 请求 ID |No|
 
 
 
@@ -69,6 +70,7 @@ https://api.ucloud.cn/?Action=UpdatePOPGWAttribute
 {
   "Action": "UpdatePOPGWAttributeResponse",
   "Message": "xOOzcXwF",
+  "RequestId": "tnooNdZf",
   "RetCode": 0
 }
 ```

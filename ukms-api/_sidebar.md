@@ -24,7 +24,6 @@
     - [获取公钥 - GetPublicKey](api/ukms-api/get_public_key)
     - [获取别名列表 - ListAliases](api/ukms-api/list_aliases)
     - [获取主密钥列表 - ListKeys](api/ukms-api/list_keys)
-    - [获取计划删除密钥列表 - ListScheduleDeletionKeys](api/ukms-api/list_schedule_deletion_keys)
     - [按需轮转密钥 - RotateKeyOnDemand](api/ukms-api/rotate_key_on_demand)
     - [计划删除密钥 - ScheduleKeyDeletion](api/ukms-api/schedule_key_deletion)
     - [签名 - Sign](api/ukms-api/sign)

@@ -57,7 +57,8 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **PopGwId** | string | UWAN 网关实例 ID |**Yes**|
+| **PopGwId** | string | UWAN 网关实例 ID |No|
+| **RequestId** | string | 请求 ID |No|
 
 
 
@@ -103,6 +104,7 @@ https://api.ucloud.cn/?Action=CreatePOPGW
   "Action": "CreatePOPGWResponse",
   "Message": "qtfEvfGP",
   "PopGwId": "kamFBVCe",
+  "RequestId": "VgcjOZof",
   "RetCode": 0
 }
 ```
