@@ -64,7 +64,6 @@
 | **ResourceId** | string | 密钥所属的 UKMS 实例资源 ID。 |**Yes**|
 | **Description** | string | 密钥描述。 |No|
 | **DeletionDate** | int | 计划删除时间，Unix 时间戳。 |No|
-| **OrganizationId** | int | 密钥所属组织的数字 ID，来源于密钥关联的资源交易记录。 |No|
 
 ## 示例
 

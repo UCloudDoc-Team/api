@@ -24,6 +24,7 @@
     - [查询UWAN虚拟路由器 - DescribePOPGW](api/uwsc-api/describe_popgw)
     - [获取可用地域 - ListAvailableRegion](api/uwsc-api/list_available_region)
     - [更新UWSC带宽包 - UpdateBWPackage](api/uwsc-api/update_bw_package)
+    - [更新CE网关 - UpdateCEGateway](api/uwsc-api/update_ce_gateway)
     - [更新隧道配置 - UpdateCETunnel](api/uwsc-api/update_ce_tunnel)
     - [更新隧道属性 - UpdateCETunnelAttribute](api/uwsc-api/update_ce_tunnel_attribute)
     - [修改加速线路 - UpdateExportLine](api/uwsc-api/update_export_line)

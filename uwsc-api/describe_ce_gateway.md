@@ -48,6 +48,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 总数 |**Yes**|
 | **VPNInfos** | array[[*VPNInfo*](#VPNInfo)] | CE信息 |**Yes**|
+| **RequestId** | string | 请求 ID |No|
 
 #### 数据模型
 
@@ -89,6 +90,7 @@ https://api.ucloud.cn/?Action=DescribeCEGateway
 {
   "Action": "DescribeCEGatewayResponse",
   "Message": "EtodBzlE",
+  "RequestId": "ZZvfPiRA",
   "RetCode": 0,
   "TotalCount": 8,
   "VPNInfos": [

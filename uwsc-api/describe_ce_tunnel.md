@@ -48,6 +48,7 @@
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **TotalCount** | int | 总数 |**Yes**|
 | **VPNTunnelInfos** | array[[*VPNTunnelInfo*](#VPNTunnelInfo)] | 隧道信息 |**Yes**|
+| **RequestId** | string | 请求 ID |No|
 
 #### 数据模型
 
@@ -136,6 +137,7 @@ https://api.ucloud.cn/?Action=DescribeCETunnel
 {
   "Action": "DescribeCETunnelResponse",
   "Message": "pRdXCzZp",
+  "RequestId": "yOBROdKd",
   "RetCode": 0,
   "TotalCount": 9,
   "VPNTunnelInfos": [

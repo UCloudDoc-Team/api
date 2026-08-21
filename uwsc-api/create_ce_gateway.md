@@ -48,6 +48,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **VPNId** | string | 客户网关资源 ID |**Yes**|
+| **RequestId** | string | 请求 ID |No|
 
 
 
@@ -75,6 +76,7 @@ https://api.ucloud.cn/?Action=CreateCEGateway
 {
   "Action": "CreateCEGatewayResponse",
   "Message": "kVoJzcVk",
+  "RequestId": "jtiPTWOM",
   "RetCode": 0,
   "VPNId": "GIppqKNr"
 }
