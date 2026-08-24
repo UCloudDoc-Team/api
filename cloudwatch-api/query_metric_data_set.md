@@ -110,22 +110,263 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSet
 &Region=cn-zj
-&ProjectId=org-xxx
-&ProductKey=uhost
-&StartTime=1755590400
-&EndTime=1755594000
-&CalcMethod=avg
+&ProjectId=fZodyYbz
+&ProductKey=wOQpJcBt
+&StartTime=8
+&EndTime=6
+&CalcMethod=raw
 &Period=60
-&MetricInfos.0.Metric=uhost_cpu_used
-&MetricInfos.0.ResourceId=uhost-xxx
-&MetricInfos.0.TagOperation=and
-&MetricInfos.0.TagList.0.TagKey=disk
-&MetricInfos.0.TagList.0.TagValues.0=sda
+&MetricInfos.N.Metric=OBWiRglC
+&MetricInfos.N.ResourceId=jaGTgWpR
+&MetricInfos.N.TagOperation=GweoaGaC
+&MetricInfos.N.TagList.N.TagKey=ffixFIkd
+&MetricInfos.N.TagList.N.TagValues.N=lTmpMkgU
 ```
 
 ### 响应示例
     
-暂无
+```json
+{
+  "Action": "QueryMetricDataSetResponse",
+  "Data": {
+    "InvalidResourceIds": [],
+    "List": [
+      {
+        "ErrCode": 0,
+        "ErrMsg": "",
+        "Metric": "cloudwatch_data_disk_used_per",
+        "Results": [
+          {
+            "ResourceId": "uhost-xxx",
+            "ResourceName": "UHost",
+            "TagList": [
+              {
+                "Tag": "disk",
+                "TagValue": "/dev/vda15"
+              },
+              {
+                "Tag": "mount",
+                "TagValue": "/boot/efi"
+              }
+            ],
+            "Values": [
+              {
+                "Timestamp": 1787303495,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787303795,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787304095,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787304395,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787304695,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787304995,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787305295,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787305595,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787305895,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787306195,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787306495,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787306795,
+                "Value": 5.85
+              },
+              {
+                "Timestamp": 1787307095,
+                "Value": 5.85
+              }
+            ]
+          },
+          {
+            "ResourceId": "uhost-xxx",
+            "ResourceName": "UHost",
+            "TagList": [
+              {
+                "Tag": "mount",
+                "TagValue": "/boot"
+              },
+              {
+                "Tag": "disk",
+                "TagValue": "/dev/vda16"
+              }
+            ],
+            "Values": [
+              {
+                "Timestamp": 1787303495,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787303795,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787304095,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787304395,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787304695,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787304995,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787305295,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787305595,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787305895,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787306195,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787306495,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787306795,
+                "Value": 9.46
+              },
+              {
+                "Timestamp": 1787307095,
+                "Value": 9.46
+              }
+            ]
+          },
+          {
+            "ResourceId": "uhost-xxx",
+            "ResourceName": "UHost",
+            "TagList": [
+              {
+                "Tag": "disk",
+                "TagValue": "/dev/vdb"
+              },
+              {
+                "Tag": "mount",
+                "TagValue": "/data"
+              }
+            ],
+            "Values": [
+              {
+                "Timestamp": 1787303495,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787303795,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787304095,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787304395,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787304695,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787304995,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787305295,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787305595,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787305895,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787306195,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787306495,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787306795,
+                "Value": 0
+              },
+              {
+                "Timestamp": 1787307095,
+                "Value": 0
+              }
+            ]
+          }
+        ],
+        "TagEntries": [
+          {
+            "KeyList": [
+              "/boot/efi",
+              "/boot",
+              "/data"
+            ],
+            "TagName": "mount"
+          },
+          {
+            "KeyList": [
+              "/dev/vda15",
+              "/dev/vda16",
+              "/dev/vdb"
+            ],
+            "TagName": "disk"
+          }
+        ]
+      }
+    ]
+  },
+  "Message": "",
+  "RetCode": 0,
+  "TraceId": "9f7bf6aa-9b9f-49e1-b873-68989d2b917e"
+}
+```
 
 
 
