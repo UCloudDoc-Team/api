@@ -110,17 +110,17 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSet
 &Region=cn-zj
-&ProjectId=fZodyYbz
-&ProductKey=wOQpJcBt
-&StartTime=8
-&EndTime=6
+&ProjectId=MmrpjiMu
+&ProductKey=XobgviEP
+&StartTime=1
+&EndTime=9
 &CalcMethod=raw
 &Period=60
-&MetricInfos.N.Metric=OBWiRglC
-&MetricInfos.N.ResourceId=jaGTgWpR
-&MetricInfos.N.TagOperation=GweoaGaC
-&MetricInfos.N.TagList.N.TagKey=ffixFIkd
-&MetricInfos.N.TagList.N.TagValues.N=lTmpMkgU
+&MetricInfos.N.Metric=cACrCvVj
+&MetricInfos.N.ResourceId=TexsttfB
+&MetricInfos.N.TagOperation=sFtaiJeH
+&MetricInfos.N.TagList.N.TagKey=eHscRByC
+&MetricInfos.N.TagList.N.TagValues.N=KOXcnDKe
 ```
 
 ### 响应示例
