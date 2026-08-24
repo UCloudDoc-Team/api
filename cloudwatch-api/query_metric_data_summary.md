@@ -128,12 +128,12 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSummary
 &Region=cn-zj
-&ProjectId=CXUBJRIx
-&ProductKey=jRIQzjck
-&Offset=9
-&Limit=3
-&Metrics.N=mZHSOGcV
-&ResourceIds.N=gYnDoDyh
+&ProjectId=org-xxx
+&ProductKey=uhost
+&Offset=0
+&Limit=20
+&Metrics.0=uhost_cpu_used
+&ResourceIds.0=uhost-xxx
 ```
 
 ### 响应示例
@@ -144,67 +144,51 @@ https://api.ucloud.cn/?Action=QueryMetricDataSummary
   "Data": {
     "List": [
       {
-        "CompanyId": 11,
-        "MonitorAttr": {
-          "cloudwatch_loadavg5m": [],
-          "cloudwatch_memory_actualused_space": [],
-          "uhost_cpu_used": [
-            {
-              "Metric": "uhost_cpu_used",
-              "Tags": {},
-              "Value": {
-                "Timestamp": 1755597442,
-                "Value": 3
+        "CompanyId": 10001,
+        "LabelAttrList": [],
+        "MonitorAttr": [
+          {
+            "Metric": "cloudwatch_data_disk_used_per",
+            "MetricValues": [
+              {
+                "Metric": "cloudwatch_data_disk_used_per",
+                "TagsList": [
+                  {
+                    "Tag": "disk",
+                    "TagValue": "/dev/vdb"
+                  },
+                  {
+                    "Tag": "mount",
+                    "TagValue": "/data"
+                  }
+                ],
+                "Value": {
+                  "Timestamp": 1787307096,
+                  "Value": 0
+                }
               }
-            }
-          ],
-          "uhost_disk_read": [
-            {
-              "Metric": "uhost_disk_read",
-              "Tags": {},
-              "Value": {
-                "Timestamp": 1755597442,
-                "Value": 546
-              }
-            }
-          ],
-          "uhost_net_in_flow": [
-            {
-              "Metric": "uhost_net_in_flow",
-              "Tags": {},
-              "Value": {
-                "Timestamp": 1755597442,
-                "Value": 13494
-              }
-            }
-          ]
-        },
-        "Name": "测试主机",
-        "OrganizationId": 33,
+            ]
+          }
+        ],
+        "Name": "UHost",
+        "OrganizationId": 10001,
         "ProductKey": "uhost",
-        "ProjectId": 22,
-        "Region": "cn-wlcb",
-        "RegionCN": "乌兰察布",
-        "ResourceAttr": {},
-        "ResourceExtendAttr": {
-          "name": "测试主机",
-          "private_ip": "127.0.0.1",
-          "remark": "ttt",
-          "secondary_ip": "",
-          "tag": "Default",
-          "user_id": "151238458"
-        },
+        "ProjectId": 10001,
+        "Region": "cn-guiyang1",
+        "RegionCN": "西南（贵阳）",
+        "ResourceExtendAttrList": [],
         "ResourceId": "uhost-xxx",
         "Status": 0,
-        "Zone": "cn-wlcb-01",
-        "ZoneCN": "乌兰察布可用区A"
+        "Zone": "cn-guiyang1-01",
+        "ZoneCN": "西南（贵阳）可用区A"
       }
     ],
     "Total": 1
   },
+  "Message": "",
   "RetCode": 0,
   "TotalCount": 1,
-  "TraceId": "4f6b2a4a-fdfb-4e87-aa38-38dd71248c09"
+  "TraceId": "b7bd9967-8256-4cac-9936-d1faa0efa880"
 }
 ```
 
