@@ -94,25 +94,12 @@
     
 ```
 https://api.ucloud.cn/?Action=ListAlertRecord
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=lHbpbCJv
-&RecordID=1
-&StartAt=4
-&EndAt=7
-&Fuzzy=hAVEfaDE
-&RecordID=6
-&StartAt=5
-&EndAt=8
-&Fuzzy=jVymouaW
-&Fuzzy=WYjEKfyo
-&Filter.ProductTypes.N=6
-&Filter.Levels.N=lxexxlZh
-&Filter.Status.N=wakzNxlZ
-&OrderType=JXKKXtZY
-&Limit=3
-&Offset=3
-&Filter.ResourceIDs.N=vrJIFBkH
+&ProjectId=org-xxx
+&StartAt=1786002510
+&EndAt=1787298510
+&Fuzzy=uhost-xxx
+&Limit=1
+&Offset=0
 ```
 
 ### 响应示例
@@ -122,33 +109,42 @@ https://api.ucloud.cn/?Action=ListAlertRecord
   "Action": "ListAlertRecordResponse",
   "Data": [
     {
-      "IsShield": false,
+      "ContentAttrList": [
+        {
+          "Key": "ResourceName",
+          "Value": "UHost"
+        },
+        {
+          "Key": "PrivateIP",
+          "Value": "10.0.0.1"
+        }
+      ],
+      "EndAt": 0,
       "Level": "P2",
-      "MetricID": 13333,
-      "MetricName": "CPU使用率",
-      "ProductName": "云主机",
+      "MetricID": 214724856716928,
+      "MetricName": "CPUUtilization",
+      "ProductName": "UHost",
       "ProductType": 1,
-      "ProjectID": 23332,
-      "RecordID": 1111,
-      "Region": "cn-bj2",
+      "ProjectID": 10001,
+      "RecordID": 466779462085712,
+      "Region": "cn-guiyang1",
       "ResourceID": "uhost-xxx",
-      "RuleID": 1234,
+      "RuleID": 462689607971153,
       "ShieldRuleID": 0,
-      "StartAt": 1755104487,
+      "StartAt": 1786635902,
       "Status": "firing",
-      "StrategyID": 3333,
-      "StrategyName": "资源组告警",
+      "StrategyID": 462689607971152,
+      "StrategyName": "umon-test",
       "Tag": [],
       "ThresholdCompare": 1,
       "ThresholdValue": 0,
       "UnitName": "%",
-      "Value": 0,
-      "Zone": "cn-bj2-05"
+      "Value": 1
     }
   ],
+  "Message": "",
   "RetCode": 0,
-  "TotalCount": 1,
-  "TraceId": "217e6c67-9c34-4c48-8c0e-c4ab7380e51c"
+  "TotalCount": 13
 }
 ```
 
