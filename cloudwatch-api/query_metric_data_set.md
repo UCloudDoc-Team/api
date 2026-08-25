@@ -110,17 +110,17 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSet
 &Region=cn-zj
-&ProjectId=MmrpjiMu
-&ProductKey=XobgviEP
-&StartTime=1
-&EndTime=9
+&ProjectId=TZlpcuPd
+&ProductKey=TXBudhdd
+&StartTime=2
+&EndTime=8
 &CalcMethod=raw
 &Period=60
-&MetricInfos.N.Metric=cACrCvVj
-&MetricInfos.N.ResourceId=TexsttfB
-&MetricInfos.N.TagOperation=sFtaiJeH
-&MetricInfos.N.TagList.N.TagKey=eHscRByC
-&MetricInfos.N.TagList.N.TagValues.N=KOXcnDKe
+&MetricInfos.N.Metric=lDyFSEBQ
+&MetricInfos.N.ResourceId=UESwYyop
+&MetricInfos.N.TagOperation=mBNWMyvw
+&MetricInfos.N.TagList.N.TagKey=lfwRldQl
+&MetricInfos.N.TagList.N.TagValues.N=jAHCAMhA
 ```
 
 ### 响应示例
@@ -129,71 +129,29 @@ https://api.ucloud.cn/?Action=QueryMetricDataSet
 {
   "Action": "QueryMetricDataSetResponse",
   "Data": {
-    "InvalidResourceIds": [],
+    "InvalidResourceIds": [
+      "cfsvrea"
+    ],
     "List": [
       {
         "ErrCode": 0,
         "ErrMsg": "",
-        "Metric": "cloudwatch_data_disk_used_per",
+        "Metric": "affsvsasxac",
         "Results": [
           {
-            "ResourceId": "uhost-xxx",
-            "ResourceName": "UHost",
+            "ResourceId": "ascevrv",
+            "ResourceName": "JDWNIC",
             "TagList": [
               {
-                "Tag": "disk",
-                "TagValue": "/dev/vda15"
+                "Tag": "dadedfv",
+                "TagValue": "bgdbngnyny"
               },
               {
-                "Tag": "mount",
-                "TagValue": "/boot/efi"
+                "Tag": "mfruvfunt",
+                "TagValue": "adsfrv"
               }
             ],
             "Values": [
-              {
-                "Timestamp": 1787303495,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787303795,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787304095,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787304395,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787304695,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787304995,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787305295,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787305595,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787305895,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787306195,
-                "Value": 5.85
-              },
-              {
-                "Timestamp": 1787306495,
-                "Value": 5.85
-              },
               {
                 "Timestamp": 1787306795,
                 "Value": 5.85
@@ -205,63 +163,19 @@ https://api.ucloud.cn/?Action=QueryMetricDataSet
             ]
           },
           {
-            "ResourceId": "uhost-xxx",
-            "ResourceName": "UHost",
+            "ResourceId": "fvrvse",
+            "ResourceName": "DKDWIWO",
             "TagList": [
               {
-                "Tag": "mount",
-                "TagValue": "/boot"
+                "Tag": "mfruvfunt",
+                "TagValue": "fxvsa"
               },
               {
-                "Tag": "disk",
-                "TagValue": "/dev/vda16"
+                "Tag": "dadedfv",
+                "TagValue": "nfnyfd"
               }
             ],
             "Values": [
-              {
-                "Timestamp": 1787303495,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787303795,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787304095,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787304395,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787304695,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787304995,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787305295,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787305595,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787305895,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787306195,
-                "Value": 9.46
-              },
-              {
-                "Timestamp": 1787306495,
-                "Value": 9.46
-              },
               {
                 "Timestamp": 1787306795,
                 "Value": 9.46
@@ -273,63 +187,19 @@ https://api.ucloud.cn/?Action=QueryMetricDataSet
             ]
           },
           {
-            "ResourceId": "uhost-xxx",
-            "ResourceName": "UHost",
+            "ResourceId": "okafvrcneb",
+            "ResourceName": "CIVNFE",
             "TagList": [
               {
-                "Tag": "disk",
-                "TagValue": "/dev/vdb"
+                "Tag": "dadedfv",
+                "TagValue": "vgbtvre"
               },
               {
-                "Tag": "mount",
-                "TagValue": "/data"
+                "Tag": "mfruvfunt",
+                "TagValue": "brnfnt"
               }
             ],
             "Values": [
-              {
-                "Timestamp": 1787303495,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787303795,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787304095,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787304395,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787304695,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787304995,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787305295,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787305595,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787305895,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787306195,
-                "Value": 0
-              },
-              {
-                "Timestamp": 1787306495,
-                "Value": 0
-              },
               {
                 "Timestamp": 1787306795,
                 "Value": 0
@@ -344,27 +214,27 @@ https://api.ucloud.cn/?Action=QueryMetricDataSet
         "TagEntries": [
           {
             "KeyList": [
-              "/boot/efi",
-              "/boot",
-              "/data"
+              "adsfrv",
+              "fxvsa",
+              "vgbtvre"
             ],
-            "TagName": "mount"
+            "TagName": "mfruvfunt"
           },
           {
             "KeyList": [
-              "/dev/vda15",
-              "/dev/vda16",
-              "/dev/vdb"
+              "bgdbngnyny",
+              "nfnyfd",
+              "brnfnt"
             ],
-            "TagName": "disk"
+            "TagName": "dadedfv"
           }
         ]
       }
     ]
   },
-  "Message": "",
+  "Message": "JFxyLBMB",
   "RetCode": 0,
-  "TraceId": "9f7bf6aa-9b9f-49e1-b873-68989d2b917e"
+  "TraceId": "ojqCOcTb"
 }
 ```
 
