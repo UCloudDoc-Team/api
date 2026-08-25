@@ -94,12 +94,16 @@
     
 ```
 https://api.ucloud.cn/?Action=ListAlertRecord
-&ProjectId=org-xxx
-&StartAt=1786002510
-&EndAt=1787298510
-&Fuzzy=uhost-xxx
-&Limit=1
-&Offset=0
+&ProjectId=rUrflzQM
+&StartAt=7
+&EndAt=5
+&Fuzzy=vvLUeMEW
+&Filter.ProductTypes.N=5
+&Filter.Levels.N=QkBHiEdM
+&Filter.Status.N=ABHpgWqC
+&OrderType=oJIlivxI
+&Limit=2
+&Offset=5
 ```
 
 ### 响应示例
@@ -111,40 +115,37 @@ https://api.ucloud.cn/?Action=ListAlertRecord
     {
       "ContentAttrList": [
         {
-          "Key": "ResourceName",
-          "Value": "UHost"
-        },
-        {
-          "Key": "PrivateIP",
-          "Value": "10.0.0.1"
+          "Key": "cMnEFLXx",
+          "Value": "DHEWfGuJ"
         }
       ],
-      "EndAt": 0,
+      "EndAt": 1786645900,
       "Level": "P2",
-      "MetricID": 214724856716928,
-      "MetricName": "CPUUtilization",
+      "MetricID": 2,
+      "MetricName": "QtNBvaDl",
       "ProductName": "UHost",
       "ProductType": 1,
-      "ProjectID": 10001,
-      "RecordID": 466779462085712,
-      "Region": "cn-guiyang1",
-      "ResourceID": "uhost-xxx",
-      "RuleID": 462689607971153,
+      "ProjectID": 0,
+      "RecordID": 5,
+      "Region": "ShFuYpCl",
+      "ResourceID": "eTClVBZb",
+      "RuleID": 3,
       "ShieldRuleID": 0,
       "StartAt": 1786635900,
       "Status": "firing",
-      "StrategyID": 462689607971152,
-      "StrategyName": "umon-test",
-      "Tag": [],
+      "StrategyID": 3,
+      "StrategyName": "BBItLUMH",
+      "Tag": [
+        "zGJLxima"
+      ],
       "ThresholdCompare": 1,
       "ThresholdValue": 0,
-      "UnitName": "%",
+      "UnitName": "bAKKDqbA",
       "Value": 1
     }
   ],
-  "Message": "",
   "RetCode": 0,
-  "TotalCount": 13
+  "TotalCount": 1
 }
 ```
 

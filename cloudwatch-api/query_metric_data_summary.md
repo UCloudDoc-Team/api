@@ -128,12 +128,12 @@
 ```
 https://api.ucloud.cn/?Action=QueryMetricDataSummary
 &Region=cn-zj
-&ProjectId=org-xxx
-&ProductKey=uhost
-&Offset=0
-&Limit=20
-&Metrics.0=uhost_cpu_used
-&ResourceIds.0=uhost-xxx
+&ProjectId=KgGPGwaL
+&ProductKey=pHLgbEMJ
+&Offset=4
+&Limit=5
+&Metrics.N=ukkGIzHz
+&ResourceIds.N=sooZntcO
 ```
 
 ### 响应示例
@@ -144,22 +144,22 @@ https://api.ucloud.cn/?Action=QueryMetricDataSummary
   "Data": {
     "List": [
       {
-        "CompanyId": 10001,
+        "CompanyId": 0,
         "LabelAttrList": [],
         "MonitorAttr": [
           {
-            "Metric": "cloudwatch_data_disk_used_per",
+            "Metric": "DCBEKKCS",
             "MetricValues": [
               {
-                "Metric": "cloudwatch_data_disk_used_per",
+                "Metric": "JSXNSN",
                 "TagsList": [
                   {
-                    "Tag": "disk",
-                    "TagValue": "/dev/vdb"
+                    "Tag": "sadadas",
+                    "TagValue": "dfadscdc"
                   },
                   {
-                    "Tag": "mount",
-                    "TagValue": "/data"
+                    "Tag": "adfeccfae",
+                    "TagValue": "rtgtrce"
                   }
                 ],
                 "Value": {
@@ -170,14 +170,14 @@ https://api.ucloud.cn/?Action=QueryMetricDataSummary
             ]
           }
         ],
-        "Name": "UHost",
-        "OrganizationId": 10001,
-        "ProductKey": "uhost",
-        "ProjectId": 10001,
+        "Name": "asldejd",
+        "OrganizationId": 0,
+        "ProductKey": "oicndscn",
+        "ProjectId": 0,
         "Region": "cn-guiyang1",
         "RegionCN": "西南（贵阳）",
         "ResourceExtendAttrList": [],
-        "ResourceId": "uhost-xxx",
+        "ResourceId": "SHCBBSj",
         "Status": 0,
         "Zone": "cn-guiyang1-01",
         "ZoneCN": "西南（贵阳）可用区A"
@@ -185,10 +185,10 @@ https://api.ucloud.cn/?Action=QueryMetricDataSummary
     ],
     "Total": 1
   },
-  "Message": "",
+  "Message": "pQwRZNol",
   "RetCode": 0,
   "TotalCount": 1,
-  "TraceId": "b7bd9967-8256-4cac-9936-d1faa0efa880"
+  "TraceId": "LjdXqSzW"
 }
 ```
 
