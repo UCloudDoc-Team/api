@@ -33,7 +33,7 @@
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
 | **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
-| **ResourceId** | string | UKMS 实例资源 ID。 |No|
+| **ResourceId** | string | UKMS 实例资源 ID。 |**Yes**|
 
 ### 响应字段
 
@@ -47,6 +47,7 @@
 | **RotationPeriodInDays** | int | 轮转周期，单位天；未开启时返回 0。 |**Yes**|
 | **NextRotationDate** | int | 下次轮转时间，Unix 时间戳。 |No|
 | **OnDemandRotationStartDate** | int | 按需轮转开始时间，Unix 时间戳。 |No|
+| **LastRotationDate** | int | 最后一次轮转时间，Unix 时间戳。 |No|
 
 
 
