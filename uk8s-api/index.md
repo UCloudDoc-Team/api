@@ -9,7 +9,7 @@
 |[AddUK8SPHostNode](api/uk8s-api/add_uk8s_phost_node)|添加Node节点（物理云主机）|
 |[AddUK8SUHostNode](api/uk8s-api/add_uk8s_uhost_node)|添加Node节点（云主机）|
 |[CreateUK8SClusterV2](api/uk8s-api/create_uk8s_cluster_v2)|创建UK8S集群V2版|
-|[CreateUK8SULSConfig](api/uk8s-api/create_uk8s_uls_config)|创建 UK8S 日志采集配置|
+|[CreateUK8SULSConfig](api/uk8s-api/create_uk8s_uls_config)|创建UK8日志采集配置|
 |[DelUK8SCluster](api/uk8s-api/del_uk8s_cluster)|删除UK8S集群|
 |[DelUK8SClusterNodeV2](api/uk8s-api/del_uk8s_cluster_node_v2)|删除Node节点|
 |[DeleteUK8SULSConfig](api/uk8s-api/delete_uk8s_uls_config)|删除UK8S日志采集配置|

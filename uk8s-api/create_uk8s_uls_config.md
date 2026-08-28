@@ -1,4 +1,4 @@
-# 创建 UK8S 日志采集配置 - CreateUK8SULSConfig
+# 创建UK8日志采集配置 - CreateUK8SULSConfig
 
 ## 简介
 
