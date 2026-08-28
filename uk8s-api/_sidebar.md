@@ -12,6 +12,7 @@
     - [创建 UK8S 日志采集配置 - CreateUK8SULSConfig](api/uk8s-api/create_uk8s_uls_config)
     - [删除UK8S集群 - DelUK8SCluster](api/uk8s-api/del_uk8s_cluster)
     - [删除Node节点 - DelUK8SClusterNodeV2](api/uk8s-api/del_uk8s_cluster_node_v2)
+    - [删除UK8S日志采集配置 - DeleteUK8SULSConfig](api/uk8s-api/delete_uk8s_uls_config)
     - [获取集群信息 - DescribeUK8SCluster](api/uk8s-api/describe_uk8s_cluster)
     - [获取可用镜像 - DescribeUK8SImage](api/uk8s-api/describe_uk8s_image)
     - [获取 UK8S 节点详情 - DescribeUK8SNode](api/uk8s-api/describe_uk8s_node)
@@ -21,3 +22,4 @@
     - [获取UK8S集群信息 - ListUK8SClusterV2](api/uk8s-api/list_uk8s_cluster_v2)
     - [列出UK8S节点池 - ListUK8SNodeGroup](api/uk8s-api/list_uk8s_node_group)
     - [删除UK8S节点池 - RemoveUK8SNodeGroup](api/uk8s-api/remove_uk8s_node_group)
+    - [更新UK8S日志采集配置 - UpdateUK8SULSConfig](api/uk8s-api/update_uk8s_uls_config)
