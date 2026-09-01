@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **KeyId** | string | 密钥 ID、ARN 或别名。 |**Yes**|
+| **KeyId** | string | 密钥 ID或别名。 |**Yes**|
 | **SigningMessage** | string | 待验签的消息或消息摘要，Base64 编码。 |**Yes**|
 | **SignatureResult** | string | 待验证的签名，Base64 编码。 |**Yes**|
 | **SigningAlgorithm** | string | 签名时使用的算法。可选值：RSASSA_PSS_SHA_256、RSASSA_PSS_SHA_384、RSASSA_PSS_SHA_512、RSASSA_PKCS1_V1_5_SHA_256、RSASSA_PKCS1_V1_5_SHA_384、RSASSA_PKCS1_V1_5_SHA_512、ECDSA_SHA_256、ECDSA_SHA_384、ECDSA_SHA_512；须与密钥 KeySpec 匹配。 |**Yes**|
