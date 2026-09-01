@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID或别名。 |**Yes**|
 | **Description** | string | 新的密钥描述，最多 8192 字符；空字符串表示清空描述。 |**Yes**|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 

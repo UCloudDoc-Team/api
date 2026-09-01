@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
-| **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID 或别名。 |**Yes**|
 | **Plaintext** | string | 待加密明文，Base64 编码。 |**Yes**|
 | **EncryptionContext** | string | 加密上下文，JSON Object。该参数内容会记录在日志中，请勿传入密码、密钥、令牌等敏感信息。 |No|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
