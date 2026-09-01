@@ -32,7 +32,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。参见地域和可用区列表。 |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子账号必须填写。 |No|
-| **KeyId** | string | 密钥资源长 ID、ARN 或别名。 |**Yes**|
+| **KeyId** | string | 密钥资源长 ID或别名。 |**Yes**|
 | **ResourceId** | string | UKMS 实例资源 ID。 |No|
 | **KeySpec** | string | 数据密钥规格。可选值：AES_256、AES_128；默认 AES_256。与 NumberOfBytes 二选一，同时填写时 NumberOfBytes 优先。 |No|
 | **NumberOfBytes** | int | 生成数据密钥的字节长度，取值范围 1\~1024。与 KeySpec 二选一，同时填写时本字段优先。 |No|
