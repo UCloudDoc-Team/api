@@ -61,7 +61,7 @@
 | **KeyId** | string | 对外主密钥 ID（ukms_key_info.key_id）。 |**Yes**|
 | **KeySpec** | string | 密钥规格。取值：SYMMETRIC_DEFAULT、RSA_2048、RSA_3072、RSA_4096、ECC_NIST_P256、ECC_NIST_P384、ECC_NIST_P521、HMAC_256、HMAC_384、HMAC_512。 |**Yes**|
 | **KeyUsage** | array[string] | 按 KeySpec 派生的密钥用途。取值：ENCRYPT_DECRYPT、SIGN_VERIFY、GENERATE_VERIFY_MAC、KEY_AGREEMENT。 |**Yes**|
-| **Origin** | string | 密钥来源，由 Origin 派生。取值：ucloud、import。当前 CreateKey 仅支持 ucloud。 |**Yes**|
+| **Origin** | string | 密钥来源，由 Origin 派生。取值：UCLOUD_KMS、EXTERNAL。当前 CreateKey 仅支持 UCLOUD_KMS。 |**Yes**|
 | **Status** | string | 数据库密钥状态。常见取值：Active、Deactivated、PendingDeletion。 |**Yes**|
 | **CreatedTime** | int | 创建时间，Unix 时间戳。 |**Yes**|
 | **UpdateTime** | int | 更新时间，Unix 时间戳。 |**Yes**|
