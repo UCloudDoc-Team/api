@@ -1,4 +1,4 @@
-# 查询 UK8s 的 ULS 日志采集配置 - ListUK8SULSConfig
+# 查询UK8s的ULS日志采集配置 - ListUK8SULSConfig
 
 ## 简介
 
@@ -60,24 +60,29 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **CollectPolicy** | string | 采集策略。可选值: full (全量采集存量日志), increment (从当前时间点增量采集)。默认为 full。 |No|
-| **Encode** | string | 日志原文的编码格式。可选值: utf-8, gbk。默认为 utf-8。 |No|
-| **LogType** | string | 日志解析类型，决定了如何结构化日志。 |No|
-| **Delimiter** | string | 当 LogType 为delimiter_log 时可选，可选字段 ' ',' ','\|',';',',' |No|
-| **BeginningRegex** | string | 行首正则表达式。当 logType 为多行模式 (如 multiline_log 或 multiline_fullregex_log) 时，用于标识一条新日志的开始。 |No|
-| **LogRegex** | string | 日志提取正则表达式。当 logType 为正则模式 (如 fullregex_log 或 multiline_fullregex_log) 时，用于从日志中提取字段。 |No|
-| **TimeKey** | string | 指定时间字段。 |No|
-| **TimeFormat** | string | timeKey 对应的时间格式。如： %Y-%m-%d %H:%M:%S |No|
-| **UnMatchUpload** | string | 是否上传解析失败的日志。true 表示上传，false 表示丢弃。默认为 false。 |No|
-| **UnMatchKey** | string | 如果 unMatchUpload 为 true，无法解析的日志原文将被存放在此字段指定的 Key 下。默认为 LogParseFailure。 |No|
+| **CollectPolicy** | string | 采集策略。可选值：full（全量采集存量日志）、increment（从当前时间点增量采集）。默认为 full。 |No|
+| **Encode** | string | 日志原文的编码格式。可选值：utf-8、gbk。默认为 utf-8。 |No|
+| **LogType** | string | 日志解析类型。可选值：json、delimiter、full_regex、multi_line_full_regex、multi_line_delimiter、minimal_list、multi_line。 |No|
+| **Delimiter** | string | 分隔符。适用于 delimiter 或 multi_line_delimiter，可选值：space、tab、\|、;、,。 |No|
+| **DelimiterBase64** | string | Base64 编码的分隔符。填写时优先于 Delimiter。 |No|
+| **BeginningRegex** | string | 行首正则表达式。在 multi_line、multi_line_full_regex 或 multi_line_delimiter 模式下，BeginningRegex 和 BeginningRegexBase64 必须至少填写一个。 |No|
+| **BeginningRegexBase64** | string | Base64 编码的行首正则表达式。填写时优先于 BeginningRegex。 |No|
+| **LogRegex** | string | 日志提取正则表达式。在 full_regex 或 multi_line_full_regex 模式下，LogRegex 和 LogRegexBase64 必须至少填写一个。 |No|
+| **LogRegexBase64** | string | Base64 编码的日志提取正则表达式。填写时优先于 LogRegex。 |No|
+| **TimeKey** | string | 包含日志时间的字段名。 |No|
+| **TimeFormat** | string | TimeKey 对应的时间格式。在 json、full_regex 或 multi_line_full_regex 模式下，填写 TimeKey 时必须同时填写 TimeFormat。 |No|
+| **UnMatchUpload** | string | 是否上传解析失败的日志。字符串 true 表示上传，false 表示丢弃。默认为 false。 |No|
+| **UnMatchKey** | string | 存放无法解析的日志原文的 Key。UnMatchUpload 为 true 时必须填写。 |No|
+| **Keys** | array[string] | 提取后的字段名列表。仅适用于 delimiter、full_regex、multi_line_full_regex 和 multi_line_delimiter。 |No|
 
 #### ULSInputDetail
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **FilePaths** | array[[*ULSFilePaths*](#ULSFilePaths)] | 采集路径，数组。 |No|
-| **Type** | string | 日志输入类型。当前主要支持 container_file，表示采集容器标准输出或文件。 |No|
-| **InputMetadata** | [*ULSInputMetadata*](#ULSInputMetadata) | 定义哪些容器相关的元数据需要附加到日志中。 |No|
+| **FilePaths** | array[[*ULSFilePaths*](#ULSFilePaths)] | 日志采集路径列表。仅适用于 container_file。 |No|
+| **Type** | string | 日志输入类型。可选值：container_file、container_stdout。 |No|
+| **Stream** | string | 容器标准输出流类型。仅适用于 container_stdout，可选值：all、stdout、stderr，默认为 all。 |No|
+| **InputMetadata** | [*ULSInputMetadata*](#ULSInputMetadata) | 定义需要附加到日志中的容器相关元数据。 |No|
 
 #### ULSMatchRule
 
