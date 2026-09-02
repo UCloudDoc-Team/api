@@ -78,53 +78,11 @@
 
 ### 请求示例
     
-```
-https://api.ucloud.cn/?Action=UpdateUK8SULSConfig
-&Region=cn-zj
-&Zone=cn-zj-01
-&ProjectId=ZnqHpvpN
-&Namespace=YwrqqshI
-&Name=sSFWIjLi
-&TopicId=IaGDcAvd
-&ExtractRule.CollectPolicy=mtLzGRYR
-&ExtractRule.Encode=gGKxPoYw
-&ExtractRule.LogType=mERxKFfi
-&ExtractRule.BeginningRegex=hokZuFjj
-&ExtractRule.LogRegex=slHfpSuK
-&ExtractRule.TimeKey=ILmrJesk
-&ExtractRule.TimeFormat=MhtusXpR
-&ExtractRule.UnMatchKey=oWhCXqet
-&InputDetail.Type=udiZMVEZ
-&InputDetail.Metadata.Container=vAQhviWA
-&InputDetail.Metadata.Labels=uqMsYkUu
-&MatchRule.Workload.Namespace=FMvazeXw
-&MatchRule.Workload.Type=NnSgvRfy
-&MatchRule.Workload.Name=XRffJKle
-&MatchRule.Workload.ContainerOperator=FQPUIFKU
-&MatchRule.Workload.Container=hHgEbOrZ
-&MatchRule.PodLabels.NamespaceOperator=rqCuYvEl
-&MatchRule.PodLabels.Namespace=RUwMUnOM
-&MatchRule.PodLabels.Labels.N.Key=pngxzLHq
-&MatchRule.PodLabels.Labels.N.ValueOperator=UZgBMOms
-&MatchRule.PodLabels.Labels.N.Value=AqvonjAA
-&MatchRule.PodLabels.ContainerOperator=JomsSAaP
-&MatchRule.PodLabels.Container=wbDGSafc
-&ClusterId=fTqcIwOO
-&ClusterId=YlVIkJMZ
-&ExtractRule.Delimiter=HiYLmUuo
-&InputDetail.Metadata.FilePaths.N.Path=GbdJICws
-&InputDetail.Metadata.FilePaths.N.File=oOIkfmoj
-&ExtractRule.Keys.N=IVYoDEhR
-```
+暂无
 
 ### 响应示例
     
-```json
-{
-  "Action": "UpdateUK8SULSConfigResponse",
-  "RetCode": 0
-}
-```
+暂无
 
 
 
