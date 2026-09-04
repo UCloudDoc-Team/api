@@ -59,7 +59,7 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist)  |No|
+| **Zone** | string | 可用区，参见 [可用区列表](api/summary/regionlist) |No|
 | **ImageId** | string | 镜像ID |No|
 | **ImageName** | string | 镜像名称 |No|
 | **DisplayName** | string | 用于控制台显示的名称 |No|
@@ -73,10 +73,19 @@
 | **ImageDescription** | string | 镜像描述 |No|
 | **CreateTime** | int | 创建时间，格式为Unix时间戳 |No|
 | **ImageSize** | int | 镜像大小 |No|
+| **MinSpec** | [*ImageMinSpec*](#ImageMinSpec) | 最小配置要求 |No|
 | **MinimalCPU** | string | 默认值为空'''。当CentOS 7.3/7.4/7.5等镜像会标记为“Broadwell” |No|
 | **MaintainEol** | string | 系统EOL的时间，格式：YYYY/MM/DD |No|
-| **SceneCategories** | array[string] | 场景分类，目前包含Featured（精选），PreInstalledDrivers（预装驱动），AIPainting（AI绘画），AIModels（AI模型），HPC（高性能计算）  |No|
+| **SceneCategories** | array[string] | 场景分类，目前包含Featured（精选），PreInstalledDrivers（预装驱动），AIPainting（AI绘画），AIModels（AI模型），HPC（高性能计算） |No|
 | **ImageLogoLink** | string | 应用镜像图标url |No|
+
+#### ImageMinSpec
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **Cpu** | int | CPU核心数 |No|
+| **Memory** | int | 内存。单位:MB |No|
+| **SysDisk** | int | 系统盘大小。单位:GB |No|
 
 ## 示例
 
