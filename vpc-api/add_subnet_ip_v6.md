@@ -35,6 +35,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SubnetworkId** | string | 子网ID |**Yes**|
+| **VPCId** | string | 私有网络 ID |No|
 | **VPCIPv6Network** | string | 所属VPC的IPv6网段，可选，不填默认选择一个VPC IPv6网段进行分配 |No|
 | **IPv6Network** | string | 指定IPv6网段 |No|
 | **IPv6PrefixLength** | int | 指定IPv6网段掩码 |No|
@@ -64,6 +65,7 @@ https://api.ucloud.cn/?Action=AddSubnetIPv6
 &VPCIPv6Network=VDhSNLXX
 &IPv6Network=JDtTXvuj
 &IPv6PrefixLength=8
+&VPCId=PtSPEAMj
 ```
 
 ### 响应示例
