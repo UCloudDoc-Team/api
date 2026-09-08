@@ -40,7 +40,7 @@
 | **InstanceType** | int | 与InstanceID对应，实际资源大类ID--pass产品实际类型 |No|
 | **Mac** | string | 选填，资源的Mac |No|
 | **IPv6Addresses.N** | string | 指定IP分配，与Count互斥 |No|
-| **Count** | string | 指定数量分配，与IPv6Addresses互斥 |No|
+| **Count** | int | 指定数量分配，与IPv6Addresses互斥 |No|
 | **Attribute** | string | IP属性：支持开启公网(Normal)、仅支持内网(Private)，默认Normal |No|
 | **Segment** | string | 指定网段分配IP |No|
 

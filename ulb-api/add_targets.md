@@ -41,7 +41,7 @@
 | **Targets.N.SubnetId** | string | 服务节点的子网资源ID。在IP类型时，必传 |No|
 | **Targets.N.ResourceIP** | string | 服务节点的IP。在IP类型时，必传 |No|
 | **Targets.N.Port** | int | 服务节点的端口。限定取值：[1-65535]，默认值80 |No|
-| **Targets.N.Weight** | int | 服务节点的权重。限定取值：[1-100]，默认值1；仅在加权轮询算法时有效<br /> |No|
+| **Targets.N.Weight** | int | 服务节点的权重。限定取值：[1-100]，默认值1；仅在加权轮询算法时有效 |No|
 | **Targets.N.Enabled** | boolean | 服务节点是否启用。默认值true |No|
 | **Targets.N.IsBackup** | boolean | 服务节点是否为备节点。默认值false |No|
 
