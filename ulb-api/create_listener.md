@@ -45,16 +45,23 @@
 | **StickinessConfig.Enabled** | boolean | 是否开启会话保持功能。应用型负载均衡实例基于Cookie实现；默认值为：false |No|
 | **StickinessConfig.Type** | string | （应用型专用）Cookie处理方式。限定枚举值："ServerInsert" / "UserDefined"；默认值为：“ServerInsert” |No|
 | **StickinessConfig.CookieName** | string | （应用型专用）自定义Cookie。当StickinessType取值"UserDefined"时有效；限定字符长度：[0-255] |No|
-| **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。暂时不支持关闭。默认值为：true |No|
+| **HealthCheckConfig.Enabled** | boolean | 是否开启健康检查功能。默认值为：true |No|
 | **HealthCheckConfig.Type** | string | 健康检查方式。应用型限定取值：“Port”/"HTTP/GRPC"，默认值：“Port” |No|
-| **HealthCheckConfig.Domain** | string | （应用型专用）HTTP检查域名 |No|
-| **HealthCheckConfig.Path** | string | （应用型专用）HTTP检查路径 |No|
+| **HealthCheckConfig.Domain** | string | （应用型专用）HTTP/GRPC检查域名 |No|
+| **HealthCheckConfig.Path** | string | （应用型专用）HTTP/GRPC检查路径 |No|
 | **HealthCheckConfig.Method** | string | （应用型专用）HTTP检查方法。只支持GET和HEAD。 |No|
-| **HealthCheckConfig.ResponseCode** | string | （应用型专用）GRPC检查响应码 |No|
+| **HealthCheckConfig.ResponseCode** | string | （应用型专用）HTTP时为2xx,3xx格式(逗号分隔)，GRPC时为数字码(逗号分隔) |No|
+| **HealthCheckConfig.Port** | int | （应用型专用）端口 |No|
+| **HealthCheckConfig.HTTPVersion** | string | （应用型专用）检查协议 |No|
+| **HealthCheckConfig.TimeOut** | int | （应用型专用）超时时间，秒，必须小于Interval |No|
+| **HealthCheckConfig.Interval** | int | （应用型专用）间隔时间，秒，必须大于TimeOut |No|
+| **HealthCheckConfig.UpCounts** | int | （应用型专用）判定成功的连续次数 |No|
+| **HealthCheckConfig.DownCounts** | int | （应用型专用）判定失败的连续次数 |No|
 | **CompressionEnabled** | boolean | （应用型专用）是否开启数据压缩功能。目前只支持使用gzip对特定文件类型进行压缩。默认值为：false |No|
 | **HTTP2Enabled** | boolean | （应用型专用）是否开启HTTP/2特性。仅HTTPS监听支持开启；默认值为：false |No|
 | **RedirectEnabled** | boolean | （应用型专用）是否开启HTTP重定向到HTTPS。仅HTTP监听支持开启；默认值为：false |No|
 | **RedirectPort** | int | （应用型专用）重定向端口。限定取值：[1-65535]，默认值443 |No|
+| **TargetProtocol** | string | 后端协议。应用型限定取值：“HTTP,HTTPS,GRPC"，默认值“HTTP” |No|
 
 ### 响应字段
 
@@ -63,7 +70,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **ListenerId** | string | 监听器的ID |**Yes**|
+| **ListenerId** | string | 监听器的ID |No|
 
 
 
@@ -99,6 +106,13 @@ https://api.ucloud.cn/?Action=CreateListener
 &RedirectPort=1
 &HealthCheckConfig.Method=jGeXqSDV
 &HealthCheckConfig.ResponseCode=qDsVpfRH
+&HealthCheckConfig.Port=3
+&HealthCheckConfig.HTTPVersion=sHOmvQCG
+&HealthCheckConfig.TimeOut=4
+&HealthCheckConfig.Interval=OPkuqACJ
+&HealthCheckConfig.UpCounts=QbrRbLDw
+&HealthCheckConfig.DownCounts=JthMgkgx
+&TargetProtocol=wXTUEsTW
 ```
 
 ### 响应示例
