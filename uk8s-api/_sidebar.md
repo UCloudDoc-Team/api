@@ -23,4 +23,5 @@
     - [列出UK8S节点池 - ListUK8SNodeGroup](api/uk8s-api/list_uk8s_node_group)
     - [查询UK8s的ULS日志采集配置 - ListUK8SULSConfig](api/uk8s-api/list_uk8s_uls_config)
     - [删除UK8S节点池 - RemoveUK8SNodeGroup](api/uk8s-api/remove_uk8s_node_group)
+    - [修改UK8S节点池 - UpdateUK8SNodeGroup](api/uk8s-api/update_uk8s_node_group)
     - [更新UK8S日志采集配置 - UpdateUK8SULSConfig](api/uk8s-api/update_uk8s_uls_config)
