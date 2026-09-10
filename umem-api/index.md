@@ -63,6 +63,7 @@
 |:---|:---|
 |[CreateUDRedisUhproxy](api/umem-api/create_ud_redis_uhproxy)|添加分布式Redis代理|
 |[DeleteUDRedisProxy](api/umem-api/delete_ud_redis_proxy)|删除分布式Redis代理|
+|[DescribeUDRedisProxyClientList](api/umem-api/describe_ud_redis_proxy_client_list)|查询分布式Redis代理客户端连接信息|
 |[ModifyUMemPassword](api/umem-api/modify_umem_password)|更改分布式redis密码|
 |[ResizeUMemcacheGroup](api/umem-api/resize_umem_cache_group)|调整memcache实例的容量|
 |[ResizeUhproxy](api/umem-api/resize_uhproxy)|分布式Redis代理规格调整|
