@@ -167,8 +167,6 @@
 |:----------------------|:---|:---|
 | **NetworkIn** |网络入口|bps|
 | **NetworkOut** |网络出口|bps|
-| **FlowIn** |外网入流量|Byte|
-| **FlowOut** |外网出流量|Byte|
 | **NetworkInUsage** |入口带宽使用率|%|
 | **NetworkOutUsage** |出口带宽使用率|%|
 | **EIPIdTopOutBW** |EIPId出向峰值带宽|bps|
