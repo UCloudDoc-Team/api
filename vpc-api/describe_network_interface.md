@@ -87,7 +87,7 @@
 | **CreateTime** | int | 创建时间 |No|
 | **Remark** | string | 备注 |No|
 | **Tag** | string | 业务组 |No|
-| **PrivateIpLimit** | array[[*UNIQuotaInfo*](#UNIQuotaInfo)] | 私有 IP 配额 |No|
+| **PrivateIpLimit** | [*UNIQuotaInfo*](#UNIQuotaInfo) | 私有 IP 配额 |No|
 
 #### FwInfo
 
