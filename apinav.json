@@ -247,6 +247,10 @@
       {
         "links": "/api/uslk-api/README",
         "name": "短链工具 USLK"
+      },
+      {
+        "links": "/api/ses-api/README",
+        "name": "邮件推送 SES"
       }
     ]
   },
