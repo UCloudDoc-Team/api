@@ -606,6 +606,17 @@
           ]
         },
         {
+          "name": "邮件推送 SES",
+          "img": "icon-product__ses",
+          "sublinks": [
+            {
+              "links": "/api/ses-api/README",
+              "name": "查看文档",
+              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
+            }
+          ]
+        },
+        {
           "name": "智能短信 ISMS",
           "img": "icon-product__isms",
           "sublinks": [
