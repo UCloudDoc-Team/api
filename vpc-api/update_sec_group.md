@@ -33,7 +33,7 @@
 |:---|:---|:---|:---|
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
-| **SecGroupId** | string | 安全组资源ID数组。不支持 .n 格式。Type 为 string 数组。 |**Yes**|
+| **SecGroupId.N** | string | 安全组资源ID数组。不支持 .n 格式。Type 为 string 数组。 |**Yes**|
 | **Name** | string | 安全组名称，默认为空，为空则不做修改。Name,Tag,Remark必须填写1个及以上 |No|
 | **Remark** | string | 安全组备注，默认为空，为空则不做修改。Name,Tag,Remark必须填写1个及以上 |No|
 
