@@ -66,7 +66,7 @@
 | **EmailAddress** | string | 收件邮箱 |No|
 | **Cc** | array[string] | 抄送 |No|
 | **Bcc** | array[string] | 密送 |No|
-| **TemplateVariableParams** | array[string] | 模版变量 |No|
+| **TemplateVariableParams** | array[string] | 模版变量,variableName{##}variableValue 格式；仅使用模版发送（SendSESEmailTemplate）时返回，未使用模版发送（SendSESEmail）时不返回该字段 |No|
 | **FailureReason** | string | 失败原因 |No|
 
 ## 示例
