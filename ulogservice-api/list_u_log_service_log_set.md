@@ -43,6 +43,7 @@
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
 | **Data** | array[[*LogSetInfo*](#LogSetInfo)] | 返回日志主题数据，是一个数组 |No|
+| **TotalCount** | int | 日志集数量 |No|
 
 #### 数据模型
 
@@ -52,6 +53,7 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **TopicCount** | int | 日志集下主题数量 |No|
+| **LogSetId** | string | 日志集ID |No|
 | **LogSetRemark** | string | 日志集备注 |No|
 | **LogSetName** | string | 日志集名称 |No|
 | **CreateTime** | int | 创建时间 |No|
