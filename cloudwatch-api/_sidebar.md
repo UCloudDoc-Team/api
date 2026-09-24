@@ -19,6 +19,7 @@
     - [修改告警策略备注 - ModifyAlertStrategyRemark](api/cloudwatch-api/modify_alert_strategy_remark)
     - [查询监控指标数据集 - QueryMetricDataSet](api/cloudwatch-api/query_metric_data_set)
     - [获取资源看图属性列表 - QueryMetricDataSummary](api/cloudwatch-api/query_metric_data_summary)
+    - [获取高精度指标样本数据 - QueryMetricDenseData](api/cloudwatch-api/query_metric_dense_data)
     - [解绑告警策略 - UnBindAlertStrategy](api/cloudwatch-api/un_bind_alert_strategy)
     - [更新告警策略 - UpdateAlertStrategy](api/cloudwatch-api/update_alert_strategy)
     - [编辑条件模板 - UpdateAlertStrategyTemplate](api/cloudwatch-api/update_alert_strategy_template)
