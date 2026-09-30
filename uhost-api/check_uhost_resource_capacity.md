@@ -45,7 +45,7 @@
 | **Disks.N.CustomBackup.Hour** | string | Disks.N.BackupMode为"Custom"时，进行设置, 以24小时级为基础进行倍数扩增，如24、48、72、96。 |No|
 | **Disks.N.CustomBackup.Day** | string | Disks.N.BackupMode为"Custom"时，进行设置, 以5天级为基础进行倍数扩增，如5、10、15、20、25、30。 |No|
 | **Disks.N.SnapshotId** | string | 从快照创建盘时所用快照id，目前仅支持数据盘 |No|
-| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> > Spot计费为抢占式实例(内测阶段) <br /><br /> 默认为月付<br /> |No|
+| **ChargeType** | string | 计费模式。枚举值为： <br /><br /> > Year，按年付费； <br /><br /> > Month，按月付费；<br /><br /> > Dynamic，按小时预付费 <br /><br /> > Postpay，按小时后付费（支持关机不收费，目前仅部分可用区支持，请联系您的客户经理） <br /><br /> > Spot计费为抢占式实例(内测阶段) <br /><br /> 默认为月付 |No|
 | **CPU** | int | 虚拟CPU核数。可选参数：1-64（具体机型与CPU的对应关系参照控制台）。默认值: 4。 |No|
 | **Memory** | int | 内存大小。单位：MB。范围 ：[1024, 262144]，取值为1024的倍数（可选范围参考控制台）。默认值：8192 |No|
 | **GpuType** | string | GPU类型，枚举值["K80", "P40", "V100", "T4","T4A", "T4S","2080Ti","2080Ti-4C","1080Ti", "T4/4", "MI100", "V100S",2080","2080TiS","2080TiPro","3090","A100", "4090", "4090Pro", "4090_48G", "5090"]，MachineType为G时必填 |No|
@@ -58,7 +58,7 @@
 | **MaxCount** | int | 本次最大创建主机数量，取值范围是[1,100]，默认值为1。 |No|
 | **Features.UNI** | boolean | 弹性网卡特性。开启了弹性网卡权限位，此特性才生效，默认 false 未开启，true 开启，仅与 NetCapability Normal 兼容。 |No|
 | **SecurityMode** | string | 主机安全模式。Firewall：防火墙；SecGroup：安全组；默认值：Firewall。 |No|
-| **UHostFamily** | string | 规格族。<br />由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。<br />当 MachineType 为 "O"（快杰型）时，支持以下取值：<br />o1i：快杰型 O1 代，Intel 平台<br />o1a：快杰型 O1 代，AMD 平台<br />o1r：快杰型 O1 代，ARM 平台<br />o2i：快杰型 O2 代，Intel 平台<br />默认值：o1i 或 o1a（系统将根据资源情况自动选择）<br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值：<br />om1i：快杰内存增强型 OM1 代，Intel 平台<br />om2i：快杰内存增强型 OM2 代，Intel 平台<br />⚠️ 注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
+| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。 当 MachineType 为 "O"<br />"OM"<br />"OPRO"<br />"OPROG"（快杰系列）时，支持以下取值：<br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o1h: 快杰型 O1 代，Hygon 平台<br />- o2i：快杰型 O2 代，Intel 平台 <br />默认值：o1i 或 o1a<br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />- om1a：快杰内存增强型 OM1 代，Amd 平台<br />默认值：om1i 或 om1a<br />当 MachineType 为 "OPROG"（快杰PRO通用型）时，支持以下取值： <br />- oprog1i：快杰PRO通用型 OPROG1 代，Intel 平台 <br />- oprog2i：快杰PRO通用型 OPROG2 代，Intel 平台 <br />- oprog1a：快杰PRO通用型 OPROG1 代，Amd 平台 <br />当 MachineType 为 "OPRO"（快杰PRO增强型）时，支持以下取值： <br />- opro1a：快杰PRO增强型 OPRO1 代，Amd 平台 <br />- opro2a：快杰PRO增强型 OPRO2 代，Amd 平台 <br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
 | **MinCount** | int | 本次最小创建主机数量，取值范围是[1,100]，默认值为1。 |No|
 
 ### 响应字段
