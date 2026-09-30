@@ -90,7 +90,7 @@
 | **Labels.N.Key** | string | 用户资源标签的键值 |No|
 | **Labels.N.Value** | string | 用户资源标签的值 |No|
 | **DeletionProtection** | boolean | 删除保护，设置删除保护参数，true表示不允许控制台删除 |No|
-| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。 当 MachineType 为 "O"（快杰型）时，支持以下取值：<br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o2i：快杰型 O2 代，Intel 平台 <br />默认值：o1i 或 o1a<br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
+| **UHostFamily** | string | 规格族。 由机型代号和 CPU 平台组成，用于指定云主机的硬件类型与处理器平台。 当 MachineType 为 "O"<br />"OM"<br />"OPRO"<br />"OPROG"（快杰系列）时，支持以下取值：<br />- o1i：快杰型 O1 代，Intel 平台 <br />- o1a：快杰型 O1 代，AMD 平台<br />- o1r：快杰型 O1 代，ARM 平台 <br />- o1h: 快杰型 O1 代，Hygon 平台<br />- o2i：快杰型 O2 代，Intel 平台 <br />默认值：o1i 或 o1a<br />当 MachineType 为 "OM"（快杰共享型）时，支持以下取值： <br />- om1i：快杰内存增强型 OM1 代，Intel 平台 <br />- om2i：快杰内存增强型 OM2 代，Intel 平台<br />- om1a：快杰内存增强型 OM1 代，Amd 平台<br />默认值：om1i 或 om1a<br />当 MachineType 为 "OPROG"（快杰PRO通用型）时，支持以下取值： <br />- oprog1i：快杰PRO通用型 OPROG1 代，Intel 平台 <br />- oprog2i：快杰PRO通用型 OPROG2 代，Intel 平台 <br />- oprog1a：快杰PRO通用型 OPROG1 代，Amd 平台 <br />当 MachineType 为 "OPRO"（快杰PRO增强型）时，支持以下取值： <br />- opro1a：快杰PRO增强型 OPRO1 代，Amd 平台 <br />- opro2a：快杰PRO增强型 OPRO2 代，Amd 平台 <br />注意：规格族必须与 MachineType 匹配，否则请求将被拒绝。 |No|
 | **CouponId** | string | 主机代金券ID。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 
 ### 响应字段
