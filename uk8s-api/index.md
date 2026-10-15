@@ -21,6 +21,12 @@
 |[DescribeUK8SNode](api/uk8s-api/describe_uk8s_node)|获取 UK8S 节点详情|
 |[EnableUK8SAutoscaler](api/uk8s-api/enable_uk8s_autoscaler)|开启/关闭伸缩器|
 |[GetClusterConfig](api/uk8s-api/get_cluster_config)|获取集群配置文件|
+|[GetUK8SAvailableInstanceTypes](api/uk8s-api/get_uk8s_available_instance_types)|获取可用机型|
+|[GetUK8SCNINodeInfo](api/uk8s-api/get_uk8s_cni_node_info)|获取 UK8S CNI 节点信息|
+|[GetUK8SIpamdStatus](api/uk8s-api/get_uk8s_ipamd_status)|获取ipamd插件的状态|
+|[GetUK8SLoadBalancerController](api/uk8s-api/get_uk8s_load_balancer_controller)|获取 uk8s  LoadBalancerController|
+|[GetUK8SNodeGroup](api/uk8s-api/get_uk8s_node_group)|列出某个UK8S节点池|
+|[GetUK8SPluginInfo](api/uk8s-api/get_uk8s_plugin_info)|查询集群插件信息|
 |[GetUK8SVersions](api/uk8s-api/get_uk8s_versions)|获取支持创建的UK8S集群版本|
 |[ListUK8SClusterNodeV2](api/uk8s-api/list_uk8s_cluster_node_v2)|获取UK8S集群节点信息|
 |[ListUK8SClusterV2](api/uk8s-api/list_uk8s_cluster_v2)|获取UK8S集群信息|
@@ -28,6 +34,7 @@
 |[ListUK8SULSConfig](api/uk8s-api/list_uk8s_uls_config)|查询UK8s的ULS日志采集配置|
 |[ModifyUK8SClusterName](api/uk8s-api/modify_uk8s_cluster_name)|修改k8s集群名称|
 |[RemoveUK8SNodeGroup](api/uk8s-api/remove_uk8s_node_group)|删除UK8S节点池|
+|[UpdateUK8SAutoScalingGroupV2](api/uk8s-api/update_uk8s_auto_scaling_group_v2)|集群修改伸缩组V2|
 |[UpdateUK8SAutoscaler](api/uk8s-api/update_uk8s_autoscaler)|更新伸缩器|
 |[UpdateUK8SNodeGroup](api/uk8s-api/update_uk8s_node_group)|修改UK8S节点池|
 |[UpdateUK8SULSConfig](api/uk8s-api/update_uk8s_uls_config)|更新UK8S日志采集配置|

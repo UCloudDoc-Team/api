@@ -2,7 +2,7 @@
 
 ## 简介
 
-更新伸缩器
+更新集群级缩容阈值和等待时间。调用前必须关闭 cluster-autoscaler；修改后重新开启，使新配置生效。
 
 
 
@@ -29,10 +29,10 @@
 | **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **ClusterId** | string | 集群ID |**Yes**|
-| **ScaleDownUnneededTime** | int | 缩容多余节点的等待时间（单位：分钟） |**Yes**|
-| **ScaleDownUtilizationThreshold** | int | 节点缩容利用率阈值 |**Yes**|
-| **ScaleDownDelayAfterAdd** | int | 添加节点之后，缩容节点的等待时间（单位：分钟） |**Yes**|
-| **ScaleDownGPUUtilizationThreshold** | int | 节点GPU缩容利用率阈值 |No|
+| **ScaleDownUnneededTime** | int | 节点持续不需要后触发缩容的等待时间，单位分钟，范围 1–1440。 |**Yes**|
+| **ScaleDownUtilizationThreshold** | int | 节点缩容利用率阈值，单位百分比，范围 0–100。例如 50 表示 50%。 |**Yes**|
+| **ScaleDownDelayAfterAdd** | int | 添加节点后等待缩容的时间，单位分钟，范围 1–1440。 |**Yes**|
+| **ScaleDownGPUUtilizationThreshold** | int | GPU 缩容利用率阈值，单位百分比，范围 0–100。省略时使用 ScaleDownUtilizationThreshold。 |No|
 
 ### 响应字段
 
