@@ -16,6 +16,7 @@
 |[DescribeUK8SCluster](api/uk8s-api/describe_uk8s_cluster)|获取集群信息|
 |[DescribeUK8SImage](api/uk8s-api/describe_uk8s_image)|获取可用镜像|
 |[DescribeUK8SNode](api/uk8s-api/describe_uk8s_node)|获取 UK8S 节点详情|
+|[EnableUK8SAutoscaler](api/uk8s-api/enable_uk8s_autoscaler)|开启/关闭伸缩器|
 |[GetClusterConfig](api/uk8s-api/get_cluster_config)|获取集群配置文件|
 |[GetUK8SVersions](api/uk8s-api/get_uk8s_versions)|获取支持创建的UK8S集群版本|
 |[ListUK8SClusterNodeV2](api/uk8s-api/list_uk8s_cluster_node_v2)|获取UK8S集群节点信息|
