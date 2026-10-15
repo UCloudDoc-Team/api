@@ -13,6 +13,7 @@
 |[CreateUK8SULSConfig](api/uk8s-api/create_uk8s_uls_config)|创建UK8日志采集配置|
 |[DelUK8SCluster](api/uk8s-api/del_uk8s_cluster)|删除UK8S集群|
 |[DelUK8SClusterNodeV2](api/uk8s-api/del_uk8s_cluster_node_v2)|删除Node节点|
+|[DeleteUK8SAutoScalingGroup](api/uk8s-api/delete_uk8s_auto_scaling_group)|删除伸缩组|
 |[DeleteUK8SULSConfig](api/uk8s-api/delete_uk8s_uls_config)|删除UK8S日志采集配置|
 |[DescribeUK8SAutoscalerGroup](api/uk8s-api/describe_uk8s_autoscaler_group)|获取AutoscalerGroup信息|
 |[DescribeUK8SCluster](api/uk8s-api/describe_uk8s_cluster)|获取集群信息|
