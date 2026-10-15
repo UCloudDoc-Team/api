@@ -4,6 +4,7 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[AddUK8SAutoScalingGroupV2](api/uk8s-api/add_uk8s_auto_scaling_group_v2)|集群增加伸缩组V2|
 |[AddUK8SExistingUHost](api/uk8s-api/add_uk8s_existing_uhost)|添加Node节点（已有云主机）|
 |[AddUK8SNodeGroup](api/uk8s-api/add_uk8s_node_group)|添加UK8S节点池|
 |[AddUK8SPHostNode](api/uk8s-api/add_uk8s_phost_node)|添加Node节点（物理云主机）|
@@ -13,6 +14,7 @@
 |[DelUK8SCluster](api/uk8s-api/del_uk8s_cluster)|删除UK8S集群|
 |[DelUK8SClusterNodeV2](api/uk8s-api/del_uk8s_cluster_node_v2)|删除Node节点|
 |[DeleteUK8SULSConfig](api/uk8s-api/delete_uk8s_uls_config)|删除UK8S日志采集配置|
+|[DescribeUK8SAutoscalerGroup](api/uk8s-api/describe_uk8s_autoscaler_group)|获取AutoscalerGroup信息|
 |[DescribeUK8SCluster](api/uk8s-api/describe_uk8s_cluster)|获取集群信息|
 |[DescribeUK8SImage](api/uk8s-api/describe_uk8s_image)|获取可用镜像|
 |[DescribeUK8SNode](api/uk8s-api/describe_uk8s_node)|获取 UK8S 节点详情|
@@ -25,5 +27,6 @@
 |[ListUK8SULSConfig](api/uk8s-api/list_uk8s_uls_config)|查询UK8s的ULS日志采集配置|
 |[ModifyUK8SClusterName](api/uk8s-api/modify_uk8s_cluster_name)|修改k8s集群名称|
 |[RemoveUK8SNodeGroup](api/uk8s-api/remove_uk8s_node_group)|删除UK8S节点池|
+|[UpdateUK8SAutoscaler](api/uk8s-api/update_uk8s_autoscaler)|更新伸缩器|
 |[UpdateUK8SNodeGroup](api/uk8s-api/update_uk8s_node_group)|修改UK8S节点池|
 |[UpdateUK8SULSConfig](api/uk8s-api/update_uk8s_uls_config)|更新UK8S日志采集配置|
