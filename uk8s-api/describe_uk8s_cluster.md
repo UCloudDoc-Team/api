@@ -113,13 +113,13 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **ScaleDownUnneededTime** | string | 缩容触发延时 |**Yes**|
-| **ScaleDownUtilizationThreshold** | string | CPU缩容阈值 |**Yes**|
-| **ScaleDownDelayAfterAdd** | string | 静默时间 |**Yes**|
+| **ScaleDownUnneededTime** | int | 节点持续不需要后触发缩容的等待时间，单位分钟。 |**Yes**|
+| **ScaleDownUtilizationThreshold** | int | 节点缩容利用率阈值，单位百分比，范围 0–100。 |**Yes**|
+| **ScaleDownDelayAfterAdd** | int | 添加节点后等待缩容的时间，单位分钟。 |**Yes**|
 | **Enabled** | int | 打开/关闭 |**Yes**|
 | **Version** | string | 伸缩器版本 |**Yes**|
-| **UpdateTime** | int |  |**Yes**|
-| **ScaleDownGpuUtilizationThreshold** | string | GPU缩容阈值 |**Yes**|
+| **UpdateTime** | int | 配置更新时间，Unix 时间戳，单位秒。 |**Yes**|
+| **ScaleDownGpuUtilizationThreshold** | int | GPU 缩容利用率阈值，单位百分比，范围 0–100。 |**Yes**|
 
 #### LoopbackClientCert
 
@@ -162,8 +162,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Id** | string | 安全组名称 |No|
-| **Name** | string | 安全组id |No|
+| **Id** | string | 安全组 ID |No|
+| **Name** | string | 安全组名称 |No|
 | **Priority** | string | 安全组优先级 |No|
 
 ## 示例

@@ -47,6 +47,8 @@
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ImageStatus** | string | 镜像状态：Unknown、Normal、Deleted、NotLatest |**Yes**|
+| **DataDiskKmsKeyId** | string | 数据盘加密密钥 ID |**Yes**|
 | **NodeGroupId** | string | 节点池ID |No|
 | **NodeGroupName** | string | 节点池名字 |No|
 | **NodeNamePrefix** | string | 自定义Uhost主机名前缀。完整的自定义Uhost主机名为{NodeNamePrefix}-{NodeIP}。 |No|
@@ -83,7 +85,7 @@
 | **OsName** | string | 操作系统名称 |No|
 | **NetCapability** | string | 网络配置 |No|
 | **UNIFeature** | boolean | 是否启用 UNI 网络特性 |No|
-| **Disks** | array[[*DiskSet*](#DiskSet)] | 磁盘列表 |No|
+| **Disks** | array[[*NodeGroupDiskConfig*](#NodeGroupDiskConfig)] | 磁盘列表 |No|
 | **RelatedAsg** | array[string] | 节点池关联的弹性伸缩组ID |No|
 | **CreateTime** | int | 节点池创建时间 |No|
 | **UpdateTime** | int | 节点池更新时间 |No|
@@ -92,8 +94,8 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Id** | string | 安全组名称 |No|
-| **Name** | string | 安全组id |No|
+| **Id** | string | 安全组 ID |No|
+| **Name** | string | 安全组名称 |No|
 | **Priority** | string | 安全组优先级 |No|
 
 #### NetworkInterface
@@ -117,20 +119,14 @@
 | **SystemReserved** | [*ReservedResource*](#ReservedResource) | 系统预留资源，ReservedResource类型 |No|
 | **MaxPods** | int | 最大Pod数量 |No|
 
-#### DiskSet
+#### NodeGroupDiskConfig
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Type** | string | 磁盘类型。系统盘: Boot，数据盘: Data,网络盘：Udisk |No|
-| **DiskId** | string | 磁盘长ID |No|
-| **Name** | string | UDisk名字（仅当磁盘是UDisk时返回） |No|
-| **Drive** | string | 磁盘盘符 |No|
-| **Size** | int | 磁盘大小，单位: GB |No|
-| **BackupType** | string | 备份方案，枚举类型：BASIC_SNAPSHOT,普通快照；DATAARK,方舟。无快照则不返回该字段。 |No|
-| **IOPS** | int | 当前主机的IOPS值 |No|
-| **Encrypted** | string | Yes: 加密 No: 非加密 |No|
-| **DiskType** | string | LOCAL_NOMAL\| CLOUD_NORMAL\| LOCAL_SSD\| CLOUD_SSD\|EXCLUSIVE_LOCAL_DISK |No|
-| **IsBoot** | string | True\| False |No|
+| **IsBoot** | boolean | 是否为系统盘 |No|
+| **Type** | string | 磁盘类型 |No|
+| **Size** | int | 磁盘大小，单位 GB |No|
+| **KmsKeyId** | string | 磁盘加密密钥 ID |No|
 
 #### EvictionCondition
 
