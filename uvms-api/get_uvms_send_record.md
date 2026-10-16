@@ -80,7 +80,7 @@
 | **CalledCityCode** | string | 被叫所属城市码 |No|
 | **CalledOperatorCode** | string | 被叫供应商码 cmcc中国移动，cucc中国联通,ctcc中国电信 |No|
 | **SubmitTime** | float | 客户提交时间 |No|
-| **GroupType** | int | 1随机号码组2专属号码组 |No|
+| **GroupType** | int | 1随机号码组 |No|
 | **BillSecond** | int | 计费时长（秒） |No|
 | **BillPeriod** | int | 计费周期（秒） |No|
 
