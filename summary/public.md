@@ -11,7 +11,7 @@ UCloud API 采用指令式的风格，每个 API 请求包含一个指令（`Act
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Action**     | string  | 对应的 API 指令名称，例如 `DescribeUHostInstance` | **Yes** |
-| **PublicKey**  | string  | 用户公钥，可从 [UAPI 控制台](https://console.ucloud.cn/uapi/apikey) 获取 | **Yes** |
+| **PublicKey**  | string  | AccessKey ID，在 [UAPI 控制台](https://console.ucloud.cn/uaccount/api_manage) 获取 | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature)  | **Yes** |
 
 ### 通用参数
@@ -59,7 +59,7 @@ UCloud API 采用指令式的风格，每个 API 请求包含一个指令（`Act
 ### 准备工作
 
 1. 获取 [API 访问地址](api/summary/gateway)
-2. 从 [UAPI 控制台](https://console.ucloud.cn/uapi/apikey) 获取 API 密钥，包括 `PublicKey` 和 `PrivateKey`
+2. 从 [UAPI 控制台](https://console.ucloud.cn/uaccount/api_manage) 获取 API 密钥，即 **AccessKey ID** 与 **AccessKey Secret**
 3. 如果待操作资源属于某个地域下，[获取地域和可用区列表](api/summary/regionlist)
 4. 如果账号属于子账号，或需要操作某个特定项目，[获取项目 ID](api/summary/regionlist)
 
@@ -77,8 +77,8 @@ UCloud API 支持 `GET` / `POST` 两种方法，支持 `application/json` 和 `a
 本例中假设
 
 ```
-PublicKey  = 'ucloudsomeone@example.com1296235120854146120'
-PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'
+PublicKey  = 'ucloudsomeone@example.com1296235120854146120'   # AccessKey ID
+PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'       # AccessKey Secret
 ```
 
 假设用户请求参数如下:
