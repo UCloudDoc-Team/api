@@ -31,7 +31,7 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AccessKeyID** | string | AccessKey ID |**Yes**|
+| **AccessKeyID** | string | 用户公钥 |**Yes**|
 | **Status** | string | 密钥状态 |No|
 | **Description** | string | 密钥描述 |No|
 
