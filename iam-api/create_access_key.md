@@ -24,7 +24,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Action**     | string  | 对应的 API 指令名称，当前 API 为 `CreateAccessKey`                        | **Yes** |
-| **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
+| **PublicKey**  | string  | AccessKey ID：在 [控制台](https://console.ucloud.cn/uaccount/api_manage) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
 ### 请求参数
@@ -49,9 +49,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AccessKeyID** | string | 用户公钥 |No|
+| **AccessKeyID** | string | AccessKey ID |No|
 | **UserId** | int | 用户ID |No|
-| **AccessKeySecret** | string | 用户私钥 |No|
+| **AccessKeySecret** | string | AccessKey Secret |No|
 | **Description** | string | 密钥备注 |No|
 | **Status** | string | 密钥状态 |No|
 | **CreatedAt** | int | 密钥创建时间 |No|
