@@ -4,17 +4,17 @@
 
 ## 数据假设
 
-在生成 API 请求中的签名（`Signature`） 时，需要提供账户中密钥，包括 `PublicKey` 和 `PrivateKey`，
-密钥可以从 [UAPI 控制台](https://console.ucloud.cn/uapi/apikey) 获取。
+在生成 API 请求中的签名（`Signature`）时，需要提供账户密钥，即控制台「API 密钥」页面中的 **AccessKey ID** 和 **AccessKey Secret**，
+密钥可以从 [UAPI 控制台](https://console.ucloud.cn/uaccount/api_manage) 获取。
 
 本例中假设
 
 ```
-PublicKey  = 'ucloudsomeone@example.com1296235120854146120'
-PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'
+PublicKey  = 'ucloudsomeone@example.com1296235120854146120'   # AccessKey ID
+PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'       # AccessKey Secret
 ```
 
-?> 你可以使用上述的 `PublicKey` 和 `PrivateKey` 调试你的代码， 当得到跟后面一致的签名结果后（即表示你的代码是正确的），可再换为你自己的 `PublicKey` 和 `PrivateKey` 以及其他 API 请求。
+?> 你可以使用上述的 `PublicKey`（AccessKey ID）和 `PrivateKey`（AccessKey Secret）调试你的代码， 当得到跟后面一致的签名结果后（即表示你的代码是正确的），可再换为你自己的 AccessKey ID 和 AccessKey Secret 以及其他 API 请求。
 
 本例中假设用户请求参数串如下:
 
@@ -46,7 +46,7 @@ PrivateKey = '46f09bb9fab4f12dfc160dae12273d5332b5debe'
 
 ### 2. 构造被签名参数串
 
-被签名串的构造规则为: 被签名串 = 所有请求参数拼接(无需 HTTP 转义)。并在本签名串的结尾拼接 API 密钥的私钥（`PrivateKey`）。
+被签名串的构造规则为: 被签名串 = 所有请求参数拼接(无需 HTTP 转义)。并在本签名串的结尾拼接 AccessKey Secret（请求参数名 `PrivateKey`）。
 
 ```
 ActionDescribeUHostInstanceLimit10PublicKeyucloudsomeone@example.com1296235120854146120Regioncn-bj246f09bb9fab4f12dfc160dae12273d5332b5debe
