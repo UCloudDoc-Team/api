@@ -49,9 +49,9 @@
 
 | 字段名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **AccessKeyID** | string | AccessKey ID |No|
+| **AccessKeyID** | string | 用户公钥 |No|
 | **UserId** | int | 用户ID |No|
-| **AccessKeySecret** | string | AccessKey Secret |No|
+| **AccessKeySecret** | string | 用户私钥 |No|
 | **Description** | string | 密钥备注 |No|
 | **Status** | string | 密钥状态 |No|
 | **CreatedAt** | int | 密钥创建时间 |No|
