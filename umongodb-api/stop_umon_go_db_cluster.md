@@ -23,7 +23,7 @@
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
 | **Action**     | string  | 对应的 API 指令名称，当前 API 为 `StopUMongoDBCluster`                        | **Yes** |
-| **PublicKey**  | string  | AccessKey ID：在 [控制台](https://console.ucloud.cn/uaccount/api_manage) 获取                                             | **Yes** |
+| **PublicKey**  | string  | 用户公钥，可从 [控制台](https://console.ucloud.cn/uapi/apikey) 获取                                             | **Yes** |
 | **Signature**  | string  | 根据公钥及 API 指令生成的用户签名，参见 [签名算法](api/summary/signature.md)  | **Yes** |
 
 ### 请求参数
