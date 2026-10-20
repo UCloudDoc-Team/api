@@ -2,7 +2,7 @@
 
 ## 简介
 
-根据VPC id 产线绑定的UDNSZone
+根据VPC id 查询绑定的UDNSZone
 
 
 
