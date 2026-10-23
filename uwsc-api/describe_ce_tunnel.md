@@ -14,7 +14,6 @@
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [JavaScript](https://github.com/ucloud/ucloud-sdk-js) / [PHP](https://github.com/ucloud/ucloud-sdk-php) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=DescribeCETunnel)
-- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义

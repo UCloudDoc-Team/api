@@ -20,17 +20,6 @@
           ]
         },
         {
-          "name": "云命令行 CloudShell",
-          "img": "https://static.ucloud.cn/ed3f2e601903a2ef5bdfd4b0c63ea221.png",
-          "sublinks": [
-            {
-              "links": "/cloudshell/README",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
-        },
-        {
           "name": "命令行管理工具 CLI",
           "img": "https://static.ucloud.cn/98be705b3577f53f1ce98d8b0b7c8127.png",
           "sublinks": [

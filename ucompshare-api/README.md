@@ -19,6 +19,5 @@
 
 您可以选择以下方式中的任意一种，发起 API 请求：
 - UCompShare SDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
-- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
