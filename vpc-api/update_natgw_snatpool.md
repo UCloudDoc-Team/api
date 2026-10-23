@@ -14,7 +14,6 @@ NAT网关默认出口规则是否开启Snatpool，若开启，对应控制台上
 您可以选择以下方式中的任意一种，发起 API 请求：
 - 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/detail?id=UpdateNATGWSnatpool)
-- [CloudShell 云命令行](https://shell.ucloud.cn/)
 
 
 ## 定义
