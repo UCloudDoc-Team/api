@@ -13,6 +13,7 @@
     - [删除日志集 - DeleteULogServiceLogSet](api/ulogservice-api/delete_u_log_service_log_set)
     - [删除机器组 - DeleteULogServiceMachineGroup](api/ulogservice-api/delete_u_log_service_machine_group)
     - [删除ULogService主题 - DeleteULogServiceTopic](api/ulogservice-api/delete_u_log_service_topic)
+    - [获取日志集信息 - DescribeULogServiceLogSet](api/ulogservice-api/describe_u_log_service_log_set)
     - [查询日志采集机器组 - DescribeULogServiceMachineGroup](api/ulogservice-api/describe_u_log_service_machine_group)
     - [获取ULogService主题索引字段 - GetULogServiceTopicField](api/ulogservice-api/get_u_log_service_topic_field)
     - [查询日志主题采集配置列表 - ListULogServiceCollectConf](api/ulogservice-api/list_u_log_service_collect_conf)
