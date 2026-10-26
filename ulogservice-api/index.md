@@ -15,6 +15,7 @@
 |[DeleteULogServiceTopic](api/ulogservice-api/delete_u_log_service_topic)|删除ULogService主题|
 |[DescribeULogServiceLogSet](api/ulogservice-api/describe_u_log_service_log_set)|获取日志集信息|
 |[DescribeULogServiceMachineGroup](api/ulogservice-api/describe_u_log_service_machine_group)|查询日志采集机器组|
+|[DescribeULogServiceTopic](api/ulogservice-api/describe_u_log_service_topic)|获取ULogService主题详情|
 |[GetULogServiceTopicField](api/ulogservice-api/get_u_log_service_topic_field)|获取ULogService主题索引字段|
 |[ListULogServiceCollectConf](api/ulogservice-api/list_u_log_service_collect_conf)|查询日志主题采集配置列表|
 |[ListULogServiceLogSet](api/ulogservice-api/list_u_log_service_log_set)|查询日志集列表|
