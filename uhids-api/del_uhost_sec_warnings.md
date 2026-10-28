@@ -9,6 +9,10 @@
 !> 删除安全事件的告警信息，从界面显示中频闭掉该告警记录的显示，如果该安全事件依然存在，被复检或者下次巡检发现依然会触发告警，重新在界面显示.
 
 
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 
 
 ## 定义
