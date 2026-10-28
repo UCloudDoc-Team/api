@@ -17,5 +17,7 @@
 接下来浏览 [UEWAF API 索引](api/uewaf-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- UEWAF SDK / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 
 

@@ -9,6 +9,10 @@
 !> 1.不支持删除正在审核中的短信签名；2.短信签名删除后不可恢复，请谨慎操作。
 
 
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
 
 
 ## 定义

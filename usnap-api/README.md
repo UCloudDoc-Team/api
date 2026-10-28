@@ -17,5 +17,7 @@
 接下来浏览 [USnap API 索引](api/usnap-api/index.md)，找到希望调用的 API 之后，挑选合适的方式来调用。
 
 
+您可以选择以下方式中的任意一种，发起 API 请求：
+- USnap SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
 
 
