@@ -18,6 +18,7 @@
 
 
 您可以选择以下方式中的任意一种，发起 API 请求：
+- UAAA SDK / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
 
 

@@ -9,6 +9,10 @@
 !> 申请短信签名后，如果未通过审核，则可通过调用接口UpdateUSMSSignature修改未通过审核的短信签名，并重新提交审核；
 
 
+## 使用方法
+
+您可以选择以下方式中的任意一种，发起 API 请求：
+- 多语言 OpenSDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
 
 
 ## 定义

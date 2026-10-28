@@ -18,6 +18,6 @@
 
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- UDTS SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) /
+- UDTS SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) /
 
 

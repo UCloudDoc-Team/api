@@ -18,7 +18,7 @@
 
 
 您可以选择以下方式中的任意一种，发起 API 请求：
-- UMem SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) /
+- UMem SDK / [Go](https://github.com/ucloud/ucloud-sdk-go) / [Python](https://github.com/ucloud/ucloud-sdk-python3) / [Java](https://github.com/ucloud/ucloud-sdk-java) / [JavaScript](https://github.com/ucloud/ucloud-sdk-js) / [PHP](https://github.com/ucloud/ucloud-sdk-php) /
 - [UAPI 浏览器](https://console.ucloud.cn/uapi/ucloudapi)
 
 
