@@ -36,10 +36,14 @@
 | **Name** | string | Db名称 |**Yes**|
 | **Port** | int | DB端口 |**Yes**|
 | **DiskSpace** | int | 磁盘空间 |**Yes**|
-| **MachineType** | string | 机器配置类型，2核4G的机器:o.pgsql2m.medium<br /> |**Yes**|
+| **MachineType** | string | 机器配置类型，2核4G的机器:o.pgsql2m.medium |**Yes**|
 | **SrcInstanceID** | string | 同步的源库 |**Yes**|
 | **SubnetID** | string | 子网ID |No|
 | **VPCID** | string | VPCID |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签值 |No|
+| **SecGroupId.N.Id** | string | 安全组id |No|
+| **SecGroupId.N.Priority** | int | 安全组优先级 |No|
 
 ### 响应字段
 
@@ -69,6 +73,10 @@ https://api.ucloud.cn/?Action=CreateUPgSQLReadonly
 &SrcInstanceID=QYGlNGlu
 &SubnetID=MlhLrhqZ
 &VPCID=BLFKqSUA
+&Labels.N.Key=nnMsTpOC
+&Labels.N.Value=RoZnYNFe
+&SecGroupId.N.Id=DJhVOeVN
+&SecGroupId.N.Priority=9
 ```
 
 ### 响应示例

@@ -42,7 +42,7 @@
 | **RetCode** | int | 返回状态码，为 0 则为成功返回，非 0 为失败 |**Yes**|
 | **Action** | string | 操作指令名称 |**Yes**|
 | **Message** | string | 返回错误消息，当 `RetCode` 非 0 时提供详细的描述信息 |No|
-| **DataSet** | [*UDBInstance*](#UDBInstance) |  |**Yes**|
+| **DataSet** | [*UDBInstance*](#UDBInstance) | DataSet |**Yes**|
 
 #### 数据模型
 
@@ -80,6 +80,7 @@
 | **LogFileSize** | float | DB实例日志文件大小，单位GB |No|
 | **InstanceMode** | string | Normal/HA,普通/高可用 |No|
 | **MachineType** | string | 配置机型名称 |No|
+| **SecGroupStatus** | int | 安全组版本 |No|
 
 ## 示例
 

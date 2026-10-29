@@ -34,7 +34,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **InstanceID** | string | DB实例Id |**Yes**|
-| **BackupTimeRange** | string | 自动备份预计开始时间范围(00:00\~23:59)，例如:(3:00\~4:00)  |No|
+| **BackupTimeRange** | string | 自动备份预计开始时间范围(00:00\~23:59)，例如:(3:00\~4:00) |No|
 | **BackupWeek** | string | 自动备份预期星期几(1\~7)开始。默认1,2,3,4,5,6,7(星期一到星期日) |No|
 | **BackupMethod** | string | 选择默认的备份方式 |No|
 

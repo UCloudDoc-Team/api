@@ -4,6 +4,7 @@
 - [概览](api/udbpostgresql-api/README.md)
 - [索引](api/udbpostgresql-api/index.md)
 - **API**
+    - [创建备份服务 - BackupUPgSQL](api/udbpostgresql-api/backup_u_pg_sql)
     - [备份日志包 - BackupUPgSQLLog](api/udbpostgresql-api/backup_u_pg_sql_log)
     - [创建PG云数据库 - CreateUPgSQLInstance](api/udbpostgresql-api/create_u_pg_sql_instance)
     - [创建PG参数模板 - CreateUPgSQLParamTemplate](api/udbpostgresql-api/create_u_pg_sql_param_template)
@@ -15,6 +16,7 @@
     - [获取备份下载地址 - GetUPgSQLBackupURL](api/udbpostgresql-api/get_u_pg_sql_backup_url)
     - [获取云数据库实例描述 - GetUPgSQLInstance](api/udbpostgresql-api/get_u_pg_sql_instance)
     - [查询日志 - GetUPgSQLInstanceLog](api/udbpostgresql-api/get_u_pg_sql_instance_log)
+    - [获取PG实例参数信息 - GetUPgSQLInstanceParam](api/udbpostgresql-api/get_u_pg_sql_instance_param)
     - [获取创建PG云数据库价格 - GetUPgSQLInstancePrice](api/udbpostgresql-api/get_u_pg_sql_instance_price)
     - [获取模板信息 - GetUPgSQLParamTemplate](api/udbpostgresql-api/get_u_pg_sql_param_template)
     - [ 获取 PG 云数据库升降级价格 - GetUPgSQLUpgradePrice](api/udbpostgresql-api/get_u_pg_sql_upgrade_price)

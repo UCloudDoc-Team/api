@@ -34,7 +34,7 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **InstanceID** | string | DB实例Id |**Yes**|
-| **Password** | string | 新的db密码 |**Yes**|
+| **Password** | string | 新的db用户密码 |**Yes**|
 | **Name** | string | 数据库用户的名称。默认是root |No|
 
 ### 响应字段
