@@ -34,11 +34,10 @@
 | **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
 | **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **BackupName** | string | 备份导出文件名称 |**Yes**|
-| **BackupFile** | string | 备份查询结果文件名称 |**Yes**|
 | **InstanceID** | string | 资源ID |**Yes**|
-| **LogType** | string | 日志类型:slow(慢日志),error(错误日志) |No|
-| **BeginTime** | int | 日志开始时间 |No|
-| **EndTime** | int | 日志结束时间 |No|
+| **LogType** | string | 日志类型:slowlog(慢日志),errorlog(错误日志),不区分大小写 |**Yes**|
+| **BeginTime** | int | 日志开始时间 |**Yes**|
+| **EndTime** | int | 日志结束时间 |**Yes**|
 
 ### 响应字段
 
