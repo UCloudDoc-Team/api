@@ -39,6 +39,15 @@
 | **AccessLogConfig.Enabled** | boolean | （应用型专用）是否开启访问日志记录功能 |No|
 | **AccessLogConfig.US3BucketName** | string | （应用型专用）用于存储访问日志的bucket |No|
 | **AccessLogConfig.US3TokenId** | string | （应用型专用）上传访问日志到bucket所需的token |No|
+| **AccessLogConfig.Destination** | string | （应用型专用）上传访问日志的目标；us3,elasticsearch,logstash,kafka,uls |No|
+| **AccessLogConfig.EnableCustomLog** | boolean | （应用型专用）是否开启自定义日志功能 |No|
+| **AccessLogConfig.Params.N** | string | （应用型专用）日志参数列表 |No|
+| **AccessLogConfig.ContentType** | string | （应用型专用）日志内容格式，space,json; |No|
+| **AccessLogConfig.EnableAggregate** | boolean | （应用型专用）是否开启日志聚合功能 |No|
+| **AccessLogConfig.Frequency** | int | （应用型专用）日志聚合频率 |No|
+| **AccessLogConfig.DestinationAddrs** | string | （应用型专用）日志上传目标地址；仅对elasticsearch,logstash,kafka生效，最多支持五个 |No|
+| **AccessLogConfig.Topic** | string | （应用型专用）kafka topic；仅对kafka生效 |No|
+| **AccessLogConfig.ULSTopic** | string | （应用型专用）uls topic；仅对上传目标为uls生效 |No|
 
 ### 响应字段
 
@@ -68,6 +77,15 @@ https://api.ucloud.cn/?Action=UpdateLoadBalancerAttribute
 &TokenName=EUygHoyL
 &TokenId=eVkfEqZv
 &IsWAFOn=nlgFGfwX
+&AccessLogConfig.Destination=UPOdHBMJ
+&AccessLogConfig.EnableCustomLog=false
+&AccessLogConfig.Params.n=ZsKILIUz
+&AccessLogConfig.ContentType=eyMavvzT
+&AccessLogConfig.EnableAggregate=true
+&AccessLogConfig.Frequency=8
+&AccessLogConfig.DestinationAddrs=TVkWBrHZ
+&AccessLogConfig.Topic=hgvofBpp
+&AccessLogConfig.ULSTopic=Mowpuqzx
 ```
 
 ### 响应示例
