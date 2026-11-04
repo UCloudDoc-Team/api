@@ -64,6 +64,9 @@
 | **Biz** | string | Bucket所属业务, general或vod或udb general: 普通业务； vod: 视频云业务; udb: 云数据库业务 |No|
 | **Tag** | string | 所属业务组 |No|
 | **HasUserDomain** | int | 是否存在自定义域名。0不存在，1存在，2错误 |No|
+| **Storage** | int | 标准存储量,单位Byte |No|
+| **IaStorage** | int | 低频存储量,单位Byte |No|
+| **AcStorage** | int | 归档存储量,单位Byte |No|
 
 #### UFileDomainSet
 
