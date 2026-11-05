@@ -42,7 +42,12 @@
 | **MachineType** | string | 机器配置类型，2核4G的机器:o.pgsql2m.medium |**Yes**|
 | **SubnetID** | string | 子网ID |**Yes**|
 | **VPCID** | string | VPC的ID |**Yes**|
+| **BackupZone** | string | 高可用实例的备库可用区 |No|
 | **InstanceMode** | string | UDB实例模式类型, 可选值如下: "Normal": 普通版UDB实例 "HA": 高可用版UDB实例 默认是"Normal" |No|
+| **Labels.N.Key** | string | 用户资源标签的键值 |No|
+| **Labels.N.Value** | string | 用户资源标签的键名 |No|
+| **SecGroupId.N.Id** | string | 安全组id |No|
+| **SecGroupId.N.Priority** | int | 安全组优先级 |No|
 
 ### 响应字段
 
@@ -75,6 +80,11 @@ https://api.ucloud.cn/?Action=CreateUPgSQLInstance
 &SubnetID=vYfdUNLf
 &VPCID=JkndYJUI
 &InstanceMode=YgRHGskR
+&Labels.N.Key=CXqngcxL
+&Labels.N.Value=ACNAnaaH
+&SecGroupId.N.Id=ljEwdHLk
+&SecGroupId.N.Priority=1
+&BackupZone=cn-zj-01
 ```
 
 ### 响应示例
