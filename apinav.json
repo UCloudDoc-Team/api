@@ -222,10 +222,6 @@
       {
         "links": "/api/ulive-api/README",
         "name": "云直播 ULive"
-      },
-      {
-        "links": "/api/urtc-api/README",
-        "name": "实时音视频 URTC"
       }
     ]
   },
