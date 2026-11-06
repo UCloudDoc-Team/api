@@ -45,17 +45,6 @@
               "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
             }
           ]
-        },
-        {
-          "name": "镜像构建工具 Packer",
-          "img": "https://static.ucloud.cn/42a1453736b02be397ada0224fa5803d.png",
-          "sublinks": [
-            {
-              "links": "/uhost/guide/image/packer",
-              "name": "查看文档",
-              "img": "https://static.ucloud.cn/81fec2df7bc8ee0cb28aaa991388c779.png"
-            }
-          ]
         }
       ]
     },
