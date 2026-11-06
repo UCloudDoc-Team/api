@@ -44,6 +44,10 @@
       {
         "links": "/api/ucompshare-api/README",
         "name": "算力共享平台 UCompShare"
+      },
+      {
+        "links": "/api/uas-api/README",
+        "name": "弹性伸缩 UAS"
       }
     ]
   },
