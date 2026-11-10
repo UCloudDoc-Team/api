@@ -92,6 +92,9 @@
 | **ClusterDomain** | string | 创建集群的时候定义clusterdomain |No|
 | **Tag** | string | 业务组 |No|
 | **MasterImageId** | string | Master节点的镜像 ID，不填则使用ImageId参数。支持用户自定义镜像。 |No|
+| **DedicatedPodSubnet** | boolean | Pod是否使用独立子网 |No|
+| **PodSubnetId** | string | Pod独立子网模式下的子网Id |No|
+| **PodSubnetSecGroup** | string | Pod独立子网模式下使用的安全组，如不配置则使用防火墙模式 |No|
 | **LbClass** | string | master lb 类型默认ulb，可选ulb nlb |No|
 | **ForwardSrcIPMethod** | string | LbClass为nlb的时候支持的源ip转发模式，目前只支持Toa,为空则不开源ip功能 枚举："",Toa |No|
 | **MasterUHostFamily** | string | Master节点规格族，如o1a, o1i |No|
