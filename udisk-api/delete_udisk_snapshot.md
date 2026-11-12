@@ -30,11 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **Zone** | string | 可用区。参见 [可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **Zone** | string | 可用区。参见 [可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **SnapshotId** | string | 快照Id(填写后不能填写UDisk Id) |No|
 | **UDiskId** | string | UDisk Id,删除该盘所创建出来的所有快照(填写后不能填写SnapshotId) |No|
+| **BindImage** | int | 是否是绑定整机镜像的快照，0：不绑定，1：绑定 |No|
 
 ### 响应字段
 
@@ -57,6 +58,8 @@ https://api.ucloud.cn/?Action=DeleteUDiskSnapshot
 &Zone=cn-bj2-04
 &ProjectId=org-xxx
 &SnapshotId=bsSnap-xxx
+&BindImage=true
+&BindImage=7
 ```
 
 ### 响应示例
