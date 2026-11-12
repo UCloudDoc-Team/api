@@ -134,6 +134,8 @@ https://api.ucloud.cn/?Action=DescribeUDisk
 &UDiskName=fqjOTKuG
 &UDiskName=yJnZVEaw
 &UDiskName=XwMDKTOA
+&IfFilterStrategy=false
+&IfFilterStrategy=8
 ```
 
 ### 响应示例
