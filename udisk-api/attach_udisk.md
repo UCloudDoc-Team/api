@@ -36,8 +36,9 @@
 | **UDiskId** | string | 需要挂载的UDisk实例ID. |**Yes**|
 | **UHostId** | string | UHost实例ID。【UHostId和HostId必须选填一个，本字段即将废弃，建议使用HostId】 |No|
 | **MultiAttach** | string | 是否允许多点挂载（Yes: 允许多点挂载， No: 不允许多点挂载， 不填默认Yes ） |No|
-| **HostId** | string | Host实例ID |No|
+| **HostId** | string | Host实例ID。 |No|
 | **EnableCrossPodAttach** | string | 是否允许跨pod挂载（Yes：允许跨pod挂载，No：不允许跨pod挂载，不填默认No） |No|
+| **Lable** | string | 用户标签 |No|
 
 ### 响应字段
 
@@ -70,6 +71,8 @@ http://api.ucloud.cn/?Action=AttachUDisk
 &HostId=IgHkaFCi
 &HostProduct=LBhvDhDs
 &EnableCrossPodAttach=pIwxOOFZ
+&Lable=AkeHTdSZ
+&Lable=QcmRQmlr
 ```
 
 ### 响应示例
