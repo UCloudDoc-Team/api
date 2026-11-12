@@ -62,7 +62,7 @@
 | **TopicId** | string | 所属日志ID |**Yes**|
 | **TopicName** | string | 所属日志名称 |**Yes**|
 | **IsOver** | boolean | 检索结果是否到底 |**Yes**|
-| **Contents** | [*LogContent*](#LogContent) | 日志内容 |**Yes**|
+| **Contents** | array[[*LogContent*](#LogContent)] | 日志内容 |No|
 | **ScrollId** | string | 滚动检索Id Deprecated |No|
 | **LastId** | string | 滚动检索,当前页最后一条数据ID |No|
 | **LastTimestamp** | string | 滚动检索,当前页最后一条数据Timestamp |No|
