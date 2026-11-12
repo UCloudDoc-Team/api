@@ -69,6 +69,7 @@
 | **IsUDiskAvailable** | boolean | 对应磁盘是否处于可用状态 |No|
 | **Version** | string | 快照版本 |No|
 | **UHostId** | string | 对应磁盘制作快照时所挂载的主机 |No|
+| **ImageId** | string | 绑定镜像ID |No|
 | **UKmsMode** | string | 【已废弃】是否是加密盘快照，是:"Yes", 否:"No" |No|
 | **CmkId** | string | 【已废弃】该快照的cmk id |No|
 | **DataKey** | string | 【已废弃】该快照的密文密钥 |No|
