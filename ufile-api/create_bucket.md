@@ -35,6 +35,7 @@
 | **BucketName** | string | 待创建Bucket的名称，具有全局唯一性 |**Yes**|
 | **Type** | string | Bucket访问类型，public或private; 默认为private |No|
 | **Tag** | string | Bucket所属业务组，默认为default |No|
+| **FakeRegion** | string | bucket的可用区 |No|
 
 ### 响应字段
 
@@ -59,6 +60,7 @@ https://api.ucloud.cn/?Action=CreateBucket
 &Type=public
 &Region=cn-bj2
 &Tag=ajkWmXoX
+&FakeRegion=oyXvMmKr
 ```
 
 ### 响应示例

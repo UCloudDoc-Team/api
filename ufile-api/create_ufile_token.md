@@ -39,6 +39,7 @@
 | **ExpireTime** | int | Unix 时间戳，精确到秒，为令牌过期时间点。默认过期时间为一天（即当前Unix时间戳+86400）；注意：过期时间不能超过 4102416000 |No|
 | **BlackIPList.N** | string | 令牌黑名单，支持ipv4，ipv6格式。 |No|
 | **WhiteIPList.N** | string | 令牌白名单，支持ipv4，ipv6格式。 |No|
+| **FakeRegion** | string | bucket的可用区 |No|
 
 ### 响应字段
 
@@ -86,6 +87,7 @@ https://api.ucloud.cn/?Action=CreateUFileToken
 &ExpireTime=3
 &BlackIPList.n=WGGVYtQm
 &WhiteIPList.n=kBRhXipR
+&FakeRegion=CiouAHeq
 ```
 
 ### 响应示例
