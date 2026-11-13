@@ -30,11 +30,12 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **TokenId** | string | 令牌ID，只返回指定ID信息，否则拉取所有令牌 |No|
 | **TokenName** | string | 令牌名称，只返回指定令牌名称信息，否则拉取所有令牌 |No|
 | **Display** | int | 0表示显示部分token信息；不传递和其他情况表示显示全部token信息 |No|
+| **FakeRegion** | string | bucket的可用区 |No|
 
 ### 响应字段
 
@@ -77,6 +78,7 @@ https://api.ucloud.cn/?Action=DescribeUFileToken
 &Region=cn-bj
 &Display=2
 &TokenName=BFCOSzvM
+&FakeRegion=raauxKXb
 ```
 
 ### 响应示例
