@@ -35,6 +35,7 @@
 | **StartTime** | int | 查询开始时间;unix时间戳，单位s |**Yes**|
 | **EndTime** | int | 查询结束时间;unix时间戳,单位s |**Yes**|
 | **BucketName** | string | 空间名称。此字段不为空，返回此Bucket日使用量；否则，返回这个项目的日使用量 |No|
+| **FakeRegion** | string | bucket可用区 |No|
 
 ### 响应字段
 
@@ -98,6 +99,7 @@ https://api.ucloud.cn/?Action=GetUFileDailyReport
 &StartTime=4
 &EndTime=7
 &Bucket=vdXesnhh
+&FakeRegion=TZUbPkVs
 ```
 
 ### 响应示例

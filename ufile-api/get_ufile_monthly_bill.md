@@ -35,6 +35,7 @@
 | **StartMonth** | string | 查询开始月份;例如"1994-07" |**Yes**|
 | **EndMonth** | string | 查询结束时间;例如"1994-07" |**Yes**|
 | **BucketName** | string | 空间名称。此字段不为空，返回此Bucket日账单,否则，返回这个项目的日账单 |No|
+| **FakeRegion** | string | bucket可用区 |No|
 
 ### 响应字段
 
@@ -101,6 +102,7 @@ https://api.ucloud.cn/?Action=GetUFileMonthlyBill
 &StartTime=7
 &EndTime=8
 &BucketName=nkGlQMSE
+&FakeRegion=WrFqArNs
 ```
 
 ### 响应示例
