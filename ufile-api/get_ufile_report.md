@@ -30,10 +30,11 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |**Yes**|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |No|
-| **StartTime** | int | 查询开始时间 |**Yes**|
-| **EndTime** | int | 查询结束时间 |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |**Yes**|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
+| **StartTime** | int | 查询开始时间，单位 s |**Yes**|
+| **EndTime** | int | 查询结束时间, 单位 s |**Yes**|
+| **FakeRegion** | string | bucket的可用区 |No|
 
 ### 响应字段
 
@@ -65,6 +66,7 @@ https://api.ucloud.cn/?Action=GetUFileReport
 &Region=cn-bj2
 &StartTime=1427558400
 &EndTime=1427644799
+&FakeRegion=LHAHZBzg
 ```
 
 ### 响应示例

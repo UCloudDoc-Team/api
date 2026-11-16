@@ -30,14 +30,17 @@
 
 | 参数名 | 类型 | 描述信息 | 必填 |
 |:---|:---|:---|:---|
-| **Region** | string | 地域。 参见 [地域和可用区列表](api/summary/regionlist) |No|
-| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](api/summary/get_project_list) |**Yes**|
+| **Region** | string | 地域。 参见 [地域和可用区列表](https://docs.ucloud.cn/api/summary/regionlist) |No|
+| **ProjectId** | string | 项目ID。不填写为默认项目，子帐号必须填写。 请参考[GetProjectList接口](https://docs.ucloud.cn/api/summary/get_project_list) |No|
 | **TokenId** | string | 令牌ID |**Yes**|
 | **TokenName** | string | 令牌名称 |No|
-| **AllowedOps.N** | string | 令牌允许执行的操作，[ TOKEN_ALLOW_NONE , TOKEN_ALLOW_READ , TOKEN_ALLOW_WRITE , TOKEN_ALLOW_DELETE , TOKEN_ALLOW_LIST, TOKEN_ALLOW_IOP , TOKEN_ALLOW_DP ] |No|
+| **AllowedOps.N** | string | 令牌允许执行的操作，[ TOKEN_ALLOW_NONE , TOKEN_ALLOW_READ , TOKEN_ALLOW_WRITE , TOKEN_ALLOW_DELETE , TOKEN_ALLOW_LIST, TOKEN_ALLOW_IOP , TOKEN_ALLOW_DP ，TOKEN_DENY_UPDATE] |No|
 | **AllowedPrefixes.N** | string | 令牌允许操作的key前缀 |No|
 | **AllowedBuckets.N** | string | 令牌允许操作的bucket |No|
 | **ExpireTime** | int | 令牌的超时时间点（时间戳）;注意：过期时间不能超过 4102416000 |No|
+| **BlackIPList.N** | string | 令牌黑名单，支持ipv4，ipv6格式。 |No|
+| **WhiteIPList.N** | string | 令牌黑名单，支持ipv4，ipv6格式。 |No|
+| **FakeRegion** | string | bucket的可用区 |No|
 
 ### 响应字段
 
@@ -68,6 +71,9 @@ https://api.ucloud.cn/?Action=UpdateUFileToken
 &AllowedBuckets.0=bucket0
 &AllowedBuckets.1=bucket1
 &ExpireTime=1520411979
+&BlackIPList.n=rGUwRbso
+&WhiteIPList.n=GRqPqPvk
+&FakeRegion=fnsgoOgI
 ```
 
 ### 响应示例

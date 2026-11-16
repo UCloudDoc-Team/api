@@ -35,6 +35,7 @@
 | **BucketName** | string | 待获取Bucket的名称，若不提供，则获取所有Bucket |No|
 | **Offset** | int | 获取所有Bucket列表的偏移数目，默认为0 |No|
 | **Limit** | int | 获取所有Bucket列表的限制数目，默认为20 |No|
+| **FakeRegion** | string | bucket可用区 |No|
 
 ### 响应字段
 
@@ -85,6 +86,7 @@
 https://api.ucloud.cn/?Action=DescribeBucket
 &BucketName=blue
 &Region=cxqbTMaU
+&FakeRegion=tOquaEQz
 ```
 
 ### 响应示例
