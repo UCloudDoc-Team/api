@@ -80,6 +80,7 @@
 |[DescribeUDBBinlogBackup](api/udb-api/describe_udb_binlog_backup)|列表UDB实例Binlog自动备份信息|
 |[DescribeUDBBinlogBackupStrategy](api/udb-api/describe_udb_binlog_backup_strategy)|获取UDB实例binlog自动备份策略|
 |[DescribeUDBSplittingInfo](api/udb-api/describe_udb_splitting_info)|描述读写分离功能|
+|[GetUDBAccessInfo](api/udb-api/get_udb_access_info)|获取实例数据库连接信息|
 |[GetUDBClientConnNum](api/udb-api/get_udb_client_conn_num)|获取连接实例客户端Ip和连接数|
 |[GetUDBInstanceSSLCertURL](api/udb-api/get_udb_instance_ssl_cert_url)|获取SSL证书下载地址|
 |[ListUDBInstanceFailoverRecord](api/udb-api/list_udb_instance_failover_record)|获取实例容灾记录列表|
