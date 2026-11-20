@@ -62,6 +62,7 @@
 | **SQLRouterCount** | int | sql路由数量 |No|
 | **InstanceVersion** | string | 实例版本 |No|
 | **EnableTransSplit** | int | 是否启用事务拆分(1：启用事务拆分，2:关闭事务拆分) |No|
+| **PrivateDomainInfo** | [*PrivateDomainInfo*](#PrivateDomainInfo) | 代理实例的内网域名及其开关状态，含域名地址、域名开关、域名数据源指向 |No|
 
 #### 数据模型
 
@@ -87,6 +88,14 @@
 |:---|:---|:---|:---|
 | **ID** | string | 服务节点id |**Yes**|
 | **State** | string | 服务节点状态 |**Yes**|
+
+#### PrivateDomainInfo
+
+| 字段名 | 类型 | 描述信息 | 必填 |
+|:---|:---|:---|:---|
+| **PrivateDomain** | string | 实例的内网域名地址，形如 xxx.ucloudcs.com；未开通内网域名时为空字符串 |No|
+| **EnablePrivateDomain** | int | 内网域名是否已开启：1 已开启，2 已关闭；未开通内网域名时返回 2 |No|
+| **EnableConnectToDB** | int | 内网域名指向的数据源：1 指向主库（可直连数据库），2 指向代理（经 UDBProxy<br />访问）；未开通时返回 2 |No|
 
 ## 示例
 
