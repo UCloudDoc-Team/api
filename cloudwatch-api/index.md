@@ -4,14 +4,21 @@
 
 | API | 描述信息 |
 |:---|:---|
+|[BindAlarmTemplate](api/cloudwatch-api/bind_alarm_template)|绑定告警模板|
 |[BindAlertStrategy](api/cloudwatch-api/bind_alert_strategy)|绑定告警策略|
 |[CreateAlertStrategy](api/cloudwatch-api/create_alert_strategy)|创建告警策略|
 |[CreateAlertStrategyTemplate](api/cloudwatch-api/create_alert_strategy_template)|新建条件模板|
 |[DeleteAlertStrategyTemplate](api/cloudwatch-api/delete_alert_strategy_template)|删除告警条件模板|
+|[DescribeResourceMetric](api/cloudwatch-api/describe_resource_metric)|获取资源支持监控指标信息|
 |[EnableAlertStrategy](api/cloudwatch-api/enable_alert_strategy)|是否启用告警策略|
+|[GetAlarmRecordList](api/cloudwatch-api/get_alarm_record_list)|获取告警记录列表|
+|[GetAlarmTemplateList](api/cloudwatch-api/get_alarm_template_list)|获取告警模板列表|
+|[GetMetric](api/cloudwatch-api/get_metric)|获取监控数据|
 |[GetMetricDataAggregationMethod](api/cloudwatch-api/get_metric_data_aggregation_method)|获取指标数据聚合方式|
+|[GetMetricOverview](api/cloudwatch-api/get_metric_overview)|获取监控概况数据|
 |[GetProductHighPrecisionMetrics](api/cloudwatch-api/get_product_high_precision_metrics)|获取云产品关联的高精度指标列表|
 |[GetProductMetrics](api/cloudwatch-api/get_product_metrics)|获取云产品关联的指标列表|
+|[GetResourceAlarmTemplate](api/cloudwatch-api/get_resource_alarm_template)|获取资源绑定的告警模板|
 |[ListAlertRecord](api/cloudwatch-api/list_alert_record)|告警记录|
 |[ListAlertStrategy](api/cloudwatch-api/list_alert_strategy)|获取告警策略列表|
 |[ListAlertStrategyTemplate](api/cloudwatch-api/list_alert_strategy_template)|条件模板列表|
@@ -21,5 +28,6 @@
 |[QueryMetricDataSummary](api/cloudwatch-api/query_metric_data_summary)|获取资源看图属性列表|
 |[QueryMetricDenseData](api/cloudwatch-api/query_metric_dense_data)|获取高精度指标样本数据|
 |[UnBindAlertStrategy](api/cloudwatch-api/un_bind_alert_strategy)|解绑告警策略|
+|[UnbindAlarmTemplate](api/cloudwatch-api/unbind_alarm_template)|解绑告警模板|
 |[UpdateAlertStrategy](api/cloudwatch-api/update_alert_strategy)|更新告警策略|
 |[UpdateAlertStrategyTemplate](api/cloudwatch-api/update_alert_strategy_template)|编辑条件模板|
